@@ -448,7 +448,7 @@ google_analytics:
 
 # Tencent Analytics
 # https://mta.qq.com/
-tencent_analytics: #500727214
+tencent_analytics:
 
 # CNZZ Analytics
 # https://www.umeng.com/
