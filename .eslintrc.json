@@ -1,0 +1,43 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jquery": true
+    },
+    "extends": [
+        "standard"
+
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "GLOBAL_CONFIG": true,
+        "autoChangeMode": true,
+        "saveToLocal": true,
+        "activateDarkMode":true,
+        "activateLightMode":true,
+        "instantsearch":true,
+        "loadOtherComment": "readonly",
+        "Snackbar":true,
+        "snackbarShow":true,
+        "loadScript":true,
+        "mediumZoom":true,
+        "GLOBAL_CONFIG_SITE": true,
+        "utterancesTheme": true,
+        "hexo": true,
+        "chatBtnHide": true,
+        "chatBtnShow": true,
+        "LazyLoad": true,
+        "lazyLoadInstance": true,
+        "btf": "readonly",
+        "refreshFn": "readonly",
+        "getScript":"readonly",
+        "getParents":"readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+    }
+}

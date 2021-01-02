@@ -1,0 +1,44 @@
+{
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "push": "hexo clean && hexo g && hexo douban && gulp && hexo deploy",
+    "show": "hexo clean && hexo g && hexo s",
+    "update": "git init && git add . && git commit -m 'backup' && git push origin main",
+    "kk": "hexo clean && hexo g && hexo deploy"
+  },
+  "hexo": {
+    "version": "5.3.0"
+  },
+  "dependencies": {
+    "gulp-html-minifier-terser": "^6.0.1",
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-imagemin": "^7.1.0",
+    "hexo": "^5.3.0",
+    "hexo-abbrlink": "^2.2.1",
+    "hexo-butterfly-douban": "^1.1.4",
+    "hexo-deployer-git": "^2.1.0",
+    "hexo-filter-nofollow": "^2.0.2",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-index": "^2.0.0",
+    "hexo-generator-search": "^2.4.1",
+    "hexo-generator-sitemap": "^2.1.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-marked": "^3.3.0",
+    "hexo-renderer-pug": "^1.0.0",
+    "hexo-renderer-stylus": "^2.0.1",
+    "hexo-server": "^2.0.0",
+    "hexo-theme-butterfly": "^3.5.1",
+    "hexo-wordcount": "^6.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-terser": "^2.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
