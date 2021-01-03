@@ -38,4 +38,5 @@ copyright: false
 | :---: | :------------------------------------------------------: |
 | Jerry | [自定義側邊欄](https://butterfly.js.org/posts/ea33ab97/) |
 | 小康  | [优雅魔改](https://www.antmoe.com/posts/a811d614/index.html) |
+| Lete 乐特 | [Butterfly主题美化-无修改源码 (持续更新中...)](https://butterfly.lete114.top/article/Butterfly-config.html) |
 
