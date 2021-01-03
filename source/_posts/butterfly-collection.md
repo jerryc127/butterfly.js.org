@@ -37,4 +37,5 @@ copyright: false
 | 作者  |                           連結                           |
 | :---: | :------------------------------------------------------: |
 | Jerry | [自定義側邊欄](https://butterfly.js.org/posts/ea33ab97/) |
+| 小康  | [优雅魔改](https://www.antmoe.com/posts/a811d614/index.html) |
 
