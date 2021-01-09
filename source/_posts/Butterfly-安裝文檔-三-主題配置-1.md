@@ -1773,7 +1773,7 @@ git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/Bu
 {% note warning %}
 mermaid標籤不允許嵌套於一些隱藏屬性的標籤外掛，例如: tag-hide內的標籤外掛和tabs標籤外掛，這會導致mermaid圖示無法正常顯示，使用時請留意。
 
-~~**請不要壓縮html代碼，不然會導致mermaid顯示異常**~~(3.3.0已修復)
+**請不要壓縮html代碼，不然會導致mermaid顯示異常**
 
 {% endnote %}
 

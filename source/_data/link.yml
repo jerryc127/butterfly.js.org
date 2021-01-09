@@ -1,5 +1,15 @@
-- class_name: 友情鏈接
-  class_desc: 那些人，那些事
+# 1. 確保你使用 Butterfly 主題
+# 2. Fork [butterfly.js.org 倉庫](https://github.com/jerryc127/butterfly.js.org)
+# 3. 修改 source/_data/link.yml
+# 4. 按要求新增內容
+#     - name: 博客名
+#       link: 博客地址
+#       avatar: 博客頭像
+#       descr: 博客描述
+# 5. 發起 Pull requests ，合併到 butterfly.js.org 倉庫
+
+- class_name: '<i class="fas fa-check-double" style="color: #FF6666;padding-right: 0.4rem"></i>網站'
+  class_desc: '<span style="font-style: italic;">重要的事情説一遍</span>'
   link_list:
     - name: JerryC
       link: https://jerryc.me/
@@ -9,20 +19,16 @@
       link: https://hexo.io/zh-tw/
       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
       descr: 快速、簡單且強大的網誌框架
+    - name: Butterfly
+      link: https://github.com/jerryc127/hexo-theme-butterfly
+      avatar: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-github-avatar.png
+      descr: '🦋 A Hexo Theme: Butterfly'
 
-- class_name: 網站
-  class_desc: 值得推薦的網站
+- class_name: '<i class="fas fa-fan" style="color:#00cccc;padding-right: 0.4rem"></i>示例'
+  class_desc: '<span style="font-style: italic;">最可愛的朋友在這裏</span>'
   link_list:
-    - name: Youtube
-      link: https://www.youtube.com/
-      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
-      descr: 視頻網站
-    - name: Weibo
-      link: https://www.weibo.com/
-      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
-      descr: 中國最大社交分享平臺
-    - name: Twitter
-      link: https://twitter.com/
-      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
-      descr: 社交分享平臺
+    - name: 更多示例
+      link: https://github.com/jerryc127/hexo-theme-butterfly/issues/76
+      avatar: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/more-butterfly-demo-avatar.png
+      descr: 更多使用 Butterfly 的網站
 
