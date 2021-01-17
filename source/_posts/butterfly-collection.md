@@ -24,10 +24,9 @@ copyright: false
 如果你想加入自己的文章到表格，你可以
 
 1. 確保你的文章跟 Butterfly 主題有關
-2. Fork [butterfly.js.org 倉庫](https://github.com/jerryc127/butterfly.js.org)
-3. 修改 source/_posts/butterfly-collection.md
-4. 按要求新增 作者 + 文章連結 `| Jerry | [教程a](https://butterfly.js.org)`
-5. 發起 Pull requests ，合併到 butterfly.js.org 倉庫
+2. 點擊這個[鏈接](https://github.com/jerryc127/butterfly.js.org/edit/main/source/_posts/butterfly-collection.md)
+3. 按要求新增 作者 + 文章連結 `| Jerry | [教程a](https://butterfly.js.org)`
+4. 點擊下面的 `Commit changes` ，合併到 butterfly.js.org 倉庫
 
 {% endnote %}
 
@@ -38,4 +37,7 @@ copyright: false
 | :---: | :------------------------------------------------------: |
 | Jerry | [自定義側邊欄](https://butterfly.js.org/posts/ea33ab97/) |
 | 小康  | [优雅魔改](https://www.antmoe.com/posts/a811d614/index.html) |
-
+| Lete 乐特 | [Butterfly主题美化-无修改源码 (持续更新中...)](https://butterfly.lete114.top/article/Butterfly-config.html) |
+|Akilar|[Hexo博客访问优化日记](https://akilar.top/posts/7c16c4bb/)|
+|Akilar|[基于Butterfly主题的美化日记](https://akilar.top/posts/f99b208/)|
+|Akilar|[平滑升级魔改后的Hexo主题](https://akilar.top/posts/bbf68ad4/)|

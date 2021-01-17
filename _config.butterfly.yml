@@ -44,8 +44,7 @@ menu:
     - 電影 || /movies/ || fas fa-video
     - 自言自語 || /talking/ || fas fa-cubes
     - 留言板|| /messageboard/ || fas fa-comment-dots
-  友鏈: /link/ || fas fa-link
-  更多示例: https://github.com/jerryc127/hexo-theme-butterfly/issues/76 || fas fa-cat
+  示例: /link/ || fas fa-thumbs-up
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
@@ -492,7 +491,7 @@ bing_site_verification:
 
 # Baidu Webmaster tools verification setting
 # See: https://ziyuan.baidu.com/site/
-baidu_site_verification:
+baidu_site_verification: code-pE5rnuxcfD
 
 # 360 Webmaster tools verification setting
 # see http://zhanzhang.so.com/

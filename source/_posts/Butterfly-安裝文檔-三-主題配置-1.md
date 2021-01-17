@@ -15,7 +15,7 @@ abbrlink: 4aa8abbe
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2020 年 12 月 31 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 01 月 17 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
  🦋  Butterfly 已經更新到 [3.5.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.5.1)
 
@@ -348,12 +348,6 @@ category_per_img：
 
 【推薦】[`hexo-generator-index`](https://github.com/hexojs/hexo-generator-index)從 2.0.0 開始，已經支持文章置頂功能。你可以直接在文章的`front-matter`區域裏添加`sticky: 1`屬性來把這篇文章置頂。數值越大，置頂的優先級越大。
 
-當然，你也可以安裝第三方插件來實現這個功能([hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top) 或者 [hexo-generator-indexed](https://github.com/hexo-next/hexo-generator-indexed))
-
-如果使用`hexo-generator-index-pin-top`, 需要先卸載掉`hexo-generator-index`，然後在文章的`front-matter`區域裏添加`top: true`屬性來把這篇文章置頂
-
-如果使用`hexo-generator-indexed`,  需要先卸載掉`hexo-generator-index`，然後在文章的`front-matter`區域裏添加`sticky: 1`屬性來把這篇文章置頂。數值越大，置頂的優先級越大
-
 ## 文章封面
 
 文章的markdown文檔上,在`Front-matter`添加`cover`,並填上要顯示的圖片地址。
@@ -510,12 +504,6 @@ reward:
 ```
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-donate.png)
-
-### 文章隱藏
-
-> 2.3.0 開始主題不再默認提供文章隱藏功能
-
-如需要文章隱藏功能，請裝插件[hexo-generator-indexed](https://github.com/hexo-next/hexo-generator-indexed)或者[hexo-hide-posts](https://github.com/printempw/hexo-hide-posts)
 
 ### TOC
 
@@ -1773,7 +1761,7 @@ git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/Bu
 {% note warning %}
 mermaid標籤不允許嵌套於一些隱藏屬性的標籤外掛，例如: tag-hide內的標籤外掛和tabs標籤外掛，這會導致mermaid圖示無法正常顯示，使用時請留意。
 
-~~**請不要壓縮html代碼，不然會導致mermaid顯示異常**~~(3.3.0已修復)
+**請不要壓縮html代碼，不然會導致mermaid顯示異常**
 
 {% endnote %}
 
