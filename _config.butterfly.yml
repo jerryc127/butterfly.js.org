@@ -354,7 +354,7 @@ waline:
   bg: /image/comment_bg.png # waline background
   option:
     path: '/messageboard/'
-    placeholder: '請確保你已經看了使用文檔和主題. 如果運行期間並無報錯，但是預覽時出現問題。請在瀏覽器打開該網頁的情況下，按 F12 進入開發人員工具，切換到 Console 界面。如有報錯，請試着解決。或者在提問題之前附上報錯截圖。詳細描述遇到的問題，附上相關的報錯 / 截圖 / 網址'
+    placeholder: '爲方便回覆管理，所有評論會集中在一起。主題如有報錯，請試着解決。或者在提問題之前附上報錯截圖。詳細描述遇到的問題，附上相關的報錯 / 截圖 / 網址 /對應的文檔標題。'
     pageSize: 8
     lang: 'zh-TW'
     requiredFields: ['nick','mail']
@@ -900,7 +900,6 @@ inject:
   head:
     - '<style type="text/css">.card-announcement .social-button{margin: .6rem 0 0 0; text-align: center;}.card-announcement .social-button a{display: block; background-color: var(--btn-bg); color: var(--btn-color); line-height: 1.6rem; transition: all .3s; position: relative; z-index: 1;}.card-announcement .social-button a:first-child{margin-bottom: .4rem}</style>'
   bottom:
-    - <script>function addDocsToCard () {let asideDom = document.querySelector('#aside-content .card-announcement');if (asideDom) {const docs = '<div class="card-docs card-widget card-categories"><div class=item-headline><i class="fa-bus fas"></i><span>文檔目錄</span></div><ul class=card-category-list><li class=card-category-list-item><a class=card-category-list-link href=/posts/21cfbf15/ >🚀 快速開始</a><li class=card-category-list-item><a class=card-category-list-link href=/posts/dc584b87/ >📑 主題頁面</a><li class=card-category-list-item><a class=card-category-list-link href=/posts/4aa8abbe/ >🛠 主題配置-1</a><li class=card-category-list-item><a class=card-category-list-link href=/posts/ceeb73f/ >⚔️ 主題配置-2</a><li class=card-category-list-item><a class=card-category-list-link href=/posts/98d20436/ >❓ 主題問答</a><li class=card-category-list-item><a class=card-category-list-link href=/posts/4073eda/ >⚡️ 進階教程</a><li class=card-category-list-item><a class=card-category-list-link href=/posts/198a4240/ >✨ 更新日誌</a></ul></div>';asideDom.insertAdjacentHTML('afterend',docs);window.pjax && window.pjax.refresh(document.getElementsByClassName('card-docs')[0])}}window.addEventListener('load', addDocsToCard);document.addEventListener('pjax:complete', addDocsToCard);</script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
