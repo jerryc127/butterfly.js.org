@@ -358,6 +358,7 @@ waline:
     pageSize: 8
     lang: 'zh-TW'
     requiredFields: ['nick','mail']
+    uploadImage: function(file) {const formData = new FormData();formData.append('image', file);return fetch('https://7bu.top/upload/upload.html',{method:'POST',body:formData}).then(resp => resp.json()).then(resp => resp.data.url);}}
 
 # utterances
 # https://utteranc.es/
