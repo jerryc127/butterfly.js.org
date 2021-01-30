@@ -32,13 +32,13 @@
     "hexo-renderer-pug": "^1.0.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
-    "hexo-theme-butterfly": "^3.5.1",
+    "hexo-theme-butterfly": "^3.6.0",
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
-    "gulp-terser": "^2.0.0",
+    "gulp-terser": "^2.0.1",
     "gulp-uglify": "^3.0.2"
   }
 }

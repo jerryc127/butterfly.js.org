@@ -16,9 +16,9 @@ toc: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 01 月 17 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 01 月 30 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.5.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.5.1)
+ 🦋  Butterfly 已經更新到 [3.6.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.0)
 
 {% endnote %}
 
@@ -38,6 +38,130 @@ toc: false
 {% endnote %}
 
 ***
+
+{% hideToggle 3.6.0 (2021/01/30) %}
+
+## 3.6.0 (2021/01/30)
+
+### Feature
+
+1. 增加首頁評論數顯示
+
+   ```diff
+   comments:
+     ...
+     count: false # Display comment count in post's top_img
+   +  card_post_count: false # Display comment count in Home Page
+   ```
+
+2. 最新評論更新
+
+   1. `<a>` 標簽將會顯示 `[鏈接]`
+   2. `<img>`標簽將會顯示 `[圖片]`
+   3. `<pre><code>` 標簽將顯示 `[代碼]`
+   4. github-issues 獲取到的 url 改為對應文章地址，而不是issues地址
+   5. 時間 time 增加 datetime屬性
+   6. waline 獲取到頭像會先匹配 waline數據庫是否有qq頭像屬性
+   7. 部分評論顯示的時間改為更新時間
+
+3. aside ‘查看更多’按鈕 改為 圖標顯示在右上角
+
+4. 可配置最新評論的緩存時間
+
+   ```diff
+   newest_comments:
+     enable: false
+     sort_order: # Don't modify the setting unless you know how it works
+     limit: 6
+   +  storage: 10 # unit: mins, save data to localStorage
+   ```
+
+5. 增加 post_pagination 配置(可關閉/配置分頁展示邏輯)
+
+   ```diff
+   +# post_pagination (分頁)
+   +# value: 1 || 2 || false
+   +# 1: The 'next post' will link to old post
+   +# 2: The 'next post' will link to new post
+   +# false: disable pagination
+   +post_pagination: 1
+   ```
+
+6. 文章版權右上角改為 版權icon
+
+7. 增加配置 disable_top_img，禁用所有的top_img
+
+   ```diff
+   +# Disable all banner image
+   +disable_top_img: false
+   ```
+
+8. 增加 文章編輯
+
+   ```diff
+   +# Post edit
+   +# Easily browse and edit blog source code online.
+   +post_edit:
+   +  enable: false
+   +  # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
+   +  # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
+   +  url:
+   ```
+
+   
+
+### Fix
+
+1. 修復 文章頁面上滑子菜單圖標文字無法顯示的 bug #481
+2. 修復在 chrome上，進入頁面時，頁面元素會出現模糊到清晰 的 bug #479
+3. 修復夜間模式下，閲讀模式代碼塊背景顔色的顯示bug
+4. 修復打賞按鈕字數過多導致Hover異常的bug #473
+5. 修復評論裏  行內元素（表情/圖片）變成塊級元素（換行）的bug
+6. 修復點擊toc後，滾動完toc的highlight在點擊的上一個元素
+7. 修復子目錄下，打賞圖片跳轉鏈接會錯誤的bug
+8. 修復文字點擊關閉random無效的bug
+9. 修復手持設備橫向翻轉時，menu 沒有進行判斷,而導致樣式錯亂的bug
+10. 修復pjax下不會跳轉404頁面的bug
+11. 修復twikoo 評論數獲取會因為地域問題報錯的bug
+12. 修復 background-image 遇到鏈接有括號時會無法顯示的bug
+
+### Improvement
+
+1. meta description  限制在150字以內 #480
+2. pug優化和結構調整
+3. pug 判斷優化
+4. 友情鏈接界面增加title顯示（top_img設為false時）
+5. 升級facebook comment sdk版本
+6. 優化toc顯示，當向上滾動時，導航欄不會遮擋 toc #472
+7. pangu 改為全站渲染
+8. 最新評論js優化
+9. 調整 Readmode 標題邊距
+10. 卡片 hover box-shadow 微調
+11. 404頁面卡片增加hover
+12. 刪除部分多餘的代碼
+
+### Remove
+
+1. 移除百度推送（百度已棄用）和百度轉碼
+
+   ```diff
+   -# Disable Baidu transformation on mobile devices (禁止百度轉碼)
+   -disable_baidu_transformation: true
+   
+   -# Baidu Push (百度推送)
+   -baidu_push: false
+   ```
+
+2. 移除 fragment_cache 配置（默認開啟）
+
+   ```diff
+   -# Caches the contents in a fragment, speed up the generation (開啟hexo自帶的緩存,加快生成速度)
+   -fragment_cache: true
+   ```
+
+
+
+{% endhideToggle  %}
 
 {% hideToggle 3.5.1 (2020/12/31) %}
 

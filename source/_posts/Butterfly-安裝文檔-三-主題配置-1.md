@@ -15,9 +15,9 @@ abbrlink: 4aa8abbe
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 01 月 17 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 01 月 30 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.5.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.5.1)
+ 🦋  Butterfly 已經更新到 [3.6.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.0)
 
 {% endnote %}
 
@@ -288,6 +288,14 @@ index_post_content:
 
 ## 頂部圖
 
+{% note info %}
+
+如果不要顯示頂部圖，可直接配置 `disable_top_img: true`
+
+{% endnote %}
+
+
+
 配置中的值：
 
 | 配置             | 解釋                                                         |
@@ -314,6 +322,7 @@ index_post_content:
 | 留空                                                         | 顯示默認的top_img（如有），否則顯示默認的顔色<br>（文章頁top_img留空的話，會顯示 cover 的值） |
 | img鏈接                                                      | 圖片的鏈接，顯示所配置的圖片                                 |
 | 顔色(<br>HEX值 - \#0000FF<br>RGB值 - rgb(0,0,255)<br>顔色單詞 - orange<br>漸變色 - linear-gradient( 135deg, #E2B0FF 10%, #9F44D3 100%)<br>） | 對應的顔色                                                   |
+| transparent                                                  | 透明                                                         |
 | false                                                        | 不顯示 top_img                                               |
 
 `tag_per_img` 和 `category_per_img` 是 3.2.0 新增的內容，可對 tag 和 category 進行單獨的配置
@@ -479,7 +488,7 @@ copyright_info: 此文章版權歸xxxxx所有，如有轉載，請註明來自�
 
 **版權顯示截圖**
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-copyright.png)
+![image-20210130161913121](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-copyright.png)
 
 ### 文章打賞
 
@@ -598,6 +607,45 @@ noticeOutdate:
 > style: simple
 
 ![image-20200731180037968](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-outdated-simple.png)
+
+### 文章編輯按鈕
+
+在文章標題旁邊顯示一個編輯按鈕，點擊會跳轉到對應的鏈接去。
+
+```yaml
+# Post edit
+# Easily browse and edit blog source code online.
+post_edit:
+  enable: false
+  # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
+  # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
+  url:
+```
+
+![image-20210130160108360](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-post-edit.png)
+
+![image-20210130160208436](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-post-edit-2.png)
+
+### 文章分頁按鈕
+
+可設置分頁的邏輯，也可以關閉分頁顯示
+
+```yaml
+# post_pagination (分頁)
+# value: 1 || 2 || false
+# 1: The 'next post' will link to old post
+# 2: The 'next post' will link to new post
+# false: disable pagination
+post_pagination: false
+```
+
+| 參數                   | 解釋                 |
+| ---------------------- | -------------------- |
+| post_pagination: false | 關閉分頁按鈕         |
+| post_pagination: 1     | 下一篇顯示的是舊文章 |
+| post_pagination: 2     | 下一篇顯示的是新文章 |
+
+![image-20210130161545100](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-post-pagination.png)
 
 ## 頭像
 
@@ -888,15 +936,11 @@ runtimeshow:
 
 最新評論只會在刷新時才會去讀取，並不會實時變化
 
-由於 API 有 訪問次數限制，為了避免調用太多，主題默認存取期限為 10 分鐘。也就是説，調用後資料會存在 *localStorage* 裏，10分鐘內刷新網站只會去 *localStorage* 讀取資料。10分鐘期限一過，刷新頁面時才會去調取 API 讀取新的數據。
+由於 API 有 訪問次數限制，為了避免調用太多，主題默認存取期限為 10 分鐘。也就是説，調用後資料會存在 *localStorage* 裏，10分鐘內刷新網站只會去 *localStorage* 讀取資料。10分鐘期限一過，刷新頁面時才會去調取 API 讀取新的數據。（ 3.6.0 新增了 `storage` 配置，可自行配置緩存時間）
 
 {% endnote %}
 
-{% note warning %}
 
-~~由於 Leancloud Api 限制，Leancloud 的 appId 和 appKey 最好和 Valine 評論是同一個，不然遇到`最新評論  `和`Valine 評論`共存的頁面，會出現報錯，其中一方會無法運行。~~（ 3.2.0 開始不會有衝突 ）
-
-{% endnote %}
 
 在側邊欄顯示最新評論板塊
 
@@ -908,6 +952,7 @@ newest_comments:
   enable: true
   sort_order: # Don't modify the setting unless you know how it works
   limit: 6
+  storage: 10 # unit: mins, save data to localStorage
   avatar: true
   # You can only choose one, or neither
   valine: true
@@ -927,6 +972,7 @@ newest_comments:
 | 配置                 | 解釋                                                 |
 | -------------------- | ---------------------------------------------------- |
 | limit                | 顯示的數量                                           |
+| storage              | 設置緩存時間，單位 分鐘                              |
 | avatar               | 是否顯示頭像                                         |
 | github_issues - repo | 評論存在的倉庫，例如 `jerryc127/jerryc127.github.io` |
 | disqus - forum       | 等同於 disqusjs 的 shortname                         |
