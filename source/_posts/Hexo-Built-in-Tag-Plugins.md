@@ -247,7 +247,7 @@ Inserts an image with specified size.
 {% img [class names] /path/to/image [width] [height] '"title text" "alt text"' %}
 ```
 
-{% img test /image/avatar.png %}
+{% img test /img/avatar.png %}
 ## Link
 
 Inserts a link with `target="_blank"` attribute.

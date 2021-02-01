@@ -17,7 +17,7 @@ abbrlink: 4aa8abbe
 
  📖  本教程更新於 2021 年 01 月 30 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.6.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.0)
+ 🦋  Butterfly 已經更新到 [3.6.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.1)
 
 {% endnote %}
 
@@ -504,10 +504,10 @@ link可以不寫，會默認為圖片的鏈接。
 reward:
   enable: true
   QR_code:
-    - img: /image/wechat.jpg
+    - img: /img/wechat.jpg
       link:
       text: 微信
-    - img: /image/alipay.jpg
+    - img: /img/alipay.jpg
       link:
       text: 支付寶
 ```

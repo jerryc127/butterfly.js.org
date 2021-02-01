@@ -11,9 +11,9 @@
 - class_name: '<i class="fas fa-check-double" style="color: #FF6666;padding-right: 0.4rem"></i>網站'
   class_desc: '<span style="font-style: italic;">重要的事情説一遍</span>'
   link_list:
-    - name: JerryC
-      link: https://jerryc.me/
-      avatar: https://jerryc.me/image/avatar.png
+    - name: MYW
+      link: https://immyw.com/
+      avatar: https://immyw.com/img/avatar.png
       descr: 今日事,今日畢
     - name: Hexo
       link: https://hexo.io/zh-tw/
@@ -47,5 +47,5 @@
       link: https://imszz.com
       avatar: https://cdn.jsdelivr.net/gh/weilain/cdn-photo/Photo/avatar.jpg
       descr: 时间如一捧流沙,缓缓的在指间流尽
-     
+
 

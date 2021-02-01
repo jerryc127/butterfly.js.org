@@ -113,7 +113,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: /image/avatar.png
+  img: /img/avatar.png
   effect: false
 
 # Disable all banner image
@@ -356,7 +356,7 @@ valine:
   guest_info: nick,mail,link # valine comment header info (nick/mail/link)
   recordIP: false # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  bg: /image/comment_bg.png # valine background
+  bg: /img/comment_bg.png # valine background
   emojiCDN: # emoji CDN
   enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields (nick/mail)
@@ -369,7 +369,7 @@ waline:
   serverURL: https://butterfly-waline.vercel.app # Waline server address url
   avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
   emojiCDN: # emoji CDN
-  bg: /image/comment_bg.png # waline background
+  bg: /img/comment_bg.png # waline background
   option:
     placeholder: '請先查看文檔再詢問。主題如有報錯，請試着解決。提問題時請詳細描述遇到的問題，附上相關的報錯 / 截圖 / 網址。'
     pageSize: 8
@@ -917,8 +917,8 @@ CDN:
   # main
   main_css: /css/index.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.6.0/source/js/main.min.js # /js/main.js
-  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.6.0/source/js/utils.min.js # /js/utils.js
+  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.6.1/source/js/main.min.js # /js/main.js
+  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.6.1/source/js/utils.min.js # /js/utils.js
 
   # pjax
   pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
@@ -938,8 +938,8 @@ CDN:
   sharejs_css: https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css
 
   # search
-  local_search: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.6.0/source/js/search/local-search.min.js # /js/search/local-search.js
-  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.6.0/source/js/search/algolia.min.js # /js/search/algolia.js
+  local_search: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.6.1/source/js/search/local-search.min.js # /js/search/local-search.js
+  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.6.1/source/js/search/algolia.min.js # /js/search/algolia.js
   algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
   algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
 
@@ -982,7 +982,7 @@ CDN:
   fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
   # Conversion between Traditional and Simplified Chinese
-  translate: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.6.0/source/js/tw_cn.min.js # /js/tw_cn.js
+  translate: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.6.1/source/js/tw_cn.min.js # /js/tw_cn.js
 
   # justifiedGallery
   justifiedGallery_js: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js

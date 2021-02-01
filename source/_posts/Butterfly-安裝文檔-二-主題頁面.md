@@ -18,7 +18,7 @@ abbrlink: dc584b87
 
  📖  本教程更新於 2021 年 01 月 30 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.6.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.0)
+ 🦋  Butterfly 已經更新到 [3.6.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.1)
 
 {% endnote %}
 
@@ -202,10 +202,6 @@ type: "link"
 - class_name: 友情鏈接
   class_desc: 那些人，那些事
   link_list:
-    - name: JerryC
-      link: https://jerryc.me/
-      avatar: https://jerryc.me/image/avatar.png
-      descr: 今日事,今日畢
     - name: Hexo
       link: https://hexo.io/zh-tw/
       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg

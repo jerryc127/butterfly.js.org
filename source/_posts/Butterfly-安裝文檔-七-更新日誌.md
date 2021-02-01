@@ -18,7 +18,7 @@ toc: false
 
  📖  本教程更新於 2021 年 01 月 30 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.6.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.0)
+ 🦋  Butterfly 已經更新到 [3.6.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.1)
 
 {% endnote %}
 
@@ -38,6 +38,15 @@ toc: false
 {% endnote %}
 
 ***
+
+{% hideToggle 3.6.1 (2021/02/01) %}
+
+## 3.6.1 (2021/02/01)
+### Fix
+1. 非ios設備下，手機頁面下文章頁有toc的界面出現滾動條
+2. 非ios設備下，在layout標簽內的元素，如是position: fixed，其相對定位會更改 #482 #483
+
+{% endhideToggle %}
 
 {% hideToggle 3.6.0 (2021/01/30) %}
 
@@ -262,7 +271,7 @@ toc: false
    +  serverURL: # Waline server address url
    +  avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
    +  emojiCDN: # emoji CDN
-   +  bg: /image/comment_bg.png # waline background
+   +  bg: /img/comment_bg.png # waline background
    +  option:
    ```
 
@@ -1465,10 +1474,10 @@ toc: false
     -    - itemlist:
     -        img: /img/alipay.jpg
     -        text: 支付寶
-    +    - img: /image/wechat.jpg
+    +    - img: /img/wechat.jpg
     +      link:
     +      text: 微信
-    +    - img: /image/alipay.jpg
+    +    - img: /img/alipay.jpg
     +      link:
     +      text: 支付寶
     ```

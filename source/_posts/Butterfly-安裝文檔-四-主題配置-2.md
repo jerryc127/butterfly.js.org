@@ -17,7 +17,7 @@ date: 2020-05-28 22:38:11
 
  📖  本教程更新於 2021 年 01 月 30 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.6.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.0)
+ 🦋  Butterfly 已經更新到 [3.6.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.1)
 
 {% endnote %}
 
@@ -186,7 +186,7 @@ valine:
   guest_info: nick,mail,link #valine comment header info (nick/mail/link)
   recordIP: false # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  bg: /image/comment_bg.png # valine background
+  bg: /img/comment_bg.png # valine background
   emojiCDN: # emoji CDN
   enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields (nick/mail)
@@ -260,7 +260,7 @@ Waline - 一款從 Valine 衍生的帶後端評論系統。可以將 Waline 等�
 waline:
   serverURL:  # Waline server address url
   avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
-  bg: /image/comment_bg.png # waline background
+  bg: /img/comment_bg.png # waline background
   emojiCDN: # emoji CDN
   option:
 ```
