@@ -44,6 +44,7 @@ menu:
     - 電影 || /movies/ || fas fa-video
     - 自言自語 || /talking/ || fas fa-cubes
     - 留言板|| /messageboard/ || fas fa-comment-dots
+  留言板: /messageboard/ || fas fa-comment-dots
   示例: /link/ || fas fa-thumbs-up
 
 # Hide the child menu items in mobile sidebar
