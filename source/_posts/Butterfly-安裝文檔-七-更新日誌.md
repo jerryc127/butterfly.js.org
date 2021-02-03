@@ -18,7 +18,7 @@ toc: false
 
  📖  本教程更新於 2021 年 01 月 30 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.6.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.1)
+ 🦋  Butterfly 已經更新到 [3.6.2](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.2)
 
 {% endnote %}
 
@@ -38,6 +38,13 @@ toc: false
 {% endnote %}
 
 ***
+
+{% hideToggle 3.6.2 (2021/02/03) %}
+## 3.6.2 (2021/02/03)
+### Fix
+1. mathjax 和 katex 没有加载js的bug
+
+{% endhideToggle %}
 
 {% hideToggle 3.6.1 (2021/02/01) %}
 
