@@ -363,7 +363,7 @@ twikoo:
 | 參數   | 解釋                                                         |
 | ------ | ------------------------------------------------------------ |
 | envId  | 環境 ID                                                      |
-| region | 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数 |
+| region | 環境地域，默認為 ap-shanghai，如果您的環境地域不是上海，需傳此參數 |
 | option | 可選配置                                                     |
 
 
@@ -845,9 +845,44 @@ katex:
   hide_scrollbar: true
 ```
 
-你不需要添加`katex.min.js`來渲染數學方程。相應的你需要卸載你之前的 hexo 的 markdown 渲染器以及`hexo-math`，然後安裝新的`hexo-renderer-markdown-it-plus`:
+你不需要添加`katex.min.js`來渲染數學方程。相應的你需要卸載你之前的 hexo 的 markdown 渲染器，然後安裝其它插件。
+
+{% subtabs katex-plugins %}
+
+<!-- tab hexo-renderer-markdown-it 【建議】 -->
+
+卸載掉 marked 插件，安裝 [hexo-renderer-markdown-it](https://github.com/hexojs/hexo-renderer-markdown-it)
+
+```bash
+npm un hexo-renderer-marked --save # 如果有安裝這個的話，卸載
+npm un hexo-renderer-kramed --save # 如果有安裝這個的話，卸載
+
+npm i hexo-renderer-markdown-it --save # 需要安裝這個渲染插件
+npm install @neilsustc/markdown-it-katex --save #需要安裝這個katex插件
+```
+
+在 hexo 的根目錄的 `_config.yml` 中配置
 
 ```yaml
+markdown:
+  plugins:
+    - plugin:
+      name: '@neilsustc/markdown-it-katex'
+      options:
+        strict: false
+```
+
+如需配置其它參數，請參考 [katex 官網](https://katex.org/docs/options.html)
+
+<!-- endtab -->
+
+<!-- tab hexo-renderer-markdown-it-plus -->
+
+> 注意，此方法生成的 katex 沒有斜體
+
+卸載掉 marked 插件，然後安裝新的`hexo-renderer-markdown-it-plus`:
+
+```bash
 # 替換 `hexo-renderer-kramed` 或者 `hexo-renderer-marked` 等hexo的markdown渲染器
 # 你可以在你的package.json裏找到hexo的markdwon渲染器，並將其卸載
 npm un hexo-renderer-marked --save
@@ -877,9 +912,16 @@ markdown_it_plus:
 
 當然，你還可以利用這個特性來定義一些自己常用的 `macros`。
 
-因為 KaTeX 更快更輕量，因此沒有 MathJax 的功能多（比如右鍵菜單）。為那些使用 MathJax 的用户，我們也為 KaTeX 默認添加了 [_Copy As TeX Code_](https://github.com/upupming/katex-copytex)的功能。
+<!-- endtab -->
+
+{% endsubtabs %}
+
+
+
+因為 KaTeX 更快更輕量，因此沒有 MathJax 的功能多（比如右鍵菜單）。為那些使用 MathJax 的用户，主題也內置了 katex 的 [複製](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex) 功能。
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-katex.gif)
+
 <!-- endtab -->
 {% endtabs %}
 

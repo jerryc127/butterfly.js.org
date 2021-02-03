@@ -42,7 +42,7 @@ toc: false
 {% hideToggle 3.6.2 (2021/02/03) %}
 ## 3.6.2 (2021/02/03)
 ### Fix
-1. mathjax 和 katex 没有加载js的bug
+1. mathjax 和 katex 沒有加載js的bug
 
 {% endhideToggle %}
 
