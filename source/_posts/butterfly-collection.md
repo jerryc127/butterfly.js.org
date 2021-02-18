@@ -41,3 +41,4 @@ copyright: false
 |Akilar|[Hexo博客访问优化日记](https://akilar.top/posts/7c16c4bb/)|
 |Akilar|[基于Butterfly主题的美化日记](https://akilar.top/posts/f99b208/)|
 |Akilar|[平滑升级魔改后的Hexo主题](https://akilar.top/posts/bbf68ad4/)|
+|非科学のカッパ|[Butterfly主题硬核魔改Waline](https://www.kawashiros.club/p/2021/1ff52d48.html)|
