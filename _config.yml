@@ -189,6 +189,7 @@ sitemap:
   categories: true
 
 marked:
+  smartypants: false
   descriptionLists: false
 
 server:
