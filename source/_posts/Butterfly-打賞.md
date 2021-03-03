@@ -16,7 +16,7 @@ cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-donate-cover.png
 
 非常感謝以下網友的打賞
 
-更新於 2020-12-27
+更新於 2021-03-03
 
 {% endnote %}
 
@@ -43,22 +43,22 @@ cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-donate-cover.png
 | *仔  | 5     |
 | M*5  | 2     |
 | w*r  | 18.88 |
-| *龍  | 1.60  |
+| *龍  | 1.6   |
 | *一  | 5     |
 | *晨  | 6.66  |
 | *隨  | 8.88  |
 | *忘  | 10    |
 | *想  | 6.66  |
-| *喜  | 2.50  |
-| *喜  | 2.50  |
+| *喜  | 2.5   |
+| *喜  | 2.5   |
 | *傑  | 8.88  |
 | *雨  | 10    |
 | T*r  | 10    |
 | T*n  | 2.88  |
 | s*n  | 2     |
 | *o   | 9.99  |
-| m*o  | 2.50  |
-| 張*i | 0.30  |
+| m*o  | 2.5   |
+| 張*i | 0.3   |
 | *斌  | 2.88  |
 | q*n  | 20    |
 | *唯  | 8.88  |
@@ -66,6 +66,9 @@ cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-donate-cover.png
 | I*U  | 3.65  |
 | *白  | 6     |
 | *猪  | 6.66  |
+| h*i  | 10    |
+| B*g  | 5     |
+| J*R  | 3     |
 
 <hr>
 
@@ -90,4 +93,9 @@ cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-donate-cover.png
 | 小樣 | 36 |
 | SunnyWS | 20 |
 | ZFour | 8.88 |
+| JeM_緘默 | 0.14 |
+| 小張 | 5 |
+| 書生 | 6.88 |
+| 王青陽 | 5 |
+| 趙碧寒 | 10 |
 
