@@ -15,7 +15,7 @@
     "gulp-html-minifier-terser": "^6.0.1",
     "gulp-htmlclean": "^2.7.22",
     "gulp-imagemin": "^7.1.0",
-    "hexo": "^5.3.0",
+    "hexo": "^5.4.0",
     "hexo-abbrlink": "^2.2.1",
     "hexo-butterfly-douban": "^1.1.4",
     "hexo-deployer-git": "^3.0.0",

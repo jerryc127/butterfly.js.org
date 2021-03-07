@@ -72,7 +72,7 @@ copy:
 #   icon: link || the description
 social:
   fab fa-qq: https://jq.qq.com/?_wv=1027&k=KU9105XR || Butterfly QQ群 1
-  fas fa-envelope: mailto:btf@immyw.com || Email
+  fas fa-envelope: mailto:i@immyw.com || Email
   fas fa-rss: /atom.xml || RSS
 
 # search (搜索)
