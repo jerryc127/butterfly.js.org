@@ -71,7 +71,6 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fab fa-qq: https://jq.qq.com/?_wv=1027&k=KU9105XR || Butterfly QQ群 1
   fas fa-envelope: mailto:i@immyw.com || Email
   fas fa-rss: /atom.xml || RSS
 
@@ -187,7 +186,7 @@ post_meta:
     tags: false # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
-    date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
+    date_type: created # created or updated or both 文章頁日期是創建日或者更新日或都顯示
     date_format: relative # date/relative 顯示日期還是相對日期
     categories: true # true or false 文章頁是否顯示分類
     tags: true # true or false 文章頁是否顯示標籤
@@ -250,7 +249,7 @@ anchor: true
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
-  enable: true
+  enable: false
   style: flat # style: simple/flat
   limit_day: 365 # When will it be shown
   position: top # position: top/bottom
@@ -703,9 +702,10 @@ aside:
   card_announcement:
     enable: true
     content:
-      如果你在使用中遇到問題，請到<a href="https://github.com/jerryc127/hexo-theme-butterfly/issues" style="color:#49b1f5">Github Issues</a> 或者 <a href="/messageboard/" style="color:#49b1f5">留言板</a> 進行反饋，你也可以加入 QQ 群（由於 QQ 群只能有500人，會定時清理潛水的人）<div class="social-button">
-      <a class="button--animated" href="https://jq.qq.com/?_wv=1027&k=KU9105XR" target="_blank">加入 1 群 👍</a>
-      <a class="button--animated" href="https://jq.qq.com/?_wv=1027&k=r1nK0DQz" target="_blank">加入 2 群 👍</a>
+      如果你在使用中遇到問題，請到 <a href="https://github.com/jerryc127/hexo-theme-butterfly/issues" style="color:#49b1f5">Github Issues</a> 或者 <a href="/messageboard/" style="color:#49b1f5">留言板</a> 進行反饋，你也可以加入 QQ 群（由於 QQ 群只能有500人，會定時清理潛水的人）<div class="social-button">
+      <a class="button--animated" href="https://jq.qq.com/?_wv=1027&k=KU9105XR" target="_blank">QQ 1 群 👍</a>
+      <a class="button--animated" href="https://jq.qq.com/?_wv=1027&k=r1nK0DQz" target="_blank">QQ 2 群 👍</a>
+      <a class="button--animated" href="https://t.me/bu2fly" target="_blank">Telegram 👍</a>
       </div>
   card_recent_post:
     enable: true
@@ -908,7 +908,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - '<style type="text/css">.card-announcement .social-button{margin: .6rem 0 0 0; text-align: center;}.card-announcement .social-button a{display: block; background-color: var(--btn-bg); color: var(--btn-color); line-height: 1.6rem; transition: all .3s; position: relative; z-index: 1;}.card-announcement .social-button a:first-child{margin-bottom: .4rem}</style>'
+    - '<style type="text/css">.card-announcement .social-button{margin: .6rem 0 0 0; text-align: center;}.card-announcement .social-button a{display: block; margin: 0.2rem 0;background-color: var(--btn-bg); color: var(--btn-color); line-height: 1.6rem; transition: all .3s; position: relative; z-index: 1;}</style>'
   bottom:
 
 # CDN

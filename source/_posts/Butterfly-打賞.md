@@ -16,7 +16,7 @@ cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-donate-cover.png
 
 非常感謝以下網友的打賞
 
-更新於 2021-03-03
+更新於 2021-03-17
 
 {% endnote %}
 
@@ -69,6 +69,8 @@ cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-donate-cover.png
 | h*i  | 10    |
 | B*g  | 5     |
 | J*R  | 3     |
+| *埃  | 6.66  |
+| 等*. | 12.5  |
 
 <hr>
 
