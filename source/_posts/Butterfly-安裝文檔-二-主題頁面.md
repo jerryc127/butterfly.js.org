@@ -16,9 +16,9 @@ abbrlink: dc584b87
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 02 月 04 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 03 月 19 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.6.2](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.2)
+ 🦋  Butterfly 已經更新到 [3.7.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.0)
 
 {% endnote %}
 
@@ -327,62 +327,17 @@ aplayer: true
 
 ## 説説
 
-{% note green 'fas fa-bomb' flat %}
+### Artitalk
 
-支持 3.2.0 以上版本
+安裝插件 [hexo-butterfly-artitalk](https://www.npmjs.com/package/hexo-butterfly-artitalk)
 
-請注意： 由於 Artitalk 對 Pjax 支持並不完善，如果你使用 Valine 評論，請把説説頁面**添加**到 pjax 的 exclude 去。
+具體配置查看[插件文檔](https://github.com/jerryc127/butterfly-plugins/tree/main/hexo-butterfly-artitalk)
 
-不然會引起 Artitalk 和 Valine 都加載出錯。
+### HexoPlusPlus Talk
 
-{% endnote %}
+安裝插件 [hexo-butterfly-hpptalk](https://www.npmjs.com/package/hexo-butterfly-hpptalk)
 
-
-
-主題內置了 [Artitalk](https://github.com/ArtitalkJS/Artitalk) 
-
-這是一款基於 LeanCloud 實現的可實時發佈説説/微語的插件
-
-### 創建頁面
-
-通過 `hexo new page xxxx` 創建一個頁面
-
-打開創建的 md 文件， 在 Front-matter 添加 `type: artitalk`
-
-```markdown
----
-title: xxxx
-date: 2020-09-16 00:58:58
-type: artitalk
----
-```
-
-### 配置文件
-
-【重要】請參照  [Artitalk](https://artitalk.js.org/doc.html#%F0%9F%8C%88-leancloud-%E7%9A%84%E7%9B%B8%E5%85%B3%E5%87%86%E5%A4%87) 的文檔（ leancloud-的相關準備 ）配置 leancloud
-
-然後修改 `主題配置文件`
-
-```yaml
-# Artitalk
-# see https://artitalk.js.org/
-artitalk:
-  appId: xxxxx
-  appKey: xxxxx
-  option:
-```
-
- Artitalk 提供了很多[可選參數](https://artitalk.js.org/settings.html#%E9%80%89%E5%A1%AB)配置，如果你想配置的話，請寫在 option 裏
-
-例如：
-
-```yaml
-option:
-  serverURL: xxxxx
-  lang: zh
-```
-
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/theme-butterfly-docs-artitalk.png)
+具體配置查看[插件文檔](https://github.com/jerryc127/butterfly-plugins/tree/main/hexo-butterfly-hpptalk)
 
 ## 404頁面
 

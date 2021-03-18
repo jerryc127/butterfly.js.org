@@ -15,9 +15,9 @@ abbrlink: 98d20436
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 02 月 04 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 03 月 19 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.6.2](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.2)
+ 🦋  Butterfly 已經更新到 [3.7.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.0)
 
 {% endnote %}
 
@@ -229,5 +229,11 @@ Cannot read property 'appId' of undefined
 
 > algolia 插件安裝後還需要配置
 > 查看插件文檔配置
+
+### 頂部出現 Loading
+
+> 生成前先 hexo clean
+
+
 
 {% btn '/posts/4073eda/',⚡️ Butterfly 安裝文檔(六) 進階教程,far fa-hand-point-right,block orange right larger %}

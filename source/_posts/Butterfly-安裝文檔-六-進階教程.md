@@ -15,9 +15,9 @@ date: 2020-05-28 22:39:25
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 02 月 04 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 03 月 19 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.6.2](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.2)
+ 🦋  Butterfly 已經更新到 [3.7.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.0)
 
 {% endnote %}
 
@@ -283,16 +283,16 @@ pwa:
 
 ```json
 {
-    "name": "string", //應用全稱
-    "short_name": "Junzhou", //應用簡稱
-    "theme_color": "#49b1f5", //匹配瀏覽器的地址欄顏色
-    "background_color": "#49b1f5",//加載應用時的背景色
-    "display": "standalone",//首選顯示模式 其他選項有：fullscreen,minimal-ui,browser
+    "name": "string",
+    "short_name": "Junzhou",
+    "theme_color": "#49b1f5",
+    "background_color": "#49b1f5",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "icons": [ //該數組指定icons圖標參數，用來時適配不同設備（需為png，至少包含一個192px*192px的圖標）
+    "icons": [
         {
-          "src": "images/pwaicons/36.png", //圖標文件的目錄，需在source/目錄下自行創建。
+          "src": "images/pwaicons/36.png",
           "sizes": "36x36",
           "type": "image/png"
         },
@@ -327,7 +327,7 @@ pwa:
             "type": "image/png"
           }
       ],
-      "splash_pages": null //配置自定義啟動動畫。
+      "splash_pages": null
   }
 ```
 
@@ -667,7 +667,7 @@ gulp.task("default", gulp.series("generate-service-worker", gulp.parallel(
 
 ## Icon
 
-Butterfly主題內置了[Font Awesome V5](https://fontawesome.com/)圖標，目前已更新到5.13.0，總共有1,588個免費圖標。由於是國外的圖標網站，對於國內的一些網站Icon並不支持。如有需要，你可以引入其它的圖標服務商。
+Butterfly主題內置了[Font Awesome V5 ](https://fontawesome.com/)圖標，目前已更新到 5.13.0，總共有1,588個免費圖標。由於是國外的圖標網站，對於國內的一些網站Icon並不支持。如有需要，你可以引入其它的圖標服務商。
 
 ### iconfont
 

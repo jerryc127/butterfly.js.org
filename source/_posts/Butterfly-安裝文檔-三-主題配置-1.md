@@ -61,19 +61,20 @@ abbrlink: 4aa8abbe
 修改 `主題配置文件`
 
 ```yaml
-menu:
   Home: / || fas fa-home
   Archives: /archives/ || fas fa-archive
   Tags: /tags/ || fas fa-tags
   Categories: /categories/ || fas fa-folder-open
   List||fas fa-list:
-    - Music || /music/ || fas fa-music
-    - Movie || /movies/ || fas fa-video
+    Music: /music/ || fas fa-music
+    Movie: /movies/ || fas fa-video
   Link: /link/ || fas fa-link
   About: /about/ || fas fa-heart
 ```
 
 必須是 `/xxx/`，後面`||`分開，然後寫圖標名。
+
+如果不希望顯示圖標，圖標名可不寫
 
 **注意：** 導航的文字可自行更改
 
@@ -86,9 +87,9 @@ menu:
   標籤: /tags/ || fas fa-tags
   分類: /categories/ || fas fa-folder-open
   清單||fa fa-heartbeat:
-    - 音樂 || /music/ || fas fa-music
-    - 照片 || /Gallery/ || fas fa-images
-    - 電影 || /movies/ || fas fa-video
+    音樂: /music/ || fas fa-music
+    照片: /Gallery/ || fas fa-images
+    電影: /movies/ || fas fa-video
   友鏈: /link/ || fas fa-link
   關於: /about/ || fas fa-heart
 ```
@@ -99,7 +100,7 @@ menu:
 
 {% note info %}
 
-代碼塊中的所有功能只適用於Hexo默認的highlight渲染
+代碼塊中的所有功能只適用於 Hexo 自帶的代碼渲染
 
 如果使用第三方的渲染器，不一定會有效
 
@@ -213,7 +214,7 @@ highlight_shrink: true #代碼框不展開，需點擊 '>' 打開
 
 ### 代碼換行
 
-在默認情況下，`hexo-highlight`在編譯的時候不會實現代碼自動換行。如果你不希望在代碼塊的區域裏有橫向滾動條的話，那麼你可以考慮開啟這個功能。
+在默認情況下，Hexo 在編譯的時候不會實現代碼自動換行。如果你不希望在代碼塊的區域裏有橫向滾動條的話，那麼你可以考慮開啟這個功能。
 
 修改 `主題配置文件`
 
@@ -221,14 +222,24 @@ highlight_shrink: true #代碼框不展開，需點擊 '>' 打開
 code_word_wrap: true
 ```
 
-然後找到你站點的 Hexo 配置文件`_config.yml`，將`line_number`改成`false`:
+如果你是使用 highlight 渲染，需要找到你站點的 Hexo 配置文件`_config.yml`，將`line_number`改成`false`:
 
 ```yaml
 highlight:
   enable: true
-  line_number: false
+  line_number: false # <- 改這裏
   auto_detect: false
   tab_replace:
+```
+
+如果你是使用 prismjs 渲染，需要找到你站點的 Hexo 配置文件`_config.yml`，將`line_number`改成`false`:
+
+```yaml
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: false # <- 改這裏
+  tab_replace: ''
 ```
 
 > 設置`code_word_wrap`之前:
@@ -238,6 +249,28 @@ highlight:
 > 設置`code_word_wrap`之後:
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-word-wrap-after.png)
+
+### 代碼高度限制
+
+> 3.7.0 及以上支持
+
+可配置代碼高度限制，超出的部分會隱藏，並顯示展開按鈕。
+
+```yaml
+highlight_height_limit: false # unit: px
+```
+
+注意：
+
+1. 單位是 `px`，直接添加數字，如 200
+
+2. 實際限制高度為 `highlight_height_limit + 30 px` ，多增加 30px 限制，目的是避免代碼高度只超出highlight_height_limit 一點時，出現展開按鈕，展開沒內容。
+
+3. 不適用於隱藏後的代碼塊（ css 設置 display: none）
+
+   
+
+![hexo-theme-butterfly-docs-highlight-heigh-limit](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-highlight-heigh-limit.gif)
 
 ## 社交圖標
 
@@ -2091,5 +2124,32 @@ This is my website, click the button {% btn 'https://butterfly.js.org/',Butterfl
 {% btn 'https://butterfly.js.org/',Butterfly,far fa-hand-point-right,outline orange larger %}
 {% btn 'https://butterfly.js.org/',Butterfly,far fa-hand-point-right,outline green larger %}
 </div>
+
+### inlineImg
+
+主題中的圖片都是默認以`塊級元素`顯示，如果你想以`內聯元素`顯示，可以使用這個標簽外掛。
+
+```markdown
+{% inlineImg [src] [height] %}
+
+[src]      :    圖片鏈接
+[height]   ：   圖片高度限制【可選】
+```
+
+> Demo
+
+```markdown
+你看我長得漂亮不
+
+![](https://i.loli.net/2021/03/19/2P6ivUGsdaEXSFI.png)
+
+我覺得很漂亮 {% inlineImg https://i.loli.net/2021/03/19/5M4jUB3ynq7ePgw.png 150px %}
+```
+
+
+
+![image-20210319001204045](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-inlineimg.png)
+
+
 
 {% btn '/posts/ceeb73f/',⚔️ Butterfly-安裝文檔-四-主題配置-2,far fa-hand-point-right,block red right larger %}

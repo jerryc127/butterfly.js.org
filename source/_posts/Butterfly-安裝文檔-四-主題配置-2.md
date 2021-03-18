@@ -15,9 +15,9 @@ date: 2020-05-28 22:38:11
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 02 月 04 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 03 月 19 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.6.2](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.2)
+ 🦋  Butterfly 已經更新到 [3.7.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.0)
 
 {% endnote %}
 
@@ -163,6 +163,7 @@ gitalk:
   distractionFreeMode: false # Facebook-like distraction free mode.
   pagerDirection: last # Comment sorting direction, available values are last and first.
   createIssueManually: false # Gitalk will create a corresponding github issue for your every single page automatically
+  option:
 ```
 
 ![image-20201027212704930](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-gitalk-new.png)
@@ -190,10 +191,11 @@ valine:
   emojiCDN: # emoji CDN
   enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields (nick/mail)
+  visitor: false
   option:
 ```
 
-Valine於v1.4.5開始支持自定義表情，如果你需要自行配置，請在`emojiCDN`配置表情CDN。
+Valine於 v1.4.5 開始支持自定義表情，如果你需要自行配置，請在`emojiCDN`配置表情CDN。
 
 同時在Hexo 工作目錄下的`source/_data/`創建一個json文件`valine.json`,等同於Valine需要配置的`emojiMaps`，`valine.json`配置方式可參考如下
 
@@ -262,6 +264,7 @@ waline:
   avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
   bg: /img/comment_bg.png # waline background
   emojiCDN: # emoji CDN
+  visitor: false
   option:
 ```
 
@@ -357,14 +360,16 @@ facebook_comments:
 twikoo:
   envId:
   region:
+  visitor: false
   option:
 ```
 
-| 參數   | 解釋                                                         |
-| ------ | ------------------------------------------------------------ |
-| envId  | 環境 ID                                                      |
-| region | 環境地域，默認為 ap-shanghai，如果您的環境地域不是上海，需傳此參數 |
-| option | 可選配置                                                     |
+| 參數    | 解釋                                                         |
+| ------- | ------------------------------------------------------------ |
+| envId   | 環境 ID                                                      |
+| region  | 環境地域，默認為 ap-shanghai，如果您的環境地域不是上海，需傳此參數 |
+| visitor | 是否顯示文章閲讀數                                           |
+| option  | 可選配置                                                     |
 
 
 
@@ -595,6 +600,9 @@ addtoany:
 
 {% tabs search %}
 <!-- tab Algolia @fab fa-algolia -->
+
+> 記得運行 hexo clean
+
 1. 你需要安裝 [hexo-algolia](https://github.com/oncletom/hexo-algolia)或 [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch). 根據它們的説明文檔去做相應的配置。
 
 2. 修改 `主題配置文件`
@@ -609,6 +617,9 @@ algolia_search:
 <!-- endtab -->
 
 <!-- tab 本地搜索@fas fa-search -->
+
+> 記得運行 hexo clean
+
 1. 你需要安裝 [hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search). 根據它的文檔去做相應配置。**注意格式只支持 xml**。
 
 2. 修改 `主題配置文件`
@@ -1292,7 +1303,7 @@ offline:
 
 更多內容請查看 [hexo-offline](https://github.com/JLHwung/hexo-offline)的官方文檔
 
-1. 在`主題配置文件`中開啟 pwa 選項。
+4. 在`主題配置文件`中開啟 pwa 選項。
 
 ```yaml
 pwa:
@@ -1308,16 +1319,16 @@ pwa:
 
 ```json
 {
-    "name": "string", //應用全稱
-    "short_name": "Junzhou", //應用簡稱
-    "theme_color": "#49b1f5", //匹配瀏覽器的地址欄顏色
-    "background_color": "#49b1f5",//加載應用時的背景色
-    "display": "standalone",//首選顯示模式 其他選項有：fullscreen,minimal-ui,browser
+    "name": "string",
+    "short_name": "Junzhou",
+    "theme_color": "#49b1f5",
+    "background_color": "#49b1f5",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "icons": [ //該數組指定icons圖標參數，用來時適配不同設備（需為png，至少包含一個192px*192px的圖標）
+    "icons": [
         {
-          "src": "images/pwaicons/36.png", //圖標文件的目錄，需在source/目錄下自行創建。
+          "src": "images/pwaicons/36.png",
           "sizes": "36x36",
           "type": "image/png"
         },
@@ -1352,7 +1363,7 @@ pwa:
             "type": "image/png"
           }
       ],
-      "splash_pages": null //配置自定義啟動動畫。
+      "splash_pages": null
   }
 ```
 
@@ -1420,7 +1431,7 @@ medium_zoom: true
 
 ## Snackbar 彈窗
 
-Snackbar彈窗,根據自己愛好開啟
+Snackbar 彈窗,根據自己愛好開啟
 
 修改 `主題配置文件`
 

@@ -16,9 +16,9 @@ toc: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 02 月 04 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 03 月 19 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.6.2](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.2)
+ 🦋  Butterfly 已經更新到 [3.7.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.0)
 
 {% endnote %}
 
@@ -39,9 +39,102 @@ toc: false
 
 ***
 
-{% hideToggle 3.6.2 (2021/02/03) %}
-## 3.6.2 (2021/02/03)
+{% hideToggle 3.7.0 (2021/03/18) %}
+
+## 3.7.0 (2021/03/18)
+
+### Breaking Change
+
+1. 更改子目錄的寫法，與父目錄一致
+
+2. 移除 artitalk （如需要，請安裝 hexo-butterfly-artitalk)
+
+   ```diff
+   -# Artitalk
+   -# see https://artitalk.js.org/
+   -artitalk:
+   -  appId:
+   -  appKey:
+   -  option:
+   
+   CDN:
+   -	artitalk: https://cdn.jsdelivr.net/npm/artitalk
+   ```
+
+3. katex_copytex 的js 和 css cdn 更換
+
+   ```diff
+   -katex_copytex: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js
+   -katex_copytex_css: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css
+   
+   +katex_copytex: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
+   +katex_copytex_css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css
+   ```
+
+
+### Feature
+
+1. 新增設置代碼高度限制，顯示展開按鈕
+
+   ```diff
+   +highlight_height_limit: false # unit: px
+   ```
+
+2. prismjs 也可以配置 code_word_wrap
+
+3. 增加 kbd 樣式 \#507
+
+4. 添加waline,valine 和twikoo 提供的文章閲讀數配置 #502
+
+   ```diff
+   valine:
+   +  visitor: false
+   waline:
+   +  visitor: false
+   twikoo:
+   +  visitor: false
+   ```
+
+5. 增加 HexoPlusPlus_Talk（需要安裝 hexo-butterfly-hpptalk)
+
+6. 增加 tags 標簽外掛 inlineImg
+
+7. gitalk 增加 option 配置
+
+   ```diff
+   gitalk:
+     createIssueManually: false # Gitalk will create a corresponding github issue for your every single page automatically
+   +  option:
+   ```
+
+
 ### Fix
+
+1. 修復prismjs 在 ios safari 下自動換行的bug
+2. 修復默認代碼大小不會隨着字體放大/放小而改變的bug
+3. 修復prismjs 無法識別的語言 顯示 null 而不是顯示 code 的 bug
+4. 在完全沒有配置的情況下，運行時控制枱報null 的問題
+
+### Improvement
+
+1. 主頁分頁會定位到文章區域 #519
+2. css 優化，簡化自定義代碼色的 css 配置
+3. 搜索 hover 效果與其它目錄一致
+4. 百度統計適配 pjax #516
+5. 當文章頁cover 和 cover 的 default_img都沒有配置時，會去讀取default_top_img的參數
+6. 一句API 改為 https
+7. pug代碼優化
+
+
+
+{% endhideToggle %}
+
+{% hideToggle 3.6.2 (2021/02/03) %}
+
+## 3.6.2 (2021/02/03)
+
+### Fix
+
 1. mathjax 和 katex 沒有加載js的bug
 
 {% endhideToggle %}

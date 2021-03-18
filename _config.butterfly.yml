@@ -28,22 +28,22 @@
 menu:
   首頁: / || fas fa-home
   目錄||fas fa-compass:
-    - 歸檔 || /archives/ || fas fa-archive
-    - 標籤 ||  /tags/ || fas fa-tags
-    - 分類 || /categories/ || fas fa-folder-open
+    歸檔: /archives/ || fas fa-archive
+    標籤: /tags/ || fas fa-tags
+    分類: /categories/ || fas fa-folder-open
   文檔||fas fa-book:
-    - 🚀 快速開始 || /posts/21cfbf15/
-    - 📑 主題頁面 || /posts/dc584b87/
-    - 🛠 主題配置-1 || /posts/4aa8abbe/
-    - ⚔️ 主題配置-2 || /posts/ceeb73f/
-    - ❓ 主題問答 || /posts/98d20436/
-    - ⚡️ 進階教程 || /posts/4073eda/
-    - ✨ 更新日誌 || /posts/198a4240/
+    🚀 快速開始: /posts/21cfbf15/
+    📑 主題頁面: /posts/dc584b87/
+    🛠 主題配置-1: /posts/4aa8abbe/
+    ⚔️ 主題配置-2: /posts/ceeb73f/
+    ❓ 主題問答: /posts/98d20436/
+    ⚡️ 進階教程: /posts/4073eda/
+    ✨ 更新日誌: /posts/198a4240/
   娛樂||fa fa-heartbeat:
     # - 音樂 || /music/ || fas fa-music
-    - 圖庫 || /Gallery/ || fas fa-images
-    - 電影 || /movies/ || fas fa-video
-    - 自言自語 || /talking/ || fas fa-cubes
+    圖庫: /Gallery/ || fas fa-images
+    電影: /movies/ || fas fa-video
+    自言自語: /talking/ || fas fa-cubes
   留言板: /messageboard/ || fas fa-comment-dots
   示例: /link/ || fas fa-thumbs-up
 
@@ -57,6 +57,7 @@ highlight_theme: light # darker / pale night / light / ocean / mac / mac light /
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
+highlight_height_limit: 400 # unit: px
 code_word_wrap: false
 
 # copy settings
@@ -343,6 +344,7 @@ gitalk:
   distractionFreeMode: false # Facebook-like distraction free mode.
   pagerDirection: last # Comment sorting direction, available values are last and first.
   createIssueManually: false # Gitalk will create a corresponding github issue for your every single page automatically
+  option:
 
 # valine
 # https://valine.js.org
@@ -360,6 +362,7 @@ valine:
   emojiCDN: # emoji CDN
   enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields (nick/mail)
+  visitor: false
   option:
     path: '/messageboard/'
 
@@ -370,6 +373,7 @@ waline:
   avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
   emojiCDN: # emoji CDN
   bg: /img/comment_bg.png # waline background
+  visitor: false
   option:
     placeholder: '請先查看文檔再詢問。主題如有報錯，請試着解決。提問題時請詳細描述遇到的問題，附上相關的報錯 / 截圖 / 網址。'
     pageSize: 8
@@ -400,6 +404,7 @@ facebook_comments:
 twikoo:
   envId:
   region:
+  visitor: false
   option:
 
 # Chat Services
@@ -839,13 +844,6 @@ note:
 # other
 # --------------------------------------
 
-# Artitalk
-# see https://artitalk.js.org/
-artitalk:
-  appId: f2OAz3uUxl0Dr048MqPBUYLn-MdYXbMMI
-  appKey: Hay8CrEoQcBTO5bn2FS1FWx7
-  option:
-
 # Pjax [Beta]
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
@@ -918,8 +916,8 @@ CDN:
   # main
   main_css: /css/index.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.6.2/source/js/main.min.js # /js/main.js
-  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.6.2/source/js/utils.min.js # /js/utils.js
+  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.0/source/js/main.min.js # /js/main.js
+  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.0/source/js/utils.min.js # /js/utils.js
 
   # pjax
   pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
@@ -939,16 +937,16 @@ CDN:
   sharejs_css: https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css
 
   # search
-  local_search: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.6.2/source/js/search/local-search.min.js # /js/search/local-search.js
-  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.6.2/source/js/search/algolia.min.js # /js/search/algolia.js
+  local_search: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.0/source/js/search/local-search.min.js # /js/search/local-search.js
+  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.0/source/js/search/algolia.min.js # /js/search/algolia.js
   algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
   algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
 
   # math
   mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   katex: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
-  katex_copytex: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js
-  katex_copytex_css: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css
+  katex_copytex: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
+  katex_copytex_css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css
   mermaid: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
 
   # count
@@ -983,7 +981,7 @@ CDN:
   fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
   # Conversion between Traditional and Simplified Chinese
-  translate: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.6.2/source/js/tw_cn.min.js # /js/tw_cn.js
+  translate: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.0/source/js/tw_cn.min.js # /js/tw_cn.js
 
   # justifiedGallery
   justifiedGallery_js: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js
@@ -999,4 +997,17 @@ CDN:
   prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
   prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
 
-  artitalk: https://cdn.jsdelivr.net/npm/artitalk
+
+# Artitalk
+# see https://artitalk.js.org/
+artitalk:
+  enable: true
+  appId: f2OAz3uUxl0Dr048MqPBUYLn-MdYXbMMI
+  appKey: Hay8CrEoQcBTO5bn2FS1FWx7
+  path: talking
+  js:
+  option:
+  front_matter:
+    title: 自言自語
+    comments: false
+    top_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-demo-talking-top-img.jpg
