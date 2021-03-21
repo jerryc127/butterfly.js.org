@@ -724,7 +724,6 @@ tencent_analytics:
 4. 修改 `主題配置文件`
 
 ```yaml
-# Tencent_analytics ID
 cnzz_analytics: 
 ```
 
