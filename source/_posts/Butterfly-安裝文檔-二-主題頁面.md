@@ -263,9 +263,12 @@ aplayer: true
 ## 電影
 
 電影界面使用了插件 `hexo-butterfly-douban`
-使用方法請參考插件的[文檔](https://github.com/jerryc127/hexo-butterfly-douban)。
+使用方法請參考插件的[文檔](https://github.com/jerryc127/butterfly-plugins/tree/main/hexo-butterfly-douban)。
 
-**注意：** hexo-butterfly-douban 會主動生成頁面，所以不需要自己創建。
+**注意：** 
+1. hexo-butterfly-douban 會主動生成頁面，所以不需要自己創建。
+2. 如遇到無法抓取問題，顯示 `INFO  0 movies have been loaded in xxx ms, because you are offline or your network is bad`
+   請過段時間再試試，這我也無能為力。
 
 ## 圖庫
 
