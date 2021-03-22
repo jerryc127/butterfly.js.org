@@ -17,7 +17,7 @@
     "gulp-imagemin": "^7.1.0",
     "hexo": "^5.4.0",
     "hexo-abbrlink": "^2.2.1",
-    "hexo-butterfly-artitalk": "^1.0.1",
+    "hexo-butterfly-artitalk": "^1.0.2",
     "hexo-butterfly-douban": "^1.1.4",
     "hexo-deployer-git": "^3.0.0",
     "hexo-filter-nofollow": "^2.0.2",
