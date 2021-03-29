@@ -38,15 +38,15 @@ toc: false
 {% endnote %}
 
 ***
+
 {% hideToggle 3.7.1 (2021/03/30) %}
 
 ## 3.7.1 (2021/03/30)
-
 ### Fix
 1. 修復 github-issues 最新評論 獲取的url格式 bug
 2. 修復當標題有符號'時，disqus 和 disqusjs 無法加載的 bug
 
-{% hideToggle %}
+{% endhideToggle %}
 
 {% hideToggle 3.7.0 (2021/03/18) %}
 
