@@ -234,6 +234,9 @@ Cannot read property 'appId' of undefined
 
 > 生成前先 hexo clean
 
-
-
 {% btn '/posts/4073eda/',⚡️ Butterfly 安裝文檔(六) 進階教程,far fa-hand-point-right,block orange right larger %}
+
+### 點擊中文目錄報錯的問題
+
+這種情況出現在主題為 `3.0.0`以下版本，升級主題就行
+

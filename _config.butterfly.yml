@@ -246,7 +246,7 @@ photofigcaption: false
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
-anchor: true
+anchor: false
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:

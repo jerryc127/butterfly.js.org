@@ -39,7 +39,7 @@ sticky: 100
 
 ***
 
-`hexo-theme-butterfly`是基於[Molunerfinn](https://github.com/Molunerfinn)的[hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody)的基礎上進行開發的。
+`hexo-theme-butterfly`是基於 [Molunerfinn](https://github.com/Molunerfinn) 的 [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody) 的基礎上進行開發的。
 文檔也是在[hexo-theme-melody](https://molunerfinn.com/hexo-theme-melody-doc/)的文檔基礎上修改。因為一些配置變更導致與原主題配置上有部分區別。故如果安裝`hexo-theme-butterfly`主題，請參考這篇文檔。
 
 ## 安裝
@@ -58,9 +58,9 @@ git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes
 
 **測試版**
 
-> 測試版可能存在Bugs，追求穩定的請安裝穩定版
+> 測試版可能存在 bug，追求穩定的請安裝穩定版
 
-如果想要安裝比較新的dev分支，可以
+如果想要安裝比較新的 dev 分支，可以
 
 ```powershell
 git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
@@ -68,7 +68,7 @@ git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/bu
 
 {% note info %}
 
-升級方法：在主題目錄下，運行`git pull`
+升級方法：在主題目錄下，運行 `git pull`
 
 {% endnote %}
 
@@ -108,7 +108,9 @@ git clone -b dev https://gitee.com/iamjerryw/hexo-theme-butterfly.git themes/but
 
 <!-- tab npm安裝@fab fa-npm -->
 
-> 此方法只支持Hexo 5.0.0以上版本
+> 此方法只支持 Hexo 5.0.0 以上版本
+>
+> ***通過 npm 安裝並不會在 themes 裏生成主題文件夾，而是在 node_modules 裏生成***
 
 在你的博客根目錄裏
 
@@ -176,7 +178,7 @@ Hexo會自動**合併**主題中的`_config.yml`和 `_config.butterfly.yml`裏�
 
 <!-- endtab -->
 
-<!-- tab butterfly.yml -->
+<!-- tab butterfly.yml【已棄用】 -->
 
 {% note pink 'fas fa-bahai' flat %}
 

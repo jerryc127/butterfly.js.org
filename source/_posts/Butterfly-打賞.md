@@ -20,7 +20,9 @@ cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-donate-cover.png
 
 {% endnote %}
 
-## Wechat
+{% tabs coffee %}
+
+<!-- tab 微信@fab fa-weixin -->
 
 | 名字 | 金額  |
 | ---- | ----- |
@@ -72,9 +74,9 @@ cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-donate-cover.png
 | *埃  | 6.66  |
 | 等*. | 12.5  |
 
-<hr>
+<!-- endtab -->
 
-## Alipay
+<!-- tab 支付寶@fab fa-alipay -->
 
 | 名字      | 金額  |
 | --------- | ----- |
@@ -101,3 +103,6 @@ cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-donate-cover.png
 | 王青陽 | 5 |
 | 趙碧寒 | 10 |
 
+<!-- endtab -->
+
+{% endtabs %}
