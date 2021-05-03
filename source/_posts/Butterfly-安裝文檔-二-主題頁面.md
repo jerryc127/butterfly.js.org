@@ -30,10 +30,9 @@ abbrlink: dc584b87
 
 {% endnote %}
 
-{% note red 'fas fa-skull-crossbones' %}
+{% note orange 'fas fa-magic' %}
 
-如果有安裝這兩個插件的，請卸載掉，會導致主題報錯。 
-[hexo-inject](https://github.com/hexojs/hexo-inject) 和 [hexo-neat](https://github.com/rozbo/hexo-neat)
+你可以通過右下角的 **簡** 按鈕切換為簡體顯示 
 
 {% endnote %}
 

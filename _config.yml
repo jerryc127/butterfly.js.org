@@ -194,3 +194,5 @@ marked:
 
 server:
   port: 3127
+
+cn_tw_move: true

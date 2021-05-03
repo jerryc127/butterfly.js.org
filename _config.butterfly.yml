@@ -234,6 +234,9 @@ reward:
     - img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/Photo/alipay.jpg
       link:
       text: 支付寶
+    - img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/Photo/alipayhk.jpg
+      link:
+      text: 支付寶香港
 
 # Related Articles
 related_post:
@@ -510,7 +513,7 @@ google_site_verification: NdIUXAOVyGnnBhcrip0ksCawbdAzT0hlBZDE9u4jx6k
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
-bing_site_verification:
+bing_site_verification: 567E47D75E8DCF1282B9623AD914701E
 
 # Baidu Webmaster tools verification setting
 # See: https://ziyuan.baidu.com/site/
