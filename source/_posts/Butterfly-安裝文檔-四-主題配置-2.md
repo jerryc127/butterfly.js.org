@@ -15,9 +15,9 @@ date: 2020-05-28 22:38:11
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 03 月 30 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 05 月 05 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.7.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.1)
+ 🦋  Butterfly 已經更新到 [3.7.5](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.5)
 
 {% endnote %}
 
@@ -639,25 +639,11 @@ local_search:
 修改 `主題配置文件`
 
 ```yaml
-# Google Webmaster tools verification setting
-# See: https://www.google.com/webmasters/
-google_site_verification:
-
-# Bing Webmaster tools verification setting
-# See: https://www.bing.com/webmaster/
-bing_site_verification:
-
-# Baidu Webmaster tools verification setting
-# See: https://ziyuan.baidu.com/site/
-baidu_site_verification:
-
-# 360 Webmaster tools verification setting
-# see http://zhanzhang.so.com/
-qihu_site_verification:
-
-# Yandex Webmaster tools verification setting
-# see https://webmaster.yandex.com/
-yandex_site_verification:
+site_verification:
+  # - name: google_site_verification
+  #   content: xxxxxx
+  # - name: baidu_site_verification
+  #   content: xxxxxxx
 ```
 
 ## 分析統計

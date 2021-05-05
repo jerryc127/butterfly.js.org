@@ -2151,4 +2151,34 @@ This is my website, click the button {% btn 'https://butterfly.js.org/',Butterfl
 
 
 
+
+
+### label
+
+> 3.7.5 及以上版本適用
+
+高亮所需的文字
+
+```markdown
+{% label text color %}
+```
+
+| 參數  | 解釋                                                         |
+| ----- | ------------------------------------------------------------ |
+| text  | 文字                                                         |
+| color | 【可選】背景顏色，默認為 `default`<br />default/blue/pink/red/purple/orange/green |
+
+> Demo
+
+```markdown
+臣亮言：{% label 先帝 %}創業未半，而{% label 中道崩殂 blue %}。今天下三分，{% label 益州疲敝 pink %}，此誠{% label 危急存亡之秋 red %}也！然侍衞之臣，不懈於內；{% label 忠志之士 purple %}，忘身於外者，蓋追先帝之殊遇，欲報之於陛下也。誠宜開張聖聽，以光先帝遺德，恢弘志士之氣；不宜妄自菲薄，引喻失義，以塞忠諫之路也。
+宮中、府中，俱為一體；陟罰臧否，不宜異同。若有{% label 作奸 orange %}、{% label 犯科 green %}，及為忠善者，宜付有司，論其刑賞，以昭陛下平明之治；不宜偏私，使內外異法也。
+```
+
+臣亮言：{% label 先帝 %}創業未半，而{% label 中道崩殂 blue %}。今天下三分，{% label 益州疲敝 pink %}，此誠{% label 危急存亡之秋 red %}也！然侍衞之臣，不懈於內；{% label 忠志之士 purple %}，忘身於外者，蓋追先帝之殊遇，欲報之於陛下也。誠宜開張聖聽，以光先帝遺德，恢弘志士之氣；不宜妄自菲薄，引喻失義，以塞忠諫之路也。
+
+宮中、府中，俱為一體；陟罰臧否，不宜異同。若有{% label 作奸 orange %}、{% label 犯科 green %}，及為忠善者，宜付有司，論其刑賞，以昭陛下平明之治；不宜偏私，使內外異法也。
+
+
+
 {% btn '/posts/ceeb73f/',⚔️ Butterfly-安裝文檔-四-主題配置-2,far fa-hand-point-right,block red right larger %}
