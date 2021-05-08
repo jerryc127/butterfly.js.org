@@ -8,6 +8,7 @@ categories:
   - Demo
 description: Code Highlight Style test
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Code-Highlight-Style-test-cover.png
+comments: false
 ---
 
 Make sure all the code blocks highlighted correctly. All the code samples are come from the demo of https://highlightjs.org

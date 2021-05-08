@@ -14,6 +14,7 @@ abbrlink: 7670b080
 date: 2021-01-02 18:11:22
 top_img:
 copyright: false
+comments: false
 ---
 
 {% note blue 'fas fa-bullhorn' flat %}
