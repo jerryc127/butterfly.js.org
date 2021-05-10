@@ -382,6 +382,7 @@ waline:
     pageSize: 8
     lang: 'zh-TW'
     requiredFields: ['nick','mail']
+    dark: '[data-theme="dark"]'
 
 # utterances
 # https://utteranc.es/
