@@ -12,7 +12,6 @@
     "version": "5.4.0"
   },
   "dependencies": {
-    "cheerio": "*",
     "gulp-html-minifier-terser": "^6.0.1",
     "gulp-htmlclean": "^2.7.22",
     "gulp-imagemin": "^7.1.0",
@@ -38,6 +37,7 @@
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
+    "cheerio": "*",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-terser": "^2.0.1",
