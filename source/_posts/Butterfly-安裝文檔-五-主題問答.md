@@ -11,13 +11,14 @@ keywords: 'hexo,butterfly,主題,doc,教程,文檔'
 description: Butterfly安裝文檔-主題問答
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-doc-05-cover.png
 abbrlink: 98d20436
+comments: false
 ---
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 03 月 30 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 05 月 11 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.7.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.1)
+ 🦋  Butterfly 已經更新到 [3.7.7](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.7)
 
 {% endnote %}
 
@@ -29,10 +30,9 @@ abbrlink: 98d20436
 
 {% endnote %}
 
-{% note red 'fas fa-skull-crossbones' %}
+{% note orange 'fas fa-magic' %}
 
-如果有安裝這兩個插件的，請卸載掉，會導致主題報錯。 
-[hexo-inject](https://github.com/hexojs/hexo-inject) 和 [hexo-neat](https://github.com/rozbo/hexo-neat)
+你可以通過右下角的 **簡** 按鈕切換為簡體顯示 
 
 {% endnote %}
 
@@ -234,6 +234,9 @@ Cannot read property 'appId' of undefined
 
 > 生成前先 hexo clean
 
-
-
 {% btn '/posts/4073eda/',⚡️ Butterfly 安裝文檔(六) 進階教程,far fa-hand-point-right,block orange right larger %}
+
+### 點擊中文目錄報錯的問題
+
+這種情況出現在主題為 `3.0.0`以下版本，升級主題就行
+

@@ -11,13 +11,14 @@ description: Butterfly安裝文檔-進階教程
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-docs-06-cover.png
 abbrlink: 4073eda
 date: 2020-05-28 22:39:25
+comments: false
 ---
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 03 月 30 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 05 月 11 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.7.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.1)
+ 🦋  Butterfly 已經更新到 [3.7.7](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.7)
 
 {% endnote %}
 
@@ -29,10 +30,9 @@ date: 2020-05-28 22:39:25
 
 {% endnote %}
 
-{% note red 'fas fa-skull-crossbones' %}
+{% note orange 'fas fa-magic' %}
 
-如果有安裝這兩個插件的，請卸載掉，會導致主題報錯。 
-[hexo-inject](https://github.com/hexojs/hexo-inject) 和 [hexo-neat](https://github.com/rozbo/hexo-neat)
+你可以通過右下角的 **簡** 按鈕切換為簡體顯示 
 
 {% endnote %}
 
@@ -41,13 +41,66 @@ date: 2020-05-28 22:39:25
 ## 建議
 
 1. 不要把個人需要的文件/圖片放在主題`source`文件夾裏，因為在升級主題的過程中，可能會把文件覆蓋刪除了。
-   在Hexo根目錄的`source`文件夾裏，創建一個文件夾來放置個人文件/圖片。文件夾不能命名為`css`、`js`和`img`
-   引用文件直接為`/文件夾名稱/文件名`
+在Hexo根目錄的`source`文件夾裏，創建一個文件夾來放置個人文件/圖片。
+引用文件直接為`/文件夾名稱/文件名`
+
+## 音樂
+
+音樂界面使用了插件 `hexo-tag-aplayer`
+使用方法請參考插件[文檔](https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md)
+
+音樂頁面只是普通的page頁，按普通頁面操作生成就行。
+
+> 以下內容可供**選擇**配置
+>
+> 注意： 仍需要安裝插件[hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer)
+
+插件會在每一個文件都插入 js 和 css，為了避免這一情況，3.0 版本內置了 aplayer 需要的 css 和 js。
+
+首先在Hexo根目錄`_config`裏配置`asset_inject`為`false`
+
+```yaml
+aplayer:
+  asset_inject: false
+```
+
+然後在你需要使用aplayer的頁面Front-matter添加
+
+```markdown
+aplayer: true
+```
+
+這樣只會在需要aplayer的頁面插入js和css。
+
+如何添加全局 Aplayer 播放，請參考 [這篇文章](/posts/507c070f/)
+
+## 電影
+
+電影界面使用了插件 `hexo-butterfly-douban`
+使用方法請參考插件的[文檔](https://github.com/jerryc127/butterfly-plugins/tree/main/hexo-butterfly-douban)。
+
+**注意：** 
+1. hexo-butterfly-douban 會主動生成頁面，所以不需要自己創建。
+2. 如遇到無法抓取問題，顯示 `INFO  0 movies have been loaded in xxx ms, because you are offline or your network is bad`
+   請過段時間再試試，這我也無能為力。
+
+## 説説
+
+### Artitalk
+
+安裝插件 [hexo-butterfly-artitalk](https://www.npmjs.com/package/hexo-butterfly-artitalk)
+
+具體配置查看[插件文檔](https://github.com/jerryc127/butterfly-plugins/tree/main/hexo-butterfly-artitalk)
+
+### HexoPlusPlus Talk
+
+安裝插件 [hexo-butterfly-hpptalk](https://www.npmjs.com/package/hexo-butterfly-hpptalk)
+
+具體配置查看[插件文檔](https://github.com/jerryc127/butterfly-plugins/tree/main/hexo-butterfly-hpptalk)
 
 ## 自定義代碼配色
 
 {% btn '/posts/b37b5fe3/','點擊前往',fas fa-code,block blue %}
-
 
 
 ## 自定義側邊欄

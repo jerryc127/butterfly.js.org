@@ -14,7 +14,9 @@ is like driving with your eyes closed.<br>
 ***
 
 {% note default %}
-反饋 Bug 或者詢問使用問題，最好去 [issues](https://github.com/jerryc127/hexo-theme-butterfly/issues) 發帖
+反饋 Bug 或者詢問使用問題，最好去 
+   1. [Issues](https://github.com/jerryc127/hexo-theme-butterfly/issues)
+   2. [Discussions](https://github.com/jerryc127/hexo-theme-butterfly/discussions)
 {% endnote %}
 
 {% note info %}

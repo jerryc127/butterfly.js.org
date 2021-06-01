@@ -234,6 +234,9 @@ reward:
     - img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/Photo/alipay.jpg
       link:
       text: 支付寶
+    - img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/Photo/alipayhk.jpg
+      link:
+      text: 支付寶香港
 
 # Related Articles
 related_post:
@@ -504,25 +507,13 @@ ad:
 # Verification
 # --------------------------------------
 
-# Google Webmaster tools verification setting
-# See: https://www.google.com/webmasters/
-google_site_verification: NdIUXAOVyGnnBhcrip0ksCawbdAzT0hlBZDE9u4jx6k
-
-# Bing Webmaster tools verification setting
-# See: https://www.bing.com/webmaster/
-bing_site_verification:
-
-# Baidu Webmaster tools verification setting
-# See: https://ziyuan.baidu.com/site/
-baidu_site_verification: code-pE5rnuxcfD
-
-# 360 Webmaster tools verification setting
-# see http://zhanzhang.so.com/
-qihu_site_verification:
-
-# Yandex Webmaster tools verification setting
-# see https://webmaster.yandex.com/
-yandex_site_verification:
+site_verification:
+  - name: google-site-verification
+    content: NdIUXAOVyGnnBhcrip0ksCawbdAzT0hlBZDE9u4jx6k
+  - name: msvalidate.01
+    content: 567E47D75E8DCF1282B9623AD914701E
+  - name: baidu-site-verification
+    content: code-pE5rnuxcfD
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
@@ -878,10 +869,12 @@ pangu:
   field: post # site/post
 
 # Lazyload (圖片懶加載)
-# https://github.com/verlok/lazyload
+# https://github.com/verlok/vanilla-lazyload
 lazyload:
   enable: true
-  post: /img/loading.gif
+  field: site # site/post
+  placeholder: /img/loading.gif
+  blur: false
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -916,8 +909,8 @@ CDN:
   # main
   main_css: /css/index.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.1/source/js/main.min.js # /js/main.js
-  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.1/source/js/utils.min.js # /js/utils.js
+  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.7/source/js/main.min.js # /js/main.js
+  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.7/source/js/utils.min.js # /js/utils.js
 
   # pjax
   pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
@@ -930,6 +923,7 @@ CDN:
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
   utterances: https://utteranc.es/client.js
   twikoo: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js
+  waline: https://cdn.jsdelivr.net/npm/@waline/client@0.17.0/dist/Waline.min.js
 
   # share
   addtoany: https://static.addtoany.com/menu/page.js
@@ -937,8 +931,8 @@ CDN:
   sharejs_css: https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css
 
   # search
-  local_search: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.1/source/js/search/local-search.min.js # /js/search/local-search.js
-  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.1/source/js/search/algolia.min.js # /js/search/algolia.js
+  local_search: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.7/source/js/search/local-search.min.js # /js/search/local-search.js
+  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.7/source/js/search/algolia.min.js # /js/search/algolia.js
   algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
   algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
 
@@ -981,7 +975,7 @@ CDN:
   fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
   # Conversion between Traditional and Simplified Chinese
-  translate: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.1/source/js/tw_cn.min.js # /js/tw_cn.js
+  translate: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.7/source/js/tw_cn.min.js # /js/tw_cn.js
 
   # justifiedGallery
   justifiedGallery_js: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js

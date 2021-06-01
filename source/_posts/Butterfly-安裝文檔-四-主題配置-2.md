@@ -11,13 +11,14 @@ description: Butterfly安裝文檔-主題配置-2
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-docs-04-cover.png
 abbrlink: ceeb73f
 date: 2020-05-28 22:38:11
+comments: false
 ---
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 03 月 30 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 05 月 11 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.7.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.1)
+ 🦋  Butterfly 已經更新到 [3.7.7](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.7)
 
 {% endnote %}
 
@@ -29,10 +30,9 @@ date: 2020-05-28 22:38:11
 
 {% endnote %}
 
-{% note red 'fas fa-skull-crossbones' %}
+{% note orange 'fas fa-magic' %}
 
-如果有安裝這兩個插件的，請卸載掉，會導致主題報錯。 
-[hexo-inject](https://github.com/hexojs/hexo-inject) 和 [hexo-neat](https://github.com/rozbo/hexo-neat)
+你可以通過右下角的 **簡** 按鈕切換為簡體顯示 
 
 {% endnote %}
 
@@ -640,25 +640,11 @@ local_search:
 修改 `主題配置文件`
 
 ```yaml
-# Google Webmaster tools verification setting
-# See: https://www.google.com/webmasters/
-google_site_verification:
-
-# Bing Webmaster tools verification setting
-# See: https://www.bing.com/webmaster/
-bing_site_verification:
-
-# Baidu Webmaster tools verification setting
-# See: https://ziyuan.baidu.com/site/
-baidu_site_verification:
-
-# 360 Webmaster tools verification setting
-# see http://zhanzhang.so.com/
-qihu_site_verification:
-
-# Yandex Webmaster tools verification setting
-# see https://webmaster.yandex.com/
-yandex_site_verification:
+site_verification:
+  # - name: google_site_verification
+  #   content: xxxxxx
+  # - name: baidu_site_verification
+  #   content: xxxxxxx
 ```
 
 ## 分析統計

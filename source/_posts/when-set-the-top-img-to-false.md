@@ -10,6 +10,7 @@ top_img: false
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/when-set-the-top-img-to-false.png
 abbrlink: c9711c19
 date: 2020-10-28 14:15:34
+comments: false
 ---
 
 當設置 top_img 為 false 時，不顯示頂部圖

@@ -14,6 +14,7 @@ abbrlink: 7670b080
 date: 2021-01-02 18:11:22
 top_img:
 copyright: false
+comments: false
 ---
 
 {% note blue 'fas fa-bullhorn' flat %}
@@ -43,3 +44,4 @@ copyright: false
 |Akilar|[平滑升级魔改后的Hexo主题](https://akilar.top/posts/bbf68ad4/)|
 |小冰博客|[小冰插件包 butterfly-orchid 1.0](https://zfe.space/post/hexo-butterfly-orchid.html)|
 |小嘉的部落格|[关于我 Butterfly 主题的所有美化](https://blog.imzjw.cn/posts/b74f504f/)|
+|唐先森の博客|[Hexo+Butterfly主题美化](https://ethant.top/articles/hexo541u/)|

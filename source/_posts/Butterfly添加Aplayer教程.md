@@ -13,6 +13,7 @@ keywords: 'hexo,butterfly,主題,doc,教程,文檔,Aplayer,Aplayer吸底,pjax'
 description: Butterfly添加全局吸底Aplayer教程
 top_img:
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-add-aplayer-cover.png
+comments: false
 ---
 
 {% note info %}

@@ -12,13 +12,14 @@ description: Butterfly安裝文檔-更新日誌
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-docs-07-cover.png
 abbrlink: 198a4240
 toc: false
+comments: false
 ---
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 03 月 30 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 05 月 11 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.7.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.1)
+ 🦋  Butterfly 已經更新到 [3.7.7](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.7)
 
 {% endnote %}
 
@@ -30,14 +31,93 @@ toc: false
 
 {% endnote %}
 
-{% note red 'fas fa-skull-crossbones' %}
+{% note orange 'fas fa-magic' %}
 
-如果有安裝這兩個插件的，請卸載掉，會導致主題報錯。 
-[hexo-inject](https://github.com/hexojs/hexo-inject) 和 [hexo-neat](https://github.com/rozbo/hexo-neat)
+你可以通過右下角的 **簡** 按鈕切換為簡體顯示 
 
 {% endnote %}
 
 ***
+
+{% hideToggle 3.7.7 (2021/05/11) %}
+## 3.7.7 (2021/05/11)
+
+### Improvement
+1. 適配新版 waline 夜間模式
+
+{% endhideToggle %}
+
+{% hideToggle 3.7.6 (2021/05/09) %}
+
+## 3.7.6 (2021/05/09)
+
+### Fix
+1. 修復標題/博客名有 ‘ 時，pjax 會報錯的 bug
+
+### Improvement
+1. css 調整
+
+{% endhideToggle %}
+
+{% hideToggle 3.7.5 (2021/05/05) %}
+
+## 3.7.5 (2021/05/05)
+
+### Breaking Change
+
+1. site_verification 優化，需自行配置
+
+   ```diff
+   -# Google Webmaster tools verification setting
+   -# See: https://www.google.com/webmasters/
+   -google_site_verification:
+   
+   -# Bing Webmaster tools verification setting
+   -# See: https://www.bing.com/webmaster/
+   -bing_site_verification:
+   
+   -# Baidu Webmaster tools verification setting
+   -# See: https://ziyuan.baidu.com/site/
+   -baidu_site_verification:
+   
+   -# 360 Webmaster tools verification setting
+   -# see http://zhanzhang.so.com/
+   -qihu_site_verification:
+   
+   -# Yandex Webmaster tools verification setting
+   -# see https://webmaster.yandex.com/
+   -yandex_site_verification:
+   
+   +site_verification:
+   ```
+
+2. lazyload 優化 (增加高斯模糊過度特效，增加配置 lazyload 範圍，佔位圖應用到全站)
+
+   ```diff
+   lazyload:
+     enable: false
+   -  post: /img/loading.gif
+   +  field: site # site/post
+   +  placeholder: /img/loading.gif
+   +  blur: false
+   ```
+
+### Feature
+
+1. 增加 tags 標簽外掛 - label
+
+### Fix
+
+1. 修復開啟anchor後，文章頁跳轉回主頁，主頁網址的hash添加上文章頁最後一個標題的 bug
+2. 修復開啟anchor後,瀏覽器上一頁/下一頁 跳轉會 404 的bug (文章頁的url hash 在pjax下變成 undefined)
+3. 修復 lazyload 報 undefined 的 bug close #532
+
+### Improvement
+
+1. 優化 pjax 下 404 頁面
+2. 優化 button tags 標簽外掛
+
+{% endhideToggle %}
 
 {% hideToggle 3.7.1 (2021/03/30) %}
 
@@ -1017,25 +1097,25 @@ toc: false
    disqus:
    -  enable: false
    -  count: false # dispaly comment count in top_img
-
+   
    disqusjs:
    -  enable: false
    -  count: false # dispaly comment count in top_img
-
+   
    livere:
    -  enable: false
-
+   
    gitalk:
    -  enable: false
    -  count: false # dispaly comment count in top_img
-
+   
    valine:
    -  enable: false # if you want use valine,please set this value is true
    -  count: false # dispaly comment count in top_img
-
+   
    utterances:
    -  enable: false
-
+   
    facebook_comments:
    -  enable: false
    -  count: false

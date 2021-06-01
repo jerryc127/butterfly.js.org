@@ -10,6 +10,7 @@ date: 2018-07-24 23:31:06
 mathjax: true
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Markdown-Style-test-cover.png
 keywords: 'hexo,butterfly,主題,doc,教程,文檔,Markdown'
+comments: false
 ---
 
 This post is originated from [here](https://gist.github.com/apackeer/4159268) and is used for testing markdown style. This post contains nearly every markdown usage. Make sure all the markdown elements below show up correctly.
