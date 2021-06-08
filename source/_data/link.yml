@@ -1,5 +1,5 @@
 # 1. 確保你使用 Butterfly 主題
-# 2. Fork [butterfly.js.org 倉庫](https://github.com/jerryc127/butterfly.js.org)
+# 2. 確保你的網站是 https
 # 3. 修改 source/_data/link.yml
 # 4. 按要求新增內容
 #     - name: 博客名
@@ -65,7 +65,7 @@
       descr: 期待您的光临！
     - name: 小嘉的部落格
       link: https://blog.imzjw.cn/
-      avatar: https://cdn.jsdelivr.net/gh/zjwo/CDN/img/blog/avatar.jpg
+      avatar: //cdn.jsdelivr.net/npm/nanshen/avatar.jpg
       descr: 好记性不如烂笔头
     - name: Aymeticの小窝
       link: https://aymetic.com
@@ -75,10 +75,6 @@
       link: https://blog.zhheo.com/
       avatar: https://blog.zhheo.com/img/avatar.png
       descr: 爱折腾的设计师 
-    - name: 零域
-      link: https://0skyu.cn
-      avatar: https://0skyu.cn/img/1.jpg
-      descr: 一枚技术控的博客
     - name: BARAN的小站🔥🔥🔥
       link: https://cxvh.com
       avatar: https://cdn.jsdelivr.net/gh/cxvh/static@main/avatar/avatar.jpg
