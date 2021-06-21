@@ -39,8 +39,7 @@ comments: false
 
 ***
 
-`hexo-theme-butterfly`是基於 [Molunerfinn](https://github.com/Molunerfinn) 的 [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody) 的基礎上進行開發的。
-文檔也是在[hexo-theme-melody](https://molunerfinn.com/hexo-theme-melody-doc/)的文檔基礎上修改。因為一些配置變更導致與原主題配置上有部分區別。故如果安裝`hexo-theme-butterfly`主題，請參考這篇文檔。
+`hexo-theme-butterfly`是基於 [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody) 的基礎上進行開發的。
 
 ## 安裝
 
@@ -50,7 +49,7 @@ comments: false
 
 **穩定版【建議】**
 
-在你的博客根目錄裏
+在你的 Hexo 根目錄裏
 
 ```powershell
 git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
@@ -80,7 +79,7 @@ git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/bu
 
 **穩定版【建議】**
 
-在你的博客根目錄裏
+在你的 Hexo 根目錄裏
 
 ```powershell
 git clone -b master https://gitee.com/iamjerryw/hexo-theme-butterfly.git themes/butterfly
@@ -112,21 +111,17 @@ git clone -b dev https://gitee.com/iamjerryw/hexo-theme-butterfly.git themes/but
 >
 > ***通過 npm 安裝並不會在 themes 裏生成主題文件夾，而是在 node_modules 裏生成***
 
-在你的博客根目錄裏
+在你的 Hexo 根目錄裏
 
 ```powershell
 npm i hexo-theme-butterfly
 ```
 
-
-
 {% note info %}
 
-升級方法：在博客根目錄下，運行 `npm update hexo-theme-butterfly`
+升級方法：在 Hexo 根目錄下，運行 `npm update hexo-theme-butterfly`
 
 {% endnote %}
-
-
 
 <!-- endtab -->
 
@@ -134,7 +129,7 @@ npm i hexo-theme-butterfly
 
 ## 應用主題
 
-修改站點配置文件`_config.yml`，把主題改為`butterfly`
+修改 Hexo 根目錄下的 `_config.yml`，把主題改為`butterfly`
 
 ```yaml
 theme: butterfly
@@ -168,7 +163,7 @@ npm install hexo-renderer-pug hexo-renderer-stylus --save
 >
 > 如果已經在 `source/_data/` 創建了 `butterfly.yml`，請記得**刪除**掉。
 
-把主題文件夾中的 `_config.yml` 複製到 Hexo 根目錄裏，同時重新命名為 `_config.butterfly.yml`。
+在 hexo 的根目錄創建一個文件 `_config.butterfly.yml`，並把主題目錄的 `_config.yml` **内容**複製到 `_config.butterfly.yml` 去。
 
 以後只需要在 `_config.butterfly.yml`進行配置就行。
 

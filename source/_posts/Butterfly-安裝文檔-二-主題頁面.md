@@ -41,7 +41,10 @@ comments: false
 
 ## Front-matter
 
-Front-matter 是檔案最上方以 `---` 分隔的區域，用於指定個別檔案的變數。
+**Front-matter 是 markdown 文件最上方以 `---` 分隔的區域，用於指定個別檔案的變數。**
+
+- Page Front-matter 用於`頁面`配置
+- Post Front-matter 用於`文章頁`配置
 
 {% note info %}
 
