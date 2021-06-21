@@ -17,9 +17,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 05 月 11 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 06 月 05 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.7.7](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.7)
+ 🦋  Butterfly 已經更新到 [3.7.8](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.8)
 
 {% endnote %}
 
@@ -39,7 +39,24 @@ comments: false
 
 ***
 
+{% hideToggle 3.7.8 (2021/06/05) %}
+
+## 3.7.8 (2021/06/05)
+
+### Breaking Change
+
+1. 移除 waline 的 emojiCDN 和 emojiMaps 配置
+
+### Fix
+
+1. 修復 升級到 waline 1.x 而出現的 bug
+
+   
+
+{% endhideToggle %}
+
 {% hideToggle 3.7.7 (2021/05/11) %}
+
 ## 3.7.7 (2021/05/11)
 
 ### Improvement

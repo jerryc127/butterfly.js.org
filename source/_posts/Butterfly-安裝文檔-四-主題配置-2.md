@@ -16,9 +16,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 05 月 11 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 06 月 05 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.7.7](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.7)
+ 🦋  Butterfly 已經更新到 [3.7.8](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.8)
 
 {% endnote %}
 
@@ -263,10 +263,17 @@ waline:
   serverURL:  # Waline server address url
   avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
   bg: /img/comment_bg.png # waline background
-  emojiCDN: # emoji CDN
   visitor: false
   option:
 ```
+
+由於 waline 將會逐步去掉 `emojiCDN` 和 `emojiMaps`, 舊的添加表情方法已被棄用（從 3.7.8 開始）
+
+請參看 waline 的[添加表情文檔](https://waline.js.org/guide/client/emoji.html)進行配置
+
+
+
+{% hideToggle 以下添加表情方法已被棄用 %}
 
 如果你需要自定義表情，請在`emojiCDN`配置表情CDN。
 
@@ -300,6 +307,8 @@ waline:
 } 
 
 ```
+
+{% endhideToggle %}
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
 
