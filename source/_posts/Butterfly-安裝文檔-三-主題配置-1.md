@@ -1108,31 +1108,31 @@ danger 提示塊標籤
 {% endnote %}
 ```
 
-{% note %}
+{% note simple %}
 默認 提示塊標籤
 {% endnote %}
 
-{% note default %}
+{% note default simple %}
 default 提示塊標籤
 {% endnote %}
 
-{% note primary %}
+{% note primary simple %}
 primary 提示塊標籤
 {% endnote %}
 
-{% note success %}
+{% note success simple %}
 success 提示塊標籤
 {% endnote %}
 
-{% note info %}
+{% note info simple %}
 info 提示塊標籤
 {% endnote %}
 
-{% note warning %}
+{% note warning simple %}
 warning 提示塊標籤
 {% endnote %}
 
-{% note danger %}
+{% note danger simple %}
 danger 提示塊標籤
 {% endnote %}
 
