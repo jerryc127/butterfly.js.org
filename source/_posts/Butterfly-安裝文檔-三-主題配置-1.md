@@ -969,7 +969,7 @@ runtimeshow:
 
 最新評論只會在刷新時才會去讀取，並不會實時變化
 
-由於 API 有 訪問次數限制，為了避免調用太多，主題默認存取期限為 10 分鐘。也就是説，調用後資料會存在 *localStorage* 裏，10分鐘內刷新網站只會去 *localStorage* 讀取資料。10分鐘期限一過，刷新頁面時才會去調取 API 讀取新的數據。（ 3.6.0 新增了 `storage` 配置，可自行配置緩存時間）
+由於 API 有 訪問次數限制，為了避免調用太多，主題默認存取期限為 10 分鐘。也就是説，調用後資料會存在 *localStorage* 裏，10分鐘內刷新網站只會去 *localStorage* 讀取資料。 10 分鐘期限一過，刷新頁面時才會去調取 API 讀取新的數據。（ 3.6.0 新增了 `storage` 配置，可自行配置緩存時間）
 
 {% endnote %}
 
@@ -987,17 +987,6 @@ newest_comments:
   limit: 6
   storage: 10 # unit: mins, save data to localStorage
   avatar: true
-  # You can only choose one, or neither
-  valine: true
-  github_issues:
-    enable: false
-    repo:
-  disqus:
-    enable: false
-    forum:
-    api_key:
-  twikoo: false
-  waline: false
 ```
 
 部分配置解釋：
@@ -1007,14 +996,14 @@ newest_comments:
 | limit                | 顯示的數量                                           |
 | storage              | 設置緩存時間，單位 分鐘                              |
 | avatar               | 是否顯示頭像                                         |
-| github_issues - repo | 評論存在的倉庫，例如 `jerryc127/jerryc127.github.io` |
-| disqus - forum       | 等同於 disqusjs 的 shortname                         |
-| disqus -  api_key    | 等同於 disqusjs 的  apikey                           |
 
 > Demo
 
 ![image-20200830223037320](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-newest-comments.png)
 
+### 自定義添加欄目
+
+{% btn '/posts/ea33ab97/','點擊前往',fas fa-lightbulb,block green %}
 ## 標籤外掛（Tag Plugins）
 
 {% note info %}

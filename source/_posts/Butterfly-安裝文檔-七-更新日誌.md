@@ -17,9 +17,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 06 月 05 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 07 月 04 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.7.8](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.7.8)
+ 🦋  Butterfly 已經更新到 [3.8.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.8.0)
 
 {% endnote %}
 
@@ -38,6 +38,74 @@ comments: false
 {% endnote %}
 
 ***
+
+{% hideToggle 3.8.0 (2021/07/04) %}
+
+## 3.8.0 (2021/07/04)
+
+### Breaking Change
+
+1. archives 的 標題 在 menu 配置中獲取
+
+2. 移除最新評論的評論服務商選擇，默認為配置的第一個評論服務商
+
+   ```diff
+   newest_comments:
+     enable: false
+     sort_order: # Don't modify the setting unless you know how it works
+     limit: 6
+     storage: 10 # unit: mins, save data to localStorage
+     avatar: true
+   -  # You can only choose one, or neither
+   -  valine: false
+   -  github_issues:
+   -    enable: false
+   -    repo:
+   -  disqus:
+   -    enable: false
+   -    forum:
+   -    api_key:
+   -  twikoo: false
+   -  waline: false
+   ```
+
+3. widget 寫法更改/可添加非 sticky 區域 widget
+
+### Feature
+
+1. 修改最新評論 icon
+
+2. waline 顔色適配主題色
+
+3. 增加 waline avatarCDN 配置（最新評論也會更新）
+
+   ```diff
+   waline:
+   	...
+   +	avatarCDN： # Gravatar CDN baseURL
+   ```
+
+4. 升級 facebook comment js 到 v10
+
+### Fix
+
+1. 修復友情鏈接和aside 頭像在 lazyload blur下的顯示 bug
+2. 修復設置 highlight_shrink: true 後，部分代碼框依舊展開的 bug #602
+3. 修復 mathjax 在列表下，導致 列表沒有樣式的 bug  #586
+4. 修復文章頁 mathjax 因字體小導致顯示重疊的 bug #587
+5. 修復當內容過少時，footer 沒有底部靠攏的 bug
+
+### Improvement
+
+1. UI 優化
+2. waline 字體大小，頭像特效調整
+3. pjax 優化
+4. 減少卡頓，apple 裝置首頁背景 background-attachment 設為 scroll
+5. 404 頁面不再顯示 rightside
+
+{% endhideToggle %}
+
+
 
 {% hideToggle 3.7.8 (2021/06/05) %}
 

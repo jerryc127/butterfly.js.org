@@ -202,7 +202,7 @@ wordcount:
 
 # Display the article introduction on homepage
 # 1: description
-# 2: both (if the description exists, it will show description. or show the auto_excerpt)
+# 2: both (if the description exists, it will show description, or show the auto_excerpt)
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
@@ -238,6 +238,14 @@ reward:
       link:
       text: 支付寶香港
 
+# Post edit
+# Easily browse and edit blog source code online.
+post_edit:
+  enable: true
+  # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
+  # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
+  url: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
+
 # Related Articles
 related_post:
   enable: true
@@ -246,6 +254,13 @@ related_post:
 
 # figcaption (圖片描述文字)
 photofigcaption: false
+
+# post_pagination (分頁)
+# value: 1 || 2 || false
+# 1: The 'next post' will link to old post
+# 2: The 'next post' will link to new post
+# false: disable pagination
+post_pagination: 1
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
@@ -259,21 +274,6 @@ noticeOutdate:
   position: top # position: top/bottom
   message_prev: 距離上次更新已經過了
   message_next: 天，文章所描述的內容可能已經發生變化，請留意。
-
-# post_pagination (分頁)
-# value: 1 || 2 || false
-# 1: The 'next post' will link to old post
-# 2: The 'next post' will link to new post
-# false: disable pagination
-post_pagination: 2
-
-# Post edit
-# Easily browse and edit blog source code online.
-post_edit:
-  enable: true
-  # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
-  # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
 
 # Share System (分享功能)
 # --------------------------------------
@@ -301,13 +301,13 @@ addtoany:
 
 comments:
   # Up to two comments system, the first will be shown as default
-  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Utterances/Facebook Comments/Twikoo
+  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
   use:
     - Waline
     - Disqusjs
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
-  # If you set it to false, the comment count will be invalid
+  # If you set it to true, the comment count will be invalid
   lazyload: true
   count: true # Display comment count in top_img
   card_post_count: true # Display comment count in Home Page
@@ -316,6 +316,7 @@ comments:
 # https://disqus.com/
 disqus:
   shortname: demo-jerryc-me
+  apikey: # For newest comments widget
 
 # Alternative Disqus - Render comments with Disqus API
 # DisqusJS 評論系統，可以實現在網路審查地區載入 Disqus 評論列表，兼容原版
@@ -374,7 +375,7 @@ valine:
 waline:
   serverURL: https://butterfly-waline.vercel.app # Waline server address url
   avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
-  emojiCDN: # emoji CDN
+  avatarCDN: # Gravatar CDN baseURL  
   bg: /img/comment_bg.png # waline background
   visitor: false
   option:
@@ -471,8 +472,8 @@ baidu_analytics:
 # https://analytics.google.com/analytics/web/
 google_analytics:
 
-# Tencent Analytics
-# https://mta.qq.com/
+# Tencent Analytics ID
+# https://mta.qq.com
 tencent_analytics:
 
 # CNZZ Analytics
@@ -504,7 +505,7 @@ ad:
   aside: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8919908724705274" data-ad-slot="8108145410" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
   post: <ins class="adsbygoogle" style="display:block " data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8919908724705274" data-ad-slot="5978969231"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 
-# Verification
+# Verification (站長驗證)
 # --------------------------------------
 
 site_verification:
@@ -751,16 +752,6 @@ newest_comments:
   limit: 6
   storage: 5 # unit: mins, save data to localStorage
   avatar: true
-  valine: false
-  github_issues:
-    enable: false
-    repo:
-  disqus:
-    enable: false
-    forum: demo-jerryc-me
-    api_key: nrSx8ZhuHvjwDeKauPZ3lMnyLb7iR92BT4wl4AlKG4eJl27jxXlzOeLQ9SJP1RDW
-  twikoo: false
-  waline: true
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
@@ -812,7 +803,7 @@ fancybox: true
 # --------------------------------------
 
 # mermaid
-# see https://github.com/knsv/mermaid
+# see https://github.com/mermaid-js/mermaid
 mermaid:
   enable: true
   # built-in themes: default/forest/dark/neutral
@@ -835,7 +826,7 @@ note:
 # other
 # --------------------------------------
 
-# Pjax [Beta]
+# Pjax
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
@@ -909,8 +900,8 @@ CDN:
   # main
   main_css: /css/index.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.8/source/js/main.min.js # /js/main.js
-  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.8/source/js/utils.min.js # /js/utils.js
+  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.0/source/js/main.min.js # /js/main.js
+  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.0/source/js/utils.min.js # /js/utils.js
 
   # pjax
   pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
@@ -931,8 +922,8 @@ CDN:
   sharejs_css: https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css
 
   # search
-  local_search: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.8/source/js/search/local-search.min.js # /js/search/local-search.js
-  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.8/source/js/search/algolia.min.js # /js/search/algolia.js
+  local_search: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.0/source/js/search/local-search.min.js # /js/search/local-search.js
+  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.0/source/js/search/algolia.min.js # /js/search/algolia.js
   algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
   algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
 
@@ -975,7 +966,7 @@ CDN:
   fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
   # Conversion between Traditional and Simplified Chinese
-  translate: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.7.8/source/js/tw_cn.min.js # /js/tw_cn.js
+  translate: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.0/source/js/tw_cn.min.js # /js/tw_cn.js
 
   # justifiedGallery
   justifiedGallery_js: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js
