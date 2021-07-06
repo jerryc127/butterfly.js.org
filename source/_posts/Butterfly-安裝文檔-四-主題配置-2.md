@@ -1277,23 +1277,26 @@ preloader: true
 
 2. `npm install hexo-offline --save` 或者 `yarn add hexo-offline`
 
-3. 修改`_config.yml` 在站點`_config.yml`中增加以下內容。
+3. 在根目錄創建 `hexo-offline.config.cjs` 文件，並增加以下內容。
 
-```yaml
-# offline config passed to sw-precache.
-offline:
-  maximumFileSizeToCacheInBytes: 10485760 # 緩存的最大文件大小，以字節為單位
-  staticFileGlobs:
-    - public/**/*.{js,html,css,png,jpg,gif,svg,webp,eot,ttf,woff,woff2}
-  # 靜態文件合集，如果你的站點使用了例如webp格式的文件，請將文件類型添加進去。
-  stripPrefix: public
-  verbose: true
-  runtimeCaching:
-    # CDNs - should be cacheFirst, since they should be used specific versions so should not change
-    - urlPattern: /* # 如果你需要加載CDN資源，請配置該選項，如果沒有，可以不配置。
-      handler: cacheFirst
-      options:
-        origin: your_websie_url # 可替換成你的 url
+```js
+// offline config passed to workbox-build.
+module.exports = {
+  globPatterns: ['**/*.{js,html,css,png,jpg,gif,svg,webp,eot,ttf,woff,woff2}'],
+  // 靜態文件合集，如果你的站點使用了例如 webp 格式的文件，請將文件類型添加進去。
+  globDirectory: 'public',
+  swDest: 'public/service-worker.js',
+  maximumFileSizeToCacheInBytes: 10485760, // 緩存的最大文件大小，以字節為單位。
+  skipWaiting: true,
+  clientsClaim: true,
+  runtimeCaching: [ // 如果你需要加載 CDN 資源，請配置該選項，如果沒有，可以不配置。
+    // CDNs - should be CacheFirst, since they should be used specific versions so should not change
+    {
+      urlPattern: /^https:\/\/cdn\.example\.com\/.*/, // 可替換成你的 URL
+      handler: 'CacheFirst'
+    }
+  ]
+}
 ```
 
 更多內容請查看 [hexo-offline](https://github.com/JLHwung/hexo-offline)的官方文檔
