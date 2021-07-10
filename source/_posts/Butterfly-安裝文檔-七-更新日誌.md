@@ -17,9 +17,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 07 月 04 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2021 年 07 月 10 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.8.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.8.0)
+ 🦋  Butterfly 已經更新到 [3.8.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.8.1)
 
 {% endnote %}
 
@@ -38,6 +38,19 @@ comments: false
 {% endnote %}
 
 ***
+
+{% hideToggle 3.8.1 (2021/07/10) %}
+
+## 3.8.1 (2021/07/10)
+### Fix
+1. 修復 inline mathjax 有滾動條的 bug
+2. 修復友情鏈接的頭像帶有 Medium Zoom 燈箱的 bug #607 
+3. 修復友情鏈接的頭像帶有 FancyBox 燈箱的 bug #607 
+
+### Dependencies
+1. update hexo-renderer-pug
+
+{% endhideToggle %}
 
 {% hideToggle 3.8.0 (2021/07/04) %}
 
