@@ -900,8 +900,8 @@ CDN:
   # main
   main_css: /css/index.css
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.0/source/js/main.min.js # /js/main.js
-  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.0/source/js/utils.min.js # /js/utils.js
+  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.1/source/js/main.min.js # /js/main.js
+  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.1/source/js/utils.min.js # /js/utils.js
 
   # pjax
   pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
@@ -922,8 +922,8 @@ CDN:
   sharejs_css: https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css
 
   # search
-  local_search: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.0/source/js/search/local-search.min.js # /js/search/local-search.js
-  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.0/source/js/search/algolia.min.js # /js/search/algolia.js
+  local_search: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.1/source/js/search/local-search.min.js # /js/search/local-search.js
+  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.1/source/js/search/algolia.min.js # /js/search/algolia.js
   algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
   algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
 
@@ -966,7 +966,7 @@ CDN:
   fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
   # Conversion between Traditional and Simplified Chinese
-  translate: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.0/source/js/tw_cn.min.js # /js/tw_cn.js
+  translate: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.1/source/js/tw_cn.min.js # /js/tw_cn.js
 
   # justifiedGallery
   justifiedGallery_js: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js
