@@ -891,6 +891,7 @@ css_prefix: true
 inject:
   head:
     - '<style type="text/css">.card-announcement .social-button{margin: .6rem 0 0 0; text-align: center;}.card-announcement .social-button a{display: block; margin: 0.2rem 0;background-color: var(--btn-bg); color: var(--btn-color); line-height: 1.6rem; transition: all .3s; position: relative; z-index: 1;}</style>'
+    - '<style> #body-wrap { height: 100vh !important}</style>'
   bottom:
 
 # CDN
