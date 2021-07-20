@@ -77,6 +77,7 @@ comments: false
 | n*l  | 1.68  |
 | M*.  | 38    |
 | R*n  | 1.68  |
+| W*u  | 4.91  |
 
 <!-- endtab -->
 
