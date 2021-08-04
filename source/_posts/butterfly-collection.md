@@ -45,3 +45,6 @@ comments: false
 |小冰博客|[小冰插件包 butterfly-orchid 1.0](https://zfe.space/post/hexo-butterfly-orchid.html)|
 |小嘉的部落格|[关于我 Butterfly 主题的所有美化](https://blog.imzjw.cn/posts/b74f504f/)|
 |唐先森の博客|[Hexo+Butterfly主题美化](https://ethant.top/articles/hexo541u/)|
+|guole's Blog|[Butterfly美化日记/页面美化/插件美化/踩坑经历](https://guole.fun/posts/butterfly-custom/)|
+|guole's Blog|[使用 Charts 插件给 Butterfly 增加统计图表](https://guole.fun/posts/18158/)|
+|guole's Blog|[使用 Hexo-tag-map 插件，给文章插入高德百度谷歌地图](https://guole.fun/posts/41887/)|
