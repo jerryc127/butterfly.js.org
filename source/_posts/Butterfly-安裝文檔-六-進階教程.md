@@ -207,7 +207,7 @@ const htmlmin = require('gulp-html-minifier-terser')
 const htmlclean = require('gulp-htmlclean')
 const imagemin = require('gulp-imagemin')
 // gulp-tester (如果使用 gulp-tester,把下面的//去掉)
-// const terser = require('gulp-terser');
+//const terser = require('gulp-terser');
 
 // babel (如果不是使用bebel,把下面兩行註釋掉)
 const uglify = require('gulp-uglify')
@@ -226,10 +226,10 @@ gulp.task('compress', () =>
 )
 
 // minify js - gulp-tester (如果使用 gulp-tester,把下面前面的//去掉)
-// gulp.task('compress', () =>
-//   gulp.src(['./public/**/*.js', '!./public/**/*.min.js'])
-//     .pipe(terser())
-//     .pipe(gulp.dest('./public'))
+//gulp.task('compress', () =>
+//  gulp.src(['./public/**/*.js', '!./public/**/*.min.js'])
+//    .pipe(terser())
+//    .pipe(gulp.dest('./public'))
 // )
 
 
@@ -630,7 +630,7 @@ const htmlmin = require('gulp-html-minifier-terser')
 const htmlclean = require('gulp-htmlclean')
 const imagemin = require('gulp-imagemin')
 const workbox = require("workbox-build");
-// gulp-tester (如果使用 gulp-tester,把下面的//去掉)
+// gulp-tester (如果使用 gulp-terser,把下面的//去掉)
 // const terser = require('gulp-terser');
 
 // babel
