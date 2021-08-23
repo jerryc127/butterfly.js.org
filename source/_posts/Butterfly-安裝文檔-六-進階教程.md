@@ -190,7 +190,7 @@ npm install --save-dev gulp-babel @babel/core @babel/preset-env
 
 #### 壓縮圖片
 
-可以使用[gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin)來壓縮圖片
+可以使用 [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin) 來壓縮圖片（ 使用 gulp-imagemin **v8** 以下的版本 ）
 
 ```powershell
 npm install --save-dev gulp-imagemin
