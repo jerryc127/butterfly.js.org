@@ -82,7 +82,7 @@ git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/bu
 在你的 Hexo 根目錄裏
 
 ```powershell
-git clone -b master https://gitee.com/iamjerryw/hexo-theme-butterfly.git themes/butterfly
+git clone -b master https://gitee.com/immyw/hexo-theme-butterfly.git themes/butterfly
 ```
 
 **測試版**
@@ -92,7 +92,7 @@ git clone -b master https://gitee.com/iamjerryw/hexo-theme-butterfly.git themes/
 如果想要安裝比較新的dev分支，可以
 
 ```powershell
-git clone -b dev https://gitee.com/iamjerryw/hexo-theme-butterfly.git themes/butterfly
+git clone -b dev https://gitee.com/immyw/hexo-theme-butterfly.git themes/butterfly
 ```
 
 {% note info %}
