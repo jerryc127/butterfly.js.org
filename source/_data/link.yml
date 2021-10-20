@@ -178,8 +178,7 @@
     - name: Throwable
       link: https://www.throwx.cn
       avatar: https://throwable-blog-1256189093.cos.ap-guangzhou.myqcloud.com/mine/doge_avatar.jpg
-      descr: Java后端开发、基础架构、并发编程
-      descr: 少想, 多练！   
+      descr: Java后端开发、基础架构、并发编程   
     - name: lijinhao's blog
       link: https://leekinghou-github-io.vercel.app/
       avatar: https://files.catbox.moe/6g3wus.png
