@@ -163,7 +163,7 @@ npm install hexo-renderer-pug hexo-renderer-stylus --save
 >
 > 如果已經在 `source/_data/` 創建了 `butterfly.yml`，請記得**刪除**掉。
 
-在 hexo 的根目錄創建一個文件 `_config.butterfly.yml`，並把主題目錄的 `_config.yml` **内容**複製到 `_config.butterfly.yml` 去。
+在 hexo 的根目錄創建一個文件 `_config.butterfly.yml`，並把**主題**目錄的 `_config.yml` **內容**複製到 `_config.butterfly.yml` 去。( **注意: 複製的是主題的 `_config.yml` ,而不是 hexo 的 `_config.yml`**)
 
 > **注意：** 不要把主題目錄的 `_config.yml` 刪掉
 
