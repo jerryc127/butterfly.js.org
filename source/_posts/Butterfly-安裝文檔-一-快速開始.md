@@ -167,7 +167,8 @@ npm install hexo-renderer-pug hexo-renderer-stylus --save
 
 > **注意：** 不要把主題目錄的 `_config.yml` 刪掉
 
-以後只需要在 `_config.butterfly.yml`進行配置就行。
+> **注意：** 以後只需要在 `_config.butterfly.yml`進行配置就行。
+> 如果使用了 `_config.butterfly.yml`， 配置主題的 `_config.yml` 將不會有效果。
 
 Hexo會自動**合併**主題中的`_config.yml`和 `_config.butterfly.yml`裏的配置，如果存在同名配置，會使用`_config.butterfly.yml`的配置，其優先度較高。
 
