@@ -12,8 +12,8 @@
   class_desc: '<span style="font-style: italic;">重要的事情説一遍</span>'
   link_list:
     - name: MYW
-      link: https://immyw.com/
-      avatar: https://immyw.com/img/avatar.png
+      link: https://crazywong.com/
+      avatar: https://crazywong.com/img/avatar.png
       descr: 今日事,今日畢
     - name: Hexo
       link: https://hexo.io/zh-tw/

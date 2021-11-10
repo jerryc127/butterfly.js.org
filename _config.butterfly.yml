@@ -72,7 +72,7 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fas fa-envelope: mailto:i@immyw.com || Email
+  fas fa-envelope: mailto:my@crazywong.com || Email
   fas fa-rss: /atom.xml || RSS
 
 # search (搜索)
