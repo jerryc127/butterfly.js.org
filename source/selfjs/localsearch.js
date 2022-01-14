@@ -1,10 +1,12 @@
 window.addEventListener('load', () => {
   let loadFlag = false
-  const openSearch = function () {
-    document.body.style.cssText = 'width: 100%;overflow: hidden'
-    document.querySelector('#local-search .search-dialog').style.display = 'block'
-    document.querySelector('#local-search-input input').focus()
-    btf.fadeIn(document.getElementById('search-mask'), 0.5)
+  const openSearch = () => {
+    const bodyStyle = document.body.style
+    bodyStyle.width = '100%'
+    bodyStyle.overflow = 'hidden'
+    btf.animateIn(document.getElementById('search-mask'), 'to_show 0.5s')
+    btf.animateIn(document.querySelector('#local-search .search-dialog'), 'titleScale 0.5s')
+    setTimeout(() => { document.querySelector('#local-search-input input').focus() }, 100)
     if (!loadFlag) {
       search(GLOBAL_CONFIG.localSearch.path)
       loadFlag = true
@@ -18,12 +20,12 @@ window.addEventListener('load', () => {
     })
   }
 
-  const closeSearch = function () {
-    document.body.style.cssText = "width: '';overflow: ''"
-    const $searchDialog = document.querySelector('#local-search .search-dialog')
-    $searchDialog.style.animation = 'search_close .5s'
-    setTimeout(() => { $searchDialog.style.cssText = "display: none; animation: ''" }, 500)
-    btf.fadeOut(document.getElementById('search-mask'), 0.5)
+  const closeSearch = () => {
+    const bodyStyle = document.body.style
+    bodyStyle.width = ''
+    bodyStyle.overflow = ''
+    btf.animateOut(document.querySelector('#local-search .search-dialog'), 'search_close .5s')
+    btf.animateOut(document.getElementById('search-mask'), 'to_hide 0.5s')
   }
 
   // click function
@@ -59,22 +61,31 @@ window.addEventListener('load', () => {
         }
       })
     }
+    if (response.ok) {
+      const $loadDataItem = document.getElementById('loading-database')
+      $loadDataItem.nextElementSibling.style.display = 'block'
+      $loadDataItem.remove()
+    }
+
     const $input = document.querySelector('#local-search-input input')
     const $resultContent = document.getElementById('local-search-results')
+    const $loadingStatus = document.getElementById('loading-status')
     $input.addEventListener('input', function () {
-      let str = '<div class="search-result-list">'
       const keywords = Traditionalized(this.value).trim().toLowerCase().split(/[\s]+/)
+      if (keywords[0] !== '') $loadingStatus.innerHTML = '<i class="fas fa-spinner fa-pulse"></i>'
+
       $resultContent.innerHTML = ''
+      let str = '<div class="search-result-list">'
       if (this.value.trim().length <= 0) return
       let count = 0
       // perform local searching
       datas.forEach(function (data) {
         let isMatch = true
         if (!data.title || data.title.trim() === '') {
-          data.title = 'Untitled'
+          data.title = ''
         }
         let dataTitle = data.title.trim().toLowerCase()
-        const dataContent = data.content.trim().replace(/<[^>]+>/g, '').toLowerCase()
+        const dataContent = data.content ? data.content.trim().replace(/<[^>]+>/g, '').toLowerCase() : ''
         const dataUrl = data.url.startsWith('/') ? data.url : GLOBAL_CONFIG.root + data.url
         let indexTitle = -1
         let indexContent = -1
@@ -146,6 +157,7 @@ window.addEventListener('load', () => {
       }
       str += '</div>'
       $resultContent.innerHTML = str
+      if (keywords[0] !== '') $loadingStatus.innerHTML = ''
       window.pjax && window.pjax.refresh($resultContent)
     })
   }

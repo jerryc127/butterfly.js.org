@@ -195,4 +195,16 @@ marked:
 server:
   port: 3127
 
-cn_tw_move: true
+# Artitalk
+# see https://artitalk.js.org/
+artitalk:
+  enable: true
+  appId: f2OAz3uUxl0Dr048MqPBUYLn-MdYXbMMI
+  appKey: Hay8CrEoQcBTO5bn2FS1FWx7
+  path: talking
+  js:
+  option:
+  front_matter:
+    title: 自言自語
+    comments: false
+    top_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-demo-talking-top-img.jpg

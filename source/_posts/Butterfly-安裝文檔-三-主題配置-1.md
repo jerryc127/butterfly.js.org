@@ -16,9 +16,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 02 月 04 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2022 年 01 月 15 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.6.2](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.6.2)
+ 🦋  Butterfly 已經更新到 [4.0.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.0.0)
 
 {% endnote %}
 
@@ -74,7 +74,15 @@ comments: false
 
 必須是 `/xxx/`，後面`||`分開，然後寫圖標名。
 
-如果不希望顯示圖標，圖標名可不寫
+如果不希望顯示圖標，圖標名可不寫。
+
+默認子目錄是展開的，如果你想要隱藏，在子目錄裏添加 `hide` 。
+
+```yaml
+  List||fas fa-list||hide:
+    Music: /music/ || fas fa-music
+    Movie: /movies/ || fas fa-video
+```
 
 **注意：** 導航的文字可自行更改
 
@@ -527,7 +535,7 @@ copyright_info: 此文章版權歸xxxxx所有，如有轉載，請註明來自�
 
 在你每篇文章的結尾，可以添加打賞按鈕。相關二維碼可以自行配置。
 
-對於沒有提供二維碼的，可配置一張軟件的icon圖片，然後在link上添加相應的打賞鏈接。用户點擊圖片就會跳轉到鏈接去。
+對於沒有提供二維碼的，可配置一張軟件的icon圖片，然後在link上添加相應的打賞鏈接。用戶點擊圖片就會跳轉到鏈接去。
 
 link可以不寫，會默認為圖片的鏈接。
 
@@ -555,16 +563,20 @@ reward:
 
 ```yaml
 toc:
-  enable: true
+  post: true
+  page: false
   number: true
-  style_simple: true
+  expand: false
+  style_simple: false # for post
 ```
 
-| 屬性         | 解釋                            |
-| ------------ | ------------------------------- |
-| enable       | 是否顯示TOC                     |
-| number       | 是否顯示章節數                  |
-| style_simple | 簡潔模式（側邊欄**只**顯示TOC） |
+| 屬性         | 解釋                                              |
+| ------------ | ------------------------------------------------- |
+| post         | 文章頁是否顯示 TOC                                |
+| page         | 普通頁面是否顯示 TOC                              |
+| number       | 是否顯示章節數                                    |
+| expand       | 是否展開 TOC                                      |
+| style_simple | 簡潔模式（側邊欄**只**顯示 TOC, 只對文章頁有效 ） |
 
 > Toc PC
 
@@ -695,6 +707,8 @@ avatar:
 ## 圖片描述
 
 可開啟圖片Figcaption描述文字顯示
+
+優先顯示圖片的 title 屬性，然後是 alt 屬性
 
 修改 `主題配置文件`
 
@@ -846,16 +860,19 @@ readmode: true
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-read-mode.png)
 
-### 字體大小
-
-可以改變字體大小（最小隻能到 10px，最大隻能到 20px）
-
-修改 `主題配置文件`
+### 按鈕排序
 
 ```yaml
-# Change font size
-change_font_size: true
+# Don't modify the following settings unless you know how they work (非必要請不要修改 )
+# Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
+# Don't repeat 不要重複
+rightside_item_order:
+  enable: false
+  hide: # readmode,translate,darkmode,hideAside
+  show: # toc,chat,comment
 ```
+
+注意： 不要重複
 
 ## 側邊欄設置
 
@@ -1715,7 +1732,7 @@ markdown 圖片格式
 
 {% endnote %}
 
-如果你想把一些文字、內容隱藏起來，並提供按鈕讓用户點擊顯示。可以使用這個標籤外掛。
+如果你想把一些文字、內容隱藏起來，並提供按鈕讓用戶點擊顯示。可以使用這個標籤外掛。
 
 {% tabs tag-hide %}
 <!-- tab Inline -->
@@ -1823,25 +1840,21 @@ git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/Bu
 <!-- endtab -->
 {% endtabs %}
 
-
 ### mermaid
-
-{% note warning %}
-mermaid標籤不允許嵌套於一些隱藏屬性的標籤外掛，例如: tag-hide內的標籤外掛和tabs標籤外掛，這會導致mermaid圖示無法正常顯示，使用時請留意。
-
-**請不要壓縮html代碼，不然會導致mermaid顯示異常**
-
-{% endnote %}
 
 使用mermaid標籤可以繪製Flowchart（流程圖）、Sequence diagram（時序圖 ）、Class Diagram（類別圖）、State Diagram（狀態圖）、Gantt（甘特圖）和Pie Chart（圓形圖），具體可以查看[mermaid文檔](https://mermaid-js.github.io/mermaid/#/)
 
 修改 `主題配置文件`
 
 ```yaml
+# mermaid
+# see https://github.com/mermaid-js/mermaid
 mermaid:
   enable: true
   # built-in themes: default/forest/dark/neutral
-  theme: default
+  theme:
+    light: default
+    dark: dark
 ```
 
 寫法：
@@ -2168,6 +2181,126 @@ This is my website, click the button {% btn 'https://butterfly.js.org/',Butterfl
 臣亮言：{% label 先帝 %}創業未半，而{% label 中道崩殂 blue %}。今天下三分，{% label 益州疲敝 pink %}，此誠{% label 危急存亡之秋 red %}也！然侍衞之臣，不懈於內；{% label 忠志之士 purple %}，忘身於外者，蓋追先帝之殊遇，欲報之於陛下也。誠宜開張聖聽，以光先帝遺德，恢弘志士之氣；不宜妄自菲薄，引喻失義，以塞忠諫之路也。
 
 宮中、府中，俱為一體；陟罰臧否，不宜異同。若有{% label 作奸 orange %}、{% label 犯科 green %}，及為忠善者，宜付有司，論其刑賞，以昭陛下平明之治；不宜偏私，使內外異法也。
+
+### timeline
+
+> 4.0.0 以上支持
+
+```markdown
+{% timeline title,color %}
+<!-- timeline title -->
+xxxxx
+<!-- endtimeline -->
+<!-- timeline title -->
+xxxxx
+<!-- endtimeline -->
+{% endtimeline %}
+```
+
+| 參數  | 解釋                                                         |
+| ----- | ------------------------------------------------------------ |
+| title | 標題/時間線                                                  |
+| color | timeline 顏色<br />default(留空) / blue / pink / red / purple / orange / green |
+
+> Demo
+
+```markdown
+{% timeline 2022 %}
+<!-- timeline 01-02 -->
+這是測試頁面
+<!-- endtimeline -->
+{% endtimeline %}
+```
+
+{% timeline 2022 %}
+<!-- timeline 01-02 -->
+這是測試頁面
+<!-- endtimeline -->
+{% endtimeline %}
+
+```markdown
+{% timeline 2022,blue %}
+<!-- timeline 01-02 -->
+這是測試頁面
+<!-- endtimeline -->
+{% endtimeline %}
+```
+
+{% timeline 2022,blue %}
+<!-- timeline 01-02 -->
+這是測試頁面
+<!-- endtimeline -->
+{% endtimeline %}
+
+```markdown
+{% timeline 2022,pink %}
+<!-- timeline 01-02 -->
+這是測試頁面
+<!-- endtimeline -->
+{% endtimeline %}
+```
+
+{% timeline 2022,pink %}
+<!-- timeline 01-02 -->
+這是測試頁面
+<!-- endtimeline -->
+{% endtimeline %}
+
+```markdown
+{% timeline 2022,red %}
+<!-- timeline 01-02 -->
+這是測試頁面
+<!-- endtimeline -->
+{% endtimeline %}
+```
+
+{% timeline 2022,red %}
+<!-- timeline 01-02 -->
+這是測試頁面
+<!-- endtimeline -->
+{% endtimeline %}
+
+```markdown
+{% timeline 2022,purple %}
+<!-- timeline 01-02 -->
+這是測試頁面
+<!-- endtimeline -->
+{% endtimeline %}
+```
+
+{% timeline 2022,purple %}
+<!-- timeline 01-02 -->
+這是測試頁面
+<!-- endtimeline -->
+{% endtimeline %}
+
+```markdown
+{% timeline 2022,orange %}
+<!-- timeline 01-02 -->
+這是測試頁面
+<!-- endtimeline -->
+{% endtimeline %}
+```
+
+{% timeline 2022,orange %}
+<!-- timeline 01-02 -->
+這是測試頁面
+<!-- endtimeline -->
+{% endtimeline %}
+
+```markdown
+{% timeline 2022,green %}
+<!-- timeline 01-02 -->
+這是測試頁面
+<!-- endtimeline -->
+{% endtimeline %}
+```
+
+{% timeline 2022,green %}
+<!-- timeline 01-02 -->
+這是測試頁面
+<!-- endtimeline -->
+{% endtimeline %}
 
 
 

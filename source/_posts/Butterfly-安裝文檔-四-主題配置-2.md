@@ -16,9 +16,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 09 月 18 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2022 年 01 月 15 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.8.4](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.8.4)
+ 🦋  Butterfly 已經更新到 [4.0.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.0.0)
 
 {% endnote %}
 
@@ -48,12 +48,11 @@ comments: false
 
 支持雙評論顯示，只需要配置兩個評論（第一個為默認顯示）
 
-```markdown
+```yaml
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
-  use:
-    - Valine
+  use: Valine,Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -64,11 +63,11 @@ comments:
 
 | 參數            | 解釋                                                         |
 | --------------- | ------------------------------------------------------------ |
-| use             | 使用的評論（請注意，填寫的評論首字母需要大寫。最多支持兩個，如果不需要請留空）<br>*注意：雙評論不能是 Disqus 和 Disqusjs 一起，由於其共用同一個 ID，會出錯* |
+| use             | 使用的評論（請注意，最多支持兩個，如果不需要請留空）<br>*注意：雙評論不能是 Disqus 和 Disqusjs 一起，由於其共用同一個 ID，會出錯* |
 | text            | 是否顯示評論服務商的名字                                     |
 | lazyload        | 是否為評論開啟lazyload，開啟後，只有滾動到評論位置時才會加載評論所需要的資源（開啟lazyload後，評論數將不顯示） |
-| count           | 是否在文章頂部顯示評論數 <br/> livere 和 utterances 不支持評論數顯示 |
-| card_post_count | 是否在首頁文章卡片顯示評論數<br/>gitalk、livere 和 utterances 不支持評論數顯示 |
+| count           | 是否在文章頂部顯示評論數 <br/> livere、Giscus 和 utterances 不支持評論數顯示 |
+| card_post_count | 是否在首頁文章卡片顯示評論數<br/>gitalk、livere 、Giscus 和 utterances 不支持評論數顯示 |
 
 > 單評論
 
@@ -109,15 +108,11 @@ disqus:
 
 修改 `主題配置文件`
 
-```markdown
+```yaml
 disqusjs:
   shortname:
-  siteName:
   apikey:
-  api:
-  nocomment: # display when a blog post or an article has no comment attached
-  admin:
-  adminLabel:
+  option:
 ```
 
 > 當無法訪問 Disqus 時，會顯示
@@ -153,16 +148,11 @@ laibili 的 uid 你能在這裏找到:
 
 ```yaml
 gitalk:
-  client_id: 你的client id 
-  client_secret: 你的client secret
-  repo: 你的github倉庫
-  owner: 你的github用户名
-  admin: 該倉庫的擁有者或協作者
-  language: zh-CN # en, zh-CN, zh-TW, es-ES, fr, ru
-  perPage: 10 # Pagination size, with maximum 100.
-  distractionFreeMode: false # Facebook-like distraction free mode.
-  pagerDirection: last # Comment sorting direction, available values are last and first.
-  createIssueManually: false # Gitalk will create a corresponding github issue for your every single page automatically
+  client_id:
+  client_secret:
+  repo:
+  owner:
+  admin:
   option:
 ```
 
@@ -178,26 +168,18 @@ gitalk:
 
 ```yaml
 valine:
-  appId:  # leancloud application app id
-  appKey:  # leancloud application app key
-  pageSize: 10 # comment list page size
+  appId: # leancloud application app id
+  appKey: # leancloud application app key
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: en # i18n: zh-CN/zh-TW/en/ja
-  placeholder: 記得留下你的暱稱和郵箱....可以快速收到回復 # valine comment input placeholder(like: Please leave your footprints )
-  guest_info: nick,mail,link #valine comment header info (nick/mail/link)
-  recordIP: false # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  bg: /img/comment_bg.png # valine background
-  emojiCDN: # emoji CDN
-  enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
-  requiredFields: nick,mail # required fields (nick/mail)
+  bg: # valine background
   visitor: false
   option:
 ```
 
-Valine於 v1.4.5 開始支持自定義表情，如果你需要自行配置，請在`emojiCDN`配置表情CDN。
+Valine於 v1.4.5 開始支持自定義表情，如果你需要自行配置，請在`emojiCDN`配置表情 CDN。
 
-同時在Hexo 工作目錄下的`source/_data/`創建一個json文件`valine.json`,等同於Valine需要配置的`emojiMaps`，`valine.json`配置方式可參考如下
+同時在Hexo 工作目錄下的`source/_data/`創建一個json文件`valine.json`,等同於 Valine 需要配置的`emojiMaps`，`valine.json`配置方式可參考如下
 
 > valine.json
 
@@ -257,13 +239,9 @@ Waline - 一款從 Valine 衍生的帶後端評論系統。可以將 Waline 等�
 然後修改 `主題配置文件`:
 
 ```yaml
-# waline - A simple comment system with backend support fork from Valine
-# https://waline.js.org/
 waline:
-  serverURL:  # Waline server address url
-  avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
-  avatarCDN: # Gravatar CDN baseURL
-  bg: /img/comment_bg.png # waline background
+  serverURL: # Waline server address url
+  bg: # waline background
   visitor: false
   option:
 ```
@@ -273,43 +251,6 @@ waline:
 請參看 waline 的[添加表情文檔](https://waline.js.org/guide/client/emoji.html)進行配置
 
 
-
-{% hideToggle 以下添加表情方法已被棄用 %}
-
-如果你需要自定義表情，請在`emojiCDN`配置表情CDN。
-
-同時在Hexo 工作目錄下的`source/_data/`創建一個json文件`waline.json`,等同於Waline需要配置的`emojiMaps`，`waline.json`配置方式可參考如下
-
-> waline.json
-
-```json
-{ 
-"tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
-"tv_親親": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
-"tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
-"tv_再見": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
-"tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
-"tv_發怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
-"tv_發財": "34db290afd2963723c6eb3c4560667db7253a21a.png",
-"tv_可愛": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
-"tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
-"tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
-"tv_嘔吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
-"tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
-"tv_壞笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
-"tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
-"tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
-"tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
-"tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
-"tv_尷尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
-"tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
-"tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
-"tv_驚嚇": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png"
-} 
-
-```
-
-{% endhideToggle %}
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
 
@@ -321,7 +262,7 @@ waline:
 
 修改 `主題配置文件`:
 
-```markdown
+```yaml
 utterances:
   repo:
   # 可選 pathname/url/title/og:title
@@ -337,11 +278,11 @@ utterances:
 
 <!-- tab Facebook Comments -->
 
-`Facebook Comments`是Facebook提供的評論插件，需要登陸Facebook才可評論。
+`Facebook Comments`是Facebook提供的評論插件，需要登陸Facebook纔可評論。
 
 修改 `主題配置文件`
 
-```markdown
+```yaml
 # Facebook Comments Plugin
 # https://developers.facebook.com/docs/plugins/comments/
 facebook_comments:
@@ -388,6 +329,31 @@ twikoo:
 
 
 
+
+<!-- endtab -->
+
+
+
+<!-- tab Giscus -->
+
+一個基於 *GitHub Discussions* 的評論
+
+```yaml
+# Giscus
+# https://giscus.app/
+giscus:
+  repo:
+  repo_id:
+  category_id:
+  theme:
+    light: light
+    dark: dark
+  option:
+```
+
+具體配置的意思，請參考 Giscus 的[文檔](https://giscus.app/zh-TW)
+
+![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-giscus.png)
 
 <!-- endtab -->
 
@@ -644,8 +610,8 @@ local_search:
 
 ## 網站驗證
 
-如果需要搜索引擎收錄網站，可能需要登錄對應搜索引擎的管理平台進行提交。
-各自的驗證碼可從各自管理平台拿到
+如果需要搜索引擎收錄網站，可能需要登錄對應搜索引擎的管理平臺進行提交。
+各自的驗證碼可從各自管理平臺拿到
 
 修改 `主題配置文件`
 
@@ -686,25 +652,6 @@ baidu_analytics: 你的代碼
 
 ```yaml
 google_analytics: 你的代碼 # 通常以`UA-`打頭
-```
-
-<!-- endtab -->
-
-<!-- tab 騰訊分析 -->
-
-> 由於騰訊分析將於20年12月關閉並遷移到騰訊移動分析,從 `3.1.0` 起，騰訊分析改為騰訊移動分析。
-
-1. 登錄騰訊移動分析的[官方網站](https://mta.qq.com/)
-2. 選擇 `WEB應用`
-3. 找到你的站點ID
-
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-tencent-analysic.png)
-
-4. 修改 `主題配置文件`
-
-```yaml
-# Tencent_analytics ID
-tencent_analytics: 
 ```
 
 <!-- endtab -->
@@ -924,7 +871,7 @@ markdown_it_plus:
 
 
 
-因為 KaTeX 更快更輕量，因此沒有 MathJax 的功能多（比如右鍵菜單）。為那些使用 MathJax 的用户，主題也內置了 katex 的 [複製](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex) 功能。
+因為 KaTeX 更快更輕量，因此沒有 MathJax 的功能多（比如右鍵菜單）。為那些使用 MathJax 的用戶，主題也內置了 katex 的 [複製](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex) 功能。
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-katex.gif)
 
@@ -956,6 +903,7 @@ theme_color:
   toc_color: "#00c4b6"
   blockquote_padding_color: "#49b1f5"
   blockquote_background_color: "#49b1f5"
+  scrollbar_color: "#49b1f5"
 ```
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_1.png)
@@ -1200,24 +1148,19 @@ blog_title_font:
 ```yaml
 # 主頁subtitle
 subtitle:
-  enable: true
-  # 打字效果
+  enable: false
+  # Typewriter Effect (打字效果)
   effect: true
-  # 循環或者只打字一次
-  loop: false
-  # source調用第三方服務
+  # loop (循環打字)
+  loop: true
+  # source 調用第三方服務
   # source: false 關閉調用
-  # source: 1  調用搏天api的隨機語錄（簡體） 
-  # source: 2  調用一言網的一句話（簡體） 
-  # source: 3  調用一句網（簡體） 
-  # source: 4  調用今日詩詞（簡體
+  # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
+  # source: 2  調用一句網（簡體） http://yijuzhan.com/
+  # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
   source: false
-  # 如果有英文逗號' , ',請使用轉義字元 &#44;
-  # 如果有英文雙引號' " ',請使用轉義字元 &quot;
-  # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
-  # 例如 ”&quotNever put off till tomorrow what you can do today&quot"
-  # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
+  # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
     - 今日事&#44;今日畢
     - Never put off till tomorrow what you can do today
@@ -1406,6 +1349,13 @@ wordcount:
 
 
 {% tabs 圖片大圖查看模式 %}
+
+<!-- tab 注意 -->
+
+如果你並不想爲某張圖片添加大圖查看模式，你可以使用 html 格式引用圖片，併爲圖片添加 `no-lightbox` class 名。
+
+<!-- endtab -->
+
 <!-- tab fancybox -->
 修改 `主題配置文件`
 
@@ -1470,7 +1420,7 @@ css_prefix: true
 
 ### Open Graph
 
-在 `head` 裏增加一些 meta 資料，例如縮略圖、標題、時間等等。當你分享網頁到一些平台時，平台會讀取 Open Graph 的內容，展示縮略圖，標題等等信息。
+在 `head` 裏增加一些 meta 資料，例如縮略圖、標題、時間等等。當你分享網頁到一些平臺時，平臺會讀取 Open Graph 的內容，展示縮略圖，標題等等信息。
 
 修改配置文件
 
@@ -1510,7 +1460,7 @@ pangu:
 
 ## Pjax
 
-當用户點擊鏈接，通過ajax更新頁面需要變化的部分，然後使用HTML5的pushState修改瀏覽器的URL地址。
+當用戶點擊鏈接，通過ajax更新頁面需要變化的部分，然後使用HTML5的pushState修改瀏覽器的URL地址。
 
 這樣可以不用重複加載相同的資源（css/js）， 從而提升網頁的加載速度。
 

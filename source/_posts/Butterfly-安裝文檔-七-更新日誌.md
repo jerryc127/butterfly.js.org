@@ -17,9 +17,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 09 月 18 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2022 年 01 月 15 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.8.4](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.8.4)
+ 🦋  Butterfly 已經更新到 [4.0.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.0.0)
 
 {% endnote %}
 
@@ -38,6 +38,272 @@ comments: false
 {% endnote %}
 
 ***
+
+{% hideToggle 4.0.0 (2021/09/18) %}
+
+## 4.0.0
+
+### Breaking Change
+
+1. 精簡各評論的配置
+
+   ```diff
+   disqusjs:
+   -  apikey:
+   -  api:
+   -  nocomment: # display when a blog post or an article has no comment attached
+   -  admin:
+   -  adminLabel:
+   +  option:
+   
+   gitalk:
+   -  language: en # en, zh-CN, zh-TW, es-ES, fr, ru
+   -  perPage: 10 # Pagination size, with maximum 100.
+   -  distractionFreeMode: false # Facebook-like distraction free mode.
+   -  pagerDirection: last # Comment sorting direction, available values are last and first.
+   -  createIssueManually: false # Gitalk will create a corresponding github issue for your every single page automatically
+   
+   valine:
+   -  pageSize: 10 # comment list page size
+   -  lang: en # i18n: zh-CN/zh-TW/en/ja
+   -  placeholder: Please leave your footprints # valine comment input placeholder (like: Please leave your footprints)
+   -  guest_info: nick,mail,link # valine comment header info (nick/mail/link)
+   -  recordIP: false # Record reviewer IP
+   -  bg: # valine background
+   -  emojiCDN: # emoji CDN
+   -  enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
+   -  requiredFields: nick,mail # required fields (nick/mail)
+   
+   waline:
+   -  avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
+   -  avatarCDN: # Gravatar CDN baseURL
+   ```
+
+2. 頁面支持 toc #636
+
+   ```diff
+   toc:
+   -  enable: true
+   +  post: true
+   +  page: false
+   ```
+
+3. 刪除 hide_sidebar_menu_child 配置，改爲直接在 menu 配置 #640
+
+   ```diff
+   -# Hide the child menu items in mobile sidebar
+   -hide_sidebar_menu_child: false
+   ```
+
+4. 完全移除 jquery
+
+   ```DIFF
+   CDN:
+   -  jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
+   ```
+
+5. 移除騰訊分析
+
+   ```diff
+   -# Tencent Analytics ID
+   -# https://mta.qq.com
+   -tencent_analytics:
+   ```
+
+6. photofigcaption 和 fancybox 的 figcaption 優先顯示 圖片的title屬性，然後是 alt 屬性 #683
+
+7. 支持新的評論名寫法，主題會處理評論名字大小寫，舊的會兼容
+
+8. 移除博天api，注意順序改變
+
+   ```
+     # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
+     # source: 2  調用一句網（簡體） http://yijuzhan.com/
+     # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
+   ```
+
+9. 移除 html 的 font-size 改爲瀏覽器默認大小
+
+### Feature
+
+1. 更新 fancybox 到 4
+
+   ```DIFF
+   CDN:
+   -  fancybox_css: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css
+   -  fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
+   +  fancybox_css_v4:
+   +  fancybox_v4:
+   ```
+
+2. 右下角按鈕自定義順序 #680
+
+   ```diff
+   +rightside_item_order:
+   +  enable: false
+   +  hide: # readmode,translate,darkmode,hideAside
+   +  show: # toc,chat,comment
+   ```
+
+3. 網站資料顯示，當標籤和分類爲0時，數量顯示爲 0，而不是隱藏
+
+4. 代碼框設置高度限制，展開後按鈕不會消失，可點擊再次摺疊 #637
+
+5. 圖片選擇性禁用 lightbox #636
+
+6. Twikoo 評論圖片添加 lightbox
+
+7. 升級 facebook comment js 到 version 11
+
+8. 爲文章單獨設置 TOC simple_style 顯示 #631
+
+9. page 頁頂部圖增加黑色遮罩 #671
+
+10. 首頁 pagination更新 UI
+
+11. 主題 css 使用的 rem 改爲 em 或 px
+
+13. 移除 右下角字體調整按鈕
+
+    ```diff
+    -# Change font size
+    -change_font_size: false
+    ```
+
+14. 新增標籤外掛 timeline #644
+
+15. 清除 配置文件 的CDN，默認CDN 不再顯示在 config
+
+16. 替換 Justified Gallery 爲 flickr-justified-gallery
+
+    ```DIFF
+    CDN:
+    -  justifiedGallery_js: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js
+    -  justifiedGallery_css: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css
+    +  flickr_justified_gallery_js:
+    +  flickr_justified_gallery_css:
+    ```
+
+17. 切換夜間模式後，mermaid 也會切換夜間主題
+
+    ```diff
+    mermaid:
+      enable: true
+      # built-in themes: default/forest/dark/neutral
+    -  theme: default
+    +  theme: 
+    +    light: default
+    +    dark: dark
+    ```
+
+18. 壓縮html代碼後，mermaid 顯示正常
+
+19. mermaid 可以在 隱藏屬性的標籤外掛 裏使用
+
+20. 本地搜索可處理 json #684
+
+21. 右下角按鈕 UI 微調
+
+22. 更改文章美化後,列表的顯示效果 #693 #686
+
+23. algolia 升級至 v4
+
+    ```DIFF
+    CDN:
+    -  algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
+    -  algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
+    +  algolia_search_v4:
+    +  instantsearch_v4:
+    ```
+
+24. 本地搜索增加數據庫加載中和搜索中 loading 顯示
+
+25. anchor 不再限制 post 頁開啓，可以在任何頁面開啓
+
+26. 文章標題支持點擊跳轉到此標題開始閱讀 #653
+
+27. toc 可以設置全部展開 #709
+
+    ```diff
+    toc:
+    +  expand: false
+    ```
+
+28. 增加 新的評論系統 giscus
+
+    ```diff
+    +# Giscus
+    +# https://giscus.app/
+    +giscus:
+    +  repo:
+    +  repo_id:
+    +  category_id:
+    +  theme:
+    +    light: light
+    +    dark: dark
+    +  option:
+    
+    CDN:
+    +  giscus:
+    ```
+
+29. 友情鏈接列表增加 fetch url 獲取
+
+30. toc 間隔調整, 直接子元素增加豎線辨識 closed #723
+
+31. 可配置scrollbar顏色
+
+    ```diff
+    theme_color:
+    +  scrollbar_color: "#49b1f5"
+    ```
+
+32. 美化 firefox 瀏覽器滾動條
+
+33. CDN 增加 blueimp_md5 配置
+
+    ```diff
+    CDN:
+    +  blueimp_md5:
+    ```
+
+
+### Fix
+
+1. 修復 開啓 lazyload 時， fancybox 的縮略圖顯示 lazyload 加載圖片的 bug
+2. 修復 字體過大/過小而導致 部分 ui 偏移的 bug 
+3. 修復 自建頁面圖片沒有 blur 效果
+4. 修復窗口大小改變時，導航欄的 ui 可能會錯亂的 bug
+5. 修復 pjax下 ，twikoo 評論獲取是上一篇評論的 bug #678
+6. 修復 rightside 遮擋內容，導致內容無法點擊的 bug
+7. 修復 mermaid 在某些頁面（有元素 id 爲 mermaid 時） 會無法加載的 bug
+8. 修復 搜索框不會自動 focus 的 bug
+9. 修復沒有配置 comments 的 use 時，會報錯的 bug
+10. 修復 toc 在小設備上顯示出屏幕外的 bug
+11. 修復在打賞按鈕周圍也會觸發打賞彈窗的 bug
+12. 修復 Waline 最近評論的時間只顯示 "剛剛" 的問題 (以docker的方式執行) #730
+14. 修復 utterances 的 issue_term 設爲 url，og:title時，評論顯示錯誤的 bug
+14. 修復評論配置爲 Livere 和 Facebook Comments 時，最新評論模塊仍然顯示的 bug
+
+### Improvement
+
+1. subtitle 代碼優化，當 source 設爲 false，同時 sub 也沒有配置，將會讀取 hexo 配置文件的 subtitle, 無須使用轉義字符
+2. 禁止 ios 點擊搜索框，頁面放大的問題
+3. sidebar menu 點擊展開不再限制只能點擊按鈕 #640
+4. 修改沒有頂部圖下，文章頁的標題大小
+5. 優化 404 頁面 UI
+6. lazyload 默認佔位圖改爲透明圖片
+7. 優化 css
+8. 優化 lazyload blur 出現特效
+9. 手機端更改閱讀模式退出按鈕到右下角
+10. ui 微調
+11. 禁止一些瀏覽器會出現點擊左下角按鈕出現放大網頁的行爲
+12. 鼠標移到最新評論內容，增加 title 顯示
+13. 移除 button 的 hover 效果
+
+
+
+{% endhideToggle %}
 
 {% hideToggle 3.8.4 (2021/09/18) %}
 
@@ -970,14 +1236,14 @@ comments: false
 ### Improvements
 
 1. preloader 在 pjax 下 每個頁面都會加載
-2. 修改判斷，避免用户設置2個lightbox 而導致報錯（只能設置一個）
+2. 修改判斷，避免用戶設置2個lightbox 而導致報錯（只能設置一個）
 3. 精確時間顯示 （剛剛/幾分鐘前/幾小時前/幾天前/幾個月前）
 4. 刪除不必要的語言文件和css
 5. Open_Graph 改為 hexo 內置 生成
 6. 當隱藏部分沒配置時，左下角設置按鈕會消失 #353
 7. aside 分類 收縮/展開 增加slide效果
 8. darkmode 字體顔色加深
-9. 優化nav的進入，應該修復一些用户在本地測試中無法顯示nav的bugs
+9. 優化nav的進入，應該修復一些用戶在本地測試中無法顯示nav的bugs
 10. 最新評論 leancloud呼叫由js sdk 改為 rest api 呼叫。應用可以不與valine同一個
 11. 最新評論增加錯誤輸出
 12. tags 設定彩色顯示後，字型大小將根據tag的文章數量而變化 close #365
@@ -1189,7 +1455,7 @@ comments: false
 
 1. 修復導航側邊欄沒有進入特效的Bugs
 2. 修復Hexo 5.0.0 以下版本， toc遇到中文不會滾動的bugs
-3. 修復pjax下，同時開啟Open_Graph_meta和Livere，Livere評論後台顯示的來源頁面與實際不同 的bugs
+3. 修復pjax下，同時開啟Open_Graph_meta和Livere，Livere評論後臺顯示的來源頁面與實際不同 的bugs
 
 {% endhideToggle %}
 

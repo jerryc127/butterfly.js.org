@@ -17,9 +17,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2021 年 09 月 18 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2022 年 01 月 15 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [3.8.4](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/3.8.4)
+ 🦋  Butterfly 已經更新到 [4.0.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.0.0)
 
 {% endnote %}
 
@@ -104,6 +104,7 @@ comments:
 cover:
 toc:
 toc_number:
+toc_style_simple:
 copyright:
 copyright_author:
 copyright_author_href:
@@ -131,6 +132,7 @@ aside:
 | comments              | 【可選】顯示文章評論模塊(默認 true)                          |
 | toc                   | 【可選】顯示文章TOC(默認為設置中toc的enable配置)             |
 | toc_number            | 【可選】顯示toc_number(默認為設置中toc的number配置)          |
+| toc_style_simple      | 【可選】顯示 toc 簡潔模式                                    |
 | copyright             | 【可選】顯示文章版權模塊(默認為設置中post_copyright的enable配置) |
 | copyright_author      | 【可選】文章版權模塊的`文章作者`                             |
 | copyright_author_href | 【可選】文章版權模塊的`文章作者`鏈接                         |
@@ -208,6 +210,10 @@ type: "link"
 
 ### 友情鏈接添加
 
+{% tabs flink-add %}
+
+<!-- tab 本地生成 -->
+
 在Hexo博客目錄中的`source/_data`（如果沒有 _data 文件夾，請自行創建），創建一個文件`link.yml`
 
 ```yml
@@ -229,18 +235,79 @@ type: "link"
     - name: Weibo
       link: https://www.weibo.com/
       avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
-      descr: 中國最大社交分享平台
+      descr: 中國最大社交分享平臺
     - name: Twitter
       link: https://twitter.com/
       avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
-      descr: 社交分享平台
+      descr: 社交分享平臺
 ```
 
-`class_name`和`class_desc`支持html格式書寫，如不需要，也可以留空。
+`class_name`  和 `class_desc` 支持 html 格式書寫，如不需要，也可以留空。
+
+<!-- endtab -->
+
+<!-- tab 遠程拉取 -->
+
+從 `4.0.0` 開始，支持從遠程加載友情鏈接，遠程拉取只支持 `json`。
+
+注意： 選擇遠程加載後，本地生成的方法會無效。
+
+在  `source/link/index.md` 這個文件的 front-matter 添加遠程鏈接
+
+```markdown
+flink_url: xxxxx
+```
+
+Json 的格式
+
+```json
+[
+  {
+    "class_name": "友情鏈接",
+    "class_desc": "那些人，那些事",
+    "link_list": [
+      {
+        "name": "Hexo",
+        "link": "https://hexo.io/zh-tw/",
+        "avatar": "https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg",
+        "descr": "快速、簡單且強大的網誌框架"
+      }
+    ]
+  },
+  {
+    "class_name": "網站",
+    "class_desc": "值得推薦的網站",
+    "link_list": [
+      {
+        "name": "Youtube",
+        "link": "https://www.youtube.com/",
+        "avatar": "https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png",
+        "descr": "視頻網站"
+      },
+      {
+        "name": "Weibo",
+        "link": "https://www.weibo.com/",
+        "avatar": "https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png",
+        "descr": "中國最大社交分享平臺"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/",
+        "avatar": "https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png",
+        "descr": "社交分享平臺"
+      }
+    ]
+  }
+]
+```
+
+<!-- endtab -->
+
+{% endtabs %}
 
 ### 友情鏈接界面設置
 
-由 2.2.0 起，友情鏈接界面可以由用户自己自定義，只需要在友情鏈接的md檔設置就行，以普通的Markdown格式書寫。
+由 2.2.0 起，友情鏈接界面可以由用戶自己自定義，只需要在友情鏈接的md檔設置就行，以普通的Markdown格式書寫。
 
 ## 圖庫
 

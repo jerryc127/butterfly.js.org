@@ -47,9 +47,6 @@ menu:
   留言板: /messageboard/ || fas fa-comment-dots
   示例: /link/ || fas fa-thumbs-up
 
-# Hide the child menu items in mobile sidebar
-hide_sidebar_menu_child: false
-
 # Code Blocks (代碼相關)
 # --------------------------------------
 
@@ -214,9 +211,11 @@ index_post_content:
 
 # toc (目錄)
 toc:
-  enable: true
+  post: true
+  page: false
   number: true
-  style_simple: false
+  expand: true
+  style_simple: false # for post
 
 post_copyright:
   enable: true
@@ -323,12 +322,9 @@ disqus:
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
   shortname: demo-jerryc-me
-  siteName: JerryC
   apikey: nrSx8ZhuHvjwDeKauPZ3lMnyLb7iR92BT4wl4AlKG4eJl27jxXlzOeLQ9SJP1RDW
-  api:
-  nocomment: # display when a blog post or an article has no comment attached
-  admin:
-  adminLabel:
+  option:
+    siteName: JerryC
 
 # livere (來必力)
 # https://www.livere.com/
@@ -343,11 +339,6 @@ gitalk:
   repo:
   owner:
   admin:
-  language: zh-CN # en, zh-CN, zh-TW, es-ES, fr, ru
-  perPage: 10 # Pagination size, with maximum 100.
-  distractionFreeMode: false # Facebook-like distraction free mode.
-  pagerDirection: last # Comment sorting direction, available values are last and first.
-  createIssueManually: false # Gitalk will create a corresponding github issue for your every single page automatically
   option:
 
 # valine
@@ -355,27 +346,16 @@ gitalk:
 valine:
   appId: # leancloud application app id
   appKey: # leancloud application app key
-  pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: en # i18n: zh-CN/zh-TW/en/ja
-  placeholder: 1. 請確保你已經看了使用文檔和主題 Q&A\n2. 如果運行期間並無報錯，但是預覽時出現問題。請在瀏覽器打開該網頁的情況下，按 F12 進入開發人員工具，切換到 Console 界面。\n如有報錯，請試着解決。或者在提問題之前附上報錯截圖。\n3. 詳細描述遇到的問題，附上相關的報錯 / 截圖 / 網址 # valine comment input placeholder (like: Please leave your footprints)
-  guest_info: nick,mail,link # valine comment header info (nick/mail/link)
-  recordIP: false # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  bg: /img/comment_bg.png # valine background
-  emojiCDN: # emoji CDN
-  enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
-  requiredFields: nick,mail # required fields (nick/mail)
+  bg: # valine background
   visitor: false
   option:
-    path: '/messageboard/'
 
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
   serverURL: https://butterfly-waline.vercel.app # Waline server address url
-  avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
-  avatarCDN: # Gravatar CDN baseURL  
   bg: /img/comment_bg.png # waline background
   visitor: false
   option:
@@ -409,6 +389,17 @@ twikoo:
   envId: https://butterfly-twikoo.vercel.app/
   region:
   visitor: false
+  option:
+
+# Giscus
+# https://giscus.app/
+giscus:
+  repo:
+  repo_id:
+  category_id:
+  theme:
+    light: light
+    dark: dark
   option:
 
 # Chat Services
@@ -472,10 +463,6 @@ baidu_analytics:
 # https://analytics.google.com/analytics/web/
 google_analytics:
 
-# Tencent Analytics ID
-# https://mta.qq.com
-tencent_analytics:
-
 # CNZZ Analytics
 # https://www.umeng.com/
 cnzz_analytics:
@@ -536,6 +523,7 @@ site_verification:
 #   toc_color: "#00c4b6"
 #   blockquote_padding_color: "#49b1f5"
 #   blockquote_background_color: "#49b1f5"
+#   scrollbar_color: "#49b1f5"
 
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
@@ -660,18 +648,14 @@ subtitle:
   effect: true
   # loop (循環打字)
   loop: true
-  # source調用第三方服務
+  # source 調用第三方服務
   # source: false 關閉調用
-  # source: 1  調用搏天api的隨機語錄（簡體） https://api.btstu.cn/
-  # source: 2  調用一言網的一句話（簡體） https://hitokoto.cn/
-  # source: 3  調用一句網（簡體） http://yijuzhan.com/
-  # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
+  # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
+  # source: 2  調用一句網（簡體） http://yijuzhan.com/
+  # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: 2
-  # 如果有英文逗號' , ',請使用轉義字元 &#44;
-  # 如果有英文雙引號' " ',請使用轉義字元 &quot;
-  # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
-  # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
+  source: 1
+  # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
     - 今日事&#44;今日畢
     - Never put off till tomorrow what you can do today
@@ -699,7 +683,7 @@ aside:
   card_announcement:
     enable: true
     content:
-      如果你在使用中遇到問題，請到 <a href="https://github.com/jerryc127/hexo-theme-butterfly/issues" style="color:#49b1f5">Github Issues</a> 或者 <a href="/messageboard/" style="color:#49b1f5">留言板</a> 進行反饋，你也可以加入 QQ 群（由於 QQ 群只能有500人，會定時清理潛水的人）<div class="social-button">
+      如果你在使用中遇到問題，請到 <a href="https://github.com/jerryc127/hexo-theme-butterfly/issues" style="color:#49b1f5">Github Issues</a> 或者 <a href="/messageboard/" style="color:#49b1f5">留言板</a> 進行反饋，你也可以加入 QQ 群（由於 QQ 群只能有 500 人，會定時清理潛水的人，不要同時申請 2 个 QQ 群）<div class="social-button">
       <a class="button--animated" href="https://jq.qq.com/?_wv=1027&k=KU9105XR" target="_blank">QQ 1 群 👍</a>
       <a class="button--animated" href="https://jq.qq.com/?_wv=1027&k=r1nK0DQz" target="_blank">QQ 2 群 👍</a>
       <a class="button--animated" href="https://t.me/bu2fly" target="_blank">Telegram 👍</a>
@@ -756,9 +740,6 @@ newest_comments:
 # Bottom right button (右下角按鈕)
 # --------------------------------------
 
-# Change font size
-change_font_size: true
-
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
   enable: true
@@ -787,6 +768,14 @@ darkmode:
   # autoChangeMode: false
   autoChangeMode: 1
 
+# Don't modify the following settings unless you know how they work (非必要請不要修改 )
+# Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
+# Don't repeat 不要重複
+rightside_item_order:
+  enable: true
+  hide: readmode,darkmode,hideAside
+  show: toc,translate,chat,comment
+
 # Lightbox (圖片大圖查看模式)
 # --------------------------------------
 # You can only choose one, or neither (只能選擇一個 或者 兩個都不選)
@@ -807,7 +796,9 @@ fancybox: true
 mermaid:
   enable: true
   # built-in themes: default/forest/dark/neutral
-  theme: default
+  theme:
+    light: default
+    dark: dark
 
 # Note (Bootstrap Callout)
 note:
@@ -890,7 +881,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - '<style type="text/css">.card-announcement .social-button{margin: .6rem 0 0 0; text-align: center;}.card-announcement .social-button a{display: block; margin: 0.2rem 0;background-color: var(--btn-bg); color: var(--btn-color); line-height: 1.6rem; transition: all .3s; position: relative; z-index: 1;}</style>'
+    - '<style type="text/css">.card-announcement .social-button{margin:.6rem 0 0 0;text-align:center}.card-announcement .social-button a{display:block;background-color:var(--btn-bg);color:var(--btn-color);text-align:center;line-height:2.4;margin:4px 0}.card-announcement .social-button a:hover{background-color:var(--btn-hover-color)}</style>'
   bottom:
 
 # CDN
@@ -898,101 +889,87 @@ inject:
 # 非必要請不要修改
 CDN:
   # main
-  main_css: /css/index.css
-  jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.4/source/js/main.min.js # /js/main.js
-  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.4/source/js/utils.min.js # /js/utils.js
+  main_css:
+  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.0.0/source/js/main.min.js # /js/main.js
+  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.0.0/source/js/utils.min.js # /js/utils.js
 
   # pjax
-  pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
+  pjax:
 
   # comments
-  gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
-  gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
-  valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
-  disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
-  disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
-  utterances: https://utteranc.es/client.js
-  twikoo: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.min.js
-  waline: https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js
+  gitalk:
+  gitalk_css:
+  blueimp_md5:
+  valine:
+  disqusjs:
+  disqusjs_css:
+  utterances:
+  twikoo:
+  waline:
+  giscus:
 
   # share
-  addtoany: https://static.addtoany.com/menu/page.js
-  sharejs: https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js
-  sharejs_css: https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css
+  addtoany:
+  sharejs:
+  sharejs_css:
 
   # search
-  local_search: https://cdn.jsdelivr.net/gh/jerryc127/butterfly.js.org/source/selfjs/localsearch.min.js?ver=3.8.4 # https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.4/source/js/search/local-search.min.js # /js/search/local-search.js
-  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.4/source/js/search/algolia.min.js # /js/search/algolia.js
-  algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
-  algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
+  local_search: https://cdn.jsdelivr.net/gh/jerryc127/butterfly.js.org/source/selfjs/localsearch.min.js?ver=4.0.0 # https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.0.0/source/js/search/local-search.min.js # /js/search/local-search.js
+  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.0.0/source/js/search/algolia.min.js # /js/search/algolia.js
+  algolia_search_v4:
+  instantsearch_v4:
 
   # math
-  mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  katex: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
-  katex_copytex: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
-  katex_copytex_css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css
-  mermaid: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
+  mathjax:
+  katex:
+  katex_copytex:
+  katex_copytex_css:
+  mermaid:
 
   # count
-  busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+  busuanzi:
 
   # background effect
-  canvas_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js
-  canvas_fluttering_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js
-  canvas_nest: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js
+  canvas_ribbon:
+  canvas_fluttering_ribbon:
+  canvas_nest:
 
-  lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
-  instantpage: https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js
-  typed: https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js
-  pangu: https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js
+  lazyload:
+  instantpage:
+  typed:
+  pangu:
 
   # photo
-  fancybox_css: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css
-  fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
-  medium_zoom: https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js
+  fancybox_css_v4:
+  fancybox_v4:
+  medium_zoom:
 
   # snackbar
-  snackbar_css: https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css
-  snackbar: https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js
+  snackbar_css:
+  snackbar:
 
   # effect
-  activate_power_mode: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js
-  fireworks: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js
-  click_heart: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js
-  ClickShowText: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js
+  activate_power_mode:
+  fireworks:
+  click_heart:
+  ClickShowText:
 
   # fontawesome
-  fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+  fontawesome:
 
   # Conversion between Traditional and Simplified Chinese
-  translate: https://cdn.jsdelivr.net/gh/jerryc127/butterfly.js.org/source/selfjs/tw_cn.min.js?ver=3.8.4 #https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.4/source/js/tw_cn.min.js # /js/tw_cn.js
+  translate: https://cdn.jsdelivr.net/gh/jerryc127/butterfly.js.org/source/selfjs/tw_cn.min.js?ver=4.0.0 #https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.0.0/source/js/tw_cn.min.js # /js/tw_cn.js
 
-  # justifiedGallery
-  justifiedGallery_js: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js
-  justifiedGallery_css: https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css
+  # flickr-justified-gallery
+  flickr_justified_gallery_js:
+  flickr_justified_gallery_css:
 
   # aplayer
-  aplayer_css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
-  aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
-  meting_js: https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js
+  aplayer_css:
+  aplayer_js:
+  meting_js:
 
   # Prism.js
-  prismjs_js: https://cdn.jsdelivr.net/npm/prismjs/prism.min.js
-  prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
-  prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
-
-
-# Artitalk
-# see https://artitalk.js.org/
-artitalk:
-  enable: true
-  appId: f2OAz3uUxl0Dr048MqPBUYLn-MdYXbMMI
-  appKey: Hay8CrEoQcBTO5bn2FS1FWx7
-  path: talking
-  js:
-  option:
-  front_matter:
-    title: 自言自語
-    comments: false
-    top_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-demo-talking-top-img.jpg
+  prismjs_js:
+  prismjs_lineNumber_js:
+  prismjs_autoloader:
