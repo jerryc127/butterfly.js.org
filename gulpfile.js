@@ -25,7 +25,7 @@ gulp.task('minify-html', () => {
     .pipe(htmlclean())
     .pipe(htmlmin({
       removeComments: true, // 清除 HTML 註釋
-      collapseWhitespace: false, // 壓縮 HTML
+      collapseWhitespace: true, // 壓縮 HTML
       collapseBooleanAttributes: true, // 省略布爾屬性的值 <input checked="true"/> ==> <input />
       removeEmptyAttributes: true, // 刪除所有空格作屬性值 <input id="" /> ==> <input />
       removeScriptTypeAttributes: true, // 刪除 <script> 的 type="text/javascript"
