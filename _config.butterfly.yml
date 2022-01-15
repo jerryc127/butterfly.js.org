@@ -890,8 +890,8 @@ inject:
 CDN:
   # main
   main_css:
-  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.0.0/source/js/main.min.js # /js/main.js
-  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.0.0/source/js/utils.min.js # /js/utils.js
+  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.0.1/source/js/main.min.js # /js/main.js
+  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.0.1/source/js/utils.min.js # /js/utils.js
 
   # pjax
   pjax:
@@ -914,8 +914,8 @@ CDN:
   sharejs_css:
 
   # search
-  local_search: https://cdn.jsdelivr.net/gh/jerryc127/butterfly.js.org/source/selfjs/localsearch.min.js?ver=4.0.0 # https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.0.0/source/js/search/local-search.min.js # /js/search/local-search.js
-  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.0.0/source/js/search/algolia.min.js # /js/search/algolia.js
+  local_search: https://cdn.jsdelivr.net/gh/jerryc127/butterfly.js.org/source/selfjs/localsearch.min.js?ver=4.0.0 # https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.0.1/source/js/search/local-search.min.js # /js/search/local-search.js
+  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.0.1/source/js/search/algolia.min.js # /js/search/algolia.js
   algolia_search_v4:
   instantsearch_v4:
 
@@ -958,7 +958,7 @@ CDN:
   fontawesome:
 
   # Conversion between Traditional and Simplified Chinese
-  translate: https://cdn.jsdelivr.net/gh/jerryc127/butterfly.js.org/source/selfjs/tw_cn.min.js?ver=4.0.0 #https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.0.0/source/js/tw_cn.min.js # /js/tw_cn.js
+  translate: https://cdn.jsdelivr.net/gh/jerryc127/butterfly.js.org/source/selfjs/tw_cn.min.js?ver=4.0.0 #https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.0.1/source/js/tw_cn.min.js # /js/tw_cn.js
 
   # flickr-justified-gallery
   flickr_justified_gallery_js:
