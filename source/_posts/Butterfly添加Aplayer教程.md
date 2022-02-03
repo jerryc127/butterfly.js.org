@@ -19,16 +19,20 @@ comments: false
 {% note info %}
 
 以下文章只是教程
-如果遇到使用問題，请仔细查看插件文档，或者到插件那裏反饋
+
+如果部署之后，并没有出现 aplayer , 请确认是否跟足步骤操作或者更换音乐源，多试试。
+
+如果遇到使用問題，请仔细查看插件文档，或者到插件那裏反饋。
 
 {% endnote%}
+
 ## 前言
 
-如果你想使用aplayer，很多人都會推薦安裝[hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer)這款插件。這款插件通過Hexo獨有的標籤外掛，我們可以很方便的寫入一些參數，插件就會幫我們生成對應的html。如果你只是使用一些簡單的功能，其實無需使用到這個插件，只需以html格式書寫就行，不用插件去轉換。
+如果你想使用 aplayer，很多人都會推薦安裝 [hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer) 這款插件。這款插件通過 Hexo 獨有的標籤外掛，我們可以很方便的寫入一些參數，插件就會幫我們生成對應的 html。如果你只是使用一些簡單的功能，其實無需使用到這個插件，只需以 html 格式書寫就行，不用插件去轉換。
 
 例如：
 
-如果使用插件，在markdown中要這樣寫
+如果使用插件，在 markdown 中要這樣寫
 
 ```markdown
 {% meting "000PeZCQ1i4XVs" "tencent" "artist" "theme:#3F51B5" "mutex:true" "preload:auto" %}
@@ -48,7 +52,7 @@ comments: false
 
 這樣我們就可以不用使用多一個插件，當然這種東西見仁見智，選自己喜歡的就行。
 
-回到正題，這篇文章將教大家如何在Butterfly上使用全局吸底Aplayer
+回到正題，這篇文章將教大家如何在Butterfly上使用全局吸底 Aplayer
 
 ![aplayer](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-aplayer-xidi.gif)
 
@@ -56,15 +60,15 @@ comments: false
 
 {% note info %}
 
-此步驟適用於安裝了`hexo-tag-aplayer`插件的人
+此步驟適用於安裝了 `hexo-tag-aplayer` 插件的人
 
 {% endnote %}
 
 
 
-由於需要全局都插入aplayer和meting資源，為了防止插入重複的資源，需要把asset_inject設為`false`
+由於需要全局都插入 aplayer 和 meting 資源，為了防止插入重複的資源，需要把 asset_inject 設為 `false`
 
-在Hexo的配置文件中
+在 Hexo 的配置文件中
 
 ```yaml
 aplayer:
@@ -72,9 +76,9 @@ aplayer:
   asset_inject: false
 ```
 
-## 開啟主題的`aplayerInject`
+## 開啟主題的 `aplayerInject`
 
-在主題的配置文件中，`enable`設為`true`和`per_page`設為`true`
+在主題的配置文件中，`enable` 設為 `true` 和 `per_page` 設為 `true`
 
 ```yaml
 # Inject the css and script (aplayer/meting)
@@ -83,14 +87,14 @@ aplayerInject:
   per_page: true
 ```
 
-## 插入Aplayer html
+## 插入 Aplayer html
 
-為了適配hexo-tag-aplayer，主題內置的Meting js 仍為1.2版本，並非最新的2.x版本。
+為了適配 hexo-tag-aplayer，主題內置的 Meting js 仍為 1.2 版本，並非最新的 2.x 版本。
 
 Aplayer html 例子：
 
 ```markdown
-<div class="aplayer no-destroy" data-id="000PeZCQ1i4XVs" data-server="tencent" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div>
+<div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
 ```
 
 參數解釋
@@ -116,65 +120,23 @@ Aplayer html 例子：
 
 {% note info %}
 
-`require`代表着這些參數是必須要使用的，其它的參數則可以根據自己需要配置。
+`require` 代表着這些參數是必須要使用的，其它的參數則可以根據自己需要配置。
 
-配置全局吸底，`data-fixed`和`data-mini`也必須配置，配置為`true`
+配置全局吸底，`data-fixed` 和 `data-mini` 也必須配置，配置為 `true`
 
-如果使用Pjax，則在class裏需添加`no-destroy`，這樣防止切換頁面時Aplayer被銷毀
+如果使用 Pjax，則在 class 裏需添加 `no-destroy`，這樣防止切換頁面時 Aplayer 被銷毀
 
 {% endnote %}
 
-把`aplayer代碼`插入到主題配置文件的`inject.bottom`去
+把  `aplayer代碼`  插入到主題配置文件的  `inject.bottom` 去
 
 ```yaml
 inject:
   head:
   bottom:
-    - <div class="aplayer no-destroy" data-id="000PeZCQ1i4XVs" data-server="tencent" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div>
+    - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
 ```
 
-運行Hexo就可以看到網頁左下角出現了Aplayer
+運行 Hexo 就可以看到網頁左下角出現了 Aplayer
 
-最後，如果你想切換頁面時，音樂不會中斷。請把主題配置文件的`pjax`設為`true`
-
-## UI 調整
-
-按照上面的步驟設置完成后，瀏覽器左下角會出現Aplayer。打開文章頁面時，你會發現打開Toc目錄的按鈕被遮擋了。我們需要修改CSS來改變按鈕的位置。
-位置怎麽移動根據自己需求決定，這裏列出2種方法。
-
-### 向上調整
-
-```css
-#toggle-sidebar {
-  bottom: 80px
-}
-```
-
-![aplayer1](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-add-aplayer-css-bottom.gif)
-
-在主題配置文件中，添加到`inject`去
-
-```yaml
-inject:
-  head:
-    - '<style type="text/css">#toggle-sidebar {bottom: 80px}</style>'
-```
-
-### 向右調整
-
-```css
-#toggle-sidebar {
-  left: 100px
-}
-```
-
-![butterfly-add-aplayer-left](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-add-aplayer-left.gif)
-
-在主題配置文件中，添加到`inject`去
-
-```yaml
-inject:
-  head:
-    - '<style type="text/css">#toggle-sidebar {left:100px}</style>'
-```
-
+最後，如果你想切換頁面時，音樂不會中斷。請把主題配置文件的 `pjax` 設為 `true`

@@ -596,7 +596,7 @@ algolia_search:
 
 > 記得運行 hexo clean
 
-1. 你需要安裝 [hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search). 根據它的文檔去做相應配置。**注意格式只支持 xml**。
+1. 你需要安裝 [hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search)，根據它的文檔去做相應配置
 
 2. 修改 `主題配置文件`
 
