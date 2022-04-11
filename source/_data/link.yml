@@ -41,16 +41,12 @@
       descr: 客官，来呀，不看会后悔的哦！
     - name: 雨落泪尽
       link: https://couqiao.net/
-      avatar: https://bu.dusays.com/2022/02/10/574c68563809b.png
+      avatar: https://file.couqiao.net/webimg/gravatar.webp
       descr: 众人皆醒我独醉
     - name: Serok's Blog
       link: https://akioi.eu.org/
       avatar: https://cdn.jsdelivr.net/gh/SerokSSR/cdn2/k16.png
       descr: 此宵风醉月舞萤
-    - name: Nescx
-      link: https://www.nesxc.com
-      avatar: https://www.nesxc.com/img/tx.jpg
-      descr: 青石落晚巷 故人未还乡
     - name: 米奇妙妙屋
       link: https://ifibe.com
       avatar: https://ifibe.com/img/hotlink-ok/avatar.webp
@@ -83,10 +79,6 @@
       link: https://cxvh.com
       avatar: https://cdn.jsdelivr.net/gh/cxvh/static@main/avatar/avatar.jpg
       descr: 指尖跳动留下足迹.
-    - name: 飞鸟
-      link: https://lzxjack.top/
-      avatar: https://jack-img.oss-cn-hangzhou.aliyuncs.com/img/20201204121004.jpg
-      descr: 一只平凡的鸟罢了
     - name: 不归路
       link: https://cmwen.cn
       avatar: http://q.qlogo.cn/headimg_dl?dst_uin=1914788728&spec=640&img_type=jpg
@@ -107,18 +99,10 @@
       link: https://tzy1997.com/
       avatar: https://cdn.jsdelivr.net/gh/tzy13755126023/BLOG_SOURCE/theme_f/avater.jpg
       descr: 学习与交流的乐园，希望能和你成为好朋友。
-    - name: CheeseburgerIM
-      link: https://CheeseburgerIM.github.io/
-      avatar: https://gitee.com/CheeseburgerIM/imagehosting/raw/master/Image/Home/Avatar.jpg
-      descr: IMF,I’ve got a lot to learn.
     - name: 没有睡醒
       link: https://www.hwheng.top/
       avatar: https://avatars.githubusercontent.com/u/71166703?s=96&v=4
       descr: 今日事,今日畢
-    - name: 反派
-      link: https://zkpeace.com/
-      avatar: https://zkpeace.com/blog/img/avatar.jpg
-      descr: 走出自己的傲慢，承认自己的局限。
     - name: sunshine
       link: https://sunguoqi.com/
       avatar: https://i.loli.net/2021/06/08/CfvzqNFHag8G3bi.jpg
@@ -129,7 +113,7 @@
       descr: 我们必将知道，我们即将知道。
     - name: W4J1e's blog
       link: https://www.hin.cool
-      avatar: https://cdn2.hin.cool/pic/my/dl3.png
+      avatar: https://hin.cool/favicon.ico
       descr: 偏爱不务正业
     - name: 沐の空间
       link: https://muspace.top
@@ -139,14 +123,6 @@
       link: https://blog.xujiayao.top/
       avatar: https://blog.xujiayao.top/file/avatar.jpg
       descr: 没有个性，如何签名？
-    - name: 萌萌哒的屈少
-      link: https://qushao.icu
-      avatar: https://gitee.com/qu-shao/blogImage/raw/master/img/avatar.jpg
-      descr: 乾坤未定，你我皆是黑马
-    - name: 冻符「Minus-K」
-      link: https://www.kawashiros.club/
-      avatar: https://www.kawashiros.club/resources/avatar.webp
-      descr: (S)He Has Gone. 
     - name: Eurkon
       link: https://blog.eurkon.com
       avatar: https://blog.eurkon.com/images/user/avatar.jpg
@@ -161,11 +137,11 @@
       descr: 凡是过往，皆为序章！
     - name: Jasonの小窝
       link: https://freeaas.com
-      avatar: https://www.freeaas.com/a/avatar.jpg
+      avatar: https://hi.freeaas.com/a/avatar.jpg
       descr: 因为热爱，所以执着
     - name: guole's Blog
       link: https://guole.fun/
-      avatar: https://cdn.guole.fun/logo/guole.fun.png
+      avatar: https://guole.fun/img/gl.jpg
       descr: 保持理智，相信明天。
     - name: 柠檬大师的空间站
       link: https://leidl.top
@@ -179,10 +155,6 @@
       link: https://lastknightcoder.github.io/hexo-blog/
       avatar: https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3@master/avatar.3fylnrbbo8m0.jpg
       descr: 人生天地间，忽如远行客。
-    - name: 猿来是你 - Blog
-      link: https://xingchuangyang.gitee.io/
-      avatar: https://pic.chuangyang.xin/519b2a7e3594fb98f7d6842dd6d71162.jpg
-      descr: 莫等闲，百了少年头。
     - name: yk-ddm - Blog
       link: https://yk-ddm.github.io
       avatar: https://yk-ddm.github.io/img/avatar.jpg
@@ -231,17 +203,13 @@
       link: https://www.yyyzyyyz.cn/
       avatar: https://cdn.jsdelivr.net/gh/hiltay/imgcdn/img/202111191951780.JPG
       descr: When nothing goes right,just go left.
-    - name: 攻城狮杰森
-      link: https://coder-jason.cn
-      avatar: https://coder-jason.cn/img/head.JPG
-      descr: 功崇惟志，业广惟勤
     - name: Cyan Blog
       link: https://blog.xmwpro.com/
       avatar: https://cyan-blog.oss-cn-shenzhen.aliyuncs.com/global/avatar.jpeg
       descr: 记录学习、生活和有趣的事
     - name: midoriya
       link: https://www.midoriya.co
-      avatar: https://www.midoriya.co/img/avatar.jpg
+      avatar: https://www.midoriya.co/img/avatar1.jpg
       descr: 我本将心向明月
     - name: 梦の小窝
       link: https://renm.cc
