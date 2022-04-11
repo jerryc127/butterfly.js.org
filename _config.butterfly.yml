@@ -386,7 +386,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://butterfly-twikoo.vercel.app
+  envId: https://btf-twikoo.vercel.app
   region:
   visitor: false
   option:

@@ -759,6 +759,10 @@ ad:
 {% tabs Math %}
 <!-- tab MathJax -->
 
+{% note warning flat %}
+不要在標題裏使用 mathjax 語法，toc 目錄不一定能正確顯示 mathjax，可能顯示 mathjax 代碼
+{% endnote %}
+
 > 建議使用 KaTex 獲得更好的效果，下文有介紹！
 
 修改 `主題配置文件`:
@@ -771,22 +775,46 @@ mathjax:
   per_page: false
 ```
 
-> 如果`per_page`設為`true`,則每一頁都會加載Mathjax服務。設為`false`，則需要在文章`Front-matter`添加`mathjax: true`,對應的文章才會加載Mathjax服務。
+> 如果 `per_page` 設為 `true`,則每一頁都會加載 Mathjax 服務。設為 `false`，則需要在文章 `Front-matter` 添加 `mathjax: true`,對應的文章才會加載 Mathjax 服務。
 
-然後你需要修改一下默認的`markdown`渲染引擎來實現 MathJax 的效果。
+然後你需要修改一下默認的 `markdown` 渲染引擎來實現 MathJax 的效果。
 
 查看: [hexo-renderer-kramed](https://www.npmjs.com/package/hexo-renderer-kramed)
 
-以下操作在你 hexo 博客的目錄下 (**不是 Butterfly 的目錄!**):
+以下操作在你 hexo 博客的目錄下 (**不是 Butterfly 的目錄**):
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-mathjax.png)
+1. 安裝插件
+
+   ```bash
+   npm uninstall hexo-renderer-marked --save
+   npm install hexo-renderer-kramed --save
+   ```
+
+2. 配置 hexo 根目錄的配置文件
+
+   ```yaml
+   kramed:
+     gfm: true
+     pedantic: false
+     sanitize: false
+     tables: true
+     breaks: true
+     smartLists: true
+     smartypants: true
+   ```
 
 效果：
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-mathjax-2.jpg)
+
 <!-- endtab -->
 
 <!-- tab KaTeX -->
+
+{% note warning flat %}
+不要在標題裏使用 KaTeX 語法，toc 目錄不能正確顯示 KaTeX。
+{% endnote %}
+
 首先禁用`MathJax`（如果你配置過 MathJax 的話），然後修改你的`主題配置文件`以便加載`katex.min.css`:
 
 ```yaml
@@ -798,7 +826,7 @@ katex:
   hide_scrollbar: true
 ```
 
-你不需要添加`katex.min.js`來渲染數學方程。相應的你需要卸載你之前的 hexo 的 markdown 渲染器，然後安裝其它插件。
+你不需要添加 `katex.min.js` 來渲染數學方程。相應的你需要卸載你之前的 hexo 的 markdown 渲染器，然後安裝其它插件。
 
 {% subtabs katex-plugins %}
 

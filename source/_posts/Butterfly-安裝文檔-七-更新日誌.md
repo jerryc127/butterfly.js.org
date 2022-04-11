@@ -94,7 +94,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
 {% hideToggle 4.0.0 (2022/01/15) %}
 
-## 4.0.0
+## 4.0.0 (2022/01/15)
 
 ### Breaking Change
 
@@ -361,12 +361,14 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 {% hideToggle 3.8.4 (2021/09/18) %}
 
 ## 3.8.4 (2021/09/18)
-## Fix
+### Fix
+
 1. 修復開啟 photofigcaption 後，導致 inlineImg 標籤外掛顯示錯亂的 bug close #667
 2. 修復使用本地搜索時，搜索插件配置為不搜索文章內容會無法使用搜索的 bug close #666
 3. 修復可能導致相關文章鏈接出錯的 bug close #549
 
-## Improvement
+###  Improvement
+
 1. 調整代碼框滾動條顏色 close #651
 2. 當圖片沒有 figcaption 時，不會添加 figcaption 代碼
 
