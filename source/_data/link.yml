@@ -39,6 +39,10 @@
       link: https://gukaifeng.cn/
       avatar: https://gukaifeng.cn/img/avatar.png
       descr: 客官，来呀，不看会后悔的哦！
+    - name: SerMs
+      link: https://hgm.vercel.app/
+      avatar: https://hgm.vercel.app/img/log.png
+      descr: 东风吹破少年梦,从此再无赤子心~
     - name: 雨落泪尽
       link: https://couqiao.net/
       avatar: https://file.couqiao.net/webimg/gravatar.webp
@@ -251,3 +255,7 @@
       link: https://dsanying.github.io
       avatar: https://cdn.jsdelivr.net/gh/dsanying/ImgHosting/avatar.jpg
       descr: 暗影无际，暗夜无边
+    - name: A.S.
+      link: https://wonderland.plus
+      avatar: https://blogimgs-1310551706.cos.ap-beijing.myqcloud.com/face.png
+      descr: You are wonderful.
