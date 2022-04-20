@@ -160,18 +160,6 @@ markdown_it_plus:
       options:
         strict: false
 
-douban:
-  user: iamjerryc
-  builtin: false
-  movie:
-    title: '那些年,我看過的電影'
-    quote: '過去、現在、未來'
-    comments: false
-    top_img: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/movie.jpg
-    meta: true
-    aside: true
-  timeout: 10000 
-
 feed:
   type: atom
   path: atom.xml
@@ -194,17 +182,3 @@ marked:
 
 server:
   port: 3127
-
-# Artitalk
-# see https://artitalk.js.org/
-artitalk:
-  enable: true
-  appId: f2OAz3uUxl0Dr048MqPBUYLn-MdYXbMMI
-  appKey: Hay8CrEoQcBTO5bn2FS1FWx7
-  path: talking
-  js:
-  option:
-  front_matter:
-    title: 自言自語
-    comments: false
-    top_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-demo-talking-top-img.jpg

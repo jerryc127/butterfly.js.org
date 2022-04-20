@@ -42,8 +42,6 @@ menu:
   娛樂||fa fa-heartbeat:
     # - 音樂 || /music/ || fas fa-music
     圖庫: /Gallery/ || fas fa-images
-    電影: /movies/ || fas fa-video
-    自言自語: /talking/ || fas fa-cubes
   留言板: /messageboard/ || fas fa-comment-dots
   示例: /link/ || fas fa-thumbs-up
 
