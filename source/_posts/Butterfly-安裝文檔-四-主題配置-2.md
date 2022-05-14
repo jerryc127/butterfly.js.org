@@ -16,9 +16,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2022 年 02 月 13 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2022 年 05 月 11 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.1.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.1.0)
+ 🦋  Butterfly 已經更新到 [4.2.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.2.1)
 
 {% endnote %}
 
@@ -65,7 +65,7 @@ comments:
 | --------------- | ------------------------------------------------------------ |
 | use             | 使用的評論（請注意，最多支持兩個，如果不需要請留空）<br>*注意：雙評論不能是 Disqus 和 Disqusjs 一起，由於其共用同一個 ID，會出錯* |
 | text            | 是否顯示評論服務商的名字                                     |
-| lazyload        | 是否為評論開啟lazyload，開啟後，只有滾動到評論位置時才會加載評論所需要的資源（開啟lazyload後，評論數將不顯示） |
+| lazyload        | 是否為評論開啟lazyload，開啟後，只有滾動到評論位置時才會加載評論所需要的資源（*開啟 lazyload 後，評論數將不顯示*） |
 | count           | 是否在文章頂部顯示評論數 <br/> livere、Giscus 和 utterances 不支持評論數顯示 |
 | card_post_count | 是否在首頁文章卡片顯示評論數<br/>gitalk、livere 、Giscus 和 utterances 不支持評論數顯示 |
 
@@ -177,6 +177,8 @@ valine:
   option:
 ```
 
+> 開啟 visitor 後，文章頁的訪問人數將改為 Valine 提供，而不是 **不蒜子**
+
 Valine於 v1.4.5 開始支持自定義表情，如果你需要自行配置，請在`emojiCDN`配置表情 CDN。
 
 同時在Hexo 工作目錄下的`source/_data/`創建一個json文件`valine.json`,等同於 Valine 需要配置的`emojiMaps`，`valine.json`配置方式可參考如下
@@ -242,15 +244,11 @@ Waline - 一款從 Valine 衍生的帶後端評論系統。可以將 Waline 等�
 waline:
   serverURL: # Waline server address url
   bg: # waline background
-  visitor: false
+  pageview: false
   option:
 ```
 
-由於 waline 將會逐步去掉 `emojiCDN` 和 `emojiMaps`, 舊的添加表情方法已被棄用（從 3.7.8 開始）
-
-請參看 waline 的[添加表情文檔](https://waline.js.org/guide/client/emoji.html)進行配置
-
-
+> 開啟 pageview 後，文章頁的訪問人數將改為 Waline 提供，而不是 **不蒜子**
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
 
@@ -278,7 +276,7 @@ utterances:
 
 <!-- tab Facebook Comments -->
 
-`Facebook Comments`是Facebook提供的評論插件，需要登陸Facebook纔可評論。
+`Facebook Comments`是Facebook提供的評論插件，需要登陸Facebook才可評論。
 
 修改 `主題配置文件`
 
@@ -322,11 +320,9 @@ twikoo:
 | visitor | 是否顯示文章閲讀數                                           |
 | option  | 可選配置                                                     |
 
-
+> 開啟 visitor 後，文章頁的訪問人數將改為 Twikoo 提供，而不是 **不蒜子**
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-twikoo-comments.png)
-
-
 
 
 
@@ -603,15 +599,23 @@ algolia_search:
 ```yaml
 local_search:
   enable: false
+  preload: false
+  CDN:
 ```
+
+| 參數    | 解釋                                                         |
+| ------- | ------------------------------------------------------------ |
+| enable  | 是否開啟本地搜索                                             |
+| preload | 預加載，開啟後，進入網頁後會自動加載搜索文件。關閉時，只有點擊搜索按鈕後，才會加載搜索文件 |
+| CDN     | 搜索文件的 CDN 地址（默認使用的本地鏈接）                    |
 
 <!-- endtab -->
 {% endtabs %}
 
 ## 網站驗證
 
-如果需要搜索引擎收錄網站，可能需要登錄對應搜索引擎的管理平臺進行提交。
-各自的驗證碼可從各自管理平臺拿到
+如果需要搜索引擎收錄網站，可能需要登錄對應搜索引擎的管理平台進行提交。
+各自的驗證碼可從各自管理平台拿到
 
 修改 `主題配置文件`
 
@@ -899,7 +903,7 @@ markdown_it_plus:
 
 
 
-因為 KaTeX 更快更輕量，因此沒有 MathJax 的功能多（比如右鍵菜單）。為那些使用 MathJax 的用戶，主題也內置了 katex 的 [複製](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex) 功能。
+因為 KaTeX 更快更輕量，因此沒有 MathJax 的功能多（比如右鍵菜單）。為那些使用 MathJax 的用户，主題也內置了 katex 的 [複製](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex) 功能。
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-katex.gif)
 
@@ -1380,7 +1384,7 @@ wordcount:
 
 <!-- tab 注意 -->
 
-如果你並不想爲某張圖片添加大圖查看模式，你可以使用 html 格式引用圖片，併爲圖片添加 `no-lightbox` class 名。
+如果你並不想為某張圖片添加大圖查看模式，你可以使用 html 格式引用圖片，併為圖片添加 `no-lightbox` class 名。
 
 <!-- endtab -->
 
@@ -1448,7 +1452,7 @@ css_prefix: true
 
 ### Open Graph
 
-在 `head` 裏增加一些 meta 資料，例如縮略圖、標題、時間等等。當你分享網頁到一些平臺時，平臺會讀取 Open Graph 的內容，展示縮略圖，標題等等信息。
+在 `head` 裏增加一些 meta 資料，例如縮略圖、標題、時間等等。當你分享網頁到一些平台時，平台會讀取 Open Graph 的內容，展示縮略圖，標題等等信息。
 
 修改配置文件
 
@@ -1488,7 +1492,7 @@ pangu:
 
 ## Pjax
 
-當用戶點擊鏈接，通過ajax更新頁面需要變化的部分，然後使用HTML5的pushState修改瀏覽器的URL地址。
+當用户點擊鏈接，通過ajax更新頁面需要變化的部分，然後使用HTML5的pushState修改瀏覽器的URL地址。
 
 這樣可以不用重複加載相同的資源（css/js）， 從而提升網頁的加載速度。
 
@@ -1548,12 +1552,76 @@ inject:
 
 配置文件中最後一部分CDN，裏面是主題所引用到的文件，可自行配置CDN。（非必要請勿修改，配置後請確認鏈接是否能訪問）
 
-以下是一些CDN提供商：
+```yaml
+CDN:
+  # The CDN provider of internal scripts (主題內部 js 的 cdn 配置)
+  # option: local/jsdelivr
+  # Dev version cannot choose jsdelivr (dev版的主題不能設置為 jsdelivr)
+  internal_provider: local
+  # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
+  # option: local/jsdelivr
+  # when set it to local, you need to install hexo-butterfly-extjs
+  third_party_provider: jsdelivr
+  option:
+    # main_css:
+    # main:
+    # utils:
+    # translate:
+    # local_search:
+    # algolia_js:
+    # algolia_search_v4:
+    # instantsearch_v4:
+    # pjax:
+    # gitalk:
+    # gitalk_css:
+    # blueimp_md5:
+    # valine:
+    # disqusjs:
+    # disqusjs_css:
+    # twikoo:
+    # waline_js:
+    # waline_css:
+    # sharejs:
+    # sharejs_css:
+    # mathjax:
+    # katex:
+    # katex_copytex:
+    # katex_copytex_css:
+    # mermaid:
+    # canvas_ribbon:
+    # canvas_fluttering_ribbon:
+    # canvas_nest:
+    # lazyload:
+    # instantpage:
+    # typed:
+    # pangu:
+    # fancybox_css_v4:
+    # fancybox_v4:
+    # medium_zoom:
+    # snackbar_css:
+    # snackbar:
+    # activate_power_mode:
+    # fireworks:
+    # click_heart:
+    # ClickShowText:
+    # fontawesomeV6:
+    # flickr_justified_gallery_js:
+    # flickr_justified_gallery_css:
+    # aplayer_css:
+    # aplayer_js:
+    # meting_js:
+    # prismjs_js:
+    # prismjs_lineNumber_js:
+    # prismjs_autoloader:
+```
 
-- [jsdelivr](https://www.jsdelivr.com/)   👍主題使用
-- [bootcdn](https://www.bootcdn.cn/)
-- [cdnjs](https://cdnjs.com/)
-- ......
+
+
+| 參數                 | 解釋                                                         |
+| -------------------- | ------------------------------------------------------------ |
+| internal_provider    | 主題內部文件<br />可選 jsdelivr 或 local (本地)<br />**注意:** 如果使用的是 Dev 版,不要設置為 jsdelivr |
+| third_party_provider | 第三方文件<br />可選 jsdelivr 或 local (本地)<br />**注意:**  如果你選擇 local 需要安裝 `hexo-butterfly-extjs`插件 |
+| option               | 你可以在這裏更換部分文件,會覆蓋原有的配置                    |
 
 {% btn '/posts/98d20436/',❓ Butterfly 安裝文檔(五) 主題問答,far fa-hand-point-right,block green right larger %}
 

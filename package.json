@@ -30,11 +30,10 @@
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-theme-butterfly": "^4.1.0",
+    "hexo-theme-butterfly": "^4.2.1",
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
-    "cheerio": "^1.0.0-rc.10",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-terser": "^2.1.0",

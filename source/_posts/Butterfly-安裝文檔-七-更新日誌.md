@@ -17,9 +17,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2022 年 02 月 13 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2022 年 05 月 11 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.1.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.1.0)
+ 🦋  Butterfly 已經更新到 [4.2.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.2.1)
 
 {% endnote %}
 
@@ -38,6 +38,105 @@ comments: false
 {% endnote %}
 
 ***
+
+{% hideToggle 4.2.1 (2022/05/11) %}
+
+## 4.2.1 (2022/05/11)
+
+### Fix
+
+1. CDN 配置為 local 時 mathjax 字體缺失的 bug
+
+{% endhideToggle %}
+
+{% hideToggle 4.2.0 (2022/05/02) %}
+
+## 4.2.0 (2022/05/02)
+
+### Breaking Change
+
+1. waline 適配 V2
+
+   ```diff
+   CDN:
+   -    waline: 
+   +    waline_js:
+   +    waline_css:
+   ```
+
+2. waline 的 visitor 改為 pageview
+
+   ```diff
+   waline:
+   -  visitor: false
+   +  pageview: false
+   ```
+
+3. cdn 可一鍵設置 本地文件/可單獨配置主題文件，第三方文件的 cdn
+
+   ```diff
+   CDN:
+   +  # The CDN provider of internal scripts (主題內部 js 的 cdn 配置)
+   +  # option: local/jsdelivr
+   +  # Dev version cannot choose jsdelivr (dev版的主題不能設置為 jsdelivr)
+   +  internal_provider: local
+   +  # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
+   +  # option: local/jsdelivr
+   +  # when set it to local, you need to install hexo-butterfly-extjs
+   +  third_party_provider: jsdelivr
+   +  option:
+   ```
+
+4. 移除 utterances，giscus， addtoany， busuanzi 的 cdn 配置
+
+### Feature
+
+1. algolia 搜索增加文章內容顯示和高亮
+
+2. 搜索內容顯示區域變大
+
+3. 本地搜索增加 preload,cdn 配置 #859
+
+   ```diff
+   local_search:
+     enable: false
+   +  preload: false
+   +  CDN:
+   ```
+
+4. 更新 social-share cdn 版本
+
+5. 歸檔頁面的側邊欄支持隱藏
+
+   ```diff
+   aside:
+   +  archives: true
+   ```
+
+6. 可配置文章版權模塊的作者超鏈接
+
+   ```diff
+   post_copyright:
+   +  author_href:
+   ```
+
+### Fix
+
+1. mathjax 顯示不完全的 bug
+2. 標題中帶有 HTML 關鍵字時，會破壞相關推薦的渲染  #836
+
+### Improvement
+
+1. 搜索標題統一顯示為 ‘搜索’
+2. algolia 搜索的 logo 改為 instantsearch 調用
+3. algolia 第一次進入時不會自動搜索 #867
+4. 搜索內容增加 ... 縮略辨識
+5. 調整分享按鈕導致的間距問題
+6. html/css 優化
+
+{% endhideToggle %}
+
+
 
 {% hideToggle 4.1.0 (2022/02/13) %}
 
@@ -60,10 +159,10 @@ comments: false
 
 ### Fix
 
-1. 修復點擊 toc 外圍,控制檯報錯的 bug
+1. 修復點擊 toc 外圍,控制枱報錯的 bug
 2. Facebook Comments 無法使用 #787
 3. chat_btn 聊天按鈕翻譯缺失 #791
-4. local search 的 content 設爲 false, 搜索無法運行的 bug #764
+4. local search 的 content 設為 false, 搜索無法運行的 bug #764
 5. Mermaid 圖表渲染後元素高度過大 #773
 6. 文章頁分享按鈕另開一行時， 導航頁寬度沒有 100% 的 bug #765
 
@@ -80,7 +179,7 @@ comments: false
 
 improvement: 優化 pjax 下，右下角按鈕的動畫
 
-fix: 修復頁面設置 aside 爲 true 時，js 報錯的 bug
+fix: 修復頁面設置 aside 為 true 時，js 報錯的 bug
 
 fix: 修復部分頁面右下角按鈕位置遮擋的 bug
 
@@ -141,7 +240,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    +  page: false
    ```
 
-3. 刪除 hide_sidebar_menu_child 配置，改爲直接在 menu 配置 #640
+3. 刪除 hide_sidebar_menu_child 配置，改為直接在 menu 配置 #640
 
    ```diff
    -# Hide the child menu items in mobile sidebar
@@ -175,7 +274,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
      # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
    ```
 
-9. 移除 html 的 font-size 改爲瀏覽器默認大小
+9. 移除 html 的 font-size 改為瀏覽器默認大小
 
 ### Feature
 
@@ -198,7 +297,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    +  show: # toc,chat,comment
    ```
 
-3. 網站資料顯示，當標籤和分類爲0時，數量顯示爲 0，而不是隱藏
+3. 網站資料顯示，當標籤和分類為0時，數量顯示為 0，而不是隱藏
 
 4. 代碼框設置高度限制，展開後按鈕不會消失，可點擊再次摺疊 #637
 
@@ -208,13 +307,13 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
 7. 升級 facebook comment js 到 version 11
 
-8. 爲文章單獨設置 TOC simple_style 顯示 #631
+8. 為文章單獨設置 TOC simple_style 顯示 #631
 
 9. page 頁頂部圖增加黑色遮罩 #671
 
 10. 首頁 pagination更新 UI
 
-11. 主題 css 使用的 rem 改爲 em 或 px
+11. 主題 css 使用的 rem 改為 em 或 px
 
 13. 移除 右下角字體調整按鈕
 
@@ -227,7 +326,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
 15. 清除 配置文件 的CDN，默認CDN 不再顯示在 config
 
-16. 替換 Justified Gallery 爲 flickr-justified-gallery
+16. 替換 Justified Gallery 為 flickr-justified-gallery
 
     ```DIFF
     CDN:
@@ -271,9 +370,9 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
 24. 本地搜索增加數據庫加載中和搜索中 loading 顯示
 
-25. anchor 不再限制 post 頁開啓，可以在任何頁面開啓
+25. anchor 不再限制 post 頁開啟，可以在任何頁面開啟
 
-26. 文章標題支持點擊跳轉到此標題開始閱讀 #653
+26. 文章標題支持點擊跳轉到此標題開始閲讀 #653
 
 27. toc 可以設置全部展開 #709
 
@@ -323,34 +422,34 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
 ### Fix
 
-1. 修復 開啓 lazyload 時， fancybox 的縮略圖顯示 lazyload 加載圖片的 bug
+1. 修復 開啟 lazyload 時， fancybox 的縮略圖顯示 lazyload 加載圖片的 bug
 2. 修復 字體過大/過小而導致 部分 ui 偏移的 bug 
 3. 修復 自建頁面圖片沒有 blur 效果
 4. 修復窗口大小改變時，導航欄的 ui 可能會錯亂的 bug
 5. 修復 pjax下 ，twikoo 評論獲取是上一篇評論的 bug #678
 6. 修復 rightside 遮擋內容，導致內容無法點擊的 bug
-7. 修復 mermaid 在某些頁面（有元素 id 爲 mermaid 時） 會無法加載的 bug
+7. 修復 mermaid 在某些頁面（有元素 id 為 mermaid 時） 會無法加載的 bug
 8. 修復 搜索框不會自動 focus 的 bug
 9. 修復沒有配置 comments 的 use 時，會報錯的 bug
 10. 修復 toc 在小設備上顯示出屏幕外的 bug
 11. 修復在打賞按鈕周圍也會觸發打賞彈窗的 bug
 12. 修復 Waline 最近評論的時間只顯示 "剛剛" 的問題 (以docker的方式執行) #730
-14. 修復 utterances 的 issue_term 設爲 url，og:title時，評論顯示錯誤的 bug
-14. 修復評論配置爲 Livere 和 Facebook Comments 時，最新評論模塊仍然顯示的 bug
+14. 修復 utterances 的 issue_term 設為 url，og:title時，評論顯示錯誤的 bug
+14. 修復評論配置為 Livere 和 Facebook Comments 時，最新評論模塊仍然顯示的 bug
 
 ### Improvement
 
-1. subtitle 代碼優化，當 source 設爲 false，同時 sub 也沒有配置，將會讀取 hexo 配置文件的 subtitle, 無須使用轉義字符
+1. subtitle 代碼優化，當 source 設為 false，同時 sub 也沒有配置，將會讀取 hexo 配置文件的 subtitle, 無須使用轉義字符
 2. 禁止 ios 點擊搜索框，頁面放大的問題
 3. sidebar menu 點擊展開不再限制只能點擊按鈕 #640
 4. 修改沒有頂部圖下，文章頁的標題大小
 5. 優化 404 頁面 UI
-6. lazyload 默認佔位圖改爲透明圖片
+6. lazyload 默認佔位圖改為透明圖片
 7. 優化 css
 8. 優化 lazyload blur 出現特效
-9. 手機端更改閱讀模式退出按鈕到右下角
+9. 手機端更改閲讀模式退出按鈕到右下角
 10. ui 微調
-11. 禁止一些瀏覽器會出現點擊左下角按鈕出現放大網頁的行爲
+11. 禁止一些瀏覽器會出現點擊左下角按鈕出現放大網頁的行為
 12. 鼠標移到最新評論內容，增加 title 顯示
 13. 移除 button 的 hover 效果
 
@@ -1291,14 +1390,14 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 ### Improvements
 
 1. preloader 在 pjax 下 每個頁面都會加載
-2. 修改判斷，避免用戶設置2個lightbox 而導致報錯（只能設置一個）
+2. 修改判斷，避免用户設置2個lightbox 而導致報錯（只能設置一個）
 3. 精確時間顯示 （剛剛/幾分鐘前/幾小時前/幾天前/幾個月前）
 4. 刪除不必要的語言文件和css
 5. Open_Graph 改為 hexo 內置 生成
 6. 當隱藏部分沒配置時，左下角設置按鈕會消失 #353
 7. aside 分類 收縮/展開 增加slide效果
 8. darkmode 字體顔色加深
-9. 優化nav的進入，應該修復一些用戶在本地測試中無法顯示nav的bugs
+9. 優化nav的進入，應該修復一些用户在本地測試中無法顯示nav的bugs
 10. 最新評論 leancloud呼叫由js sdk 改為 rest api 呼叫。應用可以不與valine同一個
 11. 最新評論增加錯誤輸出
 12. tags 設定彩色顯示後，字型大小將根據tag的文章數量而變化 close #365
@@ -1510,7 +1609,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
 1. 修復導航側邊欄沒有進入特效的Bugs
 2. 修復Hexo 5.0.0 以下版本， toc遇到中文不會滾動的bugs
-3. 修復pjax下，同時開啟Open_Graph_meta和Livere，Livere評論後臺顯示的來源頁面與實際不同 的bugs
+3. 修復pjax下，同時開啟Open_Graph_meta和Livere，Livere評論後台顯示的來源頁面與實際不同 的bugs
 
 {% endhideToggle %}
 
