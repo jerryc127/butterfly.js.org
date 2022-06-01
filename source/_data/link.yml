@@ -283,10 +283,13 @@
       link: https://tyxiumud.github.io/
       avatar: https://cdn.jsdelivr.net/gh/tyxiumud/blog.img/avatar.png
       descr: 开心最重要啦~
+    - name: LanYunのBlog
+      link: https://lanyundev.vercel.app/
+      avatar: https://lanyundev.vercel.app/img/logo.jpg
+      descr: Share Technology.
     - name: DaDio
       link: https://dadio.cc/
       avatar: https://dadio.cc/img/head.jpg
       descr: 我走的很慢，但我从不后退
-
 
 
