@@ -8,7 +8,7 @@ tags:
 categories: Docs文檔
 keywords: 'hexo,butterfly,主題,doc,教程,文檔'
 description: Butterfly安裝文檔-主題配置-2
-cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-docs-04-cover.png
+cover: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-docs-04-cover.png
 abbrlink: ceeb73f
 date: 2020-05-28 22:38:11
 comments: false
@@ -71,19 +71,19 @@ comments:
 
 > 單評論
 
-![image-20200731172506907](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-single-comments.png)
+![image-20200731172506907](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-single-comments.png)
 
 > 雙評論
 
-![image-20200731173006128](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments.png)
+![image-20200731173006128](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments.png)
 
 > 顯示text
 
-![image-20200731173006128](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments.png)
+![image-20200731173006128](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments.png)
 
 > 不顯示text
 
-![image-20200731173143712](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments-not-text.png)
+![image-20200731173143712](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments-not-text.png)
 
 <!-- endtab -->
 
@@ -98,7 +98,7 @@ disqus:
   shortname:
 ```
 
-![image-20201027211418161](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-disqus-new.png)
+![image-20201027211418161](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-disqus-new.png)
 
 <!-- endtab -->
 
@@ -117,7 +117,7 @@ disqusjs:
 
 > 當無法訪問 Disqus 時，會顯示
 
-![image-20201027212543851](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-disqusjs-new.png)
+![image-20201027212543851](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-disqusjs-new.png)
 
 <!-- endtab -->
 
@@ -134,9 +134,9 @@ livere:
 
 laibili 的 uid 你能在這裏找到:
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili.jpg)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili.jpg)
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili_2-new.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili_2-new.png)
 
 <!-- endtab -->
 
@@ -156,7 +156,7 @@ gitalk:
   option:
 ```
 
-![image-20201027212704930](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-gitalk-new.png)
+![image-20201027212704930](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-gitalk-new.png)
 
 <!-- endtab -->
 
@@ -212,7 +212,7 @@ Valine於 v1.4.5 開始支持自定義表情，如果你需要自行配置，請
 
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
 
 > default_avatar
 
@@ -250,7 +250,7 @@ waline:
 
 > 開啟 pageview 後，文章頁的訪問人數將改為 Waline 提供，而不是 **不蒜子**
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
 
 <!-- endtab -->
 
@@ -270,7 +270,7 @@ utterances:
   dark_theme: photon-dark
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-Utterances.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-Utterances.png)
 
 <!-- endtab -->
 
@@ -291,7 +291,7 @@ facebook_comments:
   lang: en_US # Language en_US/zh_CN/zh_TW and so on
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-butterfly-docs-facebook-comments.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-butterfly-docs-facebook-comments.png)
 
 <!-- endtab -->
 
@@ -322,7 +322,7 @@ twikoo:
 
 > 開啟 visitor 後，文章頁的訪問人數將改為 Twikoo 提供，而不是 **不蒜子**
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-twikoo-comments.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-twikoo-comments.png)
 
 
 
@@ -349,7 +349,7 @@ giscus:
 
 具體配置的意思，請參考 Giscus 的[文檔](https://giscus.app/zh-TW)
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-giscus.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-giscus.png)
 
 <!-- endtab -->
 
@@ -374,7 +374,7 @@ giscus:
 chat_btn: true
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-button.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-button.png)
 
 為了不影響訪客的體驗，主題提供一個`chat_hide_show`配置
 設為`true`後，使用工具提供的按鈕時，只有向上滾動才會顯示聊天按鈕，向下滾動時會隱藏按鈕。
@@ -397,7 +397,7 @@ chat_hide_show: true
 打開[chatra](https://chatra.com/)並註冊賬號。
 你可以在`Preferences`中找到`Public key`
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-id.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-id.png)
 
 修改 `主題配置文件`
 
@@ -411,11 +411,11 @@ chatra:
 
 `chatra`的樣式你可以`Chat Widget`自行配置
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-ui-settings.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-ui-settings.png)
 
 > Demo
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-ui-demo.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-ui-demo.png)
 
 <!-- endtab -->
 
@@ -425,7 +425,7 @@ chatra:
 打開[tidio](https://www.tidio.com/)並註冊賬號。
 你可以在`Preferences > Developer`中找到`Public key`
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-id.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-id.png)
 
 修改 `主題配置文件`
 
@@ -438,11 +438,11 @@ tidio:
 ```
 `tidio`的樣式你可以`Channels`自行配置
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-setting.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-setting.png)
 
 > Demo
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-demo.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-demo.png)
 
 <!-- endtab -->
 
@@ -450,7 +450,7 @@ tidio:
 打開[daovoice](http://daovoice.io/)和註冊帳號
 找到你的`app id`
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-appid.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-appid.png)
 
 修改 `主題配置文件`
 
@@ -464,11 +464,11 @@ daovoice:
 
 可在`聊天設置`裏配置聊天按鈕等樣式
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-ui.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-ui.png)
 
 > Demo
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-demo.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-demo.png)
 
 <!-- endtab -->
 
@@ -476,7 +476,7 @@ daovoice:
 打開[Gitter](https://gitter.im/)和註冊賬號
 創建一個`community`或者`room`,複製名稱到設置去
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-gitter-setting.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-gitter-setting.png)
 
 修改 `主題配置文件`
 
@@ -490,7 +490,7 @@ gitter:
 
 > Demo
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-gitter-ui.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-gitter-ui.png)
 
 <!-- endtab -->
 
@@ -510,9 +510,9 @@ crisp:
   website_id: xxxxxxxx
 ```
 
-![image-20200731183023863](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-buttefly-docs-chat-crisp.png)
+![image-20200731183023863](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-buttefly-docs-chat-crisp.png)
 
-![image-20200731183444781](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-crisp-demo.png)
+![image-20200731183444781](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-crisp-demo.png)
 
 <!-- endtab -->
 
@@ -528,7 +528,7 @@ crisp:
 > 訪問 [AddThis](https://www.addthis.com/) 官網
 > 找到你的 pub-id
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addthis.jpg)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addthis.jpg)
 
 修改 `主題配置文件`
 
@@ -551,7 +551,7 @@ sharejs:
   sites: facebook,twitter,wechat,weibo,qq  #想要顯示的內容
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-sharejs.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-sharejs.png)
 <!-- endtab -->
 
 <!-- tab Addtoany -->
@@ -563,7 +563,7 @@ addtoany:
   item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addtoany.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addtoany.png)
 
 <!-- endtab -->
 {% endtabs %}
@@ -635,7 +635,7 @@ site_verification:
 
 2. 找到你百度統計的統計代碼
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-baidu-tongji.jpg)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-baidu-tongji.jpg)
 
 3. 修改 `主題配置文件`
 
@@ -650,7 +650,7 @@ baidu_analytics: 你的代碼
 
 2. 找到你的谷歌分析的跟蹤 ID
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-google-analytics.jpg)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-google-analytics.jpg)
 
 3. 修改 `主題配置文件`
 
@@ -666,7 +666,7 @@ google_analytics: 你的代碼 # 通常以`UA-`打頭
 2. 找到 `站點設置 - 獲取代碼`
 3. 找到你的 `web_id`
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-CNZZ-analysic.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-CNZZ-analysic.png)
 
 4. 修改 `主題配置文件`
 
@@ -682,7 +682,7 @@ cnzz_analytics:
 2. 找到 `JavaScript 程式碼片段`
 3. 找到你的 `token`
 
-![image-20201230195158742](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cloudflare-analytics-id.png)
+![image-20201230195158742](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cloudflare-analytics-id.png)
 
 4. 修改 `主題配置文件`
 
@@ -700,7 +700,7 @@ cnzz_analytics:
 
 2. 創建 `PROJECT`
 
-3. 找到你的 `ID`![image-20201230195541443](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-clarity-id.png)
+3. 找到你的 `ID`![image-20201230195541443](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-clarity-id.png)
 
 4. 修改 `主題配置文件`
 
@@ -731,7 +731,7 @@ google_adsense:
   enable_page_level_ads: true
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-google-adsense1.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-google-adsense1.png)
 <!-- endtab -->
 
 <!-- tab 手動廣告配置 -->
@@ -753,8 +753,8 @@ ad:
   index: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="xxxxxxxxxxxx" data-ad-client="ca-pub-xxxxxxxxxx" data-ad-slot="xxxxxxxxxx"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-ad-post.png)
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-ad-index.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-ad-post.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-ad-index.png)
 <!-- endtab -->
 {% endtabs %}
 
@@ -809,7 +809,7 @@ mathjax:
 
 效果：
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-mathjax-2.jpg)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-mathjax-2.jpg)
 
 <!-- endtab -->
 
@@ -905,7 +905,7 @@ markdown_it_plus:
 
 因為 KaTeX 更快更輕量，因此沒有 MathJax 的功能多（比如右鍵菜單）。為那些使用 MathJax 的用户，主題也內置了 katex 的 [複製](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex) 功能。
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-katex.gif)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-katex.gif)
 
 <!-- endtab -->
 {% endtabs %}
@@ -938,8 +938,8 @@ theme_color:
   scrollbar_color: "#49b1f5"
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_1.png)
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_2.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_1.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_2.png)
 
 ### 網站背景
 
@@ -958,11 +958,11 @@ background:
 例如：網站是 `https://yoursite.com/blog`,引用一張`img/xx.png`圖片，則設置background為 `url(/blog/img/xx.png)
 > background:'#49B202'
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-set-body-background-color.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-set-body-background-color.png)
 
 > background: url(https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png)
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-set-body-background-img.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-set-body-background-img.png)
 
 ### footer 背景
 
@@ -982,7 +982,7 @@ footer_bg: true
 
 > true
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-footer-img.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-footer-img.png)
 
 ### 打字效果
 
@@ -1000,7 +1000,7 @@ activate_power_mode:
   mobile: false
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-type-animation.gif)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-type-animation.gif)
 
 ### 背景特效
 {% tabs 背景特效 %}
@@ -1020,7 +1020,7 @@ canvas_ribbon:
 
 相關配置可查看[canvas_ribbon](https://github.com/hustcc/ribbon.js)
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-canvas-ribbon.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-canvas-ribbon.png)
 <!-- endtab -->
 
 <!-- tab 動態綵帶 -->
@@ -1033,7 +1033,7 @@ canvas_fluttering_ribbon:
   mobile: false # false 手機端不顯示 true 手機端顯示
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-canvas-ribbon-piao.gif)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-canvas-ribbon-piao.gif)
 <!-- endtab -->
 
 <!-- tab canvas-nest -->
@@ -1049,7 +1049,7 @@ canvas_nest:
   mobile: false # false 手機端不顯示 true 手機端顯示
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-canvas_nest.gif)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-canvas_nest.gif)
 <!-- endtab -->
 {% endtabs %}
 
@@ -1071,7 +1071,7 @@ fireworks:
   mobile: false
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-firewall.gif)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-firewall.gif)
 <!-- endtab -->
 
 <!-- tab 愛心 @fas fa-heart -->
@@ -1084,7 +1084,7 @@ click_heart:
   mobile: false
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/click_love.gif)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/click_love.gif)
 <!-- endtab -->
 
 <!-- tab 文字 @fab fa-amilia -->
@@ -1103,7 +1103,7 @@ ClickShowText:
   mobile: false
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/click_word.gif)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/click_word.gif)
 <!-- endtab -->
 {% endtabs %}
 
@@ -1128,15 +1128,15 @@ beautify:
 ```
 
 `title-prefix-icon`填寫的是fontawesome的icon的Unicode數。
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-fontwesome-unicode.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-fontwesome-unicode.png)
 
 > 未開啟美化
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-beautify.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-beautify.png)
 
 > 開啟美化
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-beautif.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-beautif.png)
 
 ### 自定義字體和字體大小
 
@@ -1198,7 +1198,7 @@ subtitle:
     - Never put off till tomorrow what you can do today
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-subtitle.gif)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-subtitle.gif)
 
 
 
@@ -1227,7 +1227,7 @@ index_top_img_height: 400px
 
 效果
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-top-img-setting.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-top-img-setting.png)
 
 
 
@@ -1242,7 +1242,7 @@ index_top_img_height: 400px
 preloader: true
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-preloader.gif)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-preloader.gif)
 
 ## PWA
 
@@ -1367,8 +1367,8 @@ wordcount:
   total_wordcount: true
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-word-count.png)
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-wordcount-totalcount.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-word-count.png)
+![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-wordcount-totalcount.png)
 
 ## 圖片大圖查看模式
 
@@ -1396,7 +1396,7 @@ wordcount:
 fancybox: true
 ```
 
-![fancybox.gif](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/fancybox.gif)
+![fancybox.gif](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/fancybox.gif)
 <!-- endtab -->
 <!-- tab medium_zoom -->
 修改 `主題配置文件`
@@ -1405,7 +1405,7 @@ fancybox: true
 medium_zoom: true
 ```
 
-![medium_zoom.gif](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/medium_zoom.gif)
+![medium_zoom.gif](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/medium_zoom.gif)
 <!-- endtab -->
 {% endtabs %}
 
@@ -1429,11 +1429,11 @@ snackbar:
 
 > 未開啟Snackbar
 
-![snackbar_false.gif](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/snackbar_false.gif)
+![snackbar_false.gif](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/snackbar_false.gif)
 
 > 開啟Snackbar
 
-![snackbar_true.gif](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/snackbar_true.gif)
+![snackbar_true.gif](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/snackbar_true.gif)
 
 ## 其它配置
 

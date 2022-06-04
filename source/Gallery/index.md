@@ -5,7 +5,7 @@ comments: false
 reward: false
 description: 圖庫
 aside: false
-top_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/Photo/photo.jpg
+top_img: https://fastly.jsdelivr.net/gh/jerryc127/CDN/Photo/photo.jpg
 ---
 
 {% galleryGroup '壁紙' '收藏的一些壁紙' '/Gallery/wallpaper' https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png %}

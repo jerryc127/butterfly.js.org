@@ -118,17 +118,17 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg
+index_img: https://fastly.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg
+default_top_img: https://fastly.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg
 
 # The banner image of archive page
-archive_img: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/archive.jpg
+archive_img: https://fastly.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/archive.jpg
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/tag.png
+tag_img: https://fastly.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/tag.png
 
 # The banner image of tag page
 # format:
@@ -137,7 +137,7 @@ tag_per_img:
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/category.jpg
+category_img: https://fastly.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/category.jpg
 
 # The banner image of category page
 # format:
@@ -153,17 +153,17 @@ cover:
   # left/right/both
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
-  default_cover: # https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png
-    - https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/material-2.png
-    - https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/material-1.png
-    - https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/material-3.png
-    - https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/material-6.png
-    - https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/material-5.png
-    - https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/material-4.png
-    - https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/material-7.png
-    - https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/material-9.png
-    - https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/material-8.png
-    - https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/material-10.png
+  default_cover: # https://fastly.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png
+    - https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/material-2.png
+    - https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/material-1.png
+    - https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/material-3.png
+    - https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/material-6.png
+    - https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/material-5.png
+    - https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/material-4.png
+    - https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/material-7.png
+    - https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/material-9.png
+    - https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/material-8.png
+    - https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/material-10.png
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -228,13 +228,13 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/Photo/wechat.jpg
+    - img: https://fastly.jsdelivr.net/gh/jerryc127/CDN/Photo/wechat.jpg
       link:
       text: 微信
-    - img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/Photo/alipay.jpg
+    - img: https://fastly.jsdelivr.net/gh/jerryc127/CDN/Photo/alipay.jpg
       link:
       text: 支付寶
-    - img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/Photo/alipayhk.jpg
+    - img: https://fastly.jsdelivr.net/gh/jerryc127/CDN/Photo/alipayhk.jpg
       link:
       text: 支付寶香港
 
@@ -893,17 +893,62 @@ CDN:
   # The CDN provider of internal scripts (主題內部 js 的 cdn 配置)
   # option: local/jsdelivr
   # Dev version cannot choose jsdelivr (dev版的主題不能設置為 jsdelivr)
-  internal_provider: jsdelivr
+  internal_provider: local
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: local/jsdelivr
   # when set it to local, you need to install hexo-butterfly-extjs
   third_party_provider: jsdelivr
   option:
+    algolia_search_v4: 'https://fastly.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js'
+    instantsearch_v4: 'https://fastly.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js'
+    pjax: 'https://fastly.jsdelivr.net/npm/pjax/pjax.min.js'
+    gitalk: 'https://fastly.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js'
+    gitalk_css: 'https://fastly.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+    blueimp_md5: 'https://fastly.jsdelivr.net/npm/blueimp-md5/js/md5.min.js'
+    valine: 'https://fastly.jsdelivr.net/npm/valine/dist/Valine.min.js'
+    disqusjs: 'https://fastly.jsdelivr.net/npm/disqusjs@1/dist/disqus.js'
+    disqusjs_css: 'https://fastly.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css'
+    twikoo: 'https://fastly.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js'
+    waline_js: 'https://fastly.jsdelivr.net/npm/@waline/client/dist/waline.js'
+    waline_css: 'https://fastly.jsdelivr.net/npm/@waline/client/dist/waline.css'
+    sharejs: 'https://fastly.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js'
+    sharejs_css: 'https://fastly.jsdelivr.net/npm/social-share.js/dist/css/share.min.css'
+    mathjax: 'https://fastly.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+    katex: 'https://fastly.jsdelivr.net/npm/katex@latest/dist/katex.min.css'
+    katex_copytex: 'https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js'
+    katex_copytex_css: 'https://fastly.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css'
+    mermaid: 'https://fastly.jsdelivr.net/npm/mermaid/dist/mermaid.min.js'
+    canvas_ribbon: 'https://fastly.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js'
+    canvas_fluttering_ribbon: 'https://fastly.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js'
+    canvas_nest: 'https://fastly.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js'
+    activate_power_mode: 'https://fastly.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js'
+    fireworks: 'https://fastly.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js'
+    click_heart: 'https://fastly.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js'
+    ClickShowText: 'https://fastly.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js'
+    lazyload: 'https://fastly.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js'
+    instantpage: 'https://fastly.jsdelivr.net/npm/instant.page@5/instantpage.min.js'
+    typed: 'https://fastly.jsdelivr.net/npm/typed.js/lib/typed.min.js'
+    pangu: 'https://fastly.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js'
+    fancybox_css_v4: 'https://fastly.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css'
+    fancybox_v4: 'https://fastly.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js'
+    medium_zoom: 'https://fastly.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js'
+    snackbar_css: 'https://fastly.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css'
+    snackbar: 'https://fastly.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js'
+    fontawesomeV6: 'https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css'
+    flickr_justified_gallery_js: 'https://fastly.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js'
+    flickr_justified_gallery_css: 'https://fastly.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    aplayer_css: 'https://fastly.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css'
+    aplayer_js: 'https://fastly.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js'
+    meting_js: 'https://fastly.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js'
+    prismjs_js: 'https://fastly.jsdelivr.net/npm/prismjs@1/prism.min.js'
+    prismjs_lineNumber_js: 'https://fastly.jsdelivr.net/npm/prismjs@1/plugins/line-numbers/prism-line-numbers.min.js'
+    prismjs_autoloader: 'https://fastly.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js'
+
     # main_css:
     # main:
     # utils:
-    # translate: https://cdn.jsdelivr.net/gh/jerryc127/butterfly.js.org/source/selfjs/tw_cn.min.js?ver=4.2.2
-    # local_search: https://cdn.jsdelivr.net/gh/jerryc127/butterfly.js.org/source/selfjs/localsearch.min.js?ver=4.2.2
+    # translate: https://fastly.jsdelivr.net/gh/jerryc127/butterfly.js.org/source/selfjs/tw_cn.min.js?ver=4.2.2
+    # local_search: https://fastly.jsdelivr.net/gh/jerryc127/butterfly.js.org/source/selfjs/localsearch.min.js?ver=4.2.2
     # algolia_js:
     # algolia_search_v4:
     # instantsearch_v4:

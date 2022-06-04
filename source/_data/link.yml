@@ -21,7 +21,7 @@
       descr: 快速、簡單且強大的網誌框架
     - name: Butterfly
       link: https://github.com/jerryc127/hexo-theme-butterfly
-      avatar: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-github-avatar.png
+      avatar: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-github-avatar.png
       descr: '🦋 A Hexo Theme: Butterfly'
 
 - class_name: '<i class="fas fa-fan" style="color:#00cccc;padding-right: 0.4rem"></i>示例'
@@ -29,7 +29,7 @@
   link_list:
     - name: 更多示例
       link: https://github.com/jerryc127/hexo-theme-butterfly/issues/76
-      avatar: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/more-butterfly-demo-avatar.png
+      avatar: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/more-butterfly-demo-avatar.png
       descr: 更多使用 Butterfly 的網站
     - name: pai233の小窝
       link: https://blog.pai233.top/
@@ -49,7 +49,7 @@
       descr: 众人皆醒我独醉
     - name: Serok's Blog
       link: https://akioi.eu.org/
-      avatar: https://cdn.jsdelivr.net/gh/SerokSSR/cdn2/k16.png
+      avatar: https://fastly.jsdelivr.net/gh/SerokSSR/cdn2/k16.png
       descr: 此宵风醉月舞萤
     - name: 米奇妙妙屋
       link: https://ifibe.com
@@ -57,11 +57,11 @@
       descr: 逐风揽月登九天 踏浪擒龙游四海
     - name: hermoso
       link: https://imszz.com
-      avatar: https://cdn.jsdelivr.net/gh/weilain/cdn-photo/Photo/avatar.jpg
+      avatar: https://fastly.jsdelivr.net/gh/weilain/cdn-photo/Photo/avatar.jpg
       descr: 时间如一捧流沙,缓缓的在指间流尽
     - name: 呆逼博客
       link: https://blog.keepdai.cn/
-      avatar: https://cdn.jsdelivr.net/gh/Daibi-mua/jsdelivr@1.3/logo.png
+      avatar: https://fastly.jsdelivr.net/gh/Daibi-mua/jsdelivr@1.3/logo.png
       descr: 兴趣使然
     - name: Akilarの糖果屋
       link: https://akilar.top/
@@ -73,7 +73,7 @@
       descr: 好记性不如烂笔头
     - name: Aymeticの小窝
       link: https://aymetic.com
-      avatar: https://cdn.jsdelivr.net/gh/Aymetic/site-source/img/avatar.jpg
+      avatar: https://fastly.jsdelivr.net/gh/Aymetic/site-source/img/avatar.jpg
       descr: 从兴趣出发
     - name: Heo
       link: https://blog.zhheo.com/
@@ -81,7 +81,7 @@
       descr: 爱折腾的设计师 
     - name: BARAN的小站🔥🔥🔥
       link: https://cxvh.com
-      avatar: https://cdn.jsdelivr.net/gh/cxvh/static@main/avatar/avatar.jpg
+      avatar: https://fastly.jsdelivr.net/gh/cxvh/static@main/avatar/avatar.jpg
       descr: 指尖跳动留下足迹.
     - name: 不归路
       link: https://cmwen.cn
@@ -97,11 +97,11 @@
       descr: 木秀于林 风必摧之
     - name: 白醭飙尘
       link: https://y-jinhao.github.io/
-      avatar: https://cdn.jsdelivr.net/gh/Y-JINHAO/resources/img/avator1.png
+      avatar: https://fastly.jsdelivr.net/gh/Y-JINHAO/resources/img/avator1.png
       descr: 无疾而终的困倦变成苋红的太阳的血瓷砖石仰慕的书架上呕吐的诗集
     - name: Ethan.Tzy
       link: https://tzy1997.com/
-      avatar: https://cdn.jsdelivr.net/gh/tzy13755126023/BLOG_SOURCE/theme_f/avater.jpg
+      avatar: https://fastly.jsdelivr.net/gh/tzy13755126023/BLOG_SOURCE/theme_f/avater.jpg
       descr: 学习与交流的乐园，希望能和你成为好朋友。
     - name: 没有睡醒
       link: https://www.hwheng.top/
@@ -113,7 +113,7 @@
       descr: I am your sunshine
     - name: WindSky
       link: https://zhouhua.vercel.app/
-      avatar: https://cdn.jsdelivr.net/gh/windskyxb/img/user.jpg
+      avatar: https://fastly.jsdelivr.net/gh/windskyxb/img/user.jpg
       descr: 我们必将知道，我们即将知道。
     - name: W4J1e's blog
       link: https://www.hin.cool
@@ -157,7 +157,7 @@
       descr: 不多说了，诸位，拔剑吧！
     - name: LastKnightCoder - Blog
       link: https://lastknightcoder.github.io/hexo-blog/
-      avatar: https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3@master/avatar.3fylnrbbo8m0.jpg
+      avatar: https://fastly.jsdelivr.net/gh/LastKnightCoder/ImgHosting3@master/avatar.3fylnrbbo8m0.jpg
       descr: 人生天地间，忽如远行客。
     - name: yk-ddm - Blog
       link: https://yk-ddm.github.io
@@ -173,7 +173,7 @@
       descr: 今日事今日毕
     - name: Hey,Joker - Blog
       link: https://jokerdig.com
-      avatar: https://cdn.jsdelivr.net/gh/JokerDaxiong/Jokerblog@main/source/images/avatar.png
+      avatar: https://fastly.jsdelivr.net/gh/JokerDaxiong/Jokerblog@main/source/images/avatar.png
       descr: 一个代码小白的成长。
     - name: RockJesus's blog
       link: https://rockjesus.cn
@@ -181,7 +181,7 @@
       descr: 外星人👽黑苹果🍎
     - name: FiveFire的博客
       link: https://fivefirex.github.io/
-      avatar: https://cdn.jsdelivr.net/gh/fivefirex/cdn/avatar.jpeg
+      avatar: https://fastly.jsdelivr.net/gh/fivefirex/cdn/avatar.jpeg
       descr: 啥也不会的菜鸟，开发编程
     - name: 辛巳流火的Blog
       link: https://huguoyang.cn
@@ -189,11 +189,11 @@
       descr: 一个不爱学习的小小白
     - name: 雪中的博客
       link: https://mrzefr.cn
-      avatar: https://cdn.jsdelivr.net/gh/SYSTEMWindows11/CDN@main/Doraemon.ico
+      avatar: https://fastly.jsdelivr.net/gh/SYSTEMWindows11/CDN@main/Doraemon.ico
       descr: Hello World  
     - name: 洛竹的博客
       link: https://youngjuning.js.org
-      avatar: https://cdn.jsdelivr.net/gh/youngjuning/images/202109211729538.png
+      avatar: https://fastly.jsdelivr.net/gh/youngjuning/images/202109211729538.png
       descr: 怕什么真理无穷，进一寸有一寸的欢喜。
     - name: ZkeqのCoding日志
       link: https://coding.maylove.pub
@@ -201,11 +201,11 @@
       descr: 记录一些基础的Python, Java 语法.
     - name: 小康博客
       link: https://www.antmoe.com
-      avatar: https://cdn.jsdelivr.net/npm/kang-static@latest/avatar.jpg
+      avatar: https://fastly.jsdelivr.net/npm/kang-static@latest/avatar.jpg
       descr: 一个收藏回忆与分享技术的地方！
     - name: Black Flies
       link: https://www.yyyzyyyz.cn/
-      avatar: https://cdn.jsdelivr.net/gh/hiltay/imgcdn/img/202111191951780.JPG
+      avatar: https://fastly.jsdelivr.net/gh/hiltay/imgcdn/img/202111191951780.JPG
       descr: When nothing goes right,just go left.
     - name: Cyan Blog
       link: https://blog.xmwpro.com/
@@ -217,7 +217,7 @@
       descr: 我本将心向明月
     - name: 梦の小窝
       link: https://renm.cc
-      avatar: https://cdn.jsdelivr.net/gh/renmcc/renmcc@main/img/avatar2.webp
+      avatar: https://fastly.jsdelivr.net/gh/renmcc/renmcc@main/img/avatar2.webp
       descr: 一个收藏回忆与分享技术的地方！
     - name: BuyiXiao's Blog
       link: https://buyixiao.github.io/
@@ -249,11 +249,11 @@
       descr: 认清生活的真相，并仍然热爱它
     - name: anyOne的成长之路
       link: https://dongmaxiang.github.io
-      avatar: https://cdn.jsdelivr.net/gh/dongmaxiang/CDN@master/blog/avatars.jpg
+      avatar: https://fastly.jsdelivr.net/gh/dongmaxiang/CDN@master/blog/avatars.jpg
       descr: 千里之行，始于足下
     - name: 暗影博客
       link: https://dsanying.github.io
-      avatar: https://cdn.jsdelivr.net/gh/dsanying/ImgHosting/avatar.jpg
+      avatar: https://fastly.jsdelivr.net/gh/dsanying/ImgHosting/avatar.jpg
       descr: 暗影无际，暗夜无边
     - name: A.S.
       link: https://wonderland.plus
@@ -261,7 +261,7 @@
       descr: You are wonderful.
     - name: 打工这件小事
       link: https://lilu.org.cn
-      avatar: https://cdn.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/avatar.png
+      avatar: https://fastly.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/avatar.png
       descr: 没有那把剑，我照样可以歼灭敌军。
     - name: GamerNoTitle
       link: https://bili33.top
@@ -281,7 +281,7 @@
       descr: 个人技术博客
     - name: GuoDong の Blog
       link: https://tyxiumud.github.io/
-      avatar: https://cdn.jsdelivr.net/gh/tyxiumud/blog.img/avatar.png
+      avatar: https://fastly.jsdelivr.net/gh/tyxiumud/blog.img/avatar.png
       descr: 开心最重要啦~
 
 

@@ -7,7 +7,7 @@ tags:
 categories:
   - Demo
 description: Code Highlight Style test
-cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Code-Highlight-Style-test-cover.png
+cover: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/Code-Highlight-Style-test-cover.png
 comments: false
 ---
 
