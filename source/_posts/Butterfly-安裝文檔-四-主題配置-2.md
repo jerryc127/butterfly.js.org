@@ -16,9 +16,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2022 年 05 月 19 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2022 年 06 月 24 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.2.2](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.2.2)
+ 🦋  Butterfly 已經更新到 [4.3.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.3.0)
 
 {% endnote %}
 
@@ -1555,13 +1555,22 @@ inject:
 ```yaml
 CDN:
   # The CDN provider of internal scripts (主題內部 js 的 cdn 配置)
-  # option: local/jsdelivr
-  # Dev version cannot choose jsdelivr (dev版的主題不能設置為 jsdelivr)
+  # option: local/jsdelivr/unpkg/cdnjs/custom
+  # Dev version can only choose. ( dev版的主題只能設置為 local )
   internal_provider: local
+
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
-  # option: local/jsdelivr
+  # option: local/jsdelivr/unpkg/cdnjs/custom
   # when set it to local, you need to install hexo-butterfly-extjs
   third_party_provider: jsdelivr
+
+  # Add version number to CDN, true or false  
+  version: false
+
+  # Custom format
+  # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
+  custom_format:
+
   option:
     # main_css:
     # main:
@@ -1586,7 +1595,6 @@ CDN:
     # mathjax:
     # katex:
     # katex_copytex:
-    # katex_copytex_css:
     # mermaid:
     # canvas_ribbon:
     # canvas_fluttering_ribbon:
@@ -1619,9 +1627,42 @@ CDN:
 
 | 參數                 | 解釋                                                         |
 | -------------------- | ------------------------------------------------------------ |
-| internal_provider    | 主題內部文件<br />可選 jsdelivr 或 local (本地)<br />**注意:** 如果使用的是 Dev 版,不要設置為 jsdelivr |
-| third_party_provider | 第三方文件<br />可選 jsdelivr 或 local (本地)<br />**注意:**  如果你選擇 local 需要安裝 `hexo-butterfly-extjs`插件 |
+| internal_provider    | 主題內部文件<br />可選 local/jsdelivr/unpkg/cdnjs/custom<br />lcoal 為本地加載，custom 為自定義格式，需配置 `custom_format`<br />**注意:** 如果使用的是 Dev 版，只能設置為 local |
+| third_party_provider | 第三方文件<br />可選 local/jsdelivr/unpkg/cdnjs/custom<br />lcoal 為本地加載，custom 為自定義格式，需配置 `custom_format`<br />**注意:**  如果你選擇 local 需要安裝 `hexo-butterfly-extjs`插件 |
+| version              | true/false 為 cdn 加上指定版本號                             |
+| custom_format        | 自定義格式                                                   |
 | option               | 你可以在這裏更換部分文件,會覆蓋原有的配置                    |
+
+### version
+
+如需修改版本號，可修改`主題目錄`的 'plugins.yml' 中對應插件的 version
+
+請確保你修改的版本號，你所使用的 cdn 有**收錄**
+
+### custom_format
+
+提供以下參數
+
+| 參數           | 解釋                               |
+| -------------- | ---------------------------------- |
+| name           | npm 上的包名                       |
+| file           | npm 上的文件路徑                   |
+| min_file       | npm 上的文件路徑（壓縮過的文件）   |
+| cdnjs_name     | cdnjs 上的包名                     |
+| cdnjs_file     | cdnjs 上的文件路徑                 |
+| min_cdnjs_file | cdnjs 上的文件路徑（壓縮過的文件） |
+| version        | 插件版本號                         |
+
+部分可用的第三方 CDN 列表
+
+> 請確保你選擇的 CDN 有收錄主題使用的第三方插件
+
+| 提供商                                              | 格式                                                         | 備註        |
+| --------------------------------------------------- | ------------------------------------------------------------ | ----------- |
+| [Staticfile（七牛雲）](https://www.staticfile.org/) | https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file} | 同步  cdnjs |
+| [BootCDN](https://www.bootcdn.cn/)                  | https://cdn.bootcdn.net/ajax/libs/${cdnjs_name}/${version}/${min_cdnjs_file} | 同步  cdnjs |
+| [Baomitu（360）](https://cdn.baomitu.com/)          | 最新版本： https://lib.baomitu.com/${cdnjs_name}/latest/${min_cdnjs_file}<br />指定版本： https://lib.baomitu.com/${cdnjs_name}/${version}/${min_cdnjs_file} | 同步  cdnjs |
+| Elemecdn                                            | 最新版本： https://npm.elemecdn.com/${name}@latest/${file}<br />指定版本： https://npm.elemecdn.com/${name}@${version}/${file} | 同步  npm   |
 
 {% btn '/posts/98d20436/',❓ Butterfly 安裝文檔(五) 主題問答,far fa-hand-point-right,block green right larger %}
 

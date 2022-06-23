@@ -17,9 +17,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2022 年 05 月 19 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2022 年 06 月 24 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.2.2](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.2.2)
+ 🦋  Butterfly 已經更新到 [4.3.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.3.0)
 
 {% endnote %}
 
@@ -38,6 +38,83 @@ comments: false
 {% endnote %}
 
 ***
+
+{% hideToggle 4.3.0 (2022/06/24) %}
+
+## 4.3.0 (2022/06/24)
+
+### Breaking Change
+
+1. archives 隱藏aside 設置更改
+
+   ```diff
+   aside:
+   -  archive: true
+   +  display:
+   +    archive: true
+   ```
+
+2. 適配 disqusjs 3.0
+
+### Feature
+
+1. 子歸檔頁面顯示的文章數量不再顯示總文章數量，而是對應的子歸檔文章數量
+
+2. 為一些數據加載增加 loading 顯示
+
+3. tag 和 category 頁面可設置隱藏 aside
+
+   ```diff
+   aside:
+   +  display:
+   +    tag: true
+   +    category: true
+   ```
+
+4. 點擊歸檔日期跳轉到頁面，標題顯示日期而不是‘歸檔’二字
+
+5. 適配 katex 升級， 移除 katex copy-tex.css
+
+6. CDN 可一鍵配置 cdnjs
+
+7. CDN 可一鍵配置為 unpkg
+
+8. cdn可設置 version 和 custom format（自定義格式）
+
+   ```diff
+   CDN:
+   +  version: false
+   +  custom_format:
+   ```
+
+9. 添加Remark42評論系統支持
+
+   ```diff
+   +# Remark42
+   +# https://remark42.com/docs/configuration/frontend/
+   +remark42:
+   +  host: # Your Host URL
+   +  siteId: # Your Site ID
+     option:
+   ```
+
+   
+
+### Fix
+
+1. Algolia搜索沒有結果
+2. 評論系統開啟時 busuanzi 的 page_pv 不顯示
+3. 側邊欄歸檔卡片自定義排序異常
+
+### Improvement
+
+1. 修改 note 圖標 class 名字，避免第三方圖標覆蓋主題樣式
+
+
+
+{%  endhideToggle %}
+
+
 
 {% hideToggle 4.2.2 (2022/05/19) %}
 
