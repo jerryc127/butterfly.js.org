@@ -47,10 +47,6 @@
       link: https://couqiao.net/
       avatar: https://file.couqiao.net/webimg/gravatar.webp
       descr: 众人皆醒我独醉
-    - name: Serok's Blog
-      link: https://akioi.eu.org/
-      avatar: https://fastly.jsdelivr.net/gh/SerokSSR/cdn2/k16.png
-      descr: 此宵风醉月舞萤
     - name: 米奇妙妙屋
       link: https://ifibe.com
       avatar: https://ifibe.com/img/hotlink-ok/avatar.webp
@@ -277,7 +273,7 @@
       descr: 开发学习启发性二刺螈
     - name: Zxb技术博客
       link: https://zhaoxiaobin.net
-      avatar: https://zhaoxiaobin.coding.net/p/blog/d/zhaoxiaobin_img/git/raw/master/static/avatar.png
+      avatar: https://zhaoxiaobin.net/pic/static/avatar.png
       descr: 个人技术博客
     - name: GuoDong の Blog
       link: https://tyxiumud.github.io/
@@ -307,3 +303,31 @@
       link: https://www.loadcaps.com/
       avatar: https://img.acdn.run/img/2/2022/06/09/o2grp2-2.jpeg
       descr: 耐不住寂寞 成不了大事
+    - name: EJYuan的小站
+      link: https://www.ejyuan.fun
+      avatar: https://img1.imgtp.com/2022/07/02/O6Bbw780.jpg
+      descr: Hi,I am EJ.
+    - name: SoulReader的小站
+      link: https://lxx1997.github.io/
+      avatar: https://lxx1997.github.io/image/avatar.png
+      descr: 前端小菜鸟,努力深造。
+    - name: Max's Blog
+      link: https://www.immaxfang.com
+      avatar: https://www.immaxfang.com/img/avatar.png
+      descr: Keep coding. Keep running.
+    - name: LanYunのBlog
+      link: https://lanyundev.vercel.app/
+      avatar: https://lanyundev.vercel.app/img/logo.jpg
+      descr: Share Technology.
+    - name: 一隅
+      link: https://gonglja.github.io/
+      avatar: https://cdn.jsdelivr.net/gh/Gonglja/imgur/img/202204111228921.png
+      descr: Keep Coding.
+    - name: 北梦的个人博客
+      link: https://www.beimengyeyu.com
+      avatar: https://www.beimengyeyu.com/img/avatar.jpg
+      descr: Happy every day.
+    - name: Aaki's Notes
+      link: https://mikan.bangdream.moe
+      avatar: https://gravatar.loli.net/avatar/da416f8013b9815f1e1c81754fffd701?s=300
+      descr: 记事本
