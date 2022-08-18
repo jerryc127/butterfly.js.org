@@ -17,9 +17,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2022 年 06 月 24 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2022 年 08 月 18 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.3.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.3.0)
+ 🦋  Butterfly 已經更新到 [4.4.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.4.0)
 
 {% endnote %}
 
@@ -38,6 +38,62 @@ comments: false
 {% endnote %}
 
 ***
+{% hideToggle 4.4.0 (2022/08/18) %}
+
+## 4.4.0 (2022/08/18)
+
+### Breaking Change
+
+### Feature
+
+1. 在綫聊天新增 facebook 洽談外掛程式 messenger
+
+   ```diff
+   +messenger:
+   +  enable: false
+   +  pageID:
+   +  lang: zh_TW # Language en_US/zh_CN/zh_TW and so on
+   ```
+
+2. 添加 artalk 評論功能
+
+   ```diff
+   +artalk:
+   +  server:
+   +  site:
+   +  visitor: false
+   +  option:
+   ```
+3. 首頁打字效果增加參數配置
+
+   ```diff
+   subtitle:
+   ...
+   +  # Effect Speed Options (打字效果速度參數)
+   +  startDelay: 300 # time before typing starts in milliseconds
+   +  typeSpeed: 150 # type speed in milliseconds
+   +  backSpeed: 50 # backspacing speed in milliseconds
+   ...
+   ```
+
+### Fix
+1. 修復開啟 archor 後， facebook 評論加載不正確的 bug
+2. 修復 facebook 評論數無法加載的 bug
+3. 修復子目錄 hover 沒有圓角的 bug #965
+
+
+{% endhideToggle %}
+
+{% hideToggle 4.3.1 (2022/06/27) %}
+
+## 4.3.1 (2022/06/27)
+
+### Fix
+1. 當設置 comments 為 false 時，如果設置了顯示評論提供的閲讀數，閲讀數無法顯示的 bug
+2. findArchivesTitle bug
+
+
+{% endhideToggle %}
 
 {% hideToggle 4.3.0 (2022/06/24) %}
 
@@ -124,7 +180,7 @@ fix: 修復首頁文章 valine 評論數只顯示第一篇的 bug
 fix: 修復子目錄下，第三方插件本地資源無法加載的 bug
 fix: 評論系統開啟時 busuanzi 的 page_pv 不顯示的 bug
 fix: 修復 pjax 下，使用 mermaid 跳轉會重新加載的 bug
-improvement: 优化twikoo评论，无评论数容器时不调用API获取 #897
+improvement: 優化twikoo評論，無評論數容器時不調用API獲取 #897
 
 {% endhideToggle %}
 
