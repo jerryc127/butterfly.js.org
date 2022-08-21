@@ -353,6 +353,45 @@ giscus:
 
 <!-- endtab -->
 
+
+
+<!-- tab remark42 -->
+
+remark42 是一款只支持**私有部署**的評論
+
+具體部署請查看 [Installation | Remark42](https://remark42.com/docs/getting-started/installation/)
+
+```yaml
+remark42:
+  host: # Your Host URL
+  siteId: # Your Site ID
+  option:
+```
+
+![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/hexo-butterfly-docs-remark42.png)
+
+<!-- endtab -->
+
+
+
+<!-- tab artalk -->
+
+artalk 是一款只支持**私有部署**的評論
+
+具體部署請查看 [Artalk | 自託管評論系統](https://artalk.js.org/)
+
+```yaml
+artalk:
+  server:
+  site:
+  visitor: false
+  option:
+```
+
+![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/hexo-butterfly-docs-artalk.png)
+
+<!-- endtab -->
+
 {% endtabs %}
 
 ## 在綫聊天
@@ -516,6 +555,27 @@ crisp:
 
 <!-- endtab -->
 
+
+
+<!-- tab messenger -->
+
+messenger 為 Facebook 旗下的聊天服務
+
+具體操作請查看 [Facebook 洽談附加程式 - Messenger 平台](https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/)
+
+```yaml
+messenger:
+  enable: false
+  pageID: xxxxx
+  lang: zh_TW # Language en_US/zh_CN/zh_TW and so on
+```
+
+
+
+![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/hexo-butterfly-docs-messege.png)
+
+<!-- endtab -->
+
 {% endtabs %}
 
 ## 分享
@@ -575,7 +635,7 @@ addtoany:
 
 > 記得運行 hexo clean
 
-> 如果你使用 [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch)，请记得配置 fields 参数的 `title`, `permalink` 和 `content`
+> 如果你使用 [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch)，請記得配置 fields 參數的 `title`, `permalink` 和 `content`
 
 1. 你需要安裝 [hexo-algolia](https://github.com/oncletom/hexo-algolia)或 [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch). 根據它們的説明文檔去做相應的配置。
 
@@ -1185,6 +1245,9 @@ subtitle:
   enable: false
   # Typewriter Effect (打字效果)
   effect: true
+  startDelay: 300 # time before typing starts in milliseconds
+  typeSpeed: 150 # type speed in milliseconds
+  backSpeed: 50 # backspacing speed in milliseconds
   # loop (循環打字)
   loop: true
   # source 調用第三方服務
