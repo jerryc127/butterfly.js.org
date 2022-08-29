@@ -11,3 +11,4 @@ source/_backup/
 .vscode/
 .deploy_git/
 scripts/
+pnpm-lock.yaml
