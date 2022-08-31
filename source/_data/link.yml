@@ -31,6 +31,11 @@
       link: https://github.com/jerryc127/hexo-theme-butterfly/issues/76
       avatar: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/more-butterfly-demo-avatar.png
       descr: 更多使用 Butterfly 的網站
+    - name: ZhuoRu’s Blog
+      link: https://webzhuoru.github.io/
+      avatar: https://thirdqq.qlogo.cn/g?b=sdk&nk=2276839311&s=140
+      descr: 前端攻城狮
+      siteshot: https://webzhuoru.github.io/img/top-bg.jpg
     - name: pai233の小窝
       link: https://blog.pai233.top/
       descr: Write Down My Life.
