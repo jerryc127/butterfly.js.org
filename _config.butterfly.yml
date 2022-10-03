@@ -302,7 +302,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: Twikoo,Disqus
+  use: Waline,Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -354,13 +354,13 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://btf-waline-zeta.vercel.app # Waline server address url
+  serverURL: https://btf-waline.crazywong.com # Waline server address url
   bg: /img/comment_bg.png # waline background
   pageview: false
   option:
     placeholder: '請先查看文檔再詢問。主題如有報錯，請試着解決。提問題時請詳細描述遇到的問題，附上相關的報錯 / 截圖 / 網址。'
     pageSize: 8
-    lang: 'zh-TW'
+    lang: zh-TW
     requiredFields: ['nick','mail']
 
 # utterances
