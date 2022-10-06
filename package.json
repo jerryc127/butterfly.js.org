@@ -9,13 +9,13 @@
     "kk": "hexo clean && hexo g && hexo deploy"
   },
   "hexo": {
-    "version": "6.2.0"
+    "version": "6.3.0"
   },
   "dependencies": {
     "gulp-html-minifier-terser": "^6.0.1",
     "gulp-htmlclean": "^2.7.22",
     "gulp-imagemin": "^8.0.0",
-    "hexo": "^6.2.0",
+    "hexo": "^6.3.0",
     "hexo-deployer-git": "^3.0.0",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^1.0.0",
