@@ -17,9 +17,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2022 年 08 月 18 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2022 年 10 月 21 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.4.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.4.0)
+ 🦋  Butterfly 已經更新到 [4.5.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.5.0)
 
 {% endnote %}
 
@@ -38,11 +38,74 @@ comments: false
 {% endnote %}
 
 ***
+{% hideToggle 4.5.0 (2022/10/21) %}
+
+## 4.5.0 (2022/10/21)
+
+### Breaking Change
+
+1. Open_Graph_meta 設置更改，可配置其它參數
+
+   ```diff
+   -Open_Graph_meta: true
+   +Open_Graph_meta:
+   +  enable: true
+   +  option:
+   ```
+
+2. preloader 設置更改，增加 pace.js 加載動畫條
+
+   ```diff
+   -preloader: false
+   +preloader:
+   +  enable: false
+   +  # source
+   +  # 1. fullpage-loading
+   +  # 2. pace (progress bar)
+   +  source: 1
+   +  # pace theme (see https://codebyzach.github.io/pace/)
+   +  pace_css_url:
+   ```
+
+3. anchor 設置更改，可單獨設置按鈕和自動更新 anchor 是否開啟，可設置 button 圖標，可設置 button 總是顯示
+
+   ```diff
+   -anchor: false
+   +anchor:
+   +  button:
+   +    enable: false
+   +    always_show: false
+   +    icon: # the unicode value of Font Awesome icon, such as '\3423'
+   +  auto_update: false # when you scroll in post, the URL will update according to header id.
+   ```
+
+### Feature
+
+1. 更新 Facebook sdk 到 v15
+
+### Fix
+
+1. 修正 `throttle` 函數調用方式 #1075
+2. 修復控制枱報 loadFBComment error 的 bug #1066
+3. 修復屏幕寬度為 768px 時的佈局混用問題 #1032
+
+### Improvement
+
+1. 簡繁轉換增加部分字 #1076
+2. 本地預覽，友情鏈接頁面刷新，內容不會重複顯示
+3. 更新 plugins.yml
+
+### Remove
+
+1. 移除 meta keywords
+
+{% endhideToggle %}
+
+
+
 {% hideToggle 4.4.0 (2022/08/18) %}
 
 ## 4.4.0 (2022/08/18)
-
-### Breaking Change
 
 ### Feature
 

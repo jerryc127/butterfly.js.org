@@ -16,9 +16,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2022 年 08 月 18 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2022 年 10 月 21 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.4.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.4.0)
+ 🦋  Butterfly 已經更新到 [4.5.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.5.0)
 
 {% endnote %}
 
@@ -239,4 +239,8 @@ Cannot read property 'appId' of undefined
 ### 點擊中文目錄報錯的問題
 
 這種情況出現在主題為 `3.0.0`以下版本，升級主題就行
+
+### Uncaught ReferenceError: regeneratorRuntime is not defined
+
+這是因為使用 babel 壓縮代碼而出現的報錯，具體解決方法查看 [babel/gulp-babel](https://github.com/babel/gulp-babel#runtime)
 

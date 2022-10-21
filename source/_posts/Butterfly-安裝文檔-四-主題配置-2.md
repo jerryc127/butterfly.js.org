@@ -16,9 +16,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2022 年 08 月 18 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2022 年 10 月 21 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.4.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.4.0)
+ 🦋  Butterfly 已經更新到 [4.5.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.5.0)
 
 {% endnote %}
 
@@ -1296,16 +1296,27 @@ index_top_img_height: 400px
 
 
 
-### 頁面加載動畫preloader
+### 頁面加載動畫 preloader
 
-當進入網頁時，因為加載速度的問題，可能會導致top_img圖片出現斷層顯示，或者網頁加載不全而出現等待時間，開啟preloader後，會顯示加載動畫，等頁面加載完，加載動畫會消失。
+當進入網頁時，因為加載速度的問題，可能會導致 top_img 圖片出現斷層顯示，或者網頁加載不全而出現等待時間，開啟preloader後，會顯示加載動畫，等頁面加載完，加載動畫會消失。
 
-配置`butterly.yml`
+主題支持 pace.js 的加載動畫，具體可查看 [pace.js](https://codebyzach.github.io/pace/)
+
+配置 `butterly.yml`
 
 ```yaml
 # 加載動畫 Loading Animation
-preloader: true
+preloader:
+  enable: false
+  # source
+  # 1. fullpage-loading
+  # 2. pace (progress bar)
+  source: 1
+  # pace theme (see https://codebyzach.github.io/pace/)
+  pace_css_url:
 ```
+
+> fullpage-loading
 
 ![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-preloader.gif)
 
@@ -1524,7 +1535,16 @@ css_prefix: true
 ```yaml
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
-Open_Graph_meta: true
+Open_Graph_meta:
+  enable: true
+  option:
+    # twitter_card:
+    # twitter_image:
+    # twitter_id:
+    # twitter_site:
+    # google_plus:
+    # fb_admins:
+    # fb_app_id:
 ```
 
 ### Instantpage

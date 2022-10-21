@@ -16,9 +16,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2022 年 08 月 18 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2022 年 10 月 21 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.4.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.4.0)
+ 🦋  Butterfly 已經更新到 [4.5.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.5.0)
 
 {% endnote %}
 
@@ -612,19 +612,6 @@ related_post:
 
 ![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-releatedpost.png)
 
-### 文章錨點
-
-開啟文章錨點後，當你在文章頁進行滾動時，文章鏈接會根據標題ID進行替換
-(注意: 每替換一次，會留下一個歷史記錄。所以如果一篇文章有很多錨點的話，網頁的歷史記錄會很多。)
-
-修改 `主題配置文件`
-
-```yaml
-# anchor
-# when you scroll in post , the url will update according to header id.
-anchor: true
-```
-
 ### 文章過期提醒
 
 可設置是否顯示文章過期提醒，以更新時間為基準。
@@ -692,6 +679,24 @@ post_pagination: false
 | post_pagination: 2     | 下一篇顯示的是新文章 |
 
 ![image-20210130161545100](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-post-pagination.png)
+
+## 頁面錨點
+
+開啟頁面錨點後，當你在進行滾動時，頁面鏈接會根據標題ID進行替換
+(注意: 每替換一次，會留下一個歷史記錄。所以如果一篇文章有很多錨點的話，網頁的歷史記錄會很多。)
+
+修改 `主題配置文件`
+
+```yaml
+# anchor
+# when you scroll in post , the url will update according to header id.
+anchor:
+  button:
+    enable: false
+    always_show: false
+    icon: # the unicode value of Font Awesome icon, such as '\3423'
+  auto_update: false # when you scroll in post, the URL will update according to header id.
+```
 
 ## 頭像
 
