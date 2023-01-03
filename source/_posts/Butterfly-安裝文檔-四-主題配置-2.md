@@ -905,18 +905,15 @@ npm un hexo-renderer-marked --save # 如果有安裝這個的話，卸載
 npm un hexo-renderer-kramed --save # 如果有安裝這個的話，卸載
 
 npm i hexo-renderer-markdown-it --save # 需要安裝這個渲染插件
-npm install @neilsustc/markdown-it-katex --save #需要安裝這個katex插件
+npm install katex @renbaoshuo/markdown-it-katex #需要安裝這個katex插件
 ```
 
 在 hexo 的根目錄的 `_config.yml` 中配置
 
 ```yaml
 markdown:
-  plugins:
-    - plugin:
-      name: '@neilsustc/markdown-it-katex'
-      options:
-        strict: false
+    plugins:
+      - '@renbaoshuo/markdown-it-katex'
 ```
 
 如需配置其它參數，請參考 [katex 官網](https://katex.org/docs/options.html)
