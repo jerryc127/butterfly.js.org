@@ -411,3 +411,15 @@
       link: https://cpen.top/
       avatar: https://image.cpen.top/image/avatar.jpg
       descr: 这是一个有趣的博客
+    - name: 🇨🇳CHINA NEWS
+      link: https://news.btcnav.com
+      avatar: https://news.btcnav.com/img/favicon.png
+      descr: Daily Update China News
+    - name: 🇨🇳中国新闻
+      link: https://news2.btcnav.com
+      avatar: https://news2.btcnav.com/img/favicon.png
+      descr: 每日更新中国新闻
+    - name: 🇨🇳中國新聞
+      link: https://news3.btcnav.com
+      avatar: https://news3.btcnav.com/img/favicon.png
+      descr: 每日更新中國新聞
