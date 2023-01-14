@@ -16,9 +16,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2022 年 10 月 31 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2023 年 01 月 15 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.5.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.5.1)
+ 🦋  Butterfly 已經更新到 [4.6.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.6.0)
 
 {% endnote %}
 
@@ -718,22 +718,6 @@ baidu_analytics: 你的代碼
 
 ```yaml
 google_analytics: 你的代碼 # 通常以`UA-`打頭
-```
-
-<!-- endtab -->
-
-<!-- tab CNZZ分析 -->
-
-1. 登錄CNZZ分析的[官方網站](https://www.umeng.com/)
-2. 找到 `站點設置 - 獲取代碼`
-3. 找到你的 `web_id`
-
-![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-CNZZ-analysic.png)
-
-4. 修改 `主題配置文件`
-
-```yaml
-cnzz_analytics: 
 ```
 
 <!-- endtab -->

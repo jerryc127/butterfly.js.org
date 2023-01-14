@@ -175,18 +175,10 @@
       link: https://rockjesus.cn
       avatar: https://www.rockjesus.cn/img/black.png
       descr: 外星人👽黑苹果🍎
-    - name: FiveFire的博客
-      link: https://fivefirex.github.io/
-      avatar: https://fastly.jsdelivr.net/gh/fivefirex/cdn/avatar.jpeg
-      descr: 啥也不会的菜鸟，开发编程
     - name: 辛巳流火的Blog
       link: https://huguoyang.cn
       avatar: https://gitee.com/hgy-xslh/my_img/raw/master/img/logo.png
       descr: 一个不爱学习的小小白
-    - name: 雪中的博客
-      link: https://mrzefr.cn
-      avatar: https://fastly.jsdelivr.net/gh/SYSTEMWindows11/CDN@main/Doraemon.ico
-      descr: Hello World  
     - name: 洛竹的博客
       link: https://youngjuning.js.org
       avatar: https://fastly.jsdelivr.net/gh/youngjuning/images/202109211729538.png
@@ -365,7 +357,7 @@
       descr: 记录入坑爬坑的博客
     - name: Pil0tXia
       link: https://pil0txia.com/
-      avatar: https://pil0txia.com/me/03_3_tinypng.png
+      avatar: https://static.pil0txia.com/assets/03_3_600p.webp
       descr: 不会摄影的白帽子不是好机长！
     - name: 呆鱼
       link: https://daiyu-233.top/
