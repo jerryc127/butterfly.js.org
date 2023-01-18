@@ -45,6 +45,11 @@ menu:
   留言板: /messageboard/ || fas fa-comment-dots
   示例: /link/ || fas fa-thumbs-up
 
+nav:
+  logo: # image
+  display_title: true
+  fixed: false # fixed navigation bar
+
 # Code Blocks (代碼相關)
 # --------------------------------------
 
@@ -216,6 +221,7 @@ toc:
   number: true
   expand: true
   style_simple: false # for post
+  scroll_percent: true
 
 post_copyright:
   enable: true
@@ -445,7 +451,7 @@ tidio:
   public_key:
 
 # daovoice
-# http://daovoice.io/
+# http://dashboard.daovoice.io/app
 daovoice:
   enable: false
   app_id:
@@ -488,10 +494,6 @@ baidu_analytics:
 # Google Analytics
 # https://analytics.google.com/analytics/web/
 google_analytics:
-
-# CNZZ Analytics
-# https://www.umeng.com/
-cnzz_analytics:
 
 # Cloudflare Analytics
 # https://www.cloudflare.com/zh-tw/web-analytics/
@@ -681,7 +683,7 @@ subtitle:
   # source 調用第三方服務
   # source: false 關閉調用
   # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
-  # source: 2  調用一句網（簡體） http://yijuzhan.com/
+  # source: 2  調用一句網（簡體） https://yijuzhan.com/
   # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
   source: 1
@@ -808,6 +810,9 @@ darkmode:
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
   autoChangeMode: 1
+
+# show scroll percent in scroll-to-top button
+rightside_scroll_percent: true
 
 # Don't modify the following settings unless you know how they work (非必要請不要修改 )
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment

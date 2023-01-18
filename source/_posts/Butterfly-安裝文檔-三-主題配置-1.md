@@ -16,9 +16,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2022 年 10 月 31 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2023 年 01 月 15 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.5.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.5.1)
+ 🦋  Butterfly 已經更新到 [4.6.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.6.0)
 
 {% endnote %}
 
@@ -103,6 +103,23 @@ menu:
 ```
 
 ![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-menu.png)
+
+## 導航欄設置
+
+主題配置文件中
+
+```yaml
+nav:
+  logo: #image
+  display_title: true
+  fixed: false # fixed navigation bar
+```
+
+| 參數          | 解釋                                    |
+| ------------- | --------------------------------------- |
+| logo          | 網站的 logo，支持圖片，直接填入圖片鏈接 |
+| display_title | 是否顯示網站標題，填寫 true 或者 false  |
+| fixed         | 是否固定狀態欄，填寫 true 或者 false    |
 
 ## 代碼
 
@@ -335,6 +352,20 @@ index_post_content:
 
 {% endnote %}
 
+{% note primary %}
+
+頂部圖的獲取順序，如果都沒有配置，則不顯示頂部圖。
+
+1. 頁面頂部圖的獲取順序：
+
+   `各自配置的 top_img` > `配置文件的 default_top_img `
+
+2. 文章頁頂部圖的獲取順序：
+
+   `各自配置的 top_img` > `cover` > `配置文件的 default_top_img `
+
+{% endnote %}
+
 
 
 配置中的值：
@@ -360,7 +391,7 @@ index_post_content:
 
 | 配置的值                                                     | 效果                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 留空                                                         | 顯示默認的top_img（如有），否則顯示默認的顔色<br>（文章頁top_img留空的話，會顯示 cover 的值） |
+| 留空                                                         | 顯示默認的 top_img（如有），否則顯示默認的顔色<br>（文章頁top_img留空的話，會顯示 cover 的值） |
 | img鏈接                                                      | 圖片的鏈接，顯示所配置的圖片                                 |
 | 顔色(<br>HEX值 - \#0000FF<br>RGB值 - rgb(0,0,255)<br>顔色單詞 - orange<br>漸變色 - linear-gradient( 135deg, #E2B0FF 10%, #9F44D3 100%)<br>） | 對應的顔色                                                   |
 | transparent                                                  | 透明                                                         |
@@ -400,10 +431,13 @@ category_per_img：
 
 ## 文章封面
 
-文章的markdown文檔上,在`Front-matter`添加`cover`,並填上要顯示的圖片地址。
-如果不配置`cover`,可以設置顯示默認的cover.
+文章的 markdown 文檔上,在 `Front-matter` 添加 `cover` ,並填上要顯示的圖片地址。
 
-如果不想在首頁顯示cover,可以設置為`false`
+如果不配置 `cover`,可以設置顯示默認的 cover。
+
+如果不想在首頁顯示 cover, 可以設置為 `false`。
+
+> 文章封面的獲取順序 `Front-matter 的 cover` > `配置文件的 default_cover` > `false`
 
 修改 `主題配置文件`
 
@@ -419,6 +453,14 @@ cover:
   # 當沒有設置cover時，默認的封面顯示
   default_cover: 
 ```
+
+| 參數            | 解釋                                                         |
+| --------------- | ------------------------------------------------------------ |
+| index_enable    | 主頁是否顯示文章封面圖                                       |
+| aside_enable    | 側欄是否顯示文章封面圖                                       |
+| archives_enable | 歸檔頁面是否顯示文章封面圖                                   |
+| position        | 主頁卡片文章封面的顯示位置<br />-  left：全部顯示在左邊<br />- right：全部顯示在右邊<br />- both：封面位置以左右左右輪流顯示 |
+| default_cover   | 默認的 cover, 可配置圖片鏈接/顔色/漸變色等                   |
 
 當配置多張圖片時,會隨機選擇一張作為cover.此時寫法應為
 
@@ -565,19 +607,21 @@ reward:
 ```yaml
 toc:
   post: true
-  page: false
+  page: true
   number: true
   expand: false
   style_simple: false # for post
+  scroll_percent: true
 ```
 
-| 屬性         | 解釋                                              |
-| ------------ | ------------------------------------------------- |
-| post         | 文章頁是否顯示 TOC                                |
-| page         | 普通頁面是否顯示 TOC                              |
-| number       | 是否顯示章節數                                    |
-| expand       | 是否展開 TOC                                      |
-| style_simple | 簡潔模式（側邊欄**只**顯示 TOC, 只對文章頁有效 ） |
+| 屬性           | 解釋                                              |
+| -------------- | ------------------------------------------------- |
+| post           | 文章頁是否顯示 TOC                                |
+| page           | 普通頁面是否顯示 TOC                              |
+| number         | 是否顯示章節數                                    |
+| expand         | 是否展開 TOC                                      |
+| style_simple   | 簡潔模式（側邊欄**只**顯示 TOC, 只對文章頁有效 ） |
+| scroll_percent | 是否顯示滾動進度百分比                            |
 
 > Toc PC
 
@@ -598,6 +642,10 @@ toc:
 主題會優先判斷文章Markdown的Front-matter是否有配置，如有，則以Front-matter的配置為準。否則，以**主題配置文件中**的配置為準
 
 ### 相關文章
+
+{% note warning %}
+當文章封面設置為 false 時，或者沒有獲取到封面配置，相關文章背景將會顯示主題色。
+{% endnote %}
 
 相關文章推薦的原理是根據文章tags的比重來推薦
 
@@ -660,6 +708,10 @@ post_edit:
 ![image-20210130160208436](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-post-edit-2.png)
 
 ### 文章分頁按鈕
+
+{% note warning %}
+當文章封面設置為 false 時，或者沒有獲取到封面配置，分頁背景將會顯示主題色。
+{% endnote %}
 
 可設置分頁的邏輯，也可以關閉分頁顯示
 
@@ -866,6 +918,17 @@ readmode: true
 
 ![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-read-mode.png)
 
+### 滾動狀態百分比
+
+主題配置文件中
+
+```yaml
+# show scroll percent in scroll-to-top button
+rightside_scroll_percent: true
+```
+
+![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/hexo-butterfly-docs-scroll-percent-right-btn.gif)
+
 ### 按鈕排序
 
 ```yaml
@@ -966,6 +1029,16 @@ busuanzi:
   site_pv: true
   page_pv: true
 ```
+
+> 如果需要修改 busuanzi  的 CDN 鏈接，可通過 `主題配置文件` 的 `CDN` 中的 `option` 進行修改
+
+```yaml
+CDN:
+  option:
+  	busuanzi: xxxxxxxxx
+```
+
+
 
 ![](https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-busuanzi-site-pv.png)
 
@@ -1694,17 +1767,23 @@ Any content (support inline tags too.io).
 
 ###  Gallery相冊
 
-> 2.0.0以上提供
+> 2.0.0 以上提供
 
-區別於舊版的Gallery相冊,新的Gallery相冊會自動根據圖片長度進行排版，書寫也更加方便，與markdown格式一樣。可根據需要插入到相應的md。
+區別於舊版的Gallery相冊,新的 Gallery 相冊會自動根據圖片長度進行排版，書寫也更加方便，與 markdown 格式一樣。可根據需要插入到相應的 md。
 
 寫法:
 
 ```markdown
-{% gallery %}
+{% gallery [lazyload],[rowHeight],[limit] %}
 markdown 圖片格式
 {% endgallery %}
 ```
+
+| 參數      | 解釋                                                         |
+| --------- | ------------------------------------------------------------ |
+| lazyload  | 【可選】點擊按鈕加載更多圖片，填寫 true/false。默認為 `false`。 |
+| rowHeight | 【可選】圖片顯示的高度，如果需要一行顯示更多的圖片，可設置更小的數字。默認為 `220`。 |
+| limit     | 【可選】每次加載多少張照片。默認為 `10`。                    |
 
 例如
 
