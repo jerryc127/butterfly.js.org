@@ -121,7 +121,7 @@
       descr: 缘，妙不可言
     - name: Xujiayao's Blog
       link: https://blog.xujiayao.top/
-      avatar: https://blog.xujiayao.top/file/avatar.jpg
+      avatar: https://blog.xujiayao.top/file/avatar.png
       descr: 没有个性，如何签名？
     - name: Eurkon
       link: https://blog.eurkon.com
@@ -175,18 +175,10 @@
       link: https://rockjesus.cn
       avatar: https://www.rockjesus.cn/img/black.png
       descr: 外星人👽黑苹果🍎
-    - name: FiveFire的博客
-      link: https://fivefirex.github.io/
-      avatar: https://fastly.jsdelivr.net/gh/fivefirex/cdn/avatar.jpeg
-      descr: 啥也不会的菜鸟，开发编程
     - name: 辛巳流火的Blog
       link: https://huguoyang.cn
       avatar: https://gitee.com/hgy-xslh/my_img/raw/master/img/logo.png
       descr: 一个不爱学习的小小白
-    - name: 雪中的博客
-      link: https://mrzefr.cn
-      avatar: https://fastly.jsdelivr.net/gh/SYSTEMWindows11/CDN@main/Doraemon.ico
-      descr: Hello World  
     - name: 洛竹的博客
       link: https://youngjuning.js.org
       avatar: https://fastly.jsdelivr.net/gh/youngjuning/images/202109211729538.png
@@ -411,3 +403,11 @@
       link: https://cpen.top/
       avatar: https://image.cpen.top/image/avatar.jpg
       descr: 这是一个有趣的博客
+    - name: 神奇的妙妙屋
+      link: https://ttie.pages.dev/
+      avatar: https://ttie.pages.dev/img/avatar.jpg
+      descr: 追风赶月莫停留，平芜尽处是春山
+    - name: Xlenco
+      link: https://xlenco.eu.org/
+      avatar: https://www.helloimg.com/images/2022/12/31/oCbPAc.webp
+      descr: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
