@@ -17,9 +17,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2023 年 01 月 15 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2023 年 01 月 18 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.6.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.6.0)
+ 🦋  Butterfly 已經更新到 [4.6.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.6.1)
 
 {% endnote %}
 
@@ -38,6 +38,43 @@ comments: false
 {% endnote %}
 
 ***
+
+{% hideToggle 4.6.1 (2023/01/18) %}
+
+## hideToggle 4.6.1 (2023/01/18)
+
+### Breaking Change
+
+1. 可配置 typed.js 的參數
+
+   ```diff
+   subtitle:
+   -  # Effect Speed Options (打字效果速度參數)
+   -  startDelay: 300 # time before typing starts in milliseconds
+   -  typeSpeed: 150 # type speed in milliseconds
+   -  backSpeed: 50 # backspacing speed in milliseconds
+   -  # loop (循環打字)
+   -  loop: true
+   +  # Customize typed.js (配置typed.js)
+   +  # https://github.com/mattboldt/typed.js/#customization
+   +  typed_option:
+   ```
+
+### Fix
+
+1. 修復 typeJSFn 重複賦值的 bug
+2. 修復固定狀態欄後，標題有陰影的 bug
+3. 修復 gallery 標籤將圖片鏈接截斷導致404無法加載圖片的 bug
+4. 修復開啟導航欄固定後，點擊部分滾動向上的按鈕，滾動的目標部分被導航欄遮擋的 bug
+5. 修復固定導航欄後，toc 被遮擋的 bug
+
+### Improvement
+
+1. 切換簡繁時，會改變 html 的 lang 屬性
+
+{% endhideToggle %}
+
+
 
 {% hideToggle 4.6.0 (2023/01/15) %}
 
