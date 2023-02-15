@@ -16,7 +16,7 @@
     "gulp-htmlclean": "^2.7.22",
     "gulp-imagemin": "^8.0.0",
     "hexo": "^6.3.0",
-    "hexo-deployer-git": "^3.0.0",
+    "hexo-deployer-git": "^4.0.0",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
