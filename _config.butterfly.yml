@@ -90,6 +90,15 @@ local_search:
   preload: false
   CDN:
 
+# Docsearch
+# https://docsearch.algolia.com/
+docsearch:
+  enable: false
+  appId:
+  apiKey:
+  indexName:
+  option:
+
 # Math (數學)
 # --------------------------------------
 # About the per_page
@@ -745,6 +754,8 @@ aside:
     enable: true
     limit: 40 # if set 0 will show all
     color: true
+    orderby: random # Order of tags, random/name/length
+    order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
     sort_order: # Don't modify the setting unless you know how it works
   card_archives:
     enable: true
@@ -970,6 +981,8 @@ CDN:
     # algolia_js:
     # algolia_search_v4:
     # instantsearch_v4:
+    # docsearch_js:
+    # docsearch_css:
     # pjax:
     # gitalk:
     # gitalk_css:

@@ -17,9 +17,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2023 年 01 月 18 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2023 年 02 月 20 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.6.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.6.1)
+ 🦋  Butterfly 已經更新到 [4.7.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.7.0)
 
 {% endnote %}
 
@@ -38,6 +38,60 @@ comments: false
 {% endnote %}
 
 ***
+
+{% hideToggle 4.7.0 (2023/02/20) %}
+
+## 4.7.0 (2023/02/20)
+
+### Feature
+
+1. card_tags 可配置 orderby 和 order
+
+   ```diff
+   aside:
+     card_tags:
+       enable: true
+       limit: 40 # if set 0 will show all
+       color: false
+   +    orderby: random # Order of tags, random/name/length
+   +    order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
+       sort_order: # Don't modify the setting unless you know how it works
+   ```
+
+2. 標籤頁支持配置 orderby 和 order 參數
+
+3. 添加 docsearch
+
+   ```diff
+   +# Docsearch
+   +# https://docsearch.algolia.com/
+   +docsearch:
+   +  enable: false
+   +  appId:
+   +  apiKey:
+   +  indexName:
+   +  option:
+   ```
+
+4. 本地搜索，點擊文章內容也會跳轉到相應頁面
+
+5. gallery 標籤外掛增加 json 獲取
+
+### Fix
+
+1. 修復 card_author 和 card_announcement 設為 false 後，aside 卡片沒有間距的 bug
+2. artalk 最新評論無法加載
+3. 修復 waline 在 pjax 模式下 css 沒有加載的 bug
+4. 修復本地搜索,部分符號無法搜索的 bug
+
+### Improvement
+
+1. getCSS 重構
+2. 滾動條變小
+
+{% endhideToggle %}
+
+
 
 {% hideToggle 4.6.1 (2023/01/18) %}
 

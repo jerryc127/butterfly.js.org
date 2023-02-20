@@ -16,9 +16,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2023 年 01 月 18 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2023 年 02 月 20 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.6.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.6.1)
+ 🦋  Butterfly 已經更新到 [4.7.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.7.0)
 
 {% endnote %}
 
@@ -956,7 +956,7 @@ aside:
   enable: true
   hide: false
   button: true
-  mobile: true # 手機頁面（ 顯示寬度 < 768px ）是否顯示aside內容
+  mobile: true # display on mobile
   position: right # left or right
   display:
     archive: true
@@ -967,9 +967,9 @@ aside:
     description:
     button:
       enable: true
-	  icon: fab fa-github
-      text: Github
-      link: https://github.com/jerryc127/hexo-theme-butterfly
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/xxxxxx
   card_announcement:
     enable: true
     content: This is my Blog
@@ -977,24 +977,31 @@ aside:
     enable: true
     limit: 5 # if set 0 will show all
     sort: date # date or updated
+    sort_order: # Don't modify the setting unless you know how it works
   card_categories:
     enable: true
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
+    sort_order: # Don't modify the setting unless you know how it works
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
     color: false
+    orderby: random # Order of tags, random/name/length
+    order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
+    sort_order: # Don't modify the setting unless you know how it works
   card_archives:
     enable: true
     type: monthly # yearly or monthly
     format: MMMM YYYY # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
     limit: 8 # if set 0 will show all
+    sort_order: # Don't modify the setting unless you know how it works
   card_webinfo:
     enable: true
     post_count: true
     last_push_date: true
+    sort_order: # Don't modify the setting unless you know how it works
 ```
 
 > position: left
@@ -1771,6 +1778,10 @@ Any content (support inline tags too.io).
 
 區別於舊版的Gallery相冊,新的 Gallery 相冊會自動根據圖片長度進行排版，書寫也更加方便，與 markdown 格式一樣。可根據需要插入到相應的 md。
 
+{% tabs %}
+
+<!-- tab 本地 -->
+
 寫法:
 
 ```markdown
@@ -1784,6 +1795,16 @@ markdown 圖片格式
 | lazyload  | 【可選】點擊按鈕加載更多圖片，填寫 true/false。默認為 `false`。 |
 | rowHeight | 【可選】圖片顯示的高度，如果需要一行顯示更多的圖片，可設置更小的數字。默認為 `220`。 |
 | limit     | 【可選】每次加載多少張照片。默認為 `10`。                    |
+
+> 示例
+
+`{% gallery %}`
+
+`{% gallery true,220,10 %}`
+
+`{% gallery true,,10 %}`
+
+
 
 例如
 
@@ -1810,6 +1831,63 @@ markdown 圖片格式
 ![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg)
 ![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg)
 {% endgallery %}
+
+<!-- endtab -->
+
+<!-- tab 遠程拉取 -->
+
+寫法：
+
+```markdown
+{% gallery url,[link],[lazyload],[rowHeight],[limit] %}
+{% endgallery %}
+```
+
+| 參數      | 解釋                                                         |
+| --------- | ------------------------------------------------------------ |
+| url       | 【必須】 識別詞                                              |
+| link      | 【必須】遠程的 json 鏈接                                     |
+| lazyload  | 【可選】點擊按鈕加載更多圖片，填寫 true/false。默認為 `false`。 |
+| rowHeight | 【可選】圖片顯示的高度，如果需要一行顯示更多的圖片，可設置更小的數字。默認為 `220`。 |
+| limit     | 【可選】每次加載多少張照片。默認為 `10`。                    |
+
+>  遠程鏈接 Json 的例子
+
+有三個參數，`url`是必須**存在**的，`alt` 和 `title` 可有，也可沒有。
+
+```json
+[
+  {
+    "url": "https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/IMG_0556.jpg",
+    "alt": "IMG_0556.jpg",
+     "title": "這是title"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/IMG_0472.jpg",
+    "alt": "IMG_0472.jpg"
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/IMG_0453.jpg",
+    "alt": ""
+  },
+  {
+    "url": "https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/IMG_0931.jpg",
+    "alt": ""
+  }
+]
+```
+
+> 示例
+
+`{% gallery url,https://xxxx.com/sss.json %}`
+
+`{% gallery url,https://xxxx.com/sss.json,true,220,10 %}`
+
+`{% gallery url,https://xxxx.com/sss.json,true,,10 %}`
+
+<!-- endtab -->
+
+{% endtabs %}
 
 ### tag-hide
 

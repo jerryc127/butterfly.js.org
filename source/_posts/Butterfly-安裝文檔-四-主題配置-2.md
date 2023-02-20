@@ -16,9 +16,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2023 年 01 月 18 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2023 年 02 月 20 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.6.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.6.1)
+ 🦋  Butterfly 已經更新到 [4.7.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.7.0)
 
 {% endnote %}
 
@@ -672,6 +672,32 @@ local_search:
 | CDN     | 搜索文件的 CDN 地址（默認使用的本地鏈接）                    |
 
 <!-- endtab -->
+
+<!-- tab DocSearch @fas fa-search -->
+
+DocSearch 是另一款由 algolia 提供的搜索服務，具體申請和使用請查看 [DocSearch 文檔](https://docsearch.algolia.com/) 
+
+```
+docsearch:
+  enable: false
+  appId:
+  apiKey:
+  indexName:
+  option:
+```
+
+| 參數      | 解釋                                                         |
+| --------- | ------------------------------------------------------------ |
+| enable    | 【必須】是否開啟 docsearch                                   |
+| appId     | 【必須】你的 Algolia 應用 ID                                 |
+| apiKey    | 【必須】你的 Algolia 搜索 API key                            |
+| indexName | 【必須】你的 Algolia index name                              |
+| option    | 【可選】其餘的 docsearch 配置<br />具體配置可查[這裏](https://docsearch.algolia.com/docs/api/) |
+
+![DocSearch](https://file.crazywong.com/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-docsearch.png)
+
+<!-- endtab -->
+
 {% endtabs %}
 
 ## 網站驗證
