@@ -1798,12 +1798,19 @@ markdown 圖片格式
 
 > 示例
 
-`{% gallery %}`
+```markdown
+{% gallery %}
+markdown 圖片格式
+{% endgallery %}
 
-`{% gallery true,220,10 %}`
+{% gallery true,220,10 %}
+markdown 圖片格式
+{% endgallery %}
 
-`{% gallery true,,10 %}`
-
+{% gallery true,,10 %}
+markdown 圖片格式
+{% endgallery %}
+```
 
 
 例如
@@ -1879,12 +1886,16 @@ markdown 圖片格式
 
 > 示例
 
-`{% gallery url,https://xxxx.com/sss.json %}`
+```markdown
+{% gallery url,https://xxxx.com/sss.json %}
+{% endgallery %}
 
-`{% gallery url,https://xxxx.com/sss.json,true,220,10 %}`
+{% gallery url,https://xxxx.com/sss.json,true,220,10 %}
+{% endgallery %}
 
-`{% gallery url,https://xxxx.com/sss.json,true,,10 %}`
-
+{% gallery url,https://xxxx.com/sss.json,true,,10 %}
+{% endgallery %}
+```
 <!-- endtab -->
 
 {% endtabs %}
