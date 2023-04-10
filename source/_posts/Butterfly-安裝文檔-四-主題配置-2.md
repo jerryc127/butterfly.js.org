@@ -16,9 +16,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2023 年 02 月 20 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2023 年 04 月 10 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.7.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.7.0)
+ 🦋  Butterfly 已經更新到 [4.8.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.8.1)
 
 {% endnote %}
 
@@ -37,6 +37,286 @@ comments: false
 {% endnote %}
 
 ***
+## Math 數學
+
+{% tabs Math %}
+<!-- tab MathJax -->
+
+{% note warning flat %}
+不要在標題裏使用 mathjax 語法，toc 目錄不一定能正確顯示 mathjax，可能顯示 mathjax 代碼
+{% endnote %}
+
+> 建議使用 KaTex 獲得更好的效果，下文有介紹！
+
+修改 `主題配置文件`:
+
+```yaml
+mathjax:
+  enable: true
+  # true 表示每一頁都加載mathjax.js
+  # false 需要時加載，須在使用的Markdown Front-matter 加上 mathjax: true
+  per_page: false
+```
+
+> 如果 `per_page` 設為 `true`,則每一頁都會加載 Mathjax 服務。設為 `false`，則需要在文章 `Front-matter` 添加 `mathjax: true`,對應的文章才會加載 Mathjax 服務。
+
+然後你需要修改一下默認的 `markdown` 渲染引擎來實現 MathJax 的效果。
+
+查看: [hexo-renderer-kramed](https://www.npmjs.com/package/hexo-renderer-kramed)
+
+以下操作在你 hexo 博客的目錄下 (**不是 Butterfly 的目錄**):
+
+1. 安裝插件
+
+   ```bash
+   npm uninstall hexo-renderer-marked --save
+   npm install hexo-renderer-kramed --save
+   ```
+
+2. 配置 hexo 根目錄的配置文件
+
+   ```yaml
+   kramed:
+     gfm: true
+     pedantic: false
+     sanitize: false
+     tables: true
+     breaks: true
+     smartLists: true
+     smartypants: true
+   ```
+
+效果：
+
+![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-mathjax-2.jpg)
+
+<!-- endtab -->
+
+<!-- tab KaTeX -->
+
+{% note warning flat %}
+不要在標題裏使用 KaTeX 語法，toc 目錄不能正確顯示 KaTeX。
+{% endnote %}
+
+首先禁用`MathJax`（如果你配置過 MathJax 的話），然後修改你的`主題配置文件`以便加載`katex.min.css`:
+
+```yaml
+katex:
+  enable: true
+  # true 表示每一頁都加載katex.js
+  # false 需要時加載，須在使用的Markdown Front-matter 加上 katex: true
+  per_page: false
+  hide_scrollbar: true
+```
+
+你不需要添加 `katex.min.js` 來渲染數學方程。相應的你需要卸載你之前的 hexo 的 markdown 渲染器，然後安裝其它插件。
+
+{% subtabs katex-plugins %}
+
+<!-- tab hexo-renderer-markdown-it 【建議】 -->
+
+卸載掉 marked 插件，安裝 [hexo-renderer-markdown-it](https://github.com/hexojs/hexo-renderer-markdown-it)
+
+```bash
+npm un hexo-renderer-marked --save # 如果有安裝這個的話，卸載
+npm un hexo-renderer-kramed --save # 如果有安裝這個的話，卸載
+
+npm i hexo-renderer-markdown-it --save # 需要安裝這個渲染插件
+npm install katex @renbaoshuo/markdown-it-katex #需要安裝這個katex插件
+```
+
+在 hexo 的根目錄的 `_config.yml` 中配置
+
+```yaml
+markdown:
+    plugins:
+      - '@renbaoshuo/markdown-it-katex'
+```
+
+如需配置其它參數，請參考 [katex 官網](https://katex.org/docs/options.html)
+
+<!-- endtab -->
+
+<!-- tab hexo-renderer-markdown-it-plus -->
+
+> 注意，此方法生成的 katex 沒有斜體
+
+卸載掉 marked 插件，然後安裝新的`hexo-renderer-markdown-it-plus`:
+
+```bash
+# 替換 `hexo-renderer-kramed` 或者 `hexo-renderer-marked` 等hexo的markdown渲染器
+# 你可以在你的package.json裏找到hexo的markdwon渲染器，並將其卸載
+npm un hexo-renderer-marked --save
+
+# or
+
+npm un hexo-renderer-kramed --save
+
+
+# 然後安裝 `hexo-renderer-markdown-it-plus`
+npm i @upupming/hexo-renderer-markdown-it-plus --save
+```
+
+注意到 [`hexo-renderer-markdown-it-plus`](https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus)已經無人持續維護, 所以我們使用 [`@upupming/hexo-renderer-markdown-it-plus`](https://github.com/upupming/hexo-renderer-markdown-it-plus)。 這份 fork 的代碼使用了 [`@neilsustc/markdown-it-katex`](https://github.com/yzhang-gh/markdown-it-katex)同時它也是 VSCode 的插件 [Markdown All in One](https://github.com/yzhang-gh/vscode-markdown)所使用的, 所以我們可以獲得最新的 KaTex 功能例如 `\tag{}`。
+
+你還可以通過 [`@neilsustc/markdown-it-katex`](https://github.com/yzhang-gh/markdown-it-katex)控制 KaTeX 的設置，所有可配置的選項參見 https://katex.org/docs/options.html。 比如你想要禁用掉 KaTeX 在命令行上輸出的宂長的警告信息，你可以在根目錄的 `_config.yml` 中使用下面的配置將 `strict` 設置為 false:
+
+```yaml
+markdown_it_plus:
+  plugins:
+    - plugin:
+      name: '@neilsustc/markdown-it-katex'
+      enable: true
+      options:
+        strict: false
+```
+
+當然，你還可以利用這個特性來定義一些自己常用的 `macros`。
+
+<!-- endtab -->
+
+{% endsubtabs %}
+
+
+
+因為 KaTeX 更快更輕量，因此沒有 MathJax 的功能多（比如右鍵菜單）。為那些使用 MathJax 的用户，主題也內置了 katex 的 [複製](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex) 功能。
+
+![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-katex.gif)
+
+<!-- endtab -->
+{% endtabs %}
+
+## 搜索
+
+{% tabs search %}
+<!-- tab Algolia @fab fa-algolia -->
+
+> 記得運行 hexo clean
+
+> 如果你使用 [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch)，請記得配置 fields 參數的 `title`, `permalink` 和 `content`
+
+1. 你需要安裝 [hexo-algolia](https://github.com/oncletom/hexo-algolia)或 [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch). 根據它們的説明文檔去做相應的配置。
+
+2. 修改 `主題配置文件`
+
+```yaml
+algolia_search:
+  enable: true
+  hits:
+    per_page: 6
+```
+
+<!-- endtab -->
+
+<!-- tab 本地搜索@fas fa-search -->
+
+> 記得運行 hexo clean
+
+1. 你需要安裝 [hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb) 或者 [hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search)，根據它的文檔去做相應配置
+
+2. 修改 `主題配置文件`
+
+```yaml
+# Local search
+local_search:
+  enable: false
+  # Preload the search data when the page loads.
+  preload: false
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # Unescape html strings to the readable one.
+  unescape: false
+  CDN:
+```
+
+| 參數              | 解釋                                                         |
+| ----------------- | ------------------------------------------------------------ |
+| enable            | 是否開啟本地搜索                                             |
+| preload           | 預加載，開啟後，進入網頁後會自動加載搜索文件。關閉時，只有點擊搜索按鈕後，才會加載搜索文件 |
+| top_n_per_article | 匹配的文章結果，默認顯示最開始的 1段結果                     |
+| unescape          | 將 html 字符串解碼為可讀字符串                               |
+| CDN               | 搜索文件的 CDN 地址（默認使用的本地鏈接）                    |
+
+<!-- endtab -->
+
+<!-- tab DocSearch @fas fa-search -->
+
+DocSearch 是另一款由 algolia 提供的搜索服務，具體申請和使用請查看 [DocSearch 文檔](https://docsearch.algolia.com/) 
+
+```
+docsearch:
+  enable: false
+  appId:
+  apiKey:
+  indexName:
+  option:
+```
+
+| 參數      | 解釋                                                         |
+| --------- | ------------------------------------------------------------ |
+| enable    | 【必須】是否開啟 docsearch                                   |
+| appId     | 【必須】你的 Algolia 應用 ID                                 |
+| apiKey    | 【必須】你的 Algolia 搜索 API key                            |
+| indexName | 【必須】你的 Algolia index name                              |
+| option    | 【可選】其餘的 docsearch 配置<br />具體配置可查[這裏](https://docsearch.algolia.com/docs/api/) |
+
+![DocSearch](https://file.crazywong.com/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-docsearch.png)
+
+<!-- endtab -->
+
+{% endtabs %}
+
+
+
+## 分享
+
+> 只能選擇一個分享服務商
+
+{% tabs 分享 %}
+<!-- tab AddThis -->
+
+> 訪問 [AddThis](https://www.addthis.com/) 官網
+> 找到你的 pub-id
+
+![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addthis.jpg)
+
+修改 `主題配置文件`
+
+```yaml
+addThis:
+  enable: true # or false
+  pubid: 你的pub-id
+```
+
+<!-- endtab -->
+
+<!-- tab Sharejs -->
+如果你不知道 [sharejs](https://github.com/overtrue/share.js/)，看看它的説明。
+
+修改 `主題配置文件`
+
+```yaml
+sharejs:
+  enable: true
+  sites: facebook,twitter,wechat,weibo,qq  #想要顯示的內容
+```
+
+![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-sharejs.png)
+<!-- endtab -->
+
+<!-- tab Addtoany -->
+可以到[addtoany](https://www.addtoany.com/)查看使用説明
+
+```yaml
+addtoany:
+  enable: true
+  item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
+```
+
+![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addtoany.png)
+
+<!-- endtab -->
+{% endtabs %}
 
 ## 評論
 
@@ -511,30 +791,6 @@ daovoice:
 
 <!-- endtab -->
 
-<!-- tab Gitter -->
-打開[Gitter](https://gitter.im/)和註冊賬號
-創建一個`community`或者`room`,複製名稱到設置去
-
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-gitter-setting.png)
-
-修改 `主題配置文件`
-
-```yaml
-# gitter
-# https://gitter.im/
-gitter:
-  enable: true
-  room: 
-```
-
-> Demo
-
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-gitter-ui.png)
-
-<!-- endtab -->
-
-
-
 <!-- tab crisp -->
 
 打開[crisp](https://crisp.chat/en/)並註冊帳號
@@ -578,147 +834,11 @@ messenger:
 
 {% endtabs %}
 
-## 分享
-
-> 只能選擇一個分享服務商
-
-{% tabs 分享 %}
-<!-- tab AddThis -->
-
-> 訪問 [AddThis](https://www.addthis.com/) 官網
-> 找到你的 pub-id
-
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addthis.jpg)
-
-修改 `主題配置文件`
-
-```yaml
-addThis:
-  enable: true # or false
-  pubid: 你的pub-id
-```
-
-<!-- endtab -->
-
-<!-- tab Sharejs -->
-如果你不知道 [sharejs](https://github.com/overtrue/share.js/)，看看它的説明。
-
-修改 `主題配置文件`
-
-```yaml
-sharejs:
-  enable: true
-  sites: facebook,twitter,wechat,weibo,qq  #想要顯示的內容
-```
-
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-sharejs.png)
-<!-- endtab -->
-
-<!-- tab Addtoany -->
-可以到[addtoany](https://www.addtoany.com/)查看使用説明
-
-```yaml
-addtoany:
-  enable: true
-  item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
-```
-
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addtoany.png)
-
-<!-- endtab -->
-{% endtabs %}
-
-## 搜索系統
-
-{% tabs search %}
-<!-- tab Algolia @fab fa-algolia -->
-
-> 記得運行 hexo clean
-
-> 如果你使用 [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch)，請記得配置 fields 參數的 `title`, `permalink` 和 `content`
-
-1. 你需要安裝 [hexo-algolia](https://github.com/oncletom/hexo-algolia)或 [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch). 根據它們的説明文檔去做相應的配置。
-
-2. 修改 `主題配置文件`
-
-```yaml
-algolia_search:
-  enable: true
-  hits:
-    per_page: 6
-```
-
-<!-- endtab -->
-
-<!-- tab 本地搜索@fas fa-search -->
-
-> 記得運行 hexo clean
-
-1. 你需要安裝 [hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search)，根據它的文檔去做相應配置
-
-2. 修改 `主題配置文件`
-
-```yaml
-local_search:
-  enable: false
-  preload: false
-  CDN:
-```
-
-| 參數    | 解釋                                                         |
-| ------- | ------------------------------------------------------------ |
-| enable  | 是否開啟本地搜索                                             |
-| preload | 預加載，開啟後，進入網頁後會自動加載搜索文件。關閉時，只有點擊搜索按鈕後，才會加載搜索文件 |
-| CDN     | 搜索文件的 CDN 地址（默認使用的本地鏈接）                    |
-
-<!-- endtab -->
-
-<!-- tab DocSearch @fas fa-search -->
-
-DocSearch 是另一款由 algolia 提供的搜索服務，具體申請和使用請查看 [DocSearch 文檔](https://docsearch.algolia.com/) 
-
-```
-docsearch:
-  enable: false
-  appId:
-  apiKey:
-  indexName:
-  option:
-```
-
-| 參數      | 解釋                                                         |
-| --------- | ------------------------------------------------------------ |
-| enable    | 【必須】是否開啟 docsearch                                   |
-| appId     | 【必須】你的 Algolia 應用 ID                                 |
-| apiKey    | 【必須】你的 Algolia 搜索 API key                            |
-| indexName | 【必須】你的 Algolia index name                              |
-| option    | 【可選】其餘的 docsearch 配置<br />具體配置可查[這裏](https://docsearch.algolia.com/docs/api/) |
-
-![DocSearch](https://file.crazywong.com/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-docsearch.png)
-
-<!-- endtab -->
-
-{% endtabs %}
-
-## 網站驗證
-
-如果需要搜索引擎收錄網站，可能需要登錄對應搜索引擎的管理平台進行提交。
-各自的驗證碼可從各自管理平台拿到
-
-修改 `主題配置文件`
-
-```yaml
-site_verification:
-  # - name: google_site_verification
-  #   content: xxxxxx
-  # - name: baidu_site_verification
-  #   content: xxxxxxx
-```
-
 ## 分析統計
 
 {% tabs 分析統計 %} 
 <!-- tab 百度統計 -->
+
 1. 登錄百度統計的[官方網站](https://tongji.baidu.com/web/welcome/login)
 
 2. 找到你百度統計的統計代碼
@@ -830,154 +950,20 @@ ad:
 <!-- endtab -->
 {% endtabs %}
 
-## Math 數學
+## 網站驗證
 
-{% tabs Math %}
-<!-- tab MathJax -->
+如果需要搜索引擎收錄網站，可能需要登錄對應搜索引擎的管理平台進行提交。
+各自的驗證碼可從各自管理平台拿到
 
-{% note warning flat %}
-不要在標題裏使用 mathjax 語法，toc 目錄不一定能正確顯示 mathjax，可能顯示 mathjax 代碼
-{% endnote %}
-
-> 建議使用 KaTex 獲得更好的效果，下文有介紹！
-
-修改 `主題配置文件`:
+修改 `主題配置文件`
 
 ```yaml
-mathjax:
-  enable: true
-  # true 表示每一頁都加載mathjax.js
-  # false 需要時加載，須在使用的Markdown Front-matter 加上 mathjax: true
-  per_page: false
+site_verification:
+  # - name: google-site-verification
+  #   content: xxxxxx
+  # - name: baidu-site-verification
+  #   content: xxxxxxx
 ```
-
-> 如果 `per_page` 設為 `true`,則每一頁都會加載 Mathjax 服務。設為 `false`，則需要在文章 `Front-matter` 添加 `mathjax: true`,對應的文章才會加載 Mathjax 服務。
-
-然後你需要修改一下默認的 `markdown` 渲染引擎來實現 MathJax 的效果。
-
-查看: [hexo-renderer-kramed](https://www.npmjs.com/package/hexo-renderer-kramed)
-
-以下操作在你 hexo 博客的目錄下 (**不是 Butterfly 的目錄**):
-
-1. 安裝插件
-
-   ```bash
-   npm uninstall hexo-renderer-marked --save
-   npm install hexo-renderer-kramed --save
-   ```
-
-2. 配置 hexo 根目錄的配置文件
-
-   ```yaml
-   kramed:
-     gfm: true
-     pedantic: false
-     sanitize: false
-     tables: true
-     breaks: true
-     smartLists: true
-     smartypants: true
-   ```
-
-效果：
-
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-mathjax-2.jpg)
-
-<!-- endtab -->
-
-<!-- tab KaTeX -->
-
-{% note warning flat %}
-不要在標題裏使用 KaTeX 語法，toc 目錄不能正確顯示 KaTeX。
-{% endnote %}
-
-首先禁用`MathJax`（如果你配置過 MathJax 的話），然後修改你的`主題配置文件`以便加載`katex.min.css`:
-
-```yaml
-katex:
-  enable: true
-  # true 表示每一頁都加載katex.js
-  # false 需要時加載，須在使用的Markdown Front-matter 加上 katex: true
-  per_page: false
-  hide_scrollbar: true
-```
-
-你不需要添加 `katex.min.js` 來渲染數學方程。相應的你需要卸載你之前的 hexo 的 markdown 渲染器，然後安裝其它插件。
-
-{% subtabs katex-plugins %}
-
-<!-- tab hexo-renderer-markdown-it 【建議】 -->
-
-卸載掉 marked 插件，安裝 [hexo-renderer-markdown-it](https://github.com/hexojs/hexo-renderer-markdown-it)
-
-```bash
-npm un hexo-renderer-marked --save # 如果有安裝這個的話，卸載
-npm un hexo-renderer-kramed --save # 如果有安裝這個的話，卸載
-
-npm i hexo-renderer-markdown-it --save # 需要安裝這個渲染插件
-npm install katex @renbaoshuo/markdown-it-katex #需要安裝這個katex插件
-```
-
-在 hexo 的根目錄的 `_config.yml` 中配置
-
-```yaml
-markdown:
-    plugins:
-      - '@renbaoshuo/markdown-it-katex'
-```
-
-如需配置其它參數，請參考 [katex 官網](https://katex.org/docs/options.html)
-
-<!-- endtab -->
-
-<!-- tab hexo-renderer-markdown-it-plus -->
-
-> 注意，此方法生成的 katex 沒有斜體
-
-卸載掉 marked 插件，然後安裝新的`hexo-renderer-markdown-it-plus`:
-
-```bash
-# 替換 `hexo-renderer-kramed` 或者 `hexo-renderer-marked` 等hexo的markdown渲染器
-# 你可以在你的package.json裏找到hexo的markdwon渲染器，並將其卸載
-npm un hexo-renderer-marked --save
-
-# or
-
-npm un hexo-renderer-kramed --save
-
-
-# 然後安裝 `hexo-renderer-markdown-it-plus`
-npm i @upupming/hexo-renderer-markdown-it-plus --save
-```
-
-注意到 [`hexo-renderer-markdown-it-plus`](https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus)已經無人持續維護, 所以我們使用 [`@upupming/hexo-renderer-markdown-it-plus`](https://github.com/upupming/hexo-renderer-markdown-it-plus)。 這份 fork 的代碼使用了 [`@neilsustc/markdown-it-katex`](https://github.com/yzhang-gh/markdown-it-katex)同時它也是 VSCode 的插件 [Markdown All in One](https://github.com/yzhang-gh/vscode-markdown)所使用的, 所以我們可以獲得最新的 KaTex 功能例如 `\tag{}`。
-
-你還可以通過 [`@neilsustc/markdown-it-katex`](https://github.com/yzhang-gh/markdown-it-katex)控制 KaTeX 的設置，所有可配置的選項參見 https://katex.org/docs/options.html。 比如你想要禁用掉 KaTeX 在命令行上輸出的宂長的警告信息，你可以在根目錄的 `_config.yml` 中使用下面的配置將 `strict` 設置為 false:
-
-```yaml
-markdown_it_plus:
-  plugins:
-    - plugin:
-      name: '@neilsustc/markdown-it-katex'
-      enable: true
-      options:
-        strict: false
-```
-
-當然，你還可以利用這個特性來定義一些自己常用的 `macros`。
-
-<!-- endtab -->
-
-{% endsubtabs %}
-
-
-
-因為 KaTeX 更快更輕量，因此沒有 MathJax 的功能多（比如右鍵菜單）。為那些使用 MathJax 的用户，主題也內置了 katex 的 [複製](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex) 功能。
-
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-katex.gif)
-
-<!-- endtab -->
-{% endtabs %}
 
 ## 美化/特效
 
@@ -1008,7 +994,35 @@ theme_color:
 ```
 
 ![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_1.png)
+
 ![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_2.png)
+
+### 主頁top_img顯示大小
+
+> 適用於 版本號 >= V1.2.0
+
+默認的顯示為全屏。site-info的區域會居中顯示
+
+```yaml
+# 主頁設置
+# 默認top_img全屏，site_info在中間
+# 使用默認, 都無需填寫（建議默認）
+index_site_info_top: # 主頁標題距離頂部距離  例如 300px/300em/300rem/10%
+index_top_img_height:  #主頁top_img高度 例如 300px/300em/300rem  不能使用百分比
+```
+
+注意：`index_top_img_height`的值不能使用百分比。
+2個都不填的話，會使用默認值
+
+舉例，當
+
+```yaml
+index_top_img_height: 400px
+```
+
+效果
+
+![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-top-img-setting.png)
 
 ### 網站背景
 
@@ -1273,36 +1287,6 @@ subtitle:
 ![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-subtitle.gif)
 
 
-
-### 主頁top_img顯示大小
-
-> 適用於 版本號 >= V1.2.0
-
-默認的顯示為全屏。site-info的區域會居中顯示
-
-```yaml
-# 主頁設置
-# 默認top_img全屏，site_info在中間
-# 使用默認, 都無需填寫（建議默認）
-index_site_info_top: # 主頁標題距離頂部距離  例如 300px/300em/300rem/10%
-index_top_img_height:  #主頁top_img高度 例如 300px/300em/300rem  不能使用百分比
-```
-
-注意：`index_top_img_height`的值不能使用百分比。
-2個都不填的話，會使用默認值
-
-舉例，當
-
-```yaml
-index_top_img_height: 400px
-```
-
-效果
-
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-top-img-setting.png)
-
-
-
 ### 頁面加載動畫 preloader
 
 當進入網頁時，因為加載速度的問題，可能會導致 top_img 圖片出現斷層顯示，或者網頁加載不全而出現等待時間，開啟preloader後，會顯示加載動畫，等頁面加載完，加載動畫會消失。
@@ -1326,6 +1310,158 @@ preloader:
 > fullpage-loading
 
 ![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-preloader.gif)
+
+## 字數統計
+
+要為`Butterfly`配上字數統計特性, 你需要如下幾個步驟:
+
+1. 打開 hexo 工作目錄
+
+2. `npm install hexo-wordcount --save` or `yarn add hexo-wordcount`
+
+3. 修改 `主題配置文件`:
+
+```yaml
+wordcount:
+  enable: true
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
+```
+
+![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-word-count.png)
+![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-wordcount-totalcount.png)
+
+## 圖片大圖查看模式
+
+{% note info %}
+
+只能開啟一個
+
+{% endnote %}
+
+
+
+{% tabs 圖片大圖查看模式 %}
+
+<!-- tab 注意 -->
+
+如果你並不想為某張圖片添加大圖查看模式，你可以使用 html 格式引用圖片，併為圖片添加 `no-lightbox` class 名。
+
+<!-- endtab -->
+
+<!-- tab fancybox -->
+修改 `主題配置文件`
+
+```yaml
+# fancybox http://fancyapps.com/fancybox/3/
+fancybox: true
+```
+
+![fancybox.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/fancybox.gif)
+<!-- endtab -->
+<!-- tab medium_zoom -->
+修改 `主題配置文件`
+
+```yaml
+medium_zoom: true
+```
+
+![medium_zoom.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/medium_zoom.gif)
+<!-- endtab -->
+{% endtabs %}
+
+## Pjax
+
+當用户點擊鏈接，通過ajax更新頁面需要變化的部分，然後使用HTML5的pushState修改瀏覽器的URL地址。
+
+這樣可以不用重複加載相同的資源（css/js）， 從而提升網頁的加載速度。
+
+```yaml
+# Pjax [Beta]
+# It may contain bugs and unstable, give feedback when you find the bugs.
+# https://github.com/MoOx/pjax
+pjax: 
+  enable: true
+  exclude:
+    - /music/
+    - /no-pjax/
+```
+{% note info %}
+
+對於一些第三方插件，有些並不支持 pjax 。
+你可以把**網頁**加入到 `exclude` 裏，這個網頁會被 pjax 排除在外。
+點擊該網頁會重新加載網站
+
+使用pjax後，一些自己DIY的js可能會無效，跳轉頁面時需要重新調用，請參考[Pjax文檔](https://github.com/MoOx/pjax)
+使用pjax後，一些個別頁面加載的js/css，將會改為所有頁面都加載
+
+{% endnote %}
+
+{% note warning %}
+
+Butterfly的Pjax目前仍有一些問題，請留意
+
+- 使用谷歌廣告可能會報錯（例如自動廣告）
+
+如果你在使用中發現問題，歡迎反饋Bugs
+
+{% endnote %}
+
+## Snackbar 彈窗
+
+Snackbar 彈窗,根據自己愛好開啟
+
+修改 `主題配置文件`
+
+```yaml
+# Snackbar 彈窗
+# https://github.com/polonel/SnackBar
+# position 彈窗位置
+# 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
+snackbar:
+  enable: true
+  position: bottom-left
+  bg_light: '#49b1f5' #light mode時彈窗背景
+  bg_dark: '#2d3035' #dark mode時彈窗背景
+```
+
+> 未開啟Snackbar
+
+![snackbar_false.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/snackbar_false.gif)
+
+> 開啟Snackbar
+
+![snackbar_true.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/snackbar_true.gif)
+
+
+##  Instantpage
+
+當鼠標懸停到鏈接上超過 65 毫秒時，Instantpage 會對該鏈接進行預加載，可以提升訪問速度。
+
+修改配置文件
+
+```yaml
+# https://instant.page/
+# prefetch (預加載)
+instantpage: true
+```
+
+## Pangu
+
+> 如果你跟我一樣，每次看到網頁上的中文字和英文、數字、符號擠在一塊，就會坐立難安，忍不住想在它們之間加個空格。這個外掛正是你在網路世界走跳所需要的東西，它會自動替你在網頁中所有的中文字和半形的英文、數字、符號之間插入空白。
+
+修改配置文件
+
+```YAML
+# https://github.com/vinta/pangu.js
+# Insert a space between Chinese character and English character (中英文之間添加空格)
+pangu:
+  enable: false
+  field: post # site/post
+```
+
+`field`只支持兩個參數，`post`(只在文章頁生效)和`site`(全站生效)
 
 ## PWA
 
@@ -1432,108 +1568,7 @@ pwa:
 
 關於 PWA（漸進式增強 Web 應用）的更多內容請參閲 [Google Tools for Web Developers](https://developers.google.com/web/tools/lighthouse/audits/address-bar)
 
-## 字數統計
-
-要為`Butterfly`配上字數統計特性, 你需要如下幾個步驟:
-
-1. 打開 hexo 工作目錄
-
-2. `npm install hexo-wordcount --save` or `yarn add hexo-wordcount`
-
-3. 修改 `主題配置文件`:
-
-```yaml
-wordcount:
-  enable: true
-  post_wordcount: true
-  min2read: true
-  total_wordcount: true
-```
-
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-word-count.png)
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-wordcount-totalcount.png)
-
-## 圖片大圖查看模式
-
-{% note info %}
-
-只能開啟一個
-
-{% endnote %}
-
-
-
-{% tabs 圖片大圖查看模式 %}
-
-<!-- tab 注意 -->
-
-如果你並不想為某張圖片添加大圖查看模式，你可以使用 html 格式引用圖片，併為圖片添加 `no-lightbox` class 名。
-
-<!-- endtab -->
-
-<!-- tab fancybox -->
-修改 `主題配置文件`
-
-```yaml
-# fancybox http://fancyapps.com/fancybox/3/
-fancybox: true
-```
-
-![fancybox.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/fancybox.gif)
-<!-- endtab -->
-<!-- tab medium_zoom -->
-修改 `主題配置文件`
-
-```yaml
-medium_zoom: true
-```
-
-![medium_zoom.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/medium_zoom.gif)
-<!-- endtab -->
-{% endtabs %}
-
-## Snackbar 彈窗
-
-Snackbar 彈窗,根據自己愛好開啟
-
-修改 `主題配置文件`
-
-```yaml
-# Snackbar 彈窗
-# https://github.com/polonel/SnackBar
-# position 彈窗位置
-# 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
-snackbar:
-  enable: true
-  position: bottom-left
-  bg_light: '#49b1f5' #light mode時彈窗背景
-  bg_dark: '#2d3035' #dark mode時彈窗背景
-```
-
-> 未開啟Snackbar
-
-![snackbar_false.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/snackbar_false.gif)
-
-> 開啟Snackbar
-
-![snackbar_true.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/snackbar_true.gif)
-
-## 其它配置
-
-### CSS 前綴
-
-有些 CSS 並不是所有瀏覽器都支持，需要增加對應的前綴才會生效。
-
-開啟  `css_prefix` 後，會自動為一些 CSS 增加前綴。（會增加 20%的體積）
-
-修改配置文件
-
-```yaml
-# Add the vendor prefixes to ensure compatibility
-css_prefix: true
-```
-
-### Open Graph
+## Open Graph
 
 在 `head` 裏增加一些 meta 資料，例如縮略圖、標題、時間等等。當你分享網頁到一些平台時，平台會讀取 Open Graph 的內容，展示縮略圖，標題等等信息。
 
@@ -1554,70 +1589,18 @@ Open_Graph_meta:
     # fb_app_id:
 ```
 
-### Instantpage
+## CSS 前綴
 
-當鼠標懸停到鏈接上超過 65 毫秒時，Instantpage 會對該鏈接進行預加載，可以提升訪問速度。
+有些 CSS 並不是所有瀏覽器都支持，需要增加對應的前綴才會生效。
+
+開啟  `css_prefix` 後，會自動為一些 CSS 增加前綴。（會增加 20%的體積）
 
 修改配置文件
 
 ```yaml
-# https://instant.page/
-# prefetch (預加載)
-instantpage: true
+# Add the vendor prefixes to ensure compatibility
+css_prefix: true
 ```
-
-### Pangu
-
-> 如果你跟我一樣，每次看到網頁上的中文字和英文、數字、符號擠在一塊，就會坐立難安，忍不住想在它們之間加個空格。這個外掛正是你在網路世界走跳所需要的東西，它會自動替你在網頁中所有的中文字和半形的英文、數字、符號之間插入空白。
-
-修改配置文件
-
-```YAML
-# https://github.com/vinta/pangu.js
-# Insert a space between Chinese character and English character (中英文之間添加空格)
-pangu:
-  enable: false
-  field: post # site/post
-```
-
-`field`只支持兩個參數，`post`(只在文章頁生效)和`site`(全站生效)
-
-## Pjax
-
-當用户點擊鏈接，通過ajax更新頁面需要變化的部分，然後使用HTML5的pushState修改瀏覽器的URL地址。
-
-這樣可以不用重複加載相同的資源（css/js）， 從而提升網頁的加載速度。
-
-```yaml
-# Pjax [Beta]
-# It may contain bugs and unstable, give feedback when you find the bugs.
-# https://github.com/MoOx/pjax
-pjax: 
-  enable: true
-  exclude:
-    - /music/
-    - /no-pjax/
-```
-{% note info %}
-
-對於一些第三方插件，有些並不支持 pjax 。
-你可以把**網頁**加入到 `exclude` 裏，這個網頁會被 pjax 排除在外。
-點擊該網頁會重新加載網站
-
-使用pjax後，一些自己DIY的js可能會無效，跳轉頁面時需要重新調用，請參考[Pjax文檔](https://github.com/MoOx/pjax)
-使用pjax後，一些個別頁面加載的js/css，將會改為所有頁面都加載
-
-{% endnote %}
-
-{% note warning %}
-
-Butterfly的Pjax目前仍有一些問題，請留意
-
-- 使用谷歌廣告可能會報錯（例如自動廣告）
-
-如果你在使用中發現問題，歡迎反饋Bugs
-
-{% endnote %}
 
 ## Inject
 
@@ -1670,8 +1653,10 @@ CDN:
     # translate:
     # local_search:
     # algolia_js:
-    # algolia_search_v4:
-    # instantsearch_v4:
+    # algolia_search:
+    # instantsearch:
+    # docsearch_js:
+    # docsearch_css:
     # pjax:
     # gitalk:
     # gitalk_css:
@@ -1682,6 +1667,7 @@ CDN:
     # twikoo:
     # waline_js:
     # waline_css:
+    # giscus:
     # sharejs:
     # sharejs_css:
     # mathjax:
@@ -1695,8 +1681,8 @@ CDN:
     # instantpage:
     # typed:
     # pangu:
-    # fancybox_css_v4:
-    # fancybox_v4:
+    # fancybox_css:
+    # fancybox:
     # medium_zoom:
     # snackbar_css:
     # snackbar:
@@ -1704,7 +1690,7 @@ CDN:
     # fireworks:
     # click_heart:
     # ClickShowText:
-    # fontawesomeV6:
+    # fontawesome:
     # flickr_justified_gallery_js:
     # flickr_justified_gallery_css:
     # aplayer_css:
@@ -1713,6 +1699,10 @@ CDN:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
+    # artalk_js:
+    # artalk_css:
+    # busuanzi:
+    # abcjs_basic_js:
 ```
 
 

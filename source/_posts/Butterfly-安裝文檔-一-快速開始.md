@@ -17,9 +17,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2023 年 02 月 20 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2023 年 04 月 10 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.7.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.7.0)
+ 🦋  Butterfly 已經更新到 [4.8.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.8.1)
 
 {% endnote %}
 
@@ -39,7 +39,7 @@ comments: false
 
 ***
 
-`hexo-theme-butterfly`是基於 [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody) 的基礎上進行開發的。
+`hexo-theme-butterfly` 是基於 [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody) 的基礎上進行開發的。
 
 ## 安裝
 
@@ -97,7 +97,7 @@ git clone -b dev https://gitee.com/immyw/hexo-theme-butterfly.git themes/butterf
 
 {% note info %}
 
-升級方法：在主題目錄下，運行`git pull`
+升級方法：在主題目錄下，運行 `git pull`
 
 {% endnote %}
 
@@ -114,7 +114,7 @@ git clone -b dev https://gitee.com/immyw/hexo-theme-butterfly.git themes/butterf
 在你的 Hexo 根目錄裏
 
 ```powershell
-npm i hexo-theme-butterfly
+npm install hexo-theme-butterfly
 ```
 
 {% note info %}
@@ -129,7 +129,7 @@ npm i hexo-theme-butterfly
 
 ## 應用主題
 
-修改 Hexo 根目錄下的 `_config.yml`，把主題改為`butterfly`
+修改 Hexo 根目錄下的 `_config.yml`，把主題改為 `butterfly`
 
 ```yaml
 theme: butterfly
@@ -155,14 +155,14 @@ npm install hexo-renderer-pug hexo-renderer-stylus --save
 
 為了減少升級主題後帶來的不便，請使用以下方法（**建議，可以不做**）。
 
-在 hexo 的根目錄創建一個文件 `_config.butterfly.yml`，並把**主題**目錄的 `_config.yml` **內容**複製到 `_config.butterfly.yml` 去。( **注意: 複製的是主題的 `_config.yml` ,而不是 hexo 的 `_config.yml`**)
+在 hexo 的根目錄創建一個文件 `_config.butterfly.yml`，並把**主題**目錄的 `_config.yml` **內容**複製到 `_config.butterfly.yml` 去。( **注意: 複製的是主題的 `_config.yml` ，而不是 hexo 的 `_config.yml`**)
 
 > **注意：** 不要把主題目錄的 `_config.yml` 刪掉
 
-> **注意：** 以後只需要在 `_config.butterfly.yml`進行配置就行。
+> **注意：** 以後只需要在 `_config.butterfly.yml` 進行配置就行。
 > 如果使用了 `_config.butterfly.yml`， 配置主題的 `_config.yml` 將不會有效果。
 
-Hexo會自動**合併**主題中的`_config.yml`和 `_config.butterfly.yml`裏的配置，如果存在同名配置，會使用`_config.butterfly.yml`的配置，其優先度較高。
+Hexo會自動**合併**主題中的 `_config.yml` 和 `_config.butterfly.yml` 裏的配置，如果存在同名配置，會使用 `_config.butterfly.yml` 的配置，其優先度較高。
 
 ![image-20200805191531090](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-docs-install-suggestion-1.png)
 

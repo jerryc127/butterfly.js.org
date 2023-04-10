@@ -131,6 +131,7 @@ search:
   path: search.xml
   field: post
   content: true
+  format: html
 
 # aplayer:
 #   meting: true
@@ -180,5 +181,5 @@ marked:
   smartypants: false
   descriptionLists: false
 
-server:
-  port: 3127
+# server:
+#   port: 3127

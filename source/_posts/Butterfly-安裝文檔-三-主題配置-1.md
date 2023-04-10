@@ -12,13 +12,14 @@ description: Butterfly安裝文檔-主題配置
 cover: https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-docs-03-cover.png
 abbrlink: 4aa8abbe
 comments: false
+abcjs: true
 ---
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2023 年 02 月 20 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2023 年 04 月 10 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.7.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.7.0)
+ 🦋  Butterfly 已經更新到 [4.8.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.8.1)
 
 {% endnote %}
 
@@ -56,7 +57,26 @@ comments: false
 
 ![](https://file.crazywong.com/gh/jerryc127/CDN/img/20191120000444.png)
 
-## 導航菜單
+## 導航欄設置 (Navigation bar settings)
+
+###  參數設置
+
+主題配置文件中
+
+```yaml
+nav:
+  logo: #image
+  display_title: true
+  fixed: false # fixed navigation bar
+```
+
+| 參數          | 解釋                                    |
+| ------------- | --------------------------------------- |
+| logo          | 網站的 logo，支持圖片，直接填入圖片鏈接 |
+| display_title | 是否顯示網站標題，填寫 true 或者 false  |
+| fixed         | 是否固定狀態欄，填寫 true 或者 false    |
+
+###  菜單/目錄
 
 修改 `主題配置文件`
 
@@ -104,24 +124,7 @@ menu:
 
 ![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-menu.png)
 
-## 導航欄設置
-
-主題配置文件中
-
-```yaml
-nav:
-  logo: #image
-  display_title: true
-  fixed: false # fixed navigation bar
-```
-
-| 參數          | 解釋                                    |
-| ------------- | --------------------------------------- |
-| logo          | 網站的 logo，支持圖片，直接填入圖片鏈接 |
-| display_title | 是否顯示網站標題，填寫 true 或者 false  |
-| fixed         | 是否固定狀態欄，填寫 true 或者 false    |
-
-## 代碼
+## 代碼 (Code Blocks)
 
 {% note info %}
 
@@ -297,16 +300,16 @@ highlight_height_limit: false # unit: px
 
 ![hexo-theme-butterfly-docs-highlight-heigh-limit](https://file.crazywong.com/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-highlight-heigh-limit.gif)
 
-## 社交圖標
+## 社交圖標 (Social Settings)
 
-Butterfly支持 [font-awesome v6](https://fontawesome.com/icons?from=io)圖標. 
+Butterfly支持 [font-awesome v6](https://fontawesome.com/icons?from=io) 圖標. 
 
-書寫格式 `圖標名：url || 描述性文字`
+書寫格式 `圖標名：url || 描述性文字 || color`
 
 ```yaml
 social:
-  fab fa-github: https://github.com/xxxxx || Github
-  fas fa-envelope: mailto:xxxxxx@gmail.com || Email
+  fab fa-github: https://github.com/xxxxx || Github || "#hdhfbb"
+  fas fa-envelope: mailto:xxxxxx@gmail.com || Email || "#000000"
 ```
 
 圖標名可在這尋找
@@ -321,28 +324,17 @@ Mobile:
 
 ![1560603353743](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-socila-icon-mobile.png)
 
-## 主頁文章節選(自動節選和文章頁description)
-
-因為主題UI的關係，`主頁文章節選`只支持`自動節選`和`文章頁description`。
-
-在`butterfly`裏，有四種可供選擇
-
-1. **description：** 只顯示description
-2. **both：** 優先選擇description，如果沒有配置description，則顯示自動節選的內容
-3. **auto_excerpt：**只顯示自動節選
-4. **false：** 不顯示文章內容
+## 頭像
 
 修改 `主題配置文件`
 
 ```yaml
-index_post_content:
-  method: 3
-  length: 500 # if you set method to 2 or 3, the length need to config
+avatar:
+  img: /img/avatar.png
+  effect: true # 頭像會一直轉圈
 ```
 
-`description`在front-matter裏添加
-
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-description.png)
+![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-avatar.png)
 
 ## 頂部圖
 
@@ -425,9 +417,7 @@ category_per_img：
 
 ![image-20200924225300934](https://file.crazywong.com/gh/jerryc127/CDN/img/theme-butterfly-docs-top-img-color.png)
 
-## 文章置頂
 
-【推薦】[`hexo-generator-index`](https://github.com/hexojs/hexo-generator-index)從 2.0.0 開始，已經支持文章置頂功能。你可以直接在文章的`front-matter`區域裏添加`sticky: 1`屬性來把這篇文章置頂。數值越大，置頂的優先級越大。
 
 ## 文章封面
 
@@ -488,9 +478,9 @@ default_cover:
 
 ![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cover-both.png)
 
-## 文章頁相關配置
 
-### 文章meta顯示
+
+## 頁面 meta 顯示
 
 這個選項是用來顯示文章的相關信息的。
 
@@ -535,6 +525,96 @@ post_meta:
 > 明確時間
 
 ![image-20200928201911032](https://file.crazywong.com/gh/jerryc127/CDN/img/theme-butterfly-docs-full-date.png)
+
+## 主頁文章節選(自動節選和文章頁description)
+
+因為主題UI的關係，`主頁文章節選`只支持`自動節選`和`文章頁description`。
+
+在`butterfly`裏，有四種可供選擇
+
+1. **description：** 只顯示description
+2. **both：** 優先選擇description，如果沒有配置description，則顯示自動節選的內容
+3. **auto_excerpt：**只顯示自動節選
+4. **false：** 不顯示文章內容
+
+修改 `主題配置文件`
+
+```yaml
+index_post_content:
+  method: 3
+  length: 500 # if you set method to 2 or 3, the length need to config
+```
+
+`description`在front-matter裏添加
+
+![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-description.png)
+
+## 頁面錨點
+
+開啟頁面錨點後，當你在進行滾動時，頁面鏈接會根據標題ID進行替換
+(注意: 每替換一次，會留下一個歷史記錄。所以如果一篇文章有很多錨點的話，網頁的歷史記錄會很多。)
+
+修改 `主題配置文件`
+
+```yaml
+# anchor
+# when you scroll in post , the url will update according to header id.
+anchor:
+  button:
+    enable: false
+    always_show: false
+    icon: # the unicode value of Font Awesome icon, such as '\3423'
+  auto_update: false # when you scroll in post, the URL will update according to header id.
+```
+
+## 圖片描述
+
+可開啟圖片Figcaption描述文字顯示
+
+優先顯示圖片的 title 屬性，然後是 alt 屬性
+
+修改 `主題配置文件`
+
+```yaml
+photofigcaption: true
+```
+
+![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-photo-figcaption.png)
+
+## 複製相關配置
+
+可配置網站是否可以複製、複製的內容是否添加版權信息
+
+```markdown
+# copy settings
+# copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
+copy:
+  enable: true
+  copyright:
+    enable: true
+    limit_count: 50
+```
+
+| 配置        | 解釋                                                         |
+| ----------- | ------------------------------------------------------------ |
+| enable      | 是否開啟網站複製權限                                         |
+| copyright   | 複製的內容後面加上版權信息                                   |
+| enable      | 是否開啟複製版權信息添加                                     |
+| limit_count | 字數限制，當複製文字大於這個字數限制時，將在複製的內容後面加上版權信息 |
+
+> 添加版權信息後
+
+```
+Lorem ipsum dolor sit amet, test link consectetur adipiscing elit. Strong text pellentesque ligula commodo viverra vehicula. Italic text at ullamcorper enim. Morbi a euismod nibh. Underline text non elit nisl. Deleted text tristique, sem id condimentum tempus, metus lectus venenatis mauris, sit amet semper lorem felis a eros. Fusce egestas nibh at sagittis auctor. Sed ultricies ac arcu quis molestie. Donec dapibus nunc in nibh egestas, vitae volutpat sem iaculis. Curabitur sem tellus, elementum nec quam id, fermentum laoreet mi. Ut mollis ullamcorper turpis, vitae facilisis velit ultricies sit amet. Etiam laoreet dui odio, id tempus justo tincidunt id. Phasellus scelerisque nunc sed nunc ultricies accumsan.
+
+
+作者: Jerry
+連結: http://localhost:4000/posts/bd3c650b/#Paragraph
+來源: Butterfly
+著作權歸作者所有。商業轉載請聯絡作者獲得授權，非商業轉載請註明出處。
+```
+
+## 文章頁相關配置
 
 ### 文章版權
 
@@ -732,83 +812,6 @@ post_pagination: false
 
 ![image-20210130161545100](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-post-pagination.png)
 
-## 頁面錨點
-
-開啟頁面錨點後，當你在進行滾動時，頁面鏈接會根據標題ID進行替換
-(注意: 每替換一次，會留下一個歷史記錄。所以如果一篇文章有很多錨點的話，網頁的歷史記錄會很多。)
-
-修改 `主題配置文件`
-
-```yaml
-# anchor
-# when you scroll in post , the url will update according to header id.
-anchor:
-  button:
-    enable: false
-    always_show: false
-    icon: # the unicode value of Font Awesome icon, such as '\3423'
-  auto_update: false # when you scroll in post, the URL will update according to header id.
-```
-
-## 頭像
-
-修改 `主題配置文件`
-
-```yaml
-avatar:
-  img: /img/avatar.png
-  effect: true # 頭像會一直轉圈
-```
-
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-avatar.png)
-
-## 圖片描述
-
-可開啟圖片Figcaption描述文字顯示
-
-優先顯示圖片的 title 屬性，然後是 alt 屬性
-
-修改 `主題配置文件`
-
-```yaml
-photofigcaption: true
-```
-
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-photo-figcaption.png)
-
-## 複製相關配置
-
-可配置網站是否可以複製、複製的內容是否添加版權信息
-
-```markdown
-# copy settings
-# copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
-copy:
-  enable: true
-  copyright:
-    enable: true
-    limit_count: 50
-```
-
-| 配置        | 解釋                                                         |
-| ----------- | ------------------------------------------------------------ |
-| enable      | 是否開啟網站複製權限                                         |
-| copyright   | 複製的內容後面加上版權信息                                   |
-| enable      | 是否開啟複製版權信息添加                                     |
-| limit_count | 字數限制，當複製文字大於這個字數限制時，將在複製的內容後面加上版權信息 |
-
-> 添加版權信息後
-
-```
-Lorem ipsum dolor sit amet, test link consectetur adipiscing elit. Strong text pellentesque ligula commodo viverra vehicula. Italic text at ullamcorper enim. Morbi a euismod nibh. Underline text non elit nisl. Deleted text tristique, sem id condimentum tempus, metus lectus venenatis mauris, sit amet semper lorem felis a eros. Fusce egestas nibh at sagittis auctor. Sed ultricies ac arcu quis molestie. Donec dapibus nunc in nibh egestas, vitae volutpat sem iaculis. Curabitur sem tellus, elementum nec quam id, fermentum laoreet mi. Ut mollis ullamcorper turpis, vitae facilisis velit ultricies sit amet. Etiam laoreet dui odio, id tempus justo tincidunt id. Phasellus scelerisque nunc sed nunc ultricies accumsan.
-
-
-作者: Jerry
-連結: http://localhost:4000/posts/bd3c650b/#Paragraph
-來源: Butterfly
-著作權歸作者所有。商業轉載請聯絡作者獲得授權，非商業轉載請註明出處。
-```
-
 ## Footer 設置
 
 ### 博客年份
@@ -844,106 +847,9 @@ custom_text: Hi, welcome to my <a href="https://butterfly.js.org/">blog</a>!
 custom_text: <a href="icp鏈接"><img class="icp-icon" src="icp圖片"><span>備案號：xxxxxx</span></a>
 ```
 
-## 右下角按鈕
 
-### 簡繁轉換
 
-簡體繁體互換
-
-右下角會有簡繁轉換按鈕。
-
-修改 `主題配置文件`
-
-```yaml
-translate:
-  enable: true
-  # 默認按鈕顯示文字(網站是簡體，應設置為'default: 繁')
-  default: 簡
-  #網站默認語言，1: 繁體中文, 2: 簡體中文
-  defaultEncoding: 1
-  #延遲時間,若不在前, 要設定延遲翻譯時間, 如100表示100ms,默認為0
-  translateDelay: 0
-  #當文字是簡體時，按鈕顯示的文字
-  msgToTraditionalChinese: "繁"
-  #當文字是繁體時，按鈕顯示的文字
-  msgToSimplifiedChinese: "簡"
-```
-
-> 簡體
-
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-simp.png)
-
-> 繁體
-
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-tranditional.png)
-
-### 夜間模式
-
-右下角會有夜間模式按鈕
-
-修改 `主題配置文件`
-
-```yaml
-# dark mode
-darkmode:
-  enable: true
-  # dark mode和 light mode切換按鈕
-  button: true
-  autoChangeMode: false
-```
-
-![image-20201230201029381](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-dark-mode-1.png)
-
-{% note info %}
-V2.0.0 開始增加一個選項，可開啟自動切換light mode 和 dark mode
-
-autoChangeMode: 1  跟隨系統而變化，不支持的瀏覽器/系統將按照時間晚上6點到早上6點之間切換為 dark mode
-
-autoChangeMode: 2  只按照時間 晚上6點到早上6點之間切換為 dark mode,其餘時間為light mode
-
-autoChangeMode: false 取消自動切換
-{% endnote %}
-
-### 閲讀模式
-
-閲讀模式下會去掉除文章外的內容，避免幹擾閲讀。
-
-只會出現在文章頁面，右下角會有閲讀模式按鈕。
-
-修改 `主題配置文件`
-
-```yaml
-readmode: true
-```
-
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-read-mode.png)
-
-### 滾動狀態百分比
-
-主題配置文件中
-
-```yaml
-# show scroll percent in scroll-to-top button
-rightside_scroll_percent: true
-```
-
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/hexo-butterfly-docs-scroll-percent-right-btn.gif)
-
-### 按鈕排序
-
-```yaml
-# Don't modify the following settings unless you know how they work (非必要請不要修改 )
-# Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
-# Don't repeat 不要重複
-rightside_item_order:
-  enable: false
-  hide: # readmode,translate,darkmode,hideAside
-  show: # toc,chat,comment
-```
-
-注意： 不要重複
-
-## 側邊欄設置
+## 側邊欄設置 (aside)
 
 ### 側邊排版
 
@@ -1111,6 +1017,110 @@ newest_comments:
 ### 自定義添加欄目
 
 {% btn '/posts/ea33ab97/','點擊前往',fas fa-lightbulb,block green %}
+
+
+
+## 右下角按鈕 (Bottom right button)
+
+### 簡繁轉換
+
+簡體繁體互換
+
+右下角會有簡繁轉換按鈕。
+
+修改 `主題配置文件`
+
+```yaml
+translate:
+  enable: true
+  # 默認按鈕顯示文字(網站是簡體，應設置為'default: 繁')
+  default: 簡
+  #網站默認語言，1: 繁體中文, 2: 簡體中文
+  defaultEncoding: 1
+  #延遲時間,若不在前, 要設定延遲翻譯時間, 如100表示100ms,默認為0
+  translateDelay: 0
+  #當文字是簡體時，按鈕顯示的文字
+  msgToTraditionalChinese: "繁"
+  #當文字是繁體時，按鈕顯示的文字
+  msgToSimplifiedChinese: "簡"
+```
+
+> 簡體
+
+![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-simp.png)
+
+> 繁體
+
+![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-tranditional.png)
+
+
+
+### 閲讀模式
+
+閲讀模式下會去掉除文章外的內容，避免幹擾閲讀。
+
+只會出現在文章頁面，右下角會有閲讀模式按鈕。
+
+修改 `主題配置文件`
+
+```yaml
+readmode: true
+```
+
+![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-read-mode.png)
+
+
+
+### 夜間模式
+
+右下角會有夜間模式按鈕
+
+修改 `主題配置文件`
+
+```yaml
+# dark mode
+darkmode:
+  enable: true
+  # dark mode和 light mode切換按鈕
+  button: true
+  autoChangeMode: false
+  # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
+  start: # 8
+  end: # 22
+```
+
+| 參數           | 解釋                                                         |
+| -------------- | ------------------------------------------------------------ |
+| button         | 是否在右下角顯示日夜模式切換按鈕                             |
+| autoChangeMode | 自動切換的模式<br />autoChangeMode: 1  跟隨系統而變化，不支持的瀏覽器/系統將按照時間 start 到 end 之間切換為 light mode<br />autoChangeMode: 2  只按照時間 start 到 end 之間切換為 light mode ,其餘時間為 dark mode<br />autoChangeMode: false 取消自動切換 |
+| start          | light mode 的開始時間                                        |
+| end            | light mode 的結束時間                                        |
+
+![image-20201230201029381](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-dark-mode-1.png)
+
+### 滾動狀態百分比
+
+主題配置文件中
+
+```yaml
+# show scroll percent in scroll-to-top button
+rightside_scroll_percent: true
+```
+
+![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/hexo-butterfly-docs-scroll-percent-right-btn.gif)
+
+### 按鈕排序
+
+```yaml
+# Don't modify the following settings unless you know how they work (非必要請不要修改 )
+# Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
+# Don't repeat 不要重複
+rightside_item_order:
+  enable: false
+  hide: # readmode,translate,darkmode,hideAside
+  show: # toc,chat,comment
+```
+
 ## 標籤外掛（Tag Plugins）
 
 {% note info %}
@@ -2529,6 +2539,71 @@ xxxxxx
 ```
 
 ![](https://file.crazywong.com/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-flink-demo.png)
+
+
+
+### abcjs 樂譜
+
+在頁面上渲染樂譜
+
+修改 `主題配置文件`
+
+```yaml
+# abcjs (樂譜渲染)
+# See https://github.com/paulrosen/abcjs
+# ---------------
+abcjs:
+  enable: true
+  per_page: true
+```
+
+寫法：
+
+```markdown
+{% score %}
+樂譜代碼
+{% endscore %}
+```
+
+> Demo
+
+```markdown
+{% score %}
+X:1
+T:alternate heads
+M:C
+L:1/8
+U:n=!style=normal!
+K:C treble style=rhythm
+"Am" BBBB B2 B>B | "Dm" B2 B/B/B "C" B4 |"Am" B2 nGnB B2 nGnA | "Dm" nDB/B/ nDB/B/ "C" nCB/B/ nCB/B/ |B8| B0 B0 B0 B0 |]
+%%text This translates to:
+[M:C][K:style=normal]
+[A,EAce][A,EAce][A,EAce][A,EAce] [A,EAce]2 [A,EAce]>[A,EAce] |[DAdf]2 [DAdf]/[DAdf]/[DAdf] [CEGce]4 |[A,EAce]2 GA [A,EAce] GA |D[DAdf]/[DAdf]/ D[DAdf]/[DAdf]/ C [CEGce]/[CEGce]/ C[CEGce]/[CEGce]/ |[CEGce]8 | [CEGce]2 [CEGce]2 [CEGce]2 [CEGce]2 |]
+GAB2 !style=harmonic![gb]4|GAB2 [K: style=harmonic]gbgb|
+[K: style=x]
+C/A,/ C/C/E C/zz2|
+w:Rock-y did-nt like that
+{% endscore %}
+```
+
+
+
+{% score %}
+X:1
+T:alternate heads
+M:C
+L:1/8
+U:n=!style=normal!
+K:C treble style=rhythm
+"Am" BBBB B2 B>B | "Dm" B2 B/B/B "C" B4 |"Am" B2 nGnB B2 nGnA | "Dm" nDB/B/ nDB/B/ "C" nCB/B/ nCB/B/ |B8| B0 B0 B0 B0 |]
+%%text This translates to:
+[M:C][K:style=normal]
+[A,EAce][A,EAce][A,EAce][A,EAce] [A,EAce]2 [A,EAce]>[A,EAce] |[DAdf]2 [DAdf]/[DAdf]/[DAdf] [CEGce]4 |[A,EAce]2 GA [A,EAce] GA |D[DAdf]/[DAdf]/ D[DAdf]/[DAdf]/ C [CEGce]/[CEGce]/ C[CEGce]/[CEGce]/ |[CEGce]8 | [CEGce]2 [CEGce]2 [CEGce]2 [CEGce]2 |]
+GAB2 !style=harmonic![gb]4|GAB2 [K: style=harmonic]gbgb|
+[K: style=x]
+C/A,/ C/C/E C/zz2|
+w:Rock-y did-nt like that
+{% endscore %}
 
 
 

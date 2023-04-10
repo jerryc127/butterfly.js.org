@@ -17,9 +17,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2023 年 02 月 20 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2023 年 04 月 10 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.7.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.7.0)
+ 🦋  Butterfly 已經更新到 [4.8.1](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.8.1)
 
 {% endnote %}
 
@@ -38,6 +38,135 @@ comments: false
 {% endnote %}
 
 ***
+
+{% hideToggle 4.8.1 (2023/04/10) %}
+
+## 4.8.1 (2023/04/10)
+
+### Fix
+
+1. 修復 CDN 的 internal_provider 設為 jsdelivr 時，主題的 js 無法加載的 bug
+
+{% endhideToggle %}
+
+
+
+{% hideToggle 4.8.0 (2023/04/10) %}
+
+## 4.8.0 (2023/04/10)
+
+### Breaking Change
+
+1. 移除 gitter
+
+   ```diff
+   -# gitter
+   -# https://gitter.im/
+   -gitter:
+   -  enable: false
+   -  room:
+   ```
+
+   
+
+2. CDN option 部分參數名字修改
+
+   ```diff
+   CDN:  
+     option:
+   -    # algolia_search_v4:
+   -    # instantsearch_v4: 
+   -    # fancybox_css_v4:
+   -    # fancybox_v4:  
+   -    # fontawesomeV6:
+   
+   +    # algolia_search:
+   +    # instantsearch: 
+   +    # fancybox_css:
+   +    # fancybox:  
+   +    # fontawesome:
+   ```
+
+### Feature
+
+1. social 可配置 顏色
+
+2. 支持 abcjs 樂譜渲染
+
+   ```diff
+   +# abcjs (樂譜渲染)
+   +# See https://github.com/paulrosen/abcjs
+   +# ---------------
+   +abcjs:
+   +  enable: false
+   +  per_page: true
+   ```
+
+   
+
+3. 適配 typed.js 新版本
+
+4. Algolia 搜索，點擊文章內容也會跳轉到相應頁面
+
+5. 重構本地搜索
+
+   ```diff
+   # Local search
+   local_search:
+     enable: false
+     # Preload the search data when the page loads.
+     preload: false
+   +  # Show top n results per article, show all results by setting to -1
+   +  top_n_per_article: 1
+   +  # Unescape html strings to the readable one.
+   +  unescape: false
+     CDN:
+   ```
+
+6. 升級 fancybox 到 v5
+
+7. 更新 facebook js 版本
+
+8. CDN 配置了  version 為 true, 本地鏈接也會加上版本號
+
+9. 支持自定義 giscus 評論系統的 JS 地址
+
+   ```diff
+   CDN:
+     option:
+   +  	giscus: xxxxx
+   ```
+
+10. 新增自定義深淺模式切換時間
+
+    ```diff
+    # dark mode
+    darkmode:
+    +  # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
+    +  start: # 8
+    +  end: # 22
+    ```
+
+### Fix
+
+1. 修復 safari 下，搜索內容被系統搜索框遮擋的 bug
+2. 修復 fullpage loading 顯示滾動條的 bug
+3. 修復 card_tags.color: true 時遇到 limit 失效問題
+4. 修復設置圖片時，圖片後綴大寫而導致識別錯誤的 bug
+5. 修復開啟 archor 後， pace.js 會隨着 archor 添加而觸發的問題
+
+### Improvement
+
+1. 當瀏覽器寬度大於2000px時，卡片寬度由 1500px 改為 1700px
+2. 當沒有開啟 beautify 時， hr 顯示默認的樣式
+3. 手機 safari 橫屏時，網頁全屏幕顯示
+4. 社交圖標的 hover 旋轉180度
+5. 優化 viewport seo
+6. 代碼優化
+
+{% endhideToggle %}
+
+
 
 {% hideToggle 4.7.0 (2023/02/20) %}
 
