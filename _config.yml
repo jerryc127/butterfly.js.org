@@ -123,7 +123,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: 
+  repo: git@github.com:qmx790/qmx790.github.io.git
   branch: main
   # other deployer
 
