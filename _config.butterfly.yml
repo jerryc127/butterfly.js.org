@@ -9,29 +9,19 @@ nav:
 
 # Menu 目錄
 menu:
-  首頁: / || fas fa-home
-  目錄||fas fa-compass:
-    歸檔: /archives/ || fas fa-archive
-    標籤: /tags/ || fas fa-tags
-    分類: /categories/ || fas fa-folder-open
-  文檔||fas fa-book:
-    🚀 快速開始: /posts/21cfbf15/
-    📑 主題頁面: /posts/dc584b87/
-    🛠 主題配置-1: /posts/4aa8abbe/
-    ⚔️ 主題配置-2: /posts/ceeb73f/
-    ❓ 主題問答: /posts/98d20436/
-    ⚡️ 進階教程: /posts/4073eda/
-    ✨ 更新日誌: /posts/198a4240/
-  娛樂||fa fa-heartbeat:
-    # - 音樂 || /music/ || fas fa-music
-    圖庫: /Gallery/ || fas fa-images
+  首页: / || fas fa-home
+  目录:||fas fa-compass:
+    归档: /archives/ || fas fa-archive
+    标签: /tags/ || fas fa-tags
+    分页: /categories/ || fas fa-folder-open
+  文档||fas fa-book:
+    介绍: /_post/introduction.md
   留言板: /messageboard/ || fas fa-comment-dots
-  示例: /link/ || fas fa-thumbs-up
 
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -181,7 +171,7 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: true
+  enable: false
   QR_code:
     - img: https://file.crazywong.com/gh/jerryc127/CDN/Photo/wechat.jpg
       link:
@@ -302,7 +292,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 2019/11/13 00:00:00
+  publish_date: 2023/04/15 00:00:00
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -319,9 +309,9 @@ newest_comments:
 translate:
   enable: true
   # The text of a button
-  default: 簡
+  default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
-  defaultEncoding: 1
+  defaultEncoding: 2
   # Time delay
   translateDelay: 0
   # The text of the button when the language is Simplified Chinese
@@ -450,10 +440,10 @@ disqus:
 # DisqusJS 評論系統，可以實現在網路審查地區載入 Disqus 評論列表，兼容原版
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
-  shortname: demo-jerryc-me
+  shortname: demo-qmx790-me
   apikey: nrSx8ZhuHvjwDeKauPZ3lMnyLb7iR92BT4wl4AlKG4eJl27jxXlzOeLQ9SJP1RDW
   option:
-    siteName: JerryC
+    siteName: qmx790
 
 # livere (來必力)
 # https://www.livere.com/
@@ -490,7 +480,7 @@ waline:
   option:
     placeholder: '請先查看文檔再詢問。主題如有報錯，請試着解決。提問題時請詳細描述遇到的問題，附上相關的報錯 / 截圖 / 網址。'
     pageSize: 8
-    lang: zh-TW
+    lang: zh-CN
     requiredFields: ['nick', 'mail']
 
 # utterances
@@ -611,11 +601,11 @@ microsoft_clarity:
 
 # Google Adsense (谷歌廣告)
 google_adsense:
-  enable: true
+  enable: false
   auto_ads: false
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
   client: ca-pub-8919908724705274
-  enable_page_level_ads: true
+  enable_page_level_ads: false
 
 # Insert ads manually (手動插入廣告)
 ad:

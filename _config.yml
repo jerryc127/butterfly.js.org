@@ -3,20 +3,20 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Butterfly
-subtitle: A Simple and Card UI Design theme for Hexo
-description: A Simple and Card UI Design theme for Hexo
-keywords: hexo,butterfly,jerryc,demo,hexo-butterfly,hexo-theme-butterfly
-author: Jerry
-language: zh-TW
+title: qmx790
+subtitle: 一个技术小菜的博客
+description: 一个技术小菜的博客
+keywords: hexo,butterfly,javascript,typescript,html,css
+author: qmx790
+language: zh-CN
 timezone: Asia/Hong_Kong
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://butterfly.js.org
+url: https://qmx790.github.io
 root: /
 # permalink: :year/:month/:day/:title/
-permalink: posts/:abbrlink/
+permalink: posts/:title/
 
 # abbrlink config
 abbrlink:
@@ -123,8 +123,8 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:jerryc127/butterfly-demo.git
-  branch: master
+  repo: 
+  branch: main
   # other deployer
 
 search:
