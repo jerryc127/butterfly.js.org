@@ -492,7 +492,7 @@ waline:
     pageSize: 8
     lang: zh-TW
     requiredFields: ['nick', 'mail']
-    TURNSTILE_KEY: '0x4AAAAAAAEZ30ewaSLVUAOl'
+    TURNSTILE_KEY: 0x4AAAAAAAEZ30ewaSLVUAOl
 
 # utterances
 # https://utteranc.es/
