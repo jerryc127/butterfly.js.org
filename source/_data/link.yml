@@ -55,10 +55,6 @@
       link: https://blog.imzjw.cn/
       avatar: //cdn.jsdelivr.net/npm/nanshen/avatar.jpg
       descr: 好记性不如烂笔头
-    - name: Aymeticの小窝
-      link: https://aymetic.com
-      avatar: https://fastly.jsdelivr.net/gh/Aymetic/site-source/img/avatar.jpg
-      descr: 从兴趣出发
     - name: Heo
       link: https://blog.zhheo.com/
       avatar: https://blog.zhheo.com/img/avatar.png
@@ -67,10 +63,6 @@
       link: https://cxvh.com
       avatar: https://fastly.jsdelivr.net/gh/cxvh/static@main/avatar/avatar.jpg
       descr: 指尖跳动留下足迹.
-    - name: 不归路
-      link: https://cmwen.cn
-      avatar: http://q.qlogo.cn/headimg_dl?dst_uin=1914788728&spec=640&img_type=jpg
-      descr: 踏上一条不归路
     - name: JCAlways
       link: https://blog.zhangsifan.com
       avatar: https://i.loli.net/2019/10/13/2a6ve3ZdW8TPCNY.jpg
@@ -83,10 +75,6 @@
       link: https://y-jinhao.github.io/
       avatar: https://fastly.jsdelivr.net/gh/Y-JINHAO/resources/img/avator1.png
       descr: 无疾而终的困倦变成苋红的太阳的血瓷砖石仰慕的书架上呕吐的诗集
-    - name: Ethan.Tzy
-      link: https://tzy1997.com/
-      avatar: https://fastly.jsdelivr.net/gh/tzy13755126023/BLOG_SOURCE/theme_f/avater.jpg
-      descr: 学习与交流的乐园，希望能和你成为好朋友。
     - name: sunshine
       link: https://sunguoqi.com/
       avatar: https://i.loli.net/2021/06/08/CfvzqNFHag8G3bi.jpg
@@ -215,10 +203,6 @@
       link: https://lilu.org.cn
       avatar: https://fastly.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/avatar.png
       descr: 没有那把剑，我照样可以歼灭敌军。
-    - name: Pure'中国
-      link: https://pure.xn--fiqs8s
-      avatar: https://pure.xn--fiqs8s/img/favicon.png
-      descr: Pure De Blog
     - name: Zxb技术博客
       link: https://zhaoxiaobin.net
       avatar: https://zhaoxiaobin.net/pic/static/avatar.png
@@ -367,10 +351,6 @@
       link: https://blog.gmcj0816.top/
       avatar: https://blog.gmcj0816.top/img/SeriousWission_TouXiangPic.png
       descr: 如果世界多了精彩，每一位都是创造者，大家都是你的观众
-    - name: QiuSYan's Blog
-      link: https://halo-402.asia/
-      avatar: https://halo-402.asia/photos/avatar.jpg
-      descr: 自能生羽翼，何必仰云梯
     - name: GoodBoyboy ‘s Blog
       link: https://blog.goodboyboy.top/
       avatar: https://gravatar.goodboyboy.top/avatar/9da9d1d515d273d4794015f2321f6e04?s=96&d=monsterid&r=g
