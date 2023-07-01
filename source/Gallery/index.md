@@ -1,5 +1,5 @@
 ---
-title: Gallery
+title: 圖庫
 date: 2019-10-24 22:23:55
 comments: false
 reward: false

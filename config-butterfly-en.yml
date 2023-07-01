@@ -9,27 +9,26 @@ nav:
 
 # Menu 目錄
 menu:
-  首頁: / || fas fa-home
-  目錄||fas fa-compass:
-    歸檔: /archives/ || fas fa-archive
-    標籤: /tags/ || fas fa-tags
-    分類: /categories/ || fas fa-folder-open
-  文檔||fas fa-book:
-    🚀 快速開始: /posts/21cfbf15/
-    📑 主題頁面: /posts/dc584b87/
-    🛠 主題配置-1: /posts/4aa8abbe/
-    ⚔️ 主題配置-2: /posts/ceeb73f/
-    ❓ 主題問答: /posts/98d20436/
-    ⚡️ 進階教程: /posts/4073eda/
-    ✨ 更新日誌: /posts/198a4240/
-  娛樂||fa fa-heartbeat:
-    # - 音樂 || /music/ || fas fa-music
-    圖庫: /Gallery/ || fas fa-images
-  留言板: /messageboard/ || fas fa-comment-dots
-  示例: /link/ || fas fa-thumbs-up
-  語言||fas fa-language:
-    English: /en/ || fas fa-e
-    中文: / || fas fa-c
+  Home: / || fas fa-home
+  Page||fas fa-compass:
+    Archives: /archives/ || fas fa-archive
+    Tags: /tags/ || fas fa-tags
+    Categories: /categories/ || fas fa-folder-open
+  Docs||fas fa-book:
+    🚀 Get Started: /posts/butterfly-docs-en-get-started/
+    📑 Theme Pages: /posts/butterfly-docs-en-theme-pages/
+    📌 Theme Configuration 1: /posts/butterfly-docs-en-theme-config-one/
+    ⚔️ Theme Configuration 2: /posts/butterfly-docs-en-theme-config-two/
+    ❓ Q&A: /posts/butterfly-docs-en-theme-question/
+    ⚡️ Advanced Tutorials: /posts/butterfly-docs-en-advanced-tutorial/
+    ✨ Changelog: /posts/butterfly-docs-en-changelog/
+  Ent||fa fa-heartbeat:
+    Gallery: /gallery/ || fas fa-images
+  Messageboard: /messageboard/ || fas fa-comment-dots
+  Examples: /link/ || fas fa-thumbs-up
+  Language||fas fa-language:
+    English: / || fas fa-e
+    Chinese: https://butterfly.js.org/ || fas fa-c
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -118,7 +117,7 @@ error_img:
 # A simple 404 page
 error_404:
   enable: true
-  subtitle: '頁面沒有找到'
+  subtitle: 'Page Not Found'
   background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
 post_meta:
@@ -188,13 +187,13 @@ reward:
   QR_code:
     - img: https://file.crazywong.com/gh/jerryc127/CDN/Photo/wechat.jpg
       link:
-      text: 微信
+      text: Wechat
     - img: https://file.crazywong.com/gh/jerryc127/CDN/Photo/alipay.jpg
       link:
-      text: 支付寶
-    - img: https://file.crazywong.com/gh/jerryc127/CDN/Photo/alipayhk.jpg
+      text: Alipay
+    - img: https://file.crazywong.com/gh/jerryc127/CDN/Photo/paypal.jpg
       link:
-      text: 支付寶香港
+      text: Paypal
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -202,7 +201,7 @@ post_edit:
   enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
+  url: https://github.com/jerryc127/butterfly.js.org/edit/main/source-en/
 
 # Related Articles
 related_post:
@@ -254,16 +253,11 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: 主題 GitHub
+      text: GitHub
       link: https://github.com/jerryc127/hexo-theme-butterfly
   card_announcement:
     enable: true
-    content:
-      如果你在使用中遇到問題，請到 <a href="https://github.com/jerryc127/hexo-theme-butterfly/issues" style="color:#49b1f5">Github Issues</a> 或者 <a href="/messageboard/" style="color:#49b1f5">留言板</a> 進行反饋，你也可以加入 QQ 群（由於 QQ 群只能有 500 人，會定時清理潛水的人，不要同時申請 2 个 QQ 群）<div class="social-button">
-      <a class="button--animated" href="https://jq.qq.com/?_wv=1027&k=KU9105XR" target="_blank">QQ 1 群 👍</a>
-      <a class="button--animated" href="https://jq.qq.com/?_wv=1027&k=r1nK0DQz" target="_blank">QQ 2 群 👍</a>
-      <a class="button--animated" href="https://t.me/bu2fly" target="_blank">Telegram 👍</a>
-      </div>
+    content: 'Some of the text is translated from chatgpt and may contain incoherent phrases and grammatical errors'
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -358,7 +352,7 @@ rightside_scroll_percent: true
 rightside_item_order:
   enable: true
   hide: readmode,darkmode,hideAside
-  show: toc,translate,chat,comment
+  show: toc,chat,comment
 
 # Math (數學)
 # --------------------------------------
@@ -435,7 +429,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: Waline,Disqus
+  use: Disqus,Waline
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -446,8 +440,8 @@ comments:
 # disqus
 # https://disqus.com/
 disqus:
-  shortname: demo-jerryc-me
-  apikey: # For newest comments widget
+  shortname: hexo-butterfly
+  apikey: BPHblC5T1VKOvSl7fNIf506BzFSWLPySRSHCGzJwVWkY8ZZ4j02EXakjJLIyrmcf # For newest comments widget
 
 # Alternative Disqus - Render comments with Disqus API
 # DisqusJS 評論系統，可以實現在網路審查地區載入 Disqus 評論列表，兼容原版
@@ -797,10 +791,9 @@ subtitle:
   # source: 2  調用一句網（簡體） https://yijuzhan.com/
   # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: 1
+  source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
-    - 今日事&#44;今日畢
     - Never put off till tomorrow what you can do today
 
 # Loading Animation (加載動畫)
@@ -942,7 +935,7 @@ css_prefix: true
 inject:
   head:
     - <link rel="preconnect" href="https://file.crazywong.com">
-    - '<style type="text/css">.card-announcement .social-button{margin:.6rem 0 0 0;text-align:center}.card-announcement .social-button a{display:block;background-color:var(--btn-bg);color:var(--btn-color);text-align:center;line-height:2.4;margin:4px 0}.card-announcement .social-button a:hover{background-color:var(--btn-hover-color)}</style>'
+    - <link href="/en/self/btf.css" rel="stylesheet">
   bottom:
 
 # CDN

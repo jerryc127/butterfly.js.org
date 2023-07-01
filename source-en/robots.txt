@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://butterfly.js.org/sitemap.xml
+Sitemap: https://butterfly.js.org/baidusitemap.xml

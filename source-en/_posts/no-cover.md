@@ -1,5 +1,5 @@
 ---
-title: 沒有封面
+title: no cover
 tags: demo
 categories: Demo
 cover: false
@@ -11,4 +11,4 @@ top_img:
 comments: false
 ---
 
-這篇文章沒有封面
+This post no cover

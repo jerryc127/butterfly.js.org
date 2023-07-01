@@ -1,0 +1,27 @@
+- class_name: '<i class="fas fa-check-double" style="color: #FF6666;padding-right: 0.4rem"></i>Website'
+  class_desc: '<span style="font-style: italic;">WOW</span>'
+  link_list:
+    - name: MYW
+      link: https://crazywong.com/
+      avatar: https://crazywong.com/img/avatar.png
+      descr: Crazy for life
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: Fast, simple, and powerful blogging framework
+    - name: Butterfly
+      link: https://github.com/jerryc127/hexo-theme-butterfly
+      avatar: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-github-avatar.png
+      descr: '🦋 A Hexo Theme: Butterfly'
+
+- class_name: '<i class="fas fa-fan" style="color:#00cccc;padding-right: 0.4rem"></i>Examples'
+  class_desc: '<span style="font-style: italic;">The cutest friends are here</span>'
+  link_list:
+    - name: Who use Butterfly
+      link: https://butterfly.js.org/link/
+      avatar: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/more-butterfly-demo-avatar.png
+      descr: Collection of butterfly
+    - name: More Examples
+      link: https://github.com/jerryc127/hexo-theme-butterfly/issues/76
+      avatar: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/more-butterfly-demo-avatar.png
+      descr: More websites using Butterfly

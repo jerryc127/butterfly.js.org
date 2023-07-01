@@ -26,7 +26,7 @@ comments: false
 
  📚  文檔目錄
 
-{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主題頁面 ' 📑 主題頁面' %} - {% post_link Butterfly-安裝文檔-三-主題配置-1 ' 🛠 主題配置-1' %} - {% post_link Butterfly-安裝文檔-四-主題配置-2 ' ⚔️ 主題配置-2' %} - {% post_link Butterfly-安裝文檔-五-主題問答 ' ❓ 主題問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文檔-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
+{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主題頁面 ' 📑 主題頁面' %} - {% post_link Butterfly-安裝文檔-三-主題配置-1 ' 📌 主題配置-1' %} - {% post_link Butterfly-安裝文檔-四-主題配置-2 ' ⚔️ 主題配置-2' %} - {% post_link Butterfly-安裝文檔-五-主題問答 ' ❓ 主題問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文檔-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
 
 {% endnote %}
 
@@ -234,7 +234,6 @@ Cannot read property 'appId' of undefined
 
 > 生成前先 hexo clean
 
-{% btn '/posts/4073eda/',⚡️ Butterfly 安裝文檔(六) 進階教程,far fa-hand-point-right,block orange right larger %}
 
 ### 點擊中文目錄報錯的問題
 
@@ -244,3 +243,5 @@ Cannot read property 'appId' of undefined
 
 這是因為使用 babel 壓縮代碼而出現的報錯，具體解決方法查看 [babel/gulp-babel](https://github.com/babel/gulp-babel#runtime)
 
+
+{% btn '/posts/4073eda/',⚡️ Butterfly 安裝文檔(六) 進階教程,far fa-hand-point-right,block orange right larger %}

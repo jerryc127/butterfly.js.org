@@ -6,7 +6,9 @@
     "push": "hexo clean && hexo g && hexo douban && gulp && hexo deploy",
     "show": "hexo clean && hexo g && hexo s",
     "update": "git init && git add . && git commit -m 'backup' && git push origin main",
-    "kk": "hexo clean && hexo g && hexo deploy"
+    "kk": "hexo clean && hexo g && hexo deploy",
+    "en": "hexo clean && hexo g --config config-en.yml && hexo s --config config-en.yml"
+
   },
   "hexo": {
     "version": "6.3.0"
