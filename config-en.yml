@@ -41,7 +41,7 @@ pretty_urls:
 
 # Directory
 source_dir: source-en
-public_dir: public/en
+public_dir: public-en
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
