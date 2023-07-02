@@ -7,7 +7,7 @@
 
 1. 確保你使用 Butterfly 主題
 2. 點擊這個[鏈接](https://github.com/jerryc127/butterfly.js.org/edit/main/source/_data/link.yml)
-3. 按要求新增內容
+3. 按要求新增內容(請添加在**末尾**)
   ```yaml
     - name: 博客名
       link: 博客地址
