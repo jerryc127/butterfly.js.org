@@ -23,7 +23,7 @@ menu:
     ⚡️ Advanced Tutorials: /posts/butterfly-docs-en-advanced-tutorial/
     ✨ Changelog: /posts/butterfly-docs-en-changelog/
   Ent||fa fa-heartbeat:
-    Gallery: /gallery/ || fas fa-images
+    Gallery: /Gallery/ || fas fa-images
   Messageboard: /messageboard/ || fas fa-comment-dots
   Examples: /link/ || fas fa-thumbs-up
   Language||fas fa-language:
@@ -935,9 +935,9 @@ css_prefix: true
 inject:
   head:
     - <link rel="preconnect" href="https://file.crazywong.com">
-    - <link href="/en/self/btf.css" rel="stylesheet">
+    - <link href="/self/btf.css" rel="stylesheet">
   bottom:
-    - <script data-pjax src="/en/self/btf.js"></script>
+    - <script data-pjax src="/self/btf.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
