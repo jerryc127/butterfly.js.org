@@ -937,7 +937,7 @@ inject:
     - <link rel="preconnect" href="https://file.crazywong.com">
     - <link href="/en/self/btf.css" rel="stylesheet">
   bottom:
-    - <script data-pjax src="/self/btf.js"></script>
+    - <script data-pjax src="/en/self/btf.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
