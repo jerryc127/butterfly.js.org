@@ -942,8 +942,10 @@ css_prefix: true
 inject:
   head:
     - <link rel="preconnect" href="https://file.crazywong.com">
-    - '<style type="text/css">.card-announcement .social-button{margin:.6rem 0 0 0;text-align:center}.card-announcement .social-button a{display:block;background-color:var(--btn-bg);color:var(--btn-color);text-align:center;line-height:2.4;margin:4px 0}.card-announcement .social-button a:hover{background-color:var(--btn-hover-color)}</style>'
+    - <link href="/self/btf.css" rel="stylesheet">
+
   bottom:
+    - <script data-pjax src="/self/btf.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
