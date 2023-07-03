@@ -4,19 +4,40 @@
     return item.includes(key)
   }
 
-  const addExternal = () => {
-    if (isIncludeEN(window.location.href)) {
-      document.querySelectorAll('a[href^="https://butterfly.js.org"]').forEach(item => {
-        if (!isIncludeEN(item.href)) {
-          item.setAttribute("data-pjax-state", 'load')
-        }
-      })
-    } else {
-      document.querySelectorAll('a[href^="/en/"]').forEach(item => {
-        item.setAttribute("data-pjax-state", 'load')
-      })
-    }
+  let nowIncludeEN = isIncludeEN(window.location.href)
+  let selector = nowIncludeEN
+    ? document.querySelectorAll('a[href^="https://butterfly.js.org"]')
+    : document.querySelectorAll('a[href^="/en/"]')
+
+  const loadUrl = (e) => {
+    e.preventDefault()
+    window.location.href = e.target.href
   }
 
-  window.pjax ? addExternal() : document.addEventListener('DOMContentLoaded', addExternal)
+  const eventFn = (ele,type = 'add') => {
+    ele.forEach(item => {
+      if (nowIncludeEN) {
+        if (!isIncludeEN(item.href)) {
+          item.setAttribute("data-pjax-state", 'load')
+          type === 'add' ? item.addEventListener('click', loadUrl) : item.removeEventListener('click', loadUrl)
+        }
+      } else {
+        type === 'add' ? item.addEventListener('click', loadUrl) : item.removeEventListener('click', loadUrl)
+      }
+    } )
+  }
+
+  eventFn(selector)
+
+  document.addEventListener('pjax:send', () => {
+    eventFn(selector, 'remove')
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    nowIncludeEN = isIncludeEN(window.location.href)
+    selector = nowIncludeEN
+      ? document.querySelectorAll('a[href^="https://butterfly.js.org"]')
+      : document.querySelectorAll('a[href^="/en/"]')
+    eventFn(selector)
+  })
 })()
