@@ -8,30 +8,29 @@
   let selector = nowIncludeEN
     ? document.querySelectorAll('a[href^="https://butterfly.js.org"]')
     : document.querySelectorAll('a[href^="/en/"]')
-
-  const loadUrl = (e) => {
-    e.preventDefault()
-    window.location.href = e.target.href
+  
+  window.fullLoadPage = (url) => {
+    window.location.href = url
   }
-
-  const eventFn = (ele,type = 'add') => {
+  
+  const replaceHref = item => {
+    item.href = `javascript:fullLoadPage(${item.url})`
+  }
+    
+  const eventFn = (ele) => {
     ele.forEach(item => {
       if (nowIncludeEN) {
         if (!isIncludeEN(item.href)) {
-          item.setAttribute("data-pjax-state", 'load')
-          type === 'add' ? item.addEventListener('click', loadUrl) : item.removeEventListener('click', loadUrl)
+          replaceHref(item)
         }
       } else {
-        type === 'add' ? item.addEventListener('click', loadUrl) : item.removeEventListener('click', loadUrl)
+        replaceHref(item)
       }
     } )
   }
 
   eventFn(selector)
 
-  document.addEventListener('pjax:send', () => {
-    eventFn(selector, 'remove')
-  })
 
   document.addEventListener('pjax:complete', () => {
     nowIncludeEN = isIncludeEN(window.location.href)
