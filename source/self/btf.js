@@ -14,7 +14,7 @@
   }
   
   const replaceHref = item => {
-    item.href = `javascript:fullLoadPage(${item.url})`
+    item.href = `javascript:fullLoadPage(${item.href})`
   }
     
   const eventFn = (ele) => {
