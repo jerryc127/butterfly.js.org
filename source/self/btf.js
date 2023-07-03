@@ -8,12 +8,12 @@
     if (isIncludeEN(window.location.href)) {
       document.querySelectorAll('a[href^="https://butterfly.js.org"]').forEach(item => {
         if (!isIncludeEN(item.href)) {
-          item.setAttribute("data-pjax-state", 'external')
+          item.setAttribute("data-pjax-state", 'load')
         }
       })
     } else {
       document.querySelectorAll('a[href^="/en/"]').forEach(item => {
-        item.setAttribute("data-pjax-state", 'external')
+        item.setAttribute("data-pjax-state", 'load')
       })
     }
   }
