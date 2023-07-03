@@ -945,7 +945,7 @@ inject:
     - <link href="/self/btf.css" rel="stylesheet">
 
   bottom:
-    - <script src="/self/btf.js"></script>
+    - <script data-pjax src="/self/btf.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work

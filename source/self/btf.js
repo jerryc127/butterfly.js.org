@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+(() => {
   const isIncludeEN = item => {
     const key = '/en/'
     return item.includes(key)
@@ -18,6 +18,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  addExternal()
-  document.addEventListener('pjax:complete', addExternal)
-})
+  window.pjax ? addExternal() : document.addEventListener('DOMContentLoaded', addExternal)
+})()
