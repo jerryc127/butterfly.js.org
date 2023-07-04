@@ -4,14 +4,14 @@
     return item.includes(key)
   }
 
-  const loadUrl = (url) => {
+  window.loadFullPage = (url) => {
     window.location.href = url
   }
 
   const eventFn = (elements, includeEN) => {
     elements.forEach(item => {
       if (!includeEN || !isIncludeEN(item.href)) {
-        item.href = `javascript:loadUrl('${item.href}');`
+        item.href = `javascript:loadFullPage('${item.href}');`
       }
     })
   }
