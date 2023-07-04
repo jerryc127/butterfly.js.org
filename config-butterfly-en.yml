@@ -28,7 +28,7 @@ menu:
   Examples: /link/ || fas fa-thumbs-up
   Language||fas fa-language:
     English: / || fas fa-e
-    Chinese: https://butterfly.js.org/ || fas fa-c
+    中文: https://butterfly.js.org/ || fas fa-c
 
 # Code Blocks (代碼相關)
 # --------------------------------------
