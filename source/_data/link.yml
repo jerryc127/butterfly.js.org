@@ -31,6 +31,10 @@
       link: https://github.com/jerryc127/hexo-theme-butterfly/issues/76
       avatar: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/more-butterfly-demo-avatar.png
       descr: 更多使用 Butterfly 的網站
+    - name: 套陆的博客
+      link: https://blog.tlhub.cn/
+      descr: 套陆的个人技术博客
+      avatar: https://blog.tlhub.cn/img/avatar.jpg  
     - name: pai233の小窝
       link: https://blog.pai233.top/
       descr: Write Down My Life.
