@@ -4,40 +4,22 @@
     return item.includes(key)
   }
 
-  let nowIncludeEN = isIncludeEN(window.location.href)
-  let selector = nowIncludeEN
+  const loadUrl = (url) => {
+    window.location.href = url
+  }
+
+  const eventFn = (elements, includeEN) => {
+    elements.forEach(item => {
+      if (!includeEN || !isIncludeEN(item.href)) {
+        item.href = `javascript:loadUrl('${item.href}');`
+      }
+    })
+  }
+
+  const nowIncludeEN = isIncludeEN(window.location.href)
+  const selector = nowIncludeEN
     ? document.querySelectorAll('a[href^="https://butterfly.js.org"]')
     : document.querySelectorAll('a[href^="/en/"]')
 
-  const loadUrl = (e) => {
-    e.preventDefault()
-    window.location.href = e.target.href
-  }
-
-  const eventFn = (ele,type = 'add') => {
-    ele.forEach(item => {
-      if (nowIncludeEN) {
-        if (!isIncludeEN(item.href)) {
-          item.setAttribute("data-pjax-state", 'load')
-          type === 'add' ? item.addEventListener('click', loadUrl) : item.removeEventListener('click', loadUrl)
-        }
-      } else {
-        type === 'add' ? item.addEventListener('click', loadUrl) : item.removeEventListener('click', loadUrl)
-      }
-    } )
-  }
-
-  eventFn(selector)
-
-  document.addEventListener('pjax:send', () => {
-    eventFn(selector, 'remove')
-  })
-
-  document.addEventListener('pjax:complete', () => {
-    nowIncludeEN = isIncludeEN(window.location.href)
-    selector = nowIncludeEN
-      ? document.querySelectorAll('a[href^="https://butterfly.js.org"]')
-      : document.querySelectorAll('a[href^="/en/"]')
-    eventFn(selector)
-  })
+  eventFn(selector, nowIncludeEN)
 })()

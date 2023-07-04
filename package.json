@@ -7,7 +7,7 @@
     "show": "hexo clean && hexo g && hexo s",
     "update": "git init && git add . && git commit -m 'backup' && git push origin main",
     "kk": "hexo clean && hexo g && hexo deploy",
-    "en": "hexo clean && hexo g && hexo g --config config-en.yml -f && hexo s --config config-en.yml"
+    "en": "hexo clean && hexo g && hexo g --config config-en.yml -f && hexo s"
 
   },
   "hexo": {
