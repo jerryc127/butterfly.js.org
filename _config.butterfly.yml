@@ -63,17 +63,17 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://file.crazywong.com/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg
+index_img: https://jsd.012700.xyz/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://file.crazywong.com/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg
+default_top_img: https://jsd.012700.xyz/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg
 
 # The banner image of archive page
-archive_img: https://file.crazywong.com/gh/jerryc127/butterfly_cdn@2.1.0/top_img/archive.jpg
+archive_img: https://jsd.012700.xyz/gh/jerryc127/butterfly_cdn@2.1.0/top_img/archive.jpg
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: https://file.crazywong.com/gh/jerryc127/butterfly_cdn@2.1.0/top_img/tag.png
+tag_img: https://jsd.012700.xyz/gh/jerryc127/butterfly_cdn@2.1.0/top_img/tag.png
 
 # The banner image of tag page
 # format:
@@ -82,7 +82,7 @@ tag_per_img:
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: https://file.crazywong.com/gh/jerryc127/butterfly_cdn@2.1.0/top_img/category.jpg
+category_img: https://jsd.012700.xyz/gh/jerryc127/butterfly_cdn@2.1.0/top_img/category.jpg
 
 # The banner image of category page
 # format:
@@ -98,17 +98,17 @@ cover:
   # left/right/both
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
-  default_cover: # https://file.crazywong.com/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png
-    - https://file.crazywong.com/gh/jerryc127/CDN/img/material-2.png
-    - https://file.crazywong.com/gh/jerryc127/CDN/img/material-1.png
-    - https://file.crazywong.com/gh/jerryc127/CDN/img/material-3.png
-    - https://file.crazywong.com/gh/jerryc127/CDN/img/material-6.png
-    - https://file.crazywong.com/gh/jerryc127/CDN/img/material-5.png
-    - https://file.crazywong.com/gh/jerryc127/CDN/img/material-4.png
-    - https://file.crazywong.com/gh/jerryc127/CDN/img/material-7.png
-    - https://file.crazywong.com/gh/jerryc127/CDN/img/material-9.png
-    - https://file.crazywong.com/gh/jerryc127/CDN/img/material-8.png
-    - https://file.crazywong.com/gh/jerryc127/CDN/img/material-10.png
+  default_cover: # https://jsd.012700.xyz/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-2.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-1.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-3.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-6.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-5.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-4.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-7.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-9.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-8.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-10.png
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -186,13 +186,13 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: https://file.crazywong.com/gh/jerryc127/CDN/Photo/wechat.jpg
+    - img: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/wechat.jpg
       link:
       text: 微信
-    - img: https://file.crazywong.com/gh/jerryc127/CDN/Photo/alipay.jpg
+    - img: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/alipay.jpg
       link:
       text: 支付寶
-    - img: https://file.crazywong.com/gh/jerryc127/CDN/Photo/alipayhk.jpg
+    - img: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/alipayhk.jpg
       link:
       text: 支付寶香港
 
@@ -942,7 +942,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="preconnect" href="https://file.crazywong.com">
+    - <link rel="preconnect" href="https://jsd.012700.xyz">
     - <link href="/self/btf.css" rel="stylesheet">
 
   bottom:
@@ -967,7 +967,7 @@ CDN:
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://file.crazywong.com/npm/${name}@latest/${min_file}
+  custom_format: https://jsd.012700.xyz/npm/${name}@latest/${min_file}
 
   option:
     # main_css:

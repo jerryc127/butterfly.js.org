@@ -13,7 +13,7 @@ keywords: 'hexo,butterfly,theme,doc,教程,文檔,hexo-butterfly'
 description:
 top_img:
 toc: false
-cover: https://file.crazywong.com/gh/jerryc127/CDN@m2/img/butterfly-docs-en-changelog.png
+cover: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/butterfly-docs-en-changelog.png
 abbrlink: butterfly-docs-en-changelog
 ---
 

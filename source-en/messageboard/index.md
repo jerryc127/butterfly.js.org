@@ -3,7 +3,7 @@ title: Message Board
 date: 2019-04-14 18:30:38
 comments: true
 description: Message Board
-top_img: https://file.crazywong.com/gh/jerryc127/CDN@latest/Photo/messageboard.jpg
+top_img: https://jsd.012700.xyz/gh/jerryc127/CDN@latest/Photo/messageboard.jpg
 ---
 
 <p style="font-size:1.72em;font-weight:bold;text-align: center">

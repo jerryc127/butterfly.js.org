@@ -12,7 +12,7 @@ categories:
 keywords: 'hexo,butterfly,theme,doc,教程,文檔,hexo-butterfly'
 description:
 top_img:
-cover: https://file.crazywong.com/gh/jerryc127/CDN@m2/img/butterfly-docs-en-theme-pages.png
+cover: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/butterfly-docs-en-theme-pages.png
 abbrlink: butterfly-docs-en-theme-pages
 ---
 
@@ -404,6 +404,6 @@ error_404:
   background: 
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-error404.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-error404.png)
 
 {% btn '/posts/butterfly-docs-en-theme-config-one/',📌 Butterfly document - Theme Configuration Part 1,far fa-hand-point-right,block pink right larger %}

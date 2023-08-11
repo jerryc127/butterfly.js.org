@@ -12,7 +12,7 @@ categories:
 keywords: 'hexo,butterfly,theme,doc,教程,文檔,hexo-butterfly'
 description:
 top_img:
-cover: https://file.crazywong.com/gh/jerryc127/CDN@m2/img/butterfly-docs-en-theme-question.png
+cover: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/butterfly-docs-en-theme-question.png
 abbrlink: butterfly-docs-en-theme-question
 ---
 
