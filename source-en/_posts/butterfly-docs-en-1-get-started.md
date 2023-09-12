@@ -13,7 +13,7 @@ keywords: 'hexo,butterfly,theme,doc,教程,文檔,hexo-butterfly'
 description:
 top_img:
 abbrlink: butterfly-docs-en-get-started
-cover: https://file.crazywong.com/gh/jerryc127/CDN@m2/img/butterfly-docs-en-get-started.png
+cover: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/butterfly-docs-en-get-started.png
 ---
 
 {% note orange 'fas fa-language' %}
@@ -165,6 +165,6 @@ Create a file named `_config.butterfly.yml` in the root directory of your Hexo p
 
 Hexo will automatically **merge** the configurations from the `_config.yml` and `_config.butterfly.yml` files. If there are conflicting configurations, the ones from `_config.butterfly.yml` will take precedence.
 
-![image-20200805191531090](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-docs-install-suggestion-1.png)
+![image-20200805191531090](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-docs-install-suggestion-1.png)
 
 {% btn '/posts/butterfly-docs-en-theme-pages/',📑 Butterfly document - Theme Pages,far fa-hand-point-right,block right larger %}

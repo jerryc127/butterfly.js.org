@@ -7,7 +7,7 @@ categories: Demo
 keywords: 'hexo,butterfly,主題,doc,教程,文檔,Tag Plugins,Plugins'
 description: Hexo Built-in Tag Plugins
 top_img:
-cover: https://file.crazywong.com/gh/jerryc127/CDN/img/Hexo-Built-in-Tag-Plugins-COVER.png
+cover: https://jsd.012700.xyz/gh/jerryc127/CDN/img/Hexo-Built-in-Tag-Plugins-COVER.png
 comments: false
 ---
 

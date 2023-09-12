@@ -8,7 +8,7 @@ tags:
 categories: Docs文檔
 keywords: 'hexo,butterfly,主題,doc,教程,文檔'
 description: Butterfly安裝文檔-進階教程
-cover: https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-docs-06-cover.png
+cover: https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-docs-06-cover.png
 abbrlink: 4073eda
 date: 2020-05-28 22:39:25
 comments: false
@@ -124,19 +124,19 @@ Butterfly主題內置了[Font Awesome V5 ](https://fontawesome.com/)圖標，目
 
 打開[iconfont](https://www.iconfont.cn/)的網站，點擊導航欄的`人像`圖標，會跳出註冊界面，按要求註冊賬號。
 
-![Snipaste_2020-05-28_21-12-01](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont.png)
+![Snipaste_2020-05-28_21-12-01](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont.png)
 
 #### 添加圖標入庫
 
 選擇自己需要的圖標，把鼠標移到圖標上，會顯示三個按鈕（依次是添加入庫、收藏和下載），而我們需要的是把圖標添加入庫
 
-![image-20200528205401440](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-add.png)
+![image-20200528205401440](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-add.png)
 
 添加入庫後，你可以看到網站右上角`購物車`圖標顯示了`1`字，代表圖標已經添加入庫，點擊`購物車`圖標，會彈出側邊欄顯示詳情。
 
-![image-20200528205925258](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-check.png)
+![image-20200528205925258](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-check.png)
 
-![image-20200528210120442](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-detail.png)
+![image-20200528210120442](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-detail.png)
 
 
 
@@ -144,27 +144,27 @@ Butterfly主題內置了[Font Awesome V5 ](https://fontawesome.com/)圖標，目
 
 接下來會要求選擇項目名稱，沒有的自己創建一個。
 
-![image-20200528211624459](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-create.png)
+![image-20200528211624459](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-create.png)
 
 #### 生成CSS鏈接
 
 在添加到項目之後，會跳到項目的詳情界面。點擊`Font class`，然後再點擊`暫無代碼，點擊生成`文字。網站會自動生成CSS鏈接，我們只需要複製鏈接就行。
 
-![image-20200528212301786](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-link.png)
+![image-20200528212301786](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-link.png)
 
 #### 添加鏈接進主題配置文件
 
 打開`主題配置文件`，找到`inject`配置，按要求把鏈接填入
 
-![image-20200528212440743](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-setting.png)
+![image-20200528212440743](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-setting.png)
 
 在我們需要使用的地方填入icon，例如`Menu`，圖片使用格式為`iconfont icon名字`
 
-![image-20200528213151304](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-setting-menu.png)
+![image-20200528213151304](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-setting-menu.png)
 
 運行Butterfly之後，你就可以看到menu的圖標生效了
 
-![image-20200528213346338](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-show.png)
+![image-20200528213346338](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-show.png)
 
 #### 其他添加方法
 
@@ -186,13 +186,13 @@ Butterfly主題需要使用到很多圖片。如果圖片太大，會嚴重拖�
 
   一個在綫壓縮的網站。壓縮後的圖片也保留了很高的質量，在知乎上很多人推薦，不過免費版有限制。
 
-  ![image-20200526173511503](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-tinypng.png)
+  ![image-20200526173511503](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-tinypng.png)
 
 - [caesium](https://saerasoft.com/caesium/)
 
   開源軟件，支持Windows和macOS。可以批量壓縮軟件，無限制。
 
-  ![image-20200526173316278](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-caesium.png)
+  ![image-20200526173316278](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-caesium.png)
   
 -  [imgbot](https://github.com/marketplace/imgbot)
 
@@ -202,7 +202,7 @@ Butterfly主題需要使用到很多圖片。如果圖片太大，會嚴重拖�
 
   你可以配置 imgbot 的偵測方法、壓縮方法（有損/無損），具體可以查看插件的文檔
 
-  ![image-20200830231742951](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-enhance-imgbot.png)
+  ![image-20200830231742951](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-enhance-imgbot.png)
 
   
 

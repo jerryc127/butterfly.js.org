@@ -8,7 +8,7 @@ tags:
 categories: Advanced Tutorials
 keywords: 'hexo, butterfly, theme, doc, tutorial, documentation'
 description: Customize the sidebar in Hexo's butterfly theme
-cover: 'https://file.crazywong.com/gh/jerryc127/CDN/img/aside-diy-cover.png'
+cover: 'https://jsd.012700.xyz/gh/jerryc127/CDN/img/aside-diy-cover.png'
 abbrlink: custom-sidebar
 date: 2020-12-30 21:48:10
 comments: false
@@ -87,7 +87,7 @@ bottom:
 | order       | The sorting order of the created widget (optional)      |
 | html        | The relevant code of the created widget                 |
 
-![image-20201230223506507](https://file.crazywong.com/gh/jerryc127/CDN/img/adside-diy-parameter.png)
+![image-20201230223506507](https://jsd.012700.xyz/gh/jerryc127/CDN/img/adside-diy-parameter.png)
 
 The generated code will be:
 
@@ -129,4 +129,4 @@ Let's take the [Visitor Map](https://clustrmaps.com/profile/1b7ep/widget/code/gl
 
 3. Run Hexo
 
-   ![image-20201230224442356](https://file.crazywong.com/gh/jerryc127/CDN/img/aside-diy-sample.png)
+   ![image-20201230224442356](https://jsd.012700.xyz/gh/jerryc127/CDN/img/aside-diy-sample.png)

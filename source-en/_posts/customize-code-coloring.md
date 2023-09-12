@@ -8,7 +8,7 @@ tags:
 categories: Advanced Tutorials
 keywords: 'hexo, butterfly, theme, documentation, tutorial'
 description: Customizing Code Coloring
-cover: https://file.crazywong.com/gh/jerryc127/CDN/img/CODE-COLOR-COVER.png
+cover: https://jsd.012700.xyz/gh/jerryc127/CDN/img/CODE-COLOR-COVER.png
 abbrlink: customize-code-coloring
 date: 2020-06-13 20:41:59
 comments: false
@@ -248,7 +248,7 @@ inject:
 
 After running Hexo, you should be able to see the modified effect.
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-highlight-self-css.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-highlight-self-css.png)
 
 ## Prismjs
 
@@ -660,4 +660,4 @@ inject:
 
 After running Hexo, you should be able to see the modified effect.
 
-![image-20200831000324474](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-custom-code-color-prismjs.png)
+![image-20200831000324474](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-custom-code-color-prismjs.png)

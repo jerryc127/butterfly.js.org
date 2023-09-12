@@ -12,7 +12,7 @@ categories:
 keywords: 'hexo,butterfly,theme,doc,教程,文檔,hexo-butterfly'
 description:
 top_img:
-cover: https://file.crazywong.com/gh/jerryc127/CDN@m2/img/butterfly-docs-en-theme-config-two.png
+cover: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/butterfly-docs-en-theme-config-two.png
 abbrlink: butterfly-docs-en-theme-config-two
 ---
 
@@ -89,7 +89,7 @@ The following steps are performed in your Hexo blog directory (**not the Butterf
 
 Result:
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-mathjax-2.jpg)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-mathjax-2.jpg)
 
 <!-- endtab -->
 
@@ -178,7 +178,7 @@ Of course, you can use this feature to define some commonly used `macros`.
 
 Because KaTeX is faster and lighter, it does not have as many features as MathJax (such as right-click context menu). For users who were using MathJax, the theme also includes KaTeX's [copy](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex) feature.
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-katex.gif)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-katex.gif)
 
 <!-- endtab -->
 {% endtabs %}
@@ -257,7 +257,7 @@ docsearch:
 | indexName | [Required] Your Algolia index name                           |
 | option    | [Optional] Additional configurations for DocSearch. For specific options, please check [here](https://docsearch.algolia.com/docs/api/). |
 
-![DocSearch](https://file.crazywong.com/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-docsearch.png)
+![DocSearch](https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-docsearch.png)
 
 <!-- endtab -->
 
@@ -274,7 +274,7 @@ docsearch:
 > Visit the [AddThis](https://www.addthis.com/) official website
 > Find your pub-id
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addthis.jpg)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addthis.jpg)
 
 Modify the `theme configuration file`
 
@@ -297,7 +297,7 @@ sharejs:
   sites: facebook,twitter,wechat,weibo,qq  # Choose the platforms you want to display
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-sharejs.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-sharejs.png)
 <!-- endtab -->
 
 <!-- tab Addtoany -->
@@ -309,7 +309,7 @@ addtoany:
   item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addtoany.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addtoany.png)
 
 <!-- endtab -->
 {% endtabs %}
@@ -347,21 +347,21 @@ comments:
 
 > Single Comment
 
-![image-20200731172506907](https://file.crazywong.com/gh/j
+![image-20200731172506907](https://jsd.012700.xyz/gh/j
 
 erryc127/CDN/img/hexo-theme-butterfly-docs-single-comments.png)
 
 > Dual Comments
 
-![image-20200731173006128](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments.png)
+![image-20200731173006128](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments.png)
 
 > Display Text
 
-![image-20200731173006128](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments.png)
+![image-20200731173006128](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments.png)
 
 > Hide Text
 
-![image-20200731173143712](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments-not-text.png)
+![image-20200731173143712](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments-not-text.png)
 
 <!-- endtab -->
 
@@ -377,7 +377,7 @@ disqus:
   shortname:
 ```
 
-![image-20201027211418161](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-disqus-new.png)
+![image-20201027211418161](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-disqus-new.png)
 
 <!-- endtab -->
 
@@ -396,7 +396,7 @@ disqusjs:
 
 > When unable to access Disqus, it will be shown as:
 
-![image-20201027212543851](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-disqusjs-new.png)
+![image-20201027212543851](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-disqusjs-new.png)
 
 <!-- endtab -->
 
@@ -413,9 +413,9 @@ livere:
 
 You can find the LaiBili UID here:
 
-![LaiBili UID](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili.jpg)
+![LaiBili UID](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili.jpg)
 
-![LaiBili UID 2](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili_2-new.png)
+![LaiBili UID 2](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili_2-new.png)
 
 <!-- endtab -->
 
@@ -435,7 +435,7 @@ gitalk:
   option:
 ```
 
-![image-20201027212704930](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-gitalk-new.png)
+![image-20201027212704930](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-gitalk-new.png)
 
 <!-- endtab -->
 
@@ -488,7 +488,7 @@ Starting from Valine v1.4.5, custom emojis are supported. If you need to configu
 }
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
 
 > default_avatar
 
@@ -524,7 +524,7 @@ waline:
 
 > After enabling `pageview`, the number of visitors on your article pages will be provided by Waline instead of **Busuanzi**
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
 
 <!-- endtab -->
 
@@ -545,7 +545,7 @@ utterances:
   dark_theme: photon-dark
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-Utterances.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-Utterances.png)
 
 <!-- endtab -->
 
@@ -565,7 +565,7 @@ facebook_comments:
   lang: en_US # Language en_US/zh_CN/zh_TW and so on
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-butterfly-docs-facebook-comments.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-butterfly-docs-facebook-comments.png)
 
 <!-- endtab -->
 
@@ -592,7 +592,7 @@ twikoo:
 
 > After enabling `visitor`, the number of visitors on your article pages will be provided by Twikoo instead of **Busuanzi**.
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-twikoo-comments.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-twikoo-comments.png)
 
 <!-- endtab -->
 
@@ -615,7 +615,7 @@ giscus:
 
 Please refer to the Giscus [documentation](https://giscus.app/zh-TW) for specific configuration details.
 
-![](https://file.crazywong.com/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-giscus.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-giscus.png)
 
 <!-- endtab -->
 
@@ -671,7 +671,7 @@ To enable the chat button, modify the `theme config file`:
 chat_btn: true
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-button.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-button.png)
 
 To avoid affecting visitor experience, the theme provides a `chat_hide_show` configuration. When set to `true`, the original chat button will only be displayed when scrolling up, and it will be hidden when scrolling down.
 
@@ -691,7 +691,7 @@ To configure Chatra, you need to know your `Public key`.
 1. Open [Chatra](https://chatra.com/) and register an account.
 2. In the `Preferences` section, you can find the `Public key`.
 
-![Chatra Public Key](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-id.png)
+![Chatra Public Key](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-id.png)
 
 Modify your `theme configuration file`:
 
@@ -705,11 +705,11 @@ chatra:
 
 You can customize the appearance of `Chatra` in the `Chat Widget` settings.
 
-![Chatra UI Settings](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-ui-settings.png)
+![Chatra UI Settings](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-ui-settings.png)
 
 > Demo
 
-![Chatra Demo](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-ui-demo.png)
+![Chatra Demo](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-ui-demo.png)
 <!-- endtab -->
 
 <!-- tab tidio -->
@@ -718,7 +718,7 @@ To configure Tidio, you need to know your `Public key`.
 1. Open [Tidio](https://www.tidio.com/) and register an account.
 2. In `Preferences > Developer`, you can find the `Public key`.
 
-![Tidio Public Key](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-id.png)
+![Tidio Public Key](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-id.png)
 
 Modify your `theme configuration file`:
 
@@ -732,11 +732,11 @@ tidio:
 
 You can customize the appearance of `Tidio` in the `Channels` settings.
 
-![Tidio Settings](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-setting.png)
+![Tidio Settings](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-setting.png)
 
 > Demo
 
-![Tidio Demo](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-demo.png)
+![Tidio Demo](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-demo.png)
 <!-- endtab -->
 
 <!-- tab daovoice -->
@@ -745,7 +745,7 @@ To configure Daovoice, you need to know your `app id`.
 1. Open [Daovoice](http://daovoice.io/) and register an account.
 2. Find your `app id`.
 
-![Daovoice App ID](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-appid.png)
+![Daovoice App ID](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-appid.png)
 
 Modify your `theme configuration file`:
 
@@ -759,11 +759,11 @@ daovoice:
 
 You can customize the appearance of `Daovoice` in the `Chat Settings`.
 
-![Daovoice UI Settings](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-ui.png)
+![Daovoice UI Settings](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-ui.png)
 
 > Demo
 
-![Daovoice Demo](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-demo.png)
+![Daovoice Demo](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-demo.png)
 <!-- endtab -->
 
 <!-- tab crisp -->
@@ -780,11 +780,11 @@ crisp:
   website_id: xxxxxxxx
 ```
 
-![Crisp Website ID](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-buttefly-docs-chat-crisp.png)
+![Crisp Website ID](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-buttefly-docs-chat-crisp.png)
 
 > Demo
 
-![Crisp Demo](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-crisp-demo.png)
+![Crisp Demo](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-crisp-demo.png)
 <!-- endtab -->
 
 <!-- tab messenger -->
@@ -813,7 +813,7 @@ To set up Baidu Analytics:
 1. Log in to the [official website](https://tongji.baidu.com/web/welcome/login) of Baidu Analytics.
 2. Find your Baidu Analytics tracking code.
 
-![Baidu Analytics Tracking Code](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-baidu-tongji.jpg)
+![Baidu Analytics Tracking Code](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-baidu-tongji.jpg)
 
 3. Modify your `theme configuration file`:
 
@@ -828,7 +828,7 @@ To set up Google Analytics:
 1. Log in to the [official website](https://www.google.com/analytics/) of Google Analytics.
 2. Find your Google Analytics tracking ID.
 
-![Google Analytics Tracking ID](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-google-analytics.jpg)
+![Google Analytics Tracking ID](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-google-analytics.jpg)
 
 3. Modify your `theme configuration file`:
 
@@ -844,7 +844,7 @@ To set up Cloudflare Analytics:
 2. Find the `JavaScript snippet` for your website.
 3. Locate your `token`.
 
-![Cloudflare Analytics Token](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cloudflare-analytics-id.png)
+![Cloudflare Analytics Token](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cloudflare-analytics-id.png)
 
 4. Modify your `theme configuration file`:
 
@@ -862,7 +862,7 @@ To set up Microsoft Clarity:
 2. Create a `PROJECT`.
 3. Find your `ID`.
 
-![Microsoft Clarity ID](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-clarity-id.png)
+![Microsoft Clarity ID](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-clarity-id.png)
 
 4. Modify your `theme configuration file`:
 
@@ -894,7 +894,7 @@ google_adsense:
 
 Please replace `Your_Publisher_ID` with your personal identification code provided by Google AdSense.
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-google-adsense1.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-google-adsense1.png)
 <!-- endtab -->
 
 <!-- tab manually inserting advertisements -->
@@ -916,8 +916,8 @@ For example:
 ```yaml
   index: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="xxxxxxxxxxxx" data-ad-client="ca-pub-xxxxxxxxxx" data-ad-slot="xxxxxxxxxx"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 ```
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-ad-post.png)
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-ad-index.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-ad-post.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-ad-index.png)
 <!-- endtab -->
 {% endtabs %}
 
@@ -964,9 +964,9 @@ theme_color:
   scrollbar_color: "#49b1f5"
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_1.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_1.png)
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_2.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_2.png)
 
 ### Home Page Top Image Display Size
 
@@ -990,7 +990,7 @@ index_top_img_height: 400px
 
 This will change the top image height to 400 pixels.
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-top-img-setting.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-top-img-setting.png)
 
 ### Website Background
 
@@ -1009,11 +1009,11 @@ background:
 
 > background:'#49B202'
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-set-body-background-color.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-set-body-background-color.png)
 
 > background: url(https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png)
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-set-body-background-img.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-set-body-background-img.png)
 
 ### Footer Background
 
@@ -1035,7 +1035,7 @@ footer_bg: true
 
 > true
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-footer-img.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-footer-img.png)
 
 ### Typewriter Effect
 
@@ -1053,7 +1053,7 @@ activate_power_mode:
   mobile: false
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-type-animation.gif)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-type-animation.gif)
 
 ### Background Effects
 
@@ -1074,7 +1074,7 @@ canvas_ribbon:
 
 Related configurations can be found at [canvas_ribbon](https://github.com/hustcc/ribbon.js)
 
-![Static Ribbon](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-canvas-ribbon.png)
+![Static Ribbon](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-canvas-ribbon.png)
 <!-- endtab -->
 
 <!-- tab Fluttering Ribbon -->
@@ -1087,7 +1087,7 @@ canvas_fluttering_ribbon:
   mobile: false # false to disable on mobile devices, true to enable
 ```
 
-![Fluttering Ribbon](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-canvas-ribbon-piao.gif)
+![Fluttering Ribbon](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-canvas-ribbon-piao.gif)
 <!-- endtab -->
 
 <!-- tab Canvas Nest -->
@@ -1103,7 +1103,7 @@ canvas_nest:
   mobile: false # false to disable on mobile devices, true to enable
 ```
 
-![Canvas Nest](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-canvas_nest.gif)
+![Canvas Nest](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-canvas_nest.gif)
 <!-- endtab -->
 {% endtabs %}
 
@@ -1125,7 +1125,7 @@ fireworks:
   mobile: false
 ```
 
-![Fireworks](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-firewall.gif)
+![Fireworks](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-firewall.gif)
 <!-- endtab -->
 
 <!-- tab Heart @fas fa-heart -->
@@ -1138,7 +1138,7 @@ click_heart:
   mobile: false
 ```
 
-![Heart](https://file.crazywong.com/gh/jerryc127/CDN/img/click_love.gif)
+![Heart](https://jsd.012700.xyz/gh/jerryc127/CDN/img/click_love.gif)
 <!-- endtab -->
 
 <!-- tab Text @fab fa-amilia -->
@@ -1157,7 +1157,7 @@ ClickShowText:
   mobile: false
 ```
 
-![Text](https://file.crazywong.com/gh/jerryc127/CDN/img/click_word.gif)
+![Text](https://jsd.012700.xyz/gh/jerryc127/CDN/img/click_word.gif)
 <!-- endtab -->
 {% endtabs %}
 
@@ -1181,15 +1181,15 @@ beautify:
 ```
 
 `title-prefix-icon` should be filled with the Unicode of the desired Font Awesome icon.
-![Font Awesome Unicode](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-fontwesome-unicode.png)
+![Font Awesome Unicode](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-fontwesome-unicode.png)
 
 > Without beautification
 
-![Without Beautification](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-beautify.png)
+![Without Beautification](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-beautify.png)
 
 > With beautification
 
-![With Beautification](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-beautif.png)
+![With Beautification](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-beautif.png)
 
 ### Custom Fonts and Font Sizes
 
@@ -1255,7 +1255,7 @@ subtitle:
     - Never put off till tomorrow what you can do today
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-subtitle.gif)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-subtitle.gif)
 
 
 ## Page Loading Animation (Preloader)
@@ -1280,7 +1280,7 @@ preloader:
 
 > fullpage-loading
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-preloader.gif)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-preloader.gif)
 
 ## Word Count
 
@@ -1308,8 +1308,8 @@ wordcount:
   total_wordcount: true
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-word-count.png)
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-wordcount-totalcount.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-word-count.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-wordcount-totalcount.png)
 
 ## Lightbox Plugins
 
@@ -1336,7 +1336,7 @@ Modify the `theme configuration file` to enable Fancybox:
 fancybox: true
 ```
 
-![fancybox.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/fancybox.gif)
+![fancybox.gif](https://jsd.012700.xyz/gh/jerryc127/CDN/img/fancybox.gif)
 <!-- endtab -->
 <!-- tab medium_zoom -->
 Modify the `theme configuration file` to enable Medium Zoom:
@@ -1345,7 +1345,7 @@ Modify the `theme configuration file` to enable Medium Zoom:
 medium_zoom: true
 ```
 
-![medium_zoom.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/medium_zoom.gif)
+![medium_zoom.gif](https://jsd.012700.xyz/gh/jerryc127/CDN/img/medium_zoom.gif)
 <!-- endtab -->
 {% endtabs %}
 
@@ -1403,11 +1403,11 @@ snackbar:
 
 > Disable snackbar
 
-![snackbar_false.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/snackbar_false.gif)
+![snackbar_false.gif](https://jsd.012700.xyz/gh/jerryc127/CDN/img/snackbar_false.gif)
 
 > Enable snackbar
 
-![snackbar_true.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/snackbar_true.gif)
+![snackbar_true.gif](https://jsd.012700.xyz/gh/jerryc127/CDN/img/snackbar_true.gif)
 
 
 ##  Instantpage
