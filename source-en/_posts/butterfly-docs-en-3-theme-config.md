@@ -12,7 +12,7 @@ categories:
 keywords: 'hexo,butterfly,theme,doc,教程,文檔,hexo-butterfly'
 description:
 top_img:
-cover: https://file.crazywong.com/gh/jerryc127/CDN@m2/img/butterfly-docs-en-theme-config-one.png
+cover: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/butterfly-docs-en-theme-config-one.png
 abbrlink: butterfly-docs-en-theme-config-one
 ---
 
@@ -56,7 +56,7 @@ The theme supports three languages:
 
 To modify various data on the website, such as the title, subtitle, and email address, please edit the `_config.yml` file located in the root directory of your blog.
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/20191120000444.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/20191120000444.png)
 
 ## Navigation Bar Settings
 
@@ -121,7 +121,7 @@ menu:
   關於: /about/ || fas fa-heart
 ```
 
-![Example Navigation Menu](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-menu.png)
+![Example Navigation Menu](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-menu.png)
 
 ## Code Blocks
 
@@ -155,27 +155,27 @@ highlight_theme: light
 
 > darker
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-darker.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-darker.png)
 
 > pale night
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-pale-night.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-pale-night.png)
 
 > light
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-light.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-light.png)
 
 > ocean
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-highlight-ocean.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-highlight-ocean.png)
 
 > mac
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-highlight-mac.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-highlight-mac.png)
 
 > mac light
 
-![image-20200731175026827](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-mac-light.png)
+![image-20200731175026827](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-mac-light.png)
 
 <!-- endtab -->
 
@@ -201,7 +201,7 @@ To enable code copy, edit the `theme_config` file.
 highlight_copy: true
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-copy.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-copy.png)
 
 ### Code Blocks Expansion/Collapse
 
@@ -229,15 +229,15 @@ When `highlight_shrink` in the **theme_config** is set to false, you can add `hi
 
 `highlight_shrink: true`
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-highlight-shrink-true.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-highlight-shrink-true.png)
 
 `highlight_shrink: false`
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-highlight-shrink-false.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-highlight-shrink-false.png)
 
 `highlight_shrink: none`
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-highlight-shirk-none.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-highlight-shirk-none.png)
 
 ### Code Line Wrapping
 
@@ -271,11 +271,11 @@ prismjs:
 
 > Before setting `code_word_wrap`:
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-word-wrap-before.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-word-wrap-before.png)
 
 > After setting `code_word_wrap`:
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-word-wrap-after.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-word-wrap-after.png)
 
 ### Code Height Limit
 
@@ -293,7 +293,7 @@ Note:
 2. The actual height limit is `highlight_height_limit + 30 px`. An extra 30px is added to prevent the expand button from appearing when the code's height is only slightly greater than the `highlight_height_limit`.
 3. Does not apply to hidden code blocks (CSS set to display: none).
 
-![hexo-theme-butterfly-docs-highlight-heigh-limit](https://file.crazywong.com/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-highlight-heigh-limit.gif)
+![hexo-theme-butterfly-docs-highlight-heigh-limit](https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-highlight-heigh-limit.gif)
 
 ## Social Settings
 
@@ -309,15 +309,15 @@ social:
 
 You can find the icon names in the image below:
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-fontawesome.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-fontawesome.png)
 
 PC:
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-social-icon-pc.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-social-icon-pc.png)
 
 Mobile:
 
-![1560603353743](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-socila-icon-mobile.png)
+![1560603353743](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-socila-icon-mobile.png)
 
 ## Avatar
 
@@ -329,7 +329,7 @@ avatar:
   effect: true # spinning effect for the avatar
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-avatar.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-avatar.png)
 
 ## Top Image
 
@@ -398,17 +398,17 @@ category_per_img:
 
 > top_img: false
 
-![image-20200924224536013](https://file.crazywong.com/gh/jerryc127/CDN/img/theme-butterfly-docs-page-top-img-false.png)
+![image-20200924224536013](https://jsd.012700.xyz/gh/jerryc127/CDN/img/theme-butterfly-docs-page-top-img-false.png)
 
-![image-20201027210949089](https://file.crazywong.com/gh/jerryc127/CDN/img/theme-butterfly-docs-post-top-img-false-new.png)
+![image-20201027210949089](https://jsd.012700.xyz/gh/jerryc127/CDN/img/theme-butterfly-docs-post-top-img-false-new.png)
 
 > top_img: orange
 
-![image-20200924225024153](https://file.crazywong.com/gh/jerryc127/CDN/img/theme-butterfly-docs-top-img-orange.png)
+![image-20200924225024153](https://jsd.012700.xyz/gh/jerryc127/CDN/img/theme-butterfly-docs-top-img-orange.png)
 
 > top_img: 'linear-gradient(20deg, #0062be,#925696, #cc426e, #fb0347)'
 
-![image-20200924225300934](https://file.crazywong.com/gh/jerryc127/CDN/img/theme-butterfly-docs-top-img-color.png)
+![image-20200924225300934](https://jsd.012700.xyz/gh/jerryc127/CDN/img/theme-butterfly-docs-top-img-color.png)
 
 
 ## Article Cover
@@ -450,27 +450,27 @@ When configuring multiple cover images, a random image will be selected as the c
 
 ```yaml
 default_cover:
-  - https://file.crazywong.com/gh/jerryc127/CDN@latest/cover/default_bg.png
-  - https://file.crazywong.com/gh/jerryc127/CDN@latest/cover/default_bg2.png
-  - https://file.crazywong.com/gh/jerryc127/CDN@latest/cover/default_bg3.png
+  - https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg.png
+  - https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg2.png
+  - https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg3.png
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-cover.png)
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-cover-show.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-cover.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-cover-show.png)
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cover-false.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cover-false.png)
 
 > left
 
-![cover position: left](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cover-left.png)
+![cover position: left](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cover-left.png)
 
 > right
 
-![cover position: right](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cover-right.png)
+![cover position: right](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cover-right.png)
 
 > both
 
-![cover position: both](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cover-both.png)
+![cover position: both](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cover-both.png)
 
 
 ## Meta Display
@@ -513,23 +513,23 @@ Explanation of parameters:
 
 > Homepage
 
-![homepage meta](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-page-meta.png)
+![homepage meta](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-page-meta.png)
 
 > Article Page
 
-![article page meta](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-info.png)
+![article page meta](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-info.png)
 
-![article page tags](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-tag.png)
+![article page tags](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-tag.png)
 
 The `date_format` parameter was introduced in version 3.2.0, allowing you to configure whether to display specific dates or relative dates.
 
 > Relative Time:
 
-![relative time](https://file.crazywong.com/gh/jerryc127/CDN/img/theme-butterfly-docs-relative-time.png)
+![relative time](https://jsd.012700.xyz/gh/jerryc127/CDN/img/theme-butterfly-docs-relative-time.png)
 
 > Full Date:
 
-![full date](https://file.crazywong.com/gh/jerryc127/CDN/img/theme-butterfly-docs-full-date.png)
+![full date](https://jsd.012700.xyz/gh/jerryc127/CDN/img/theme-butterfly-docs-full-date.png)
 
 ## Homepage Article Excerpt (Auto Excerpt and Article Description)
 
@@ -552,7 +552,7 @@ index_post_content:
 
 To add the `description` in the front-matter:
 
-![article description](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-description.png)
+![article description](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-description.png)
 
 ## Page Anchors
 
@@ -583,7 +583,7 @@ To configure, modify the `theme configuration file`:
 photofigcaption: true
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-photo-figcaption.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-photo-figcaption.png)
 
 ## Copy Settings
 
@@ -674,7 +674,7 @@ copyright_info: This article is copyrighted by Author Name. If you reproduce it,
 
 This allows you to have different copyright information for different articles.
 
-![image-20210130161913121](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-copyright.png)
+![image-20210130161913121](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-copyright.png)
 
 ### Article Rewards
 
@@ -707,7 +707,7 @@ Explanation of the attributes:
 
 You can configure multiple reward options by adding more entries to the `QR_code` list. If you don't want to provide a link, you can leave the `link` attribute empty, and the image will act as a direct link.
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-donate.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-donate.png)
 
 ### Table of Contents (TOC)
 
@@ -738,15 +738,15 @@ Explanation of the attributes:
 
 > Toc PC
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-toc-pc-new.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-toc-pc-new.png)
 
 > Toc Mobile
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-toc-mobile-new.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-toc-mobile-new.png)
 
 > style_simple: true
 
-![image-20201209232104167](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-toc-style-simple.png)
+![image-20201209232104167](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-toc-style-simple.png)
 
 #### Configuring for Specific Posts
 
@@ -788,7 +788,7 @@ related_post:
 - `limit`: The number of recommended posts to display.
 - `date_type`: Set to `created` or `updated` to display the creation date or update date of the article in the related posts section.
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-releatedpost.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-releatedpost.png)
 
 ### Article Expiry Reminder
 
@@ -811,11 +811,11 @@ noticeOutdate:
 
 > style: flat
 
-![image-20200731175909296](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butteffly-docs-outdate-flat.png)
+![image-20200731175909296](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butteffly-docs-outdate-flat.png)
 
 > style: simple
 
-![image-20200731180037968](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-outdated-simple.png)
+![image-20200731180037968](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-outdated-simple.png)
 
 ### Article Editing Button
 
@@ -831,9 +831,9 @@ post_edit:
   url:
 ```
 
-![image-20210130160108360](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-post-edit.png)
+![image-20210130160108360](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-post-edit.png)
 
-![image-20210130160208436](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-post-edit-2.png)
+![image-20210130160208436](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-post-edit-2.png)
 
 ### Post Pagination Buttons
 
@@ -860,7 +860,7 @@ Explanation of parameters:
 | post_pagination: 1     | The 'next post' links to an older post |
 | post_pagination: 2     | The 'next post' links to a newer post |
 
-![image-20210130161545100](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-post-pagination.png)
+![image-20210130161545100](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-post-pagination.png)
 
 ## Footer Settings
 
@@ -877,7 +877,7 @@ footer:
     since: 2018
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-since.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-since.png)
 
 ### Custom Footer Text
 
@@ -891,7 +891,7 @@ custom_text: Hi, welcome to my <a href="https://butterfly.js.org/">blog</a>!
 
 This will display the custom text in the footer, as shown in the image below:
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-footer-text.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-footer-text.png)
 
 If you need to include ICP (Internet Content Provider) information for certain regions that require it, you can also add it to the `custom_text` option:
 
@@ -964,23 +964,23 @@ aside:
 
 > position: left
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-aside-left.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-aside-left.png)
 
 > position: right
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-aside-right.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-aside-right.png)
 
 > card_tags color: false
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/20200426182730.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/20200426182730.png)
 
 > card_tags color: true
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/20200426183025.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/20200426183025.png)
 
 > aside button
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-aside-button.gif)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-aside-button.gif)
 
 ### Visitor Count (busuanzi) - UV and PV
 
@@ -1003,9 +1003,9 @@ CDN:
   	busuanzi: xxxxxxxxx
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-busuanzi-site-pv.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-busuanzi-site-pv.png)
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-pv.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-pv.png)
 
 ### Runtimeshow
 
@@ -1022,7 +1022,7 @@ runtimeshow:
   # It can also be written as YYYY/MM/DD HH:mm:ss
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-runtime.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-runtime.png)
 
 ### Newest Comments
 
@@ -1058,7 +1058,7 @@ Explanation of some configurations:
 
 > Demo
 
-![image-20200830223037320](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-newest-comments.png)
+![image-20200830223037320](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-newest-comments.png)
 
 ### Custom Add Aside Widget
 
@@ -1092,11 +1092,11 @@ translate:
 
 > Simplified Chinese
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-simp.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-simp.png)
 
 > Traditional Chinese
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-tranditional.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-tranditional.png)
 
 ### Read Mode
 
@@ -1112,7 +1112,7 @@ readmode: true
 
 When enabled, users will be able to activate the Read Mode by clicking on the button while reading an article.
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-read-mode.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-read-mode.png)
 
 
 
@@ -1141,7 +1141,7 @@ darkmode:
 
 The theme will display a night mode toggle button in the bottom right corner as shown in the image above.
 
-![image-20201230201029381](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-dark-mode-1.png)
+![image-20201230201029381](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-dark-mode-1.png)
 
 ### Scroll Percentage
 
@@ -2117,7 +2117,7 @@ pie
 
 This will generate a Pie Chart diagram:
 
-![Pie Chart](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-mermaid.png)
+![Pie Chart](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-mermaid.png)
 
 You can refer to the [mermaid documentation](https://mermaid-js.github.io/mermaid/#/) for more information and examples on how to create different types of diagrams using mermaid.
 
@@ -2392,7 +2392,7 @@ Do you think I look beautiful?
 I think I look beautiful {% inlineImg https://i.loli.net/2021/03/19/5M4jUB3ynq7ePgw.png 150px %}
 ```
 
-![image-20210319001204045](https://file.crazywong.com/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-inlineimg.png)
+![image-20210319001204045](https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-inlineimg.png)
 
 ### label
 
@@ -2584,7 +2584,7 @@ xxxxxx
 {% endflink %}
 ```
 
-![Demo](https://file.crazywong.com/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-flink-demo.png)
+![Demo](https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-flink-demo.png)
 
 ### abcjs Sheet Music
 

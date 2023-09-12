@@ -8,7 +8,7 @@ tags:
 categories: Docs文檔
 keywords: 'hexo,butterfly,主題,doc,教程,文檔'
 description: Butterfly安裝文檔-主題配置-2
-cover: https://file.crazywong.com/gh/jerryc127/CDN/img/Butterfly-docs-04-cover.png
+cover: https://jsd.012700.xyz/gh/jerryc127/CDN/img/Butterfly-docs-04-cover.png
 abbrlink: ceeb73f
 date: 2020-05-28 22:38:11
 comments: false
@@ -88,7 +88,7 @@ mathjax:
 
 效果：
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-mathjax-2.jpg)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-mathjax-2.jpg)
 
 <!-- endtab -->
 
@@ -181,7 +181,7 @@ markdown_it_plus:
 
 因為 KaTeX 更快更輕量，因此沒有 MathJax 的功能多（比如右鍵菜單）。為那些使用 MathJax 的用户，主題也內置了 katex 的 [複製](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex) 功能。
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-katex.gif)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-katex.gif)
 
 <!-- endtab -->
 {% endtabs %}
@@ -260,7 +260,7 @@ docsearch:
 | indexName | 【必須】你的 Algolia index name                              |
 | option    | 【可選】其餘的 docsearch 配置<br />具體配置可查[這裏](https://docsearch.algolia.com/docs/api/) |
 
-![DocSearch](https://file.crazywong.com/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-docsearch.png)
+![DocSearch](https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-docsearch.png)
 
 <!-- endtab -->
 
@@ -278,7 +278,7 @@ docsearch:
 > 訪問 [AddThis](https://www.addthis.com/) 官網
 > 找到你的 pub-id
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addthis.jpg)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addthis.jpg)
 
 修改 `主題配置文件`
 
@@ -301,7 +301,7 @@ sharejs:
   sites: facebook,twitter,wechat,weibo,qq  #想要顯示的內容
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-sharejs.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-sharejs.png)
 <!-- endtab -->
 
 <!-- tab Addtoany -->
@@ -313,7 +313,7 @@ addtoany:
   item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addtoany.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addtoany.png)
 
 <!-- endtab -->
 {% endtabs %}
@@ -351,19 +351,19 @@ comments:
 
 > 單評論
 
-![image-20200731172506907](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-single-comments.png)
+![image-20200731172506907](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-single-comments.png)
 
 > 雙評論
 
-![image-20200731173006128](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments.png)
+![image-20200731173006128](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments.png)
 
 > 顯示text
 
-![image-20200731173006128](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments.png)
+![image-20200731173006128](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments.png)
 
 > 不顯示text
 
-![image-20200731173143712](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments-not-text.png)
+![image-20200731173143712](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments-not-text.png)
 
 <!-- endtab -->
 
@@ -378,7 +378,7 @@ disqus:
   shortname:
 ```
 
-![image-20201027211418161](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-disqus-new.png)
+![image-20201027211418161](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-disqus-new.png)
 
 <!-- endtab -->
 
@@ -397,7 +397,7 @@ disqusjs:
 
 > 當無法訪問 Disqus 時，會顯示
 
-![image-20201027212543851](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-disqusjs-new.png)
+![image-20201027212543851](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-disqusjs-new.png)
 
 <!-- endtab -->
 
@@ -414,9 +414,9 @@ livere:
 
 laibili 的 uid 你能在這裏找到:
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili.jpg)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili.jpg)
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili_2-new.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili_2-new.png)
 
 <!-- endtab -->
 
@@ -436,7 +436,7 @@ gitalk:
   option:
 ```
 
-![image-20201027212704930](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-gitalk-new.png)
+![image-20201027212704930](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-gitalk-new.png)
 
 <!-- endtab -->
 
@@ -492,7 +492,7 @@ Valine於 v1.4.5 開始支持自定義表情，如果你需要自行配置，請
 
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
 
 > default_avatar
 
@@ -530,7 +530,7 @@ waline:
 
 > 開啟 pageview 後，文章頁的訪問人數將改為 Waline 提供，而不是 **不蒜子**
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
 
 <!-- endtab -->
 
@@ -550,7 +550,7 @@ utterances:
   dark_theme: photon-dark
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-Utterances.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-Utterances.png)
 
 <!-- endtab -->
 
@@ -571,7 +571,7 @@ facebook_comments:
   lang: en_US # Language en_US/zh_CN/zh_TW and so on
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-butterfly-docs-facebook-comments.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-butterfly-docs-facebook-comments.png)
 
 <!-- endtab -->
 
@@ -602,7 +602,7 @@ twikoo:
 
 > 開啟 visitor 後，文章頁的訪問人數將改為 Twikoo 提供，而不是 **不蒜子**
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-twikoo-comments.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-twikoo-comments.png)
 
 
 
@@ -629,7 +629,7 @@ giscus:
 
 具體配置的意思，請參考 Giscus 的[文檔](https://giscus.app/zh-TW)
 
-![](https://file.crazywong.com/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-giscus.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-giscus.png)
 
 <!-- endtab -->
 
@@ -693,7 +693,7 @@ artalk:
 chat_btn: true
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-button.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-button.png)
 
 為了不影響訪客的體驗，主題提供一個`chat_hide_show`配置
 設為`true`後，使用工具提供的按鈕時，只有向上滾動才會顯示聊天按鈕，向下滾動時會隱藏按鈕。
@@ -716,7 +716,7 @@ chat_hide_show: true
 打開[chatra](https://chatra.com/)並註冊賬號。
 你可以在`Preferences`中找到`Public key`
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-id.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-id.png)
 
 修改 `主題配置文件`
 
@@ -730,11 +730,11 @@ chatra:
 
 `chatra`的樣式你可以`Chat Widget`自行配置
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-ui-settings.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-ui-settings.png)
 
 > Demo
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-ui-demo.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-ui-demo.png)
 
 <!-- endtab -->
 
@@ -744,7 +744,7 @@ chatra:
 打開[tidio](https://www.tidio.com/)並註冊賬號。
 你可以在`Preferences > Developer`中找到`Public key`
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-id.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-id.png)
 
 修改 `主題配置文件`
 
@@ -757,11 +757,11 @@ tidio:
 ```
 `tidio`的樣式你可以`Channels`自行配置
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-setting.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-setting.png)
 
 > Demo
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-demo.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-demo.png)
 
 <!-- endtab -->
 
@@ -769,7 +769,7 @@ tidio:
 打開[daovoice](http://daovoice.io/)和註冊帳號
 找到你的`app id`
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-appid.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-appid.png)
 
 修改 `主題配置文件`
 
@@ -783,11 +783,11 @@ daovoice:
 
 可在`聊天設置`裏配置聊天按鈕等樣式
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-ui.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-ui.png)
 
 > Demo
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-demo.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-demo.png)
 
 <!-- endtab -->
 
@@ -805,9 +805,9 @@ crisp:
   website_id: xxxxxxxx
 ```
 
-![image-20200731183023863](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-buttefly-docs-chat-crisp.png)
+![image-20200731183023863](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-buttefly-docs-chat-crisp.png)
 
-![image-20200731183444781](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-crisp-demo.png)
+![image-20200731183444781](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-crisp-demo.png)
 
 <!-- endtab -->
 
@@ -843,7 +843,7 @@ messenger:
 
 2. 找到你百度統計的統計代碼
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-baidu-tongji.jpg)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-baidu-tongji.jpg)
 
 3. 修改 `主題配置文件`
 
@@ -858,7 +858,7 @@ baidu_analytics: 你的代碼
 
 2. 找到你的谷歌分析的跟蹤 ID
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-google-analytics.jpg)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-google-analytics.jpg)
 
 3. 修改 `主題配置文件`
 
@@ -874,7 +874,7 @@ google_analytics: 你的代碼 # 通常以`UA-`打頭
 2. 找到 `JavaScript 程式碼片段`
 3. 找到你的 `token`
 
-![image-20201230195158742](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cloudflare-analytics-id.png)
+![image-20201230195158742](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cloudflare-analytics-id.png)
 
 4. 修改 `主題配置文件`
 
@@ -892,7 +892,7 @@ google_analytics: 你的代碼 # 通常以`UA-`打頭
 
 2. 創建 `PROJECT`
 
-3. 找到你的 `ID`![image-20201230195541443](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-clarity-id.png)
+3. 找到你的 `ID`![image-20201230195541443](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-clarity-id.png)
 
 4. 修改 `主題配置文件`
 
@@ -923,7 +923,7 @@ google_adsense:
   enable_page_level_ads: true
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-google-adsense1.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-google-adsense1.png)
 <!-- endtab -->
 
 <!-- tab 手動廣告配置 -->
@@ -945,8 +945,8 @@ ad:
   index: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="xxxxxxxxxxxx" data-ad-client="ca-pub-xxxxxxxxxx" data-ad-slot="xxxxxxxxxx"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-ad-post.png)
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-ad-index.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-ad-post.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-ad-index.png)
 <!-- endtab -->
 {% endtabs %}
 
@@ -993,9 +993,9 @@ theme_color:
   scrollbar_color: "#49b1f5"
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_1.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_1.png)
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_2.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_2.png)
 
 ### 主頁top_img顯示大小
 
@@ -1022,7 +1022,7 @@ index_top_img_height: 400px
 
 效果
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-top-img-setting.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-top-img-setting.png)
 
 ### 網站背景
 
@@ -1041,11 +1041,11 @@ background:
 例如：網站是 `https://yoursite.com/blog`,引用一張`img/xx.png`圖片，則設置background為 `url(/blog/img/xx.png)
 > background:'#49B202'
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-set-body-background-color.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-set-body-background-color.png)
 
 > background: url(https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png)
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-set-body-background-img.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-set-body-background-img.png)
 
 ### footer 背景
 
@@ -1065,7 +1065,7 @@ footer_bg: true
 
 > true
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-footer-img.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-footer-img.png)
 
 ### 打字效果
 
@@ -1083,7 +1083,7 @@ activate_power_mode:
   mobile: false
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-type-animation.gif)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-type-animation.gif)
 
 ### 背景特效
 {% tabs 背景特效 %}
@@ -1103,7 +1103,7 @@ canvas_ribbon:
 
 相關配置可查看[canvas_ribbon](https://github.com/hustcc/ribbon.js)
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-canvas-ribbon.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-canvas-ribbon.png)
 <!-- endtab -->
 
 <!-- tab 動態綵帶 -->
@@ -1116,7 +1116,7 @@ canvas_fluttering_ribbon:
   mobile: false # false 手機端不顯示 true 手機端顯示
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-canvas-ribbon-piao.gif)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-canvas-ribbon-piao.gif)
 <!-- endtab -->
 
 <!-- tab canvas-nest -->
@@ -1132,7 +1132,7 @@ canvas_nest:
   mobile: false # false 手機端不顯示 true 手機端顯示
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-canvas_nest.gif)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-canvas_nest.gif)
 <!-- endtab -->
 {% endtabs %}
 
@@ -1154,7 +1154,7 @@ fireworks:
   mobile: false
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-firewall.gif)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-firewall.gif)
 <!-- endtab -->
 
 <!-- tab 愛心 @fas fa-heart -->
@@ -1167,7 +1167,7 @@ click_heart:
   mobile: false
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/click_love.gif)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/click_love.gif)
 <!-- endtab -->
 
 <!-- tab 文字 @fab fa-amilia -->
@@ -1186,7 +1186,7 @@ ClickShowText:
   mobile: false
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/click_word.gif)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/click_word.gif)
 <!-- endtab -->
 {% endtabs %}
 
@@ -1211,15 +1211,15 @@ beautify:
 ```
 
 `title-prefix-icon`填寫的是fontawesome的icon的Unicode數。
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-fontwesome-unicode.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-fontwesome-unicode.png)
 
 > 未開啟美化
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-beautify.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-beautify.png)
 
 > 開啟美化
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-beautif.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-beautif.png)
 
 ### 自定義字體和字體大小
 
@@ -1284,7 +1284,7 @@ subtitle:
     - Never put off till tomorrow what you can do today
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-subtitle.gif)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-subtitle.gif)
 
 
 ### 頁面加載動畫 preloader
@@ -1309,7 +1309,7 @@ preloader:
 
 > fullpage-loading
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-preloader.gif)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-preloader.gif)
 
 ## 字數統計
 
@@ -1329,8 +1329,8 @@ wordcount:
   total_wordcount: true
 ```
 
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-word-count.png)
-![](https://file.crazywong.com/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-wordcount-totalcount.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-word-count.png)
+![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-wordcount-totalcount.png)
 
 ## 圖片大圖查看模式
 
@@ -1358,7 +1358,7 @@ wordcount:
 fancybox: true
 ```
 
-![fancybox.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/fancybox.gif)
+![fancybox.gif](https://jsd.012700.xyz/gh/jerryc127/CDN/img/fancybox.gif)
 <!-- endtab -->
 <!-- tab medium_zoom -->
 修改 `主題配置文件`
@@ -1367,7 +1367,7 @@ fancybox: true
 medium_zoom: true
 ```
 
-![medium_zoom.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/medium_zoom.gif)
+![medium_zoom.gif](https://jsd.012700.xyz/gh/jerryc127/CDN/img/medium_zoom.gif)
 <!-- endtab -->
 {% endtabs %}
 
@@ -1428,11 +1428,11 @@ snackbar:
 
 > 未開啟Snackbar
 
-![snackbar_false.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/snackbar_false.gif)
+![snackbar_false.gif](https://jsd.012700.xyz/gh/jerryc127/CDN/img/snackbar_false.gif)
 
 > 開啟Snackbar
 
-![snackbar_true.gif](https://file.crazywong.com/gh/jerryc127/CDN/img/snackbar_true.gif)
+![snackbar_true.gif](https://jsd.012700.xyz/gh/jerryc127/CDN/img/snackbar_true.gif)
 
 
 ##  Instantpage

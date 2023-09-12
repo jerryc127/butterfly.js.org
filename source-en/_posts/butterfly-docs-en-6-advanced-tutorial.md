@@ -12,7 +12,7 @@ categories:
 keywords: 'hexo,butterfly,theme,doc,教程,文檔,hexo-butterfly'
 description:
 top_img:
-cover: https://file.crazywong.com/gh/jerryc127/CDN@m2/img/butterfly-docs-en-advanced-tutorial.png
+cover: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/butterfly-docs-en-advanced-tutorial.png
 abbrlink: butterfly-docs-en-advanced-tutorial
 ---
 
@@ -120,45 +120,45 @@ One of the most famous domestic icon libraries is [iconfont](https://www.iconfon
 
 To get started with [iconfont](https://www.iconfont.cn/), open the website and click on the "User" icon in the navigation bar. This will prompt you to register an account as per the instructions.
 
-![Snipaste_2020-05-28_21-12-01](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont.png)
+![Snipaste_2020-05-28_21-12-01](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont.png)
 
 #### Adding Icons to Your Library
 
 Select the icons you need by hovering your mouse over them. Three buttons will appear (Add to library, Favorite, Download). Click on "Add to library" to add the icon to your collection.
 
-![image-20200528205401440](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-add.png)
+![image-20200528205401440](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-add.png)
 
 After adding icons to your library, you will see a "Shopping Cart" icon with a number "1" displayed in the upper right corner of the website. This indicates that the icon has been added to your library. Click on the "Shopping Cart" icon to view the details.
 
-![image-20200528205925258](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-check.png)
+![image-20200528205925258](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-check.png)
 
-![image-20200528210120442](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-detail.png)
+![image-20200528210120442](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-detail.png)
 
 Selected icons will be displayed on top. You can repeat the above steps to add the icons you need and then click "Add to Project."
 
 Next, you will be prompted to choose a project name. If you don't have one, create a new project.
 
-![image-20200528211624459](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-create.png)
+![image-20200528211624459](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-create.png)
 
 #### Generating CSS Links
 
 After adding the icons to your project, you will be taken to the project details page. Click on "Font class" and then click on "No code, click to generate" text. The website will automatically generate a CSS link, which you just need to copy.
 
-![image-20200528212301786](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-link.png)
+![image-20200528212301786](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-link.png)
 
 #### Adding the Link to the Theme Configuration File
 
 Open the "Theme Configuration File" and find the "inject" configuration. Add the CSS link as instructed.
 
-![image-20200528212440743](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-setting.png)
+![image-20200528212440743](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-setting.png)
 
 In the places where you want to use the icons, use the format `iconfont icon-iconName`, for example, `iconfont icon-Menu`.
 
-![image-20200528213151304](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-setting-menu.png)
+![image-20200528213151304](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-setting-menu.png)
 
 After running Butterfly, you will see the icon for the menu.
 
-![image-20200528213346338](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-iconfont-show.png)
+![image-20200528213346338](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-iconfont-show.png)
 
 #### Other Methods of Adding Icons
 
@@ -178,13 +178,13 @@ In addition to using `gulp-imagemin` for image compression, you can also use onl
 
   An online compression website. The compressed images retain high quality. It is highly recommended on platforms like Zhihu. However, the free version has some limitations.
 
-  ![image-20200526173511503](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-tinypng.png)
+  ![image-20200526173511503](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-tinypng.png)
 
 - [caesium](https://saerasoft.com/caesium/)
 
   An open-source software that supports Windows and macOS. It allows batch image compression without any limitations.
 
-  ![image-20200526173316278](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-caesium.png)
+  ![image-20200526173316278](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-caesium.png)
   
 -  [imgbot](https://github.com/marketplace/imgbot)
 
@@ -194,7 +194,7 @@ In addition to using `gulp-imagemin` for image compression, you can also use onl
 
   You can configure imgbot's detection and compression methods (lossy/lossless). For specific details, please check the plugin's documentation.
 
-  ![image-20200830231742951](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-enhance-imgbot.png)
+  ![image-20200830231742951](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-enhance-imgbot.png)
 
 ## Recommended Plugins
 

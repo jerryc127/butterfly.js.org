@@ -9,7 +9,7 @@ tags:
 categories: Docs文檔
 keywords: 'hexo,butterfly,主題,doc,教程,文檔'
 description: Butterfly安裝文檔-快速開始
-cover: https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-docs-01-cover.png
+cover: https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-docs-01-cover.png
 abbrlink: 21cfbf15
 sticky: 100
 comments: false
@@ -164,6 +164,6 @@ npm install hexo-renderer-pug hexo-renderer-stylus --save
 
 Hexo會自動**合併**主題中的 `_config.yml` 和 `_config.butterfly.yml` 裏的配置，如果存在同名配置，會使用 `_config.butterfly.yml` 的配置，其優先度較高。
 
-![image-20200805191531090](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-docs-install-suggestion-1.png)
+![image-20200805191531090](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-docs-install-suggestion-1.png)
 
 {% btn '/posts/dc584b87/',📑 Butterfly 安裝文檔(二) 主題頁面,far fa-hand-point-right,block right larger %}
