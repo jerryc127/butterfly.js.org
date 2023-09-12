@@ -259,10 +259,12 @@ aside:
   card_announcement:
     enable: true
     content:
-      如果你在使用中遇到問題，請到 <a href="https://github.com/jerryc127/hexo-theme-butterfly/issues" style="color:#49b1f5">Github Issues</a> 或者 <a href="/messageboard/" style="color:#49b1f5">留言板</a> 進行反饋，你也可以加入 QQ 群（由於 QQ 群只能有 500 人，會定時清理潛水的人，不要同時申請 2 个 QQ 群）<div class="social-button">
-      <a class="button--animated" href="https://jq.qq.com/?_wv=1027&k=KU9105XR" target="_blank">QQ 1 群 👍</a>
-      <a class="button--animated" href="https://jq.qq.com/?_wv=1027&k=r1nK0DQz" target="_blank">QQ 2 群 👍</a>
-      <a class="button--animated" href="https://t.me/bu2fly" target="_blank">Telegram 👍</a>
+      如果你在使用中遇到問題，請到 <a href="https://github.com/jerryc127/hexo-theme-butterfly/issues" style="color:#49b1f5">Github Issues</a> 進行反饋，你也可以加入反饋群（掃碼或者點擊圖片跳轉）
+      <div class="aside-qrcode" >
+      <a href="https://h5.qun.qq.com/s/vTHKfqL0nC" target="_blank">
+      <img src="/img/qq.jpg" title="QQ 二維碼"></a>
+      <a href="https://t.me/bu2fly" target="_blank">
+      <img src="/img/tg.jpg" title="Telegram 二維碼"></a>
       </div>
   card_recent_post:
     enable: true

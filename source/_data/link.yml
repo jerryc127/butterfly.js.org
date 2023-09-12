@@ -31,14 +31,10 @@
       link: https://github.com/jerryc127/hexo-theme-butterfly/issues/76
       avatar: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/more-butterfly-demo-avatar.png
       descr: 更多使用 Butterfly 的網站
-    - name: pai233の小窝
+    - name: pai233
       link: https://blog.pai233.top/
       descr: Write Down My Life.
       avatar: https://blog.pai233.top/img/avatar.jpg  
-    - name: GuKaifeng
-      link: https://gukaifeng.cn/
-      avatar: https://gukaifeng.cn/img/avatar.png
-      descr: 客官，来呀，不看会后悔的哦！
     - name: SerMs
       link: https://blog.serms.top
       avatar: https://cdn1.tianli0.top/gh/Ser-MingShao/HexoPublicStaiciImg/serms/202303131726584.png
@@ -67,10 +63,6 @@
       link: https://blog.zhangsifan.com
       avatar: https://i.loli.net/2019/10/13/2a6ve3ZdW8TPCNY.jpg
       descr: 记录前端知识
-    - name: Fungit
-      link: https://fungit.org/
-      avatar: https://fungit.org/avatar.png
-      descr: 木秀于林 风必摧之
     - name: 白醭飙尘
       link: https://y-jinhao.github.io/
       avatar: https://fastly.jsdelivr.net/gh/Y-JINHAO/resources/img/avator1.png
@@ -147,10 +139,6 @@
       link: https://youngjuning.js.org
       avatar: https://fastly.jsdelivr.net/gh/youngjuning/images/202109211729538.png
       descr: 怕什么真理无穷，进一寸有一寸的欢喜。
-    - name: ZkeqのCoding日志
-      link: https://coding.maylove.pub
-      avatar: https://p6-tt.byteimg.com/origin/user-profile/77759605e13054f68a8d54ed7c510405.png
-      descr: 记录一些基础的Python, Java 语法.
     - name: 小康博客
       link: https://www.antmoe.com
       avatar: https://fastly.jsdelivr.net/npm/kang-static@latest/avatar.jpg
@@ -291,10 +279,6 @@
       link: https://mosuzi.com/
       avatar: https://pics.mosuzi.com/logo.png!origin
       descr: 淡定的人生从不需要起起落落
-    - name: 淡忘
-      link: https://lengmo714.top
-      avatar: https://lengmo714.top/img/favicon.png
-      descr: 莫忘少年凌云志,曾许人间第一流
     - name: 竹山一叶
       link: https://zsyyblog.com
       avatar: https://img.zsyyblog.com/favicon.jpg
