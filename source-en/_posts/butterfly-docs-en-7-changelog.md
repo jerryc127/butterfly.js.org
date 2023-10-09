@@ -27,7 +27,7 @@ This article is translated from ChatGPT.
 
  📖 This tutorial was last updated on June 6, 2023, and the content is based on the latest **stable version**.
 
- 🦋 Butterfly has been updated to [4.9.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.9.0).
+ 🦋 Butterfly has been updated to [4.10](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.10).
 
 {% endnote %}
 

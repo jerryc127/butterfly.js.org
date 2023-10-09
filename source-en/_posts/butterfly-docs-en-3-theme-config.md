@@ -26,7 +26,7 @@ This article is translated from ChatGPT.
 
  📖 This tutorial was last updated on June 6, 2023, and the content is based on the latest **stable version**.
 
- 🦋 Butterfly has been updated to [4.9.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.9.0).
+ 🦋 Butterfly has been updated to [4.10](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.10).
 
 {% endnote %}
 
@@ -564,11 +564,10 @@ To configure, modify the `theme configuration file`:
 # anchor
 # When you scroll in a post, the URL will update according to the header ID.
 anchor:
-  button:
-    enable: false
-    always_show: false
-    icon: # the Unicode value of the Font Awesome icon, such as '\3423'
-  auto_update: false # when you scroll in post, the URL will update according to header id.
+  # when you scroll, the URL will update according to header id.
+  auto_update: false
+  # Click the headline to scroll and update the anchor
+  click_to_scroll: false
 ```
 
 ## Image Captions
@@ -686,6 +685,7 @@ To set up article rewards, modify the theme configuration file:
 ```yaml
 reward:
   enable: true
+  text:
   QR_code:
     - img: /img/wechat.jpg
       link:
@@ -960,6 +960,11 @@ aside:
     post_count: true
     last_push_date: true
     sort_order: # Don't modify the setting unless you know how it works
+  card_post_series:
+    enable: true
+    orderBy: 'date' # Order by title or date
+    order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
+
 ```
 
 > position: left
@@ -2649,6 +2654,40 @@ C/A,/ C/C/E C/zz2|
 w:Rock-y did-nt like that
 {% endscore %}
 
+### series articles
+
+Display series articles on the page.
+
+Modify the theme configuration file.
+
+```yaml
+series:
+   enable: true
+   orderBy: 'title' # Order by title or date
+   order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
+   number: true
+```
+
+Usage:
+
+```markdown
+{% series %}
+{% series [series name] %}
+```
+
+Add the parameter series to the front matter of the article and give it an identifier.
+
+Using this tag plugin will display articles with the same identifier in a list format.
+
+If the series identifier is not specified, it defaults to the series identifier of the article where this tag plugin is used.
+
+> Demo
+
+```markdown
+{% series markdown %}
+```
+
+![](https://oss.012700.xyz/butterfly/2023/10/butterfly-series.png)
 
 
 {% btn '/posts/butterfly-docs-en-theme-config-two/',⚔️ Butterfly document - Theme Configuration Part 2,far fa-hand-point-right,block red right larger %}

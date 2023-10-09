@@ -16,9 +16,9 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2023 年 06 月 06 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
+ 📖  本教程更新於 2023 年 10 月 09 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
 
- 🦋  Butterfly 已經更新到 [4.9.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.9.0)
+ 🦋  Butterfly 已經更新到 [4.10](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.10)
 
 {% endnote %}
 
@@ -273,22 +273,6 @@ docsearch:
 > 只能選擇一個分享服務商
 
 {% tabs 分享 %}
-<!-- tab AddThis -->
-
-> 訪問 [AddThis](https://www.addthis.com/) 官網
-> 找到你的 pub-id
-
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addthis.jpg)
-
-修改 `主題配置文件`
-
-```yaml
-addThis:
-  enable: true # or false
-  pubid: 你的pub-id
-```
-
-<!-- endtab -->
 
 <!-- tab Sharejs -->
 如果你不知道 [sharejs](https://github.com/overtrue/share.js/)，看看它的説明。
@@ -706,7 +690,7 @@ chat_hide_show: true
 ```
 
 {% note info %}
-如果使用工具自帶的聊天按鈕，按鈕位置可能會遮擋右下角圖標，請配置`rightside-bottom`調正右下角圖標位置
+如果使用工具自帶的聊天按鈕，按鈕位置可能會遮擋右下角圖標，請配置`rightside_bottom`調正右下角圖標位置
 {% endnote %}
 <!-- endtab -->
 
@@ -1023,6 +1007,23 @@ index_top_img_height: 400px
 效果
 
 ![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-top-img-setting.png)
+
+### 文字左右對齊
+
+可設置文字向兩側對齊，對最後一行無效
+
+```markdown
+# Stretches the lines so that each line has equal width（文字向兩側對齊，對最後一行無效）
+text_align_justify: true
+```
+
+> text_align_justify: false
+
+![](https://oss.012700.xyz/butterfly/2023/10/text-align-justify-false.png)
+
+> text_align_justify: true
+
+![](https://oss.012700.xyz/butterfly/2023/10/text-align-justify-true.png)
 
 ### 網站背景
 
@@ -1647,62 +1648,61 @@ CDN:
   custom_format:
 
   option:
-    # main_css:
-    # main:
-    # utils:
-    # translate:
-    # local_search:
+    # abcjs_basic_js:
+    # activate_power_mode:
     # algolia_js:
     # algolia_search:
-    # instantsearch:
-    # docsearch_js:
-    # docsearch_css:
-    # pjax:
-    # gitalk:
-    # gitalk_css:
-    # blueimp_md5:
-    # valine:
-    # disqusjs:
-    # disqusjs_css:
-    # twikoo:
-    # waline_js:
-    # waline_css:
-    # giscus:
-    # sharejs:
-    # sharejs_css:
-    # mathjax:
-    # katex:
-    # katex_copytex:
-    # mermaid:
-    # canvas_ribbon:
-    # canvas_fluttering_ribbon:
-    # canvas_nest:
-    # lazyload:
-    # instantpage:
-    # typed:
-    # pangu:
-    # fancybox_css:
-    # fancybox:
-    # medium_zoom:
-    # snackbar_css:
-    # snackbar:
-    # activate_power_mode:
-    # fireworks:
-    # click_heart:
-    # ClickShowText:
-    # fontawesome:
-    # flickr_justified_gallery_js:
-    # flickr_justified_gallery_css:
     # aplayer_css:
     # aplayer_js:
+    # artalk_css:
+    # artalk_js:
+    # blueimp_md5:
+    # busuanzi:
+    # canvas_fluttering_ribbon:
+    # canvas_nest:
+    # canvas_ribbon:
+    # click_heart:
+    # ClickShowText:
+    # disqusjs:
+    # disqusjs_css:
+    # docsearch_css:
+    # docsearch_js:
+    # egjs_infinitegrid:
+    # fancybox:
+    # fancybox_css:
+    # fireworks:
+    # fontawesome:
+    # gitalk:
+    # gitalk_css:
+    # giscus:
+    # instantpage:
+    # instantsearch:
+    # katex:
+    # katex_copytex:
+    # lazyload:
+    # local_search:
+    # main:
+    # main_css:
+    # mathjax:
+    # medium_zoom:
+    # mermaid:
     # meting_js:
+    # pangu:
+    # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
-    # prismjs_autoloader:
-    # artalk_js:
-    # artalk_css:
-    # busuanzi:
-    # abcjs_basic_js:
+    # pjax:
+    # sharejs:
+    # sharejs_css:
+    # snackbar:
+    # snackbar_css:
+    # translate:
+    # twikoo:
+    # typed:
+    # utils:
+    # valine:
+    # waline_css:
+    # waline_js:
 ```
 
 
