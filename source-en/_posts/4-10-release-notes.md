@@ -124,7 +124,7 @@ abbrlink: 4-10-release-notes
 
 11. Changed the hover effect of headlines.
 
-## 修復
+## Fix
 1. Fixed a bug where pjax would return a 404 error when the website was in a subdirectory.
 2. Fixed a bug where the scrollbar color was not clear on small screens in dark mode.
 3. Fixed a bug where the border in the TOC was abnormal when the font size was greater than 17px.
@@ -133,7 +133,7 @@ abbrlink: 4-10-release-notes
 6. Fixed a bug where the top image effect on the homepage was delayed during scrolling.
 7. Fixed a bug where the caption of an image overlapped with the image in the note tag plugin.
 
-## 優化
+## Improvement
 1. Adjusted the left and right margins of social icons on the homepage.
 2. Optimized the code.
 3. Adjusted the position of the "back to top" arrow in the tabs tag plugin.
