@@ -2399,7 +2399,13 @@ I think I look beautiful {% inlineImg https://i.loli.net/2021/03/19/5M4jUB3ynq7e
 
 ### label
 
-> Supported in version 3.7.5 and above
+{% note warning %}
+
+Due to the rendering limitations of Hexo, there are some issues when using label tags at the beginning of paragraphs. For example, consecutive paragraphs with label tags at the beginning cannot be line-broken.
+
+It is recommended **not** to use label tags at the beginning of paragraphs.
+
+{% endnote %}
 
 Highlight the required text.
 

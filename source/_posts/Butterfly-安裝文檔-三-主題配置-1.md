@@ -2347,7 +2347,13 @@ This is my website, click the button {% btn 'https://butterfly.js.org/',Butterfl
 
 ### label
 
-> 3.7.5 及以上版本適用
+{% note warning %}
+
+由於 hexo 的渲染限制， 在段落開頭使用 label 標籤外掛會出現一些問題。例如：連續開頭使用 label 標籤外掛的段落無法換行
+
+建議 **不要** 在段落開頭使用 label 標籤外掛
+
+{% endnote %}
 
 高亮所需的文字
 
