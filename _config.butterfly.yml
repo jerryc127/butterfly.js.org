@@ -184,7 +184,7 @@ post_copyright:
 # Sponsor/reward
 reward:
   enable: true
-  text: Sponsor
+  text:
   QR_code:
     - img: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/wechat.jpg
       link:
