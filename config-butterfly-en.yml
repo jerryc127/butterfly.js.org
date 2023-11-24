@@ -21,7 +21,6 @@ menu:
     ⚔️ Theme Configuration 2: /posts/butterfly-docs-en-theme-config-two/
     ❓ Q&A: /posts/butterfly-docs-en-theme-question/
     ⚡️ Advanced Tutorials: /posts/butterfly-docs-en-advanced-tutorial/
-    ✨ Changelog: /posts/butterfly-docs-en-changelog/
   Ent||fa fa-heartbeat:
     Gallery: /Gallery/ || fas fa-images
   Messageboard: /messageboard/ || fas fa-comment-dots
@@ -667,7 +666,7 @@ category_ui: index # 留空或 index
 tag_ui: index # 留空或 index
 
 # Stretches the lines so that each line has equal width（文字向兩側對齊，對最後一行無效）
-text_align_justify: true
+text_align_justify: false
 
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)

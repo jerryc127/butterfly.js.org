@@ -676,7 +676,7 @@ category_ui: index # 留空或 index
 tag_ui: index # 留空或 index
 
 # Stretches the lines so that each line has equal width（文字向兩側對齊，對最後一行無效）
-text_align_justify: true
+text_align_justify: false
 
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)

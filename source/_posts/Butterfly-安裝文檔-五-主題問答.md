@@ -14,12 +14,6 @@ abbrlink: 98d20436
 comments: false
 ---
 
-{% note blue 'fas fa-bullhorn' %}
-
- 🦋  Butterfly 已經更新到 [4.10](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.10)
-
-{% endnote %}
-
 {% note green 'fas fa-rocket' %}
 
  📚  文檔目錄
