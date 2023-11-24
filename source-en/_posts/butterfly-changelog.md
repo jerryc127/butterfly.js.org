@@ -1,5 +1,5 @@
 ---
-title: Butterfly document - Changelog
+title: Butterfly Changelog
 comments: false
 date: 2023-07-01 19:20:56
 tags:
@@ -25,17 +25,7 @@ This article is translated from ChatGPT.
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖 This tutorial was last updated on June 6, 2023, and the content is based on the latest **stable version**.
-
- 🦋 Butterfly has been updated to [4.9.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.9.0).
-
-{% endnote %}
-
-{% note green 'fas fa-rocket' %}
-
- 📚  Table of Contents
-
-{% post_link butterfly-docs-en-1-get-started ' 🚀 Get Started' %} - {% post_link butterfly-docs-en-2-theme-pages ' 📑 Theme Pages' %} - {% post_link butterfly-docs-en-3-theme-config ' 📌 Theme Configuration Part 1' %} - {% post_link butterfly-docs-en-4-theme-config-2 ' ⚔️ Theme Configuration Part 2' %} - {% post_link butterfly-docs-en-5-theme-q-a ' ❓ Q&A' %} - {% post_link butterfly-docs-en-6-advanced-tutorial ' ⚡️ Advanced Tutorials' %} - {% post_link butterfly-docs-en-7-changelog ' ✨ Changelog' %}
+The release notes for versions 4.9.0 and later will be published as separate articles. Please check the [Release Notes](/en/categories/Release-Notes/) for more information.
 
 {% endnote %}
 

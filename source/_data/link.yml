@@ -296,8 +296,8 @@
       avatar: https://blog.cpen.top/img/avatar.jpg
       descr: 这是一个有趣的博客
     - name: 神奇的妙妙屋
-      link: https://ttie.pages.dev/
-      avatar: https://ttie.pages.dev/img/avatar.jpg
+      link: https://blog.ttiee.tech/
+      avatar: https://blog.ttiee.tech/img/avatar.jpg
       descr: 追风赶月莫停留，平芜尽处是春山
     - name: Xlenco
       link: https://xlenco.eu.org/
@@ -375,3 +375,11 @@
       link: https://threewood1.top/
       avatar: https://threewood1.top/img/myPic.png
       descr: 生命不息，学习不止，大胆地向前冲吧！
+    - name: 逝水无痕の博客
+      link: https://hexo.zyjblogs.cn
+      avatar: https://zyjblogs.cn/logo.jpg
+      descr: 给时光以生命，给岁月以文明
+    - name: 极客猴
+      link: https://jikehou.cn/
+      avatar: https://img.jikehou.cn/config/avatar.png
+      descr: 猴哥的个人博客，把读书当做事业的前程序员，记录我的成长

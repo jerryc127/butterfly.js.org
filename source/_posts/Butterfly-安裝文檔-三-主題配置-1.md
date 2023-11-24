@@ -17,9 +17,7 @@ abcjs: true
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2023 年 06 月 06 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
-
- 🦋  Butterfly 已經更新到 [4.9.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.9.0)
+ 🦋  Butterfly 已經更新到 [4.10](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.10)
 
 {% endnote %}
 
@@ -27,7 +25,7 @@ abcjs: true
 
  📚  文檔目錄
 
-{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主題頁面 ' 📑 主題頁面' %} - {% post_link Butterfly-安裝文檔-三-主題配置-1 ' 📌 主題配置-1' %} - {% post_link Butterfly-安裝文檔-四-主題配置-2 ' ⚔️ 主題配置-2' %} - {% post_link Butterfly-安裝文檔-五-主題問答 ' ❓ 主題問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文檔-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
+{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主題頁面 ' 📑 主題頁面' %} - {% post_link Butterfly-安裝文檔-三-主題配置-1 ' 📌 主題配置-1' %} - {% post_link Butterfly-安裝文檔-四-主題配置-2 ' ⚔️ 主題配置-2' %} - {% post_link Butterfly-安裝文檔-五-主題問答 ' ❓ 主題問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %}
 
 {% endnote %}
 
@@ -558,13 +556,11 @@ index_post_content:
 
 ```yaml
 # anchor
-# when you scroll in post , the url will update according to header id.
 anchor:
-  button:
-    enable: false
-    always_show: false
-    icon: # the unicode value of Font Awesome icon, such as '\3423'
-  auto_update: false # when you scroll in post, the URL will update according to header id.
+  # when you scroll, the URL will update according to header id.
+  auto_update: false
+  # Click the headline to scroll and update the anchor
+  click_to_scroll: false
 ```
 
 ## 圖片描述
@@ -667,6 +663,7 @@ link可以不寫，會默認為圖片的鏈接。
 ```yaml
 reward:
   enable: true
+  text:
   QR_code:
     - img: /img/wechat.jpg
       link:
@@ -908,6 +905,10 @@ aside:
     post_count: true
     last_push_date: true
     sort_order: # Don't modify the setting unless you know how it works
+  card_post_series:
+    enable: true
+    orderBy: 'date' # Order by title or date
+    order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
 ```
 
 > position: left
@@ -2346,7 +2347,13 @@ This is my website, click the button {% btn 'https://butterfly.js.org/',Butterfl
 
 ### label
 
-> 3.7.5 及以上版本適用
+{% note warning %}
+
+由於 hexo 的渲染限制， 在段落開頭使用 label 標籤外掛會出現一些問題。例如：連續開頭使用 label 標籤外掛的段落無法換行
+
+建議 **不要** 在段落開頭使用 label 標籤外掛
+
+{% endnote %}
 
 高亮所需的文字
 
@@ -2606,5 +2613,40 @@ w:Rock-y did-nt like that
 {% endscore %}
 
 
+
+### series 系列文章
+
+在頁面上顯示系列文章
+
+修改 `主題配置文件`
+
+```yaml
+series:
+   enable: true
+   orderBy: 'title' # Order by title or date
+   order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
+   number: true
+```
+
+寫法：
+
+```markdown
+{% series %}
+{% series [series name] %}
+```
+
+在文章的 `front-matter` 上添加參數 series，並給與一個標識
+
+使用此標簽外掛，會把相同標識的文章以列表的形式展示
+
+如果不寫 series 標識，則默認為你使用此標簽外掛所在的文章的 series 標識
+
+> Demo
+
+```markdown
+{% series markdown %}
+```
+
+![](https://oss.012700.xyz/butterfly/2023/10/butterfly-series.png)
 
 {% btn '/posts/ceeb73f/',⚔️ Butterfly-安裝文檔-四-主題配置-2,far fa-hand-point-right,block red right larger %}

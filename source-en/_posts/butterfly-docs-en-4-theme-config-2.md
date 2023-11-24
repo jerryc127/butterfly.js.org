@@ -24,9 +24,7 @@ This article is translated from ChatGPT.
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖 This tutorial was last updated on June 6, 2023, and the content is based on the latest **stable version**.
-
- 🦋 Butterfly has been updated to [4.9.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.9.0).
+ 🦋 Butterfly has been updated to [4.10](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.10).
 
 {% endnote %}
 
@@ -34,7 +32,7 @@ This article is translated from ChatGPT.
 
  📚  Table of Contents
 
-{% post_link butterfly-docs-en-1-get-started ' 🚀 Get Started' %} - {% post_link butterfly-docs-en-2-theme-pages ' 📑 Theme Pages' %} - {% post_link butterfly-docs-en-3-theme-config ' 📌 Theme Configuration Part 1' %} - {% post_link butterfly-docs-en-4-theme-config-2 ' ⚔️ Theme Configuration Part 2' %} - {% post_link butterfly-docs-en-5-theme-q-a ' ❓ Q&A' %} - {% post_link butterfly-docs-en-6-advanced-tutorial ' ⚡️ Advanced Tutorials' %} - {% post_link butterfly-docs-en-7-changelog ' ✨ Changelog' %}
+{% post_link butterfly-docs-en-1-get-started ' 🚀 Get Started' %} - {% post_link butterfly-docs-en-2-theme-pages ' 📑 Theme Pages' %} - {% post_link butterfly-docs-en-3-theme-config ' 📌 Theme Configuration Part 1' %} - {% post_link butterfly-docs-en-4-theme-config-2 ' ⚔️ Theme Configuration Part 2' %} - {% post_link butterfly-docs-en-5-theme-q-a ' ❓ Q&A' %} - {% post_link butterfly-docs-en-6-advanced-tutorial ' ⚡️ Advanced Tutorials' %}
 
 {% endnote %}
 
@@ -269,23 +267,6 @@ docsearch:
 > You can only choose one sharing service provider.
 
 {% tabs share %}
-<!-- tab AddThis -->
-
-> Visit the [AddThis](https://www.addthis.com/) official website
-> Find your pub-id
-
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addthis.jpg)
-
-Modify the `theme configuration file`
-
-```yaml
-addThis:
-  enable: true # or false
-  pubid: your-pub-id
-```
-
-<!-- endtab -->
-
 <!-- tab Sharejs -->
 If you are not familiar with [Sharejs](https://github.com/overtrue/share.js/), take a look at its description.
 
@@ -681,7 +662,7 @@ chat_hide_show: true
 ```
 
 {% note info %}
-If using the built-in chat button of the tools, the button's position may overlap with the bottom right corner icon. In that case, you can adjust the position using the `rightside-bottom` configuration.
+If using the built-in chat button of the tools, the button's position may overlap with the bottom right corner icon. In that case, you can adjust the position using the `rightside_bottom` configuration.
 {% endnote %}
 <!-- endtab -->
 
@@ -991,6 +972,23 @@ index_top_img_height: 400px
 This will change the top image height to 400 pixels.
 
 ![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-top-img-setting.png)
+
+### Text Alignment Justification
+
+You can set the text to be aligned on both sides, except for the last line.
+
+```markdown
+# Stretches the lines so that each line has equal width（文字向兩側對齊，對最後一行無效）
+text_align_justify: true
+```
+
+> text_align_justify: false
+
+![](https://oss.012700.xyz/butterfly/2023/10/text-align-justify-false.png)
+
+> text_align_justify: true
+
+![](https://oss.012700.xyz/butterfly/2023/10/text-align-justify-true.png)
 
 ### Website Background
 
@@ -1623,62 +1621,62 @@ CDN:
   custom_format:
 
   option:
-    # main_css:
-    # main:
-    # utils:
-    # translate:
-    # local_search:
+    # abcjs_basic_js:
+    # activate_power_mode:
     # algolia_js:
     # algolia_search:
-    # instantsearch:
-    # docsearch_js:
-    # docsearch_css:
-    # pjax:
-    # gitalk:
-    # gitalk_css:
-    # blueimp_md5:
-    # valine:
-    # disqusjs:
-    # disqusjs_css:
-    # twikoo:
-    # waline_js:
-    # waline_css:
-    # giscus:
-    # sharejs:
-    # sharejs_css:
-    # mathjax:
-    # katex:
-    # katex_copytex:
-    # mermaid:
-    # canvas_ribbon:
-    # canvas_fluttering_ribbon:
-    # canvas_nest:
-    # lazyload:
-    # instantpage:
-    # typed:
-    # pangu:
-    # fancybox_css:
-    # fancybox:
-    # medium_zoom:
-    # snackbar_css:
-    # snackbar:
-    # activate_power_mode:
-    # fireworks:
-    # click_heart:
-    # ClickShowText:
-    # fontawesome:
-    # flickr_justified_gallery_js:
-    # flickr_justified_gallery_css:
     # aplayer_css:
     # aplayer_js:
+    # artalk_css:
+    # artalk_js:
+    # blueimp_md5:
+    # busuanzi:
+    # canvas_fluttering_ribbon:
+    # canvas_nest:
+    # canvas_ribbon:
+    # click_heart:
+    # ClickShowText:
+    # disqusjs:
+    # disqusjs_css:
+    # docsearch_css:
+    # docsearch_js:
+    # egjs_infinitegrid:
+    # fancybox:
+    # fancybox_css:
+    # fireworks:
+    # fontawesome:
+    # gitalk:
+    # gitalk_css:
+    # giscus:
+    # instantpage:
+    # instantsearch:
+    # katex:
+    # katex_copytex:
+    # lazyload:
+    # local_search:
+    # main:
+    # main_css:
+    # mathjax:
+    # medium_zoom:
+    # mermaid:
     # meting_js:
+    # pangu:
+    # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
-    # prismjs_autoloader:
-    # artalk_js:
-    # artalk_css:
-    # busuanzi:
-    # abcjs_basic_js:
+    # pjax:
+    # sharejs:
+    # sharejs_css:
+    # snackbar:
+    # snackbar_css:
+    # translate:
+    # twikoo:
+    # typed:
+    # utils:
+    # valine:
+    # waline_css:
+    # waline_js:
+
 ```
 
 | Parameter            | Explanation                                                   |

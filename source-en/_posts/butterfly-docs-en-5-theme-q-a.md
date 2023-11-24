@@ -24,9 +24,7 @@ This article is translated from ChatGPT.
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖 This tutorial was last updated on June 6, 2023, and the content is based on the latest **stable version**.
-
- 🦋 Butterfly has been updated to [4.9.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.9.0).
+ 🦋 Butterfly has been updated to [4.10](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.10).
 
 {% endnote %}
 
@@ -34,7 +32,7 @@ This article is translated from ChatGPT.
 
  📚  Table of Contents
 
-{% post_link butterfly-docs-en-1-get-started ' 🚀 Get Started' %} - {% post_link butterfly-docs-en-2-theme-pages ' 📑 Theme Pages' %} - {% post_link butterfly-docs-en-3-theme-config ' 📌 Theme Configuration Part 1' %} - {% post_link butterfly-docs-en-4-theme-config-2 ' ⚔️ Theme Configuration Part 2' %} - {% post_link butterfly-docs-en-5-theme-q-a ' ❓ Q&A' %} - {% post_link butterfly-docs-en-6-advanced-tutorial ' ⚡️ Advanced Tutorials' %} - {% post_link butterfly-docs-en-7-changelog ' ✨ Changelog' %}
+{% post_link butterfly-docs-en-1-get-started ' 🚀 Get Started' %} - {% post_link butterfly-docs-en-2-theme-pages ' 📑 Theme Pages' %} - {% post_link butterfly-docs-en-3-theme-config ' 📌 Theme Configuration Part 1' %} - {% post_link butterfly-docs-en-4-theme-config-2 ' ⚔️ Theme Configuration Part 2' %} - {% post_link butterfly-docs-en-5-theme-q-a ' ❓ Q&A' %} - {% post_link butterfly-docs-en-6-advanced-tutorial ' ⚡️ Advanced Tutorials' %}
 
 {% endnote %}
 

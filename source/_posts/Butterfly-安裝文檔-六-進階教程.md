@@ -16,9 +16,7 @@ comments: false
 
 {% note blue 'fas fa-bullhorn' %}
 
- 📖  本教程更新於 2023 年 06 月 06 日，教程的內容針對最新**穩定版**而更新（如果你是舊版，教程會有些出入，請留意）
-
- 🦋  Butterfly 已經更新到 [4.9.0](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.9.0)
+ 🦋  Butterfly 已經更新到 [4.10](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.10)
 
 {% endnote %}
 
@@ -26,7 +24,7 @@ comments: false
 
  📚  文檔目錄
 
-{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主題頁面 ' 📑 主題頁面' %} - {% post_link Butterfly-安裝文檔-三-主題配置-1 ' 📌 主題配置-1' %} - {% post_link Butterfly-安裝文檔-四-主題配置-2 ' ⚔️ 主題配置-2' %} - {% post_link Butterfly-安裝文檔-五-主題問答 ' ❓ 主題問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文檔-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
+{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主題頁面 ' 📑 主題頁面' %} - {% post_link Butterfly-安裝文檔-三-主題配置-1 ' 📌 主題配置-1' %} - {% post_link Butterfly-安裝文檔-四-主題配置-2 ' ⚔️ 主題配置-2' %} - {% post_link Butterfly-安裝文檔-五-主題問答 ' ❓ 主題問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %}
 
 {% endnote %}
 
@@ -227,5 +225,3 @@ Butterfly主題需要使用到很多圖片。如果圖片太大，會嚴重拖�
 - [hexo-generator-baidu-sitemap](https://github.com/coneycode/hexo-generator-baidu-sitemap)
 
   看名字就知道，是專門為百度生成sitemap的插件
-
-{% btn '/posts/198a4240/',✨ Butterfly 安裝文檔(七) 更新日誌,far fa-hand-point-right,block purple right larger %}
