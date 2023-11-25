@@ -192,9 +192,9 @@ reward:
     - img: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/alipay.jpg
       link:
       text: 支付寶
-    - img: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/alipayhk.jpg
-      link:
-      text: 支付寶香港
+    - img: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/stripe.png
+      link: https://buy.stripe.com/3cs6rP6YA91sbbG5kk
+      text: Stripe
 
 # Post edit
 # Easily browse and edit blog source code online.
