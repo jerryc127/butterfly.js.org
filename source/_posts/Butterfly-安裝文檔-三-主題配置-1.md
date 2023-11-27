@@ -386,7 +386,7 @@ avatar:
 並不推薦為每個 tag 和每個 category 都配置不同的頂部圖，因為配置太多會拖慢生成速度
 
 ```yaml
-tag_per_img：
+tag_per_img:
   aplayer: https://xxxxxx.png
   android: ddddddd.png
   
