@@ -297,6 +297,7 @@ aside:
     sort_order: # Don't modify the setting unless you know how it works
   card_post_series:
     enable: false
+    series_title: false # The title shows the series name
     orderBy: 'date' # Order by title or date
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
 
@@ -973,7 +974,7 @@ CDN:
   third_party_provider: custom
 
   # Add version number to url, true or false
-  version: false
+  version: true
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
@@ -1033,5 +1034,3 @@ CDN:
     # typed:
     # utils:
     # valine:
-    waline_css: https://jsd.012700.xyz/npm/@waline/client@2/dist/waline.css
-    waline_js: https://jsd.012700.xyz/npm/@waline/client@2/dist/waline.min.js
