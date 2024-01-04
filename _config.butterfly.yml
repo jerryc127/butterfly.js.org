@@ -978,7 +978,7 @@ CDN:
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://jsd.012700.xyz/npm/${name}@latest/${min_file}
+  custom_format: https://jsd.012700.xyz/npm/${name}@${version}/${min_file}
 
   option:
     # abcjs_basic_js:
