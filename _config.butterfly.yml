@@ -1034,3 +1034,5 @@ CDN:
     # typed:
     # utils:
     # valine:
+    waline_css: https://jsd.012700.xyz/npm/@waline/client@latest/dist/waline.css
+    waline_js: https://jsd.012700.xyz/npm/@waline/client@latest/dist/waline.umd.min.js
