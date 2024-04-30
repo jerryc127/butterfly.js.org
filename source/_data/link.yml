@@ -35,10 +35,6 @@
       link: https://blog.pai233.top/
       descr: Write Down My Life.
       avatar: https://blog.pai233.top/img/avatar.jpg  
-    - name: SerMs
-      link: https://blog.serms.top
-      avatar: https://cdn1.tianli0.top/gh/Ser-MingShao/HexoPublicStaiciImg/serms/202303131726584.png
-      descr: 东风吹破少年梦,从此再无赤子心~
     - name: hermoso
       link: https://imszz.com
       avatar: https://fastly.jsdelivr.net/gh/weilain/cdn-photo/Photo/avatar.jpg
@@ -143,10 +139,6 @@
       link: https://www.antmoe.com
       avatar: https://fastly.jsdelivr.net/npm/kang-static@latest/avatar.jpg
       descr: 一个收藏回忆与分享技术的地方！
-    - name: Black Flies
-      link: https://www.yyyzyyyz.cn/
-      avatar: https://fastly.jsdelivr.net/gh/hiltay/imgcdn/img/202111191951780.JPG
-      descr: When nothing goes right,just go left.
     - name: 梦の小窝
       link: https://renm.cc
       avatar: https://fastly.jsdelivr.net/gh/renmcc/renmcc@main/img/avatar2.webp
@@ -163,14 +155,6 @@
       link: https://www.wotemo.com
       avatar: https://www.wotemo.com/img/wotemo.jpg
       descr: 似此星辰非昨夜，为谁风露立中宵。
-    - name: 一人の境
-      link: https://blog.holic-x.com/wv-blog
-      avatar: https://blog.holic-x.com/img/avatar.jpg
-      descr: Carpe Diem ~
-    - name: Gahotx
-      link: https://gahotx.cn/
-      avatar: https://pub.gahotx.cn/photo/cat.jpg
-      descr: Don't repeat yourself
     - name: 晴天的博客
       link: https://qtspace.cn/
       avatar: https://qtspace.cn/img/avatar.jpg
@@ -208,13 +192,9 @@
       avatar: https://q1.qlogo.cn/g?b=qq&nk=553344777&s=640
       descr: 进一寸有进一寸的欢喜。
     - name: ANINEGの小屋
-      link: https://anineg.space/
-      avatar: https://anineg.space/img/avatar.png
+      link: https://blog.anineg.space/
+      avatar: https://blog.anineg.space/img/avatar.png
       descr: 欢迎光临ANINEGの小屋!
-    - name: Caps
-      link: https://www.loadcaps.com/
-      avatar: https://img.acdn.run/img/2/2022/06/09/o2grp2-2.jpeg
-      descr: 耐不住寂寞 成不了大事
     - name: SoulReader的小站
       link: https://lxx1997.github.io/
       avatar: https://lxx1997.github.io/image/avatar.png
@@ -247,10 +227,6 @@
       link: https://tokiame.cn/
       avatar: https://tokiame.cn/img/avatar.jpg
       descr: 自我主义，有何不可
-    - name: Trrrrw
-      link: https://www.trrw.tech/
-      avatar: https://cdn.staticaly.com/gh/Trrrrw/image-hosting@master/images/Avatar.6a6hwam389o0.webp
-      descr: 人与人的羁绊是真正的力量之源
     - name: blitheZhu
       link: https://blithezhu.top/
       avatar: https://blithezhu.top/img/icon.jpg
@@ -299,22 +275,10 @@
       link: https://blog.ttiee.tech/
       avatar: https://blog.ttiee.tech/img/avatar.jpg
       descr: 追风赶月莫停留，平芜尽处是春山
-    - name: Xlenco
-      link: https://xlenco.eu.org/
-      avatar: https://www.helloimg.com/images/2022/12/31/oCbPAc.webp
-      descr: 最好的地方,是没去过的地方。最好的时光，是回不来的时光。
-    - name: Shylock
-      link: https://shylockkai.gitee.io/
-      avatar: https://s2.loli.net/2023/02/08/2W9dTRK64YFZEiu.jpg
-      descr: 不求有功于社稷，但求无过于本心。
     - name: 老孙博客
       link: https://blog.sunpeiwen.com
       avatar: https://s2.loli.net/2023/03/31/zsbdUHyfBqF3lnN.png
       descr: 资深网民孙先生。
-    - name: 天涯海阁
-      link: https://www.kcyln.xyz
-      avatar: https://cdn.jsdelivr.net/gh/kcyln/ImageHosting@latest/2020/12/07/9a938caffcb1a6968eab7f8e0cd6857b.png
-      descr: 海内存知己，天涯若比邻。
     - name: NX の 博客
       link: https://www.nickxu.top/
       avatar: https://www.nickxu.top/static/favicon.jpg
@@ -351,10 +315,6 @@
       link: https://luoyuanxiang.top/
       avatar: https://gcore.jsdelivr.net/gh/luoyuanxiang/images@master/202308051650041.png
       descr: 人生在世，及时行乐
-    - name: 海棠
-      link: https://hong-king.github.io/
-      avatar: https://hong-king.github.io/img/man.png
-      descr: 海棠，花未眠
     - name: MGodmonkeyの世界
       link: https://www.mgodmonkey.cn
       descr: 分享我的科研项目笔记

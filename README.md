@@ -5,7 +5,7 @@
 歡迎 PR 完善文件
 ### 提交網站到 `示例`
 
-1. 確保你使用 Butterfly 主題
+1. 確保你使用 Butterfly 主題 （魔改太多的可能不會合並）
 2. 點擊這個[鏈接](https://github.com/jerryc127/butterfly.js.org/edit/main/source/_data/link.yml)
 3. 按要求新增內容(請添加在**末尾**)
   ```yaml
