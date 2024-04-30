@@ -79,10 +79,10 @@
       link: https://www.hin.cool
       avatar: https://hin.cool/favicon.ico
       descr: 偏爱不务正业
-    - name: 沐の空间
-      link: https://muspace.top
-      avatar: https://muspace.top/img/favicon.png
-      descr: 缘，妙不可言
+    - name: 雪萌天文台
+      link: https://blog.snowy.moe
+      avatar: https://img.snowy.moe/head.png
+      descr: 发现巷子里的那颗星星
     - name: Xujiayao's Blog
       link: https://blog.xujiayao.top/
       avatar: https://blog.xujiayao.top/file/avatar.png
@@ -324,9 +324,9 @@
       avatar: https://winstonli.netlify.app/img/dadaguai.png
       descr: 饮一杯手磨Java咖啡~
     - name: Lee's Blog
-      link: https://blog.happylee.cn/
-      avatar: https://blog.happylee.cn/img/avatar.jpg
-      descr: 日月光华，旦复旦兮
+      link: https://legacy.happylee.cn/
+      avatar: https://legacy.happylee.cn/img/avatar.jpg
+      descr: 极限犹可突破，巅峰亦不可止
     - name: 咬一口激动的鱼
       link: https://tabotef134.top/
       avatar: https://q.qlogo.cn/g?b=qq&nk=2056517872&s=0
@@ -356,7 +356,7 @@
       avatar: https://hong-king.github.io/img/man.png
       descr: 海棠，花未眠
     - name: MGodmonkeyの世界
-      link: https://www.mgodmonkey.love
+      link: https://www.mgodmonkey.cn
       descr: 分享我的科研项目笔记
       avatar: https://mybog.s3.bitiful.net/imgs/head.jpg
     - name: Pig Cat - Full-Stack, Android, AI
@@ -391,3 +391,27 @@
       link: https://gallen881.github.io/
       avatar: https://gallen881.github.io/img/izumikayato.jpeg
       descr: 蓋侖堆放文章的角落
+    - name: W1ndysの小屋
+      link: https://blog.w1ndys.top/
+      avatar: http://blog.w1ndys.top/img/logo/700/whiten.png#/
+      descr: 欲戴皇冠，必承其重。
+    - name: QiuSYan's Blog
+      link: https://blog.qiusyan.top
+      avatar: https://blog.qiusyan.top/img/avatar.jpg
+      descr: 我来到，我看见，我记录
+    - name: 樱纱音阁
+      link: https://kc.fog.moe/
+      avatar: https://file2.fogmoe.top/blog/avatar.png
+      descr: Kc's Blog - FOGMOE
+    - name: 杂烩饭
+      link: https://zahui.fan
+      avatar: https://static.zahui.fan/public/boob.svg
+      descr: 张理坤的博客 - 运维技术分享
+    - name: CloudBillow
+      link: https://cloudbillow.cn/
+      avatar: https://cloudbillow.cn/img/setting/avatar.jpg
+      descr: 天接云涛连晓雾，星河欲转千帆舞。
+    - name: 被梦
+      link: https://cc1204.cn/
+      avatar: https://i.postimg.cc/kMkqZ7ym/Wechat-IMG95.jpg
+      descr: 好好学习，天天向上
