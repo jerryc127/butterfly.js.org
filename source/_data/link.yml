@@ -83,10 +83,6 @@
       link: https://blog.xujiayao.top/
       avatar: https://blog.xujiayao.top/file/avatar.png
       descr: 没有个性，如何签名？
-    - name: Eurkon
-      link: https://blog.eurkon.com
-      avatar: https://blog.eurkon.com/images/user/avatar.jpg
-      descr: 不只是代码的搬运工
     - name: 贰猹的小窝
       link: https://noionion.top/
       avatar: https://pub-noionion.oss-cn-hangzhou.aliyuncs.com/head.jpg
@@ -135,10 +131,6 @@
       link: https://youngjuning.js.org
       avatar: https://fastly.jsdelivr.net/gh/youngjuning/images/202109211729538.png
       descr: 怕什么真理无穷，进一寸有一寸的欢喜。
-    - name: 小康博客
-      link: https://www.antmoe.com
-      avatar: https://fastly.jsdelivr.net/npm/kang-static@latest/avatar.jpg
-      descr: 一个收藏回忆与分享技术的地方！
     - name: 梦の小窝
       link: https://renm.cc
       avatar: https://fastly.jsdelivr.net/gh/renmcc/renmcc@main/img/avatar2.webp
@@ -179,10 +171,6 @@
       link: https://zhaoxiaobin.net
       avatar: https://zhaoxiaobin.net/pic/static/avatar.png
       descr: 个人技术博客
-    - name: GuoDong の Blog
-      link: https://tyxiumud.github.io/
-      avatar: https://fastly.jsdelivr.net/gh/tyxiumud/blog.img/avatar.png
-      descr: 开心最重要啦~
     - name: CasecoRI 的小站
       link: https://www.casecori.top/
       avatar: https://cdn.casecori.top/gh/cystee/om/favicon.png
@@ -207,10 +195,6 @@
       link: https://gonglja.github.io/
       avatar: https://cdn.jsdelivr.net/gh/Gonglja/imgur/img/202204111228921.png
       descr: Keep Coding.
-    - name: 北梦的个人博客
-      link: https://www.furacas.com
-      avatar: https://www.furacas.com/img/avatar.jpg
-      descr: Happy every day.
     - name: Aaki's Notes
       link: https://mikan.bangdream.moe
       avatar: https://gravatar.loli.net/avatar/da416f8013b9815f1e1c81754fffd701?s=300
@@ -262,11 +246,7 @@
     - name: NingNing の 個人空間
       link: https://ningning.netlify.app
       avatar: https://ningning.netlify.app/img/avatar.png
-      descr: 你今天也比誰都可愛 💜      
-    - name: 心流
-      link: https://blog.panghai.top
-      avatar: https://blog.panghai.top/img/avatar.png
-      descr: 保持谨慎，保持乐观
+      descr: 你今天也比誰都可愛 💜
     - name: Mycpen
       link: https://blog.cpen.top/
       avatar: https://blog.cpen.top/img/avatar.jpg
@@ -327,10 +307,6 @@
       link: https://garymk.cn/
       avatar: https://wx.qlogo.cn/mmhead/Q3auHgzwzM40NV46MrdfnryFg6EIMAlt8uO7tfbtbs6XH9W2Z1Opfw/0
       descr: 三分天注定，七分靠打拼，我做十三分。
-    - name: 宁静至远，博雅多通
-      link: https://jhfs.fun/
-      avatar: https://jhfs.fun/img/avatar.png
-      descr: 记录和分享一些技术学习内容，感谢光临！
     - name: THREEWOOD'Blog
       link: https://threewood1.top/
       avatar: https://threewood1.top/img/myPic.png

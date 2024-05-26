@@ -436,7 +436,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: Waline,Disqus
+  use: Artalk,Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -546,8 +546,8 @@ remark42:
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
 artalk:
-  server:
-  site:
+  server: https://artalk.crazywong.com
+  site: Butterfly-Docs
   visitor: false
   option:
 
@@ -974,11 +974,11 @@ CDN:
   third_party_provider: custom
 
   # Add version number to url, true or false
-  version: true
+  version: false
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://jsd.012700.xyz/npm/${name}@${version}/${min_file}
+  custom_format: https://jsd.012700.xyz/npm/${name}/${min_file} # https://jsd.012700.xyz/npm/${name}@${version}/${min_file}
 
   option:
     # abcjs_basic_js:

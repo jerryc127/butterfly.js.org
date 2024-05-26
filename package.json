@@ -10,12 +10,12 @@
     "en": "hexo clean && hexo g && hexo g --config config-en.yml -f && hexo s"
   },
   "hexo": {
-    "version": "7.1.1"
+    "version": "7.2.0"
   },
   "dependencies": {
     "gulp-html-minifier-terser": "^7.1.0",
     "gulp-htmlclean": "^2.7.22",
-    "gulp-imagemin": "^9.0.0",
+    "gulp-imagemin": "^9.1.0",
     "hexo": "^7.2.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-filter-nofollow": "^2.0.2",
