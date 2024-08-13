@@ -145,7 +145,7 @@ index_post_content:
 # anchor
 anchor:
   # when you scroll, the URL will update according to header id.
-  auto_update: true
+  auto_update: false
   # Click the headline to scroll and update the anchor
   click_to_scroll: true
 
