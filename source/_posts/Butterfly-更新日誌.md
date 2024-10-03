@@ -9,7 +9,7 @@ tags:
 categories: Docs文檔
 keywords: 'hexo,butterfly,主題,doc,教程,文檔'
 description: Butterfly安裝文檔-更新日誌
-cover: https://jsd.012700.xyz/gh/jerryc127/CDN/img/Butterfly-docs-07-cover.png
+cover: https://oss.012700.xyz/butterfly/2024/09/Butterfly-docs-07-cover.png
 abbrlink: 198a4240
 toc: false
 comments: false
@@ -23,7 +23,7 @@ comments: false
 
 {% note orange 'fas fa-magic' %}
 
-你可以通過右下角的 **簡** 按鈕切換為簡體顯示 
+你可以通過右下角的 **簡** 按鈕切換為簡體顯示
 
 {% endnote %}
 
@@ -62,22 +62,18 @@ comments: false
 
 1. 修復 行內 mathjax 出現滾動條的 bug
 2. 修復當 top_img 為顏色時， 閲讀模式的頂部依舊顯示顏色的 bug
-4. 修復配置 subtitle 的 sub 沒有生效的 bug
+3. 修復配置 subtitle 的 sub 沒有生效的 bug
 
 ### Improvement
 
 1. 更新 hexo-renderer-stylus
-2.  hr 的美化優化，避免影響第三方插件佈局
+2. hr 的美化優化，避免影響第三方插件佈局
 3. 優化 mediumZoom
 4. 首頁微調
 5. 當配置了最新評論時，沒有配置評論時，不會再報錯
 6. tidio,crisp,daovoice,messenger 和 chatra 代碼優化
 
-
-
 {% endhideToggle %}
-
-
 
 {% hideToggle 4.8.5 (2023/05/09) %}
 
@@ -99,8 +95,6 @@ comments: false
 1. 代碼和性能優化
 2. artalk 獲取評論數，由 LoadCountWidget 改為 loadCountWidget
 
-
-
 {% endhideToggle %}
 
 {% hideToggle 4.8.1 (2023/04/10) %}
@@ -112,8 +106,6 @@ comments: false
 1. 修復 CDN 的 internal_provider 設為 jsdelivr 時，主題的 js 無法加載的 bug
 
 {% endhideToggle %}
-
-
 
 {% hideToggle 4.8.0 (2023/04/10) %}
 
@@ -130,8 +122,6 @@ comments: false
    -  enable: false
    -  room:
    ```
-
-   
 
 2. CDN option 部分參數名字修改
 
@@ -166,8 +156,6 @@ comments: false
    +  per_page: true
    ```
 
-   
-
 3. 適配 typed.js 新版本
 
 4. Algolia 搜索，點擊文章內容也會跳轉到相應頁面
@@ -198,7 +186,7 @@ comments: false
    ```diff
    CDN:
      option:
-   +  	giscus: xxxxx
+   +   giscus: xxxxx
    ```
 
 10. 新增自定義深淺模式切換時間
@@ -229,8 +217,6 @@ comments: false
 6. 代碼優化
 
 {% endhideToggle %}
-
-
 
 {% hideToggle 4.7.0 (2023/02/20) %}
 
@@ -284,8 +270,6 @@ comments: false
 
 {% endhideToggle %}
 
-
-
 {% hideToggle 4.6.1 (2023/01/18) %}
 
 ## hideToggle 4.6.1 (2023/01/18)
@@ -321,8 +305,6 @@ comments: false
 
 {% endhideToggle %}
 
-
-
 {% hideToggle 4.6.0 (2023/01/15) %}
 
 ## 4.6.0 (2023/01/15)
@@ -335,7 +317,7 @@ comments: false
 
 ### Feature
 
-1. toc可設置是否顯示預覽進度 
+1. toc可設置是否顯示預覽進度
 
    ```diff
    toc:
@@ -368,16 +350,16 @@ comments: false
 
 8. 更新 plugins.yml
 
-###  Fix
+### Fix
 
 1. 修復 hexo-log 讀取不到的 bug #1102
 2. 修復使用本地搜索時，輸入特殊符號沒有顯示結果的 bug
 3. 修復頂部圖和 footer 配置帶有/的顏色參數時，無法顯示顏色的 bug
 4. 修復閲讀模式下，代碼塊的背景顏色仍顯示彩色背景的 bug (自定義代碼塊) #1139
 5. 修復開啟懶加載後，再使用 flink_url 的方式引入友鏈數據，友鏈頭像有可能不顯示的 bug #1146
-6. 修復 pjax 下， waline js 會重複加載的 bug 
+6. 修復 pjax 下， waline js 會重複加載的 bug
 
-###  Improvement
+### Improvement
 
 1. 日期設置相對日期時，文章的日期格式和最新評論的日期格式統一為 年月日
 2. 修復使用本地搜索時，輸入特殊符號沒有顯示結果的 bug
@@ -398,22 +380,20 @@ comments: false
    -cnzz_analytics:
    ```
 
-   
-
 {% endhideToggle %}
-
-
 
 {% hideToggle 4.5.1 (2022/10/31) %}
 
 ## Fix
+
 1. 修復 mathjax 行內公式 導致行距過密的 bug
 
 2. 修復更新 mathjax 新版本後，mathjax 會溢出屏幕而不是顯示滾動條的 bug
 
-## Improvement:
-1.  避免沒更新主題文件而導致 anchor 配置報錯的問題
-2.  更新 plugins.yml
+## Improvement
+
+1. 避免沒更新主題文件而導致 anchor 配置報錯的問題
+2. 更新 plugins.yml
 {% endhideToggle %}
 
 {% hideToggle 4.5.0 (2022/10/21) %}
@@ -479,8 +459,6 @@ comments: false
 
 {% endhideToggle %}
 
-
-
 {% hideToggle 4.4.0 (2022/08/18) %}
 
 ## 4.4.0 (2022/08/18)
@@ -505,6 +483,7 @@ comments: false
    +  visitor: false
    +  option:
    ```
+
 3. 首頁打字效果增加參數配置
 
    ```diff
@@ -518,10 +497,10 @@ comments: false
    ```
 
 ### Fix
+
 1. 修復開啟 archor 後， facebook 評論加載不正確的 bug
 2. 修復 facebook 評論數無法加載的 bug
 3. 修復子目錄 hover 沒有圓角的 bug #965
-
 
 {% endhideToggle %}
 
@@ -530,9 +509,9 @@ comments: false
 ## 4.3.1 (2022/06/27)
 
 ### Fix
+
 1. 當設置 comments 為 false 時，如果設置了顯示評論提供的閲讀數，閲讀數無法顯示的 bug
 2. findArchivesTitle bug
-
 
 {% endhideToggle %}
 
@@ -595,8 +574,6 @@ comments: false
      option:
    ```
 
-   
-
 ### Fix
 
 1. Algolia搜索沒有結果
@@ -607,11 +584,7 @@ comments: false
 
 1. 修改 note 圖標 class 名字，避免第三方圖標覆蓋主題樣式
 
-
-
 {%  endhideToggle %}
-
-
 
 {% hideToggle 4.2.2 (2022/05/19) %}
 
@@ -722,8 +695,6 @@ improvement: 優化twikoo評論，無評論數容器時不調用API獲取 #897
 
 {% endhideToggle %}
 
-
-
 {% hideToggle 4.1.0 (2022/02/13) %}
 
 ## 4.1.0 (2022/02/13)
@@ -774,8 +745,6 @@ fix: 修復壓縮 html 代碼,友情鏈接頁面壓縮會報錯的 bug
 fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
 {% endhideToggle %}
-
-
 
 {% hideToggle 4.0.0 (2022/01/15) %}
 
@@ -1005,11 +974,10 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
     +  blueimp_md5:
     ```
 
-
 ### Fix
 
 1. 修復 開啟 lazyload 時， fancybox 的縮略圖顯示 lazyload 加載圖片的 bug
-2. 修復 字體過大/過小而導致 部分 ui 偏移的 bug 
+2. 修復 字體過大/過小而導致 部分 ui 偏移的 bug
 3. 修復 自建頁面圖片沒有 blur 效果
 4. 修復窗口大小改變時，導航欄的 ui 可能會錯亂的 bug
 5. 修復 pjax下 ，twikoo 評論獲取是上一篇評論的 bug #678
@@ -1039,20 +1007,19 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 12. 鼠標移到最新評論內容，增加 title 顯示
 13. 移除 button 的 hover 效果
 
-
-
 {% endhideToggle %}
 
 {% hideToggle 3.8.4 (2021/09/18) %}
 
 ## 3.8.4 (2021/09/18)
+
 ### Fix
 
 1. 修復開啟 photofigcaption 後，導致 inlineImg 標籤外掛顯示錯亂的 bug close #667
 2. 修復使用本地搜索時，搜索插件配置為不搜索文章內容會無法使用搜索的 bug close #666
 3. 修復可能導致相關文章鏈接出錯的 bug close #549
 
-###  Improvement
+### Improvement
 
 1. 調整代碼框滾動條顏色 close #651
 2. 當圖片沒有 figcaption 時，不會添加 figcaption 代碼
@@ -1064,6 +1031,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 ## 3.8.3 (2021/07/30)
 
 ### Fix
+
 1. 修復 Waline 評論系統 設置 avatarCDN 無效的 bug
 
 {% endhideToggle %}
@@ -1071,10 +1039,13 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 {% hideToggle 3.8.2 (2021/07/20) %}
 
 ## 3.8.2 (2021/07/20)
+
 ### Fix
+
 1. 修復 footer 在部分瀏覽器沒有顯示在底部的 bug #616
 
 ### Improvement
+
 1. 修改配置文件註釋 #613
 
 {% endhideToggle %}
@@ -1082,12 +1053,15 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 {% hideToggle 3.8.1 (2021/07/10) %}
 
 ## 3.8.1 (2021/07/10)
+
 ### Fix
+
 1. 修復 inline mathjax 有滾動條的 bug
-2. 修復友情鏈接的頭像帶有 Medium Zoom 燈箱的 bug #607 
-3. 修復友情鏈接的頭像帶有 FancyBox 燈箱的 bug #607 
+2. 修復友情鏈接的頭像帶有 Medium Zoom 燈箱的 bug #607
+3. 修復友情鏈接的頭像帶有 FancyBox 燈箱的 bug #607
 
 ### Dependencies
+
 1. update hexo-renderer-pug
 
 {% endhideToggle %}
@@ -1134,8 +1108,8 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
    ```diff
    waline:
-   	...
-   +	avatarCDN： # Gravatar CDN baseURL
+    ...
+   + avatarCDN： # Gravatar CDN baseURL
    ```
 
 4. 升級 facebook comment js 到 v10
@@ -1158,8 +1132,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
 {% endhideToggle %}
 
-
-
 {% hideToggle 3.7.8 (2021/06/05) %}
 
 ## 3.7.8 (2021/06/05)
@@ -1172,8 +1144,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
 1. 修復 升級到 waline 1.x 而出現的 bug
 
-   
-
 {% endhideToggle %}
 
 {% hideToggle 3.7.7 (2021/05/11) %}
@@ -1181,6 +1151,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 ## 3.7.7 (2021/05/11)
 
 ### Improvement
+
 1. 適配新版 waline 夜間模式
 
 {% endhideToggle %}
@@ -1190,9 +1161,11 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 ## 3.7.6 (2021/05/09)
 
 ### Fix
+
 1. 修復標題/博客名有 ‘ 時，pjax 會報錯的 bug
 
 ### Improvement
+
 1. css 調整
 
 {% endhideToggle %}
@@ -1260,7 +1233,9 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 {% hideToggle 3.7.1 (2021/03/30) %}
 
 ## 3.7.1 (2021/03/30)
+
 ### Fix
+
 1. 修復 github-issues 最新評論 獲取的url格式 bug
 2. 修復當標題有符號'時，disqus 和 disqusjs 無法加載的 bug
 
@@ -1285,7 +1260,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    -  option:
    
    CDN:
-   -	artitalk: https://cdn.jsdelivr.net/npm/artitalk
+   - artitalk: https://cdn.jsdelivr.net/npm/artitalk
    ```
 
 3. katex_copytex 的js 和 css cdn 更換
@@ -1297,7 +1272,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    +katex_copytex: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js
    +katex_copytex_css: https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css
    ```
-
 
 ### Feature
 
@@ -1334,7 +1308,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    +  option:
    ```
 
-
 ### Fix
 
 1. 修復prismjs 在 ios safari 下自動換行的bug
@@ -1352,8 +1325,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 6. 一句API 改為 https
 7. pug代碼優化
 
-
-
 {% endhideToggle %}
 
 {% hideToggle 3.6.2 (2021/02/03) %}
@@ -1369,7 +1340,9 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 {% hideToggle 3.6.1 (2021/02/01) %}
 
 ## 3.6.1 (2021/02/01)
+
 ### Fix
+
 1. 非ios設備下，手機頁面下文章頁有toc的界面出現滾動條
 2. 非ios設備下，在layout標簽內的元素，如是position: fixed，其相對定位會更改 #482 #483
 
@@ -1444,8 +1417,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    +  url:
    ```
 
-   
-
 ### Fix
 
 1. 修復 文章頁面上滑子菜單圖標文字無法顯示的 bug #481
@@ -1494,8 +1465,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    -# Caches the contents in a fragment, speed up the generation (開啟hexo自帶的緩存,加快生成速度)
    -fragment_cache: true
    ```
-
-
 
 {% endhideToggle  %}
 
@@ -1609,7 +1578,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
     ```DIFF
     newest_comments:
       enable: true
-    	...
+     ...
     +  waline: false
     ```
 
@@ -1636,8 +1605,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
 {% endhideToggle %}
 
-
-
 {% hideToggle 3.4.2 (2020/12/27) %}
 
 ## 3.4.2 (2020/12/27)
@@ -1650,8 +1617,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
 {% endhideToggle %}
 
-
-
 {% hideToggle 3.4.1 (2020/12/15) %}
 
 ## 3.4.1 (2020/12/15)
@@ -1661,8 +1626,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 1. 修復tabs 標簽外掛設為-1時，按鈕點擊沒反應的bugs
 
 {% endhideToggle %}
-
-
 
  {% hideToggle 3.4.0 (2020/12/13) %}
 
@@ -1707,10 +1670,10 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    ```diff
    newest_comments:
      enable: true
-   	....
+    ....
    +  twikoo: true
    ```
-   
+
 5. 增加twikoo評論數顯示
 
 6. 增加toc簡潔模式
@@ -1721,7 +1684,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
      number: true
    +  style_simple: false
    ```
-
 
 ### Fix
 
@@ -1750,8 +1712,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 2. 刪除不必要的語言文件
 
 {% endhideToggle %}
-
-
 
 {% hideToggle 3.3.0 (2020/10/28) %}
 
@@ -1799,7 +1759,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    +  button: true
      mobile: true # display on mobile
    ```
-   
+
 5. 增加Twikoo評論
 
    ```diff
@@ -1832,8 +1792,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 3. 刪除多餘的css和pug
 
 {% endhideToggle %}
-
-
 
 {% hideToggle 3.2.0 (2020/09/28) %}
 
@@ -1876,8 +1834,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    
    ```
 
-   
-
 ### Feature
 
 1. 可設置首頁文章不顯示內容/description
@@ -1893,8 +1849,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
      length: 500 # if you set method to 2 or 3, the length need to config
    ```
 
-   
-
 2. 主頁文章時間和文章頁文章時間可以配置顯示日期還是相對時間
 
    ```diff
@@ -1905,8 +1859,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    +    date_format: relative # date/relative 顯示日期還是相對日期
    
    ```
-
-   
 
 3. top_img 可配置 （留空（默認色）/顏色（HEX值/RGB值/顔色單詞/漸變色)/圖片鏈接/ false（不顯示top_img））
 
@@ -2111,7 +2063,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
     -    - facebook_messenger
     -    - email
     -    - copy_link
-    +	item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
+    + item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
     ```
 
 12. 增加最後更新時間顯示/增加post count 配置
@@ -2146,10 +2098,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
     +    forum:
     +    api_key:
     ```
-
-    
-
-
 
 ### Improvements
 
@@ -2199,7 +2147,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
 {% endhideToggle %}
 
-
 {% hideToggle 3.0.0 (2020/08/05) %}
 
 ## 3.0.0 (2020/08/05)
@@ -2215,7 +2162,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
 ## 3.0.0-RC2 (2020/08/01)
 
-###  Breaking Change
+### Breaking Change
 
 1. 支持雙評論系統配置/評論配置整理/評論增加lazyload
 
@@ -2258,7 +2205,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    -  enable: false
    -  count: false
    ```
-   
+
 2. footer配置整理，修改部分用語  #279
 
    ```diff
@@ -2463,7 +2410,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
 {% hideToggle 3.0.0-RC1 (2020/06/16) %}
 
-##  3.0.0-RC1 (2020/06/16)
+## 3.0.0-RC1 (2020/06/16)
 
 ### Breaking Change
 
@@ -2481,7 +2428,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    -  # fontawesome
    -  fontawesome_v4: https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
    -  fontawesome_v5: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
-   +	fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+   + fontawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
    ```
 
 3. _config.yml 內容修改
@@ -2583,9 +2530,9 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
       -auto_open_sidebar:
       -  enable: true
       ```
-      
+
    8. font去除enable配置
-   
+
       ```diff
       # 全局字體
       font:
@@ -2596,9 +2543,9 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
       +  font-family:
       +  code-font:
       ```
-   
+
    9. 刪除部分配置
-   
+
       ```diff
       valine:
       -  notify: false # valine mail notify (true/false) Deprecated in v1.4.0+
@@ -2608,16 +2555,14 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
       -  #博客網址
       -  cookieDomain: 'https://xxx/'
       ```
-      
+
    10. 刪除twitter_meta配置
-   
+
        ```diff
        -# twitter分享自動帶上樣式
        -# -https://i.loli.net/2019/09/08/qm3RfvUCKbct1Wz.png
        -twitter_meta: true
        ```
-   
-       
 
 ### Feature
 
@@ -2721,8 +2666,8 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 
     ```diff
     CDN:
-    -	lazyload: https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js
-    +	lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
+    - lazyload: https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js
+    + lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
     ```
 
 18. card-categories增加收縮/展開按鈕
@@ -2761,7 +2706,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 23. 代碼框優化
 
     1. 調整部分代碼顔色
-    2. 增加一款代碼主題 mac 
+    2. 增加一款代碼主題 mac
     3. 代碼框主題支持自定義
 
 24. 閲讀模式下去掉代碼高亮
@@ -2809,7 +2754,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
     +      text: 支付寶
     ```
 
-27. 移除JS-COOKIES 
+27. 移除JS-COOKIES
 
     ```diff
     CDN:
@@ -2821,7 +2766,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 ### Fix
 
 1. 修正側邊欄目錄收縮、展開圖標不對齊的bugs
-2.  修改部分用語(zh-CN/zh-TW/en)
+2. 修改部分用語(zh-CN/zh-TW/en)
 3. 修復card-categories和card-archives 邊緣點擊沒有跳轉的bugs
 4. 修復網站是子目錄時，社交網站為相對地址時，地址生成錯誤的bugs
 5. 修復最後一篇文章的Pagination沒有佔據全寬度的Bug
@@ -2905,16 +2850,12 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    +  count: false
    ```
 
-   
-
 2. 增加頁面加載動畫Preloader #193
 
    ```diff
    +# 加載動畫 Loading Animation
    +preloader: false
    ```
-
-   
 
 3. aside card-tags可配置是否顯示顏色/aside subtitle可配置，優先顯示配置內容、沒有的顯示頁面subtitle #191 /aside widget 增加部分參數可配置/aside widget的Categories，Tags，post,Archives可配置limit/整合公告欄配置到aside去
 
@@ -2959,8 +2900,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    
    ```
 
-   
-
 4. 改CDN_USE為inject,可插入代碼到head或者bottom
 
    ```diff
@@ -2980,9 +2919,9 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    +# 插入代碼到頭部</head>之前 和 尾部</body>之前
    +inject:
    +  head:
-   +  	# - <link rel="stylesheet" href="xxxxx">
+   +   # - <link rel="stylesheet" href="xxxxx">
    +  bottom:
-   +  	# - <script src="xxxx"></script>
+   +   # - <script src="xxxx"></script>
    
    # CDN
    # 非必要不要修改
@@ -2993,8 +2932,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    +  main: /js/main.js
    +  utils: /js/utils.js
    ```
-
-   
 
 5. 適配valine 1.4.5以上版本
 
@@ -3020,8 +2957,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
    ```
 
 6. 移除對文章隱藏的支持
-
-   
 
 ### Feature
 
@@ -3115,7 +3050,6 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 12. 修復display_mode設置dark沒有效果的bug
 13. 評論增加夜間模式、文章頁判斷,減少不必要的js加載
 {% endhideToggle %}
-
 
 {% hideToggle 2.2.0 (2020/03/17) %}
 
@@ -3447,6 +3381,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 {% endhideToggle %}
 
 {% hideToggle 2.1.0 (2019/12/20) %}
+
 ## 2.1.0 (2019/12/20)
 
 ### Feature
@@ -3497,6 +3432,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 {% endhideToggle %}
 
 {% hideToggle 2.0.0 (2019/11/03) %}
+
 ## 2.0.0 (2019/11/03)
 
 ### Breaking change
@@ -3542,6 +3478,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 {% endhideToggle %}
 
 {% hideToggle 1.2.0 (2019/09/24) %}
+
 ## 1.2.0 (2019/09/24)
 
 ### Feature
@@ -3637,6 +3574,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 {% endhideToggle %}
 
 {% hideToggle 1.0.8 (2019/08/11) %}
+
 ## 1.0.8 (2019/08/11)
 
 1. Feature: 可關閉圖片懶加載
@@ -3682,6 +3620,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 {% endhideToggle %}
 
 {% hideToggle 1.0.5 (2019/06/28) %}
+
 ## 1.0.5 (2019/06/28)
 
 1. fix bugs of gitalk #9
@@ -3691,6 +3630,7 @@ fix: 修復safari上滑動側邊菜單欄會收起的 bug
 {% endhideToggle %}
 
 {% hideToggle 1.0.0 (2019.06/17) %}
+
 ## 1.0.0 (2019.06/17)
 
 first release

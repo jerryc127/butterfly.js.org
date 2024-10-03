@@ -1,5 +1,5 @@
 ---
-title: Butterfly document - Theme Configuration Part 2
+title: Butterfly document - Tag Plugins
 comments: false
 date: 2023-06-30 21:17:55
 tags:
@@ -13,7 +13,7 @@ keywords: 'hexo,butterfly,theme,doc,教程,文檔,hexo-butterfly'
 description:
 top_img:
 cover: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/butterfly-docs-en-theme-config-two.png
-abbrlink: butterfly-docs-en-theme-config-two
+abbrlink: butterfly-docs-en-tag-plugins
 ---
 
 {% note orange 'fas fa-language' %}
@@ -32,7 +32,7 @@ This article is translated from ChatGPT.
 
  📚  Table of Contents
 
-{% post_link butterfly-docs-en-1-get-started ' 🚀 Get Started' %} - {% post_link butterfly-docs-en-2-theme-pages ' 📑 Theme Pages' %} - {% post_link butterfly-docs-en-3-theme-config ' 📌 Theme Configuration Part 1' %} - {% post_link butterfly-docs-en-4-theme-config-2 ' ⚔️ Theme Configuration Part 2' %} - {% post_link butterfly-docs-en-5-theme-q-a ' ❓ Q&A' %} - {% post_link butterfly-docs-en-6-advanced-tutorial ' ⚡️ Advanced Tutorials' %}
+{% post_link butterfly-docs-en-1-get-started ' 🚀 Get Started' %} - {% post_link butterfly-docs-en-2-theme-pages ' 📑 Theme Pages' %} - {% post_link butterfly-docs-en-3-theme-config ' 📌 Theme Configuration' %} - {% post_link butterfly-docs-en-4-tag-plugins ' ⚔️ Tag Plugins' %} - {% post_link butterfly-docs-en-5-theme-q-a ' ❓ Q&A' %} - {% post_link butterfly-docs-en-6-advanced-tutorial ' ⚡️ Advanced Tutorials' %}
 
 {% endnote %}
 

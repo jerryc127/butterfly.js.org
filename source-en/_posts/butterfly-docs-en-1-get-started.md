@@ -14,7 +14,7 @@ description:
 top_img:
 abbrlink: butterfly-docs-en-get-started
 sticky: 100
-cover: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/butterfly-docs-en-get-started.png
+cover: https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-en-get-started.png
 ---
 
 {% note orange 'fas fa-language' %}
@@ -33,63 +33,35 @@ This article is translated from ChatGPT.
 
  📚  Table of Contents
 
-{% post_link butterfly-docs-en-1-get-started ' 🚀 Get Started' %} - {% post_link butterfly-docs-en-2-theme-pages ' 📑 Theme Pages' %} - {% post_link butterfly-docs-en-3-theme-config ' 📌 Theme Configuration Part 1' %} - {% post_link butterfly-docs-en-4-theme-config-2 ' ⚔️ Theme Configuration Part 2' %} - {% post_link butterfly-docs-en-5-theme-q-a ' ❓ Q&A' %} - {% post_link butterfly-docs-en-6-advanced-tutorial ' ⚡️ Advanced Tutorials' %}
+{% post_link butterfly-docs-en-1-get-started ' 🚀 Get Started' %} - {% post_link butterfly-docs-en-2-theme-pages ' 📑 Theme Pages' %} - {% post_link butterfly-docs-en-3-theme-config ' 📌 Theme Configuration' %} - {% post_link butterfly-docs-en-4-tag-plugins ' ⚔️ Tag Plugins' %} - {% post_link butterfly-docs-en-5-theme-q-a ' ❓ Q&A' %} - {% post_link butterfly-docs-en-6-advanced-tutorial ' ⚡️ Advanced Tutorials' %}
 
 {% endnote %}
 
 ***
 
-`hexo-theme-butterfly` is developed based on [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody).
+`hexo-theme-butterfly` is a theme developed based on [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody).
 
 ## Installation
 
 {% tabs butterfly-install %}
 
-<!-- tab Git (Github) @fab fa-github-square -->
+<!-- tab Git Installation @fab fa-github-square -->
+
+{% hideToggle If you are in mainland China and have difficulty accessing GitHub, you can use Gitee to install %}
 
 **Stable Version [Recommended]**
 
-Inside your Hexo root directory, run:
-
-```powershell
-git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
-```
-
-**Dev Version**
-
-> The dev version may contain bugs. If you prefer stability, please install the stable version
-
-If you want to install a newer dev branch, you can run:
-
-```powershell
-git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
-```
-
-{% note info %}
-
-Upgrade method: Run git pull in the theme directory.
-
-{% endnote %}
-
-<!-- endtab -->
-
-
-
-<!-- tab Git (Gitee) @fab fa-git-square -->
-
-**Stable Version [Recommended]**
-
-Inside your Hexo root directory, run:
+In your Hexo root directory:
 
 ```powershell
 git clone -b master https://gitee.com/immyw/hexo-theme-butterfly.git themes/butterfly
 ```
 
-**Dev Version**
+**Dev version**
 
-> The dev version may contain bugs. If you prefer stability, please install the stable version.
+> The dev version may have bugs; if you prefer stability, please install the stable version.
 
-If you want to install a newer dev branch, you can run:
+If you want to install the latest dev branch, you can:
 
 ```powershell
 git clone -b dev https://gitee.com/immyw/hexo-theme-butterfly.git themes/butterfly
@@ -97,21 +69,44 @@ git clone -b dev https://gitee.com/immyw/hexo-theme-butterfly.git themes/butterf
 
 {% note info %}
 
-Upgrade method: Run `git pull` in the theme directory.
+Upgrade method: In the theme directory, run `git pull`
+
+{% endnote %}
+{% endhideToggle %}
+
+**Stable Version [Recommended]**
+
+In your Hexo root directory:
+
+```powershell
+git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
+```
+
+**Dev Version**
+
+> The dev version may have bugs; if you prefer stability, please install the stable version.
+
+If you want to install the latest dev branch, you can:
+
+```powershell
+git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
+```
+
+{% note info %}
+
+Upgrade method: In the theme directory, run `git pull`
 
 {% endnote %}
 
 <!-- endtab -->
 
-
-
 <!-- tab npm Installation@fab fa-npm -->
 
-> This method only supports Hexo 5.0.0 and above.
+> This method only supports Hexo version 5.0.0 and above.
 >
-> Installing via npm will not generate a theme folder inside the themes directory, instead, it will be generated in the node_modules directory.
+> ***Installing via npm will not create a theme folder in themes but will create one in node_modules.***
 
-Inside your Hexo root directory, run:
+In your Hexo root directory:
 
 ```powershell
 npm install hexo-theme-butterfly
@@ -119,7 +114,7 @@ npm install hexo-theme-butterfly
 
 {% note info %}
 
-Upgrade method: Run `npm update hexo-theme-butterfly` in the Hexo root directory.
+Upgrade method: In the Hexo root directory, run `npm update hexo-theme-butterfly`
 
 {% endnote %}
 
@@ -127,42 +122,44 @@ Upgrade method: Run `npm update hexo-theme-butterfly` in the Hexo root directory
 
 {% endtabs %}
 
-## Applying the Theme
+## Apply the Theme
 
-Modify the `_config.yml` file in your Hexo root directory and change the theme to `butterfly`:
+Modify the `_config.yml` in your Hexo root directory to set the theme to `butterfly`:
 
 ```yaml
 theme: butterfly
 ```
 
-## Installing Plugins
+## Install Plugins
 
-If you don't have the Pug and Stylus renderers, download and install them:
+If you do not have the pug and stylus renderers, please download and install them:
 
 ```powershell
 npm install hexo-renderer-pug hexo-renderer-stylus --save
 ```
 
-## Upgrade Recommendations
+## Upgrade Suggestions
 
 {% note blue 'fas fa-train' %}
 
-After upgrading, please check the [Releases](https://github.com/jerryc127/hexo-theme-butterfly/releases) page on GitHub or [文檔七](https://butterfly.js.org/posts/198a4240/) for the update details of the new version.
+After upgrading, please visit the [Releases](https://github.com/jerryc127/hexo-theme-butterfly/releases) page on GitHub to check the update details of the new version.
 
-There will be a section that indicates the changes to the `_config` file (if any). Please update your configuration accordingly.
+If there are changes to the `_config` file, please update your configuration accordingly.
 
 {% endnote %}
 
-To minimize the inconvenience caused by upgrading the theme, you can follow the following method (**recommended, but optional**).
+To minimize the inconvenience caused by theme upgrades, please use the following method (**recommended but optional**).
 
-Create a file named `_config.butterfly.yml` in the root directory of your Hexo project and copy the content of the `_config.yml` file from the theme directory to _config.butterfly.yml. (**Note: Copy the `_config.yml` file from the theme, not from Hexo's root directory**).
+Create a file named `_config.butterfly.yml` in the root directory of hexo, and copy the **contents** of the theme's `_config.yml` to `_config.butterfly.yml`.
 
-> Note: Do not delete the `_config.yml` file in the theme directory.
+> **Note:** Copy the `_config.yml` from the theme, not the `_config.yml` from hexo.
 
-> Note: In the future, only make configurations in `_config.butterfly.yml`.
-> If you use `_config.butterfly.yml`, the configuration in the theme's `_config.yml` file will not take effect.
+> **Note:** Do not delete the `_config.yml` in the theme directory.
 
-Hexo will automatically **merge** the configurations from the `_config.yml` and `_config.butterfly.yml` files. If there are conflicting configurations, the ones from `_config.butterfly.yml` will take precedence.
+> **Note:** From now on, configure in `_config.butterfly.yml` only.
+> If you use `_config.butterfly.yml`, the configurations in the theme's `_config.yml` will not be effective.
+
+Hexo will automatically **merge** the configurations from the theme's `_config.yml` and `_config.butterfly.yml`. If there are duplicate configurations, the ones in `_config.butterfly.yml` will take precedence.
 
 ![image-20200805191531090](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-docs-install-suggestion-1.png)
 

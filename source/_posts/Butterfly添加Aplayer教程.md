@@ -12,7 +12,7 @@ categories: 進階教程
 keywords: 'hexo,butterfly,主題,doc,教程,文檔,Aplayer,Aplayer吸底,pjax'
 description: Butterfly添加全局吸底Aplayer教程
 top_img:
-cover: https://jsd.012700.xyz/gh/jerryc127/CDN/img/Butterfly-add-aplayer-cover.png
+cover: https://oss.012700.xyz/butterfly/2024/09/Butterfly-add-aplayer-cover.png
 comments: false
 ---
 
@@ -54,7 +54,7 @@ comments: false
 
 回到正題，這篇文章將教大家如何在Butterfly上使用全局吸底 Aplayer
 
-![aplayer](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-aplayer-xidi.gif)
+![butterfly-aplayer-xidi.gif](https://oss.012700.xyz/butterfly/2024/09/butterfly-aplayer-xidi.gif)
 
 ## 關閉 `asset_inject`
 
@@ -63,8 +63,6 @@ comments: false
 此步驟適用於安裝了 `hexo-tag-aplayer` 插件的人
 
 {% endnote %}
-
-
 
 由於需要全局都插入 aplayer 和 meting 資源，為了防止插入重複的資源，需要把 asset_inject 設為 `false`
 
