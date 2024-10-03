@@ -209,8 +209,7 @@ index_layout: 3
 # false: do not show the article introduction
 index_post_content:
   method: 3
-  # If you set method to 2 or 3, the length need to config
-  length: 500
+  length: 500 # if you set method to 2 or 3, the length need to config
 
 # --------------------------------------
 # Post Settings
@@ -1061,6 +1060,7 @@ inject:
     - <link href="/self/btf.css" rel="stylesheet">
   bottom:
     - <script data-pjax src="/self/btf.js"></script>
+    - <script>(function(){var el=document.createElement('script');el.setAttribute('src','https://umami.012700.xyz/script.js');el.setAttribute('data-website-id','2a796d6c-6499-42d8-8eb4-d9a2930b0ff3');document.body.appendChild(el);})();</script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
@@ -1133,5 +1133,5 @@ CDN:
     # typed:
     # utils:
     # valine:
-    # waline_css:
-    # waline_js:
+    waline_css: https://jsd.012700.xyz/npm/@waline/client@latest/dist/waline.css
+    waline_js: https://jsd.012700.xyz/npm/@waline/client@latest/dist/waline.umd.min.js

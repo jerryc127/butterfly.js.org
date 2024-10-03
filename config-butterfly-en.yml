@@ -1049,6 +1049,7 @@ inject:
     - <link href="/self/btf.css" rel="stylesheet">
   bottom:
     - <script data-pjax src="/self/btf.js"></script>
+    - <script>(function(){var el=document.createElement('script');el.setAttribute('src','https://umami.012700.xyz/script.js');el.setAttribute('data-website-id','2a796d6c-6499-42d8-8eb4-d9a2930b0ff3');document.body.appendChild(el);})();</script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
@@ -1121,5 +1122,10 @@ CDN:
     # typed:
     # utils:
     # valine:
+<<<<<<< HEAD
     # waline_css:
     # waline_js:
+=======
+    waline_css: https://jsd.012700.xyz/npm/@waline/client@latest/dist/waline.css
+    waline_js: https://jsd.012700.xyz/npm/@waline/client@latest/dist/waline.umd.min.js
+>>>>>>> a8c29acaafe025f19f8e3ea94f396bb467bc84b0
