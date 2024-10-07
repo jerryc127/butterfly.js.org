@@ -23,12 +23,6 @@ This article is translated from ChatGPT.
 
 {% endnote %}
 
-{% note blue 'fas fa-bullhorn' %}
-
- 🦋 Butterfly has been updated to [4.10](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.10).
-
-{% endnote %}
-
 {% note green 'fas fa-rocket' %}
 
  📚  Table of Contents
@@ -161,6 +155,6 @@ Create a file named `_config.butterfly.yml` in the root directory of hexo, and c
 
 Hexo will automatically **merge** the configurations from the theme's `_config.yml` and `_config.butterfly.yml`. If there are duplicate configurations, the ones in `_config.butterfly.yml` will take precedence.
 
-![image-20200805191531090](https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-docs-install-suggestion-1.png)
+![butterfly-docs-install-suggestion-1.png](https://oss.012700.xyz/butterfly/2024/08/butterfly-docs-install-suggestion-1.png)
 
 {% btn '/posts/butterfly-docs-en-theme-pages/',📑 Butterfly document - Theme Pages,far fa-hand-point-right,block right larger %}

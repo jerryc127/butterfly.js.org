@@ -22,12 +22,6 @@ This article is translated from ChatGPT.
 
 {% endnote %}
 
-{% note blue 'fas fa-bullhorn' %}
-
- 🦋 Butterfly has been updated to [4.10](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.10).
-
-{% endnote %}
-
 {% note green 'fas fa-rocket' %}
 
  📚  Table of Contents

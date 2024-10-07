@@ -22,12 +22,6 @@ This article is translated from ChatGPT.
 
 {% endnote %}
 
-{% note blue 'fas fa-bullhorn' %}
-
- 🦋 Butterfly has been updated to [4.10](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.10).
-
-{% endnote %}
-
 {% note green 'fas fa-rocket' %}
 
  📚  Table of Contents
@@ -40,7 +34,7 @@ This article is translated from ChatGPT.
 
 ## Front-matter
 
-`Front-matter` is the section at the top of a Markdown file, separated by ---, and is used to specify variables for individual files.
+`Front-matter` is the section at the top of a Markdown file, separated by `---`, and is used to specify variables for individual files.
 
 - Page Front-matter is used for configuring a `page`.
 - Post Front-matter is used for configuring a `post`.
@@ -86,7 +80,6 @@ random:
 | aplayer         | [Optional] Load aplayer's js and css on the specified page, please refer to the `music` configuration below the article |
 | highlight_shrink| [Optional] Configure whether code blocks are expanded (true/false) (default is the setting of `highlight_shrink`) |
 | random          | [Optional] Configure whether to randomly sort friends links (default false) |
-
 
 ### Post Front-matter
 
@@ -147,6 +140,11 @@ abcjs:
 
 ## Tags Page
 
+{% note info %}
+The filename for the tags page doesn’t necessarily have to be "tags"; the "tags" in the example is just for reference.
+Remember to add `type: "tags"`.
+{% endnote %}
+
 1. Go to the root directory of your Hexo blog.
 
 2. Run `hexo new page tags`.
@@ -154,8 +152,6 @@ abcjs:
 3. You will find the file `source/tags/index.md`.
 
 4. Modify this file:
-
-   **Remember to add `type: "tags"`**
 
 ```markdown
 ---
@@ -175,6 +171,11 @@ order: 1
 
 ## Categories Page
 
+{% note info %}
+The filename for the categories page doesn’t necessarily have to be "categories"; the "categories" in the example is just for reference.
+Remember to add `type: "categories"`.
+{% endnote %}
+
 1. Go to the root directory of your Hexo blog.
 
 2. Run `hexo new page categories`.
@@ -182,8 +183,6 @@ order: 1
 3. You will find the file `source/categories/index.md`.
 
 4. Modify this file:
-
-   **Remember to add `type: "categories"`**
 
 ```markdown
 ---
@@ -199,6 +198,11 @@ Create a page for your blog's friends links!
 
 ### Create Friends Links Page
 
+{% note info %}
+The filename for the friend links page doesn’t necessarily have to be "link"; the "link" in the example is just for reference.
+Remember to add `type: "link"`.
+{% endnote %}
+
 1. Go to the root directory of your Hexo blog.
 
 2. Run `hexo new page link`.
@@ -206,8 +210,6 @@ Create a page for your blog's friends links!
 3. You will find the file `source/link/index.md`.
 
 4. Modify this file:
-
-   **Remember to add `type: "link"`**
 
 ```markdown
 ---
@@ -259,7 +261,9 @@ In the `source/_data` directory of your Hexo blog (if the _data folder does not 
 
 Starting from version `4.0.0`, you can fetch friends links remotely in **JSON** format.
 
+{% note warning %}
 Note: If you choose remote fetching, the local generation method will be invalid.
+{% endnote %}
 
 In the front-matter of the `source/link/index.md` file, add the remote link:
 
@@ -402,6 +406,142 @@ error_404:
   background: 
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-error404.png)
+![hexo-theme-butterfly-docs-error404.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-error404.png)
+
+## Shuoshuo Page
+
+{% note pink 'fa-solid fa-bell' %}
+Added in V5.0
+{% endnote %}
+
+**Please note that the Shuoshuo interface only supports native Markdown format and does not support tag plugins or mathematical formulas.**
+
+### Creating a Shuoshuo Page
+
+{% note info %}
+The filename for the Shuoshuo page doesn’t necessarily have to be "shuoshuo"; the "shuoshuo" in the example is just for reference.  
+Remember to add `type: "shuoshuo"`.
+{% endnote %}
+
+1. Navigate to the root directory of your Hexo.
+   
+2. Enter `hexo new page shuoshuo`.
+
+3. You will find the file `source/shuoshuo/index.md`.
+
+4. Modify this file:
+
+```markdown
+---
+title: Shuoshuo
+date: 2018-06-07 22:17:49
+type: 'shuoshuo'
+---
+```
+
+### Data Source
+
+{% tabs shuoshuo-add %}
+
+<!-- tab Local Generation -->
+
+In the `source/_data` directory of your Hexo root (if there is no `_data` folder, please create one), create a file named `shuoshuo.yml`.
+
+{% note blue 'fa-solid fa-user' %}
+`author` and `avatar` are optional and will automatically fetch from the configuration file.
+{% endnote %}
+
+```yaml
+- author: Butterfly
+  avatar: https://butterfly.js.org/img/avatar.png
+  date: 2024-06-21 23:33:26
+  content: |
+    This is a sample content for **Author 1**.
+    ![Sample Image](https://via.placeholder.com/150)
+  tags:
+    - tags1
+    - tags2
+- author: Butterfly
+  avatar: https://butterfly.js.org/img/avatar.png
+  date: 2024-06-20 23:33:26
+  content: |
+    This is a sample content for **Author 2**.
+    ![Sample Image](https://via.placeholder.com/150)
+  tags:
+    - tag2
+    - tag3
+
+- author: Butterfly
+  avatar: https://butterfly.js.org/img/avatar.png
+  date: 2024-06-19 23:33:26
+  content: |
+    This is a sample content for **Author 3**.
+```
+
+| Parameter | Explanation                                   |
+|-----------|-----------------------------------------------|
+| author    | 【Optional】Author's name                     |
+| avatar    | 【Optional】Author's avatar                   |
+| date      | 【Required】Date                              |
+| content   | 【Required】Content (Markdown or HTML format)|
+| tags      | 【Optional】Tags                              |
+
+<!-- endtab -->
+
+<!-- tab Remote Pull -->
+
+{% note warning %}
+Note: Selecting remote loading will invalidate the local generation method.  
+Remote pulling only supports `json`.
+{% endnote %}
+
+Add the remote link in the front matter of the Shuoshuo page Markdown.
+
+```markdown
+shuoshuo_url: xxxxx
+```
+
+The format for JSON:
+
+{% note blue 'fa-solid fa-user' %}
+`author` and `avatar` are optional and will automatically fetch from the configuration file.
+{% endnote %}
+
+```json
+[
+  {
+    "author": "Butterfly",
+    "avatar": "https://butterfly.js.org/img/avatar.png",
+    "date": "2024-06-21 23:33:26",
+    "content": "This is a sample content for **Author 1**.",
+    "tags": ["tags1", "tags2"]
+  },
+  {
+    "author": "Butterfly",
+    "avatar": "https://butterfly.js.org/img/avatar.png",
+    "date": "2024-06-20 23:33:26",
+    "content": "This is a sample content for **Author 2**.",
+    "tags": ["tag2", "tag3"]
+  },
+  {
+    "author": "Butterfly",
+    "avatar": "https://butterfly.js.org/img/avatar.png",
+    "date": "2024-06-19 23:33:26",
+    "content": "This is a sample content for **Author 3**."
+  }
+]
+```
+
+| Parameter | Explanation                                   |
+|-----------|-----------------------------------------------|
+| author    | 【Optional】Author's name                     |
+| avatar    | 【Optional】Author's avatar                   |
+| date      | 【Required】Date                              |
+| content   | 【Required】Content (Markdown or HTML format)|
+| tags      | 【Optional】Tags                              |
+
+<!-- endtab -->
+
+{% endtabs %}
 
 {% btn '/posts/butterfly-docs-en-theme-config/',📌 Butterfly document - Theme Configuration,far fa-hand-point-right,block pink right larger %}

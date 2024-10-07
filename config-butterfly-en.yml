@@ -27,8 +27,8 @@ menu:
   Docs||fas fa-book:
     🚀 Get Started: /posts/butterfly-docs-en-get-started/
     📑 Theme Pages: /posts/butterfly-docs-en-theme-pages/
-    📌 Theme Configuration 1: /posts/butterfly-docs-en-theme-config-one/
-    ⚔️ Theme Configuration 2: /posts/butterfly-docs-en-theme-config-two/
+    📌 Theme Configuration 1: /posts/butterfly-docs-en-theme-config/
+    ⚔️ Tag Plugins: /posts/butterfly-docs-en-tag-plugins/
     ❓ Q&A: /posts/butterfly-docs-en-theme-question/
     ⚡️ Advanced Tutorials: /posts/butterfly-docs-en-advanced-tutorial/
   Messageboard: /messageboard/ || fas fa-comment-dots
@@ -236,10 +236,10 @@ reward:
   QR_code:
     - img: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/wechat.jpg
       link:
-      text: 微信
+      text: Wechat
     - img: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/alipay.jpg
       link:
-      text: 支付寶
+      text: Alipay
     - img: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/stripe.png
       link: https://buy.stripe.com/3cs6rP6YA91sbbG5kk
       text: Stripe
@@ -721,15 +721,15 @@ microsoft_clarity:
 umami_analytics:
   enable: true
   # For self-hosted setups, configure the hostname of the Umami instance
-  serverURL:
-  website_id:
+  serverURL: https://umami.012700.xyz/
+  website_id: 2a796d6c-6499-42d8-8eb4-d9a2930b0ff3
   option:
   UV_PV:
-    site_uv: false
-    site_pv: false
-    page_pv: false
+    site_uv: true
+    site_pv: true
+    page_pv: true
     # Umami Cloud (API key) / self-hosted Umami (token)
-    token:
+    token: qTvz1SkmPDt785fgh6BpiA5qiFFIVUwxj8Ft+rPW+cdN59v1hXjwRgSmy0+ji9m+oLlcxvo2NfDSMa6epVl3NTlsN3ejCIwWeP8Y51aEJ0Sbem4UexGmJLspB7AkOBId2SdtT6QWEBlGmFIIQgchQ2zAKYxTmc/kpBED5aLSr+3uvmQ9/G7FJQeVFpveDkK0xM1hu36xq4a6/FSeROxtoEp5zabzTWiYTlLsQzIl/NlELnCq3nxK+oo/vl3UQo/oM/rae/gJX/MaVKsgIUCd2ABJogNkx2KTenBIBpbPki5FzOgPh6/z4GPa4HvhNO51DDVG1SEQZooqEYmt/gnybLBWFbN+7liZWw==
 
 # --------------------------------------
 # Advertisement
@@ -833,7 +833,7 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work
 font:
-  global_font_size: 15px
+  global_font_size:
   code_font_size:
   font_family:
   code_font_family:

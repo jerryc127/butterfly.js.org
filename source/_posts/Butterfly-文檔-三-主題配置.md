@@ -792,7 +792,7 @@ artalk:
 # --------------------------------------
 
 chat:
-  # 聊天服務類型，可選值：chatra/tidio/daovoice/crisp/messenger，如果不需要聊天功能則留空
+  # 聊天服務類型，可選值：chatra/tidio/daovoice/crisp，如果不需要聊天功能則留空
   use:
   # 推薦使用聊天按鈕，會在網站右下角創建一個按鈕，並隱藏原始按鈕
   rightside_button: false
@@ -822,14 +822,6 @@ daovoice:
 crisp:
   # Crisp 網站 ID
   website_id:
-
-# Facebook Messenger 聊天服務配置
-# 官方文檔：https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/
-messenger:
-  # Facebook 頁面 ID
-  pageID:
-  # 語言設置
-  lang: zh_TW
 
 # --------------------------------------
 # 分析服務配置
@@ -1258,11 +1250,14 @@ CDN:
 
 默認語言是 `en`
 
-主題支持三種語言
+主題支持
 
 - default(en)
 - zh-CN (簡體中文)
-- zh-TW (繁體中文)
+- zh-TW (台灣繁體中文)
+- zh-HK (香港繁體中文)
+- ja (日語)
+- ko (韓語)
 
 ## 網站資料
 
@@ -1413,7 +1408,7 @@ ocean
 ![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-code-orcean.png)
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
-開啟 macStyle
+macStyle
 {% endnote %}
 
 ![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-code-macstyle-light.png)
@@ -3404,7 +3399,7 @@ artalk:
 
 ```yaml
 chat:
-  # Choose: chatra/tidio/daovoice/crisp/messenger
+  # Choose: chatra/tidio/daovoice/crisp
   # Leave it empty if you don't need chat
   use:
   # Chat Button [recommend]
@@ -3416,7 +3411,7 @@ chat:
 
 | 參數             | 解釋                                                                          |
 | ---------------- | ----------------------------------------------------------------------------- |
-| use              | 選擇你要使用的聊天工具，可選擇`chatra`/`tidio`/`daovoice`/`crisp`/`messenger` |
+| use              | 選擇你要使用的聊天工具，可選擇`chatra`/`tidio`/`daovoice`/`crisp` |
 | rightside_button | 是否開啟右下角聊天按鈕                                                        |
 | button_hide_show | 是否開啟滾動時隱藏聊天按鈕                                                    |
 
@@ -4081,6 +4076,69 @@ Medium Zoom
 ## 標簽外掛
 
 具體可查看 [標簽外掛](https://butterfly.js.org/posts/ceeb73f/)
+
+## Mermaid
+
+主題支持 Mermaid.js，可以在文章中使用 Mermaid.js 繪製流程圖、序列圖等。
+
+配置：
+
+```yaml
+# Mermaid
+# https://github.com/mermaid-js/mermaid
+mermaid:
+  enable: true
+  # Write Mermaid diagrams using code blocks
+  code_write: true
+  # built-in themes: default / forest / dark / neutral
+  theme:
+    light: default
+    dark: dark
+```
+
+### 書寫方法
+
+主題支持兩種書寫方法
+
+#### 標簽外挂
+
+你可以使用標簽外挂的方式來使用 Mermaid.js
+具體可查看 [Mermaid 標簽外掛](https://butterfly.js.org/posts/ceeb73f/#Mermaid)
+
+#### 代碼塊書寫
+
+你可以使用代碼塊的方式來使用 Mermaid.js
+
+1. hexo 版本需要 7.0 或以上
+2. hexo 的配置文件 要添加 `exclude_languages: ['mermaid']`
+
+    ```yaml
+    syntax_highlighter: 'highlight.js'
+    highlight:
+      line_number: true
+      auto_detect: false
+      tab_replace: ''
+      wrap: true
+      hljs: false
+      exclude_languages: ['mermaid']
+    prismjs:
+      preprocess: true
+      line_number: true
+      tab_replace: ''
+      exclude_languages: ['mermaid']
+    ```
+
+3. butterfly的配置文件中 mermaid 的 code_write 设为 true
+
+> 例子
+
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+```
 
 ## Pjax
 
