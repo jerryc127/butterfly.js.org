@@ -14,6 +14,7 @@ description:
 top_img:
 cover: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/butterfly-docs-en-theme-config-one.png
 abbrlink: butterfly-docs-en-theme-config
+series: docs
 ---
 
 {% note orange 'fas fa-language' %}

@@ -14,6 +14,7 @@ description:
 top_img:
 cover: https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-en-theme-pages.png
 abbrlink: butterfly-docs-en-theme-pages
+series: docs
 ---
 
 {% note orange 'fas fa-language' %}

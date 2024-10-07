@@ -14,6 +14,8 @@ description:
 top_img:
 cover: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/butterfly-docs-en-theme-config-two.png
 abbrlink: butterfly-docs-en-tag-plugins
+series: docs
+abcjs: true
 ---
 
 {% note orange 'fas fa-language' %}

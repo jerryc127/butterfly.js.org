@@ -15,6 +15,7 @@ top_img:
 abbrlink: butterfly-docs-en-get-started
 sticky: 100
 cover: https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-en-get-started.png
+series: docs
 ---
 
 {% note orange 'fas fa-language' %}

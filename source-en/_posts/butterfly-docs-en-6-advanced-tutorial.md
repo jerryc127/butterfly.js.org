@@ -14,6 +14,7 @@ description:
 top_img:
 cover: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/butterfly-docs-en-advanced-tutorial.png
 abbrlink: butterfly-docs-en-advanced-tutorial
+series: docs
 ---
 
 {% note orange 'fas fa-language' %}
