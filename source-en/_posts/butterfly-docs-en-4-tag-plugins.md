@@ -1834,4 +1834,391 @@ Sample
 
 {% series docs %}
 
+## Chartjs
+
+Another way to add charts
+
+```yaml
+# chartjs
+# see https://www.chartjs.org/docs/latest/
+chartjs:
+  enable: false
+  # Do not modify unless you understand how they work.
+  # The default settings are only used when the MD syntax is not specified.
+  # General font color for the chart
+  fontColor:
+    light: "rgba(0, 0, 0, 0.8)"
+    dark: "rgba(255, 255, 255, 0.8)"
+  # General border color for the chart
+  borderColor:
+    light: "rgba(0, 0, 0, 0.1)"
+    dark: "rgba(255, 255, 255, 0.2)"
+  # Background color for scale labels on radar and polar area charts
+  scale_ticks_backdropColor:
+    light: "transparent"
+    dark: "transparent"
+```
+
+| Parameter                | Description                                                   |
+| ------------------------ | ------------------------------------------------------------- |
+| enable                   | Whether to enable chartjs                                     |
+| fontColor                | Font color of the chart                                       |
+| borderColor              | Border color of the chart                                     |
+| scale_ticks_backdropColor| Background color of the scale labels for radar and polar area charts |
+
+Usage:
+
+```markdown
+{% chartjs [width, abreast, chartId] %}
+<!-- chart -->
+<!-- endchart -->
+<!-- desc -->
+<!-- enddesc -->
+{% endchartjs %}
+```
+
+| Parameter | Description                                                                 |
+| --------- | --------------------------------------------------------------------------- |
+| width     | [Optional] Chart width                                                      |
+| abreast   | [Optional] Whether to display side by side. When you write `<!-- desc -->`, the chart and description will be displayed side by side.<br> When abreast is true, the width value needs to be configured |
+| chartId   | [Optional] Chart ID                                                         |
+
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Sample
+{% endnote %}
+
+```
+{% chartjs 70 %}
+
+<!-- chart -->
+{
+    "type": "line",
+    "data": {
+        "labels": ["January", "February", "March", "April", "May", "June", "July"],
+        "datasets": [{
+            "label": "My First dataset",
+            "backgroundColor": "rgb(255, 99, 132)",
+            "borderColor": "rgb(255, 99, 132)",
+            "data": [0, 10, 5, 2, 20, 30, 45]
+        }]
+    },
+    "options": {
+        "responsive": true,
+        "title": {
+            "display": true,
+            "text": "Chart.js Line Chart"
+        }
+    }
+}
+<!-- endchart -->
+
+{% endchartjs %}
+```
+
+{% chartjs 70 %}
+
+<!-- chart -->
+{
+    "type": "line",
+    "data": {
+        "labels": ["January", "February", "March", "April", "May", "June", "July"],
+        "datasets": [{
+            "label": "My First dataset",
+            "backgroundColor": "rgb(255, 99, 132)",
+            "borderColor": "rgb(255, 99, 132)",
+            "data": [0, 10, 5, 2, 20, 30, 45]
+        }]
+    },
+    "options": {
+        "responsive": true,
+        "title": {
+            "display": true,
+            "text": "Chart.js Line Chart"
+        }
+    }
+}
+<!-- endchart -->
+
+{% endchartjs %}
+
+```markdown
+{% chartjs %}
+
+<!-- chart -->
+{
+  "type": "radar",
+  "data": {
+    "labels": [
+      "Eating",
+      "Drinking",
+      "Sleeping",
+      "Designing",
+      "Coding",
+      "Cycling",
+      "Running"
+    ],
+    "datasets": [
+      {
+        "label": "My First Dataset",
+        "data": [65, 59, 90, 81, 56, 55, 40],
+        "fill": true,
+        "backgroundColor": "rgba(255, 99, 132, 0.2)",
+        "borderColor": "rgb(255, 99, 132)",
+        "pointBackgroundColor": "rgb(255, 99, 132)",
+        "pointBorderColor": "#fff",
+        "pointHoverBackgroundColor": "#fff",
+        "pointHoverBorderColor": "rgb(255, 99, 132)"
+      },
+      {
+        "label": "My Second Dataset",
+        "data": [28, 48, 40, 19, 96, 27, 100],
+        "fill": true,
+        "backgroundColor": "rgba(54, 162, 235, 0.2)",
+        "borderColor": "rgb(54, 162, 235)",
+        "pointBackgroundColor": "rgb(54, 162, 235)",
+        "pointBorderColor": "#fff",
+        "pointHoverBackgroundColor": "#fff",
+        "pointHoverBorderColor": "rgb(54, 162, 235)"
+      }
+    ]
+  },
+  "options": {
+    "elements": {
+      "line": {
+        "borderWidth": 3
+      }
+    }
+  }
+}
+<!-- endchart -->
+{% endchartjs %}
+```
+
+{% chartjs %}
+
+<!-- chart -->
+{
+  "type": "radar",
+  "data": {
+    "labels": [
+      "Eating",
+      "Drinking",
+      "Sleeping",
+      "Designing",
+      "Coding",
+      "Cycling",
+      "Running"
+    ],
+    "datasets": [
+      {
+        "label": "My First Dataset",
+        "data": [65, 59, 90, 81, 56, 55, 40],
+        "fill": true,
+        "backgroundColor": "rgba(255, 99, 132, 0.2)",
+        "borderColor": "rgb(255, 99, 132)",
+        "pointBackgroundColor": "rgb(255, 99, 132)",
+        "pointBorderColor": "#fff",
+        "pointHoverBackgroundColor": "#fff",
+        "pointHoverBorderColor": "rgb(255, 99, 132)"
+      },
+      {
+        "label": "My Second Dataset",
+        "data": [28, 48, 40, 19, 96, 27, 100],
+        "fill": true,
+        "backgroundColor": "rgba(54, 162, 235, 0.2)",
+        "borderColor": "rgb(54, 162, 235)",
+        "pointBackgroundColor": "rgb(54, 162, 235)",
+        "pointBorderColor": "#fff",
+        "pointHoverBackgroundColor": "#fff",
+        "pointHoverBorderColor": "rgb(54, 162, 235)"
+      }
+    ]
+  },
+  "options": {
+    "elements": {
+      "line": {
+        "borderWidth": 3
+      }
+    }
+  }
+}
+<!-- endchart -->
+{% endchartjs %}
+
+```markdown
+{% chartjs 40,true %}
+<!-- chart -->
+{
+    "type": "pie",
+    "data": {
+        "labels": [
+            "Programming",
+            "Music",
+            "Reading",
+            "Gaming",
+            "Fitness",
+            "Travel"
+        ],
+        "datasets": [
+            {
+                "label": "Favorite Index",
+                "data": [
+                    30,
+                    24,
+                    19,
+                    14,
+                    9,
+                    4
+                ],
+                "backgroundColor": {
+                    "dark-mode": [
+                        "rgba(255, 99, 132, 0.5)",
+                        "rgba(54, 162, 235, 0.5)",
+                        "rgba(255, 206, 86, 0.5)",
+                        "rgba(75, 192, 192, 0.5)",
+                        "rgba(153, 102, 255, 0.5)",
+                        "rgba(255, 159, 64, 0.5)"
+                    ],
+                    "light-mode": [
+                        "rgba(255, 99, 132, 0.2)",
+                        "rgba(54, 162, 235, 0.2)",
+                        "rgba(255, 206, 86, 0.2)",
+                        "rgba(75, 192, 192, 0.2)",
+                        "rgba(153, 102, 255, 0.2)",
+                        "rgba(255, 159, 64, 0.2)"
+                    ]
+                },
+                "borderColor": {
+                    "dark-mode": [
+                        "rgba(255, 99, 132, 1)",
+                        "rgba(54, 162, 235, 1)",
+                        "rgba(255, 206, 86, 1)",
+                        "rgba(75, 192, 192, 1)",
+                        "rgba(153, 102, 255, 1)",
+                        "rgba(255, 159, 64, 1)"
+                    ],
+                    "light-mode": [
+                        "rgba(255, 99, 132, 1)",
+                        "rgba(54, 162, 235, 1)",
+                        "rgba(255, 206, 86, 1)",
+                        "rgba(75, 192, 192, 1)",
+                        "rgba(153, 102, 255, 1)",
+                        "rgba(255, 159, 64, 1)"
+                    ]
+                }
+            }
+        ]
+    },
+    "options": {
+        "plugins": {
+            "legend": {
+                "labels": {
+                    "color": {
+                        "dark-mode": "rgba(255, 255, 255, 0.8)",
+                        "light-mode": "rgba(0, 0, 0, 0.8)"
+                    }
+                }
+            }
+        }
+    }
+}
+<!-- endchart -->
+<!-- desc -->
+除了**计算机编程**外，我想不出还有其他让我感兴趣的工作。
+我可以无中生有地创造出**精美的范式**和**结构**，
+在此过程中也解决了无数的小谜团。
+<span style="font-size:0.8em;color: var(--sep-secondtext);">I can't think of any other job other than **computer programming** that interests me.
+I can create **beautiful paradigms** and **structures** out of nothing,
+Countless small mysteries are also solved in the process.</span>
+<!-- enddesc -->
+{% endchartjs %}
+```
+
+{% chartjs 40,true %}
+<!-- chart -->
+{
+    "type": "pie",
+    "data": {
+        "labels": [
+            "Programming",
+            "Music",
+            "Reading",
+            "Gaming",
+            "Fitness",
+            "Travel"
+        ],
+        "datasets": [
+            {
+                "label": "Favorite Index",
+                "data": [
+                    30,
+                    24,
+                    19,
+                    14,
+                    9,
+                    4
+                ],
+                "backgroundColor": {
+                    "dark-mode": [
+                        "rgba(255, 99, 132, 0.5)",
+                        "rgba(54, 162, 235, 0.5)",
+                        "rgba(255, 206, 86, 0.5)",
+                        "rgba(75, 192, 192, 0.5)",
+                        "rgba(153, 102, 255, 0.5)",
+                        "rgba(255, 159, 64, 0.5)"
+                    ],
+                    "light-mode": [
+                        "rgba(255, 99, 132, 0.2)",
+                        "rgba(54, 162, 235, 0.2)",
+                        "rgba(255, 206, 86, 0.2)",
+                        "rgba(75, 192, 192, 0.2)",
+                        "rgba(153, 102, 255, 0.2)",
+                        "rgba(255, 159, 64, 0.2)"
+                    ]
+                },
+                "borderColor": {
+                    "dark-mode": [
+                        "rgba(255, 99, 132, 1)",
+                        "rgba(54, 162, 235, 1)",
+                        "rgba(255, 206, 86, 1)",
+                        "rgba(75, 192, 192, 1)",
+                        "rgba(153, 102, 255, 1)",
+                        "rgba(255, 159, 64, 1)"
+                    ],
+                    "light-mode": [
+                        "rgba(255, 99, 132, 1)",
+                        "rgba(54, 162, 235, 1)",
+                        "rgba(255, 206, 86, 1)",
+                        "rgba(75, 192, 192, 1)",
+                        "rgba(153, 102, 255, 1)",
+                        "rgba(255, 159, 64, 1)"
+                    ]
+                }
+            }
+        ]
+    },
+    "options": {
+        "plugins": {
+            "legend": {
+                "labels": {
+                    "color": {
+                        "dark-mode": "rgba(255, 255, 255, 0.8)",
+                        "light-mode": "rgba(0, 0, 0, 0.8)"
+                    }
+                }
+            }
+        }
+    }
+}
+<!-- endchart -->
+<!-- desc -->
+除了**计算机编程**外，我想不出还有其他让我感兴趣的工作。
+我可以无中生有地创造出**精美的范式**和**结构**，
+在此过程中也解决了无数的小谜团。
+<span style="font-size:0.8em;color: var(--sep-secondtext);">I can't think of any other job other than **computer programming** that interests me.
+I can create **beautiful paradigms** and **structures** out of nothing,
+Countless small mysteries are also solved in the process.</span>
+<!-- enddesc -->
+{% endchartjs %}
+
 {% btn '/posts/butterfly-docs-en-theme-question/',❓ Butterfly document - Q&A,far fa-hand-point-right,block green right larger %}

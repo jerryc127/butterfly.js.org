@@ -685,7 +685,7 @@ artalk:
 # --------------------------------------
 
 chat:
-  # Choose: chatra/tidio/daovoice/crisp
+  # Choose: chatra/tidio/crisp
   # Leave it empty if you don't need chat
   use:
   # Chat Button [recommend]
@@ -701,10 +701,6 @@ chatra:
 # https://www.tidio.com/
 tidio:
   public_key:
-
-# http://dashboard.daovoice.io/app
-daovoice:
-  app_id:
 
 # https://crisp.chat/en/
 crisp:
@@ -963,6 +959,25 @@ mermaid:
   theme:
     light: default
     dark: dark
+
+# chartjs
+# see https://www.chartjs.org/docs/latest/
+chartjs:
+  enable: false
+  # Do not modify unless you understand how they work.
+  # The default settings are only used when the MD syntax is not specified.
+  # General font color for the chart
+  fontColor:
+    light: "rgba(0, 0, 0, 0.8)"
+    dark: "rgba(255, 255, 255, 0.8)"
+  # General border color for the chart
+  borderColor:
+    light: "rgba(0, 0, 0, 0.1)"
+    dark: "rgba(255, 255, 255, 0.2)"
+  # Background color for scale labels on radar and polar area charts
+  scale_ticks_backdropColor:
+    light: "transparent"
+    dark: "transparent"
 
 # Note - Bootstrap Callout
 note:
@@ -3226,7 +3241,7 @@ The theme includes several online chat tools. You can choose to enable one to fa
 
 ```yaml
 chat:
-  # Choose: chatra/tidio/daovoice/crisp
+  # Choose: chatra/tidio/crisp
   # Leave it empty if you don't need chat
   use:
   # Chat Button [recommend]
@@ -3238,7 +3253,7 @@ chat:
 
 | Parameter          | Description                                                  |
 | ------------------ | ------------------------------------------------------------ |
-| use                | Choose the chat tool to use, options are `chatra`/`tidio`/`daovoice`/`crisp` |
+| use                | Choose the chat tool to use, options are `chatra`/`tidio`/`crisp` |
 | rightside_button   | Enable the chat button at the bottom right corner            |
 | button_hide_show   | Hide chat button when scrolling down, show when scrolling up |
 
@@ -3311,36 +3326,6 @@ Demo
 {% endnote %}
 
 ![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-chat-tidio-demo.png)
-
-<!-- endtab -->
-
-<!-- tab daovoice -->
-
-{% note info %}
-To enable Daovoice, set the `chat` configuration `use` to `daovoice`.
-{% endnote %}
-
-Configure Daovoice by getting the `App ID`.
-
-1. Open [Daovoice](http://daovoice.io/) and sign up.
-2. Find your `App ID`.
-
-![hexo-theme-butterfly-docs-chat-daovoice-appid.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-chat-daovoice-appid.png)
-
-```yaml
-# daovoice
-# http://daovoice.io/
-daovoice:
-  app_id: xxxxx
-```
-
-You can customize the chat button and other styles in `Chat Settings`.
-
-![hexo-theme-butterfly-docs-chat-daovoice-ui.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-chat-daovoice-ui.png)
-
-{% note purple 'fa-solid fa-wand-magic-sparkles' %}
-Demo
-{% endnote %}
 
 <!-- endtab -->
 

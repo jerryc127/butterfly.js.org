@@ -687,7 +687,7 @@ artalk:
 # --------------------------------------
 
 chat:
-  # Choose: chatra/tidio/daovoice/crisp
+  # Choose: chatra/tidio/crisp
   # Leave it empty if you don't need chat
   use:
   # Chat Button [recommend]
@@ -703,10 +703,6 @@ chatra:
 # https://www.tidio.com/
 tidio:
   public_key:
-
-# http://dashboard.daovoice.io/app
-daovoice:
-  app_id:
 
 # https://crisp.chat/en/
 crisp:
@@ -965,6 +961,25 @@ mermaid:
     light: default
     dark: dark
 
+# chartjs
+# see https://www.chartjs.org/docs/latest/
+chartjs:
+  enable: true
+  # Do not modify unless you understand how they work.
+  # The default settings are only used when the MD syntax is not specified.
+  # General font color for the chart
+  fontColor:
+    light: "rgba(0, 0, 0, 0.8)"
+    dark: "rgba(255, 255, 255, 0.8)"
+  # General border color for the chart
+  borderColor:
+    light: "rgba(0, 0, 0, 0.1)"
+    dark: "rgba(255, 255, 255, 0.2)"
+  # Background color for scale labels on radar and polar area charts
+  scale_ticks_backdropColor:
+    light: "transparent"
+    dark: "transparent"
+
 # Note - Bootstrap Callout
 note:
   # Note tag style values:
@@ -1092,6 +1107,7 @@ CDN:
     # canvas_fluttering_ribbon:
     # canvas_nest:
     # canvas_ribbon:
+    # chartjs:
     # click_heart:
     # clickShowText:
     # disqusjs:
