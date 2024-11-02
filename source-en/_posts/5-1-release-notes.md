@@ -1,5 +1,5 @@
 ---
-title: 5-1-0-release-notes
+title: Butterfly 5.1 Release Notes
 comments: false
 date: 2024-10-20 17:27:48
 tags:
