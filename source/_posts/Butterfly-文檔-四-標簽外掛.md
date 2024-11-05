@@ -738,16 +738,14 @@ no-icon
 寫法:
 
 ```markdown
-{% gallery [lazyload],[rowHeight],[limit] %}
+{% gallery [button] %}
 markdown 圖片格式
 {% endgallery %}
 ```
 
 | 參數      | 解釋                                                                                 |
 | --------- | ------------------------------------------------------------------------------------ |
-| lazyload  | 【可選】點擊按鈕加載更多圖片，填寫 true/false。默認為 `false`。                      |
-| rowHeight | 【可選】圖片顯示的高度，如果需要一行顯示更多的圖片，可設置更小的數字。默認為 `220`。 |
-| limit     | 【可選】每次加載多少張照片。默認為 `10`。                                            |
+| button    | 【可選】點擊按鈕加載更多圖片，填寫 true/false。默認為 `false`。                      |
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
 例子
@@ -755,14 +753,6 @@ markdown 圖片格式
 
 ```markdown
 {% gallery %}
-markdown 圖片格式
-{% endgallery %}
-
-{% gallery true,220,10 %}
-markdown 圖片格式
-{% endgallery %}
-
-{% gallery true,,10 %}
 markdown 圖片格式
 {% endgallery %}
 ```
@@ -800,7 +790,7 @@ markdown 圖片格式
 寫法：
 
 ```markdown
-{% gallery url,[link],[lazyload],[rowHeight],[limit] %}
+{% gallery url,[link],[button] %}
 {% endgallery %}
 ```
 
@@ -808,9 +798,7 @@ markdown 圖片格式
 | --------- | ------------------------------------------------------------------------------------ |
 | url       | 【必須】 識別詞                                                                      |
 | link      | 【必須】遠程的 json 鏈接                                                             |
-| lazyload  | 【可選】點擊按鈕加載更多圖片，填寫 true/false。默認為 `false`。                      |
-| rowHeight | 【可選】圖片顯示的高度，如果需要一行顯示更多的圖片，可設置更小的數字。默認為 `220`。 |
-| limit     | 【可選】每次加載多少張照片。默認為 `10`。                                            |
+| button    | 【可選】點擊按鈕加載更多圖片，填寫 true/false。默認為 `false`。                      |
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
 遠程鏈接 Json 的例子

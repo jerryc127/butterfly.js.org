@@ -724,7 +724,7 @@ Sample
 {% galleryGroup 'OH MY GIRL' 'Images related to OH MY GIRL' '/Gallery/ohmygirl' https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg %}
 </div>
 
-## Gallery Album
+## Gallery
 
 {% note pink 'fa-solid fa-bell' %}
 Available from version 2.0.0 and above
@@ -739,16 +739,14 @@ Unlike the old version of the Gallery album, the new Gallery album automatically
 Usage:
 
 ```markdown
-{% gallery [lazyload],[rowHeight],[limit] %}
+{% gallery [button] %}
 markdown image format
 {% endgallery %}
 ```
 
 | Parameter      | Description                                                                                 |
 | --------- | ------------------------------------------------------------------------------------ |
-| lazyload  | [Optional] Load more images on button click, set to true/false. Default is [`false`]                      |
-| rowHeight | [Optional] Height of the displayed images. Set a smaller number to display more images in a row. Default is `220`. |
-| limit     | [Optional] Number of photos to load each time. Default is `10`.                                            |
+| button    | [Optional] Load more images on button click, set to true/false. Default is `false`. |
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
 Sample
@@ -756,14 +754,6 @@ Sample
 
 ```markdown
 {% gallery %}
-markdown image format
-{% endgallery %}
-
-{% gallery true,220,10 %}
-markdown image format
-{% endgallery %}
-
-{% gallery true,,10 %}
 markdown image format
 {% endgallery %}
 ```
@@ -801,7 +791,7 @@ markdown image format
 Usage:
 
 ```markdown
-{% gallery url,[link],[lazyload],[rowHeight],[limit] %}
+{% gallery url,[link],[button] %}
 {% endgallery %}
 ```
 
@@ -809,9 +799,7 @@ Usage:
 | --------- | --------------------------------------------------------------------------- |
 | url       | [Required] Identifier                                                       |
 | link      | [Required] Remote JSON link                                                 |
-| lazyload  | [Optional] Load more images on button click, set to true/false. Default is `false`. |
-| rowHeight | [Optional] Height of the displayed images. Set a smaller number to display more images in a row. Default is `220`. |
-| limit     | [Optional] Number of photos to load each time. Default is `10`.             |
+| button    | [Optional] Load more images on button click, set to true/false. Default is `false`. |
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
 Example of remote link JSON
