@@ -9,7 +9,7 @@ categories: Thx
 keywords: 'hexo,butterfly,主題,打賞'
 description: 非常感謝網友的打賞
 top_img:
-cover: https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-donate-cover.png
+cover: https://oss.012700.xyz/butterfly/2024/09/butterfly-donate-cover.png
 comments: false
 ---
 
