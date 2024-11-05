@@ -1,5 +1,5 @@
 ---
-title: Butterfly 安裝文檔(五) 主題問答
+title: Butterfly 文檔(五) 主題問答
 date: 2020-05-28 22:38:21
 tags:
   - 教程
@@ -9,27 +9,26 @@ tags:
 categories: Docs文檔
 keywords: 'hexo,butterfly,主題,doc,教程,文檔'
 description: Butterfly安裝文檔-主題問答
-cover: https://jsd.012700.xyz/gh/jerryc127/CDN/img/butterfly-doc-05-cover.png
+cover: https://oss.012700.xyz/butterfly/2024/09/butterfly-doc-05-cover.png
 abbrlink: 98d20436
 comments: false
+series: docs
 ---
 
 {% note green 'fas fa-rocket' %}
 
- 📚  文檔目錄
+📚 文檔目錄
 
-{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主題頁面 ' 📑 主題頁面' %} - {% post_link Butterfly-安裝文檔-三-主題配置-1 ' 📌 主題配置-1' %} - {% post_link Butterfly-安裝文檔-四-主題配置-2 ' ⚔️ 主題配置-2' %} - {% post_link Butterfly-安裝文檔-五-主題問答 ' ❓ 主題問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %}
+{% post_link Butterfly-文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-文檔-二-主題頁面 ' 📑 主題頁面' %} - {% post_link Butterfly-文檔-三-主題配置 ' 📌 主題配置' %} - {% post_link Butterfly-文檔-四-標簽外掛 ' ⚔️ 標簽外掛' %} - {% post_link Butterfly-文檔-五-主題問答 ' ❓ 主題問答' %} - {% post_link Butterfly-文檔-六-進階教程 ' ⚡️ 進階教程' %}
 {% endnote %}
 
 {% note orange 'fas fa-magic' %}
 
-你可以通過右下角的 **簡** 按鈕切換為簡體顯示 
+你可以通過右下角的 **簡** 按鈕切換為簡體顯示
 
 {% endnote %}
 
-***
-
-
+---
 
 以下是一些網友在安裝的過程中出現的問題。在提問題之前，先看有沒有解決方法。
 
@@ -78,7 +77,7 @@ Cannot read property &#39;length&#39; of undefined
 
 ### 升級最新版後運行報錯
 
-升級最新版本hexo g後報錯
+升級最新版本 hexo g 後報錯
 
 ```
 INFO  Deleted database.
@@ -105,15 +104,15 @@ TypeError: Cannot read property &#39;enable&#39; of undefined
 
 > 請參照最新版的_config.yml, 比對後，把缺的配置複製到主題配置文件中去
 
-###  wordcount is not a function / totalcount is not a function
+### wordcount is not a function / totalcount is not a function
 
 報錯`wordcount is not a function`
 
-> 請檢查是否安裝了wordcount插件 `npm i --save hexo-wordcount`
+> 請檢查是否安裝了 wordcount 插件 `npm i --save hexo-wordcount`
 
-### 升級2.0.0後運行報錯
+### 升級 2.0.0 後運行報錯
 
-舊版本升級到2.0.0後報錯
+舊版本升級到 2.0.0 後報錯
 
 ```
 INFO Start processing
@@ -134,7 +133,7 @@ at Promise.settlePromiseFromHandler (F:\hexo\nodemodules\bluebird\js\release\pro
 
 ```
 
-> 2.0.0版本以上刪掉了gallery，而引入新的gallery。所以如果有使用舊版，需刪掉或者更改寫法。
+> 2.0.0 版本以上刪掉了 gallery，而引入新的 gallery。所以如果有使用舊版，需刪掉或者更改寫法。
 
 ### 代碼渲染與實際不同
 
@@ -148,32 +147,32 @@ at Promise.settlePromiseFromHandler (F:\hexo\nodemodules\bluebird\js\release\pro
 
 渲染結果:
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/73515338-e6874d80-442f-11ea-9d07-725d37002985.png)
+![73515338-e6874d80-442f-11ea-9d07-725d37002985.png](https://oss.012700.xyz/butterfly/2024/09/73515338-e6874d80-442f-11ea-9d07-725d37002985.png)
 
-> cheerio版本錯誤，請安裝0.22.0版本
-> 
+> cheerio 版本錯誤，請安裝 0.22.0 版本
+>
 > npm install cheerio@0.22.0 --save
 
 ### 搜索欄在底部
 
-hexo deploy後搜索欄在頁面底部
+hexo deploy 後搜索欄在頁面底部
 
-> 生成前先hexo clean
+> 生成前先 hexo clean
 
-###  本地可以正常運行，但是push上去後出錯/缺失/無效
+### 本地可以正常運行，但是 push 上去後出錯/缺失/無效
 
 > 1. 清理瀏覽器緩存
-> 2. 如果1無效，請確認上傳時是否有運行 hexo clean
+> 2. 如果 1 無效，請確認上傳時是否有運行 hexo clean
 
-### 已在Hexo的配置文件設置了語言，為什麼導航欄仍然是英文
+### 已在 Hexo 的配置文件設置了語言，為什麼導航欄仍然是英文
 
 > 請在導航的配置裏，自己修改成想要的中文
 
 ```yaml
-  首頁: / || fa fa-home
-  時間軸: /archives/ || fa fa-archive
-  標籤: /tags/ || fa fa-tags
-  分類: /categories/ || fa fa-folder-open
+首頁: / || fa fa-home
+時間軸: /archives/ || fa fa-archive
+標籤: /tags/ || fa fa-tags
+分類: /categories/ || fa fa-folder-open
 ```
 
 ### 運行報錯 Cannot read property 'bind' of undefined/full_url_for is not function
@@ -182,7 +181,7 @@ hexo deploy後搜索欄在頁面底部
 TypeError: Cannot read property 'bind' of undefined
 ```
 
-> 把Hexo升級到4.0以上版本
+> 把 Hexo 升級到 4.0 以上版本
 
 ### Cannot read property 'appId' of undefined
 
@@ -225,7 +224,6 @@ Cannot read property 'appId' of undefined
 
 > 生成前先 hexo clean
 
-
 ### 點擊中文目錄報錯的問題
 
 這種情況出現在主題為 `3.0.0`以下版本，升級主題就行
@@ -234,5 +232,4 @@ Cannot read property 'appId' of undefined
 
 這是因為使用 babel 壓縮代碼而出現的報錯，具體解決方法查看 [babel/gulp-babel](https://github.com/babel/gulp-babel#runtime)
 
-
-{% btn '/posts/4073eda/',⚡️ Butterfly 安裝文檔(六) 進階教程,far fa-hand-point-right,block orange right larger %}
+{% btn '/posts/4073eda/',⚡️ Butterfly 文檔(六) 進階教程,far fa-hand-point-right,block orange right larger %}
