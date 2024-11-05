@@ -4,19 +4,21 @@ tags:
   - 標籤外掛
 categories:
   - Demo
-keywords: "Butterfly,標籤,tag"
+keywords: 'Butterfly,標籤,tag'
 description: 標籤外掛(Tag Plugins)
 abbrlink: 2df239ce
 date: 2020-01-05 21:41:03
 top_img:
-cover: https://jsd.012700.xyz/gh/jerryc127/CDN/img/Tag-Plugins-cover.png
+cover: https://oss.012700.xyz/butterfly/2024/09/Tag-Plugins-cover.png
 comments: false
 ---
 
 ## Tabs
 
 {% tabs Tags %}
+
 <!-- tab 出師表 -->
+
 臣亮言：先帝創業未半而中道崩殂，今天下三分，益州疲弊，此誠危急存亡之秋也。然侍衞之臣不懈於內，忠志之士忘身於外者，蓋追先帝之殊遇，欲報之於陛下也。誠宜開張聖聽，以光先帝遺德，恢弘志士之氣，不宜妄自菲薄，引喻失義，以塞忠諫之路也。
 宮中府中，俱為一體；陟罰臧否，不宜異同：若有作奸犯科及為忠善者，宜付有司論其刑賞，以昭陛下平明之理；不宜偏私，使內外異法也。
 侍中、侍郎郭攸之、費禕、董允等，此皆良實，志慮忠純，是以先帝簡拔以遺陛下：愚以為宮中之事，事無大小，悉以諮之，然後施行，必能裨補闕漏，有所廣益。
@@ -26,9 +28,11 @@ comments: false
 先帝知臣謹慎，故臨崩寄臣以大事也。受命以來，夙夜憂歎，恐託付不效，以傷先帝之明；故五月渡瀘，深入不毛。今南方已定，兵甲已足，當獎率三軍，北定中原，庶竭駑鈍，攘除奸兇，興復漢室，還於舊都。此臣所以報先帝而忠陛下之職分也。至於斟酌損益，進盡忠言，則攸之、禕、允之任也。
 願陛下託臣以討賊興復之效，不效，則治臣之罪，以告先帝之靈。若無興德之言，則責攸之、禕、允等之慢，以彰其咎；陛下亦宜自謀，以諮諏善道，察納雅言，深追先帝遺詔。臣不勝受恩感激。
 今當遠離，臨表涕零，不知所言。
+
 <!-- endtab -->
 
 <!-- tab 圖庫 -->
+
 {% gallery %}
 ![](https://i.loli.net/2019/12/25/Jj8FXuKVlOea4Ec.jpg)
 ![](https://i.loli.net/2019/12/25/eqBGrXx9tWsZOao.jpg)
@@ -38,13 +42,17 @@ comments: false
 ![](https://i.loli.net/2019/12/25/ucNDmUqQkrFfAWv.jpg)
 ![](https://i.loli.net/2019/12/25/oj1wAnGSKtFvXIJ.jpg)
 {% endgallery %}
+
 <!-- endtab -->
 
 <!-- tab 李白 -->
-李白（701年5月19日－762年11月30日），字太白，號青蓮居士，中國唐朝詩人，自言祖籍隴西成紀（今甘肅省天水市秦安縣），先世西涼武昭王李暠之後，與李唐皇室同宗。幼時內遷，寄籍劍南道綿州（今四川省江油市青蓮鎮）。另外，郭沫若研究認為李白出生於吉爾吉斯碎葉河上的碎葉城，屬唐安西都護府（今楚河州托克馬克市），該説有一定影響。有「詩仙」、「詩俠」、「酒仙」、「謫仙人」等稱呼，活躍於盛唐，為傑出的浪漫主義詩人。與杜甫合稱「李杜」。被賀知章驚呼為「天上謫仙」。
+
+李白（701 年 5 月 19 日－762 年 11 月 30 日），字太白，號青蓮居士，中國唐朝詩人，自言祖籍隴西成紀（今甘肅省天水市秦安縣），先世西涼武昭王李暠之後，與李唐皇室同宗。幼時內遷，寄籍劍南道綿州（今四川省江油市青蓮鎮）。另外，郭沫若研究認為李白出生於吉爾吉斯碎葉河上的碎葉城，屬唐安西都護府（今楚河州托克馬克市），該説有一定影響。有「詩仙」、「詩俠」、「酒仙」、「謫仙人」等稱呼，活躍於盛唐，為傑出的浪漫主義詩人。與杜甫合稱「李杜」。被賀知章驚呼為「天上謫仙」。
 
 {% subtabs 李白詩集 %}
+
 <!-- tab 行路難-->
+
 金樽清酒鬥十千，玉盤珍羞值萬錢。
 停杯投箸不能食，拔劍四顧心茫然。
 欲渡黃河冰塞川，將登太行雪暗天。
@@ -67,9 +75,11 @@ comments: false
 華亭鶴唳詎可聞，上蔡蒼鷹何足道。
 君不見吳中張翰稱達生，秋風忽憶江東行。
 且樂生前一杯酒，何須身後千載名！
+
 <!-- endtab -->
 
 <!-- tab 將進酒 -->
+
 君不見，黃河之水天上來，
 奔流到海不復回？
 君不見，高堂明鏡悲白髮，
@@ -95,35 +105,47 @@ comments: false
 五花馬，千金裘。
 呼兒將出換美酒，
 與爾同銷萬古愁。
+
 <!-- endtab -->
 
 <!-- tab 清平調 -->
+
 《清平調詞三首》是唐代大詩人李白的組詩作品，共三首七言樂府詩。第一首從空間角度寫，以牡丹花比楊貴妃的美豔；第二首從時間角度寫，表現楊貴妃的受寵幸；第三首總承一、二兩首，把牡丹和楊貴妃與君王糅合，融為一體。全詩構思精巧，辭藻豔麗，將花與人渾融在一起寫，描繪出人花交映、迷離恍惚的景象，顯示了詩人高超的藝術功力。
 
 {% subtabs 清平調 %}
+
 <!-- tab 清平調(一) -->
+
 雲想衣裳花想容，春風拂檻露華濃；
-　
+
 若非羣玉山頭見，會向瑤台月下逢。
+
 <!-- endtab -->
 
 <!-- tab 清平調(二) -->
+
 一枝紅豔露凝香，雲雨巫山空斷腸。
-　
+
 借問漢宮誰得似？可憐飛燕倚新粧。
+
 <!-- endtab -->
 
 <!-- tab 清平調(三) -->
+
 名花傾國兩相歡，常得君王帶笑看。
-　
+
 解識春風無限恨，沉香亨北倚闌千。
+
 <!-- endtab -->
+
 {% endsubtabs %}
 
 <!-- endtab -->
+
 {% endsubtabs %}
 
 <!-- endtab -->
+
 {% endtabs %}
 
 ## Button
@@ -142,9 +164,9 @@ This is my website, click the button {% btn 'https://butterfly.js.org',Butterfly
 ### Block
 
 ```markdown
-This is my website, click the button  {% btn 'https://butterfly.js.org',Butterfly,far fa-hand-point-right,block larger %}
-This is my website, click the button  {% btn 'https://butterfly.js.org',Butterfly,far fa-hand-point-right,block center larger %}
-This is my website, click the button  {% btn 'https://butterfly.js.org',Butterfly,far fa-hand-point-right,block right blue larger %}
+This is my website, click the button {% btn 'https://butterfly.js.org',Butterfly,far fa-hand-point-right,block larger %}
+This is my website, click the button {% btn 'https://butterfly.js.org',Butterfly,far fa-hand-point-right,block center larger %}
+This is my website, click the button {% btn 'https://butterfly.js.org',Butterfly,far fa-hand-point-right,block right blue larger %}
 ```
 
 {% btn 'https://butterfly.js.org',Butterfly,far fa-hand-point-right,block larger %}
@@ -203,35 +225,35 @@ This is my website, click the button  {% btn 'https://butterfly.js.org',Butterfl
 
 {% mermaid %}
 pie
-    title Key elements in Product X
-    "Calcium" : 42.96
-    "Potassium" : 50.05
-    "Magnesium" : 10.01
-    "Iron" :  5
+title Key elements in Product X
+"Calcium" : 42.96
+"Potassium" : 50.05
+"Magnesium" : 10.01
+"Iron" : 5
 {% endmermaid %}
 
 {% mermaid %}
 gantt
-    title A Gantt Diagram
-    dateFormat  YYYY-MM-DD
-    section Section
-    A task           :a1, 2014-01-01, 30d
-    Another task     :after a1  , 20d
-    section Another
-    Task in sec      :2014-01-12  , 12d
-    another task      : 24d
+title A Gantt Diagram
+dateFormat YYYY-MM-DD
+section Section
+A task :a1, 2014-01-01, 30d
+Another task :after a1 , 20d
+section Another
+Task in sec :2014-01-12 , 12d
+another task : 24d
 {% endmermaid %}
 
 {% mermaid %}
 gantt
-    title A Gantt Diagram
-    dateFormat  YYYY-MM-DD
-    section Section
-    A task           :a1, 2014-01-01, 30d
-    Another task     :after a1  , 20d
-    section Another
-    Task in sec      :2014-01-12  , 12d
-    another task      : 24d
+title A Gantt Diagram
+dateFormat YYYY-MM-DD
+section Section
+A task :a1, 2014-01-01, 30d
+Another task :after a1 , 20d
+section Another
+Task in sec :2014-01-12 , 12d
+another task : 24d
 {% endmermaid %}
 
 ## Note (Bootstrap Callout)
@@ -389,6 +411,7 @@ warning 提示塊標籤
 danger 提示塊標籤
 {% endnote %}
 ```
+
 {% note flat %}
 默認 提示塊標籤
 {% endnote %}
@@ -546,7 +569,7 @@ danger 提示塊標籤
 你是刷 Visa 還是 UnionPay
 {% endnote %}
 {% note blue 'fas fa-bullhorn' simple %}
-2021年快到了....
+2021 年快到了....
 {% endnote %}
 {% note pink 'fas fa-car-crash' simple %}
 小心開車 安全至上
@@ -569,7 +592,7 @@ danger 提示塊標籤
 你是刷 Visa 還是 UnionPay
 {% endnote %}
 {% note blue 'fas fa-bullhorn' simple %}
-2021年快到了....
+2021 年快到了....
 {% endnote %}
 {% note pink 'fas fa-car-crash' simple %}
 小心開車 安全至上
@@ -594,7 +617,7 @@ danger 提示塊標籤
 你是刷 Visa 還是 UnionPay
 {% endnote %}
 {% note blue 'fas fa-bullhorn' modern %}
-2021年快到了....
+2021 年快到了....
 {% endnote %}
 {% note pink 'fas fa-car-crash' modern %}
 小心開車 安全至上
@@ -617,7 +640,7 @@ danger 提示塊標籤
 你是刷 Visa 還是 UnionPay
 {% endnote %}
 {% note blue 'fas fa-bullhorn' modern %}
-2021年快到了....
+2021 年快到了....
 {% endnote %}
 {% note pink 'fas fa-car-crash' modern %}
 小心開車 安全至上
@@ -642,7 +665,7 @@ danger 提示塊標籤
 你是刷 Visa 還是 UnionPay
 {% endnote %}
 {% note blue 'fas fa-bullhorn' flat %}
-2021年快到了....
+2021 年快到了....
 {% endnote %}
 {% note pink 'fas fa-car-crash' flat %}
 小心開車 安全至上
@@ -665,7 +688,7 @@ danger 提示塊標籤
 你是刷 Visa 還是 UnionPay
 {% endnote %}
 {% note blue 'fas fa-bullhorn' flat%}
-2021年快到了....
+2021 年快到了....
 {% endnote %}
 {% note pink 'fas fa-car-crash' flat%}
 小心開車 安全至上
@@ -690,7 +713,7 @@ danger 提示塊標籤
 你是刷 Visa 還是 UnionPay
 {% endnote %}
 {% note blue 'fas fa-bullhorn' disabled %}
-2021年快到了....
+2021 年快到了....
 {% endnote %}
 {% note pink 'fas fa-car-crash' disabled %}
 小心開車 安全至上
@@ -713,7 +736,7 @@ danger 提示塊標籤
 你是刷 Visa 還是 UnionPay
 {% endnote %}
 {% note blue 'fas fa-bullhorn' disabled %}
-2021年快到了....
+2021 年快到了....
 {% endnote %}
 {% note pink 'fas fa-car-crash' disabled %}
 小心開車 安全至上
@@ -738,7 +761,7 @@ danger 提示塊標籤
 你是刷 Visa 還是 UnionPay
 {% endnote %}
 {% note blue no-icon %}
-2021年快到了....
+2021 年快到了....
 {% endnote %}
 {% note pink no-icon %}
 小心開車 安全至上
@@ -761,7 +784,7 @@ danger 提示塊標籤
 你是刷 Visa 還是 UnionPay
 {% endnote %}
 {% note blue no-icon %}
-2021年快到了....
+2021 年快到了....
 {% endnote %}
 {% note pink no-icon %}
 小心開車 安全至上
@@ -778,7 +801,6 @@ danger 提示塊標籤
 {% note green no-icon %}
 前端最討厭的瀏覽器
 {% endnote %}
-
 
 ## Gallery 相冊圖庫
 
@@ -836,7 +858,7 @@ danger 提示塊標籤
 git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly
 ```
 
-如果想要安裝比較新的dev分支，可以
+如果想要安裝比較新的 dev 分支，可以
 
 ```git
 git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly
