@@ -792,7 +792,7 @@ artalk:
 # --------------------------------------
 
 chat:
-  # 聊天服務類型，可選值：chatra/tidio/daovoice/crisp，如果不需要聊天功能則留空
+  # 聊天服務類型，可選值：chatra/tidio/crisp，如果不需要聊天功能則留空
   use:
   # 推薦使用聊天按鈕，會在網站右下角創建一個按鈕，並隱藏原始按鈕
   rightside_button: false
@@ -810,12 +810,6 @@ chatra:
 tidio:
   # Tidio 公鑰
   public_key:
-
-# Daovoice 聊天服務配置
-# 官方網站：http://dashboard.daovoice.io/app
-daovoice:
-  # Daovoice 應用 ID
-  app_id:
 
 # Crisp 聊天服務配置
 # 官方網站：https://crisp.chat/en/
@@ -1111,6 +1105,25 @@ mermaid:
   theme:
     light: default
     dark: dark
+
+# chartjs
+# 參見 https://www.chartjs.org/docs/latest/
+chartjs:
+  enable: false
+  # 除非你了解它們的工作原理，否則不要修改。
+  # 默認設置僅在未指定 MD 語法時使用。
+  # 圖表的字體顏色
+  fontColor:
+    light: "rgba(0, 0, 0, 0.8)"
+    dark: "rgba(255, 255, 255, 0.8)"
+  # 圖表的邊框顏色
+  borderColor:
+    light: "rgba(0, 0, 0, 0.1)"
+    dark: "rgba(255, 255, 255, 0.2)"
+  # 雷達圖和極區圖的刻度標籤背景顏色
+  scale_ticks_backdropColor:
+    light: "transparent"
+    dark: "transparent"
 
 # Note - Bootstrap 提示框
 note:
@@ -3399,7 +3412,7 @@ artalk:
 
 ```yaml
 chat:
-  # Choose: chatra/tidio/daovoice/crisp
+  # Choose: chatra/tidio/crisp
   # Leave it empty if you don't need chat
   use:
   # Chat Button [recommend]
@@ -3411,7 +3424,7 @@ chat:
 
 | 參數             | 解釋                                                                          |
 | ---------------- | ----------------------------------------------------------------------------- |
-| use              | 選擇你要使用的聊天工具，可選擇`chatra`/`tidio`/`daovoice`/`crisp` |
+| use              | 選擇你要使用的聊天工具，可選擇`chatra`/`tidio`/`crisp` |
 | rightside_button | 是否開啟右下角聊天按鈕                                                        |
 | button_hide_show | 是否開啟滾動時隱藏聊天按鈕                                                    |
 
@@ -3487,34 +3500,6 @@ Demo
 {% endnote %}
 
 ![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-chat-tidio-demo.png)
-
-<!-- endtab -->
-
-<!-- tab daovoice -->
-
-{% note info %}
-開啟 daovoice， 把主題配置文件中 `chat` 的 `use`設置為`daovoice`
-{% endnote %}
-
-打開[daovoice](http://daovoice.io/)和註冊帳號
-找到你的`app id`
-
-![hexo-theme-butterfly-docs-chat-daovoice-appid.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-chat-daovoice-appid.png)
-
-```yaml
-# daovoice
-# http://daovoice.io/
-daovoice:
-  app_id: xxxxx
-```
-
-可在`聊天設置`裏配置聊天按鈕等樣式
-
-![hexo-theme-butterfly-docs-chat-daovoice-ui.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-chat-daovoice-ui.png)
-
-{% note purple 'fa-solid fa-wand-magic-sparkles' %}
-Demo
-{% endnote %}
 
 <!-- endtab -->
 

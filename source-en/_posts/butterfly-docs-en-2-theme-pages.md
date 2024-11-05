@@ -64,8 +64,12 @@ aside:
 aplayer:
 highlight_shrink:
 random:
+limit:
+  type:
+  value:
 ---
 ```
+
 | Syntax          | Explanation                                                  |
 | ----------------| ------------------------------------------------------------ |
 | title           | [Required] Page title                                        |
@@ -81,6 +85,9 @@ random:
 | aplayer         | [Optional] Load aplayer's js and css on the specified page, please refer to the `music` configuration below the article |
 | highlight_shrink| [Optional] Configure whether code blocks are expanded (true/false) (default is the setting of `highlight_shrink`) |
 | random          | [Optional] Configure whether to randomly sort friends links (default false) |
+| limit           | [Optional] Limit the number of displayed in shuoshuo |
+| limit.type      | [Optional] Limit type: `date` or `num`                   |
+| limit.value     | [Optional] Limit value: `2024-06-21` or `5`               |
 
 ### Post Front-matter
 
@@ -440,6 +447,18 @@ type: 'shuoshuo'
 ---
 ```
 
+You can hide some Shuoshuo posts with configurable parameters:
+
+```markdown
+limit:
+  type: date
+  value: 2024-06-20
+```
+
+| limit            | [Optional] Configure the number of Shuoshuo posts to display |
+| limit.type       | [Optional] Configure the type for the number of Shuoshuo posts to display (date or num) |
+| limit.value      | [Optional] Configure the value for the number of Shuoshuo posts to display (when type is set to date, value must be a date. When type is set to num, value must be a number and greater than 0) |
+
 ### Data Source
 
 {% tabs shuoshuo-add %}
@@ -450,6 +469,8 @@ In the `source/_data` directory of your Hexo root (if there is no `_data` folder
 
 {% note blue 'fa-solid fa-user' %}
 `author` and `avatar` are optional and will automatically fetch from the configuration file.
+
+If you need to enable comments, you must configure the `key`, otherwise the comment button will not be displayed.
 {% endnote %}
 
 ```yaml
@@ -459,6 +480,7 @@ In the `source/_data` directory of your Hexo root (if there is no `_data` folder
   content: |
     This is a sample content for **Author 1**.
     ![Sample Image](https://via.placeholder.com/150)
+  key: key-1
   tags:
     - tags1
     - tags2
@@ -468,6 +490,7 @@ In the `source/_data` directory of your Hexo root (if there is no `_data` folder
   content: |
     This is a sample content for **Author 2**.
     ![Sample Image](https://via.placeholder.com/150)
+  key: key-2
   tags:
     - tag2
     - tag3
@@ -485,6 +508,7 @@ In the `source/_data` directory of your Hexo root (if there is no `_data` folder
 | avatar    | 【Optional】Author's avatar                   |
 | date      | 【Required】Date                              |
 | content   | 【Required】Content (Markdown or HTML format)|
+| key     | 【Optional】 Unique identifier for comments, required to enable comments |
 | tags      | 【Optional】Tags                              |
 
 <!-- endtab -->
@@ -515,6 +539,7 @@ The format for JSON:
     "avatar": "https://butterfly.js.org/img/avatar.png",
     "date": "2024-06-21 23:33:26",
     "content": "This is a sample content for **Author 1**.",
+    "key": "key-1",
     "tags": ["tags1", "tags2"]
   },
   {
@@ -522,6 +547,7 @@ The format for JSON:
     "avatar": "https://butterfly.js.org/img/avatar.png",
     "date": "2024-06-20 23:33:26",
     "content": "This is a sample content for **Author 2**.",
+    "key": "key-2",
     "tags": ["tag2", "tag3"]
   },
   {
@@ -539,6 +565,7 @@ The format for JSON:
 | avatar    | 【Optional】Author's avatar                   |
 | date      | 【Required】Date                              |
 | content   | 【Required】Content (Markdown or HTML format)|
+| key     | 【Optional】 Unique identifier for comments, required to enable comments |
 | tags      | 【Optional】Tags                              |
 
 <!-- endtab -->

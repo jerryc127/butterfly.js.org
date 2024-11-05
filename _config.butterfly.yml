@@ -116,16 +116,15 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover:
-    - https://oss.012700.xyz/butterfly/2024/10/material-2.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-1.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-3.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-6.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-5.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-4.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-7.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-9.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-8.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-10.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-1.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-2.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-3.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-4.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-5.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-6.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-7.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-8.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-9.png
 
 # Replace Broken Images
 error_img:
@@ -687,7 +686,7 @@ artalk:
 # --------------------------------------
 
 chat:
-  # Choose: chatra/tidio/daovoice/crisp
+  # Choose: chatra/tidio/crisp
   # Leave it empty if you don't need chat
   use:
   # Chat Button [recommend]
@@ -703,10 +702,6 @@ chatra:
 # https://www.tidio.com/
 tidio:
   public_key:
-
-# http://dashboard.daovoice.io/app
-daovoice:
-  app_id:
 
 # https://crisp.chat/en/
 crisp:
@@ -965,6 +960,25 @@ mermaid:
     light: default
     dark: dark
 
+# chartjs
+# see https://www.chartjs.org/docs/latest/
+chartjs:
+  enable: true
+  # Do not modify unless you understand how they work.
+  # The default settings are only used when the MD syntax is not specified.
+  # General font color for the chart
+  fontColor:
+    light: "rgba(0, 0, 0, 0.8)"
+    dark: "rgba(255, 255, 255, 0.8)"
+  # General border color for the chart
+  borderColor:
+    light: "rgba(0, 0, 0, 0.1)"
+    dark: "rgba(255, 255, 255, 0.2)"
+  # Background color for scale labels on radar and polar area charts
+  scale_ticks_backdropColor:
+    light: "transparent"
+    dark: "transparent"
+
 # Note - Bootstrap Callout
 note:
   # Note tag style values:
@@ -1092,6 +1106,7 @@ CDN:
     # canvas_fluttering_ribbon:
     # canvas_nest:
     # canvas_ribbon:
+    # chartjs:
     # click_heart:
     # clickShowText:
     # disqusjs:
