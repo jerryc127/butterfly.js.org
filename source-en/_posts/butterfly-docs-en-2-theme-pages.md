@@ -117,6 +117,7 @@ aplayer:
 highlight_shrink:
 aside:
 abcjs:
+noticeOutdate:
 ---
 ```
 
@@ -145,6 +146,7 @@ abcjs:
 | highlight_shrink      | [Optional] Configure whether code blocks are expanded (true/false) (default is the setting of `highlight_shrink`) |
 | aside                 | [Optional] Display sidebar (default true)                       |
 | abcjs                 | [Optional] Load abcjs (only needed when setting `per_page: false` for abcjs, default false) |
+| noticeOutdate         | [Optional] Article expiration reminder (default setting is the enable configuration in noticeOutdate)       |
 
 ## Tags Page
 
@@ -455,6 +457,8 @@ limit:
   value: 2024-06-20
 ```
 
+| Parameter         | Explanation                                                  |
+|-------------------|--------------------------------------------------------------|
 | limit            | [Optional] Configure the number of Shuoshuo posts to display |
 | limit.type       | [Optional] Configure the type for the number of Shuoshuo posts to display (date or num) |
 | limit.value      | [Optional] Configure the value for the number of Shuoshuo posts to display (when type is set to date, value must be a date. When type is set to num, value must be a number and greater than 0) |

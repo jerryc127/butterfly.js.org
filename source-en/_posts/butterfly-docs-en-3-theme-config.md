@@ -1971,6 +1971,10 @@ post_pagination: false
 
 ### Outdated Article Reminder
 
+{% note warning %}
+if you want to close the out-of-date reminder for certain articles, you can configure `noticeOutdate: false` in the corresponding article's `front-matter` to close it individually.
+{% endnote %}
+
 You can choose to display an outdated notice for articles based on their update time.
 
 ```yaml

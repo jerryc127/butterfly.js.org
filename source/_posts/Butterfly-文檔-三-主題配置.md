@@ -2136,6 +2136,10 @@ post_pagination: false
 
 ### 文章過期提醒
 
+{% note warning %}
+如果你想单独关闭某些文章的过期提醒，你可以在对应文章页的 `front-matter` 中配置 `noticeOutdate: false` 来关闭。
+{% endnote %}
+
 可設置是否顯示文章過期提醒，以更新時間為基準。
 
 ```yaml

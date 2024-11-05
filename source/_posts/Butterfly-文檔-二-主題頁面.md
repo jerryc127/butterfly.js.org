@@ -117,6 +117,7 @@ aplayer:
 highlight_shrink:
 aside:
 abcjs:
+noticeOutdate:
 ---
 ```
 
@@ -146,6 +147,7 @@ abcjs:
 | highlight_shrink      | 【可選】配置代碼框是否展開(true/false)(默認為設置中 highlight_shrink 的配置)                |
 | aside                 | 【可選】顯示側邊欄 (默認 true)                                                              |
 | abcjs                 | 【可選】加載 abcjs (當設置 abcjs 的 per_page: false 時，才需要配置，默認 false )            |
+| noticeOutdate         | 【可選】文章過期提醒 (默認為設置中 noticeOutdate 的 enable 配置)                           |
 
 ## 標籤頁
 
@@ -456,6 +458,8 @@ limit:
   value: 2024-06-20
 ```
 
+| 參數             | 解釋                                                                                |
+| ---------------- | ----------------------------------------------------------------------------------- |
 | limit            | 【可選】配置説説顯示數量                                                        |
 | limit.type       | 【可選】配置説説顯示數量的類型 （date 或者 num）                                    |
 | limit.value      | 【可選】配置説説顯示數量的值 （當 type 配置為 date 時， value 的值必須為日期。當 type 配置為 num 時， value 的值必須為數字，且大於 0                                     |

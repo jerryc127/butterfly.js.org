@@ -95,10 +95,6 @@
       link: https://blog.guole.fun/
       avatar: https://blog.guole.fun/img/gl.jpg
       descr: 生命是独立是自由是爱与和平
-    - name: 柠檬大师的空间站
-      link: https://leidl.top
-      avatar: https://leidl.top/img/favicon.jpg
-      descr: 一个不善言辞的Java攻城狮
     - name: Layne666 - Blog
       link: https://layne666.cn
       avatar: https://layne666.cn/images/avatar.png
@@ -111,10 +107,6 @@
       link: https://yk-ddm.github.io
       avatar: https://yk-ddm.github.io/img/avatar.jpg
       descr: 少想, 多练！
-    - name: Throwable
-      link: https://www.throwx.cn
-      avatar: https://throwable-blog-1256189093.cos.ap-guangzhou.myqcloud.com/mine/doge_avatar.jpg
-      descr: Java后端开发、基础架构、并发编程   
     - name: lijinhao's blog
       link: https://leekinghou-github-io.vercel.app/
       avatar: https://files.catbox.moe/6g3wus.png
@@ -131,10 +123,6 @@
       link: https://youngjuning.js.org
       avatar: https://fastly.jsdelivr.net/gh/youngjuning/images/202109211729538.png
       descr: 怕什么真理无穷，进一寸有一寸的欢喜。
-    - name: 梦の小窝
-      link: https://renm.cc
-      avatar: https://fastly.jsdelivr.net/gh/renmcc/renmcc@main/img/avatar2.webp
-      descr: 一个收藏回忆与分享技术的地方！
     - name: BuyiXiao's Blog
       link: https://buyixiao.github.io/
       avatar: https://buyixiao.github.io/img/avatar.png
@@ -163,18 +151,10 @@
       link: https://wonderland.plus
       avatar: https://blogimgs-1310551706.cos.ap-beijing.myqcloud.com/face.png
       descr: You are wonderful.
-    - name: 打工这件小事
-      link: https://lilu.org.cn
-      avatar: https://fastly.jsdelivr.net/gh/sunchaser-lilu/sunchaser-cdn@master/images/avatar.png
-      descr: 没有那把剑，我照样可以歼灭敌军。
     - name: Zxb技术博客
       link: https://zhaoxiaobin.net
       avatar: https://zhaoxiaobin.net/pic/static/avatar.png
       descr: 个人技术博客
-    - name: CasecoRI 的小站
-      link: https://www.casecori.top/
-      avatar: https://cdn.casecori.top/gh/cystee/om/favicon.png
-      descr: Hyper 2022！
     - name: Leonus
       link: https://blog.leonus.cn/
       avatar: https://q1.qlogo.cn/g?b=qq&nk=553344777&s=640
@@ -207,10 +187,6 @@
       link: https://imxixi.cn/
       avatar: https://li-xx.oss-cn-beijing.aliyuncs.com/xixi/%E5%A4%B4%E5%83%8F.jpg
       descr: 致力于成为更好的人而奋斗
-    - name: 时雨小栈
-      link: https://tokiame.cn/
-      avatar: https://tokiame.cn/img/avatar.jpg
-      descr: 自我主义，有何不可
     - name: blitheZhu
       link: https://blithezhu.top/
       avatar: https://blithezhu.top/img/icon.jpg
@@ -247,10 +223,6 @@
       link: https://ningning.netlify.app
       avatar: https://ningning.netlify.app/img/avatar.png
       descr: 你今天也比誰都可愛 💜
-    - name: Mycpen
-      link: https://blog.cpen.top/
-      avatar: https://blog.cpen.top/img/avatar.jpg
-      descr: 这是一个有趣的博客
     - name: 神奇的妙妙屋
       link: https://blog.ttiee.tech/
       avatar: https://blog.ttiee.tech/img/avatar.jpg
@@ -275,14 +247,6 @@
       link: https://tabotef134.top/
       avatar: https://q.qlogo.cn/g?b=qq&nk=2056517872&s=0
       descr: 风带来了故事的种子，时间使之发芽
-    - name: 七鳄の学习格
-      link: https://blog.gmcj0816.top/
-      avatar: https://blog.gmcj0816.top/img/SeriousWission_TouXiangPic.png
-      descr: 如果世界多了精彩，每一位都是创造者，大家都是你的观众
-    - name: GoodBoyboy ‘s Blog
-      link: https://blog.goodboyboy.top/
-      avatar: https://gravatar.goodboyboy.top/avatar/9da9d1d515d273d4794015f2321f6e04?s=96&d=monsterid&r=g
-      descr: 惬意小屋-点滴记忆
     - name: 卜仙堂
       link: https://buxiantang.top/
       descr: 不会敲代码的命理师不是好厨子。
