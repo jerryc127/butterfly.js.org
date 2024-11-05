@@ -63,6 +63,9 @@ aside:
 aplayer:
 highlight_shrink:
 random:
+limit:
+  type:
+  value:
 ---
 ```
 
@@ -82,6 +85,9 @@ random:
 | aplayer          | 【可選】在需要的頁面加載 aplayer 的 js 和 css,請參考文章下面的`音樂` 配置           |
 | highlight_shrink | 【可選】配置代碼框是否展開 (true/false) (默認為設置中 highlight_shrink 的配置)      |
 | random           | 【可選】配置友情鏈接是否隨機排序（默認為 false）                                     |
+| limit            | 【可選】配置説説顯示數量                                                        |
+| limit.type       | 【可選】配置説説顯示數量的類型 （date 或者 num）                                    |
+| limit.value      | 【可選】配置説説顯示數量的值                                      |
 
 ### Post Front-matter
 
@@ -442,6 +448,18 @@ type: 'shuoshuo'
 ---
 ```
 
+你可以隱藏一些説説，可配置的參數：
+
+```markdown
+limit:
+  type: date
+  value: 2024-06-20
+```
+
+| limit            | 【可選】配置説説顯示數量                                                        |
+| limit.type       | 【可選】配置説説顯示數量的類型 （date 或者 num）                                    |
+| limit.value      | 【可選】配置説説顯示數量的值 （當 type 配置為 date 時， value 的值必須為日期。當 type 配置為 num 時， value 的值必須為數字，且大於 0                                     |
+
 ### 數據來源
 
 {% tabs shuoshuo-add %}
@@ -452,12 +470,15 @@ type: 'shuoshuo'
 
 {% note blue 'fa-solid fa-user' %}
 `author` 和 `avatar`可省略，會自動去獲取配置文件中的 `author` 和 `avatar`
+
+如果需要開啓評論，必須配置 `key`，否則不會顯示評論按鈕
 {% endnote %}
 
 ```yaml
 - author: Butterfly
   avatar: https://butterfly.js.org/img/avatar.png
   date: 2024-06-21 23:33:26
+  key: key-1
   content: |
     This is a sample content for **Author 1**.
     ![Sample Image](https://via.placeholder.com/150)
@@ -467,6 +488,7 @@ type: 'shuoshuo'
 - author: Butterfly
   avatar: https://butterfly.js.org/img/avatar.png
   date: 2024-06-20 23:33:26
+  key: key-2
   content: |
     This is a sample content for **Author 2**.
     ![Sample Image](https://via.placeholder.com/150)
@@ -477,6 +499,7 @@ type: 'shuoshuo'
 - author: Butterfly
   avatar: https://butterfly.js.org/img/avatar.png
   date: 2024-06-19 23:33:26
+  key: key-3
   content: |
     This is a sample content for **Author 3**.
 ```
@@ -487,6 +510,7 @@ type: 'shuoshuo'
 | avatar  | 【可選】作者頭像                           |
 | date    | 【必需】日期                               |
 | content | 【必需】內容（ Markdown 格式或者 Html 格式 |
+| key     | 【可選】評論的唯一標識, 開啓評論必須配置                          |
 | tags    | 【可選】標籤                               |
 
 <!-- endtab -->
@@ -517,6 +541,7 @@ Json 的格式：
     "avatar": "https://butterfly.js.org/img/avatar.png",
     "date": "2024-06-21 23:33:26",
     "content": "This is a sample content for **Author 1**.",
+    "key": "key-1",
     "tags": ["tags1", "tags2"]
   },
   {
@@ -524,6 +549,7 @@ Json 的格式：
     "avatar": "https://butterfly.js.org/img/avatar.png",
     "date": "2024-06-20 23:33:26",
     "content": "This is a sample content for **Author 2**.",
+    "key": "key-2",
     "tags": ["tag2", "tag3"]
   },
   {
@@ -541,6 +567,7 @@ Json 的格式：
 | avatar  | 【可選】作者頭像                           |
 | date    | 【必需】日期                               |
 | content | 【必需】內容（ Markdown 格式或者 Html 格式 |
+| key     | 【可選】評論的唯一標識, 開啓評論必須配置                          |
 | tags    | 【可選】標籤                               |
 
 <!-- endtab -->

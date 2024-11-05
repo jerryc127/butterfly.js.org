@@ -14,17 +14,12 @@ description:
 top_img:
 cover: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/butterfly-docs-en-advanced-tutorial.png
 abbrlink: butterfly-docs-en-advanced-tutorial
+series: docs
 ---
 
 {% note orange 'fas fa-language' %}
 
 This article is translated from ChatGPT.
-
-{% endnote %}
-
-{% note blue 'fas fa-bullhorn' %}
-
- 🦋 Butterfly has been updated to [4.10](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.10).
 
 {% endnote %}
 

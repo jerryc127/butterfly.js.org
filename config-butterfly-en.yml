@@ -27,8 +27,8 @@ menu:
   Docs||fas fa-book:
     🚀 Get Started: /posts/butterfly-docs-en-get-started/
     📑 Theme Pages: /posts/butterfly-docs-en-theme-pages/
-    📌 Theme Configuration 1: /posts/butterfly-docs-en-theme-config-one/
-    ⚔️ Theme Configuration 2: /posts/butterfly-docs-en-theme-config-two/
+    📌 Theme Configuration 1: /posts/butterfly-docs-en-theme-config/
+    ⚔️ Tag Plugins: /posts/butterfly-docs-en-tag-plugins/
     ❓ Q&A: /posts/butterfly-docs-en-theme-question/
     ⚡️ Advanced Tutorials: /posts/butterfly-docs-en-advanced-tutorial/
   Messageboard: /messageboard/ || fas fa-comment-dots
@@ -114,16 +114,15 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover:
-    - https://oss.012700.xyz/butterfly/2024/10/material-2.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-1.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-3.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-6.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-5.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-4.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-7.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-9.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-8.png
-    - https://oss.012700.xyz/butterfly/2024/10/material-10.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-1.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-2.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-3.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-4.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-5.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-6.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-7.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-8.png
+    - https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-9.png
 
 # Replace Broken Images
 error_img:
@@ -236,10 +235,10 @@ reward:
   QR_code:
     - img: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/wechat.jpg
       link:
-      text: 微信
+      text: Wechat
     - img: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/alipay.jpg
       link:
-      text: 支付寶
+      text: Alipay
     - img: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/stripe.png
       link: https://buy.stripe.com/3cs6rP6YA91sbbG5kk
       text: Stripe
@@ -676,7 +675,7 @@ artalk:
 # --------------------------------------
 
 chat:
-  # Choose: chatra/tidio/daovoice/crisp
+  # Choose: chatra/tidio/crisp
   # Leave it empty if you don't need chat
   use:
   # Chat Button [recommend]
@@ -692,10 +691,6 @@ chatra:
 # https://www.tidio.com/
 tidio:
   public_key:
-
-# http://dashboard.daovoice.io/app
-daovoice:
-  app_id:
 
 # https://crisp.chat/en/
 crisp:
@@ -721,15 +716,15 @@ microsoft_clarity:
 umami_analytics:
   enable: true
   # For self-hosted setups, configure the hostname of the Umami instance
-  serverURL:
-  website_id:
+  serverURL: https://umami.012700.xyz/
+  website_id: 2a796d6c-6499-42d8-8eb4-d9a2930b0ff3
   option:
   UV_PV:
-    site_uv: false
-    site_pv: false
-    page_pv: false
+    site_uv: true
+    site_pv: true
+    page_pv: true
     # Umami Cloud (API key) / self-hosted Umami (token)
-    token:
+    token: qTvz1SkmPDt785fgh6BpiA5qiFFIVUwxj8Ft+rPW+cdN59v1hXjwRgSmy0+ji9m+oLlcxvo2NfDSMa6epVl3NTlsN3ejCIwWeP8Y51aEJ0Sbem4UexGmJLspB7AkOBId2SdtT6QWEBlGmFIIQgchQ2zAKYxTmc/kpBED5aLSr+3uvmQ9/G7FJQeVFpveDkK0xM1hu36xq4a6/FSeROxtoEp5zabzTWiYTlLsQzIl/NlELnCq3nxK+oo/vl3UQo/oM/rae/gJX/MaVKsgIUCd2ABJogNkx2KTenBIBpbPki5FzOgPh6/z4GPa4HvhNO51DDVG1SEQZooqEYmt/gnybLBWFbN+7liZWw==
 
 # --------------------------------------
 # Advertisement
@@ -833,7 +828,7 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work
 font:
-  global_font_size: 15px
+  global_font_size:
   code_font_size:
   font_family:
   code_font_family:
@@ -953,6 +948,25 @@ mermaid:
   theme:
     light: default
     dark: dark
+
+# chartjs
+# see https://www.chartjs.org/docs/latest/
+chartjs:
+  enable: true
+  # Do not modify unless you understand how they work.
+  # The default settings are only used when the MD syntax is not specified.
+  # General font color for the chart
+  fontColor:
+    light: "rgba(0, 0, 0, 0.8)"
+    dark: "rgba(255, 255, 255, 0.8)"
+  # General border color for the chart
+  borderColor:
+    light: "rgba(0, 0, 0, 0.1)"
+    dark: "rgba(255, 255, 255, 0.2)"
+  # Background color for scale labels on radar and polar area charts
+  scale_ticks_backdropColor:
+    light: "transparent"
+    dark: "transparent"
 
 # Note - Bootstrap Callout
 note:

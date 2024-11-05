@@ -1,5 +1,5 @@
 ---
-title: Butterfly document - Theme Configuration Part 1
+title: Butterfly document - Theme Configuration
 comments: false
 date: 2023-06-30 15:26:47
 tags:
@@ -14,17 +14,12 @@ description:
 top_img:
 cover: https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/butterfly-docs-en-theme-config-one.png
 abbrlink: butterfly-docs-en-theme-config
+series: docs
 ---
 
 {% note orange 'fas fa-language' %}
 
 This article is translated from ChatGPT.
-
-{% endnote %}
-
-{% note blue 'fas fa-bullhorn' %}
-
- 🦋 Butterfly has been updated to [4.10](https://github.com/jerryc127/hexo-theme-butterfly/releases/tag/4.10).
 
 {% endnote %}
 
@@ -44,56 +39,52 @@ You can quickly understand all the configuration comments, making your configura
 
 ```yaml
 # --------------------------------------
+# Hexo Butterfly Theme Configuration
+# If you have any questions, please refer to the documentation
+# Chinese: https://butterfly.js.org/
+# English: https://butterfly.js.org/en/
+# --------------------------------------
+
+# --------------------------------------
 # Navigation Settings
 # --------------------------------------
 
 nav:
-  # Path to the logo image for the navigation bar
+  # Navigation bar logo image
   logo:
-  # Display the site title next to the logo
   display_title: true
-  # Fix the navigation bar at the top of the page
+  # Whether to fix navigation bar
   fixed: false
 
 menu:
-  # Define the items in the navigation menu
-  # Format: 'Menu Name': 'URL || FontAwesome Icon'
-  # Example:
-  #   Home: / || fas fa-home
-  #   List||fas fa-list:
-  #     Music: /music/ || fas fa-music
-  #     Movie: /movies/ || fas fa-video
+  # Home: / || fas fa-home
+  # List||fas fa-list:
+  #   Music: /music/ || fas fa-music
+  #   Movie: /movies/ || fas fa-video
 
 # --------------------------------------
 # Code Blocks Settings
 # --------------------------------------
 
 code_blocks:
-  # Set the theme for code blocks
-  # Options: darker / pale night / light / ocean / false
+  # Code block theme: darker / pale night / light / ocean / false
   theme: light
-  # Enable macOS style for code blocks
   macStyle: false
-  # Limit the height of code blocks (unit: px)
+  # Code block height limit (unit: px)
   height_limit: false
-  # Enable word wrap in code blocks
   word_wrap: false
 
-  # Toolbar settings
-  # Enable copy button in code blocks
+  # Toolbar
   copy: true
-  # Display the language of the code block
   language: true
-  # Control the default state of code blocks
   # true: shrink the code blocks | false: expand the code blocks | none: expand code blocks and hide the button
   shrink: false
-  # Enable full page button in code blocks
   fullpage: false
 
 # Social media links
-# Format: icon: link || description || color
+# Formal:
+#   icon: link || the description || color
 social:
-  # Example:
   # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
@@ -101,140 +92,119 @@ social:
 # Image Settings
 # --------------------------------------
 
-# Path to the favicon
 favicon: /img/favicon.png
 
 avatar:
-  # URL of the avatar image
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
-  # Enable special effects for the avatar
+  img: /img/butterfly-icon.png
   effect: false
 
 # Disable all banner images
 disable_top_img: false
 
-# Default banner image if none is set for a page
+# If the banner of page not setting, it will show the default_top_img
 default_top_img:
 
-# Banner image for the index page
+# The banner image of index page
 index_img:
 
-# Banner image for the archive page
+# The banner image of archive page
 archive_img:
 
-# Banner image for tag pages
-# Note: This is for individual tag pages, not the tag index page
+# Note: tag page, not tags page
 tag_img:
 
-# Banner image for specific tags
+# The banner image of tag page, you can set the banner image for each tag
 # Format:
-#  - tag name: image_url
+#  - tag name: xxxxx
 tag_per_img:
 
-# Banner image for category pages
-# Note: This is for individual category pages, not the category index page
+# Note: category page, not categories page
 category_img:
 
-# Banner image for specific categories
+# The banner image of category page, you can set the banner image for each category
 # Format:
-#  - category name: image_url
+#  - category name: xxxxx
 category_per_img:
 
-# Background image for the footer
+# The background image of footer
 footer_img: false
 
-# Website background
-# Can be set to a color or an image URL
-# image format: url(http://xxxxxx.com/xxx.jpg)
+# Website Background
+# Can set it to color or image url
 background:
 
 cover:
-  # Enable or disable cover images
+  # Disable the cover or not
   index_enable: true
   aside_enable: true
   archives_enable: true
-  # Default cover image if none is set
+  # When cover is not set, the default cover is displayed
   default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    # - xxx.jpg
 
 # Replace Broken Images
 error_img:
-  # Error image for the friends link page
   flink: /img/friend_404.gif
-  # Error image for the post page
   post_page: /img/404.jpg
 
-# Simple 404 page settings
+# A simple 404 page
 error_404:
-  # Enable the custom 404 page
   enable: false
-  # Subtitle for the 404 page
   subtitle: 'Page Not Found'
-  # Background image for the 404 page
-  background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
+  background: /img/error-page.png
 
 post_meta:
-  # Metadata settings for home page
+  # Home Page
   page:
-    # Date type to display: created / updated / both
+    # Choose: created / updated / both
     date_type: created
-    # Date format to display: date / relative
+    # Choose: date / relative
     date_format: date
-    # Display categories
     categories: true
-    # Display tags
     tags: false
-    # Display labels
     label: true
-  # Metadata settings for posts
   post:
-    # Position of the metadata: left / center
+    # Choose: left / center
     position: left
-    # Date type to display: created / updated / both
+    # Choose: created / updated / both
     date_type: both
-    # Date format to display: date / relative
+    # Choose: date / relative
     date_format: date
-    # Display categories
     categories: true
-    # Display tags
     tags: true
-    # Display labels
     label: true
 
 # --------------------------------------
 # Index page settings
 # --------------------------------------
 
-# Position of site info on the index page
-# Default: top image full screen, site info in the middle
-# Example: 300px/300em/300rem/10%
+# The top_img settings of home page
+# default: top img - full screen, site info - middle
+# The position of site info, eg: 300px/300em/300rem/10%
 index_site_info_top:
-# Height of the top image on the index page
-# Example: 300px/300em/300rem
+# The height of top_img, eg: 300px/300em/300rem
 index_top_img_height:
 
-# Subtitle settings for the homepage
+# The subtitle on homepage
 subtitle:
-  # Enable the subtitle
   enable: false
-  # Enable typewriter effect
+  # Typewriter Effect
   effect: true
-  # Customize typed.js options
+  # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
-  # Source for subtitle content from third-party API (Chinese only)
-  # It will show the source first, then show the subtitle content
+  # Source - Call the third-party service API (Chinese only)
+  # It will show the source first, then show the content of sub
   # Choose: false/1/2/3
   # false - disable the function
   # 1 - hitokoto.cn
   # 2 - yijuzhan.com
   # 3 - jinrishici.com
   source: false
-  # If you disable the typewriter effect, the subtitle will only show the first line of sub
+  # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
 
 # Article layout on the homepage
-# Options:
 # 1: Cover on the left, info on the right
 # 2: Cover on the right, info on the left
 # 3: Cover and info alternate between left and right
@@ -244,15 +214,14 @@ subtitle:
 # 7: Masonry layout - Info displayed on the cover
 index_layout: 3
 
-# Display article introduction on the homepage
-# Options:
+# Display the article introduction on homepage
 # 1: description
-# 2: both (description if exists, otherwise auto_excerpt)
+# 2: both (if the description exists, it will show description, or show the auto_excerpt)
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
   method: 3
-  # Length of the introduction if method is 2 or 3
+  # If you set method to 2 or 3, the length need to config
   length: 500
 
 # --------------------------------------
@@ -260,40 +229,26 @@ index_post_content:
 # --------------------------------------
 
 toc:
-  # Enable table of contents for posts
   post: true
-  # Enable table of contents for pages
   page: false
-  # Display numbers in the table of contents
   number: true
-  # Expand the table of contents by default
   expand: false
-  # Simple style for the table of contents (posts only)
+  # Only for post
   style_simple: false
-  # Display scroll percentage in the table of contents
   scroll_percent: true
 
 post_copyright:
-  # Enable copyright information in posts
   enable: true
-  # Whether to decode the post URL
   decode: false
-  # URL for the author's profile
   author_href:
-  # License type for the content
   license: CC BY-NC-SA 4.0
-  # URL for the license information
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-# Sponsor/reward settings
+# Sponsor/reward
 reward:
-  # Enable the reward feature
   enable: false
-  # Text for the reward button
   text:
-  # QR codes for payment options
   QR_code:
-    # Example:
     # - img: /img/wechat.jpg
     #   link:
     #   text: wechat
@@ -301,40 +256,36 @@ reward:
     #   link:
     #   text: alipay
 
-# Post edit settings
-# Allow online editing of blog source code
+# Post edit
+# Easily browse and edit blog source code online.
 post_edit:
-  # Enable the edit feature
   enable: false
-  # URL for the edit page
-  # Example: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
+  # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
+  # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
   url:
 
-# Related articles settings
+# Related Articles
 related_post:
-  # Enable related posts section
   enable: true
-  # Number of related posts to display
+  # Number of posts displayed
   limit: 6
-  # Date type for related posts: created / updated
+  # Choose: created / updated
   date_type: created
 
-# Post pagination settings
-# Options:
-# 1: 'Next post' links to older post
-# 2: 'Next post' links to newer post
+# Choose: 1 / 2 / false
+# 1: The 'next post' will link to old post
+# 2: The 'next post' will link to new post
 # false: disable pagination
 post_pagination: 1
 
-# Outdated post notice settings
+# Displays outdated notice for a post
 noticeOutdate:
-  # Enable outdated notice for posts
   enable: false
-  # Style of the notice: simple / flat
+  # Style: simple / flat
   style: flat
-  # Number of days after which the notice is shown
+  # When will it be shown
   limit_day: 365
-  # Position of the notice: top / bottom
+  # Position: top / bottom
   position: top
   message_prev: It has been
   message_next: days since the last update, the content of the article may be outdated.
@@ -344,13 +295,10 @@ noticeOutdate:
 # --------------------------------------
 footer:
   owner:
-    # Enable footer owner section
     enable: true
-    # Year since the site is active
     since: 2019
-  # Custom text in the footer
   custom_text:
-  # Copyright information for the theme and framework
+  # Copyright of theme and framework
   copyright: true
 
 # --------------------------------------
@@ -358,154 +306,224 @@ footer:
 # --------------------------------------
 
 aside:
-  # Enable the aside section
   enable: true
-  # Hide the aside section by default
   hide: false
-  # Display Button for Hiding Sidebar in Bottom Right Corner
+  # Show the button to hide the aside in bottom right button
   button: true
-  # Enable the aside section on mobile devices
   mobile: true
-  # Position of the aside section: left / right
+  # Position: left / right
   position: right
   display:
-    # Display Sidebar on Archive Page
     archive: true
-    # Display Sidebar on Tag Page
     tag: true
-    # Display Sidebar on Category Page
     category: true
   card_author:
-    # Enable author card in the aside section
     enable: true
-    # Author description text
     description:
     button:
-      # Enable button in author card
       enable: true
-      # Icon for the button
       icon: fab fa-github
-      # Text for the button
       text: Follow Me
-      # URL for the button
       link: https://github.com/xxxxxx
   card_announcement:
-    # Enable announcement card in the aside section
     enable: true
-    # Announcement Content (HTML code allowed)
     content: This is my Blog
   card_recent_post:
-    # Enable recent posts card in the aside section
     enable: true
-    # Number of recent posts to display (0 for all)
+    # If set 0 will show all
     limit: 5
-    # Sort order for recent posts: date / updated
+    # Sort: date / updated
     sort: date
     sort_order:
   card_newest_comments:
-    # Enable newest comments card in the aside section
     enable: false
     sort_order:
-    # Number of comments to display
     limit: 6
-    # Cache duration for comments (unit: mins)
+    # Unit: mins, save data to localStorage
     storage: 10
-    # Display| Configuration | Explanation |
-| -------------- | -------------------------------------------------------------------------------------- |
-| enable         | Whether to enable the sidebar                                                          |
-| hide           | Whether to hide the sidebar by default                                                |
-| button         | Whether to show the button to hide/show the sidebar                                   |
-| mobile         | Whether to display the sidebar on mobile devices                                      |
-| position       | Sidebar position, left / right                                                        |
-| display.archive| Whether to display aside on the archive page                                          |
-| display.tag    | Whether to display aside on the tag page                                              |
-| display.category| Whether to display aside on the category page                                        |
-| card_author.enable| Whether to display the author card                                                   |
-| card_author.description| Author description information                                                     |
-| card_author.button.enable| Whether to display the button                                                     |
-| card_author.button.icon| Button icon, you can find the icon name here: https://fontawesome.com/icons?d=gallery&m=free |
-| card_author.button.text| Button text                                                                         |
-| card_author.button.link| Button link                                                                         |
-| card_announcement.enable| Whether to display the announcement card                                           |
-| card_announcement.content| Announcement content (HTML tags can be used)                                       |
-| card_recent_post.enable| Whether to display the recent posts card                                           |
-| card_recent_post.limit| Number of posts to display, 0 for all                                               |
-| card_recent_post.sort| Sorting method, date / updated                                                      |
-| card_newest_comments.enable| Whether to display the newest comments card                                        |
-| card_newest_comments.limit| Number of comments to display, 0 for all                                           |
-| card_newest_comments.storage| Storage time in minutes, saved to local storage to avoid re-fetching data on every refresh |
-| card_newest_comments.avatar| Whether to display avatars                                                         |
-| card_categories.enable| Whether to display the categories card                                              |
-| card_categories.limit| Number of categories to display, 0 for all                                          |
-| card_categories.expand| Whether to expand categories, none / true / false                                   |
-| card_tags.enable| Whether to display the tags card                                                     |
-| card_tags.limit| Number of tags to display, 0 for all                                                 |
-| card_tags.color| Whether to display tag colors                                                        |
-| card_tags.orderby| Tag sorting method, random / name / length                                           |
-| card_tags.order| Sorting method, 1 for ascending, -1 for descending                                   |
-| card_archives.enable| Whether to display the archives card                                                |
-| card_archives.type| Archive type, monthly / yearly                                                      |
-| card_archives.format| Archive display format, e.g., YYYY年MM月                                            |
-| card_archives.order| Sorting method, 1 for ascending, -1 for descending                                   |
-| card_archives.limit| Number of archives to display, 0 for all                                            |
-| card_post_series.enable| Whether to display the post series card                                            |
-| card_post_series.series_title| Whether to display the series name                                                |
-| card_post_series.orderBy| Sorting method, title / date                                                       |
-| card_post_series.order| Sorting method, 1 for ascending, -1 for descending                                  |
-| card_webinfo.enable| Whether to display the website info card                                            |
-| card_webinfo.post_count| Whether to display the number of posts                                              |
-| card_webinfo.last_push_date| Whether to display the last update date                                            |
-| card_webinfo.runtime_date| Display the website runtime, no need to enable, leave blank (if enabled, the format must be Month/Day/Year Time or Year/Month/Day Time) |---
+    avatar: true
+  card_categories:
+    enable: true
+    # If set 0 will show all
+    limit: 8
+    # Choose: none / true / false
+    expand: none
+    sort_order:
+  card_tags:
+    enable: true
+    # If set 0 will show all
+    limit: 40
+    color: false
+    # Order of tags, random/name/length
+    orderby: random
+    # Sort of order. 1, asc for ascending; -1, desc for descending
+    order: 1
+    sort_order:
+  card_archives:
+    enable: true
+    # Type: monthly / yearly
+    type: monthly
+    # Eg: YYYY年MM月
+    format: MMMM YYYY
+    # Sort of order. 1, asc for ascending; -1, desc for descending
+    order: -1
+    # If set 0 will show all
+    limit: 8
+    sort_order:
+  card_post_series:
+    enable: true
+    # The title shows the series name
+    series_title: false
+    # Order by title or date
+    orderBy: 'date'
+    # Sort of order. 1, asc for ascending; -1, desc for descending
+    order: -1
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    sort_order:
+    # Time difference between publish date and now
+    # Formal: Month/Day/Year Time or Year/Month/Day Time
+    # Leave it empty if you don't enable this feature
+    runtime_date:
 
-# About per_page
-# If set to true, the mathjax/katex script will be loaded on every page
-# If set to false, the mathjax/katex script will be loaded according to your settings (add 'mathjax: true' or 'katex: true' in the page's front-matter)
+# --------------------------------------
+# Bottom right button
+# --------------------------------------
+
+# The distance between the bottom right button and the bottom (default unit: px)
+rightside_bottom:
+
+# Conversion between Traditional and Simplified Chinese
+translate:
+  enable: false
+  # The text of a button
+  default: 繁
+  # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
+  defaultEncoding: 2
+  # Time delay
+  translateDelay: 0
+  # The text of the button when the language is Simplified Chinese
+  msgToTraditionalChinese: '繁'
+  # The text of the button when the language is Traditional Chinese
+  msgToSimplifiedChinese: '簡'
+
+# Read Mode
+readmode: true
+
+# Dark Mode
+darkmode:
+  enable: true
+  # Toggle Button to switch dark/light mode
+  button: true
+  # Switch dark/light mode automatically
+  # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
+  # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
+  # autoChangeMode: false
+  autoChangeMode: false
+  # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
+  start:
+  end:
+
+# Show scroll percent in scroll-to-top button
+rightside_scroll_percent: false
+
+# Don't modify the following settings unless you know how they work
+# Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
+# Don't repeat the same value
+rightside_item_order:
+  enable: false
+  # Default: readmode,translate,darkmode,hideAside
+  hide:
+  # Default: toc,chat,comment
+  show:
+
+# --------------------------------------
+# Global Settings
+# --------------------------------------
+
+anchor:
+  # When you scroll, the URL will update according to header id.
+  auto_update: false
+  # Click the headline to scroll and update the anchor
+  click_to_scroll: false
+
+photofigcaption: false
+
+copy:
+  enable: true
+  # Add the copyright information after copied content
+  copyright:
+    enable: false
+    limit_count: 150
+
+# Need to install the hexo-wordcount plugin
+wordcount:
+  enable: false
+  # Display the word count of the article in post meta
+  post_wordcount: true
+  # Display the time to read the article in post meta
+  min2read: true
+  # Display the total word count of the website in aside's webinfo
+  total_wordcount: true
+
+# Busuanzi count for PV / UV in site
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+# --------------------------------------
+# Math
+# --------------------------------------
+
+# About the per_page
+# if you set it to true, it will load mathjax/katex script in each page
+# if you set it to false, it will load mathjax/katex script according to your setting (add the 'mathjax: true' or 'katex: true' in page's front-matter)
 math:
-  # Options: mathjax, katex
-  # Leave empty if you don't need mathematical formulas
+  # Choose: mathjax, katex
+  # Leave it empty if you don't need math
   use:
-  # Load math script per page
   per_page: true
-  # Hide scrollbar for math blocks
   hide_scrollbar: false
 
   mathjax:
     # Enable the contextual menu
     enableMenu: true
-    # Equation numbering: all / ams / none
+    # Choose: all / ams / none, This controls whether equations are numbered and how
     tags: none
 
   katex:
-    # Enable copy feature for KaTeX formulas
+    # Enable the copy KaTeX formula
     copy_tex: false
 
 # --------------------------------------
 # Search
 # --------------------------------------
 
-# Search settings
 search:
-  # Options: algolia_search / local_search / docsearch
+  # Choose: algolia_search / local_search / docsearch
+  # leave it empty if you don't need search
   use:
-  # Placeholder text for the search box
   placeholder:
 
-  # Algolia Search settings
+  # Algolia Search
   algolia_search:
     # Number of search results per page
     hitsPerPage: 6
 
-  # Local Search settings
+  # Local Search
   local_search:
-    # Preload search data on page load
+    # Preload the search data when the page loads.
     preload: false
-    # Show top N results per article (-1 for all)
+    # Show top n results per article, show all results by setting to -1
     top_n_per_article: 1
-    # Unescape HTML strings in search results
+    # Unescape html strings to the readable one.
     unescape: false
     CDN:
 
-  # Docsearch settings
+  # Docsearch
   # https://docsearch.algolia.com/
   docsearch:
     appId:
@@ -518,16 +536,16 @@ search:
 # --------------------------------------
 
 share:
-  # Options: sharejs, addtoany
-  # Leave empty if you don't need the sharing feature
+  # Choose: sharejs / addtoany
+  # Leave it empty if you don't need share
   use: sharejs
 
-  # Share.js settings
+  # Share.js
   # https://github.com/overtrue/share.js
   sharejs:
     sites: facebook,twitter,wechat,weibo,qq
 
-  # AddToAny settings
+  # AddToAny
   # https://www.addtoany.com/
   addtoany:
     item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
@@ -537,165 +555,129 @@ share:
 # --------------------------------------
 
 comments:
-  # Up to two comment systems can be selected, with the first one being displayed by default
-  # Leave empty if you don't need the comment feature
-  # Options: Disqus, Disqusjs, Livere, Gitalk, Valine, Waline, Utterances, Facebook Comments, Twikoo, Giscus, Remark42, Artalk
-  # Format for two comment systems: Disqus,Waline
+  # Up to two comments system, the first will be shown as default
+  # Leave it empty if you don't need comments
+  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
+  # Format of two comments system : Disqus,Waline
   use:
-  # Display the comment system name next to the button
+  # Display the comment name next to the button
   text: true
-  # Lazyload comments system (only load when in viewport)
-  # If set to true, comment count will be disabled
+  # Lazyload: The comment system will be load when comment element enters the browser's viewport.
+  # If you set it to true, the comment count will be invalid
   lazyload: false
-  # Display comment count in post's top image
+  # Display comment count in post's top_img
   count: false
-  # Display comment count on the home page
+  # Display comment count in Home Page
   card_post_count: false
 
 # Disqus
 # https://disqus.com/
 disqus:
-  # Disqus shortname
   shortname:
-  # API key for newest comments widget
+  # For newest comments widget
   apikey:
 
-# DisqusJS settings (alternative Disqus using API)
+# Alternative Disqus - Render comments with Disqus API
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
-  # Disqus's shortname
   shortname:
-  # API key
   apikey:
-  # Other optional configurations
   option:
 
-# Livere settings
+# Livere
 # https://www.livere.com/
 livere:
-  # Livere's User ID
   uid:
 
-# Gitalk settings
+# Gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
-  # GitHub application's client ID
   client_id:
-  # GitHub application's client secret
   client_secret:
-  # Repository name where comments are stored
   repo:
-  # Username of the repository owner
   owner:
-  # List of administrator usernames
   admin:
-  # Other optional configurations
   option:
 
-# Valine settings
+# Valine
 # https://valine.js.org
 valine:
-  # LeanCloud application's appId
   appId:
-  # LeanCloud application's appKey
   appKey:
-  # Commenter avatar style
   avatar: monsterid
-  # The configuration is applicable for Mainland China users with custom domain names. The overseas version will be automatically detected (no manual input required).
+  # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   serverURLs:
-  # Background image for the comment box
   bg:
-  # Use Valine's visitor count as the page's visitor volume
+  # Use Valine visitor count as the page view count
   visitor: false
-  # Other optional configurations
   option:
 
-# Waline comment plugin configuration, a simple comment system developed based on Valine, supporting backend
-# Official documentation: https://waline.js.org/
+# Waline - A simple comment system with backend support fork from Valine
+# https://waline.js.org/
 waline:
-  # Server URL
   serverURL:
-  # Background image for the comment box
   bg:
-  # Use Waline's visitor count as the page's visitor volume
+  # Use Waline pageview count as the page view count
   pageview: false
-  # Other optional configurations
   option:
 
-# Utterances settings
+# Utterances
 # https://utteranc.es/
 utterances:
-  # GitHub repository for storing comments
   repo:
-  # Issue mapping: pathname / url / title / og:title
+  # Issue Mapping: pathname/url/title/og:title
   issue_term: pathname
-  # Light theme for Utterances
+  # Theme: github-light/github-dark/github-dark-orange/icy-dark/dark-blue/photon-dark
   light_theme: github-light
-  # Dark theme for Utterances
   dark_theme: photon-dark
+  js:
+  option:
 
-# Facebook Comments Plugin settings
+# Facebook Comments Plugin
 # https://developers.facebook.com/docs/plugins/comments/
 facebook_comments:
-  # Application ID
   app_id:
-  # User ID, optional
+  # optional
   user_id:
-  # Number of comments per page
   pageSize: 10
-  # Comment sorting method, options: social / time / reverse_time
+  # Choose: social / time / reverse_time
   order_by: social
-  # Language setting
   lang: zh_TW
 
-# Twikoo settings
+# Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  # Environment ID
   envId:
-  # Region
   region:
-  # Use Twikoo's visitor count as the page's visitor volume
+  # Use Twikoo visitor count as the page view count
   visitor: false
-  # Other optional configurations
   option:
 
-# Giscus settings
+# Giscus
 # https://giscus.app/
 giscus:
-  # GitHub repository to store discussions
   repo:
-  # Repository ID
   repo_id:
-  # Category ID within the repository for discussions
   category_id:
-  # Theme settings
-  theme:
-    light: light  # Theme for light mode
-    dark: dark    # Theme for dark mode
-  # Other optional configurations
+  light_theme: light
+  dark_theme: dark
+  js:
   option:
 
-# Remark42 settings
+# Remark42
 # https://remark42.com/docs/configuration/frontend/
 remark42:
-  # Server address
   host:
-  # Site ID
   siteId:
-  # Other optional configurations
   option:
 
-# Artalk settings
+# Artalk
 # https://artalk.js.org/guide/frontend/config.html
 artalk:
-  # Server address
   server:
-  # Site name
   site:
-  # Use Artalk's visitor count as the page's visitor volume
+  # Use Artalk visitor count as the page view count
   visitor: false
-  # Other optional configurations
   option:
 
 # --------------------------------------
@@ -703,93 +685,84 @@ artalk:
 # --------------------------------------
 
 chat:
-  # Chat services settings
-  # Options: chatra / tidio / daovoice / crisp / messenger
+  # Choose: chatra/tidio/crisp
+  # Leave it empty if you don't need chat
   use:
-  # Recommended to use the chat button, which creates a button in the bottom right corner of the website and hides the original button
+  # Chat Button [recommend]
+  # It will create a button in the bottom right corner of website, and hide the origin button
   rightside_button: false
-  # The original chat button is shown when scrolling up and hidden when scrolling down
+  # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
   button_hide_show: false
 
-# Chatra settings
 # https://chatra.io/
 chatra:
   id:
 
-# Tidio settings
 # https://www.tidio.com/
 tidio:
   public_key:
 
-# Daovoice settings
-# http://dashboard.daovoice.io/app
-daovoice:
-  app_id:
-
-# Crisp settings
 # https://crisp.chat/en/
 crisp:
   website_id:
-
-# Facebook Messenger settings
-# https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/
-messenger:
-  pageID:
-  lang: zh_TW
 
 # --------------------------------------
 # Analysis
 # --------------------------------------
 
-# Baidu Analytics settings
 # https://tongji.baidu.com/web/welcome/login
 baidu_analytics:
 
-# Google Analytics settings
 # https://analytics.google.com/analytics/web/
 google_analytics:
 
-# Cloudflare Analytics settings
 # https://www.cloudflare.com/zh-tw/web-analytics/
 cloudflare_analytics:
 
-# Microsoft Clarity settings
 # https://clarity.microsoft.com/
 microsoft_clarity:
+
+# https://umami.is/
+umami_analytics:
+  enable: false
+  # For self-hosted setups, configure the hostname of the Umami instance
+  serverURL:
+  website_id:
+  option:
+  UV_PV:
+    site_uv: false
+    site_pv: false
+    page_pv: false
+    # Umami Cloud (API key) / self-hosted Umami (token)
+    token:
 
 # --------------------------------------
 # Advertisement
 # --------------------------------------
 
-# Google Adsense settings
+# Google Adsense
 google_adsense:
-  # Enable Google Adsense
   enable: false
-  # Enable auto ads
   auto_ads: true
-  # URL for the Adsense script
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
-  # Client ID for Adsense
   client:
-  # Enable page-level ads
   enable_page_level_ads: true
 
-# Manual ad insertion settings
+# Insert ads manually
+# Leave it empty if you don't need ads
 ad:
   # Insert ads in the index (every three posts)
   index:
-  # Insert ads in the aside section
+  # Insert ads in aside
   aside:
-  # Insert ads in posts (before pagination)
+  # Insert ads in the post (before pagination)
   post:
 
 # --------------------------------------
 # Verification
 # --------------------------------------
 
-# Site verification settings
 site_verification:
-  # Example:
   # - name: google-site-verification
   #   content: xxxxxx
   # - name: baidu-site-verification
@@ -799,8 +772,9 @@ site_verification:
 # Beautify / Effect
 # --------------------------------------
 
-# Custom theme color settings
-# Note: Color values must be in double quotes like "#000" to avoid errors
+# Theme color for customize
+# Notice: color value must in double quotes like "#000" or may cause error!
+
 # theme_color:
 #   enable: true
 #   main: "#49B1F5"
@@ -819,13 +793,16 @@ site_verification:
 #   meta_theme_color_light: "ffffff"
 #   meta_theme_color_dark: "#0d0d0d"
 
-# UI settings for category and tag pages
-# Options: index - same as Homepage UI / default - same as archives UI
-# Leave empty or set to index
+# The user interface setting of category and tag page
+# Choose: index - same as Homepage UI / default - same as archives UI
+# leave it empty or index
 category_ui:
 tag_ui:
 
-# Stretch lines to have equal width
+# Rounded corners for UI elements
+rounded_corners_ui: true
+
+# Stretches the lines so that each line has equal width
 text_align_justify: false
 
 # Add a mask to the header and footer
@@ -833,192 +810,176 @@ mask:
   header: true
   footer: true
 
-# Loading animation settings
+# Loading Animation
 preloader:
-  # Enable loading animation
   enable: false
-  # Source of the loading animation
-  # Options:
+  # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
   source: 1
-  # URL for the pace theme
-  # See: https://codebyzach.github.io/pace/
+  # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
 
-# Page transition settings
+# Page Transition
 enter_transitions: true
 
-# Default display mode
-# Options: light (default) / dark
+# Default display mode - light (default) / dark
 display_mode: light
 
-# Settings for beautifying the content of articles
+# Configuration for beautifying the content of the article
 beautify:
-  # Enable beautification
   enable: false
   # Specify the field to beautify (site or post)
   field: post
-  # Icon to be used as a prefix for the title
-  # Example: '\f0c1'
-  title-prefix-icon:
-  # Color of the title prefix icon
-  # Example: '#F47466'
-  title-prefix-icon-color:
+  # Specify the icon to be used as a prefix for the title, such as '\f0c1'
+  title_prefix_icon:
+  # Specify the color of the title prefix icon, such as '#F47466'
+  title_prefix_icon_color:
 
 # Global font settings
-# Don't modify unless necessary
+# Don't modify the following settings unless you know how they work
 font:
-  global-font-size:
-  code-font-size:
-  font-family:
-  code-font-family:
+  global_font_size:
+  code_font_size:
+  font_family:
+  code_font_family:
 
-# Font settings for the site title and subtitle
+# Font settings for the site title and site subtitle
 blog_title_font:
   font_link:
-  font-family:
+  font_family:
 
-# Divider icon settings
+# The setting of divider icon
 hr_icon:
-  # Enable divider icon
   enable: true
-  # Unicode value of Font Awesome icon
-  # Example: '\3423'
+  # The unicode value of Font Awesome icon, such as '\3423'
   icon:
-  icon-top:
+  icon_top:
 
-# Typewriter Effect settings
+# Typewriter Effect
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  # Enable typewriter effect
   enable: false
-  # Enable colorful effect
   colorful: true
-  # Enable shaking effect
   shake: true
-  # Enable effect on mobile devices
   mobile: false
 
-# Background effects settings
+# Background effects
 # --------------------------------------
 
-# Canvas ribbon effect settings
+# canvas_ribbon
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  # Enable canvas ribbon effect
   enable: false
-  # Size of the ribbon
+  # The size of ribbon
   size: 150
-  # Opacity of the ribbon (0 ~ 1)
+  # The opacity of ribbon (0 ~ 1)
   alpha: 0.6
   zIndex: -1
-  # Change ribbon on click
   click_to_change: false
-  # Enable effect on mobile devices
   mobile: false
 
-# Fluttering ribbon effect settings
+# Fluttering Ribbon
 canvas_fluttering_ribbon:
-  # Enable fluttering ribbon effect
   enable: false
-  # Enable effect on mobile devices
   mobile: false
 
-# Canvas nest effect settings
+# canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  # Enable canvas nest effect
   enable: false
-  # Color of lines (RGB values)
-  # Example: '0,0,255' (blue)
+  # Color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   color: '0,0,255'
-  # Opacity of lines (0 ~ 1)
+  # The opacity of line (0~1)
   opacity: 0.7
-  # Z-index property of the background
+  # The z-index property of the background
   zIndex: -1
-  # Number of lines
+  # The number of lines
   count: 99
-  # Enable effect on mobile devices
   mobile: false
 
 # Mouse click effects: fireworks
 fireworks:
-  # Enable fireworks effect on click
   enable: false
   zIndex: 9999
-  # Enable effect on mobile devices
   mobile: false
 
 # Mouse click effects: Heart symbol
 click_heart:
-  # Enable heart effect on click
   enable: false
-  # Enable effect on mobile devices
   mobile: false
 
 # Mouse click effects: words
 clickShowText:
-  # Enable words effect on click
   enable: false
-  # List of words to display
   text:
-    # Example:
     # - I
     # - LOVE
     # - YOU
   fontSize: 15px
-  # Display words randomly
   random: false
-  # Enable effect on mobile devices
   mobile: false
 
 # --------------------------------------
 # Lightbox Settings
 # --------------------------------------
 
-# Lightbox settings
-# Options: fancybox / medium_zoom
+# Choose: fancybox / medium_zoom
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
+# Leave it empty if you don't need lightbox
 lightbox:
 
 # --------------------------------------
 # Tag Plugins settings
 # --------------------------------------
 
-# Series plugin settings
+# Series
 series:
-  # Enable series plugin
   enable: false
-  # Order series by: title / date
+  # Order by title or date
   orderBy: 'title'
-  # Sort order: 1 (asc) / -1 (desc)
+  # Sort of order. 1, asc for ascending; -1, desc for descending
   order: 1
-  # Display series number
   number: true
 
-# ABCJS plugin settings (for ABC music notation)
+# ABCJS - The ABC Music Notation Plugin
 # https://github.com/paulrosen/abcjs
 abcjs:
-  # Enable ABCJS plugin
   enable: false
-  # Load ABCJS script per page
   per_page: true
 
-# Mermaid plugin settings (for diagrams)
+# Mermaid
 # https://github.com/mermaid-js/mermaid
 mermaid:
-  # Enable Mermaid plugin
   enable: false
   # Write Mermaid diagrams using code blocks
   code_write: false
-  # Built-in themes for Mermaid diagrams (default / forest / dark / neutral)
+  # built-in themes: default / forest / dark / neutral
   theme:
     light: default
     dark: dark
 
-# Note plugin settings (for callouts)
+# chartjs
+# see https://www.chartjs.org/docs/latest/
+chartjs:
+  enable: false
+  # Do not modify unless you understand how they work.
+  # The default settings are only used when the MD syntax is not specified.
+  # General font color for the chart
+  fontColor:
+    light: "rgba(0, 0, 0, 0.8)"
+    dark: "rgba(255, 255, 255, 0.8)"
+  # General border color for the chart
+  borderColor:
+    light: "rgba(0, 0, 0, 0.1)"
+    dark: "rgba(255, 255, 255, 0.2)"
+  # Background color for scale labels on radar and polar area charts
+  scale_ticks_backdropColor:
+    light: "transparent"
+    dark: "transparent"
+
+# Note - Bootstrap Callout
 note:
   # Note tag style values:
   #  - simple    bs-callout old alert style. Default.
@@ -1026,93 +987,74 @@ note:
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
   style: flat
-  # Display icons in note tags
   icons: true
-  # Border radius for note tags
   border_radius: 3
-  # Background light offset for modern and flat styles
+  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+  # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
 
 # --------------------------------------
 # Other Settings
 # --------------------------------------
 
-# PJAX settings for faster page loading
 # https://github.com/MoOx/pjax
 pjax:
-  # Enable PJAX
   enable: false
-  # Exclude specific pages from PJAX
+  # Exclude the specified pages from pjax, such as '/music/'
   exclude:
-    # Example:
-    # - /music/
+    # - /xxxxxx/
 
-# APlayer/Meting script injection settings
+# Inject the css and script (aplayer/meting)
 aplayerInject:
-  # Enable script injection
   enable: false
-  # Load scripts per page
   per_page: true
 
-# Snackbar settings (for toast notifications)
+# Snackbar - Toast Notification
 # https://github.com/polonel/SnackBar
+# position: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  # Enable Snackbar
   enable: false
-  # Position of Snackbar
-  # Options: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
   position: bottom-left
-  # Background color for light mode
+  # The background color of Toast Notification in light mode and dark mode
   bg_light: '#49b1f5'
-  # Background color for dark mode
   bg_dark: '#1f1f1f'
 
-# Instant.page settings (for preloading links)
+# Instant.page
 # https://instant.page/
 instantpage: false
 
-# Pangu settings (insert space between Chinese and English characters)
+# Pangu - Insert a space between Chinese character and English character
 # https://github.com/vinta/pangu.js
 pangu:
-  # Enable Pangu
   enable: false
-  # Specify the field to use Pangu (site or post)
+  # Specify the field to use pangu (site or post)
   field: site
 
-# Lazyload settings (for lazy loading images)
+# Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  # Enable Lazyload
   enable: false
-  # Specify the field to use Lazyload (site or post)
+  # Specify the field to use lazyload (site or post)
   field: site
   placeholder:
-  # Enable blur effect for Lazyload
   blur: false
 
-# PWA settings (Progressive Web App)
-# https://github.com/JLHwung/hexo-offline
+# PWA
+# See https://github.com/JLHwung/hexo-offline
+# ---------------
 pwa:
-  # Enable PWA
   enable: false
-  # PWA manifest file path
   manifest:
-  # Apple Touch icon path
   apple_touch_icon:
-  # Path for 32x32 pixel favicon icon
   favicon_32_32:
-  # Path for 16x16 pixel favicon icon
   favicon_16_16:
-  # Mask icon path
   mask_icon:
 
-# Open Graph meta tags settings
+# Open graph meta tags
 # https://hexo.io/docs/helpers#open-graph
 Open_Graph_meta:
-  # Enable Open Graph meta tags
   enable: true
   option:
-    # Example:
     # twitter_card:
     # twitter_image:
     # twitter_id:
@@ -1121,34 +1063,32 @@ Open_Graph_meta:
     # fb_admins:
     # fb_app_id:
 
-# Add vendor prefixes to ensure compatibility
+# Add the vendor prefixes to ensure compatibility
 css_prefix: true
 
 # Inject
-# Insert code into the head (before the '</head>' tag) and the bottom (before the '</body>' tag)
+# Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
-    # Example:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    # Example:
     # - <script src="xxxx"></script>
 
 # CDN Settings
-# Don't modify unless necessary
+# Don't modify the following settings unless you know how they work
 CDN:
-  # CDN provider for internal and third-party scripts
-  # Options: local / jsdelivr / unpkg / cdnjs / custom
+  # The CDN provider for internal and third-party scripts
+  # Options for both: local/jsdelivr/unpkg/cdnjs/custom
   # Note: Dev version can only use 'local' for internal scripts
-  # Note: When setting third-party scripts to 'local', install hexo-butterfly-extjs
+  # Note: When setting third-party scripts to 'local', you need to install hexo-butterfly-extjs
   internal_provider: local
   third_party_provider: jsdelivr
 
-  # Add version number to URL
+  # Add version number to url, true or false
   version: false
 
-  # Custom CDN format
-  # Example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
+  # Custom format
+  # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
   custom_format:
 
   option:
@@ -1160,23 +1100,26 @@ Modify Hexo's configuration file `_config.yml`
 
 The default language is `en`
 
-The theme supports three languages:
+The theme supports the following languages:
 
 - default (en)
 - zh-CN (Simplified Chinese)
 - zh-TW (Traditional Chinese)
+- zh-HK (Traditional Chinese)
+- ja (Japanese)
+- ko (Korean)
+
+```yaml
 
 ## Website Information
 
 To modify various website data, such as title, subtitle, and personal information like email, please edit Hexo's `_config.yml`
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/20191120000444.png)
+![butterfly-docs-hexo-config.png](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-hexo-config.png)
 
 ## Navigation
 
 ### Parameter Settings
-
-In the theme configuration file:
 
 ```yaml
 nav:
@@ -1237,7 +1180,7 @@ menu:
   About: /about/ || fas fa-heart
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-menu.png)
+![hexo-theme-butterfly-doc-menu.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-menu.png)
 
 ## Code Blocks
 
@@ -1248,8 +1191,6 @@ All features within code blocks are only applicable to Hexo's built-in code rend
 If using a third-party renderer, it may not be effective.
 
 {% endnote %}
-
-In the theme configuration file
 
 ```yaml
 code_blocks:
@@ -1284,6 +1225,7 @@ code_blocks:
 {% tabs highlight-theme %}
 
 <!-- tab Default Theme -->
+
 `Butterfly` supports 4 types of code highlight styles:
 
 - darker
@@ -1293,29 +1235,35 @@ code_blocks:
 
 If you need a MacOS style code highlight, you can set `macStyle` to `true`.
 
-> darker
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+darker
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-darker.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-code-darker.png)
 
-> pale night
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+pale night
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-pale-night.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-code-pane-night.png)
 
-> light
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+light
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-light.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-code-light.png)
 
-> ocean
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+ocean
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-highlight-ocean.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-code-orcean.png)
 
-> macStyle
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+macStyle
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-highlight-mac.png)
-
-> macStyle
-
-![image-20200731175026827](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-mac-light.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-code-macstyle-light.png)
 
 <!-- endtab -->
 
@@ -1339,8 +1287,6 @@ By default, code blocks are automatically expanded. You can set whether all code
 - false Code blocks are expanded and have a `>` click button.
 - none The `>` button is not displayed.
 
-Theme configuration file
-
 ```yaml
 highlight_shrink: true # Code blocks are collapsed and require clicking '>' to open.
 ```
@@ -1357,21 +1303,19 @@ When `highlight_shrink` in the **theme configuration file** is set to false, you
 
 `highlight_shrink: true`
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-highlight-shrink-true.png)
+![hexo-theme-butterfly-doc-highlight-shrink-true.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-highlight-shrink-true.png)
 
 `highlight_shrink: false`
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-highlight-shrink-false.png)
+![hexo-theme-butterfly-doc-highlight-shrink-false.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-highlight-shrink-false.png)
 
 `highlight_shrink: none`
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-highlight-shirk-none.png)
+![hexo-theme-butterfly-docs-highlight-shirk-none.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-highlight-shirk-none.png)
 
 ### Code Word Wrap
 
 By default, Hexo does not implement automatic word wrapping for code during compilation. If you prefer not to have a horizontal scrollbar within the code block area, you might want to enable this feature.
-
-Theme configuration file
 
 ```yaml
 code_word_wrap: true
@@ -1387,7 +1331,7 @@ highlight:
   tab_replace:
 ```
 
-If you are using prismjs for rendering, you need to find your site's Hexo configuration file [`_config.yml`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2Fmyw%2FDocuments%2FGithub%2Fbutterfly.js.org%2F_config.yml%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D "c:\Users\myw\Documents\Github\butterfly.js.org\_config.yml") and change `line_number` to `false`:
+If you are using prismjs for rendering, you need to find your site's Hexo configuration file `_config.yml` and change `line_number` to `false`:
 
 ```yaml
 prismjs:
@@ -1397,17 +1341,23 @@ prismjs:
   tab_replace: ''
 ```
 
-> Before setting `code_word_wrap`:
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Before setting `code_word_wrap`
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-word-wrap-before.png)
+![hexo-theme-butterfly-doc-code-word-wrap-before.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-code-word-wrap-before.png)
 
-> After setting `code_word_wrap`:
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+After setting `code_word_wrap`
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-word-wrap-after.png)
+![hexo-theme-butterfly-doc-code-word-wrap-after.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-code-word-wrap-after.png)
 
 ### Code Height Limit
 
-> Supported from version 3.7.0 and above
+{% note pink 'fa-solid fa-bell' %}
+Supported from version 3.7.0 and above
+{% endnote %}
 
 You can configure a height limit for code blocks. Any content exceeding this limit will be hidden, with a button to expand it shown.
 
@@ -1423,7 +1373,7 @@ Notes:
 
 3. This does not apply to code blocks that are hidden (with CSS `display: none`).
 
-![hexo-theme-butterfly-docs-highlight-heigh-limit](https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-highlight-heigh-limit.gif)
+![](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-highlight-heigh-limit.gif)
 
 ## Social Icons
 
@@ -1439,21 +1389,19 @@ social:
 
 You can find the icon names here
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-fontawesome.png)
+![hexo-theme-butterfly-doc-fontawesome.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-fontawesome.png)
 
 PC:
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-social-icon-pc.png)
+!![hexo-theme-butterfly-doc-fontawesome.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-fontawesome.png)
 
 Mobile:
 
-![1560603353743](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-socila-icon-mobile.png)
+![hexo-theme-butterfly-doc-socila-icon-mobile.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-socila-icon-mobile.png)
 
 ## Image Settings
 
 ### Avatar
-
-Theme configuration file
 
 ```yaml
 avatar:
@@ -1461,7 +1409,7 @@ avatar:
   effect: true # The avatar will keep rotating
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-avatar.png)
+![hexo-theme-butterfly-doc-avatar.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-avatar.png)
 
 ### Top Image
 
@@ -1519,27 +1467,31 @@ tag_per_img:
   android: ddddddd.png
 
 category_per_img：
-  Thoughts: hdhdh.png
-  Recommendations: ddjdjdjd.png
+  隨想: hdhdh.png
+  推薦: ddjdjdjd.png
 ```
 
-> top_img: false
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+top_img: false
+{% endnote %}
 
-![image-20200924224536013](https://jsd.012700.xyz/gh/jerryc127/CDN/img/theme-butterfly-docs-page-top-img-false.png)
+![theme-butterfly-docs-page-top-img-false.png](https://oss.012700.xyz/butterfly/2024/09/theme-butterfly-docs-page-top-img-false.png)
 
-![image-20201027210949089](https://jsd.012700.xyz/gh/jerryc127/CDN/img/theme-butterfly-docs-post-top-img-false-new.png)
+![theme-butterfly-docs-post-top-img-false-new.png](https://oss.012700.xyz/butterfly/2024/09/theme-butterfly-docs-post-top-img-false-new.png)
 
-> top_img: orange
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+top_img: orange
+{% endnote %}
 
-![image-20200924225024153](https://jsd.012700.xyz/gh/jerryc127/CDN/img/theme-butterfly-docs-top-img-orange.png)
+![theme-butterfly-docs-top-img-orange.png](https://oss.012700.xyz/butterfly/2024/09/theme-butterfly-docs-top-img-orange.png)
 
-> top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
+{% endnote %}
 
-![image-20200924225300934](https://jsd.012700.xyz/gh/jerryc127/CDN/img/theme-butterfly-docs-top-img-color.png)
+![theme-butterfly-docs-top-img-color.png](https://oss.012700.xyz/butterfly/2024/09/theme-butterfly-docs-top-img-color.png)
 
 ### Footer Background Image
-
-Theme configuration file
 
 ```yaml
 # Whether to display an image background for the footer (same as top_img)
@@ -1554,15 +1506,15 @@ footer_img: true
 | transparent                                                    | Transparent                   |
 | true                                                           | Display the same as top_img   |
 
-> true
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+true
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-footer-img.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-footer.png)
 
 ### Website Background
 
 The default display is white, you can set an image or color
-
-Theme configuration file
 
 ```yaml
 # Image format url(http://xxxxxx.com/xxx.jpg)
@@ -1572,15 +1524,19 @@ background:
 ```
 
 *Note:* If your website root directory is not '/', when using local images, you need to add your root directory.
-For example: if the website is `https://yoursite.com/blog`, and you reference an image `img/xx.png`, then set the background to `url(/blog/img/xx.png)`
+For example: if the website is `https://yoursite.com/blog`, and you reference an image `img/xx.png`, then set the background to `/blog/img/xx.png`
 
-> background:'#49B202'
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+background:'#49B202'
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-set-body-background-color.png)
+![hexo-theme-butterfly-doc-set-body-background-color.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-set-body-background-color.png)
 
-> background: url(https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png)
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+background: url(https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png)
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-set-body-background-img.png)
+![hexo-theme-butterfly-doc-set-body-background-img.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-set-body-background-img.png)
 
 ## Article Cover
 
@@ -1590,9 +1546,9 @@ If `cover` is not configured, you can set a default cover to display.
 
 If you do not want to display the cover on the homepage, you can set it to `false`.
 
-> The order of obtaining the article cover: `Front-matter cover` > `default_cover in the configuration file` > `false`
-
-Theme configuration file
+{% note info %}
+The order of obtaining the article cover: `Front-matter cover` >`default_cover in the configuration file` > `false`
+{% endnote %}
 
 ```yaml
 cover:
@@ -1600,7 +1556,6 @@ cover:
   index_enable: true
   aside_enable: true
   archives_enable: true
-  # Default cover to display when cover is not set
   default_cover:
 ```
 
@@ -1620,28 +1575,15 @@ default_cover:
   - https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg3.png
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-cover.png)
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-cover-show.png)
+![hexo-theme-butterfly-doc-post-cover.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-post-cover.png)
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cover-false.png)
+![hexo-theme-butterfly-doc-post-cover-show.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-post-cover-show.png)
 
-> left
-
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cover-left.png)
-
-> right
-
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cover-right.png)
-
-> both
-
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cover-both.png)
+![hexo-theme-butterfly-docs-cover-false.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-cover-false.png)
 
 ## Page Meta Display
 
 This option is used to display related information about the article.
-
-In theme configuration file
 
 ```yaml
 post_meta:
@@ -1678,8 +1620,6 @@ Home Page：
 
 Post：
 
-#### Article Page:
-
 | Parameter  | Explanation                                                           |
 | ---------- | ---------------------------------------------------------------------- |
 | position   | Position of the article page meta display, options: left / center      |
@@ -1689,25 +1629,33 @@ Post：
 | tags       | Whether to display the article's tags                                 |
 | label      | Whether to display text labels                                        |
 
-> Home Page
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Home Page
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-page-meta.png)
+![hexo-theme-butterfly-docs-page-meta.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-page-meta.png)
 
-> Post
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Post
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-info.png)
+![hexo-theme-butterfly-doc-post-info.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-post-info.png)
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-tag.png)
+![hexo-theme-butterfly-doc-post-tag.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-post-tag.png)
 
 `date_format` is a new feature in version 3.2.0, allowing configuration of displaying exact or relative time.
 
-> Relative Time
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Relative Time
+{% endnote %}
 
-![image-20200928201701560](https://jsd.012700.xyz/gh/jerryc127/CDN/img/theme-butterfly-docs-relative-time.png)
+![theme-butterfly-docs-relative-time.png](https://oss.012700.xyz/butterfly/2024/09/theme-butterfly-docs-relative-time.png)
 
-> Exact Time
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Exact Time
+{% endnote %}
 
-![image-20200928201911032](https://jsd.012700.xyz/gh/jerryc127/CDN/img/theme-butterfly-docs-full-date.png)
+![theme-butterfly-docs-full-date.png](https://oss.012700.xyz/butterfly/2024/09/theme-butterfly-docs-full-date.png)
 
 ## Home Page
 
@@ -1733,7 +1681,7 @@ index_top_img_height: 400px
 
 Effect:
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-top-img-setting.png)
+![hexo-theme-butterfly-doc-index-top-img-setting.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-index-top-img-setting.png)
 
 ### Website Subtitle
 
@@ -1757,27 +1705,72 @@ subtitle:
   source: false
   # If typewriter effect is off, subtitle will only display the first line of sub
   sub:
-    - 今日事&#44;今日畢
     - Never put off till tomorrow what you can do today
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-subtitle.gif)
+![hexo-theme-butterfly-doc-index-subtitle.gif](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-index-subtitle.gif)
 
 ### Home Page Card Layout
 
 The theme supports seven types of card layouts for the home page
 
 ```yaml
-# Article layout on the homepage
-# 1: Cover on the left, info on the right
-# 2: Cover on the right, info on the left
-# 3: Cover and info alternate between left and right
-# 4: Cover on top, info on the bottom
-# 5: Info displayed on the cover
-# 6: Masonry layout - Cover on top, info on the bottom
-# 7: Masonry layout - Info displayed on the cover
 index_layout: 3
 ```
+
+| 配置值 | 解釋                                                                 |
+| ------ | -------------------------------------------------------------------- |
+| 1      | Cover on the left, info on the right                                            |
+| 2      | Cover on the right, info on the left                                                   |
+| 3      | Cover and info alternate between left and right                                               |
+| 4      | Cover on top, info on the bottom                                                   |
+| 5      | Info displayed on the cover                                                     |
+| 6      | Masonry layout - Cover on top, info on the bottom                                     |
+| 7      | Masonry layout - Info displayed on the cover                                       |
+
+Just fill in the `number`, the default is 3
+
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+1: Cover on the left, info on the right
+{% endnote %}
+
+![](https://oss.012700.xyz/butterfly/2024/10/butterfly-docs-index-layout-1.png)
+
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+2: Cover on the right, info on the left
+{% endnote %}
+
+![](https://oss.012700.xyz/butterfly/2024/10/butterfly-docs-index-layout-2.png)
+
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+3: Cover and info alternate between left and right
+{% endnote %}
+
+![](https://oss.012700.xyz/butterfly/2024/10/butterfly-docs-index-layout-3.png)
+
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+4: Cover on top, info on the bottom
+{% endnote %}
+
+![](https://oss.012700.xyz/butterfly/2024/10/butterfly-docs-index-layout-4.png)
+
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+5: Info displayed on the cover
+{% endnote %}
+
+![](https://oss.012700.xyz/butterfly/2024/10/butterfly-docs-index-layout-5.png)
+
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+6: Masonry layout - Cover on top, info on the bottom
+{% endnote %}
+
+![](https://oss.012700.xyz/butterfly/2024/10/butterfy-docs-index-layout-6.png)
+
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+7: Masonry layout - Info displayed on the cover
+{% endnote %}
+
+![](https://oss.012700.xyz/butterfly/2024/10/butterfly-docs-index-layout-7.png)
 
 ### Home Page Article Excerpts
 
@@ -1795,18 +1788,14 @@ index_post_content:
   length: 500
 ```
 
-In `butterfly`, there are four options:
-
-1. **description:** Only display description.
-2. **both:** Prefer description; if not configured, display automatic excerpt.
-3. **auto_excerpt:** Only display automatic excerpt.
-4. **false:** Do not display article content.
-
-If you choose 2 or 3, you can set the `length` parameter to configure the length of the automatic excerpt.
+| Parameter | Description                                                                                         |
+| --------- | --------------------------------------------------------------------------------------------------- |
+| method    | Method to display article content, four options available <br> 1 - Display only description <br> 2 - Prefer description, if not configured, display auto excerpt <br> 3 - Display only auto excerpt <br> 4 - Do not display article content |
+| length    | Length of the auto excerpt, only needs to be configured when method is 2 or 3                       |
 
 Add `description` in front-matter:
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-description.png)
+![hexo-theme-butterfly-doc-post-description.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-post-description.png)
 
 ## Article Page
 
@@ -1834,17 +1823,23 @@ toc:
 | style_simple    | Simple mode (aside **only** shows TOC, only for articles) |
 | scroll_percent  | Whether to show scroll progress percentage          |
 
-> Toc PC
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Toc PC
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-toc-pc-new.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-toc-pc.png)
 
-> Toc Mobile
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Toc Mobile
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-toc-mobile-new.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-mobile.png)
 
-> style_simple: true
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+style_simple: true
+{% endnote %}
 
-![image-20201209232104167](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-toc-style-simple.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-toc-simple.png)
 
 #### Configuring for Specific Articles
 
@@ -1889,7 +1884,7 @@ copyright_info: 此文章版權歸 xxxxx 所有，如有轉載，請註明來自
 
 **Copyright Display Screenshot**
 
-![image-20210130161913121](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-copyright.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-copyright.png)
 
 ### Article Donations/Sponsorship
 
@@ -1912,7 +1907,7 @@ reward:
       text: Alipay
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-donate.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-donate.png)
 
 ### Article Edit Button
 
@@ -1928,9 +1923,9 @@ post_edit:
   url:
 ```
 
-![image-20210130160108360](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-post-edit.png)
+![hexo-theme-butterfly-docs-post-edit.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-post-edit.png)
 
-![image-20210130160208436](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-post-edit-2.png)
+![hexo-theme-butterfly-docs-post-edit-2.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-post-edit-2.png)
 
 ### Related Articles
 
@@ -1947,7 +1942,7 @@ related_post:
   date_type: created # or created or updated (display creation date or update date)
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-releatedpost.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-releatedpost.png)
 
 ### Article Pagination Buttons
 
@@ -1972,7 +1967,7 @@ post_pagination: false
 | post_pagination: 1     | Next post links to older post |
 | post_pagination: 2     | Next post links to newer post |
 
-![Pagination Example](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-post-pagination.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-post-pagination.png)
 
 ### Outdated Article Reminder
 
@@ -2001,13 +1996,17 @@ noticeOutdate:
 | message_prev  | Custom message (prefix) |
 | message_next  | Custom message (suffix) |
 
-> style: flat
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+style: flat
+{% endnote %}
 
-![image-20200731175909296](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butteffly-docs-outdate-flat.png)
+![hexo-theme-butteffly-docs-outdate-flat.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butteffly-docs-outdate-flat.png)
 
-> style: simple
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+style: simple
+{% endnote %}
 
-![image-20200731180037968](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-outdated-simple.png)
+![hexo-theme-butterfly-docs-outdated-simple.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-outdated-simple.png)
 
 ## Footer
 
@@ -2022,7 +2021,7 @@ footer:
     since: 2018
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-since.png)
+![hexo-theme-butterfly-doc-since.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-since.png)
 
 ### Custom Footer Text
 
@@ -2032,7 +2031,7 @@ The `custom_text` option allows you to add custom text to the footer. You can us
 custom_text: Hi, welcome to my <a href="https://butterfly.js.org/">blog</a>!
 ```
 
-![Custom Text Example](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-footer-text.png)
+![hexo-theme-butterfly-doc-footer-text.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-footer-text.png)
 
 For those who need to include an ICP (Internet Content Provider) number, you can also add it within the `custom_text`:
 
@@ -2042,7 +2041,7 @@ custom_text: <a href="ICP link"><img class="icp-icon" src="ICP image"><span>Reco
 
 ## Aside
 
-Aside Configuration
+### Aside Configuration
 
 ```yaml
 aside:
@@ -2129,7 +2128,9 @@ aside:
     runtime_date:
 ```
 
-> `sort_order` is used to configure the order of each card. If not configured, it will follow the order in the theme configuration file. The smaller the number, the higher its position.
+{% note info %}
+`sort_order` is used to configure the order of each card. If not configured, it will follow the order in the theme configuration file. The smaller the number, the higher its position.
+{% endnote %}
 
 | Configuration | Explanation |
 | -------------- | -------------------------------------------------------------------------------------- |
@@ -2185,35 +2186,50 @@ Currently, three comment systems - Livere, Facebook Comments, and Giscus do not 
 The latest comments are only loaded upon refreshing the page and do not update in real-time.
 
 Due to API rate limits, to avoid excessive calls, the theme defaults to a storage duration of 10 minutes. This means, after a call, the data will be stored in localStorage, and refreshing the website within 10 minutes will only retrieve data from localStorage. After the 10-minute period, refreshing the page will call the API to load new data. (A `storage` configuration was added in version 3.6.0, allowing for custom cache duration settings.)
+
 {% endnote %}
 
-> position: left
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+position: left
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-aside-left.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-doc-aside-left.png)
 
-> position: right
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+position: right
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-aside-right.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-doc-aside-right.png)
 
-> card_tags color: false
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+card_tags color: false
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/20200426182730.png)
+![butterfly-docs-card-tags-color-false.png](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-card-tags-color-false.png)
 
-> card_tags color: true
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+card_tags color: true
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/20200426183025.png)
+![butterfly-docs-card-tags-color-true.png](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-card-tags-color-true.png)
 
-> aside button
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+aside button
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-aside-button.gif)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-aside-button.gif)
 
-> website runtime
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+website runtime
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-runtime.png)
+![hexo-theme-butterfly-doc-runtime.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-runtime.png)
 
-> Newest Comments
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Newest Comments
+{% endnote %}
 
-![image-20200830223037320](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-newest-comments.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-newest-comment.png)
 
 ### Custom Add Aside Widget
 
@@ -2253,14 +2269,6 @@ translate:
   msgToSimplifiedChinese: 'Simplified'
 ```
 
-> Simplified
-
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-simp.png)
-
-> Traditional
-
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-tranditional.png)
-
 ### Reading Mode
 
 Reading mode removes content other than the article itself to avoid distractions during reading.
@@ -2271,7 +2279,7 @@ It only appears on article pages, with a reading mode button at the bottom right
 readmode: true
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-read-mode.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-doc-read-mode.png)
 
 ### Dark Mode
 
@@ -2281,7 +2289,6 @@ There will be a dark mode button at the bottom right.
 # dark mode
 darkmode:
   enable: true
-  # dark mode和 light mode切換按鈕
   button: true
   autoChangeMode: false
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
@@ -2296,7 +2303,7 @@ darkmode:
 | start          | The start time for light mode                                                                                                                                                                                                                                     |
 | end            | The end time for light mode                                                                                                                                                                                                                                     |
 
-![image-20201230201029381](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-dark-mode-1.png)
+![hexo-theme-butterfly-doc-dark-mode-1.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-dark-mode-1.png)
 
 ### Scroll Status Percentage
 
@@ -2330,8 +2337,6 @@ rightside_item_order:
 When page anchors are enabled, the page link will be updated according to the header ID as you scroll.
 (Note: Each update will leave a history record. So if an article has many anchors, the web page's history record will be extensive.)
 
-Theme configuration file
-
 ```yaml
 # anchor
 anchor:
@@ -2352,13 +2357,11 @@ You can enable Figcaption to display image descriptions.
 
 It will prioritize the title attribute of the image, followed by the alt attribute.
 
-Theme configuration file
-
 ```yaml
 photofigcaption: true
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-photo-figcaption.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-photo-figcaption.png)
 
 ### Copy Configuration
 
@@ -2380,7 +2383,9 @@ copy:
 | enable       | Whether to enable adding copyright information                  |
 | limit_count  | Word limit. When the copied text exceeds this limit, copyright information will be added to the copied content |
 
-> After adding copyright information
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+After adding copyright information
+{% endnote %}
 
 ```
 Lorem ipsum dolor sit amet, test link consectetur adipiscing elit. Strong text pellentesque ligula commodo viverra vehicula. Italic text at ullamcorper enim. Morbi a euismod nibh. Underline text non elit nisl. Deleted text tristique, sem id condimentum tempus, metus lectus venenatis mauris, sit amet semper lorem felis a eros. Fusce egestas nibh at sagittis auctor. Sed ultricies ac arcu quis molestie. Donec dapibus nunc in nibh egestas, vitae volutpat sem iaculis. Curabitur sem tellus, elementum nec quam id, fermentum laoreet mi. Ut mollis ullamcorper turpis, vitae facilisis velit ultricies sit amet. Etiam laoreet dui odio, id tempus justo tincidunt id. Phasellus scelerisque nunc sed nunc ultricies accumsan.
@@ -2397,8 +2402,6 @@ Copyright belongs to the author. For commercial reprints, please contact the aut
 To enable the word count feature, you need to install the `hexo-wordcount` plugin.
 
 Run `npm install hexo-wordcount --save` or `yarn add hexo-wordcount` in the hexo working directory.
-
-Theme configuration file
 
 ```yaml
 # Need to install the hexo-wordcount plugin
@@ -2418,9 +2421,9 @@ wordcount:
 | min2read         | Display the reading time on the article page                  |
 | total_wordcount  | Display the total word count of the website in the sidebar    |
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-word-count.png)
+![hexo-theme-butterfly-doc-word-count.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-word-count.png)
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-wordcount-totalcount.png)
+![hexo-theme-butterfly-docs-wordcount-totalcount.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-wordcount-totalcount.png)
 
 ### Visitor Count (UV and PV) by busuanzi
 
@@ -2428,9 +2431,9 @@ Visit the [official website of busuanzi](http://busuanzi.ibruce.info/) for more 
 
 Due to the stability issues of busuanzi, there may be occasional access problems. Please be aware.
 
-> The visitor count on the article page is implemented through the busuanzi plugin. Some comment systems have their own visitor count feature, which can be enabled in the corresponding comment system configuration and will replace the busuanzi count.
-
-Theme configuration file
+{% note info %}
+The visitor count on the article page is implemented through the busuanzi plugin. Some comment systems have their own visitor count feature, which can be enabled in the corresponding comment system configuration and will replace the busuanzi count.
+{% endnote %}
 
 ```yaml
 busuanzi:
@@ -2439,7 +2442,9 @@ busuanzi:
   page_pv: true
 ```
 
-> If you need to modify the CDN link of busuanzi, you can do so through the `option` in the `CDN` section of the `theme configuration file`.
+{% note info %}
+If you need to modify the CDN link of busuanzi, you can do so through the `option` in the `CDN` section of the `theme configuration file`.
+{% endnote %}
 
 ```yaml
 CDN:
@@ -2447,9 +2452,9 @@ CDN:
   	busuanzi: xxxxxxxxx
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-busuanzi-site-pv.png)
+![hexo-theme-butterfly-doc-busuanzi-site-pv.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-busuanzi-site-pv.png)
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-pv.png)
+![hexo-theme-butterfly-doc-pv.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-pv.png)
 
 ## Math
 
@@ -2458,8 +2463,6 @@ CDN:
 <!-- tab General Configuration -->
 
 The theme supports two math formula rendering engines, `MathJax` and `KaTeX`. You can choose one according to your needs.
-
-Theme configuration file
 
 ```yaml
 # About the per_page
@@ -2487,18 +2490,20 @@ math:
 Do not use MathJax syntax in titles. The TOC may not display MathJax correctly and might show MathJax code instead.
 {% endnote %}
 
-> It is recommended to use KaTeX for better results, as introduced below!
+{% note info %}
+It is recommended to use KaTeX for better results, as introduced below!
+{% endnote %}
 
 To enable MathJax, set `use` to `mathjax`.
 
 MathJax configuration file
 
 ```yaml
-  mathjax:
-    # Enable the contextual menu
-    enableMenu: true
-    # Choose: all / ams / none, This controls whether equations are numbered and how
-    tags: none
+mathjax:
+  # Enable the contextual menu
+  enableMenu: true
+  # Choose: all / ams / none, This controls whether equations are numbered and how
+  tags: none
 ```
 
 | Parameter   | Explanation                                                  |
@@ -2532,7 +2537,7 @@ Perform the following operations in your Hexo blog directory (**not the Butterfl
 
 Effect:
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-mathjax-2.jpg)
+![hexo-theme-butterfly-doc-mathjax-2.jpg](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-mathjax-2.jpg)
 
 <!-- endtab -->
 
@@ -2544,12 +2549,10 @@ Do not use KaTeX syntax in titles. The TOC cannot display KaTeX correctly.
 
 To enable KaTeX, set `use` to `katex`.
 
-Theme configuration file
-
 ```yaml
-  katex:
-    # Enable the copy KaTeX formula
-    copy_tex: false
+katex:
+  # Enable the copy KaTeX formula
+  copy_tex: false
 ```
 
 | Parameter  | Explanation                                                  |
@@ -2576,8 +2579,8 @@ Configure the Hexo root directory `_config.yml`.
 
 ```yaml
 markdown:
-    plugins:
-      - '@renbaoshuo/markdown-it-katex'
+  plugins:
+    - '@renbaoshuo/markdown-it-katex'
 ```
 
 For other parameter configurations, please refer to the [KaTeX official website](https://katex.org/docs/options.html).
@@ -2586,7 +2589,9 @@ For other parameter configurations, please refer to the [KaTeX official website]
 
 <!-- tab hexo-renderer-markdown-it-plus -->
 
-> Note: This method generates KaTeX without italics.
+{% note warning %}
+Note: This method generates KaTeX without italics.
+{% endnote %}
 
 Uninstall the marked plugin and then install the new `hexo-renderer-markdown-it-plus`:
 
@@ -2600,7 +2605,7 @@ npm un hexo-renderer-marked --save
 npm un hexo-renderer-kramed --save
 
 
-# Then install `hexo-renderer-markdown-it-plus`
+# 然後安裝 `hexo-renderer-markdown-it-plus`
 npm i @upupming/hexo-renderer-markdown-it-plus --save
 ```
 
@@ -2627,18 +2632,17 @@ Of course, you can also use this feature to define some commonly used `macros`.
 Since KaTeX is faster and lighter, it does not have as many features as MathJax (such as the right-click menu). For those using MathJax, the theme also includes the [copy](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex) function of KaTeX.
 
 ![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-katex.gif)
-
 <!-- endtab -->
+
 {% endtabs %}
 
 ## Search
 
 {% tabs search %}
+
 <!-- tab General Configuration -->
 
 The theme supports three search methods (algolia_search / local_search / docsearch). You can choose one or multiple search methods.
-
-Edit the `theme configuration file`:
 
 ```yaml
 search:
@@ -2657,26 +2661,30 @@ search:
 
 <!-- tab Algolia @fab fa-algolia -->
 
-> Remember to run `hexo clean`
+{% note warning %}
+Remember to run `hexo clean`
+{% endnote %}
 
-> If you use [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch), make sure to configure the fields parameter with `title`, `permalink`, and `content`.
+{% note warning %}
+If you use [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch), make sure to configure the fields parameter with `title`, `permalink`, and `content`.
+{% endnote %}
 
 1. Install [hexo-algolia](https://github.com/oncletom/hexo-algolia) or [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch) and configure according to their documentation.
 
 2. Set the `use` parameter in the theme configuration file to `algolia_search`.
 
-  Additional configuration:
+Additional configuration:
 
-  ```yaml
-    # Algolia Search
-    algolia_search:
-      # Number of search results per page
-      hitsPerPage: 6
-  ```
+```yaml
+# Algolia Search
+algolia_search:
+  # Number of search results per page
+  hitsPerPage: 6
+```
 
-  | Parameter   | Description                        |
-  | ----------- | ---------------------------------- |
-  | hitsPerPage | Number of search results per page  |
+| Parameter   | Description                        |
+| ----------- | ---------------------------------- |
+| hitsPerPage | Number of search results per page  |
 
 3. Run Hexo.
 
@@ -2684,32 +2692,34 @@ search:
 
 <!-- tab Local Search @fas fa-search -->
 
-> Remember to run `hexo clean`
+{% note warning %}
+Remember to run `hexo clean`
+{% endnote %}
 
 1. Install [hexo-generator-searchdb](https://github.com/next-theme/hexo-generator-searchdb) or [hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search) and configure according to their documentation.
 
 2. Set the `use` parameter in the theme configuration file to `local_search`.
 
-  Additional configuration:
+Additional configuration:
 
-  ```yaml
-    # Local Search
-    local_search:
-      # Preload the search data when the page loads.
-      preload: false
-      # Show top n results per article, show all results by setting to -1
-      top_n_per_article: 1
-      # Unescape html strings to the readable one.
-      unescape: false
-      CDN:
-  ```
+```yaml
+# Local Search
+local_search:
+  # Preload the search data when the page loads.
+  preload: false
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # Unescape html strings to the readable one.
+  unescape: false
+  CDN:
+```
 
-  | Parameter          | Description                                                   |
-  | ------------------ | ------------------------------------------------------------- |
-  | preload            | Preload search data on page load. If disabled, search data loads when the search button is clicked. |
-  | top_n_per_article  | Number of matched results to show per article, default is 1    |
-  | unescape           | Unescape HTML strings to readable text                        |
-  | CDN                | CDN URL for search data (default is local link)               |
+| Parameter          | Description                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| preload            | Preload search data on page load. If disabled, search data loads when the search button is clicked. |
+| top_n_per_article  | Number of matched results to show per article, default is 1    |
+| unescape           | Unescape HTML strings to readable text                        |
+| CDN                | CDN URL for search data (default is local link)               |接）                                                  |
 
 <!-- endtab -->
 
@@ -2720,26 +2730,26 @@ DocSearch is another search service provided by Algolia. For detailed applicatio
 1. Apply for [DocSearch](https://docsearch.algolia.com/) and obtain your `appId`, `apiKey`, and `indexName`.
 2. Set the `use` parameter in the theme configuration file to `docsearch`.
 
-  Additional configuration:
+Additional configuration:
 
-  ```yaml
-    # Docsearch
-    # https://docsearch.algolia.com/
-    docsearch:
-      appId:
-      apiKey:
-      indexName:
-      option:
-  ```
+```
+  # Docsearch
+  # https://docsearch.algolia.com/
+  docsearch:
+    appId:
+    apiKey:
+    indexName:
+    option:
+```
 
-  | Parameter  | Description                          |
-  | ---------- | ------------------------------------ |
-  | appId      | [Required] Your Algolia application ID |
-  | apiKey     | [Required] Your Algolia search API key |
-  | indexName  | [Required] Your Algolia index name    |
-  | option     | [Optional] Additional DocSearch configuration. Refer to the [documentation](https://docsearch.algolia.com/docs/api/) for details. |
+| Parameter  | Description                          |
+| ---------- | ------------------------------------ |
+| appId      | [Required] Your Algolia application ID |
+| apiKey     | [Required] Your Algolia search API key |
+| indexName  | [Required] Your Algolia index name    |
+| option     | [Optional] Additional DocSearch configuration. Refer to the [documentation](https://docsearch.algolia.com/docs/api/) for details. |
 
-![DocSearch](https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-docsearch.png)
+![hexo-theme-butterfly-docs-docsearch.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-docsearch.png)
 
 <!-- endtab -->
 
@@ -2747,15 +2757,15 @@ DocSearch is another search service provided by Algolia. For detailed applicatio
 
 ## Share
 
-> Only one sharing service can be selected.
+{% note warning %}
+Only one sharing service can be selected.
+{% endnote %}
 
-{% tabs 分享 %}
+{% tabs Share %}
 
-<!-- tab General Configuration -->
+<!-- tab Sharejs -->
 
 The theme supports two sharing methods: `sharejs` and `addtoany`.
-
-Edit the `theme configuration file`:
 
 ```yaml
 share:
@@ -2774,16 +2784,14 @@ share:
 
 If you're not familiar with [sharejs](https://github.com/overtrue/share.js/), check out its documentation.
 
-Edit the `theme configuration file`:
-
 ```yaml
-  # Share.js
-  # https://github.com/overtrue/share.js
-  sharejs:
-    sites: facebook,twitter,wechat,weibo,qq
+# Share.js
+# https://github.com/overtrue/share.js
+sharejs:
+  sites: facebook,twitter,wechat,weibo,qq
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-sharejs.png)
+![hexo-theme-butterfly-doc-sharejs.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-sharejs.png)
 
 <!-- endtab -->
 
@@ -2791,14 +2799,12 @@ Edit the `theme configuration file`:
 
 Refer to [addtoany](https://www.addtoany.com/) for usage instructions.
 
-Edit the `theme configuration file`:
-
 ```yaml
 addtoany:
   item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addtoany.png)
+![hexo-theme-butterfly-doc-addtoany.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-addtoany.png)
 
 <!-- endtab -->
 
@@ -2838,29 +2844,23 @@ comments:
 | count            | Whether to display the comment count at the top of the post.<br> Livere, Giscus, and Utterances do not support comment count display. |
 | card_post_count  | Whether to display the comment count on the homepage post cards.<br>Gitalk, Livere, Giscus, and Utterances do not support comment count display. |
 
-> Single Comment
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Single Comment
+{% endnote %}
 
-![image-20200731172506907](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-single-comments.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-single-comments.png)
 
-> Dual Comments
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Dual Comments
+{% endnote %}
 
-![image-20200731173006128](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments.png)
-
-> Show text
-
-![image-20200731173006128](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments.png)
-
-> Hide text
-
-![image-20200731173143712](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-double-comments-not-text.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-double-comments.png)
 
 <!-- endtab -->
 
 <!-- tab Disqus -->
 
 Register on [Disqus](https://disqus.com/), configure your Disqus settings, and then enable it in the `Butterfly` theme.
-
-Edit the `theme configuration file`:
 
 ```yaml
 disqus:
@@ -2871,15 +2871,13 @@ disqus:
 |------------|----------------------------------------------------------------------------------------------|
 | shortname  | Your Disqus shortname. You can create it [here](https://disqus.com/admin/create/).
 
-![image-20201027211418161](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-disqus-new.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-disqus.png)
 
 <!-- endtab -->
 
 <!-- tab Disqusjs -->
 
 Similar to Disqus, but can be used to display comments when Disqus is inaccessible in mainland China. Refer to [Disqusjs](https://github.com/SukkaW/DisqusJS) for details.
-
-Edit the `theme configuration file`:
 
 ```yaml
 disqusjs:
@@ -2894,17 +2892,17 @@ disqusjs:
 | apikey     | Your Disqus API Key. You can create it [here](https://disqus.com/api/applications/).         |
 | option     | Optional configuration.                                                                      |
 
-> Display when Disqus is inaccessible:
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Display when Disqus is inaccessible
+{% endnote %}
 
-![image-20201027212543851](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-disqusjs-new.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-disqusjs.png)
 
 <!-- endtab -->
 
-<!-- tab Livere -->
+<!-- tab livere（來必力） -->
 
 Register on [Livere](https://livere.com/), configure your Livere settings, and then enable it in the `Butterfly` theme.
-
-Edit the `theme configuration file`:
 
 ```yaml
 livere:
@@ -2917,17 +2915,14 @@ livere:
 
 The Livere UID can be found here:
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili.jpg)
+![hexo-theme-butterfly-doc-laibili.jpg](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-laibili.jpg)
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili_2-new.png)
-
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-livere.png)
 <!-- endtab -->
 
 <!-- tab Gitalk -->
 
 Follow the [Gitalk](https://github.com/gitalk/gitalk) instructions to obtain your GitHub OAuth application client ID and secret, and check the related configuration instructions.
-
-Edit the `theme configuration file`:
 
 ```yaml
 gitalk:
@@ -2948,15 +2943,13 @@ gitalk:
 | admin           | The owner and collaborators of the GitHub repository (users with write permissions to the repository). |
 | option          | Optional configuration.                                                                      |
 
-![image-20201027212704930](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-gitalk-new.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-gitalk.png)
 
 <!-- endtab -->
 
 <!-- tab Valine -->
 
 Follow the [Valine](https://github.com/xCss/Valine) instructions to configure your LeanCloud application and check the relevant configuration instructions.
-
-Edit the `theme configuration file`:
 
 ```yaml
 valine:
@@ -2981,56 +2974,61 @@ valine:
 | visitor         | Whether to display the article read count.                                                   |
 | option          | Optional configuration.                                                                      |
 
-> When visitor is enabled, the article read count on the article page will be provided by Valine, not **Busuanzi**.
+{% note info %}
+When visitor is enabled, the article read count on the article page will be provided by Valine, not **Busuanzi**.
+{% endnote %}
 
 Valine supports custom emojis from v1.4.5. If you need to configure them, set the `emojiCDN` to your custom emoji CDN.
 
 Also, create a JSON file `valine.json` in the `source/_data/` directory under your Hexo working directory, equivalent to Valine's `emojiMaps` configuration. The `valine.json` can be configured as follows:
 
-> valine.json
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+valine.json
+{% endnote %}
 
 ```json
-{ 
-"tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
-"tv_親親": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
-"tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
-"tv_再見": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
-"tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
-"tv_發怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
-"tv_發財": "34db290afd2963723c6eb3c4560667db7253a21a.png",
-"tv_可愛": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
-"tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
-"tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
-"tv_嘔吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
-"tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
-"tv_壞笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
-"tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
-"tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
-"tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
-"tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
-"tv_尷尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
-"tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
-"tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
-"tv_驚嚇": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png"
-} 
-
+{
+  "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",
+  "tv_親親": "a8111ad55953ef5e3be3327ef94eb4a39d535d06.png",
+  "tv_偷笑": "bb690d4107620f1c15cff29509db529a73aee261.png",
+  "tv_再見": "180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png",
+  "tv_冷漠": "b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png",
+  "tv_發怒": "34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png",
+  "tv_發財": "34db290afd2963723c6eb3c4560667db7253a21a.png",
+  "tv_可愛": "9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png",
+  "tv_吐血": "09dd16a7aa59b77baa1155d47484409624470c77.png",
+  "tv_呆": "fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png",
+  "tv_嘔吐": "9f996894a39e282ccf5e66856af49483f81870f3.png",
+  "tv_困": "241ee304e44c0af029adceb294399391e4737ef2.png",
+  "tv_壞笑": "1f0b87f731a671079842116e0991c91c2c88645a.png",
+  "tv_大佬": "093c1e2c490161aca397afc45573c877cdead616.png",
+  "tv_大哭": "23269aeb35f99daee28dda129676f6e9ea87934f.png",
+  "tv_委屈": "d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png",
+  "tv_害羞": "a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png",
+  "tv_尷尬": "7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png",
+  "tv_微笑": "70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png",
+  "tv_思考": "90cf159733e558137ed20aa04d09964436f618a1.png",
+  "tv_驚嚇": "0d15c7e2ee58e935adc6a7193ee042388adc22af.png"
+}
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
+![hexo-theme-butterfly-doc-valine.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-valine.png)
 
-> default_avatar
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+default_avatar
+{% endnote %}
 
-| Parameter         | Explanation                                                         |
-| ------------ | ------------------------------------------------------------ |
-| empty（Default） | ![](https://www.gravatar.com/avatar/00000000000000000000000000000000) |
-| mp           | ![](https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp) |
+| 參數         | 效果                                                                              |
+| ------------ | --------------------------------------------------------------------------------- |
+| empty（Default） | ![](https://www.gravatar.com/avatar/00000000000000000000000000000000)             |
+| mp           | ![](https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp)        |
 | identicon    | ![](https://www.gravatar.com/avatar/00000000000000000000000000000000?d=identicon) |
 | monsterid    | ![](https://www.gravatar.com/avatar/00000000000000000000000000000000?d=monsterid) |
-| wavatar      | ![](https://www.gravatar.com/avatar/00000000000000000000000000000000?d=wavatar) |
-| retro        | ![](https://www.gravatar.com/avatar/00000000000000000000000000000000?d=retro) |
-| robohash     | ![](https://www.gravatar.com/avatar/00000000000000000000000000000000?d=robohash) |
+| wavatar      | ![](https://www.gravatar.com/avatar/00000000000000000000000000000000?d=wavatar)   |
+| retro        | ![](https://www.gravatar.com/avatar/00000000000000000000000000000000?d=retro)     |
+| robohash     | ![](https://www.gravatar.com/avatar/00000000000000000000000000000000?d=robohash)  |
 | blank        | ![](https://www.gravatar.com/avatar/00000000000000000000000000000000?d=blank&f=y) |
-| 404          | ![](https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y) |
+| 404          | ![](https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y)    |
 
 <!-- endtab -->
 
@@ -3039,8 +3037,6 @@ Also, create a JSON file `valine.json` in the `source/_data/` directory under yo
 Waline is a comment system derived from Valine that includes backend support. You can consider Waline as "With backend Valine".
 
 Refer to the [Waline documentation](https://waline.js.org/) for detailed configuration.
-
-Edit the `theme configuration file`:
 
 ```yaml
 waline:
@@ -3057,9 +3053,11 @@ waline:
 | pageview  | Whether to show article view count |
 | option    | Optional configuration |
 
-> When pageview is enabled, the article view count will be provided by Waline instead of **Busuanzi**.
+{% note info %}
+When pageview is enabled, the article view count will be provided by Waline instead of **Busuanzi**.
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
+![hexo-theme-butterfly-doc-valine.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-valine.png)
 
 <!-- endtab -->
 
@@ -3067,14 +3065,12 @@ waline:
 
 Like Gitalk, Utterances is a comment tool based on GitHub issues but with relatively fewer permissions required. Refer to [Utterances documentation](https://utteranc.es/) for details.
 
-Edit the `theme configuration file`:
-
 ```yaml
 utterances:
   repo:
-  # Optional values: pathname/url/title/og:title
+  # 可選 pathname/url/title/og:title
   issue_term: pathname
-  # Optional themes: github-light/github-dark/github-dark-orange/icy-dark/dark-blue/photon-dark
+  # 可選 github-light/github-dark/github-dark-orange/icy-dark/dark-blue/photon-dark
   light_theme: github-light
   dark_theme: photon-dark
 ```
@@ -3086,15 +3082,13 @@ utterances:
 | light_theme  | Light theme, options: `github-light`, `github-dark`, `github-dark-orange`, `icy-dark`, `dark-blue`, `photon-dark` |
 | dark_theme   | Dark theme, options: `github-light`, `github-dark`, `github-dark-orange`, `icy-dark`, `dark-blue`, `photon-dark` |
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-Utterances.png)
+![hexo-theme-butterfly-docs-Utterances.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-Utterances.png)
 
 <!-- endtab -->
 
 <!-- tab Facebook Comments -->
 
 `Facebook Comments` is a plugin provided by Facebook, requiring users to log in with Facebook to comment.
-
-Edit the `theme configuration file`:
 
 ```yaml
 # Facebook Comments Plugin
@@ -3117,7 +3111,7 @@ facebook_comments:
 | order_by  | Comment sorting method: social/time/reverse_time |
 | lang      | Language |
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-butterfly-docs-facebook-comments.png)
+![hexo-butterfly-docs-facebook-comments.png](https://oss.012700.xyz/butterfly/2024/09/hexo-butterfly-docs-facebook-comments.png)
 
 <!-- endtab -->
 
@@ -3127,7 +3121,7 @@ facebook_comments:
 
 For detailed configuration, please refer to the [Twikoo documentation](https://twikoo.js.org/quick-start.html#%E7%8E%AF%E5%A2%83%E5%88%9D%E5%A7%8B%E5%8C%96).
 
-Edit the `theme configuration file`:
+你只需要把獲取到的 `環境ID (envId)` 填寫到配置上去就行
 
 ```yaml
 twikoo:
@@ -3144,17 +3138,17 @@ twikoo:
 | visitor   | Whether to display article view count |
 | option    | Optional configuration |
 
-> When visitor is enabled, the article view count will be provided by Twikoo instead of **Busuanzi**.
+{% note info %}
+When visitor is enabled, the article view count will be provided by Twikoo instead of **Busuanzi**.
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-twikoo-comments.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-twikoo.png)
 
 <!-- endtab -->
 
 <!-- tab Giscus -->
 
 A comment system based on *GitHub Discussions*.
-
-Edit the `theme configuration file`:
 
 ```yaml
 # Giscus
@@ -3178,7 +3172,7 @@ giscus:
 
 Refer to the Giscus [documentation](https://giscus.app) for details.
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/hexo-theme-butterfly-docs-giscus.png)
+![hexo-theme-butterfly-docs-giscus.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-giscus.png)
 
 <!-- endtab -->
 
@@ -3187,8 +3181,6 @@ Refer to the Giscus [documentation](https://giscus.app) for details.
 Remark42 is a comment system that only supports **self-hosting**.
 
 For detailed setup, refer to [Installation | Remark42](https://remark42.com/docs/getting-started/installation/).
-
-Edit the `theme configuration file`:
 
 ```yaml
 remark42:
@@ -3213,8 +3205,6 @@ Artalk is a comment system that only supports **self-hosting**.
 
 For detailed setup, refer to [Artalk | Self-hosted Comment System](https://artalk.js.org/).
 
-Edit the `theme configuration file`:
-
 ```yaml
 artalk:
   server:
@@ -3231,7 +3221,9 @@ artalk:
 | visitor   | Whether to display article view count |
 | option    | Optional configuration |
 
-> When visitor is enabled, the article view count will be provided by Artalk instead of **Busuanzi**.
+{% note info %}
+When visitor is enabled, the article view count will be provided by Artalk instead of **Busuanzi**.
+{% endnote %}
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/hexo-butterfly-docs-artalk.png)
 
@@ -3241,21 +3233,19 @@ artalk:
 
 ## Online Chat
 
-{% tabs Online Chat %}
+{% tabs online-chat %}
 
 <!-- tab General Settings -->
 
 The theme includes several online chat tools. You can choose to enable one to facilitate communication with your visitors.
 
-Modify the `theme configuration file`:
-
 ```yaml
 chat:
-  # Choose: chatra/tidio/daovoice/crisp/messenger
+  # Choose: chatra/tidio/crisp
   # Leave it empty if you don't need chat
   use:
   # Chat Button [recommend]
-  # It will create a button in the bottom right corner of the website and hide the origin button
+  # It will create a button in the bottom right corner of website, and hide the origin button
   rightside_button: false
   # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
   button_hide_show: false
@@ -3263,30 +3253,30 @@ chat:
 
 | Parameter          | Description                                                  |
 | ------------------ | ------------------------------------------------------------ |
-| use                | Choose the chat tool to use, options are `chatra`/`tidio`/`daovoice`/`crisp`/`messenger` |
+| use                | Choose the chat tool to use, options are `chatra`/`tidio`/`crisp` |
 | rightside_button   | Enable the chat button at the bottom right corner            |
 | button_hide_show   | Hide chat button when scrolling down, show when scrolling up |
 
 These tools provide a button to open/close the chat window. The theme also provides a custom button that will appear in the bottom right corner. Just enable the `rightside_button`.
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-button.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-chatbtn.png)
 
 To avoid affecting user experience, the theme offers a `button_hide_show` configuration. Set to `true` to show the chat button only when scrolling up.
 
 <!-- endtab -->
 
-<!-- tab Chatra -->
+<!-- tab chatra -->
 
-> To enable Chatra, set the `chat` configuration `use` to `chatra`.
+{% note info %}
+To enable Chatra, set the `chat` configuration `use` to `chatra`.
+{% endnote %}
 
 Configure Chatra by getting the `Public key`.
 
 1. Open [Chatra](https://chatra.com/) and sign up.
 2. Find the `Public key` in `Preferences`.
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-id.png)
-
-Modify the `theme configuration file`:
+![hexo-theme-butterfly-docs-chat-chatra-id.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-chat-chatra-id.png)
 
 ```yaml
 # chatra
@@ -3297,26 +3287,28 @@ chatra:
 
 You can customize Chatra's style in `Chat Widget`.
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-ui-settings.png)
+![hexo-theme-butterfly-docs-chat-chatra-ui-settings.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-chat-chatra-ui-settings.png)
 
-> Demo
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Demo
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-ui-demo.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-chat-chatra-ui-demo.png)
 
 <!-- endtab -->
 
-<!-- tab Tidio -->
+<!-- tab tidio -->
 
-> To enable Tidio, set the `chat` configuration `use` to `tidio`.
+{% note info %}
+To enable Tidio, set the `chat` configuration `use` to `tidio`.
+{% endnote %}
 
 Configure Tidio by getting the `Public key`.
 
 1. Open [Tidio](https://www.tidio.com/) and sign up.
 2. Find the `Public key` in `Preferences > Developer`.
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-id.png)
-
-Modify the `theme configuration file`:
+![hexo-theme-butterfly-docs-chat-tidio-id.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-chat-tidio-id.png)
 
 ```yaml
 # tidio
@@ -3327,54 +3319,26 @@ tidio:
 
 You can customize Tidio's style in `Channels`.
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-setting.png)
+![hexo-theme-butterfly-docs-chat-tidio-setting.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-chat-tidio-setting.png)
 
-> Demo
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Demo
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-demo.png)
-
-<!-- endtab -->
-
-<!-- tab Daovoice -->
-
-> To enable Daovoice, set the `chat` configuration `use` to `daovoice`.
-
-Configure Daovoice by getting the `App ID`.
-
-1. Open [Daovoice](http://daovoice.io/) and sign up.
-2. Find your `App ID`.
-
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-appid.png)
-
-Modify the `theme configuration file`:
-
-```yaml
-# daovoice
-# http://daovoice.io/
-daovoice:
-  app_id: xxxxx
-```
-
-You can customize the chat button and other styles in `Chat Settings`.
-
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-ui.png)
-
-> Demo
-
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-demo.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-chat-tidio-demo.png)
 
 <!-- endtab -->
 
-<!-- tab Crisp -->
+<!-- tab crisp -->
 
-> To enable Crisp, set the `chat` configuration `use` to `crisp`.
+{% note info %}
+To enable Crisp, set the `chat` configuration `use` to `crisp`.
+{% endnote %}
 
 Configure Crisp by getting the `Website ID`.
 
 1. Open [Crisp](https://crisp.chat/en/) and sign up.
 2. Find the `Website ID`.
-
-Modify the `theme configuration file`:
 
 ```yaml
 # crisp
@@ -3383,29 +3347,9 @@ crisp:
   website_id: xxxxxxxx
 ```
 
-![image-20200731183023863](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-buttefly-docs-chat-crisp.png)
+![hexo-theme-buttefly-docs-chat-crisp.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-buttefly-docs-chat-crisp.png)
 
-![image-20200731183444781](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-crisp-demo.png)
-
-<!-- endtab -->
-
-<!-- tab Messenger -->
-
-> To enable Messenger, set the `chat` configuration `use` to `messenger`.
-
-Messenger is a chat service by Facebook.
-
-For detailed instructions, see [Facebook Chat Plugin - Messenger Platform](https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/).
-
-Modify the `theme configuration file`:
-
-```yaml
-messenger:
-  pageID: xxxxx
-  lang: zh_TW # Language en_US/zh_CN/zh_TW and so on
-```
-
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/hexo-butterfly-docs-messege.png)
+![hexo-theme-butterfly-docs-crisp-demo.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-crisp-demo.png)
 
 <!-- endtab -->
 
@@ -3414,13 +3358,14 @@ messenger:
 ## Analytics
 
 {% tabs Analysis %} 
+
 <!-- tab Baidu Analytics -->
 
 1. Log in to the Baidu Analytics [official website](https://tongji.baidu.com/web/welcome/login).
 
 2. Locate your Baidu Analytics code.
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-baidu-tongji.jpg)
+![hexo-theme-butterfly-doc-baidu-tongji.jpg](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-baidu-tongji.jpg)
 
 3. Modify the `theme configuration file`:
 
@@ -3431,11 +3376,12 @@ baidu_analytics: your_code
 <!-- endtab -->
 
 <!-- tab Google Analytics -->
+
 1. Log in to the Google Analytics [official website](https://www.google.com/analytics/).
 
 2. Find your Google Analytics tracking ID.
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-google-analytics.jpg)
+![hexo-theme-butterfly-doc-google-analytics.jpg](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-google-analytics.jpg)
 
 3. Modify the `theme configuration file`:
 
@@ -3451,14 +3397,14 @@ google_analytics: your_code # usually starts with `UA-`
 2. Locate the `JavaScript Snippet`.
 3. Find your `token`.
 
-![image-20201230195158742](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cloudflare-analytics-id.png)
+![hexo-theme-butterfly-docs-cloudflare-analytics-id.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-cloudflare-analytics-id.png)
 
 4. Modify the `theme configuration file`:
 
    ```yaml
    # Cloudflare Analytics
    # https://www.cloudflare.com/zh-tw/web-analytics/
-   cloudflare_analytics: your_token
+   cloudflare_analytics:
    ```
 
 <!-- endtab -->
@@ -3471,14 +3417,14 @@ google_analytics: your_code # usually starts with `UA-`
 
 3. Find your `ID`.
 
-![image-20201230195541443](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-clarity-id.png)
+![hexo-theme-butterfly-docs-clarity-id.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-clarity-id.png)
 
 4. Modify the `theme configuration file`:
 
    ```yaml
    # Microsoft Clarity
    # https://clarity.microsoft.com/
-   microsoft_clarity: your_id
+   microsoft_clarity:
    ```
 
 <!-- endtab -->
@@ -3488,10 +3434,10 @@ google_analytics: your_code # usually starts with `UA-`
 ## Advertisements
 
 {% tabs Advertisements %}
-<!-- tab Google Ads -->
-The theme integrates Google Ads (Auto Ads).
 
-Modify the `theme configuration file`:
+<!-- tab Google Ads -->
+
+The theme integrates Google Ads (Auto Ads).
 
 ```yaml
 google_adsense:
@@ -3502,13 +3448,13 @@ google_adsense:
   enable_page_level_ads: true
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-google-adsense1.png)
+![hexo-theme-butterfly-docs-google-adsense1.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-google-adsense1.png)
+
 <!-- endtab -->
 
 <!-- tab Manual Ad Configuration -->
-The theme reserves three spots for inserting ads: after every three articles on the homepage, after the aside announcement, and after the post donation section. Fill in the HTML code in the corresponding position.
 
-Modify the `theme configuration file`:
+The theme reserves three spots for inserting ads: after every three articles on the homepage, after the aside announcement, and after the post donation section. Fill in the HTML code in the corresponding position.
 
 ```yaml
 ad:
@@ -3517,22 +3463,23 @@ ad:
   post:
 ```
 
-For example:
+例如:
 
 ```yaml
-  index: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="xxxxxxxxxxxx" data-ad-client="ca-pub-xxxxxxxxxx" data-ad-slot="xxxxxxxxxx"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+index: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="xxxxxxxxxxxx" data-ad-client="ca-pub-xxxxxxxxxx" data-ad-slot="xxxxxxxxxx"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-ad-post.png)
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-ad-index.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-ad-1.png)
+
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-ad-2.png)
+
 <!-- endtab -->
+
 {% endtabs %}
 
 ## Website Verification
 
 If you need search engines to index your site, you may need to log in to the corresponding search engine management platform for submission. Verification codes can be obtained from each management platform.
-
-Modify the `theme configuration file`:
 
 ```yaml
 site_verification:
@@ -3550,26 +3497,28 @@ You can modify most UI colors.
 
 Edit the `theme configuration file`, for example:
 
-> Color values must be enclosed in double quotes, like `"#000"` instead of `#000`. Otherwise, an error will occur during the build process!
+{% note info %}
+Color values must be enclosed in double quotes, like `"#000"` instead of `#000`. Otherwise, an error will occur during the build process!
+{% endnote %}
 
 ```yaml
 theme_color:
   enable: true
-  main: "#49B1F5"
-  paginator: "#00c4b6"
-  button_hover: "#FF7242"
-  text_selection: "#00c4b6"
-  link_color: "#99a9bf"
-  meta_color: "#858585"
-  hr_color: "#A4D8FA"
-  code_foreground: "#F47466"
-  code_background: "rgba(27, 31, 35, .05)"
-  toc_color: "#00c4b6"
-  blockquote_padding_color: "#49b1f5"
-  blockquote_background_color: "#49b1f5"
-  scrollbar_color: "#49b1f5"
-  meta_theme_color_light: "ffffff"
-  meta_theme_color_dark: "#0d0d0d"
+  main: '#49B1F5'
+  paginator: '#00c4b6'
+  button_hover: '#FF7242'
+  text_selection: '#00c4b6'
+  link_color: '#99a9bf'
+  meta_color: '#858585'
+  hr_color: '#A4D8FA'
+  code_foreground: '#F47466'
+  code_background: 'rgba(27, 31, 35, .05)'
+  toc_color: '#00c4b6'
+  blockquote_padding_color: '#49b1f5'
+  blockquote_background_color: '#49b1f5'
+  scrollbar_color: '#49b1f5'
+  meta_theme_color_light: 'ffffff'
+  meta_theme_color_dark: '#0d0d0d'
 ```
 
 | Parameter                   | Description                                           |
@@ -3590,9 +3539,9 @@ theme_color:
 | meta_theme_color_light      | Light mode theme color                                |
 | meta_theme_color_dark       | Dark mode theme color                                 |
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_1.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-doc-color_1.png)
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_2.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-doc-color_2.png)
 
 ### Justify Text Alignment
 
@@ -3603,19 +3552,21 @@ You can set text to be justified, except for the last line.
 text_align_justify: true
 ```
 
-> text_align_justify: false
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+text_align_justify: false
+{% endnote %}
 
 ![](https://oss.012700.xyz/butterfly/2023/10/text-align-justify-false.png)
 
-> text_align_justify: true
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+text_align_justify: true
+{% endnote %}
 
 ![](https://oss.012700.xyz/butterfly/2023/10/text-align-justify-true.png)
 
 ### Black Mask
 
 To avoid overly bright images making text unreadable, a black mask is added to `header` and `footer` by default.
-
-Theme configuration file:
 
 ```yaml
 # Add a mask to the header and footer
@@ -3630,8 +3581,6 @@ When entering a webpage, due to loading speed issues, the top_img image may appe
 
 The theme supports the loading animation of pace.js, see [pace.js](https://codebyzach.github.io/pace/) for details.
 
-Configure `butterfly.yml`:
-
 ```yaml
 # Loading Animation
 preloader:
@@ -3644,9 +3593,11 @@ preloader:
   pace_css_url:
 ```
 
-> fullpage-loading
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+fullpage-loading
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-preloader.gif)
+![hexo-theme-butterfly-docs-preloader.gif](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-preloader.gif)
 
 ### Page Beautification
 
@@ -3657,15 +3608,13 @@ It changes the styles of ol, ul, h1-h5.
 - `post` Applies only to the post page
 - `site` Applies to the entire site
 
-Edit the `theme configuration file`:
-
 ```yaml
 # Beautify page display
 beautify:
   enable: true
   field: site # site/post
   title-prefix-icon: '\f0c1'
-  title-prefix-icon-color: "#F47466"
+  title-prefix-icon-color: '#F47466'
 ```
 
 | Parameter              | Description                                              |
@@ -3676,15 +3625,19 @@ beautify:
 | title-prefix-icon-color | Color of the prefix icon                                |
 
 `title-prefix-icon` is the Unicode value of the fontawesome icon.
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-fontwesome-unicode.png)
+![hexo-theme-butterfly-doc-fontwesome-unicode.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-fontwesome-unicode.png)
 
-> Beautification disabled
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Beautification disabled
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-beautify.png)
+![hexo-theme-butterfly-doc-post-beautify.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-post-beautify.png)
 
-> Beautification enabled
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Beautification enabled
+{% endnote %}
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-beautif.png)
+![hexo-theme-butterfly-doc-post-beautif.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-post-beautif.png)
 
 ### Custom Fonts and Font Sizes
 
@@ -3694,11 +3647,9 @@ You can set the font-family for the entire site.
 
 **If no configuration is needed, leave it empty.**
 
-Theme configuration file:
-
 ```yaml
 # Global font settings
-# Don't modify the following settings unless you know how they work
+# Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
   global-font-size:
   code-font-size:
@@ -3719,8 +3670,6 @@ You can set the font-family for the site title and subtitle.
 **If no configuration is needed, leave it empty.**
 **If no web font is needed, leave `font_link` empty.**
 
-Edit the `theme configuration file`:
-
 ```yaml
 # Font settings for the site title and site subtitle
 # Site name on the top left, site name centered on the homepage
@@ -3737,8 +3686,6 @@ blog_title_font:
 ### Typing Effect
 
 Typing effect [activate-power-mode](https://github.com/disjukr/activate-power-mode).
-
-Theme configuration file:
 
 ```yaml
 # Typewriter Effect
@@ -3757,7 +3704,7 @@ activate_power_mode:
 | shake      | Enable shake effect                                         |
 | mobile     | Enable typing effect on mobile                              |
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-type-animation.gif)
+![hexo-theme-butterfly-doc-type-animation.gif](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-type-animation.gif)
 
 ### Background Effects
 
@@ -3766,8 +3713,6 @@ activate_power_mode:
 <!-- tab Static Ribbon -->
 
 Beautiful ribbon background, can be set to change ribbon on each refresh or on each click
-
-Theme configuration file:
 
 ```yaml
 canvas_ribbon:
@@ -3792,7 +3737,7 @@ canvas_ribbon:
 
 For more configuration, refer to [canvas_ribbon](https://github.com/hustcc/ribbon.js)
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-canvas-ribbon.png)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-canvas-ribbon.png)
 
 <!-- endtab -->
 
@@ -3800,21 +3745,17 @@ For more configuration, refer to [canvas_ribbon](https://github.com/hustcc/ribbo
 
 Beautiful ribbon background that floats
 
-Theme configuration file:
-
 ```yaml
 canvas_fluttering_ribbon:
   enable: true
   mobile: false # false: do not display on mobile, true: display on mobile
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-canvas-ribbon-piao.gif)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-canvas_fluttering_ribbon.gif)
 
 <!-- endtab -->
 
 <!-- tab canvas-nest -->
-
-theme configuration file
 
 ```yaml
 canvas_nest:
@@ -3839,7 +3780,7 @@ canvas_nest:
 | count           | Number of lines                                              |
 | mobile          | Show effect on mobile                                        |
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-canvas_nest.gif)
+![](https://oss.012700.xyz/butterfly/2024/09/butterfly-doc-canvas_nes.gif)
 
 <!-- endtab -->
 
@@ -3848,9 +3789,8 @@ canvas_nest:
 ### Mouse Click Effects
 
 {% tabs Mouse Click Effects %}
-<!-- tab Fireworks @fas fa-fire-alt -->
 
-Theme configuration file:
+<!-- tab Fireworks @fas fa-fire-alt -->
 
 ```yaml
 fireworks:
@@ -3865,12 +3805,11 @@ fireworks:
 | zIndex          | z-index of fireworks (`-1` means behind / `9999` means in front) |
 | mobile          | Show fireworks on mobile                                     |
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-firewall.gif)
+![hexo-theme-butterfly-doc-firewall.gif](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-firewall.gif)
+
 <!-- endtab -->
 
 <!-- tab Heart @fas fa-heart -->
-
-Theme configuration file:
 
 ```yaml
 # Click to show hearts
@@ -3879,12 +3818,11 @@ click_heart:
   mobile: false
 ```
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/click_love.gif)
+![click_heart.gif](https://oss.012700.xyz/butterfly/2024/09/click_heart.gif)
+
 <!-- endtab -->
 
 <!-- tab Text @fab fa-amilia -->
-
-Theme configuration file:
 
 ```yaml
 # Click to show text, text can be customized
@@ -3907,15 +3845,17 @@ ClickShowText:
 | random          | Randomize text display                                       |
 | mobile          | Show text on mobile                                          |
 
-![](https://jsd.012700.xyz/gh/jerryc127/CDN/img/click_word.gif)
+![ClickShowText.gif](https://oss.012700.xyz/butterfly/2024/09/ClickShowText.gif)
+
 <!-- endtab -->
+
 {% endtabs %}
 
 ## Lightbox
 
-> If you do not want to add lightbox for a specific image, use HTML format to reference the image and add `no-lightbox` class name to the image
-
-Theme configuration file:
+{% note info %}
+If you do not want to add lightbox for a specific image, use HTML format to reference the image and add `no-lightbox` class name to the image
+{% endnote %}
 
 ```yaml
 # Choose: fancybox / medium_zoom
@@ -3928,17 +3868,81 @@ lightbox:
 You can configure `fancybox` or `medium_zoom` to enable lightbox.
 Leave it empty if no lightbox is needed.
 
-> FancyBox
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+FancyBox
+{% endnote %}
 
-![fancybox.gif](https://jsd.012700.xyz/gh/jerryc127/CDN/img/fancybox.gif)
+![fancybox.gif](https://oss.012700.xyz/butterfly/2024/09/fancybox.gif)
 
-> Medium Zoom
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Medium Zoom
+{% endnote %}
 
-![medium_zoom.gif](https://jsd.012700.xyz/gh/jerryc127/CDN/img/medium_zoom.gif)
+![medium_zoom.gif](https://oss.012700.xyz/butterfly/2024/09/medium_zoom.gif)
 
 ## Tag Plugins
 
 For details, see [Tag Plugins](https://butterfly.js.org/en/posts/butterfly-docs-en-4-tag-plugins/)
+
+## Mermaid
+
+The theme supports Mermaid.js, which can be used to draw flowcharts, sequence diagrams, etc., in articles.
+
+```yaml
+# Mermaid
+# https://github.com/mermaid-js/mermaid
+mermaid:
+  enable: true
+  # Write Mermaid diagrams using code blocks
+  code_write: true
+  # built-in themes: default / forest / dark / neutral
+  theme:
+    light: default
+    dark: dark
+```
+
+### Writing Methods
+
+The theme supports two writing methods
+
+#### Tag Plugin
+
+You can use the tag plugin method to use Mermaid.js For details, see [Tag Plugins](https://butterfly.js.org/en/posts/butterfly-docs-en-4-tag-plugins/#Mermaid)
+
+#### Code Block Writing
+
+You can use the code block method to use Mermaid.js
+
+1. Hexo version needs to be 7.0 or above
+2. Add `exclude_languages: ['mermaid']` to the Hexo configuration file
+
+    ```yaml
+    syntax_highlighter: 'highlight.js'
+    highlight:
+      line_number: true
+      auto_detect: false
+      tab_replace: ''
+      wrap: true
+      hljs: false
+      exclude_languages: ['mermaid']
+    prismjs:
+      preprocess: true
+      line_number: true
+      tab_replace: ''
+      exclude_languages: ['mermaid']
+    ```
+
+3. Set `code_write` to `true` in the Mermaid configuration of the Butterfly theme
+
+> Demo
+
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+```
 
 ## Pjax
 
@@ -3953,6 +3957,7 @@ pjax:
   exclude:
     # - /xxxxxx/
 ```
+
 {% note info %}
 
 For some third-party plugins, Pjax may not be supported.
@@ -3968,8 +3973,6 @@ Also, some specific pages' js/css will be loaded on all pages after using Pjax.
 
 Enable the Snackbar based on personal preference.
 
-In theme configuration file
-
 ```yaml
 # Snackbar - Toast Notification
 # https://github.com/polonel/SnackBar
@@ -3982,35 +3985,37 @@ snackbar:
   bg_dark: '#1f1f1f'
 ```
 
-> Snackbar not enabled
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Snackbar not enabled
+{% endnote %}
 
-![snackbar_false.gif](https://jsd.012700.xyz/gh/jerryc127/CDN/img/snackbar_false.gif)
+![](https://oss.012700.xyz/butterfly/2024/09/snackbar_false.gif)
 
-> Snackbar enabled
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+Snackbar enabled
+{% endnote %}
 
-![snackbar_true.gif](https://jsd.012700.xyz/gh/jerryc127/CDN/img/snackbar_true.gif)
+![](https://oss.012700.xyz/butterfly/2024/09/snackbar_true.gif)
 
 ## Instantpage
 
 When the mouse hovers over a link for more than 65 milliseconds, Instantpage preloads the link, improving access speed.
 
-Modify the configuration file
-
 ```yaml
-# Instant.page
 # https://instant.page/
-instantpage: false
+# prefetch
+instantpage: true
 ```
 
 ## Pangu
 
-> If you're like me and feel uneasy every time you see Chinese characters and English letters, numbers, and symbols crammed together on a webpage, you'll want to insert spaces between them. This plugin is exactly what you need to navigate the web more comfortably, as it automatically inserts spaces between all Chinese characters and half-width English letters, numbers, and symbols on the webpage.
+{% note info %}
+If you're like me and feel uneasy every time you see Chinese characters and English letters, numbers, and symbols crammed together on a webpage, you'll want to insert spaces between them. This plugin is exactly what you need to navigate the web more comfortably, as it automatically inserts spaces between all Chinese characters and half-width English letters, numbers, and symbols on the webpage.
+{% endnote %}
 
-Modify the configuration file:
-
-```yaml
+```YAML
 # https://github.com/vinta/pangu.js
-# Insert a space between Chinese character and English character
+# Insert a space between Chinese character and English character (中英文之間添加空格)
 pangu:
   enable: false
   field: post # site/post
@@ -4127,8 +4132,6 @@ For more information on PWA (Progressive Web Apps), refer to [Google Tools for W
 
 Add some meta data such as thumbnails, titles, and dates in the `head`. When you share a webpage on certain platforms, the platform will read the Open Graph content and display information like thumbnails and titles.
 
-Modify the configuration file:
-
 ```yaml
 # Open graph meta tags
 # https://hexo.io/docs/helpers#open-graph
@@ -4150,8 +4153,6 @@ Some CSS properties are not supported by all browsers and need corresponding pre
 
 Enabling `css_prefix` will automatically add prefixes to some CSS properties (increasing the size by 20%).
 
-Modify the configuration file:
-
 ```yaml
 # Add the vendor prefixes to ensure compatibility
 css_prefix: true
@@ -4159,7 +4160,9 @@ css_prefix: true
 
 ## Inject
 
-> Supported from version 2.3.0 and above
+{% note pink 'fa-solid fa-bell' %}
+Supported from version 2.3.0 and above
+{% endnote %}
 
 If you want to add extra JavaScript, CSS, meta tags, etc., you can add them in `inject`. This supports adding to the head (before the `</body>` tag) and the bottom (before the `</html>` tag).
 
@@ -4170,9 +4173,9 @@ For example:
 ```yaml
 inject:
   head:
-    - <link rel="stylesheet" href="/self.css">
+  	- <link rel="stylesheet" href="/self.css">
   bottom:
-    - <script src="xxxx"></script>
+  	- <script src="xxxx"></script>
 ```
 
 *Note:* If your site root directory is not '/', you need to include your root directory when using local images.  
@@ -4288,7 +4291,9 @@ Provides the following parameters:
 
 Partial list of available third-party CDNs:
 
-> Please ensure that the CDN you choose includes the third-party plugins used by the theme.
+{% note info %}
+Please ensure that the CDN you choose includes the third-party plugins used by the theme.
+{% endnote %}
 
 | Provider                                             | Format                                                      | Remarks      |
 | ---------------------------------------------------- | ----------------------------------------------------------- | ------------ |

@@ -738,16 +738,14 @@ no-icon
 寫法:
 
 ```markdown
-{% gallery [lazyload],[rowHeight],[limit] %}
+{% gallery [button] %}
 markdown 圖片格式
 {% endgallery %}
 ```
 
 | 參數      | 解釋                                                                                 |
 | --------- | ------------------------------------------------------------------------------------ |
-| lazyload  | 【可選】點擊按鈕加載更多圖片，填寫 true/false。默認為 `false`。                      |
-| rowHeight | 【可選】圖片顯示的高度，如果需要一行顯示更多的圖片，可設置更小的數字。默認為 `220`。 |
-| limit     | 【可選】每次加載多少張照片。默認為 `10`。                                            |
+| button    | 【可選】點擊按鈕加載更多圖片，填寫 true/false。默認為 `false`。                      |
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
 例子
@@ -755,14 +753,6 @@ markdown 圖片格式
 
 ```markdown
 {% gallery %}
-markdown 圖片格式
-{% endgallery %}
-
-{% gallery true,220,10 %}
-markdown 圖片格式
-{% endgallery %}
-
-{% gallery true,,10 %}
 markdown 圖片格式
 {% endgallery %}
 ```
@@ -800,7 +790,7 @@ markdown 圖片格式
 寫法：
 
 ```markdown
-{% gallery url,[link],[lazyload],[rowHeight],[limit] %}
+{% gallery url,[link],[button] %}
 {% endgallery %}
 ```
 
@@ -808,9 +798,7 @@ markdown 圖片格式
 | --------- | ------------------------------------------------------------------------------------ |
 | url       | 【必須】 識別詞                                                                      |
 | link      | 【必須】遠程的 json 鏈接                                                             |
-| lazyload  | 【可選】點擊按鈕加載更多圖片，填寫 true/false。默認為 `false`。                      |
-| rowHeight | 【可選】圖片顯示的高度，如果需要一行顯示更多的圖片，可設置更小的數字。默認為 `220`。 |
-| limit     | 【可選】每次加載多少張照片。默認為 `10`。                                            |
+| button    | 【可選】點擊按鈕加載更多圖片，填寫 true/false。默認為 `false`。                      |
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
 遠程鏈接 Json 的例子
@@ -1803,5 +1791,392 @@ series:
 {% series docs %}
 ```
 {% series docs %}
+
+## Chartjs 圖表
+
+另一種方式添加圖表
+
+```yaml
+# chartjs
+# 參見 https://www.chartjs.org/docs/latest/
+chartjs:
+  enable: false
+  # 除非你了解它們的工作原理，否則不要修改。
+  # 默認設置僅在未指定 MD 語法時使用。
+  # 圖表的字體顏色
+  fontColor:
+    light: "rgba(0, 0, 0, 0.8)"
+    dark: "rgba(255, 255, 255, 0.8)"
+  # 圖表的邊框顏色
+  borderColor:
+    light: "rgba(0, 0, 0, 0.1)"
+    dark: "rgba(255, 255, 255, 0.2)"
+  # 雷達圖和極區圖的刻度標籤背景顏色
+  scale_ticks_backdropColor:
+    light: "transparent"
+    dark: "transparent"
+```
+
+| 參數    | 解釋                                                                 |
+| ------- | -------------------------------------------------------------------- |
+| enable  | 是否啟用 chartjs                                                            |
+| fontColor | 圖表的字體顏色 |
+| borderColor | 圖表的邊框顏色 |
+| scale_ticks_backdropColor | 雷達和極區圖表的刻度標籤的背景顏色 |
+
+寫法：
+
+```markdown
+{% chartjs [width, abreast, chartId] %}
+<!-- chart -->
+<!-- endchart -->
+<!-- desc -->
+<!-- enddesc -->
+{% endchartjs %}
+```
+
+| 參數    | 解釋                                                                 |
+| ------- | -------------------------------------------------------------------- |
+| width   | 【可選】圖表寬度 |
+| abreast | 【可選】是否并排顯示，當你寫了 `<!-- desc -->`, 使用并排模式，圖標和描述將并排顯示。<br> abreast 為 true 時，需要配置 width 的值 |
+| chartId | 【可選】圖表 ID |
+
+{% note purple 'fa-solid fa-wand-magic-sparkles' %}
+例子
+{% endnote %}
+
+```
+{% chartjs 70 %}
+
+<!-- chart -->
+{
+    "type": "line",
+    "data": {
+        "labels": ["January", "February", "March", "April", "May", "June", "July"],
+        "datasets": [{
+            "label": "My First dataset",
+            "backgroundColor": "rgb(255, 99, 132)",
+            "borderColor": "rgb(255, 99, 132)",
+            "data": [0, 10, 5, 2, 20, 30, 45]
+        }]
+    },
+    "options": {
+        "responsive": true,
+        "title": {
+            "display": true,
+            "text": "Chart.js Line Chart"
+        }
+    }
+}
+<!-- endchart -->
+
+{% endchartjs %}
+```
+
+{% chartjs 70 %}
+
+<!-- chart -->
+{
+    "type": "line",
+    "data": {
+        "labels": ["January", "February", "March", "April", "May", "June", "July"],
+        "datasets": [{
+            "label": "My First dataset",
+            "backgroundColor": "rgb(255, 99, 132)",
+            "borderColor": "rgb(255, 99, 132)",
+            "data": [0, 10, 5, 2, 20, 30, 45]
+        }]
+    },
+    "options": {
+        "responsive": true,
+        "title": {
+            "display": true,
+            "text": "Chart.js Line Chart"
+        }
+    }
+}
+<!-- endchart -->
+
+{% endchartjs %}
+
+```markdown
+{% chartjs %}
+
+<!-- chart -->
+{
+  "type": "radar",
+  "data": {
+    "labels": [
+      "Eating",
+      "Drinking",
+      "Sleeping",
+      "Designing",
+      "Coding",
+      "Cycling",
+      "Running"
+    ],
+    "datasets": [
+      {
+        "label": "My First Dataset",
+        "data": [65, 59, 90, 81, 56, 55, 40],
+        "fill": true,
+        "backgroundColor": "rgba(255, 99, 132, 0.2)",
+        "borderColor": "rgb(255, 99, 132)",
+        "pointBackgroundColor": "rgb(255, 99, 132)",
+        "pointBorderColor": "#fff",
+        "pointHoverBackgroundColor": "#fff",
+        "pointHoverBorderColor": "rgb(255, 99, 132)"
+      },
+      {
+        "label": "My Second Dataset",
+        "data": [28, 48, 40, 19, 96, 27, 100],
+        "fill": true,
+        "backgroundColor": "rgba(54, 162, 235, 0.2)",
+        "borderColor": "rgb(54, 162, 235)",
+        "pointBackgroundColor": "rgb(54, 162, 235)",
+        "pointBorderColor": "#fff",
+        "pointHoverBackgroundColor": "#fff",
+        "pointHoverBorderColor": "rgb(54, 162, 235)"
+      }
+    ]
+  },
+  "options": {
+    "elements": {
+      "line": {
+        "borderWidth": 3
+      }
+    }
+  }
+}
+<!-- endchart -->
+{% endchartjs %}
+```
+
+{% chartjs %}
+
+<!-- chart -->
+{
+  "type": "radar",
+  "data": {
+    "labels": [
+      "Eating",
+      "Drinking",
+      "Sleeping",
+      "Designing",
+      "Coding",
+      "Cycling",
+      "Running"
+    ],
+    "datasets": [
+      {
+        "label": "My First Dataset",
+        "data": [65, 59, 90, 81, 56, 55, 40],
+        "fill": true,
+        "backgroundColor": "rgba(255, 99, 132, 0.2)",
+        "borderColor": "rgb(255, 99, 132)",
+        "pointBackgroundColor": "rgb(255, 99, 132)",
+        "pointBorderColor": "#fff",
+        "pointHoverBackgroundColor": "#fff",
+        "pointHoverBorderColor": "rgb(255, 99, 132)"
+      },
+      {
+        "label": "My Second Dataset",
+        "data": [28, 48, 40, 19, 96, 27, 100],
+        "fill": true,
+        "backgroundColor": "rgba(54, 162, 235, 0.2)",
+        "borderColor": "rgb(54, 162, 235)",
+        "pointBackgroundColor": "rgb(54, 162, 235)",
+        "pointBorderColor": "#fff",
+        "pointHoverBackgroundColor": "#fff",
+        "pointHoverBorderColor": "rgb(54, 162, 235)"
+      }
+    ]
+  },
+  "options": {
+    "elements": {
+      "line": {
+        "borderWidth": 3
+      }
+    }
+  }
+}
+<!-- endchart -->
+{% endchartjs %}
+
+```markdown
+{% chartjs 40,true %}
+<!-- chart -->
+{
+    "type": "pie",
+    "data": {
+        "labels": [
+            "编程",
+            "音乐",
+            "阅读",
+            "游戏",
+            "健身",
+            "旅游"
+        ],
+        "datasets": [
+            {
+                "label": "喜爱指数",
+                "data": [
+                    30,
+                    24,
+                    19,
+                    14,
+                    9,
+                    4
+                ],
+                "backgroundColor": {
+                    "dark-mode": [
+                        "rgba(255, 99, 132, 0.5)",
+                        "rgba(54, 162, 235, 0.5)",
+                        "rgba(255, 206, 86, 0.5)",
+                        "rgba(75, 192, 192, 0.5)",
+                        "rgba(153, 102, 255, 0.5)",
+                        "rgba(255, 159, 64, 0.5)"
+                    ],
+                    "light-mode": [
+                        "rgba(255, 99, 132, 0.2)",
+                        "rgba(54, 162, 235, 0.2)",
+                        "rgba(255, 206, 86, 0.2)",
+                        "rgba(75, 192, 192, 0.2)",
+                        "rgba(153, 102, 255, 0.2)",
+                        "rgba(255, 159, 64, 0.2)"
+                    ]
+                },
+                "borderColor": {
+                    "dark-mode": [
+                        "rgba(255, 99, 132, 1)",
+                        "rgba(54, 162, 235, 1)",
+                        "rgba(255, 206, 86, 1)",
+                        "rgba(75, 192, 192, 1)",
+                        "rgba(153, 102, 255, 1)",
+                        "rgba(255, 159, 64, 1)"
+                    ],
+                    "light-mode": [
+                        "rgba(255, 99, 132, 1)",
+                        "rgba(54, 162, 235, 1)",
+                        "rgba(255, 206, 86, 1)",
+                        "rgba(75, 192, 192, 1)",
+                        "rgba(153, 102, 255, 1)",
+                        "rgba(255, 159, 64, 1)"
+                    ]
+                }
+            }
+        ]
+    },
+    "options": {
+        "plugins": {
+            "legend": {
+                "labels": {
+                    "color": {
+                        "dark-mode": "rgba(255, 255, 255, 0.8)",
+                        "light-mode": "rgba(0, 0, 0, 0.8)"
+                    }
+                }
+            }
+        }
+    }
+}
+<!-- endchart -->
+<!-- desc -->
+除了**计算机编程**外，我想不出还有其他让我感兴趣的工作。
+我可以无中生有地创造出**精美的范式**和**结构**，
+在此过程中也解决了无数的小谜团。
+<span style="font-size:0.8em;color: var(--sep-secondtext);">I can't think of any other job other than **computer programming** that interests me.
+I can create **beautiful paradigms** and **structures** out of nothing,
+Countless small mysteries are also solved in the process.</span>
+<!-- enddesc -->
+{% endchartjs %}
+```
+
+{% chartjs 40,true %}
+<!-- chart -->
+{
+    "type": "pie",
+    "data": {
+        "labels": [
+            "编程",
+            "音乐",
+            "阅读",
+            "游戏",
+            "健身",
+            "旅游"
+        ],
+        "datasets": [
+            {
+                "label": "喜爱指数",
+                "data": [
+                    30,
+                    24,
+                    19,
+                    14,
+                    9,
+                    4
+                ],
+                "backgroundColor": {
+                    "dark-mode": [
+                        "rgba(255, 99, 132, 0.5)",
+                        "rgba(54, 162, 235, 0.5)",
+                        "rgba(255, 206, 86, 0.5)",
+                        "rgba(75, 192, 192, 0.5)",
+                        "rgba(153, 102, 255, 0.5)",
+                        "rgba(255, 159, 64, 0.5)"
+                    ],
+                    "light-mode": [
+                        "rgba(255, 99, 132, 0.2)",
+                        "rgba(54, 162, 235, 0.2)",
+                        "rgba(255, 206, 86, 0.2)",
+                        "rgba(75, 192, 192, 0.2)",
+                        "rgba(153, 102, 255, 0.2)",
+                        "rgba(255, 159, 64, 0.2)"
+                    ]
+                },
+                "borderColor": {
+                    "dark-mode": [
+                        "rgba(255, 99, 132, 1)",
+                        "rgba(54, 162, 235, 1)",
+                        "rgba(255, 206, 86, 1)",
+                        "rgba(75, 192, 192, 1)",
+                        "rgba(153, 102, 255, 1)",
+                        "rgba(255, 159, 64, 1)"
+                    ],
+                    "light-mode": [
+                        "rgba(255, 99, 132, 1)",
+                        "rgba(54, 162, 235, 1)",
+                        "rgba(255, 206, 86, 1)",
+                        "rgba(75, 192, 192, 1)",
+                        "rgba(153, 102, 255, 1)",
+                        "rgba(255, 159, 64, 1)"
+                    ]
+                }
+            }
+        ]
+    },
+    "options": {
+        "plugins": {
+            "legend": {
+                "labels": {
+                    "color": {
+                        "dark-mode": "rgba(255, 255, 255, 0.8)",
+                        "light-mode": "rgba(0, 0, 0, 0.8)"
+                    }
+                }
+            }
+        }
+    }
+}
+<!-- endchart -->
+<!-- desc -->
+除了**计算机编程**外，我想不出还有其他让我感兴趣的工作。
+我可以无中生有地创造出**精美的范式**和**结构**，
+在此过程中也解决了无数的小谜团。
+<span style="font-size:0.8em;color: var(--sep-secondtext);">I can't think of any other job other than **computer programming** that interests me.
+I can create **beautiful paradigms** and **structures** out of nothing,
+Countless small mysteries are also solved in the process.</span>
+<!-- enddesc -->
+{% endchartjs %}
 
 {% btn '/posts/98d20436/',❓ Butterfly 文檔(五) 主題問答,far fa-hand-point-right,block green right larger %}
