@@ -1678,14 +1678,13 @@ true
 默認顯示白色，可設置圖片或者顏色
 
 ```yaml
-# 圖片格式 url(http://xxxxxx.com/xxx.jpg)
 # 顏色（HEX值/RGB值/顔色單詞/漸變色)
 # 留空 不顯示背景
 background:
 ```
 
 _留意:_ 如果你的網站根目錄不是'/',使用本地圖片時，需加上你的根目錄。
-例如：網站是 `https://yoursite.com/blog`,引用一張`img/xx.png`圖片，則設置 background 為 `url(/blog/img/xx.png)
+例如：網站是 `https://yoursite.com/blog`,引用一張`img/xx.png`圖片，則設置 background 為 `/blog/img/xx.png`
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
 background:'#49B202'
@@ -1694,7 +1693,7 @@ background:'#49B202'
 ![hexo-theme-butterfly-doc-set-body-background-color.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-set-body-background-color.png)
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
-background: url(https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png)
+background: https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png
 {% endnote %}
 
 ![hexo-theme-butterfly-doc-set-body-background-img.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-set-body-background-img.png)

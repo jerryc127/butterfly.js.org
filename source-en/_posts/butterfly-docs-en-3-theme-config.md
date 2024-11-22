@@ -1517,7 +1517,6 @@ true
 The default display is white, you can set an image or color
 
 ```yaml
-# Image format url(http://xxxxxx.com/xxx.jpg)
 # Color (HEX value/RGB value/Color word/Gradient color)
 # Leave empty to not display a background
 background:
@@ -1533,7 +1532,7 @@ background:'#49B202'
 ![hexo-theme-butterfly-doc-set-body-background-color.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-set-body-background-color.png)
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
-background: url(https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png)
+background: https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png
 {% endnote %}
 
 ![hexo-theme-butterfly-doc-set-body-background-img.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-set-body-background-img.png)
