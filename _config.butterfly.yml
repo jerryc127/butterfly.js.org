@@ -1023,17 +1023,12 @@ snackbar:
 # https://instant.page/
 instantpage: true
 
-# Pangu - Insert a space between Chinese character and English character
-# https://github.com/vinta/pangu.js
-pangu:
-  enable: false
-  # Specify the field to use pangu (site or post)
-  field: site
-
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
   enable: true
+  # Use browser's native lazyload instead of vanilla-lazyload
+  native: false
   # Specify the field to use lazyload (site or post)
   field: site
   placeholder: /img/loading.gif
@@ -1133,7 +1128,6 @@ CDN:
     # medium_zoom:
     # mermaid:
     # meting_js:
-    # pangu:
     # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:

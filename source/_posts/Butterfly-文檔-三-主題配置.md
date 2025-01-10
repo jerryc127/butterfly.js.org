@@ -1176,19 +1176,13 @@ snackbar:
 # https://instant.page/
 instantpage: false
 
-# Pangu - 在中文字符和英文字符之間插入空格
-# https://github.com/vinta/pangu.js
-pangu:
-  # 是否啟用 Pangu
-  enable: false
-  # 指定使用 Pangu 的範圍(site 或 post)
-  field: site
-
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
   # 是否啟用 Lazyload
   enable: false
+  # 使用瀏覽器的原生 lazyload 而不是 vanilla-lazyload
+  native: false
   # 指定使用 Lazyload 的範圍 (site 或 post)
   field: site
   placeholder:
@@ -1224,6 +1218,10 @@ Open_Graph_meta:
     # google_plus:
     # fb_admins:
     # fb_app_id:
+
+# 結構化數據
+# https://developers.google.com/search/docs/guides/intro-structured-data
+structured_data: true
 
 # 添加供應商前綴以確保兼容性
 # 是否啟用 CSS 前綴
@@ -4193,24 +4191,6 @@ snackbar:
 instantpage: true
 ```
 
-## Pangu
-
-{% note info %}
-如果你跟我一樣，每次看到網頁上的中文字和英文、數字、符號擠在一塊，就會坐立難安，忍不住想在它們之間加個空格。這個外掛正是你在網路世界走跳所需要的東西，它會自動替你在網頁中所有的中文字和半形的英文、數字、符號之間插入空白。
-{% endnote %}
-
-修改配置文件
-
-```YAML
-# https://github.com/vinta/pangu.js
-# Insert a space between Chinese character and English character (中英文之間添加空格)
-pangu:
-  enable: false
-  field: post # site/post
-```
-
-`field`只支持兩個參數，`post`(只在文章頁生效)和`site`(全站生效)
-
 ## PWA
 
 要為`Butterfly`配上 PWA 特性, 你需要如下幾個步驟:
@@ -4436,7 +4416,6 @@ CDN:
     # medium_zoom:
     # mermaid:
     # meting_js:
-    # pangu:
     # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
