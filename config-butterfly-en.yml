@@ -943,7 +943,7 @@ abcjs:
 mermaid:
   enable: true
   # Write Mermaid diagrams using code blocks
-  code_write: false
+  code_write: true
   # built-in themes: default / forest / dark / neutral
   theme:
     light: default

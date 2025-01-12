@@ -4118,6 +4118,8 @@ mermaid:
 
 > 例子
 
+![](https://oss.012700.xyz/butterfly/2025/01/butterfly-docs-mermaid-codewrite.png)
+
 ```mermaid
 graph TD;
   A-->B;

@@ -3938,6 +3938,8 @@ You can use the code block method to use Mermaid.js
 
 > Demo
 
+![](https://oss.012700.xyz/butterfly/2025/01/butterfly-docs-mermaid-codewrite.png)
+
 ```mermaid
 graph TD;
   A-->B;
