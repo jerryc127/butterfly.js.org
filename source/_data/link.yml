@@ -57,16 +57,12 @@
       descr: 指尖跳动留下足迹.
     - name: JCAlways
       link: https://blog.zhangsifan.com
-      avatar: https://i.loli.net/2019/10/13/2a6ve3ZdW8TPCNY.jpg
+      avatar: https://www.zhangsifan.com/apple-touch-icon.png
       descr: 记录前端知识
     - name: 白醭飙尘
       link: https://y-jinhao.github.io/
       avatar: https://fastly.jsdelivr.net/gh/Y-JINHAO/resources/img/avator1.png
       descr: 无疾而终的困倦变成苋红的太阳的血瓷砖石仰慕的书架上呕吐的诗集
-    - name: sunshine
-      link: https://sunguoqi.com/
-      avatar: https://i.loli.net/2021/06/08/CfvzqNFHag8G3bi.jpg
-      descr: I am your sunshine
     - name: WindSky
       link: https://zhouhua.vercel.app/
       avatar: https://fastly.jsdelivr.net/gh/windskyxb/img/user.jpg
@@ -75,10 +71,6 @@
       link: https://www.hin.cool
       avatar: https://hin.cool/favicon.ico
       descr: 偏爱不务正业
-    - name: 雪萌天文台
-      link: https://blog.snowy.moe
-      avatar: https://img.snowy.moe/head.png
-      descr: 发现巷子里的那颗星星
     - name: Xujiayao's Blog
       link: https://blog.xujiayao.top/
       avatar: https://blog.xujiayao.top/file/avatar.png
@@ -111,10 +103,6 @@
       link: https://leekinghou-github-io.vercel.app/
       avatar: https://files.catbox.moe/6g3wus.png
       descr: 今日事今日毕
-    - name: Hey,Joker - Blog
-      link: https://jokerdig.com
-      avatar: https://fastly.jsdelivr.net/gh/JokerDaxiong/Jokerblog@main/source/images/avatar.png
-      descr: 一个代码小白的成长。
     - name: RockJesus's blog
       link: https://rockjesus.cn
       avatar: https://www.rockjesus.cn/img/black.png
@@ -167,18 +155,10 @@
       link: https://lxx1997.github.io/
       avatar: https://lxx1997.github.io/image/avatar.png
       descr: 前端小菜鸟,努力深造。
-    - name: LanYunのBlog
-      link: https://lanyundev.vercel.app/
-      avatar: https://lanyundev.vercel.app/img/logo.jpg
-      descr: Share Technology.
     - name: 一隅
       link: https://gonglja.github.io/
       avatar: https://cdn.jsdelivr.net/gh/Gonglja/imgur/img/202204111228921.png
       descr: Keep Coding.
-    - name: Aaki's Notes
-      link: https://mikan.bangdream.moe
-      avatar: https://gravatar.loli.net/avatar/da416f8013b9815f1e1c81754fffd701?s=300
-      descr: 记事本
     - name: gis2all
       link: https://gis2all.github.io/
       avatar: https://gis2all.github.io/asset/theme_avatar.jpg
@@ -223,14 +203,6 @@
       link: https://ningning.netlify.app
       avatar: https://ningning.netlify.app/img/avatar.png
       descr: 你今天也比誰都可愛 💜
-    - name: 神奇的妙妙屋
-      link: https://blog.ttiee.tech/
-      avatar: https://blog.ttiee.tech/img/avatar.jpg
-      descr: 追风赶月莫停留，平芜尽处是春山
-    - name: 老孙博客
-      link: https://blog.sunpeiwen.com
-      avatar: https://s2.loli.net/2023/03/31/zsbdUHyfBqF3lnN.png
-      descr: 资深网民孙先生。
     - name: NX の 博客
       link: https://www.nickxu.top/
       avatar: https://www.nickxu.top/static/favicon.jpg
@@ -243,14 +215,6 @@
       link: https://legacy.happylee.cn/
       avatar: https://legacy.happylee.cn/img/avatar.jpg
       descr: 极限犹可突破，巅峰亦不可止
-    - name: 咬一口激动的鱼
-      link: https://tabotef134.top/
-      avatar: https://q.qlogo.cn/g?b=qq&nk=2056517872&s=0
-      descr: 风带来了故事的种子，时间使之发芽
-    - name: 卜仙堂
-      link: https://buxiantang.top/
-      descr: 不会敲代码的命理师不是好厨子。
-      avatar: https://xuanmenliuyao.oss-cn-hangzhou.aliyuncs.com/img/tiengming.png 
     - name: 套陆的博客
       link: https://blog.tlhub.cn/
       descr: 套陆的个人技术博客
@@ -307,10 +271,6 @@
       link: https://blog.w1ndys.top/
       avatar: https://blog.w1ndys.top/img/about/avatar.png
       descr: 欲戴皇冠，必承其重。
-    - name: QiuSYan's Blog
-      link: https://blog.qiusyan.top
-      avatar: https://blog.qiusyan.top/img/avatar.jpg
-      descr: 我来到，我看见，我记录
     - name: 樱纱音阁
       link: https://kc.fog.moe/
       avatar: https://file2.fogmoe.top/blog/avatar.png
@@ -335,10 +295,6 @@
       link: https://mingtechpro.top/
       avatar: https://jsd.012700.xyz/gh/MingTechPro/drawing-bed/avatar-bg_url/202405051658049.jpg
       descr: 人性的背后是白云苍狗，愿你我都是生活的高手
-    - name: Gzzz's Blog
-      link: https://blog.gzzz.pro/
-      avatar: https://s2.loli.net/2024/06/19/AKPgmiRNUC4hZx3.webp
-      descr: 逝者如斯夫，不舍昼夜。
     - name: 上发条的树
       link: https://wuxx.top/
       avatar: https://wuxx.top/images/portrait.png
@@ -348,7 +304,7 @@
       avatar: https://storage.opennet.top/directlink/local/img/base/logo.jpg
       descr: Faster than light
     - name: FF
-      url: https://foolishfox.cn/
+      link: https://foolishfox.cn/
       avatar: https://asset.foolishfox.cn/static/avatar.jpg
       descr: foolish fox
     - name: Triority`s Blog
@@ -387,15 +343,7 @@
       link: https://blog.yujiay.wang/
       avatar: https://blog.yujiay.wang/img/BlogHsvg.png
       descr: 爱 Codeing 爱生活
-    - name: 拾光小阁
-      link: https://bear556.top
-      avatar: https://bear556.top/img/avatar.png
-      descr: 万钟则不辩礼仪而受之，万钟于我美滋滋
     - name: MasoFod
       link: https://masofod.github.io/
       avatar: https://masofod.github.io/img/favicon.png
       descr: 思考与想象
-    - name: 一只会飞的旺旺
-      link: https://blog.wangwangit.com
-      avatar: https://blog.wangwangit.com/img/favicon.png
-      descr: 明天永远值得期待!
