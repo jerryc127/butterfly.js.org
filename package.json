@@ -31,7 +31,7 @@
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-theme-butterfly": "^5.3.2",
+    "hexo-theme-butterfly": "^5.3.3",
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
