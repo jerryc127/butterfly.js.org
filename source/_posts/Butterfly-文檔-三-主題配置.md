@@ -1176,19 +1176,13 @@ snackbar:
 # https://instant.page/
 instantpage: false
 
-# Pangu - 在中文字符和英文字符之間插入空格
-# https://github.com/vinta/pangu.js
-pangu:
-  # 是否啟用 Pangu
-  enable: false
-  # 指定使用 Pangu 的範圍(site 或 post)
-  field: site
-
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
   # 是否啟用 Lazyload
   enable: false
+  # 使用瀏覽器的原生 lazyload 而不是 vanilla-lazyload
+  native: false
   # 指定使用 Lazyload 的範圍 (site 或 post)
   field: site
   placeholder:
@@ -1224,6 +1218,10 @@ Open_Graph_meta:
     # google_plus:
     # fb_admins:
     # fb_app_id:
+
+# 結構化數據
+# https://developers.google.com/search/docs/guides/intro-structured-data
+structured_data: true
 
 # 添加供應商前綴以確保兼容性
 # 是否啟用 CSS 前綴
@@ -1678,14 +1676,13 @@ true
 默認顯示白色，可設置圖片或者顏色
 
 ```yaml
-# 圖片格式 url(http://xxxxxx.com/xxx.jpg)
 # 顏色（HEX值/RGB值/顔色單詞/漸變色)
 # 留空 不顯示背景
 background:
 ```
 
 _留意:_ 如果你的網站根目錄不是'/',使用本地圖片時，需加上你的根目錄。
-例如：網站是 `https://yoursite.com/blog`,引用一張`img/xx.png`圖片，則設置 background 為 `url(/blog/img/xx.png)
+例如：網站是 `https://yoursite.com/blog`,引用一張`img/xx.png`圖片，則設置 background 為 `/blog/img/xx.png`
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
 background:'#49B202'
@@ -1694,7 +1691,7 @@ background:'#49B202'
 ![hexo-theme-butterfly-doc-set-body-background-color.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-set-body-background-color.png)
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
-background: url(https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png)
+background: https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png
 {% endnote %}
 
 ![hexo-theme-butterfly-doc-set-body-background-img.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-set-body-background-img.png)
@@ -4121,6 +4118,8 @@ mermaid:
 
 > 例子
 
+![](https://oss.012700.xyz/butterfly/2025/01/butterfly-docs-mermaid-codewrite.png)
+
 ```mermaid
 graph TD;
   A-->B;
@@ -4193,24 +4192,6 @@ snackbar:
 # prefetch (預加載)
 instantpage: true
 ```
-
-## Pangu
-
-{% note info %}
-如果你跟我一樣，每次看到網頁上的中文字和英文、數字、符號擠在一塊，就會坐立難安，忍不住想在它們之間加個空格。這個外掛正是你在網路世界走跳所需要的東西，它會自動替你在網頁中所有的中文字和半形的英文、數字、符號之間插入空白。
-{% endnote %}
-
-修改配置文件
-
-```YAML
-# https://github.com/vinta/pangu.js
-# Insert a space between Chinese character and English character (中英文之間添加空格)
-pangu:
-  enable: false
-  field: post # site/post
-```
-
-`field`只支持兩個參數，`post`(只在文章頁生效)和`site`(全站生效)
 
 ## PWA
 
@@ -4437,7 +4418,6 @@ CDN:
     # medium_zoom:
     # mermaid:
     # meting_js:
-    # pangu:
     # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:

@@ -1023,17 +1023,12 @@ snackbar:
 # https://instant.page/
 instantpage: false
 
-# Pangu - Insert a space between Chinese character and English character
-# https://github.com/vinta/pangu.js
-pangu:
-  enable: false
-  # Specify the field to use pangu (site or post)
-  field: site
-
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
   enable: false
+  # Use browser's native lazyload instead of vanilla-lazyload
+  native: false
   # Specify the field to use lazyload (site or post)
   field: site
   placeholder:
@@ -1062,6 +1057,10 @@ Open_Graph_meta:
     # google_plus:
     # fb_admins:
     # fb_app_id:
+
+# Structured Data
+# https://developers.google.com/search/docs/guides/intro-structured-data
+structured_data: true
 
 # Add the vendor prefixes to ensure compatibility
 css_prefix: true
@@ -1517,7 +1516,6 @@ true
 The default display is white, you can set an image or color
 
 ```yaml
-# Image format url(http://xxxxxx.com/xxx.jpg)
 # Color (HEX value/RGB value/Color word/Gradient color)
 # Leave empty to not display a background
 background:
@@ -1533,7 +1531,7 @@ background:'#49B202'
 ![hexo-theme-butterfly-doc-set-body-background-color.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-set-body-background-color.png)
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
-background: url(https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png)
+background: https://i.loli.net/2019/09/09/5oDRkWVKctx2b6A.png
 {% endnote %}
 
 ![hexo-theme-butterfly-doc-set-body-background-img.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-set-body-background-img.png)
@@ -3940,6 +3938,8 @@ You can use the code block method to use Mermaid.js
 
 > Demo
 
+![](https://oss.012700.xyz/butterfly/2025/01/butterfly-docs-mermaid-codewrite.png)
+
 ```mermaid
 graph TD;
   A-->B;
@@ -4010,22 +4010,6 @@ When the mouse hovers over a link for more than 65 milliseconds, Instantpage pre
 # prefetch
 instantpage: true
 ```
-
-## Pangu
-
-{% note info %}
-If you're like me and feel uneasy every time you see Chinese characters and English letters, numbers, and symbols crammed together on a webpage, you'll want to insert spaces between them. This plugin is exactly what you need to navigate the web more comfortably, as it automatically inserts spaces between all Chinese characters and half-width English letters, numbers, and symbols on the webpage.
-{% endnote %}
-
-```YAML
-# https://github.com/vinta/pangu.js
-# Insert a space between Chinese character and English character (中英文之間添加空格)
-pangu:
-  enable: false
-  field: post # site/post
-```
-
-`field` supports only two parameters: `post` (effective only on post pages) and `site` (effective site-wide).
 
 ## PWA
 
@@ -4247,7 +4231,6 @@ CDN:
     # medium_zoom:
     # mermaid:
     # meting_js:
-    # pangu:
     # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
