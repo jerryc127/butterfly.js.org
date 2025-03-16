@@ -31,6 +31,10 @@
       link: https://github.com/jerryc127/hexo-theme-butterfly/issues/76
       avatar: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/more-butterfly-demo-avatar.png
       descr: 更多使用 Butterfly 的網站
+    - name: ZeroLatency
+      link: https://blog.3ms.run/
+      avatar: https://blog.3ms.run/img/avatar-icon.jpg
+      descr: 探索科技与生活的交汇。
     - name: pai233
       link: https://blog.pai233.top/
       descr: Write Down My Life.
