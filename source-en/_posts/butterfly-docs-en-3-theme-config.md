@@ -53,6 +53,7 @@ nav:
   # Navigation bar logo image
   logo:
   display_title: true
+  display_post_title: true
   # Whether to fix navigation bar
   fixed: false
 
@@ -294,12 +295,15 @@ noticeOutdate:
 # Footer Settings
 # --------------------------------------
 footer:
+  nav:
   owner:
     enable: true
     since: 2019
   custom_text:
   # Copyright of theme and framework
-  copyright: true
+  copyright:
+    enable: true
+    version: true
 
 # --------------------------------------
 # Aside Settings
@@ -438,6 +442,9 @@ rightside_item_order:
   hide:
   # Default: toc,chat,comment
   show:
+
+# Animation for the bottom right config button
+rightside_config_animation: true
 
 # --------------------------------------
 # Global Settings
@@ -735,6 +742,11 @@ umami_analytics:
     page_pv: false
     # Umami Cloud (API key) / self-hosted Umami (token)
     token:
+
+# https://www.googletagmanager.com/
+google_tag_manager:
+  tag_id:
+  domain:
 
 # --------------------------------------
 # Advertisement
@@ -1125,6 +1137,7 @@ nav:
   # Navigation bar logo image
   logo: /xxxx.png
   display_title: true
+  display_post_title: true
   # Whether to fix navigation bar
   fixed: false
 ```
@@ -1133,6 +1146,7 @@ nav:
 | ------------- | ---------------------------------------------------- |
 | logo          | The website's logo, supports images, just input the image link |
 | display_title | Whether to display the website title, write true or false |
+| display_post_title | Whether to display the post title, write true or false |
 | fixed         | Whether to fix the status bar, write true or false   |
 
 ### Menu
@@ -2011,6 +2025,73 @@ style: simple
 ![hexo-theme-butterfly-docs-outdated-simple.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-outdated-simple.png)
 
 ## Footer
+
+### Footer Navigation Bar
+
+The footer navigation bar can be configured to display at the top of the footer, or not displayed at all.
+
+> You can configure it or leave it empty.
+> If left empty, the old version of the footer will be shown.
+
+Example configuration:
+
+```yaml
+  nav:
+    - width:
+      content:
+        - title: Docs
+          item:
+            - title: 🚀 Get Started
+              url: /posts/21cfbf15/
+            - title: 📑 Theme Pages
+              url: /posts/dc584b87/
+            - title: 📌 Theme Configuration
+              url: /posts/4aa8abbe/
+            - title: ⚔️ Tag Plugins
+              url: /posts/ceeb73f/
+            - title: ❓ Q&A
+              url: /posts/98d20436/
+            - title: ⚡️ Advanced Tutorials
+              url: /posts/4073eda/
+    - content:
+      - title: Others
+        item:
+          - title: Gallery
+            url: /Gallery/
+          - title: Message Board
+            url: /messageboard/
+          - title: Talking
+            url: /talking/
+          - title: Example
+            url: /link/
+          - title: Friends
+            url: /links/
+    - content:
+      - title: Framework
+        item:
+          - title: Hexo
+            url: https://hexo.io/
+          - title: Butterfly
+            url: https://butterfly.js.org/
+    - content:
+      - title: Sponsor
+        item:
+          - title: Alipay
+            url: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/alipay.jpg
+            html: "<img src='https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/alipay.jpg' alt='JerryC' width='100px' height='100px'>"
+```
+
+Configuration explanation
+
+| Option    | Description                                                                 |
+| --------- | --------------------------------------------------------------------------- |
+| width     | Set the width, recommended to leave unset (optional)                        |
+| content   | Content of the footer navigation bar, supports multiple sections, each with multiple items |
+| title     | Title of the footer navigation bar section                                  |
+| item      | Items in the footer navigation bar, supports multiple items, each with a title and link |
+| title     | Title of the navigation item                                                |
+| url       | Link of the navigation item                                                 |
+| html      | HTML content for the navigation item, supports images and other content     |
 
 ### Blog Start Year
 

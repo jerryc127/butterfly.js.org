@@ -47,6 +47,8 @@ nav:
   logo:
   # 是否顯示標題
   display_title: true
+  # 是否在滾動時顯示文章標題
+  display_post_title: true
   # 是否固定導航欄
   fixed: false
 
@@ -288,7 +290,7 @@ reward:
 post_edit:
   # 是否啟用在線編輯
   enable: false
-  # url: https://github.com/用户名/倉庫名/edit/分支名/子目錄名/
+  # url: https://github.com/用戶名/倉庫名/edit/分支名/子目錄名/
   # 例如: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
   url:
 
@@ -324,6 +326,8 @@ noticeOutdate:
 # 頁腳設置
 # --------------------------------------
 footer:
+  # 頁腳導航欄配置
+  nav:
   owner:
     # 是否啟用所有者顯示
     enable: true
@@ -332,7 +336,10 @@ footer:
   # 自定義文本
   custom_text:
   # 主題和框架的版權聲明
-  copyright: true
+  copyright:
+    enable: true
+    # 顯示版本號
+    version: true
 
 # --------------------------------------
 # 側邊欄設置
@@ -501,6 +508,9 @@ rightside_item_order:
   # 顯示的默認項目：toc,chat,comment
   show:
 
+# 右下角配置按鈕動畫效果
+rightside_config_animation: true
+
 # --------------------------------------
 # 全局設置
 # --------------------------------------
@@ -662,21 +672,21 @@ disqusjs:
 # Livere 評論插件配置
 # 官方文檔：https://www.livere.com/
 livere:
-  # Livere 的用户 ID
+  # Livere 的用戶 ID
   uid:
 
 # Gitalk 評論插件配置
 # 官方文檔：https://github.com/gitalk/gitalk
 gitalk:
-  # GitHub 應用的客户端 ID
+  # GitHub 應用的客戶端 ID
   client_id:
-  # GitHub 應用的客户端密鑰
+  # GitHub 應用的客戶端密鑰
   client_secret:
   # 存儲評論的倉庫名稱
   repo:
-  # 倉庫擁有者的用户名
+  # 倉庫擁有者的用戶名
   owner:
-  # 管理員用户名列表
+  # 管理員用戶名列表
   admin:
   # 其他可選配置
   option:
@@ -690,7 +700,7 @@ valine:
   appKey:
   # 評論者頭像樣式
   avatar: monsterid
-  # 該配置適用於國內自定義域名用户，海外版本將自動檢測（無需手動填寫）
+  # 該配置適用於國內自定義域名用戶，海外版本將自動檢測（無需手動填寫）
   serverURLs:
   # 評論框背景圖片
   bg:
@@ -728,7 +738,7 @@ utterances:
 facebook_comments:
   # 應用 ID
   app_id:
-  # 用户 ID，可選
+  # 用戶 ID，可選
   user_id:
   # 每頁顯示評論數
   pageSize: 10
@@ -837,6 +847,26 @@ cloudflare_analytics:
 # 官方網站：https://clarity.microsoft.com/
 microsoft_clarity:
 
+# https://umami.is/
+umami_analytics:
+  enable: false
+  # 給自託管的 Umami 實例配置主機名
+  serverURL:
+  website_id:
+  option:
+  UV_PV:
+    site_uv: false
+    site_pv: false
+    page_pv: false
+    # Umami Cloud (API key) / self-hosted Umami (token)
+    token:
+
+# https://www.googletagmanager.com/
+google_tag_manager:
+  tag_id:
+  # 可選配置
+  domain:
+
 # --------------------------------------
 # 廣告配置
 # --------------------------------------
@@ -849,7 +879,7 @@ google_adsense:
   auto_ads: true
   # 廣告腳本 URL
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
-  # 客户 ID
+  # 客戶 ID
   client:
   # 是否啟用頁面級廣告
   enable_page_level_ads: true
@@ -916,7 +946,7 @@ site_verification:
 #   深色模式下的主題顏色
 #   meta_theme_color_dark: "#0d0d0d"
 
-# 分類和標籤頁面的用户界面設置
+# 分類和標籤頁面的用戶界面設置
 # 選擇：index - 與主頁 UI 相同 / default - 與歸檔 UI 相同
 # 留空或設置為 index
 category_ui:
@@ -1110,7 +1140,7 @@ mermaid:
 # 參見 https://www.chartjs.org/docs/latest/
 chartjs:
   enable: false
-  # 除非你了解它們的工作原理，否則不要修改。
+  # 除非你瞭解它們的工作原理，否則不要修改。
   # 默認設置僅在未指定 MD 語法時使用。
   # 圖表的字體顏色
   fontColor:
@@ -1265,7 +1295,7 @@ CDN:
 
 - default(en)
 - zh-CN (簡體中文)
-- zh-TW (台灣繁體中文)
+- zh-TW (臺灣繁體中文)
 - zh-HK (香港繁體中文)
 - ja (日語)
 - ko (韓語)
@@ -1285,6 +1315,7 @@ nav:
   # Navigation bar logo image
   logo: /xxxx.png
   display_title: true
+  display_post_title: true
   # Whether to fix navigation bar
   fixed: false
 ```
@@ -1293,6 +1324,7 @@ nav:
 | ------------- | --------------------------------------- |
 | logo          | 網站的 logo，支持圖片，直接填入圖片鏈接 |
 | display_title | 是否顯示網站標題，填寫 true 或者 false  |
+| display_post_title | 是否在滾動時顯示文章標題，填寫 true 或者 false |
 | fixed         | 是否固定狀態欄，填寫 true 或者 false    |
 
 ### 目錄
@@ -1313,7 +1345,7 @@ About: /about/ || fas fa-heart
 
 如果不希望顯示圖標，圖標名可不寫。
 
-默認子目錄是展開的，如果你想要隱藏，在子目錄裏添加 `hide` 。
+默認子目錄是展開的，如果你想要隱藏，在子目錄裡添加 `hide` 。
 
 ```yaml
 List||fas fa-list||hide:
@@ -1474,7 +1506,7 @@ highlight_shrink: true #代碼框不展開，需點擊 '>' 打開
 
 ### 代碼換行
 
-在默認情況下，Hexo 在編譯的時候不會實現代碼自動換行。如果你不希望在代碼塊的區域裏有橫向滾動條的話，那麼你可以考慮開啟這個功能。
+在默認情況下，Hexo 在編譯的時候不會實現代碼自動換行。如果你不希望在代碼塊的區域裡有橫向滾動條的話，那麼你可以考慮開啟這個功能。
 
 ```yaml
 code_word_wrap: true
@@ -1485,7 +1517,7 @@ code_word_wrap: true
 ```yaml
 highlight:
   enable: true
-  line_number: false # <- 改這裏
+  line_number: false # <- 改這裡
   auto_detect: false
   tab_replace:
 ```
@@ -1496,7 +1528,7 @@ highlight:
 prismjs:
   enable: false
   preprocess: true
-  line_number: false # <- 改這裏
+  line_number: false # <- 改這裡
   tab_replace: ''
 ```
 
@@ -1887,8 +1919,8 @@ index_layout: 3
 | 3      | 封面和信息左右交替顯示                                               |
 | 4      | 封面在上，信息在下                                                   |
 | 5      | 信息顯示在封面上                                                     |
-| 6      | 瀑布流布局 - 封面在上，信息在下                                     |
-| 7      | 瀑布流布局 - 信息顯示在封面上                                       |
+| 6      | 瀑布流佈局 - 封面在上，信息在下                                     |
+| 7      | 瀑布流佈局 - 信息顯示在封面上                                       |
 
 填寫`數字序號`即可，默認為 3
 
@@ -1905,7 +1937,7 @@ index_layout: 3
 ![](https://oss.012700.xyz/butterfly/2024/10/butterfly-docs-index-layout-2.png)
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
-3: 封面和信息左右交替显示
+3: 封面和信息左右交替顯示
 {% endnote %}
 
 ![](https://oss.012700.xyz/butterfly/2024/10/butterfly-docs-index-layout-3.png)
@@ -1917,19 +1949,19 @@ index_layout: 3
 ![](https://oss.012700.xyz/butterfly/2024/10/butterfly-docs-index-layout-4.png)
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
-5: 信息显示在封面上
+5: 信息顯示在封面上
 {% endnote %}
 
 ![](https://oss.012700.xyz/butterfly/2024/10/butterfly-docs-index-layout-5.png)
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
-6: 瀑布流布局 - 封面在上，信息在下
+6: 瀑布流佈局 - 封面在上，信息在下
 {% endnote %}
 
 ![](https://oss.012700.xyz/butterfly/2024/10/butterfy-docs-index-layout-6.png)
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
-7: 瀑布流布局 - 信息显示在封面上
+7: 瀑布流佈局 - 信息顯示在封面上
 {% endnote %}
 
 ![](https://oss.012700.xyz/butterfly/2024/10/butterfly-docs-index-layout-7.png)
@@ -1955,7 +1987,7 @@ index_post_content:
 | method  | 顯示文章內容的方式，有四種可供選擇 <br> 1 - 只顯示 description <br> 2 - 優先選擇 description，如果沒有配置 description，則顯示自動節選的內容 <br> 3 - 只顯示自動節選 <br> 4 - 不顯示文章內容                              |
 | length  | 自動節選的長度，只有在 method 為 2 或者 3 的時候才需要配置 length |
 
-`description`在 front-matter 裏添加
+`description`在 front-matter 裡添加
 
 ![hexo-theme-butterfly-doc-post-description.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-post-description.png)
 
@@ -2052,7 +2084,7 @@ copyright_info: 此文章版權歸 xxxxx 所有，如有轉載，請註明來自
 
 在你每篇文章的結尾，可以添加贊助按鈕。相關二維碼可以自行配置。
 
-對於沒有提供二維碼的，可配置一張軟件的 icon 圖片，然後在 link 上添加相應的贊助鏈接。用户點擊圖片就會跳轉到鏈接去。
+對於沒有提供二維碼的，可配置一張軟件的 icon 圖片，然後在 link 上添加相應的贊助鏈接。用戶點擊圖片就會跳轉到鏈接去。
 
 link 可以不寫，會默認為圖片的鏈接。
 
@@ -2134,7 +2166,7 @@ post_pagination: false
 ### 文章過期提醒
 
 {% note warning %}
-如果你想单独关闭某些文章的过期提醒，你可以在对应文章页的 `front-matter` 中配置 `noticeOutdate: false` 来关闭。
+如果你想單獨關閉某些文章的過期提醒，你可以在對應文章頁的 `front-matter` 中配置 `noticeOutdate: false` 來關閉。
 {% endnote %}
 
 可設置是否顯示文章過期提醒，以更新時間為基準。
@@ -2176,6 +2208,73 @@ style: simple
 
 ## 頁腳
 
+### 頁腳導航欄
+
+頁腳導航欄可以配置為顯示在頁腳的頂部，或者不顯示。
+
+> 你可以配置或者留空
+> 留空則顯示舊版頁腳
+
+以下是示例：
+
+```yaml
+  nav:
+    - width:
+      content:
+        - title: 文檔
+          item:
+            - title: 🚀 快速開始
+              url: /posts/21cfbf15/
+            - title: 📑 主題頁面
+              url: /posts/dc584b87/
+            - title: 📌 主題配置
+              url: /posts/4aa8abbe/
+            - title: ⚔️ 標簽外掛
+              url: /posts/ceeb73f/
+            - title: ❓ 主題問答
+              url: /posts/98d20436/
+            - title: ⚡️ 進階教程
+              url: /posts/4073eda/
+    - content:
+      - title: 其他
+        item:
+          - title: 圖庫
+            url: /Gallery/
+          - title: 留言板
+            url: /messageboard/
+          - title: 說說
+            url: /talking/
+          - title: 示例
+            url: /link/
+          - title: 友鏈
+            url: /links/
+    - content:
+      - title: 框架
+        item:
+          - title: Hexo
+            url: https://hexo.io/zh-cn/
+          - title: Butterfly
+            url: https://butterfly.js.org/
+    - content:
+      - title: 贊助
+        item:
+          - title: 支付寶
+            url: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/alipay.jpg
+            html: "<img src='https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/alipay.jpg' alt='JerryC' width='100px' height='100px'>"
+```
+
+配置解釋
+
+| 配置       | 解釋                                                                 |
+| ---------- | -------------------------------------------------------------------- |
+| width      | 設置寬度，建議不配置（可不寫） |
+| content    | 頁腳導航欄的內容，支持多個內容，每個內容可以有多個項目                                 |
+| title      | 頁腳導航欄的標題                                                       |
+| item       | 頁腳導航欄的項目，支持多個項目，每個項目可以有標題和鏈接                                 |
+| title      | 頁腳導航欄項目的標題                                                   |
+| url        | 頁腳導航欄項目的鏈接                                                   |
+| html       | 頁腳導航欄項目的 HTML 內容，支持圖片等其他內容                                     |
+
 ### 博客年份
 
 `since`是一個來展示你站點起始時間的選項。它位於頁面的最底部。
@@ -2191,7 +2290,7 @@ footer:
 
 ### 頁腳自定義文本
 
-`custom_text`是一個給你用來在頁腳自定義文本的選項。通常你可以在這裏寫聲明文本等,支持 HTML。
+`custom_text`是一個給你用來在頁腳自定義文本的選項。通常你可以在這裡寫聲明文本等,支持 HTML。
 
 ```yaml
 custom_text: Hi, welcome to my <a href="https://butterfly.js.org/">blog</a>!
@@ -2199,7 +2298,7 @@ custom_text: Hi, welcome to my <a href="https://butterfly.js.org/">blog</a>!
 
 ![hexo-theme-butterfly-doc-footer-text.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-footer-text.png)
 
-對於部分人需要寫 ICP 的，也可以寫在 `custom_text`裏
+對於部分人需要寫 ICP 的，也可以寫在 `custom_text`裡
 
 ```yaml
 custom_text: <a href="icp鏈接"><img class="icp-icon" src="icp圖片"><span>備案號：xxxxxx</span></a>
@@ -2313,7 +2412,7 @@ aside:
 | card_author.enable            | 是否顯示作者卡片                                                                                       |
 | card_author.description       | 作者描述信息                                                                                           |
 | card_author.button.enable     | 是否顯示按鈕                                                                                           |
-| card_author.button.icon       | 按鈕圖標，可在這裏找到圖標名稱：https://fontawesome.com/icons?d=gallery&m=free                         |
+| card_author.button.icon       | 按鈕圖標，可在這裡找到圖標名稱：https://fontawesome.com/icons?d=gallery&m=free                         |
 | card_author.button.text       | 按鈕文字                                                                                               |
 | card_author.button.link       | 按鈕鏈接                                                                                               |
 | card_announcement.enable      | 是否顯示公告卡片                                                                                       |
@@ -2353,7 +2452,7 @@ aside:
 
 最新評論只會在刷新時才會去讀取，並不會實時變化
 
-由於 API 有 訪問次數限制，為了避免調用太多，主題默認存取期限為 10 分鐘。也就是説，調用後資料會存在 _localStorage_ 裏，10 分鐘內刷新網站只會去 _localStorage_ 讀取資料。 10 分鐘期限一過，刷新頁面時才會去調取 API 讀取新的數據。（ 3.6.0 新增了 `storage` 配置，可自行配置緩存時間）
+由於 API 有 訪問次數限制，為了避免調用太多，主題默認存取期限為 10 分鐘。也就是説，調用後資料會存在 _localStorage_ 裡，10 分鐘內刷新網站只會去 _localStorage_ 讀取資料。 10 分鐘期限一過，刷新頁面時才會去調取 API 讀取新的數據。（ 3.6.0 新增了 `storage` 配置，可自行配置緩存時間）
 
 {% endnote %}
 
@@ -2657,7 +2756,7 @@ math:
 <!-- tab MathJax -->
 
 {% note warning flat %}
-不要在標題裏使用 mathjax 語法，toc 目錄不一定能正確顯示 mathjax，可能顯示 mathjax 代碼
+不要在標題裡使用 mathjax 語法，toc 目錄不一定能正確顯示 mathjax，可能顯示 mathjax 代碼
 {% endnote %}
 
 {% note info %}
@@ -2714,7 +2813,7 @@ mathjax:
 <!-- tab KaTeX -->
 
 {% note warning flat %}
-不要在標題裏使用 KaTeX 語法，toc 目錄不能正確顯示 KaTeX。
+不要在標題裡使用 KaTeX 語法，toc 目錄不能正確顯示 KaTeX。
 {% endnote %}
 
 開啟 KaTeX 需要把 `use` 設置為 `katex`
@@ -2767,7 +2866,7 @@ markdown:
 
 ```bash
 # 替換 `hexo-renderer-kramed` 或者 `hexo-renderer-marked` 等hexo的markdown渲染器
-# 你可以在你的package.json裏找到hexo的markdwon渲染器，並將其卸載
+# 你可以在你的package.json裡找到hexo的markdwon渲染器，並將其卸載
 npm un hexo-renderer-marked --save
 
 # or
@@ -2799,7 +2898,7 @@ markdown_it_plus:
 
 {% endsubtabs %}
 
-因為 KaTeX 更快更輕量，因此沒有 MathJax 的功能多（比如右鍵菜單）。為那些使用 MathJax 的用户，主題也內置了 katex 的 [複製](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex) 功能。
+因為 KaTeX 更快更輕量，因此沒有 MathJax 的功能多（比如右鍵菜單）。為那些使用 MathJax 的用戶，主題也內置了 katex 的 [複製](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex) 功能。
 
 ![hexo-theme-butterfly-doc-katex.gif](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-katex.gif)
 
@@ -2918,7 +3017,7 @@ DocSearch 是另一款由 algolia 提供的搜索服務，具體申請和使用�
 | appId     | 【必須】你的 Algolia 應用 ID                                                                   |
 | apiKey    | 【必須】你的 Algolia 搜索 API key                                                              |
 | indexName | 【必須】你的 Algolia index name                                                                |
-| option    | 【可選】其餘的 docsearch 配置<br />具體配置可查[這裏](https://docsearch.algolia.com/docs/api/) |
+| option    | 【可選】其餘的 docsearch 配置<br />具體配置可查[這裡](https://docsearch.algolia.com/docs/api/) |
 
 ![hexo-theme-butterfly-docs-docsearch.png](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-docs-docsearch.png)
 
@@ -3032,7 +3131,7 @@ comments:
 
 <!-- tab Disqus -->
 
-註冊 [disqus](https://disqus.com/)，配置你自己的 disqus，然後在`Butterfly`裏開啟它。
+註冊 [disqus](https://disqus.com/)，配置你自己的 disqus，然後在`Butterfly`裡開啟它。
 
 ```yaml
 disqus:
@@ -3041,7 +3140,7 @@ disqus:
 
 | 參數      | 解釋                                                                     |
 | --------- | ------------------------------------------------------------------------ |
-| shortname | 你的 Disqus 短名稱，你可以在[這裏](https://disqus.com/admin/create/)創建 |
+| shortname | 你的 Disqus 短名稱，你可以在[這裡](https://disqus.com/admin/create/)創建 |
 
 ![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-disqus.png)
 
@@ -3060,8 +3159,8 @@ disqusjs:
 
 | 參數      | 解釋                                                                          |
 | --------- | ----------------------------------------------------------------------------- |
-| shortname | 你的 Disqus 短名稱，你可以在[這裏](https://disqus.com/admin/create/)創建      |
-| apikey    | 你的 Disqus API Key，你可以在[這裏](https://disqus.com/api/applications/)創建 |
+| shortname | 你的 Disqus 短名稱，你可以在[這裡](https://disqus.com/admin/create/)創建      |
+| apikey    | 你的 Disqus API Key，你可以在[這裡](https://disqus.com/api/applications/)創建 |
 | option    | 可選配置                                                                      |
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
@@ -3074,7 +3173,7 @@ disqusjs:
 
 <!-- tab livere（來必力） -->
 
-註冊[來必力](https://livere.com/)，配置你自己的來必力設置，然後在`Butterfly`裏開啟它。
+註冊[來必力](https://livere.com/)，配置你自己的來必力設置，然後在`Butterfly`裡開啟它。
 
 ```yaml
 livere:
@@ -3083,9 +3182,9 @@ livere:
 
 | 參數 | 解釋                                                    |
 | ---- | ------------------------------------------------------- |
-| uid  | 你的來必力 uid，你可以在[這裏](https://livere.com/)創建 |
+| uid  | 你的來必力 uid，你可以在[這裡](https://livere.com/)創建 |
 
-livere 的 uid 你能在這裏找到:
+livere 的 uid 你能在這裡找到:
 
 ![hexo-theme-butterfly-doc-laibili.jpg](https://oss.012700.xyz/butterfly/2024/09/hexo-theme-butterfly-doc-laibili.jpg)
 
@@ -3112,7 +3211,7 @@ gitalk:
 | client_secret | GitHub 應用的 client secret                                           |
 | repo          | 存儲 issues 的 repo                                                   |
 | owner         | 存儲 issues 的 repo 的擁有者                                          |
-| admin         | GitHub repository 的所有者和合作者 (對這個 repository 有寫權限的用户) |
+| admin         | GitHub repository 的所有者和合作者 (對這個 repository 有寫權限的用戶) |
 | option        | 可選配置                                                              |
 
 ![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-gitalk.png)
@@ -3277,7 +3376,7 @@ facebook_comments:
 
 | 參數     | 解釋                                                                       |
 | -------- | -------------------------------------------------------------------------- |
-| app_id   | Facebook App ID，你可以在[這裏](https://developers.facebook.com/apps/)創建 |
+| app_id   | Facebook App ID，你可以在[這裡](https://developers.facebook.com/apps/)創建 |
 | user_id  | Facebook User ID，可選，用於管理評論                                       |
 | pageSize | 顯示的評論數                                                               |
 | order_by | 評論排序方式,social/time/reverse_time                                      |
@@ -3430,7 +3529,7 @@ chat:
 | button_hide_show | 是否開啟滾動時隱藏聊天按鈕                                                    |
 
 這些工具都提供了一個按鈕可以打開/關閉聊天窗口。
-主題也提供了一個集合主題特色的按鈕來替換這些工具本身的按鈕，這個聊天按鈕將會出現在右下角裏。
+主題也提供了一個集合主題特色的按鈕來替換這些工具本身的按鈕，這個聊天按鈕將會出現在右下角裡。
 你只需要把`rightside_button`打開就行。
 
 ![](https://oss.012700.xyz/butterfly/2024/09/butterfly-docs-chatbtn.png)
@@ -3654,8 +3753,8 @@ index: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" dat
 
 ## 網站驗證
 
-如果需要搜索引擎收錄網站，可能需要登錄對應搜索引擎的管理平台進行提交。
-各自的驗證碼可從各自管理平台拿到
+如果需要搜索引擎收錄網站，可能需要登錄對應搜索引擎的管理平臺進行提交。
+各自的驗證碼可從各自管理平臺拿到
 
 ```yaml
 site_verification:
@@ -4086,9 +4185,9 @@ mermaid:
 
 主題支持兩種書寫方法
 
-#### 標簽外挂
+#### 標簽外掛
 
-你可以使用標簽外挂的方式來使用 Mermaid.js
+你可以使用標簽外掛的方式來使用 Mermaid.js
 具體可查看 [Mermaid 標簽外掛](https://butterfly.js.org/posts/ceeb73f/#Mermaid)
 
 #### 代碼塊書寫
@@ -4114,7 +4213,7 @@ mermaid:
       exclude_languages: ['mermaid']
     ```
 
-3. butterfly的配置文件中 mermaid 的 code_write 设为 true
+3. butterfly的配置文件中 mermaid 的 code_write 設為 true
 
 > 例子
 
@@ -4130,7 +4229,7 @@ graph TD;
 
 ## Pjax
 
-當用户點擊鏈接，通過 ajax 更新頁面需要變化的部分，然後使用 HTML5 的 pushState 修改瀏覽器的 URL 地址。
+當用戶點擊鏈接，通過 ajax 更新頁面需要變化的部分，然後使用 HTML5 的 pushState 修改瀏覽器的 URL 地址。
 
 這樣可以不用重複加載相同的資源（css/js）， 從而提升網頁的加載速度。
 
@@ -4145,7 +4244,7 @@ pjax:
 {% note info %}
 
 對於一些第三方插件，有些並不支持 pjax 。
-你可以把**網頁**加入到 `exclude` 裏，這個網頁會被 pjax 排除在外。
+你可以把**網頁**加入到 `exclude` 裡，這個網頁會被 pjax 排除在外。
 點擊該網頁會重新加載網站
 
 使用 pjax 後，一些自己 DIY 的 js 可能會無效，跳轉頁面時需要重新調用，請參考[Pjax 文檔](https://github.com/MoOx/pjax)
@@ -4301,7 +4400,7 @@ pwa:
 
 ## Open Graph
 
-在 `head` 裏增加一些 meta 資料，例如縮略圖、標題、時間等等。當你分享網頁到一些平台時，平台會讀取 Open Graph 的內容，展示縮略圖，標題等等信息。
+在 `head` 裡增加一些 meta 資料，例如縮略圖、標題、時間等等。當你分享網頁到一些平臺時，平臺會讀取 Open Graph 的內容，展示縮略圖，標題等等信息。
 
 修改配置文件
 
@@ -4339,7 +4438,7 @@ css_prefix: true
 2.3.0 以上支持
 {% endnote %}
 
-如想添加額外的 js/css/meta 等等東西，可以在 Inject 裏添加，支持添加到 head(`</body>`標籤之前)和 bottom(`</html>`標籤之前)。
+如想添加額外的 js/css/meta 等等東西，可以在 Inject 裡添加，支持添加到 head(`</body>`標籤之前)和 bottom(`</html>`標籤之前)。
 
 請注意：以標準的 html 格式添加內容
 
@@ -4358,7 +4457,7 @@ _留意:_ 如果你的網站根目錄不是'/',使用本地圖片時，需加上
 
 ## CDN
 
-配置文件中最後一部分 CDN，裏面是主題所引用到的文件，可自行配置 CDN。（非必要請勿修改，配置後請確認鏈接是否能訪問）
+配置文件中最後一部分 CDN，裡面是主題所引用到的文件，可自行配置 CDN。（非必要請勿修改，配置後請確認鏈接是否能訪問）
 
 ```yaml
 # CDN Settings
@@ -4441,7 +4540,7 @@ CDN:
 | third_party_provider | 第三方文件<br />可選 local/jsdelivr/unpkg/cdnjs/custom<br />lcoal 為本地加載，custom 為自定義格式，需配置 `custom_format`<br />**注意:** 如果你選擇 local 需要安裝 `hexo-butterfly-extjs`插件 |
 | version              | true/false 為 cdn 加上指定版本號                                                                                                                                                              |
 | custom_format        | 自定義格式                                                                                                                                                                                    |
-| option               | 你可以在這裏更換部分文件,會覆蓋原有的配置                                                                                                                                                     |
+| option               | 你可以在這裡更換部分文件,會覆蓋原有的配置                                                                                                                                                     |
 
 ### version
 
