@@ -579,6 +579,10 @@ search:
     top_n_per_article: 1
     # Unescape html strings to the readable one.
     unescape: false
+    pagination:
+      enable: true
+      # Number of search results per page
+      hitsPerPage: 8
     CDN:
 
   # Docsearch
@@ -790,6 +794,7 @@ umami_analytics:
   enable: true
   # For self-hosted setups, configure the hostname of the Umami instance
   serverURL: https://umami.012700.xyz/
+  script_name: script.js
   website_id: 2a796d6c-6499-42d8-8eb4-d9a2930b0ff3
   option:
   UV_PV:
@@ -915,7 +920,7 @@ font:
 # Font settings for the site title and site subtitle
 blog_title_font:
   font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
-  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
+  font_family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
 
 # The setting of divider icon
 hr_icon:
