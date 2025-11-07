@@ -31,8 +31,9 @@
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-theme-butterfly": "^5.4.1",
-    "hexo-wordcount": "^6.0.1"
+    "hexo-theme-butterfly": "^5.5.0",
+    "hexo-wordcount": "^6.0.1",
+    "js-yaml": "^4.1.0"
   },
   "devDependencies": {
     "gulp": "^5.0.1",
