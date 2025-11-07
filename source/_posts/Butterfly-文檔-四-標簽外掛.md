@@ -1005,10 +1005,14 @@ mermaid:
 寫法：
 
 ```markdown
-{% mermaid %}
+{% mermaid '[config]' %}
 內容
 {% endmermaid %}
 ```
+
+| 參數   | 解釋                                                                                     |
+| ------ | ---------------------------------------------------------------------------------------- |
+| config | 【可選】mermaid 圖表配置, 以 JSON 格式書寫，具體配置參數請參考[mermaid 文檔](https://mermaid.js.org/config/schema-docs/config.html) |
 
 {% note purple 'fa-solid fa-wand-magic-sparkles' %}
 例子
@@ -1032,6 +1036,22 @@ title Key elements in Product X
 "Potassium" : 50.05
 "Magnesium" : 10.01
 "Iron" : 5
+{% endmermaid %}
+
+```markdown
+{% mermaid '{"themeVariables": { "fontSize": "16px" }, "layout": "elk", "look": "handDrawn"}' %}
+flowchart LR
+  A[Start] --> B{Decision}
+  B -->|Yes| C[Continue]
+  B -->|No| D[Stop]
+{% endmermaid %}
+```
+
+{% mermaid '{"themeVariables": { "fontSize": "16px" }, "layout": "elk", "look": "handDrawn"}' %}
+flowchart LR
+  A[Start] --> B{Decision}
+  B -->|Yes| C[Continue]
+  B -->|No| D[Stop]
 {% endmermaid %}
 
 ## Tabs

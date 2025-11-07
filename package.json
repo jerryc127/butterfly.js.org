@@ -10,13 +10,13 @@
     "en": "hexo clean && hexo g && hexo g --config config-en.yml -f && hexo s"
   },
   "hexo": {
-    "version": "7.3.0"
+    "version": "8.1.1"
   },
   "dependencies": {
     "gulp-html-minifier-terser": "^7.1.0",
     "gulp-htmlclean": "^2.7.22",
     "gulp-imagemin": "^9.1.0",
-    "hexo": "^7.3.0",
+    "hexo": "^8.1.1",
     "hexo-deployer-git": "^4.0.0",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^2.0.0",
@@ -31,7 +31,7 @@
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-theme-butterfly": "^5.5.0",
+    "hexo-theme-butterfly": "^5.5.2",
     "hexo-wordcount": "^6.0.1",
     "js-yaml": "^4.1.0"
   },
