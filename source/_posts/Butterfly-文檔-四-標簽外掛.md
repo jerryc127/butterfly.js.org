@@ -1628,9 +1628,9 @@ xxxxxx
 - class_name: 友情鏈接
   class_desc: 那些人，那些事
   link_list:
-    - name: JerryC
-      link: https://jerryc.me/
-      avatar: https://jerryc.me/img/avatar.png
+    - name: CrazyWong
+      link: https://crazywong.com
+      avatar: https://crazywong.com/img/avatar.png
       descr: 今日事,今日畢
     - name: Hexo
       link: https://hexo.io/zh-tw/
@@ -1659,9 +1659,9 @@ xxxxxx
 - class_name: 友情鏈接
   class_desc: 那些人，那些事
   link_list:
-    - name: JerryC
-      link: https://jerryc.me/
-      avatar: https://jerryc.me/img/avatar.png
+    - name: CrazyWong
+      link: https://crazywong.com
+      avatar: https://crazywong.com/img/avatar.png
       descr: 今日事,今日畢
     - name: Hexo
       link: https://hexo.io/zh-tw/

@@ -13,6 +13,7 @@ nav:
   # Navigation bar logo image
   logo:
   display_title: true
+  display_post_title: true
   # Whether to fix navigation bar
   fixed: false
 
@@ -283,12 +284,70 @@ noticeOutdate:
 # Footer Settings
 # --------------------------------------
 footer:
+  nav:
+    - width:
+      content:
+        - title: 文檔
+          item:
+            - title: 🚀 快速開始
+              url: /posts/21cfbf15/
+            - title: 📑 主題頁面
+              url: /posts/dc584b87/
+            - title: 📌 主題配置
+              url: /posts/4aa8abbe/
+            - title: ⚔️ 標簽外挂
+              url: /posts/ceeb73f/
+            - title: ❓ 主題問答
+              url: /posts/98d20436/
+            - title: ⚡️ 進階教程
+              url: /posts/4073eda/
+    - content:
+      - title: 其他
+        item:
+          - title: 圖庫
+            url: /Gallery/
+          - title: 留言板
+            url: /messageboard/
+          - title: 說說
+            url: /talking/
+          - title: 示例
+            url: /link/
+          - title: 友链
+            url: /links/
+    - content:
+      - title: 框架
+        item:
+          - title: Hexo
+            url: https://hexo.io/zh-cn/
+          - title: Butterfly
+            url: https://butterfly.js.org/
+    - content:
+      - title: 語言
+        item:
+          - title: English
+            url: /en/
+          - title: 中文
+            url: /
+    # - content:
+    #   - title: 贊助
+    #     item:
+    #       - title: 支付寶
+    #         url: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/alipay.jpg
+    #         html: "<img src='https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/alipay.jpg' alt='JerryC' width='100px' height='100px'>"
+    #       - title: 微信
+    #         url: https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/wechat.jpg
+    #         html: "<img src='https://jsd.012700.xyz/gh/jerryc127/CDN/Photo/wechat.jpg' alt='wechat' width='100px' height='100px'>"
+    #       - title: Stripe
+    #         url: https://buy.stripe.com/3cs6rP6YA91sbbG5kk
+    #         html: "<img src='https://jsd.012700.xyz/gh/jerryc127/CDN@m2/img/stripe.png' alt='Stripe' width='100px' height='100px'>"
   owner:
     enable: true
     since: 2019
   custom_text:
   # Copyright of theme and framework
-  copyright: true
+  copyright:
+    enable: true
+    version: true
 
 # --------------------------------------
 # Aside Settings
@@ -435,6 +494,9 @@ rightside_item_order:
   # Default: toc,chat,comment
   show: toc,translate,chat,comment
 
+# Animation for the bottom right config button
+rightside_config_animation: true
+
 # --------------------------------------
 # Global Settings
 # --------------------------------------
@@ -517,6 +579,10 @@ search:
     top_n_per_article: 1
     # Unescape html strings to the readable one.
     unescape: false
+    pagination:
+      enable: true
+      # Number of search results per page
+      hitsPerPage: 8
     CDN:
 
   # Docsearch
@@ -728,6 +794,7 @@ umami_analytics:
   enable: true
   # For self-hosted setups, configure the hostname of the Umami instance
   serverURL: https://umami.012700.xyz/
+  script_name: script.js
   website_id: 2a796d6c-6499-42d8-8eb4-d9a2930b0ff3
   option:
   UV_PV:
@@ -736,6 +803,12 @@ umami_analytics:
     page_pv: true
     # Umami Cloud (API key) / self-hosted Umami (token)
     token: qTvz1SkmPDt785fgh6BpiA5qiFFIVUwxj8Ft+rPW+cdN59v1hXjwRgSmy0+ji9m+oLlcxvo2NfDSMa6epVl3NTlsN3ejCIwWeP8Y51aEJ0Sbem4UexGmJLspB7AkOBId2SdtT6QWEBlGmFIIQgchQ2zAKYxTmc/kpBED5aLSr+3uvmQ9/G7FJQeVFpveDkK0xM1hu36xq4a6/FSeROxtoEp5zabzTWiYTlLsQzIl/NlELnCq3nxK+oo/vl3UQo/oM/rae/gJX/MaVKsgIUCd2ABJogNkx2KTenBIBpbPki5FzOgPh6/z4GPa4HvhNO51DDVG1SEQZooqEYmt/gnybLBWFbN+7liZWw==
+
+# https://www.googletagmanager.com/
+google_tag_manager:
+  tag_id:
+  # optional
+  domain:
 
 # --------------------------------------
 # Advertisement
@@ -839,7 +912,7 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work
 font:
-  global_font_size:
+  global_font_size: 15px
   code_font_size:
   font_family:
   code_font_family:
@@ -847,7 +920,7 @@ font:
 # Font settings for the site title and site subtitle
 blog_title_font:
   font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
-  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
+  font_family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
 
 # The setting of divider icon
 hr_icon:
@@ -1057,6 +1130,10 @@ Open_Graph_meta:
     # google_plus:
     # fb_admins:
     # fb_app_id:
+
+# Structured Data
+# https://developers.google.com/search/docs/guides/intro-structured-data
+structured_data: true
 
 # Add the vendor prefixes to ensure compatibility
 css_prefix: true
