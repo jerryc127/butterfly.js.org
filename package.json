@@ -15,7 +15,7 @@
   "dependencies": {
     "gulp-html-minifier-terser": "^7.1.0",
     "gulp-htmlclean": "^2.7.22",
-    "gulp-imagemin": "^9.1.0",
+    "gulp-imagemin": "^9.2.0",
     "hexo": "^8.1.1",
     "hexo-deployer-git": "^4.0.0",
     "hexo-filter-nofollow": "^2.0.2",
@@ -31,9 +31,9 @@
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-theme-butterfly": "^5.5.2",
+    "hexo-theme-butterfly": "^5.5.3",
     "hexo-wordcount": "^6.0.1",
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.1"
   },
   "devDependencies": {
     "gulp": "^5.0.1",
