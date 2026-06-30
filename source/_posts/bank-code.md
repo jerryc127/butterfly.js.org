@@ -8,7 +8,7 @@ keywords:
 description:
 top_img:
 cover: https://oss.012700.xyz/butterfly/{year}/{month}/{fullName}/bank-code.png
-abbrlink:
+abbrlink: bank
 ---
 
 隨著數碼銀行的普及，在香港開戶已經不再是繁瑣的流程。只需一部手機，你就可以幾分鐘內完成开户注册，享受方便又高效的理財體驗。如果你正考慮開設香港銀行戶口，這篇文章將為你推薦兩間非常熱門的虛擬銀行：**ZA Bank** 和 **Mox Bank**，同時附上邀請碼，讓你開戶還能享受額外獎賞！
