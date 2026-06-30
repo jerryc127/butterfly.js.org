@@ -10,18 +10,18 @@
     "en": "hexo clean && hexo g && hexo g --config config-en.yml -f && hexo s"
   },
   "hexo": {
-    "version": "8.1.1"
+    "version": "8.1.2"
   },
   "dependencies": {
-    "gulp-html-minifier-terser": "^7.1.0",
+    "gulp-html-minifier-terser": "^8.0.0",
     "gulp-htmlclean": "^2.7.22",
     "gulp-imagemin": "^9.2.0",
-    "hexo": "^8.1.1",
+    "hexo": "^8.1.2",
     "hexo-deployer-git": "^4.0.0",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
-    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-feed": "^4.0.0",
     "hexo-generator-index": "^4.0.0",
     "hexo-generator-searchdb": "^1.5.0",
     "hexo-generator-sitemap": "^3.0.1",
@@ -31,9 +31,9 @@
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-theme-butterfly": "^5.5.3",
+    "hexo-theme-butterfly": "^5.5.5",
     "hexo-wordcount": "^6.0.1",
-    "js-yaml": "^4.1.1"
+    "js-yaml": "^5.2.0"
   },
   "devDependencies": {
     "gulp": "^5.0.1",
