@@ -3726,7 +3726,7 @@ Beautification enabled
 
 #### Global Fonts
 
-You can set the font-family for the entire site.
+You can set the font_family for the entire site.
 
 **If no configuration is needed, leave it empty.**
 
@@ -3734,18 +3734,18 @@ You can set the font-family for the entire site.
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size:
-  code-font-size:
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
-  code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  global_font_size:
+  code_font_size:
+  font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  code_font_family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
 ```
 
 | Parameter          | Description                                                  |
 | ------------------ | ------------------------------------------------------------ |
-| global-font-size   | Global font size                                             |
-| code-font-size     | Code font size                                               |
-| font-family        | Global font family                                           |
-| code-font-family   | Code font family                                             |
+| global_font_size   | Global font size                                             |
+| code_font_size     | Code font size                                               |
+| font_family        | Global font family                                           |
+| code_font_family   | Code font family                                             |
 
 #### Blog Title Font
 
@@ -3758,13 +3758,13 @@ You can set the font-family for the site title and subtitle.
 # Site name on the top left, site name centered on the homepage
 blog_title_font:
   font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
-  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
+  font_family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
 ```
 
 | Parameter    | Description                                                     |
 | ------------ | --------------------------------------------------------------- |
 | font_link    | Link to the web font                                            |
-| font-family  | Font family for the site title                                  |
+| font_family  | Font family for the site title                                  |
 
 ### Typing Effect
 
