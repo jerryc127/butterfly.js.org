@@ -1183,13 +1183,6 @@ pjax:
   exclude:
     # - /xxxxxx/
 
-# 注入 CSS 和腳本 (aplayer/meting)
-aplayerInject:
-  # 是否啟用注入
-  enable: false
-  # 是否每頁啟用
-  per_page: true
-
 # Snackbar - Toast 通知
 # https://github.com/polonel/SnackBar
 # 位置: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
@@ -1654,7 +1647,6 @@ avatar:
 
 ```yaml
 tag_per_img:
-  aplayer: https://xxxxxx.png
   android: ddddddd.png
 
 category_per_img：
@@ -4482,8 +4474,6 @@ CDN:
     # activate_power_mode:
     # algolia_js:
     # algolia_search:
-    # aplayer_css:
-    # aplayer_js:
     # artalk_css:
     # artalk_js:
     # blueimp_md5:
@@ -4516,7 +4506,6 @@ CDN:
     # mathjax:
     # medium_zoom:
     # mermaid:
-    # meting_js:
     # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:

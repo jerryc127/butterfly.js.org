@@ -60,7 +60,6 @@ top_img:
 mathjax:
 katex:
 aside:
-aplayer:
 highlight_shrink:
 random:
 limit:
@@ -82,7 +81,6 @@ limit:
 | mathjax          | 【可選】顯示 mathjax (當設置 mathjax 的 per_page: false 時，才需要配置，默認 false) |
 | katex            | 【可選】顯示 katex (當設置 katex 的 per_page: false 時，才需要配置，默認 false)     |
 | aside            | 【可選】顯示側邊欄 (默認 true)                                                      |
-| aplayer          | 【可選】在需要的頁面加載 aplayer 的 js 和 css,請參考文章下面的`音樂` 配置           |
 | highlight_shrink | 【可選】配置代碼框是否展開 (true/false) (默認為設置中 highlight_shrink 的配置)      |
 | random           | 【可選】配置友情鏈接是否隨機排序（默認為 false）                                     |
 | limit            | 【可選】配置説説顯示數量                                                        |
@@ -113,7 +111,6 @@ copyright_url:
 copyright_info:
 mathjax:
 katex:
-aplayer:
 highlight_shrink:
 aside:
 abcjs:
@@ -143,7 +140,6 @@ noticeOutdate:
 | copyright_info        | 【可選】文章版權模塊的`版權聲明`文字                                                        |
 | mathjax               | 【可選】顯示 mathjax(當設置 mathjax 的 per_page: false 時，才需要配置，默認 false )         |
 | katex                 | 【可選】顯示 katex (當設置 katex 的 per_page: false 時，才需要配置，默認 false )            |
-| aplayer               | 【可選】在需要的頁面加載 aplayer 的 js 和 css,請參考文章下面的`音樂` 配置                   |
 | highlight_shrink      | 【可選】配置代碼框是否展開(true/false)(默認為設置中 highlight_shrink 的配置)                |
 | aside                 | 【可選】顯示側邊欄 (默認 true)                                                              |
 | abcjs                 | 【可選】加載 abcjs (當設置 abcjs 的 per_page: false 時，才需要配置，默認 false )            |

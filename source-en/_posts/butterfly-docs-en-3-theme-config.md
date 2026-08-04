@@ -1016,11 +1016,6 @@ pjax:
   exclude:
     # - /xxxxxx/
 
-# Inject the css and script (aplayer/meting)
-aplayerInject:
-  enable: false
-  per_page: true
-
 # Snackbar - Toast Notification
 # https://github.com/polonel/SnackBar
 # position: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
@@ -1476,7 +1471,6 @@ It is not recommended to configure different top images for each tag and categor
 
 ```yaml
 tag_per_img:
-  aplayer: https://xxxxxx.png
   android: ddddddd.png
 
 category_per_img：
@@ -4277,8 +4271,6 @@ CDN:
     # activate_power_mode:
     # algolia_js:
     # algolia_search:
-    # aplayer_css:
-    # aplayer_js:
     # artalk_css:
     # artalk_js:
     # blueimp_md5:
@@ -4311,7 +4303,6 @@ CDN:
     # mathjax:
     # medium_zoom:
     # mermaid:
-    # meting_js:
     # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
