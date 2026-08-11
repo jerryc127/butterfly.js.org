@@ -38,35 +38,6 @@ This article is translated from ChatGPT.
 1. Avoid placing personal files/images in the `source` folder of the main theme. During theme upgrades, these files may be overwritten or deleted. Instead, create a separate folder in the Hexo root directory to store personal files/images. 
 To reference these files, use `/folder_name/file_name`.
 
-## Music
-
-The music interface uses the plugin `hexo-tag-aplayer`. Please refer to the plugin [documentation](https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md) for usage.
-
-To create the music page, simply create a regular page like any other page.
-
-> The following content is for **optional** configuration.
->
-> Note: You still need to install the [hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer) plugin.
-
-The plugin will inject js and css into every file, but to avoid this, version 3.0 of the theme includes the necessary aplayer css and js.
-
-First, in the Hexo root directory, configure `_config.yml` to set `asset_inject` to `false`:
-
-```yaml
-aplayer:
-  asset_inject: false
-```
-
-Then, in the Front-matter of the pages where you want to use aplayer, add the following line:
-
-```markdown
-aplayer: true
-```
-
-This will only insert the necessary js and css for the pages where you need aplayer.
-
-For instructions on how to add a global Aplayer at the bottom, refer to [this article](/posts/507c070f/).
-
 ## Movies
 
 The movie interface uses the plugin `hexo-douban`. Please follow the plugin's [documentation](https://github.com/mythsman/hexo-douban) for usage.
@@ -96,10 +67,6 @@ For specific configurations, refer to the [plugin documentation](https://github.
 ## Custom Sidebar
 
 {% btn '/posts/ea33ab97/','Click to Go',fas fa-lightbulb,block green %}
-
-## Adding Global Aplayer Tutorial
-
-{% btn '/posts/507c070f/','Click to Go',fas fa-music,block pink %}
 
 ## Icon
 

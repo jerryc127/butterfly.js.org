@@ -61,7 +61,6 @@ top_img:
 mathjax:
 katex:
 aside:
-aplayer:
 highlight_shrink:
 random:
 limit:
@@ -82,7 +81,6 @@ limit:
 | mathjax         | [Optional] Display MathJax (only needed when setting `per_page: false` for MathJax, default false) |
 | katex           | [Optional] Display KaTeX (only needed when setting `per_page: false` for KaTeX, default false) |
 | aside           | [Optional] Display sidebar (default true)                   |
-| aplayer         | [Optional] Load aplayer's js and css on the specified page, please refer to the `music` configuration below the article |
 | highlight_shrink| [Optional] Configure whether code blocks are expanded (true/false) (default is the setting of `highlight_shrink`) |
 | random          | [Optional] Configure whether to randomly sort friends links (default false) |
 | limit           | [Optional] Limit the number of displayed in shuoshuo |
@@ -113,7 +111,6 @@ copyright_url:
 copyright_info:
 mathjax:
 katex:
-aplayer:
 highlight_shrink:
 aside:
 abcjs:
@@ -142,7 +139,6 @@ noticeOutdate:
 | copyright_info        | [Optional] Article copyright module's `copyright statement` text |
 | mathjax               | [Optional] Display MathJax (only needed when setting `per_page: false` for MathJax, default false) |
 | katex                 | [Optional] Display KaTeX (only needed when setting `per_page: false` for KaTeX, default false) |
-| aplayer               | [Optional] Load aplayer's js and css on the specified page, please refer to the `music` configuration below the article |
 | highlight_shrink      | [Optional] Configure whether code blocks are expanded (true/false) (default is the setting of `highlight_shrink`) |
 | aside                 | [Optional] Display sidebar (default true)                       |
 | abcjs                 | [Optional] Load abcjs (only needed when setting `per_page: false` for abcjs, default false) |

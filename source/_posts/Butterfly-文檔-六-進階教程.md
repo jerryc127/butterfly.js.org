@@ -37,36 +37,6 @@ series: docs
    在 Hexo 根目錄的`source`文件夾裏，創建一個文件夾來放置個人文件/圖片。
    引用文件直接為`/文件夾名稱/文件名`
 
-## 音樂
-
-音樂界面使用了插件 `hexo-tag-aplayer`
-使用方法請參考插件[文檔](https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md)
-
-音樂頁面只是普通的 page 頁，按普通頁面操作生成就行。
-
-> 以下內容可供**選擇**配置
->
-> 注意： 仍需要安裝插件[hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer)
-
-插件會在每一個文件都插入 js 和 css，為了避免這一情況，3.0 版本內置了 aplayer 需要的 css 和 js。
-
-首先在 Hexo 根目錄 `_config` 裏配置 `asset_inject` 為 `false`
-
-```yaml
-aplayer:
-  asset_inject: false
-```
-
-然後在你需要使用 aplayer 的頁面 Front-matter 添加
-
-```markdown
-aplayer: true
-```
-
-這樣只會在需要 aplayer 的頁面插入 js 和 css。
-
-如何添加全局 Aplayer 播放，請參考 [這篇文章](/posts/507c070f/)
-
 ## 電影
 
 電影界面使用了插件 `hexo-douban`
@@ -98,10 +68,6 @@ aplayer: true
 ## 自定義側邊欄
 
 {% btn '/posts/ea33ab97/','點擊前往',fas fa-lightbulb,block green %}
-
-## 添加全局吸底 Aplayer 教程
-
-{% btn '/posts/507c070f/','點擊前往',fas fa-music,block pink %}
 
 ## Icon
 

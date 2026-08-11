@@ -991,15 +991,15 @@ beautify:
 # 全局字體設置
 # 除非您知道它們的工作原理，否則不要修改以下設置
 font:
-  global-font-size:
-  code-font-size:
-  font-family:
-  code-font-family:
+  global_font_size:
+  code_font_size:
+  font_family:
+  code_font_family:
 
 # 網站標題和副標題的字體設置
 blog_title_font:
   font_link:
-  font-family:
+  font_family:
 
 # 分隔符圖標的設置
 hr_icon:
@@ -1182,13 +1182,6 @@ pjax:
   # 排除指定頁面不使用 pjax，如 '/music/'
   exclude:
     # - /xxxxxx/
-
-# 注入 CSS 和腳本 (aplayer/meting)
-aplayerInject:
-  # 是否啟用注入
-  enable: false
-  # 是否每頁啟用
-  per_page: true
 
 # Snackbar - Toast 通知
 # https://github.com/polonel/SnackBar
@@ -1654,7 +1647,6 @@ avatar:
 
 ```yaml
 tag_per_img:
-  aplayer: https://xxxxxx.png
   android: ddddddd.png
 
 category_per_img：
@@ -3920,7 +3912,7 @@ beautify:
 
 #### 全局字體
 
-可自行設置字體的`font-family`
+可自行設置字體的`font_family`
 
 **如不需要配置，請留空**
 
@@ -3928,18 +3920,18 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size:
-  code-font-size:
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
-  code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  global_font_size:
+  code_font_size:
+  font_family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  code_font_family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
 ```
 
 | 參數             | 解釋         |
 | ---------------- | ------------ |
-| global-font-size | 全局字體大小 |
-| code-font-size   | 代碼字體大小 |
-| font-family      | 全局字體     |
-| code-font-family | 代碼字體     |
+| global_font_size | 全局字體大小 |
+| code_font_size   | 代碼字體大小 |
+| font_family      | 全局字體     |
+| code_font_family | 代碼字體     |
 
 #### Blog 標題字體
 
@@ -3952,13 +3944,13 @@ font:
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
   font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
-  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
+  font_family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
 ```
 
 | 參數        | 解釋           |
 | ----------- | -------------- |
 | font_link   | 網絡字體的連結 |
-| font-family | 網站標題字體   |
+| font_family | 網站標題字體   |
 
 ### 打字效果
 
@@ -4482,8 +4474,6 @@ CDN:
     # activate_power_mode:
     # algolia_js:
     # algolia_search:
-    # aplayer_css:
-    # aplayer_js:
     # artalk_css:
     # artalk_js:
     # blueimp_md5:
@@ -4516,7 +4506,6 @@ CDN:
     # mathjax:
     # medium_zoom:
     # mermaid:
-    # meting_js:
     # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
