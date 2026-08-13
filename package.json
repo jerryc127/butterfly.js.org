@@ -40,5 +40,8 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-terser": "^2.1.0",
     "gulp-uglify": "^3.0.2"
+  },
+  "overrides": {
+    "fast-xml-parser": "5.7.0"
   }
 }
