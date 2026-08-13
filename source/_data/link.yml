@@ -283,6 +283,7 @@
       link: https://blog.gzzz.pro/
       avatar: https://image.gzzz.pro/image/202407091318520.webp
       descr: 逝者如斯夫，不舍昼夜。
+<<<<<<< HEAD
     - name: 兔子的下午茶
       link: https://blog.code52.cn
       avatar: https://blog.code52.cn/images/favicon.webp
@@ -307,3 +308,7 @@
       link: https://r3xdj.pages.dev/
       avatar: https://r3xdj.pages.dev/img/icy_star.png
       descr: 記錄資安、數學與程式學習的地方
+    - name: 云野阁
+      link: https://yyg.js.cool/
+      avatar: https://yyg.js.cool/img/icon.png
+      descr: 闲云野鹤，八方逍遥
