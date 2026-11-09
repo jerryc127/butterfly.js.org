@@ -12,8 +12,8 @@
   class_desc: '<span style="font-style: italic;">重要的事情説一遍</span>'
   link_list:
     - name: MYW
-      link: https://crazywong.com/
-      avatar: https://crazywong.com/img/avatar.png
+      link: https://blog.crazywong.com/
+      avatar: https://blog.crazywong.com/img/avatar.png
       descr: 今日事,今日畢
     - name: Hexo
       link: https://hexo.io/zh-tw/
@@ -38,14 +38,14 @@
     - name: pai233
       link: https://blog.pai233.top/
       descr: Write Down My Life.
-      avatar: https://blog.pai233.top/img/avatar.jpg  
+      avatar: https://blog.pai233.top/img/avatar.jpg
     - name: hermoso
       link: https://imszz.com
       avatar: https://fastly.jsdelivr.net/gh/weilain/cdn-photo/Photo/avatar.jpg
       descr: 时间如一捧流沙,缓缓的在指间流尽
     - name: 小嘉的部落格
       link: https://blog.imzjw.cn/
-      avatar: //cdn.jsdelivr.net/npm/nanshen/avatar.jpg
+      avatar: https://cdn.jsdelivr.net/npm/nanshen/avatar.jpg
       descr: 好记性不如烂笔头
     - name: BARAN的小站🔥🔥🔥
       link: https://cxvh.com
@@ -83,10 +83,6 @@
       link: https://blog.guole.fun/
       avatar: https://blog.guole.fun/img/gl.jpg
       descr: 生命是独立是自由是爱与和平
-    - name: Layne666 - Blog
-      link: https://layne666.cn
-      avatar: https://layne666.cn/images/avatar.png
-      descr: 不多说了，诸位，拔剑吧！
     - name: LastKnightCoder - Blog
       link: https://lastknightcoder.github.io/hexo-blog/
       avatar: https://fastly.jsdelivr.net/gh/LastKnightCoder/ImgHosting3@master/avatar.3fylnrbbo8m0.jpg
@@ -127,13 +123,9 @@
       link: https://zhaoxiaobin.net
       avatar: https://zhaoxiaobin.net/pic/static/avatar.png
       descr: 个人技术博客
-    - name: Leonus
-      link: https://blog.leonus.cn/
-      avatar: https://q1.qlogo.cn/g?b=qq&nk=553344777&s=640
-      descr: 进一寸有进一寸的欢喜。
     - name: ANINEGの小屋
-      link: https://blog.anineg.space/
-      avatar: https://blog.anineg.space/img/avatar.png
+      link: https://www.anineg.space/
+      avatar: https://www.anineg.space/img/avatar.png
       descr: 欢迎光临ANINEGの小屋!
     - name: SoulReader的小站
       link: https://lxx1997.github.io/
@@ -157,7 +149,7 @@
       descr: 淡定的人生从不需要起起落落
     - name: 竹山一叶
       link: https://zsyyblog.com
-      avatar: https://img.zsyyblog.com/favicon.jpg
+      avatar: https://zsyyblog.com/images/favicon.jpg
       descr: 来了就不想走的小家
     - name: NingNing の 個人空間
       link: https://ningning.netlify.app
@@ -171,10 +163,6 @@
       link: https://blog.tlhub.cn/
       descr: 套陆的个人技术博客
       avatar: https://blog.tlhub.cn/img/avatar.jpg
-    - name: MGodmonkeyの世界
-      link: https://www.mgodmonkey.cn
-      descr: 分享我的科研项目笔记
-      avatar: https://mybog.s3.bitiful.net/imgs/head.jpg
     - name: Pig Cat - Full-Stack, Android, AI
       link: https://blog.ysy950803.top/
       avatar: https://blog.ysy950803.top/img/avatar-ysy.png
@@ -187,10 +175,6 @@
       link: https://threewood1.top/
       avatar: https://threewood1.top/img/myPic.png
       descr: 生命不息，学习不止，大胆地向前冲吧！
-    - name: 极客猴
-      link: https://jikehou.cn/
-      avatar: https://img.jikehou.cn/config/avatar.png
-      descr: 猴哥的个人博客，把读书当做事业的前程序员，记录我的成长
     - name: Forever Blog
       link: https://demoblog.4everland.website
       avatar: https://tb2uqoafgrtlwckydf4juyu2h54a7snmmepl5xn4ar77twhsqloa.arweave.net/mHVIOAU0ZrsJWBl4mmKaP3gPyaxhHr7dvAR_-djygtw
@@ -199,21 +183,17 @@
       link: https://www.allanji.com/
       avatar: https://allanji.com/BlogAssets/ProfilePic.jpg
       descr: Personal Blog about tech and miscellaneous stuff. Welcome!
-    - name: Jerry Zhou 的个人博客
-      link: https://blog.jerryz.com.cn/
-      avatar: https://cdn.jerryz.com.cn/gh/YangguangZhou/image@main/avatar.jpg
-      descr: Jerry Zhou的个人博客，记录有趣的信息学、IT和个人内容。
     - name: DUT智连星宇
       link: https://www.intellink-dut.cn/
       avatar: https://intellink-01.oss-cn-beijing.aliyuncs.com/images/intellink_logo.png
       descr: 大连理工大学的学生社团网站，关注航天发展:)
     - name: 和泉小角落
       link: https://gallen881.github.io/
-      avatar: https://gallen881.github.io/img/izumikayato.jpeg
+      avatar: https://gallen881.github.io/img/avatar.png
       descr: 蓋侖堆放文章的角落
     - name: 杂烩饭
       link: https://zahui.fan
-      avatar: https://static.zahui.fan/public/boob.svg
+      avatar: https://s3.babudiu.com/iuxt/public/boob.png
       descr: 张理坤的博客 - 运维技术分享
     - name: 小玉石的博客
       link: https://bl-sun.github.io
@@ -251,21 +231,13 @@
       link: https://insectmk.cn/
       avatar: https://insectmk.cn/static/img/head/insectmk.jpg
       descr: 每天都要微笑
-    - name: 某科学的贝壳
-      link: https://blog.ning.moe/
-      avatar: https://img.misaka.pics/i/1/23/01/30/63d7559a451ec.webp
-      descr: Get busy living or get busy dying.
     - name: 空鸣深语
       link: https://blog.deepchirp.com
       avatar: https://blog.deepchirp.com/img/avatar.avif
       descr: 深鸣的博客，主要记录技术与生活相关的内容
-    - name: Evilrabbit's Blog
-      link: https://blog.yujiay.wang/
-      avatar: https://blog.yujiay.wang/img/BlogHsvg.png
-      descr: 爱 Codeing 爱生活
     - name: MasoFod
       link: https://masofod.github.io/
-      avatar: https://masofod.github.io/img/favicon.png
+      avatar: https://masofod.github.io/img/avatar.webp
       descr: 思考与想象
     - name: 胡摆摆的blog
       link: https://www.xhwv.cn/
@@ -281,7 +253,7 @@
       descr: 世界全剧终，欢迎来到my blog！
     - name: Gzzz’s Blog
       link: https://blog.gzzz.pro/
-      avatar: https://image.gzzz.pro/image/202407091318520.webp
+      avatar: https://blog.gzzz.pro/images/logo.svg
       descr: 逝者如斯夫，不舍昼夜。
     - name: 兔子的下午茶
       link: https://blog.code52.cn
@@ -289,7 +261,7 @@
       descr: 喝杯茶休息一下
     - name: vemiyの小站
       link: https://www.vemiy.com/
-      avatar: https://www.vemiy.com/img/avatar.webp
+      avatar: https://www.vemiy.com/img/avatar-7a4f45aeb0c090de1139c5adced5e1eb.webp
       descr: One more day.
     - name: mskk 的个人博客
       link: https://blog.dorahonor.me
